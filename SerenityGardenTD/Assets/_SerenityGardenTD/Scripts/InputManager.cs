@@ -60,18 +60,21 @@ namespace SerenityGarden
                 isPressed = true;
                 pressTime = Time.time;
                 GetHitObjects();
-                Event_OnPress();
+                if (Event_OnPress != null && Event_OnPress.GetInvocationList().Length != 0)
+                    Event_OnPress.Invoke();
             }
             if(Input.GetMouseButtonUp(0))
             {
                 releasePosition = Input.mousePosition;
                 isPressed = false;
                 releaseTime = Time.time;
-                Event_OnRelease();
+                if (Event_OnRelease != null && Event_OnRelease.GetInvocationList().Length != 0)
+                    Event_OnRelease.Invoke();
             }
             if(Input.GetMouseButton(0))
             {
-                Event_OnDrag();
+                if(Event_OnDrag != null && Event_OnDrag.GetInvocationList().Length != 0)
+                    Event_OnDrag.Invoke();
             }
 
 #endif
@@ -87,18 +90,21 @@ namespace SerenityGarden
                     isPressed = true;
                     pressTime = Time.time;
                     GetHitObjects();
-                    Event_OnPress();
+                    if (Event_OnPress != null && Event_OnPress.GetInvocationList().Length != 0)
+                        Event_OnPress.Invoke();
                 }
                 if(currentTouch.phase == TouchPhase.Ended)
                 {
                     releasePosition = currentTouch.position;
                     isPressed = false;
                     releaseTime = Time.time;
-                    Event_OnRelease();
+                    if (Event_OnRelease != null && Event_OnRelease.GetInvocationList().Length != 0)
+                        Event_OnRelease.Invoke();
                 }
                 if(currentTouch.phase == TouchPhase.Moved)
                 {
-                    Event_OnDrag();
+                    if (Event_OnDrag != null && Event_OnDrag.GetInvocationList().Length != 0)
+                        Event_OnDrag.Invoke();
                 }
             }
 

@@ -33,6 +33,7 @@ namespace SerenityGarden
 
     public class HexagonalGrid : MonoBehaviour
     {
+        public GameObject playerBasePrefab;
         public GameObject hexagonPrefab;
         public GameObject walkableArea;
         public float diameter;
@@ -40,8 +41,11 @@ namespace SerenityGarden
 
         public List<HexagonalBlock> gridCells = new List<HexagonalBlock>();
 
+        private bool startCalled = false;
+
         private void Start()
         {
+            startCalled = true;
             if (gridCells.Count != 0)
                 ClearGrid();
             LoadPresetGrid(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".json");
@@ -75,9 +79,35 @@ namespace SerenityGarden
                 offset = saveData.offset;
 
                 CreateGrid();
+
+                List<float> xPos = new List<float>();
+                List<float> zPos = new List<float>();
+                float yPos = 0;
                 for (int index = 0; index < gridCells.Count; index++)
                 {
                     gridCells[index].Type = (HexagonType)saveData.gridList.gridTypes[index];
+                    if (gridCells[index].Type == HexagonType.PlayerBase)
+                    {
+                        yPos = gridCells[index].transform.position.y;
+                        if (!xPos.Contains(gridCells[index].transform.position.x))
+                            xPos.Add(gridCells[index].transform.position.x);
+                        if (!zPos.Contains(gridCells[index].transform.position.z))
+                            zPos.Add(gridCells[index].transform.position.z);
+                    }
+                }
+                if(startCalled)
+                {
+                    float xMean = 0;
+                    float zMean = 0;
+                    for(int index = 0; index < xPos.Count; index++)
+                        xMean += xPos[index];
+                    for (int index = 0; index < zPos.Count; index++)
+                        zMean += zPos[index];
+
+                    xMean /= xPos.Count;
+                    zMean /= zPos.Count;
+
+                    Instantiate(playerBasePrefab, new Vector3(xMean, yPos, zMean), Quaternion.identity);
                 }
             }
             catch (Exception ex)

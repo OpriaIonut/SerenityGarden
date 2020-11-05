@@ -25,6 +25,7 @@ namespace SerenityGarden
 
         public override void OnInspectorGUI()
         {
+            grid.playerBasePrefab = (GameObject)EditorGUILayout.ObjectField("PlayerBasePrefab: ", grid.playerBasePrefab, typeof(GameObject));
             GameObject walkableArea = (GameObject)EditorGUILayout.ObjectField("Walkable Area: ", grid.walkableArea, typeof(GameObject));
             if (walkableArea.GetComponent<MeshRenderer>())
                 grid.walkableArea = walkableArea;
