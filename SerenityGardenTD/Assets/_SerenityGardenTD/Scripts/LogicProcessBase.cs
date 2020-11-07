@@ -6,7 +6,7 @@ namespace SerenityGarden
 {
     public abstract class LogicProcessBase : MonoBehaviour
     {
-        public bool isInitialized = false;
+        [HideInInspector] public bool isInitialized = false;
 
         public abstract void Init();
         public abstract bool HasAllDependencies();
@@ -14,9 +14,12 @@ namespace SerenityGarden
         /// <summary>
         /// This method should be called on all classes that inherit this class, in the awake method
         /// </summary>
-        public void BaseAwakeCalls()
+        public virtual void BaseAwakeCalls()
         {
-            BattleProcessManager.instance.PrepareToInitialize(this);
+            BattleInitializationManager.instance.PrepareToInitialize(this);
         }
+
+        public abstract void BaseStartCalls();
+        public abstract void BaseUpdateCalls();
     }
 }

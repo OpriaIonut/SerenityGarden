@@ -22,6 +22,7 @@ namespace SerenityGarden
 
         #endregion
 
+        public GameObject clickedParent;
         public GameObject clickedObject;
         public Vector2 pressPosition;
         public Vector2 releasePosition;
@@ -118,7 +119,8 @@ namespace SerenityGarden
             if(Physics.Raycast(cameraRay, out hit))
             {
                 //We should get the uppermost parent, because we may have hit a sub-component of an object, which will mess up certain things
-                clickedObject = hit.collider.transform.root.gameObject;
+                clickedObject = hit.collider.gameObject;
+                clickedParent = clickedObject.transform.root.gameObject;
             }
             else
             {
