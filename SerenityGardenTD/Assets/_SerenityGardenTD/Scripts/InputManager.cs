@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace SerenityGarden
 {
@@ -21,7 +22,8 @@ namespace SerenityGarden
         }
 
         #endregion
-
+        
+        [Header("Debug")]
         public GameObject clickedParent;
         public GameObject clickedObject;
         public Vector2 pressPosition;
@@ -53,6 +55,9 @@ namespace SerenityGarden
 
         private void Update()
         {
+            if (EventSystem.current.IsPointerOverGameObject())
+                return;
+
 #if UNITY_STANDALONE
             
             if(Input.GetMouseButtonDown(0))

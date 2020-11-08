@@ -6,6 +6,7 @@ namespace SerenityGarden
 {
     public class SceneClickManager : MonoBehaviour
     {
+        [Header("Debug")]
         public TurretBase selectedTurret;
         public HexagonalBlock selectedHexagon;
         public EnemyBase selectedEnemy;

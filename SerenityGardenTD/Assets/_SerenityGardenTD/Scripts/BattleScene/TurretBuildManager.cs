@@ -9,6 +9,8 @@ namespace SerenityGarden
 
         public GameObject buildMenuUI;
         public GameObject inspectTurretUI;
+        public GameObject buildableTurretsUI;
+        public GameObject excavatorUI;
 
         public GameObject[] turretPrefabs;
 
@@ -21,7 +23,6 @@ namespace SerenityGarden
 
         public void SelectTurret()
         {
-            buildMenuUI.SetActive(false);
             if (sceneClickManager.selectedTurret == null)
                 inspectTurretUI.SetActive(false);
             else
@@ -33,16 +34,31 @@ namespace SerenityGarden
 
         public void SelectHexagon()
         {
-            inspectTurretUI.SetActive(false);
-            if (sceneClickManager.selectedHexagon == null || sceneClickManager.selectedHexagon.Type == HexagonType.Occupied)
+            if (sceneClickManager.selectedHexagon == null || (sceneClickManager.selectedHexagon.Type != HexagonType.ResourceExtraction && sceneClickManager.selectedHexagon.Type != HexagonType.TurretBuildable))
+            {
                 buildMenuUI.SetActive(false);
+                excavatorUI.SetActive(false);
+                buildableTurretsUI.SetActive(false);
+            }
             else
+            {
                 buildMenuUI.SetActive(true);
+                if(sceneClickManager.selectedHexagon.Type == HexagonType.ResourceExtraction)
+                {
+                    excavatorUI.SetActive(true);
+                    buildableTurretsUI.SetActive(false);
+                }
+                else
+                {
+                    excavatorUI.SetActive(false);
+                    buildableTurretsUI.SetActive(true);
+                }
+            }
         }
 
         public void BuildTurret(int index)
         {
-            if (sceneClickManager.selectedHexagon.Type != HexagonType.TurretBuildable)
+            if (sceneClickManager.selectedHexagon.Type != HexagonType.TurretBuildable && sceneClickManager.selectedHexagon.Type != HexagonType.ResourceExtraction)
                 return;
 
             sceneClickManager.selectedHexagon.Type = HexagonType.Occupied;
@@ -53,6 +69,7 @@ namespace SerenityGarden
             clone.GetComponent<BuildableTurret>().hexagonBlock = sceneClickManager.selectedHexagon;
 
             sceneClickManager.selectedHexagon = null;
+            buildMenuUI.SetActive(false);
         }
 
         public void SellTurret()
@@ -61,9 +78,15 @@ namespace SerenityGarden
             if (buildable != null)
             {
                 //To do: give a reward
-                buildable.hexagonBlock.Type = HexagonType.TurretBuildable;
-                Destroy(sceneClickManager.selectedTurret);
+                if (buildable.turretType == TurretType.Excavator)
+                    buildable.hexagonBlock.Type = HexagonType.ResourceExtraction;
+                else
+                    buildable.hexagonBlock.Type = HexagonType.TurretBuildable;
+
+                sceneClickManager.selectedTurret.DrawRange(false);
+                Destroy(sceneClickManager.selectedTurret.gameObject);
                 sceneClickManager.selectedTurret = null;
+                inspectTurretUI.SetActive(false);
             }
         }
     }
