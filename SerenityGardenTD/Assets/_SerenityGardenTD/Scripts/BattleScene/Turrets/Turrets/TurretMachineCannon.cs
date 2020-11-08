@@ -37,7 +37,7 @@ namespace SerenityGarden
                 aux = item.gameObject.GetComponent<EnemyBase>();
                 if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
                 {
-                    if (aux.enemyType == EnemyType.Melee)
+                    if (aux.EnemyType == EnemyType.Melee)
                     {
                         _target = aux;
                         minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
@@ -54,7 +54,7 @@ namespace SerenityGarden
                     aux = item.gameObject.GetComponent<EnemyBase>();
                     if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
                     {
-                        if (aux.enemyType == EnemyType.Ranged)
+                        if (aux.EnemyType == EnemyType.Ranged)
                         {
                             _target = aux;
                             minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);

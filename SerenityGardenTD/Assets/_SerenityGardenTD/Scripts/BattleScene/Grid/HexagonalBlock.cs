@@ -10,7 +10,8 @@ namespace SerenityGarden
         TurretBuildable,
         PlayerBase,
         ResourceExtraction,
-        Occupied
+        Occupied,
+        SpawnPoint
     }
 
     public class HexagonalBlock : MonoBehaviour

@@ -70,6 +70,7 @@ namespace SerenityGarden
 
             sceneClickManager.selectedHexagon = null;
             buildMenuUI.SetActive(false);
+            Physics.SyncTransforms();
         }
 
         public void SellTurret()

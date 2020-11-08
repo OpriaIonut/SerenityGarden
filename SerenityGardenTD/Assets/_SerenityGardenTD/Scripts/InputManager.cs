@@ -130,6 +130,7 @@ namespace SerenityGarden
             else
             {
                 clickedObject = null;
+                clickedParent = null;
             }
         }
     }

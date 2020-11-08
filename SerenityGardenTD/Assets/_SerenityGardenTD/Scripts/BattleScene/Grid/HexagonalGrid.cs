@@ -112,8 +112,7 @@ namespace SerenityGarden
                     zMean /= zPos.Count;
 
                     Instantiate(playerBasePrefab, new Vector3(xMean, yPos, zMean), Quaternion.identity);
-
-                    
+                    Physics.SyncTransforms();
                 }
             }
             catch (Exception ex)

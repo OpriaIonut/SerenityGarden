@@ -37,7 +37,7 @@ namespace SerenityGarden
                 aux = item.gameObject.GetComponent<EnemyBase>();
                 if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
                 {
-                    if (aux.enemyType == EnemyType.Flying || aux.enemyType == EnemyType.Ambusher)
+                    if (aux.EnemyType == EnemyType.Flying || aux.EnemyType == EnemyType.Ambusher)
                     {
                         _target = aux;
                         minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);

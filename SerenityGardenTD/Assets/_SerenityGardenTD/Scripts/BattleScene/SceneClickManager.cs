@@ -37,9 +37,6 @@ namespace SerenityGarden
             }
             if(inputManager.clickedParent != null)
             { 
-                if (selectedTurret != null)
-                    selectedTurret.DrawRange(false);
-
                 selectedTurret = inputManager.clickedParent.GetComponent<TurretBase>();
                 selectedEnemy = inputManager.clickedParent.GetComponent<EnemyBase>();
             }
