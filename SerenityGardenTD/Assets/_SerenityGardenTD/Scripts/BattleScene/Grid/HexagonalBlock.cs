@@ -16,6 +16,7 @@ namespace SerenityGarden
     public class HexagonalBlock : MonoBehaviour
     {
         public Material[] materialList;
+        public int listId;
 
         private HexagonType type;
         public HexagonType Type

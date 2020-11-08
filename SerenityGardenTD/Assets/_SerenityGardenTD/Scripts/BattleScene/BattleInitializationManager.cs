@@ -47,16 +47,24 @@ namespace SerenityGarden
 
         public void ExecuteInitialization()
         {
+            int noChangeCount = 0;
             while (processesToInitialize.Count != 0)
             {
                 LogicProcessBase currentProcess = processesToInitialize.Dequeue();
                 if (currentProcess.HasAllDependencies())
                 {
-                    currentProcess.Init();
                     currentProcess.isInitialized = true;
+                    currentProcess.Init();
+                    noChangeCount = 0;
                 }
                 else
+                {
                     processesToInitialize.Enqueue(currentProcess);
+                    noChangeCount++;
+                }
+
+                if (noChangeCount == processesToInitialize.Count + 1)
+                    break;
             }
         }
     }

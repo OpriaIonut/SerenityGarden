@@ -16,6 +16,11 @@ namespace SerenityGarden
             set { currentLevel = value; }
         }
 
+        private void Awake()
+        {
+            BaseAwakeCalls();
+        }
+
         public override void BaseStartCalls()
         {
             base.BaseStartCalls();

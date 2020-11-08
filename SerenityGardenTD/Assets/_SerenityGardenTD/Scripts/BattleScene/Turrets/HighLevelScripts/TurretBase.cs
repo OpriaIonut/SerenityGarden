@@ -89,13 +89,9 @@ namespace SerenityGarden
         }
         #endregion
 
-        public override void BaseStartCalls()
-        {
-            
-        }
-
         public override void BaseUpdateCalls()
         {
+            base.BaseUpdateCalls();
             if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
                 FindTarget();
             if (Time.time - LastAttackTime > AttackCooldown)

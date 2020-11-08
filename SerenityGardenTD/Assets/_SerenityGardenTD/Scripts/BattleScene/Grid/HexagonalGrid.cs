@@ -31,7 +31,7 @@ namespace SerenityGarden
         }
     }
 
-    public class HexagonalGrid : MonoBehaviour
+    public class HexagonalGrid : LogicProcessBase
     {
         public GameObject playerBasePrefab;
         public GameObject hexagonPrefab;
@@ -41,14 +41,16 @@ namespace SerenityGarden
 
         public List<HexagonalBlock> gridCells = new List<HexagonalBlock>();
 
-        private bool startCalled = false;
+        public static List<HexagonalBlock> enemyGoal;
+
+        private void Awake()
+        {
+            BaseAwakeCalls();
+        }
 
         private void Start()
         {
-            startCalled = true;
-            if (gridCells.Count != 0)
-                ClearGrid();
-            LoadPresetGrid(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".json");
+            BaseStartCalls();
         }
 
         public void ClearGrid()
@@ -83,11 +85,13 @@ namespace SerenityGarden
                 List<float> xPos = new List<float>();
                 List<float> zPos = new List<float>();
                 float yPos = 0;
+                enemyGoal = new List<HexagonalBlock>();
                 for (int index = 0; index < gridCells.Count; index++)
                 {
                     gridCells[index].Type = (HexagonType)saveData.gridList.gridTypes[index];
                     if (gridCells[index].Type == HexagonType.PlayerBase)
                     {
+                        enemyGoal.Add(gridCells[index]);
                         yPos = gridCells[index].transform.position.y;
                         if (!xPos.Contains(gridCells[index].transform.position.x))
                             xPos.Add(gridCells[index].transform.position.x);
@@ -95,7 +99,7 @@ namespace SerenityGarden
                             zPos.Add(gridCells[index].transform.position.z);
                     }
                 }
-                if(startCalled)
+                if(isInitialized)
                 {
                     float xMean = 0;
                     float zMean = 0;
@@ -108,6 +112,8 @@ namespace SerenityGarden
                     zMean /= zPos.Count;
 
                     Instantiate(playerBasePrefab, new Vector3(xMean, yPos, zMean), Quaternion.identity);
+
+                    
                 }
             }
             catch (Exception ex)
@@ -147,7 +153,10 @@ namespace SerenityGarden
                     if (!cond)
                         DestroyImmediate(block.gameObject);
                     else
+                    {
+                        block.listId = gridCells.Count;
                         gridCells.Add(block);
+                    }
                 }
                 flip = false;
             }
@@ -162,6 +171,18 @@ namespace SerenityGarden
                 else
                     item.gameObject.SetActive(false);
             }
+        }
+
+        public override void Init()
+        {
+            if (gridCells.Count != 0)
+                ClearGrid();
+            LoadPresetGrid(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".json");
+        }
+
+        public override bool HasAllDependencies()
+        {
+            return true;
         }
     }
 }
