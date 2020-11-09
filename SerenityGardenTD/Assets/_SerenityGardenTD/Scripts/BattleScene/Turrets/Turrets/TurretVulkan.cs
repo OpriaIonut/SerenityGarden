@@ -28,6 +28,7 @@ namespace SerenityGarden
 
         public override void FindTarget()
         {
+            //Can attack only flying and ambusher enemies.
             Collider[] hits = Physics.OverlapSphere(transform.position, Range);
             EnemyBase _target = null;
             EnemyBase aux;
@@ -49,6 +50,11 @@ namespace SerenityGarden
             }
             foundTarget = _target;
             lastSearchTargetTime = Time.time;
+        }
+
+        public override void Init()
+        {
+            //Intentionally left empty
         }
     }
 }

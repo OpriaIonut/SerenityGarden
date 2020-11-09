@@ -28,6 +28,7 @@ namespace SerenityGarden
 
         public override void FindTarget()
         {
+            //It can hit any enemy type, same as player base
             Collider[] hits = Physics.OverlapSphere(transform.position, Range);
             EnemyBase _target = null;
             EnemyBase aux;
@@ -46,6 +47,11 @@ namespace SerenityGarden
             }
             foundTarget = _target;
             lastSearchTargetTime = Time.time;
+        }
+
+        public override void Init()
+        {
+            //Intentionally left empty
         }
     }
 }

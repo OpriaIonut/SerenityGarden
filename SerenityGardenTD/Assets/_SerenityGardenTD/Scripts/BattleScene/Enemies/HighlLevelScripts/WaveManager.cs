@@ -9,6 +9,7 @@ namespace SerenityGarden
         public float spawnDelay = 0.5f;
         public GameObject[] enemyPrefabs;
 
+        //List of spawn points, that will be found based on the grid system
         private List<HexagonalBlock> spawnPoints;
         private HexagonalGrid gridManager;
 
@@ -42,6 +43,9 @@ namespace SerenityGarden
             FindSpawnPoints();
         }
 
+        /// <summary>
+        /// Find the spawn points based on the grid system.
+        /// </summary>
         private void FindSpawnPoints()
         {
             foreach(HexagonalBlock item in gridManager.gridCells)
@@ -53,17 +57,22 @@ namespace SerenityGarden
             }
         }
 
+        /// <summary>
+        /// Spawn an enemy at a certain location
+        /// </summary>
+        /// <param name="index"></param>
+        /// <param name="spawnBlock"></param>
         private void SpawnEnemy(int index, HexagonalBlock spawnBlock)
         {
             Vector3 spawnPosition = spawnBlock.transform.position;
-            EnemyBase clone = Instantiate(enemyPrefabs[index], transform).GetComponent<EnemyBase>();
-            clone.transform.position = spawnPosition;
+            EnemyBase clone = Instantiate(enemyPrefabs[index], spawnPosition, Quaternion.identity).GetComponent<EnemyBase>();
             clone.SetStartBlock(spawnBlock);
             lastSpawnTime = Time.time;
         }
 
         public override bool HasAllDependencies()
         {
+            //This class is dependent on the grid manager
             return gridManager.isInitialized;
         }
     }

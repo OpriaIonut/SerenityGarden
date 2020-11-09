@@ -6,6 +6,7 @@ namespace SerenityGarden
 {
     public abstract class BuildableTurret : TurretBase
     {
+        //Block that the turret will sit on
         public HexagonalBlock hexagonBlock;
         public TurretUpgradeScriptable turretUpgradePattern;
 
@@ -27,6 +28,10 @@ namespace SerenityGarden
             SetLevelProp(0);
         }
 
+        /// <summary>
+        /// Will set the turret to be at the give level
+        /// </summary>
+        /// <param name="level">starts at 0</param>
         public void SetLevelProp(int level)
         {
             turretType = turretUpgradePattern.turretType;

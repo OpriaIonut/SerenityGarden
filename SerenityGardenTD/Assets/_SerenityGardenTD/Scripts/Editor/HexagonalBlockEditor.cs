@@ -13,6 +13,7 @@ namespace SerenityGarden
         private string[] dropdownOptions;
         private void OnEnable()
         {
+            //Display a dropdown with the enum values
             block = (HexagonalBlock)target;
             List<string> options = new List<string>();
             foreach (HexagonType suit in (HexagonType[])Enum.GetValues(typeof(HexagonType)))
@@ -26,6 +27,7 @@ namespace SerenityGarden
         {
             base.OnInspectorGUI();
 
+            //Change the type of the block based on what we clicked in the editor. This will in turn change it's material and in the future something else
             HexagonType aux = (HexagonType)EditorGUILayout.Popup("Hexagon Type: ", (int)block.Type, dropdownOptions);
             if (aux != block.Type)
                 block.Type = aux;

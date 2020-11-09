@@ -27,6 +27,7 @@ namespace SerenityGarden
 
         public override void FindTarget()
         {
+            //Search for a target, it can detect any enemy type
             Collider[] hits = Physics.OverlapSphere(transform.position, Range);
             EnemyBase _target = null;
             EnemyBase aux;
@@ -34,13 +35,16 @@ namespace SerenityGarden
             foreach (Collider item in hits)
             {
                 aux = item.gameObject.GetComponent<EnemyBase>();
+                //If we have a locked-on target, then focus it
+                if (aux != null && aux == LockOnManager.SelectedEnemy)
+                {
+                    _target = aux;
+                    break;
+                }
                 if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
                 {
                     _target = aux;
                     minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
-
-                    if (aux == LockOnManager.SelectedEnemy)
-                        break;
                 }
             }
             foundTarget = _target;
@@ -59,6 +63,11 @@ namespace SerenityGarden
         {
             Debug.Log("Game over!");
             Destroy(this.gameObject);
+        }
+
+        public override void Init()
+        {
+            //Intentionally left empty
         }
     }
 }

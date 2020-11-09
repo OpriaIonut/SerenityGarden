@@ -28,6 +28,7 @@ namespace SerenityGarden
 
         public override void FindTarget()
         {
+            //It will search once for ranged enemies, but if it doesn't find any, it will search for melee enemies.
             Collider[] hits = Physics.OverlapSphere(transform.position, Range);
             EnemyBase _target = null;
             EnemyBase aux;
@@ -67,6 +68,11 @@ namespace SerenityGarden
             }
             foundTarget = _target;
             lastSearchTargetTime = Time.time;
+        }
+
+        public override void Init()
+        {
+            //Intentionally left empty
         }
     }
 }

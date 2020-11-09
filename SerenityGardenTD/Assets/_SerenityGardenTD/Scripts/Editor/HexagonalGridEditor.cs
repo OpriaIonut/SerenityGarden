@@ -25,16 +25,19 @@ namespace SerenityGarden
 
         public override void OnInspectorGUI()
         {
+            //Draw object fields for prefabs needed
             grid.playerBasePrefab = (GameObject)EditorGUILayout.ObjectField("PlayerBasePrefab: ", grid.playerBasePrefab, typeof(GameObject));
             GameObject walkableArea = (GameObject)EditorGUILayout.ObjectField("Walkable Area: ", grid.walkableArea, typeof(GameObject));
             if (walkableArea.GetComponent<MeshRenderer>())
                 grid.walkableArea = walkableArea;
 
-            grid.diameter = (float)EditorGUILayout.FloatField("Hexagon Diameter: ", grid.diameter);
+            //Variables used for grid scale calculation
+            grid.diameter = EditorGUILayout.FloatField("Hexagon Diameter: ", grid.diameter);
             grid.offset = EditorGUILayout.FloatField("Hexagon Offset: ", grid.offset);
 
             if(GUILayout.Button("Generate Grid"))
             {
+                //If we clicked generate grid, we first need to clear the previous one
                 grid.ClearGrid();
                 grid.CreateGrid();
             }
@@ -45,16 +48,21 @@ namespace SerenityGarden
 
             if(GUILayout.Button("Load Preset"))
             {
+                //Will load the grid setup from the file with the same name as the scene
                 grid.ClearGrid();
                 grid.LoadPresetGrid(savePath);
             }
 
             if(GUILayout.Button("Save Preset"))
             {
+                //Will save the current grid to a preset
                 SavePreset();
             }
         }
 
+        /// <summary>
+        /// Will save the current grid to a file with the same name as the scene
+        /// </summary>
         private void SavePreset()
         {
             if (grid.gridCells.Count == 0)
@@ -63,6 +71,7 @@ namespace SerenityGarden
                 return;
             }
 
+            //Save all data
             List<int> gridType = new List<int>();
             foreach(HexagonalBlock item in grid.gridCells)
             {

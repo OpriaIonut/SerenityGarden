@@ -8,6 +8,9 @@ using System;
 
 namespace SerenityGarden
 {
+    /// <summary>
+    /// Class used to display the list in the editor.
+    /// </summary>
     public class GridList
     {
         public List<int> gridTypes;
@@ -17,6 +20,9 @@ namespace SerenityGarden
         }
     }
 
+    /// <summary>
+    /// Class used for saving grid preset to a json file.
+    /// </summary>
     public class GridSaveData
     {
         public float diameter;
@@ -33,12 +39,16 @@ namespace SerenityGarden
 
     public class HexagonalGrid : LogicProcessBase
     {
+        [Header("Prefabs")]
         public GameObject playerBasePrefab;
         public GameObject hexagonPrefab;
         public GameObject walkableArea;
+
+        [Header("Scaling properties")]
         public float diameter;
         public float offset = -0.15f;
 
+        //Reference to all instantiated blocks
         public List<HexagonalBlock> gridCells = new List<HexagonalBlock>();
 
         public static List<HexagonalBlock> enemyGoal;
@@ -53,6 +63,21 @@ namespace SerenityGarden
             BaseStartCalls();
         }
 
+        public override void Init()
+        {
+            if (gridCells.Count != 0)
+                ClearGrid();
+            LoadPresetGrid(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".json");
+        }
+
+        public override bool HasAllDependencies()
+        {
+            return true;
+        }
+
+        /// <summary>
+        /// Destroy the entire grid
+        /// </summary>
         public void ClearGrid()
         {
             for(int index = 0; index < gridCells.Count; index++)
@@ -65,16 +90,22 @@ namespace SerenityGarden
             gridCells.Clear();
         }
 
+        /// <summary>
+        /// Load the grid from a preset file, if it exists
+        /// </summary>
+        /// <param name="savePath"></param>
         public void LoadPresetGrid(string savePath)
         {
             if (!File.Exists(savePath))
             {
+                //If we didn't find the file, then throw an error
                 Debug.LogError("Could not load preset grid.");
                 CreateGrid();
                 return;
             }
             try
             {
+                //Get contents from json file
                 string contents = File.ReadAllText(savePath);
                 GridSaveData saveData = JsonConvert.DeserializeObject<GridSaveData>(contents);
                 diameter = saveData.diameter;
@@ -82,6 +113,7 @@ namespace SerenityGarden
 
                 CreateGrid();
 
+                //Set the properties for each grid cell
                 List<float> xPos = new List<float>();
                 List<float> zPos = new List<float>();
                 float yPos = 0;
@@ -101,6 +133,7 @@ namespace SerenityGarden
                 }
                 if(isInitialized)
                 {
+                    //If it is initialized, then calculate where to spawn the player's base
                     float xMean = 0;
                     float zMean = 0;
                     for(int index = 0; index < xPos.Count; index++)
@@ -121,6 +154,9 @@ namespace SerenityGarden
             }
         }
 
+        /// <summary>
+        /// The grid will be created based on diameter, radius, walkable area
+        /// </summary>
         public void CreateGrid()
         {
             ClearGrid();
@@ -130,6 +166,8 @@ namespace SerenityGarden
             //Some math formula for calculating the side of a echilateral hexagon based on the radius
             float sideLength = Mathf.Abs(diameter * Mathf.Sin(30));
 
+            //The spawn method will be left to right, down to up
+            //In order to have a hexagonal grid, some cells will be higher than others, this flip bool will control that
             bool flip = false;
             float zTarget;
             for (float z = bounds.min.z + diameter / 2; z < bounds.max.z; z += diameter + offset / 4)
@@ -139,9 +177,11 @@ namespace SerenityGarden
                     zTarget = flip ? z : z + diameter / 2;
                     flip = !flip;
 
+                    //Place the block
                     HexagonalBlock block = Instantiate(hexagonPrefab, transform).GetComponent<HexagonalBlock>();
                     block.PlaceHexagon(new Vector3(x, bounds.min.y, zTarget), diameter);
 
+                    //Check to see if it is within the playable area
                     bool cond = false;
                     RaycastHit[] hit = Physics.RaycastAll(new Ray(block.transform.position + Vector3.up, Vector3.down));
                     foreach (RaycastHit item in hit)
@@ -149,7 +189,7 @@ namespace SerenityGarden
                         if (item.transform.gameObject.tag == "WalkableArea")
                             cond = true;
                     }
-                    if (!cond)
+                    if (!cond) //If it isn't, then destroy a gameobject
                         DestroyImmediate(block.gameObject);
                     else
                     {
@@ -161,6 +201,10 @@ namespace SerenityGarden
             }
         }
 
+        /// <summary>
+        /// At certain points in the game, I will want to show only certain types of hexagons
+        /// </summary>
+        /// <param name="type"></param>
         public void ShowCellsOfType(HexagonType type)
         {
             foreach(HexagonalBlock item in gridCells)
@@ -170,18 +214,6 @@ namespace SerenityGarden
                 else
                     item.gameObject.SetActive(false);
             }
-        }
-
-        public override void Init()
-        {
-            if (gridCells.Count != 0)
-                ClearGrid();
-            LoadPresetGrid(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".json");
-        }
-
-        public override bool HasAllDependencies()
-        {
-            return true;
         }
     }
 }

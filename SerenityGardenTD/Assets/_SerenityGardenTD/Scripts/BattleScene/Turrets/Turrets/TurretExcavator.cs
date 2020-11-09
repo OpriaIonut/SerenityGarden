@@ -23,10 +23,15 @@ namespace SerenityGarden
 
         public override void Attack()
         {
-            //Intentionally left empty
+            //To do: implement reward money
         }
 
         public override void FindTarget()
+        {
+            //Intentionally left empty, because it can't attack any enemies
+        }
+
+        public override void Init()
         {
             //Intentionally left empty
         }

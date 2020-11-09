@@ -15,6 +15,6 @@ namespace SerenityGarden
 
         void FindNextBlock();
         void Move();
-        bool CheckReached();
+        bool CheckReachedTarget();
     }
 }

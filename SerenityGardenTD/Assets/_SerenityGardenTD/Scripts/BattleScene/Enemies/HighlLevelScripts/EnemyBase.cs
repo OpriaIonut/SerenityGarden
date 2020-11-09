@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    //The types of enemies. Will influence their attack patterns, turret FindTarget and other stuff
     public enum EnemyType
     {
         Melee,
@@ -14,10 +15,14 @@ namespace SerenityGarden
 
     public abstract class EnemyBase : LogicProcessBase, IMovable, IAttacker<TurretBase>, IDestroyable
     {
+        //Scriptable object that will set the starting properties of the current enemy
         public EnemyScriptable enemyScriptable;
+
+        //Reference to the navigation manager and the horizontal grid, used for navigation mostly
         private NavigationManager navigationManager;
         private HexagonalGrid hexagonalGrid;
 
+        //Health property.
         private int health;
 
         #region Properties
@@ -33,24 +38,31 @@ namespace SerenityGarden
                     Die();
             }
         }
+
+        //Automatic properties that don't need variables, because they are very simple.
         public int DestroyReward { get; set; }
 
+        //Properties inherited from IMovable interface
         #region IMovable
-        public HexagonalBlock CurrentBlock { get; set; }
-        public HexagonalBlock EndBlock { get; set; }
-        public HexagonalBlock NextBlock { get; set; }
-        public float Speed { get; set; } = 1.0f;
+        public HexagonalBlock CurrentBlock { get; set; }        //The current hexagon that the enemy sits on
+        public HexagonalBlock EndBlock { get; set; }            //The goal block that it needs to reach
+        public HexagonalBlock NextBlock { get; set; }           //The next block that it will move towards
+        public float Speed { get; set; } = 1.0f;                //Movement speed
+        //Used to set how close enough to the NextBlock until we consider that it reached the destination
         public float ReachedThreshold { get; set; } = 0.5f;
+        //Bool to know if it reached the end goal
         public bool ReachedDestination { get; set; } = false;
         #endregion
 
+        //Properties inherited from IAttacker interface
         #region IAttacker
-        public TurretBase Target { get; set; }
+        public TurretBase Target { get; set; }      //Turret that is in it's range, if it is, it will attack it
         public int Damage { get; set; }
         public float Range { get; set; }
-        public float AttackCooldown { get; set; }
+        public float AttackCooldown { get; set; }   //How often it attacks
         public float LastAttackTime { get; set; }
-        public float SearchTargetCooldown { get; set; } = 0.05f;
+        //We won't search on all frames because it may get expensive. It's better if we check only on certain frames
+        public float SearchTargetCooldown { get; set; } = 0.1f;
         public float LastSearchTargetTime { get; set; }
         #endregion
 
@@ -66,24 +78,29 @@ namespace SerenityGarden
         {
             base.BaseUpdateCalls();
             if (NextBlock == null)
-                FindNextBlock();
+                FindNextBlock();    //If we don't have a destination, the search for it
             else
             {
-                ReachedDestination = CheckReached();
+                //Otherwise, check to see if we reached the destination
+                ReachedDestination = CheckReachedTarget();
             }
 
+            //If we didn't reach the destination then move towards it
             if (!ReachedDestination && Target == null)
                 Move();
 
+            //At certain time intervals check to find if a turret/something that we can attack is in range
             if (Time.time - LastSearchTargetTime > SearchTargetCooldown && Target == null)
                 FindTarget();
 
+            //At certain time intervals, attack the target, if it exists
             if (Time.time - LastAttackTime > AttackCooldown && Target != null)
                 Attack();
         }
 
         public override void Init()
         {
+            //Find the goal that we need to reach
             float minDist = float.MaxValue;
             for(int index = 0; index < HexagonalGrid.enemyGoal.Count; index++)
             {
@@ -97,6 +114,7 @@ namespace SerenityGarden
             if (CurrentBlock != null)
                 NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
 
+            //Set the curren't enemy's properties based on the scriptable object.
             EnemyType = enemyScriptable.enemyType;
             Health = enemyScriptable.health;
             Speed = enemyScriptable.speed;
@@ -106,7 +124,10 @@ namespace SerenityGarden
             DestroyReward = enemyScriptable.killReward;
         }
 
-        //Needs to be called by the script that
+        /// <summary>
+        /// Needs to be called by the script that instantiates this enemy
+        /// </summary>
+        /// <param name="startBlock"></param>
         public void SetStartBlock(HexagonalBlock startBlock)
         {
             CurrentBlock = startBlock;
@@ -116,17 +137,17 @@ namespace SerenityGarden
 
         public override bool HasAllDependencies()
         {
-            if (hexagonalGrid.isInitialized && navigationManager.isInitialized)
-                return true;
-            return false;
+            //This script is dependent on the hexagonal grid and the navigation system
+            return hexagonalGrid.isInitialized && navigationManager.isInitialized;
         }
 
         public virtual void Move()
         {
+            //Move method that doesn't use pysics, because it doesn't need to be precise
             transform.position = Vector3.MoveTowards(transform.position, NextBlock.transform.position, Speed * Time.deltaTime);
         }
 
-        public bool CheckReached()
+        public bool CheckReachedTarget()
         {
             if (NextBlock == null)
             {
@@ -135,6 +156,7 @@ namespace SerenityGarden
             }
             else if (HelperMethods.SquaredDistance(transform.position, NextBlock.transform.position) < ReachedThreshold)
             {
+                //If we have reached the destination, then find a new one
                 FindNextBlock();
                 if (NextBlock == null || NextBlock == CurrentBlock)
                     return true;
@@ -156,6 +178,7 @@ namespace SerenityGarden
 
         public virtual void FindTarget()
         {
+            //Using physics.OverlapSphere, check to see if a turret is in range and find the closest one
             Collider[] hits = Physics.OverlapSphere(transform.position, Range);
             TurretBase _target = null;
             TurretBase aux;

@@ -28,11 +28,13 @@ namespace SerenityGarden
 
         public override void Move()
         {
+            //The movement of ambushers is different from the others, it doesn't use the grid system. It will go straight towards the end goal
             transform.position = Vector3.MoveTowards(transform.position, EndBlock.transform.position, Speed * Time.deltaTime);
         }
 
         public override void FindTarget()
         {
+            //Also, for target, it will only consider the base as a target
             Collider[] hits = Physics.OverlapSphere(transform.position, Range);
             TurretBase _target = null;
             TurretBase aux;

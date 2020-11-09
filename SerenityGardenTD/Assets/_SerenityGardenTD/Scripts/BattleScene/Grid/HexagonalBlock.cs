@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    //The type of the hexagon
     public enum HexagonType
     {
         Walkable,
@@ -16,9 +17,12 @@ namespace SerenityGarden
 
     public class HexagonalBlock : MonoBehaviour
     {
+        [Tooltip("The material list needs to have the same order as the HexagonType enum.")]
         public Material[] materialList;
+        //The index of this block in the HexagonalGrid's list
         public int listId;
 
+        //Property that will also change the material when changing the property
         private HexagonType type;
         public HexagonType Type
         {
@@ -34,6 +38,11 @@ namespace SerenityGarden
 
         private MeshRenderer renderer;
 
+        /// <summary>
+        /// Place the block at the given position and scale it
+        /// </summary>
+        /// <param name="pos"></param>
+        /// <param name="diameter"></param>
         public void PlaceHexagon(Vector3 pos, float diameter)
         {
             transform.position = pos;
