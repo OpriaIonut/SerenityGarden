@@ -7,7 +7,7 @@ namespace SerenityGarden
     public abstract class BuildableTurret : TurretBase
     {
         //Block that the turret will sit on
-        public HexagonalBlock hexagonBlock;
+        [HideInInspector] public HexagonalBlock hexagonBlock;
         public TurretUpgradeScriptable turretUpgradePattern;
 
         private int currentLevel;
@@ -36,6 +36,7 @@ namespace SerenityGarden
         {
             turretType = turretUpgradePattern.turretType;
 
+            maxHealth = turretUpgradePattern.levelProp[level].health;
             Health = turretUpgradePattern.levelProp[level].health;
             Damage = turretUpgradePattern.levelProp[level].damage;
             Range = turretUpgradePattern.levelProp[level].range;
@@ -51,6 +52,15 @@ namespace SerenityGarden
                 currentLevel++;
                 SetLevelProp(currentLevel);
             }
+        }
+
+        public override void Die()
+        {
+            if (turretType == TurretType.Excavator)
+                hexagonBlock.Type = HexagonType.ResourceExtraction;
+            else
+                hexagonBlock.Type = HexagonType.TurretBuildable;
+            base.Die();
         }
     }
 }

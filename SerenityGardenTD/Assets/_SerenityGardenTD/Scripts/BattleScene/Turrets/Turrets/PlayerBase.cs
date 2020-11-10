@@ -15,7 +15,8 @@ namespace SerenityGarden
         {
             BaseStartCalls();
             Range = 5;
-            Health = 500;
+            maxHealth = 500;
+            Health = maxHealth;
             Damage = 25;
             AttackCooldown = 5;
         }

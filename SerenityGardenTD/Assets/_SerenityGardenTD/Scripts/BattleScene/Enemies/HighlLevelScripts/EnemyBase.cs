@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SerenityGarden
 {
@@ -17,6 +18,8 @@ namespace SerenityGarden
     {
         //Scriptable object that will set the starting properties of the current enemy
         public EnemyScriptable enemyScriptable;
+        public float rotationSpeed = 1.0f;
+        public Image healthbarUI;
 
         //Reference to the navigation manager and the horizontal grid, used for navigation mostly
         private NavigationManager navigationManager;
@@ -24,6 +27,7 @@ namespace SerenityGarden
 
         //Health property.
         private int health;
+        protected int maxHealth;
 
         #region Properties
 
@@ -34,6 +38,9 @@ namespace SerenityGarden
             set 
             { 
                 health = value;
+                //Update the ui if the enemy was initialized properly
+                if (maxHealth != 0)
+                    healthbarUI.rectTransform.localScale = new Vector3(health / (float)maxHealth, 1.0f, 1.0f);
                 if (health < 0)
                     Die();
             }
@@ -112,11 +119,20 @@ namespace SerenityGarden
                 }
             }
             if (CurrentBlock != null)
+            {
                 NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
+                if (NextBlock != null)
+                {
+                    Vector3 targetDirection = NextBlock.transform.position - transform.position;
+                    Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2, 0.0f);
+                    transform.rotation = Quaternion.LookRotation(newDirection);
+                }
+            }
 
             //Set the curren't enemy's properties based on the scriptable object.
             EnemyType = enemyScriptable.enemyType;
-            Health = enemyScriptable.health;
+            maxHealth = enemyScriptable.health;
+            Health = maxHealth;
             Speed = enemyScriptable.speed;
             Range = enemyScriptable.range;
             Damage = enemyScriptable.damage;
@@ -131,8 +147,16 @@ namespace SerenityGarden
         public void SetStartBlock(HexagonalBlock startBlock)
         {
             CurrentBlock = startBlock;
-            if(EndBlock != null)
+            if (EndBlock != null)
+            {
                 NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
+                if(NextBlock != null)
+                {
+                    Vector3 targetDirection = NextBlock.transform.position - transform.position;
+                    Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2, 0.0f);
+                    transform.rotation = Quaternion.LookRotation(newDirection);
+                }
+            }
         }
 
         public override bool HasAllDependencies()
@@ -143,6 +167,11 @@ namespace SerenityGarden
 
         public virtual void Move()
         {
+            //Rotate the object towards the target destination
+            Vector3 targetDirection = NextBlock.transform.position - transform.position;
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotationSpeed * Time.deltaTime, 0.0f);
+            transform.rotation = Quaternion.LookRotation(newDirection);
+
             //Move method that doesn't use pysics, because it doesn't need to be precise
             transform.position = Vector3.MoveTowards(transform.position, NextBlock.transform.position, Speed * Time.deltaTime);
         }
@@ -192,6 +221,7 @@ namespace SerenityGarden
                     minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
                 }
             }
+
             Target = _target;
             LastSearchTargetTime = Time.time;
         }

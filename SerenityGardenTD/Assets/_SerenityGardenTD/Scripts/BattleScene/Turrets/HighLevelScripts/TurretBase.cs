@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace SerenityGarden
 {
@@ -21,6 +22,7 @@ namespace SerenityGarden
         public GameObject rangePrefab;
         [HideInInspector] public TurretType turretType;
         public GameObject gfx;
+        public Image healthbarUI;
 
         //A delay time for searching for a target, because it may be an expensive process to do every frame
         protected float searchTargetDelay = 0.1f;
@@ -30,6 +32,7 @@ namespace SerenityGarden
         protected float attackCooldown;
         protected float lastAttackTime;
 
+        protected int maxHealth;
         protected int health;
         protected int damage;
         protected float range;
@@ -44,6 +47,8 @@ namespace SerenityGarden
             set
             {
                 health = value;
+                if(maxHealth != 0)
+                    healthbarUI.rectTransform.localScale = new Vector3(health / (float)maxHealth, 1.0f, 1.0f);
                 if (value < 0)
                     Die();
             }
