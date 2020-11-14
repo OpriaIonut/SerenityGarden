@@ -9,14 +9,15 @@ namespace SerenityGarden
     {
         public int health;
         public int damage;
-        public int range;
-        public float upgradeCost;
-        public float sellReward;
+        public float attackCooldown;
+        public float range;
+        public int upgradeCost;
+        public int sellReward;
         public GameObject gfx;
     }
 
     [CreateAssetMenu(fileName = "TurretUpgrade", menuName = "ScriptableObjects/TurretUpgrade")]
-    public class TurretUpgradeScriptable : ScriptableObject
+    public class TurretStatus : ScriptableObject
     {
         public TurretType turretType;
         public TurretLevel[] levelProp;

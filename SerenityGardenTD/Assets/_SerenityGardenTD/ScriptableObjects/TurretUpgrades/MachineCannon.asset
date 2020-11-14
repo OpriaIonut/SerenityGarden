@@ -16,18 +16,21 @@ MonoBehaviour:
   levelProp:
   - health: 50
     damage: 10
+    attackCooldown: 3
     range: 3
     upgradeCost: 100
     sellReward: 50
     gfx: {fileID: 0}
   - health: 100
     damage: 17
+    attackCooldown: 2.5
     range: 4
     upgradeCost: 150
     sellReward: 100
     gfx: {fileID: 0}
   - health: 150
     damage: 25
+    attackCooldown: 2
     range: 5
     upgradeCost: 200
     sellReward: 150

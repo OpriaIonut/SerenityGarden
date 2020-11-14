@@ -9,6 +9,12 @@ namespace SerenityGarden
         //Variables used to move the bullet using the physics system
         public float force = 100.0f;
         private Rigidbody rb;
+        public bool enemyBullet = true;
+
+        private void Start()
+        {
+            Destroy(this.gameObject, 10.0f);
+        }
 
         /// <summary>
         /// Should be called by the script that instantiates the bullet.
@@ -24,12 +30,24 @@ namespace SerenityGarden
         public int damage;
         private void OnTriggerEnter(Collider other)
         {
-            TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
-            if (turret != null)
+            if(enemyBullet)
             {
-                //If we hit a turret, then damage it and destroy the bullet.
-                turret.Health -= damage;
-                Destroy(this.gameObject);
+                TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
+                if (turret != null)
+                {
+                    //If we hit a turret, then damage it and destroy the bullet.
+                    turret.Health -= damage;
+                    Destroy(this.gameObject);
+                }
+            }
+            else //It is a turret bullet
+            {
+                EnemyBase enemy = other.transform.root.gameObject.GetComponent<EnemyBase>();
+                if (enemy != null)
+                {
+                    enemy.Health -= damage;
+                    Destroy(this.gameObject);
+                }
             }
         }
     }

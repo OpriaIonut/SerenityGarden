@@ -53,11 +53,7 @@ namespace SerenityGarden
                     Die();
             }
         }
-        public int DestroyReward 
-        { 
-            get { return 0; } 
-            set { } 
-        }
+        public int DestroyReward { get; set; }
         public EnemyBase Target 
         { 
             get { return foundTarget; } 
@@ -96,16 +92,6 @@ namespace SerenityGarden
             set { lastSearchTargetTime = value; }
         }
         #endregion
-
-        public override void BaseUpdateCalls()
-        {
-            base.BaseUpdateCalls();
-            //Search for a target at certain intervals
-            if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
-                FindTarget();
-            if (Time.time - LastAttackTime > AttackCooldown)
-                Attack();
-        }
 
         public void DrawRange(bool draw)
         {

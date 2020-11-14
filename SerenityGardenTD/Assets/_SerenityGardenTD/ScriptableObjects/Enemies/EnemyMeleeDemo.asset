@@ -16,6 +16,6 @@ MonoBehaviour:
   health: 50
   speed: 0.5
   damage: 1
-  range: 0.75
+  range: 1
   attackCooldown: 1
-  killReward: 0
+  killReward: 5

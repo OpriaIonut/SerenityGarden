@@ -10,28 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b67bae2a34ee1194d8f2f6b72c2684cd, type: 3}
-  m_Name: Excavator
+  m_Name: PlayerBase
   m_EditorClassIdentifier: 
   turretType: 6
   levelProp:
-  - health: 100
-    damage: 5
-    attackCooldown: 10
-    range: 0
-    upgradeCost: 250
-    sellReward: 125
-    gfx: {fileID: 0}
-  - health: 150
-    damage: 10
-    attackCooldown: 7.5
-    range: 0
-    upgradeCost: 325
-    sellReward: 150
-    gfx: {fileID: 0}
-  - health: 250
+  - health: 500
     damage: 15
     attackCooldown: 5
-    range: 0
-    upgradeCost: 400
-    sellReward: 200
+    range: 5
+    upgradeCost: 0
+    sellReward: 0
     gfx: {fileID: 0}

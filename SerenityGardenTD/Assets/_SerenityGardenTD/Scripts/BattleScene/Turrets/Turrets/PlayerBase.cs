@@ -6,6 +6,11 @@ namespace SerenityGarden
 {
     public sealed class PlayerBase : TurretBase
     {
+        public Transform objToRotate;
+        public GameObject bulletPrefab;
+        public Transform firePoint;
+        public TurretStatus baseStatus;
+
         private void Awake()
         {
             BaseAwakeCalls();
@@ -14,28 +19,33 @@ namespace SerenityGarden
         private void Start()
         {
             BaseStartCalls();
-            Range = 5;
-            maxHealth = 500;
+            Range = baseStatus.levelProp[0].range;
+            maxHealth = baseStatus.levelProp[0].health;
             Health = maxHealth;
-            Damage = 25;
-            AttackCooldown = 5;
+            Damage = baseStatus.levelProp[0].damage;
+            AttackCooldown = baseStatus.levelProp[0].attackCooldown;
         }
 
         private void Update()
         {
             BaseUpdateCalls();
+            //Search for a target at certain intervals
+            if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
+                FindTarget();
+            if (Time.time - LastAttackTime > AttackCooldown)
+                Attack();
         }
 
         public override void FindTarget()
         {
             //Search for a target, it can detect any enemy type
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
             EnemyBase _target = null;
             EnemyBase aux;
             float minDist = float.MaxValue;
             foreach (Collider item in hits)
             {
-                aux = item.gameObject.GetComponent<EnemyBase>();
+                aux = item.transform.root.gameObject.GetComponent<EnemyBase>();
                 //If we have a locked-on target, then focus it
                 if (aux != null && aux == LockOnManager.SelectedEnemy)
                 {
@@ -54,9 +64,14 @@ namespace SerenityGarden
 
         public override void Attack()
         {
-            if(Target != null)
+            if (Target != null)
             {
-
+                //Shoot a bullet towards it
+                BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
+                bulletScript.damage = Damage;
+                bulletScript.enemyBullet = false;
+                bulletScript.SetTarget(Target.transform.position);
+                LastAttackTime = Time.time;
             }
         }
 

@@ -1,16 +1,53 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 namespace SerenityGarden
 {
     public class TurretBuildManager : MonoBehaviour
     {
-       [Header("UI components")]
+        #region Singleton
+        public static TurretBuildManager instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Warning! There are multiple instances of TurretBuildManager in the scene. Deleting from: " + gameObject.name);
+                Destroy(this.gameObject);
+            }
+            else
+                instance = this;
+        }
+        #endregion
+
+        public int startMoney;
+
+        private int money;
+        public int Money
+        {
+            get { return money; }
+            set 
+            {
+                money = value;
+                moneyText.text = "$" + money;
+            }
+        }
+
+        [Header("UI components")]
         public GameObject buildMenuUI;
         public GameObject inspectTurretUI;
         public GameObject buildableTurretsUI;
         public GameObject excavatorUI;
+
+        [Header("Money texts")]
+        public TextMeshProUGUI moneyText;
+        public TextMeshProUGUI sellText;
+        public TextMeshProUGUI repairText;
+        public TextMeshProUGUI upgradeText;
+
+        [Tooltip("Be careful to put them in the right order (the order from the next field.")]
+        public TextMeshProUGUI[] turretBuildCostText;
 
         //The prefabs for the turrets that we can build
         public GameObject[] turretPrefabs;
@@ -21,6 +58,23 @@ namespace SerenityGarden
         private void Start()
         {
             sceneClickManager = FindObjectOfType<SceneClickManager>();
+            for (int index = 0; index < turretPrefabs.Length; index++)
+            {
+                turretBuildCostText[index].text = "$" + turretPrefabs[index].GetComponent<BuildableTurret>().GetBuildCost();
+            }
+            Money = startMoney;
+        }
+
+        private void Update()
+        {
+            if(inspectTurretUI.activeInHierarchy && sceneClickManager.selectedTurret != null)
+            {
+                BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
+                if (buildable != null)
+                {
+                    repairText.text = "$" + buildable.GetRecoveryCost();
+                }
+            }
         }
 
         /// <summary>
@@ -34,6 +88,18 @@ namespace SerenityGarden
             {
                 inspectTurretUI.SetActive(true);
                 sceneClickManager.selectedTurret.DrawRange(true);
+
+                BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
+                if (buildable != null)
+                {
+                    if (buildable.GetUpgradeCost() == 0)
+                        upgradeText.text = "MAX";
+                    else
+                        upgradeText.text = "$" + buildable.GetUpgradeCost();
+                    sellText.text = "$" + buildable.DestroyReward;
+                }
+                else //It means that we selected the player base, and we don't have options for it yet
+                    inspectTurretUI.SetActive(false);   
             }
         }
 
@@ -71,20 +137,24 @@ namespace SerenityGarden
         /// Build the turret on the selected hexagon
         /// </summary>
         /// <param name="index"></param>
-        public void BuildTurret(int index)
+        public void _BuildTurret(int index)
         {
             if (sceneClickManager.selectedHexagon.Type != HexagonType.TurretBuildable && sceneClickManager.selectedHexagon.Type != HexagonType.ResourceExtraction)
+                return;
+
+            if (turretPrefabs[index].GetComponent<BuildableTurret>().GetBuildCost() > Money)
                 return;
 
             //Set the grid to be occupied, so that we can't build on it
             sceneClickManager.selectedHexagon.Type = HexagonType.Occupied;
 
-            //To do: decrease money
-
             //Build the turret
             Transform clone = Instantiate(turretPrefabs[index]).transform;
             clone.position = sceneClickManager.selectedHexagon.transform.position;
-            clone.GetComponent<BuildableTurret>().hexagonBlock = sceneClickManager.selectedHexagon;
+            BuildableTurret script = clone.GetComponent<BuildableTurret>();
+            script.hexagonBlock = sceneClickManager.selectedHexagon;
+
+            Money -= script.GetBuildCost();
 
             //Deselect the hexagon in the scene
             sceneClickManager.selectedHexagon = null;
@@ -94,12 +164,12 @@ namespace SerenityGarden
         /// <summary>
         /// Sell the selected turret
         /// </summary>
-        public void SellTurret()
+        public void _SellTurret()
         {
             BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
             if (buildable != null)
             {
-                //To do: give a reward
+                Money += buildable.DestroyReward;
 
                 //Reset the grid block to what it was before
                 if (buildable.turretType == TurretType.Excavator)
@@ -112,6 +182,40 @@ namespace SerenityGarden
                 Destroy(sceneClickManager.selectedTurret.gameObject);
                 sceneClickManager.selectedTurret = null;
                 inspectTurretUI.SetActive(false);
+            }
+        }
+
+        public void _RepairTurret()
+        {
+            if(sceneClickManager.selectedTurret != null)
+            {
+                BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
+                if(buildable != null)
+                {
+                    int recoveryCost = buildable.GetRecoveryCost();
+                    if (recoveryCost <= Money && buildable.StartRecovery())
+                        Money -= recoveryCost;
+                }
+            }
+        }
+
+        public void _UpgradeTurret()
+        {
+            if (sceneClickManager.selectedTurret != null)
+            {
+                BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
+                if (buildable != null)
+                {
+                    int upgradeCost = buildable.GetUpgradeCost();
+                    if (upgradeCost <= Money && buildable.Upgrade())
+                    {
+                        Money -= upgradeCost;
+
+                        sceneClickManager.selectedTurret.DrawRange(false);
+                        sceneClickManager.selectedTurret = null;
+                        inspectTurretUI.SetActive(false);
+                    }
+                }
             }
         }
     }

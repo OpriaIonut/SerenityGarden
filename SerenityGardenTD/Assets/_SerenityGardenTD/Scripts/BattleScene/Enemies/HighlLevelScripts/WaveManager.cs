@@ -67,6 +67,7 @@ namespace SerenityGarden
             Vector3 spawnPosition = spawnBlock.transform.position;
             EnemyBase clone = Instantiate(enemyPrefabs[index], spawnPosition, Quaternion.identity).GetComponent<EnemyBase>();
             clone.SetStartBlock(spawnBlock);
+            clone.transform.position += Vector3.up * 0.5f;
             lastSpawnTime = Time.time;
         }
 

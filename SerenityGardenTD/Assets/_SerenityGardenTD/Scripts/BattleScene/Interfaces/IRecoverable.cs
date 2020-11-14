@@ -8,8 +8,8 @@ namespace SerenityGarden
     {
         bool IsRecovering { get; set; }
         float RecoveryCostPer1Hp { get; set; }
-        float RecoverySpeed { get; set; }
+        float RecoveryPerSecond { get; set; }
 
-        void Recover();
+        bool StartRecovery();
     }
 }

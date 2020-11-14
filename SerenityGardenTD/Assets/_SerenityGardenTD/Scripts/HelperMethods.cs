@@ -16,5 +16,48 @@ namespace SerenityGarden
         {
             return (a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y) + (a.z - b.z) * (a.z - b.z);
         }
+
+        /// <summary>
+        /// Rotate a transform to point the Z axis towards a target. Y axis differencces will be ignored. The rotation is instanly
+        /// </summary>
+        /// <param name="transfToRotate"></param>
+        /// <param name="targetPos"></param>
+        /// <param name="yAxisLock">True - no movement will happen on the y axis</param>
+        public static void RotateObjTowardsTarget(Transform transfToRotate, Vector3 targetPos, bool yAxisLock)
+        {
+            if (yAxisLock)
+                targetPos.y = transfToRotate.position.y;
+            transfToRotate.LookAt(targetPos);
+        }
+
+        /// <summary>
+        /// Rotate a transform to point the Z axis towards a target. Y axis differencces will be ignored. The rotation is spread over multiple frames
+        /// </summary>
+        /// <param name="transfToRotate"></param>
+        /// <param name="targetPos"></param>
+        /// <param name="interpolation">Speed * Time.deltatime</param>
+        /// <param name="yAxisLock">True - no movement will happen on the y axis</param>
+        public static void RotateObjTowardsTarget(Transform transfToRotate, Vector3 targetPos, bool yAxisLock, float interpolation)
+        {
+            if (yAxisLock)
+                targetPos.y = transfToRotate.position.y;
+            Vector3 inter = Vector3.Lerp(transfToRotate.position, targetPos, interpolation);
+            transfToRotate.LookAt(inter);
+        }
+
+        /// <summary>
+        /// Move transform towards destination.
+        /// </summary>
+        /// <param name="transfToMove"></param>
+        /// <param name="destination"></param>
+        /// <param name="maxDist">Speed * Time.deltatime</param>
+        /// <param name="yAxisLock">True - no movement will happen on the y axis</param>
+        public static void MoveTowards(Transform transfToMove, Vector3 destination, float maxDist, bool yAxisLock)
+        {
+            Vector3 moveDestination = destination;
+            if(yAxisLock)
+                moveDestination.y = transfToMove.position.y;
+            transfToMove.position = Vector3.MoveTowards(transfToMove.position, moveDestination, maxDist);
+        }
     }
 }

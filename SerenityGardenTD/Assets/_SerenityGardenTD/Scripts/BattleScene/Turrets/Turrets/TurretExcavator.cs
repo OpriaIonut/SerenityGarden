@@ -6,6 +6,8 @@ namespace SerenityGarden
 {
     public class TurretExcavator : BuildableTurret
     {
+        public TurretBuildManager turretBuildManager;
+
         private void Awake()
         {
             BaseAwakeCalls();
@@ -14,6 +16,7 @@ namespace SerenityGarden
         private void Start()
         {
             BaseStartCalls();
+            turretBuildManager = TurretBuildManager.instance;
         }
 
         private void Update()
@@ -23,7 +26,8 @@ namespace SerenityGarden
 
         public override void Attack()
         {
-            //To do: implement reward money
+            turretBuildManager.Money += Damage;
+            LastAttackTime = Time.time;
         }
 
         public override void FindTarget()

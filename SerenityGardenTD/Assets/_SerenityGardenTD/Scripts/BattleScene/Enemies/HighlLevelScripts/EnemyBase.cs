@@ -123,9 +123,7 @@ namespace SerenityGarden
                 NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
                 if (NextBlock != null)
                 {
-                    Vector3 targetDirection = NextBlock.transform.position - transform.position;
-                    Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2, 0.0f);
-                    transform.rotation = Quaternion.LookRotation(newDirection);
+                    HelperMethods.RotateObjTowardsTarget(transform, NextBlock.transform.position, true);
                 }
             }
 
@@ -152,9 +150,7 @@ namespace SerenityGarden
                 NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
                 if(NextBlock != null)
                 {
-                    Vector3 targetDirection = NextBlock.transform.position - transform.position;
-                    Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2, 0.0f);
-                    transform.rotation = Quaternion.LookRotation(newDirection);
+                    HelperMethods.RotateObjTowardsTarget(transform, NextBlock.transform.position, true);
                 }
             }
         }
@@ -168,12 +164,10 @@ namespace SerenityGarden
         public virtual void Move()
         {
             //Rotate the object towards the target destination
-            Vector3 targetDirection = NextBlock.transform.position - transform.position;
-            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotationSpeed * Time.deltaTime, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDirection);
+            HelperMethods.RotateObjTowardsTarget(transform, NextBlock.transform.position, true, Speed * Time.deltaTime);
 
             //Move method that doesn't use pysics, because it doesn't need to be precise
-            transform.position = Vector3.MoveTowards(transform.position, NextBlock.transform.position, Speed * Time.deltaTime);
+            HelperMethods.MoveTowards(transform, NextBlock.transform.position, Speed * Time.deltaTime, true);
         }
 
         public bool CheckReachedTarget()
@@ -208,7 +202,7 @@ namespace SerenityGarden
         public virtual void FindTarget()
         {
             //Using physics.OverlapSphere, check to see if a turret is in range and find the closest one
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
             TurretBase _target = null;
             TurretBase aux;
             float minDist = float.MaxValue;
@@ -230,7 +224,7 @@ namespace SerenityGarden
 
         public void Die()
         {
-            //To do: add money
+            TurretBuildManager.instance.Money += DestroyReward;
             Destroy(gameObject);
         }
     }

@@ -27,12 +27,12 @@ namespace SerenityGarden
         public override void Attack()
         {
             //Rotate towards the target
-            Vector3 targetDirection = Target.transform.position - transform.position;
-            transform.rotation = Quaternion.LookRotation(targetDirection);
+            HelperMethods.RotateObjTowardsTarget(transform, EndBlock.transform.position, true, Speed * Time.deltaTime);
 
             //Shoot a bullet towards the target
             BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
             bulletScript.damage = Damage;
+            bulletScript.enemyBullet = true;
             bulletScript.SetTarget(Target.transform.position);
             LastAttackTime = Time.time;
         }
@@ -40,17 +40,14 @@ namespace SerenityGarden
         public override void Move()
         {
             //The movement of ambushers is different from the others, it doesn't use the grid system. It will go straight towards the end goal
-            Vector3 targetDirection = EndBlock.transform.position - transform.position;
-            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, rotationSpeed * Time.deltaTime, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDirection);
-
-            transform.position = Vector3.MoveTowards(transform.position, EndBlock.transform.position, Speed * Time.deltaTime);
+            HelperMethods.RotateObjTowardsTarget(transform, EndBlock.transform.position, true, Speed * Time.deltaTime);
+            HelperMethods.MoveTowards(transform, EndBlock.transform.position, Speed * Time.deltaTime, true);
         }
 
         public override void FindTarget()
         {
             //Also, for target, it will only consider the base as a target
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
             TurretBase _target = null;
             TurretBase aux;
             float minDist = float.MaxValue;
