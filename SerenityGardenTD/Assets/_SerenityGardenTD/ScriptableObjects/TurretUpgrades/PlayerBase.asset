@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretType: 6
   levelProp:
-  - health: 500
+  - health: 100
     damage: 15
     attackCooldown: 5
     range: 5

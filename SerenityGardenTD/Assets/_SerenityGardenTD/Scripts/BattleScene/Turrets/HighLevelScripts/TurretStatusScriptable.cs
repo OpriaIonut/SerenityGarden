@@ -17,7 +17,7 @@ namespace SerenityGarden
     }
 
     [CreateAssetMenu(fileName = "TurretUpgrade", menuName = "ScriptableObjects/TurretUpgrade")]
-    public class TurretStatus : ScriptableObject
+    public class TurretStatusScriptable : ScriptableObject
     {
         public TurretType turretType;
         public TurretLevel[] levelProp;

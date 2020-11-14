@@ -8,7 +8,7 @@ namespace SerenityGarden
     {
         //Block that the turret will sit on
         [HideInInspector] public HexagonalBlock hexagonBlock;
-        public TurretStatus turretUpgradePattern;
+        public TurretStatusScriptable turretUpgradePattern;
 
         private int currentLevel;
         public int CurrentLevel

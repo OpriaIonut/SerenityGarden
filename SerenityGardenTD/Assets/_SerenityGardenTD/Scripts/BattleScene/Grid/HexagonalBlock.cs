@@ -4,6 +4,15 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    public enum SpawnPointsID
+    { 
+        None,
+        Spawn1,
+        Spawn2,
+        Spawn3,
+        All
+    }
+
     //The type of the hexagon
     public enum HexagonType
     {
@@ -35,6 +44,9 @@ namespace SerenityGarden
                 renderer.material = materialList[(int)value];
             }
         }
+
+        [Tooltip("Will be used when the hexagon is of type SPawnPoint")]
+        public SpawnPointsID spawnPointsID;
 
         private MeshRenderer renderer;
 

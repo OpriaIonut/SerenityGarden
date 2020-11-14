@@ -13,10 +13,10 @@ namespace SerenityGarden
     /// </summary>
     public class GridList
     {
-        public List<int> gridTypes;
+        public List<int> list;
         public GridList(List<int> values)
         {
-            gridTypes = values;
+            list = values;
         }
     }
 
@@ -27,13 +27,15 @@ namespace SerenityGarden
     {
         public float diameter;
         public float offset;
-        public GridList gridList;
+        public GridList blockTypes;
+        public GridList blockSpawnIds;
 
-        public GridSaveData(float _diameter, float _offset, List<int> hexagonTypes)
+        public GridSaveData(float _diameter, float _offset, List<int> hexagonTypes, List<int> spawnId)
         {
             diameter = _diameter;
             offset = _offset;
-            gridList = new GridList(hexagonTypes);
+            blockTypes = new GridList(hexagonTypes);
+            blockSpawnIds = new GridList(spawnId);
         }
     }
 
@@ -120,7 +122,8 @@ namespace SerenityGarden
                 enemyGoal = new List<HexagonalBlock>();
                 for (int index = 0; index < gridCells.Count; index++)
                 {
-                    gridCells[index].Type = (HexagonType)saveData.gridList.gridTypes[index];
+                    gridCells[index].Type = (HexagonType)saveData.blockTypes.list[index];
+                    gridCells[index].spawnPointsID = (SpawnPointsID)saveData.blockSpawnIds.list[index];
                     if (gridCells[index].Type == HexagonType.PlayerBase)
                     {
                         enemyGoal.Add(gridCells[index]);

@@ -73,11 +73,13 @@ namespace SerenityGarden
 
             //Save all data
             List<int> gridType = new List<int>();
+            List<int> gridSpawnId = new List<int>();
             foreach(HexagonalBlock item in grid.gridCells)
             {
                 gridType.Add((int)item.Type);
+                gridSpawnId.Add((int)item.spawnPointsID);
             }
-            GridSaveData gridSaveData = new GridSaveData(grid.diameter, grid.offset, gridType);
+            GridSaveData gridSaveData = new GridSaveData(grid.diameter, grid.offset, gridType, gridSpawnId);
             string json = JsonConvert.SerializeObject(gridSaveData, Formatting.Indented);
             File.WriteAllText(savePath, json);
         }
