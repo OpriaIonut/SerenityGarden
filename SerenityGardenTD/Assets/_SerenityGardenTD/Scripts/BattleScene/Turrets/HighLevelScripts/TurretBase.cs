@@ -113,7 +113,7 @@ namespace SerenityGarden
                 rangeObj.transform.localScale = Vector3.one * range;
             }
             if (!draw && rangeObj != null)
-                Destroy(rangeObj);
+                DestroyImmediate(rangeObj);
         }
 
         public abstract void FindTarget();

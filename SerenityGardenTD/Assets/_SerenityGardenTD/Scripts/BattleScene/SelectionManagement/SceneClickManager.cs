@@ -11,17 +11,20 @@ namespace SerenityGarden
         public TurretBase selectedTurret;
         public HexagonalBlock selectedHexagon;
         public EnemyBase selectedEnemy;
+        public Commander selectedCommander;
 
         //Reference to systems that are dependent on what we clicked 
         private InputManager inputManager;
         private TurretBuildManager buildManager;
         private LockOnManager lockOnManager;
+        private CommanderUI commanderUI;
 
         private void Start()
         {
             inputManager = FindObjectOfType<InputManager>();
             buildManager = FindObjectOfType<TurretBuildManager>();
             lockOnManager = FindObjectOfType<LockOnManager>();
+            commanderUI = FindObjectOfType<CommanderUI>();
             inputManager.AddOnPressEvent(OnPressHandler);
         }
 
@@ -38,6 +41,12 @@ namespace SerenityGarden
                     selectedTurret.DrawRange(false);
                     selectedTurret = null;
                 }
+                if(selectedCommander != null && commanderUI.selectDestination == false)
+                {
+
+                    selectedCommander.DrawRange(false);
+                    selectedCommander = null;
+                }
 
                 if (inputManager.clickedObject != null)
                 {
@@ -49,12 +58,23 @@ namespace SerenityGarden
                     //For the turret and enemies, we want to get the parent, because they will have GFX child objects, that will contain the actual colliders, but the scripts will sit on the parent objects
                     selectedTurret = inputManager.clickedParent.GetComponent<TurretBase>();
                     selectedEnemy = inputManager.clickedParent.GetComponent<EnemyBase>();
+                    selectedCommander = inputManager.clickedParent.GetComponent<Commander>();
                 }
 
-                //Call the dependent methods, so that they can select/deselect
-                buildManager.SelectTurret();
-                buildManager.SelectHexagon();
-                lockOnManager.SelectEnemy();
+                if (commanderUI.selectDestination && selectedHexagon != null)
+                {
+                    commanderUI.SetCommanderDestination(selectedHexagon);
+                }
+                else
+                {
+                    commanderUI.selectDestination = false;
+
+                    //Call the dependent methods, so that they can select/deselect
+                    buildManager.SelectTurret();
+                    buildManager.SelectHexagon();
+                    lockOnManager.SelectEnemy();
+                    commanderUI.SelectCommander();
+                }
             }
         }
     }

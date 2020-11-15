@@ -43,6 +43,7 @@ namespace SerenityGarden
     {
         [Header("Prefabs")]
         public GameObject playerBasePrefab;
+        public GameObject commanderPrefab;
         public GameObject hexagonPrefab;
         public GameObject walkableArea;
 
@@ -120,6 +121,7 @@ namespace SerenityGarden
                 List<float> zPos = new List<float>();
                 float yPos = 0;
                 enemyGoal = new List<HexagonalBlock>();
+                HexagonalBlock commanderSpawnBlock = null;
                 for (int index = 0; index < gridCells.Count; index++)
                 {
                     gridCells[index].Type = (HexagonType)saveData.blockTypes.list[index];
@@ -132,10 +134,34 @@ namespace SerenityGarden
                             xPos.Add(gridCells[index].transform.position.x);
                         if (!zPos.Contains(gridCells[index].transform.position.z))
                             zPos.Add(gridCells[index].transform.position.z);
+
+                        gridCells[index].Type = HexagonType.Occupied;
+                    }
+                    if(gridCells[index].Type == HexagonType.CommanderSpawn)
+                    {
+                        if(commanderSpawnBlock == null)
+                        {
+                            commanderSpawnBlock = gridCells[index];
+                        }
+                        else
+                            Debug.LogWarning("Warning! there are multiple commander spawn points.");
                     }
                 }
                 if(isInitialized)
                 {
+                    //Spawn the commander character
+                    if (commanderSpawnBlock == null)
+                        Debug.LogWarning("Warning! couldn't find a commander spawn block.");
+                    else
+                    {
+                        GameObject commander = Instantiate(commanderPrefab);
+                        commander.transform.position = commanderSpawnBlock.transform.position;
+                        Commander script = commander.GetComponent<Commander>();
+                        script.CurrentBlock = commanderSpawnBlock;
+                        commanderSpawnBlock.Type = HexagonType.Occupied;
+                        script.EndBlock = commanderSpawnBlock;
+                    }
+
                     //If it is initialized, then calculate where to spawn the player's base
                     float xMean = 0;
                     float zMean = 0;
@@ -186,7 +212,7 @@ namespace SerenityGarden
 
                     //Check to see if it is within the playable area
                     bool cond = false;
-                    RaycastHit[] hit = Physics.RaycastAll(new Ray(block.transform.position + Vector3.up, Vector3.down));
+                    RaycastHit[] hit = Physics.RaycastAll(new Ray(block.transform.position + Vector3.up, Vector3.down * 10));
                     foreach (RaycastHit item in hit)
                     {
                         if (item.transform.gameObject.tag == "WalkableArea")

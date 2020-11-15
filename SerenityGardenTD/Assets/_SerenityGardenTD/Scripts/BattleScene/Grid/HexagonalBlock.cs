@@ -21,7 +21,8 @@ namespace SerenityGarden
         PlayerBase,
         ResourceExtraction,
         Occupied,
-        SpawnPoint
+        SpawnPoint,
+        CommanderSpawn
     }
 
     public class HexagonalBlock : MonoBehaviour

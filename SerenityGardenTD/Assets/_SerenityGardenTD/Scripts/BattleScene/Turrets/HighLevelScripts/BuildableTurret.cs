@@ -86,7 +86,6 @@ namespace SerenityGarden
 
         public bool Upgrade()
         {
-            //To do: if we have enough money
             if(currentLevel < turretUpgradePattern.levelProp.Length - 1)
             {
                 currentLevel++;
