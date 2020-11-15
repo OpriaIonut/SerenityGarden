@@ -93,6 +93,17 @@ namespace SerenityGarden
         }
         #endregion
 
+        public override void BaseStartCalls()
+        {
+            base.BaseStartCalls();
+            GamePauseManager.AddUnpauseEvent(ResumeGame);
+        }
+        private void ResumeGame()
+        {
+            LastAttackTime += GamePauseManager.PausedTime;
+            LastSearchTargetTime += GamePauseManager.PausedTime;
+        }
+
         public void DrawRange(bool draw)
         {
             //Draw/destroy the range

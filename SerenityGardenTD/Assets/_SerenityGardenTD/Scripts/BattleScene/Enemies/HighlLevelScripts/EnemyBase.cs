@@ -81,6 +81,18 @@ namespace SerenityGarden
             navigationManager = FindObjectOfType<NavigationManager>();
             base.BaseAwakeCalls();
         }
+
+        public override void BaseStartCalls()
+        {
+            base.BaseStartCalls();
+            GamePauseManager.AddUnpauseEvent(ResumeGame);
+        }
+        private void ResumeGame()
+        {
+            LastAttackTime += GamePauseManager.PausedTime;
+            LastSearchTargetTime += GamePauseManager.PausedTime;
+        }
+
         public override void BaseUpdateCalls()
         {
             base.BaseUpdateCalls();

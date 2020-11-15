@@ -39,27 +39,37 @@ namespace SerenityGarden
             stageStartButton.SetActive(true);
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
+
+            GamePauseManager.AddUnpauseEvent(ResumeGame);
         }
 
         private void Update()
         {
-            //If we can/want to spawn a wave
-            if(spawnWaves && startedWave == false)
+            if (!GamePauseManager.GamePaused)
             {
-                //See if enough time passed
-                if(Time.time - lastWaveEndTime >= waveDelay)
+                //If we can/want to spawn a wave
+                if (spawnWaves && startedWave == false)
                 {
-                    //And if so, start spawning the next wave
-                    startedWave = true;
-                    currentWaveIndex++;
-                    StartCoroutine(WaveSpawner(selectedStage.waves[currentWaveIndex]));
-                }
-                else
-                {
-                    //If not, display the remaining time to the screen
-                    waveSkipText.text = string.Format("{0:00.00}", waveDelay - (Time.time - lastWaveEndTime));
+                    //See if enough time passed
+                    if (Time.time - lastWaveEndTime >= waveDelay)
+                    {
+                        //And if so, start spawning the next wave
+                        startedWave = true;
+                        currentWaveIndex++;
+                        StartCoroutine(WaveSpawner(selectedStage.waves[currentWaveIndex]));
+                    }
+                    else
+                    {
+                        //If not, display the remaining time to the screen
+                        waveSkipText.text = string.Format("{0:00.00}", waveDelay - (Time.time - lastWaveEndTime));
+                    }
                 }
             }
+        }
+
+        private void ResumeGame()
+        {
+            lastWaveEndTime += GamePauseManager.PausedTime;
         }
 
         private IEnumerator WaveSpawner(WaveScriptable wave)
@@ -87,6 +97,9 @@ namespace SerenityGarden
                         HexagonalBlock block = targetSpawnPoints[randIndex];
                         SpawnEnemy(item.enemy, block);
 
+                        if (GamePauseManager.GamePaused)
+                            yield return null;
+
                         yield return new WaitForSeconds(enemySpawnDelay);
                     }
                 }
@@ -112,6 +125,9 @@ namespace SerenityGarden
                     HexagonalBlock block = targetSpawnPoints[randIndex];
                     SpawnEnemy(enemyToSpawn[0], block);
                     enemyToSpawn.RemoveAt(0);
+
+                    if (GamePauseManager.GamePaused)
+                        yield return null;
 
                     yield return new WaitForSeconds(enemySpawnDelay);
                 }

@@ -30,29 +30,32 @@ namespace SerenityGarden
         /// </summary>
         private void OnPressHandler()
         {
-            //If we clicked a turret in the previous click, then disable it
-            if(selectedTurret != null)
+            if (!GamePauseManager.GamePaused)
             {
-                selectedTurret.DrawRange(false);
-                selectedTurret = null;
-            }
+                //If we clicked a turret in the previous click, then disable it
+                if (selectedTurret != null)
+                {
+                    selectedTurret.DrawRange(false);
+                    selectedTurret = null;
+                }
 
-            if (inputManager.clickedObject != null)
-            {
-                //For the hexagon we don't want to get the parent, because it is an empty GameObject
-                selectedHexagon = inputManager.clickedObject.GetComponent<HexagonalBlock>();
-            }
-            if(inputManager.clickedParent != null)
-            { 
-                //For the turret and enemies, we want to get the parent, because they will have GFX child objects, that will contain the actual colliders, but the scripts will sit on the parent objects
-                selectedTurret = inputManager.clickedParent.GetComponent<TurretBase>();
-                selectedEnemy = inputManager.clickedParent.GetComponent<EnemyBase>();
-            }
+                if (inputManager.clickedObject != null)
+                {
+                    //For the hexagon we don't want to get the parent, because it is an empty GameObject
+                    selectedHexagon = inputManager.clickedObject.GetComponent<HexagonalBlock>();
+                }
+                if (inputManager.clickedParent != null)
+                {
+                    //For the turret and enemies, we want to get the parent, because they will have GFX child objects, that will contain the actual colliders, but the scripts will sit on the parent objects
+                    selectedTurret = inputManager.clickedParent.GetComponent<TurretBase>();
+                    selectedEnemy = inputManager.clickedParent.GetComponent<EnemyBase>();
+                }
 
-            //Call the dependent methods, so that they can select/deselect
-            buildManager.SelectTurret();
-            buildManager.SelectHexagon();
-            lockOnManager.SelectEnemy();
+                //Call the dependent methods, so that they can select/deselect
+                buildManager.SelectTurret();
+                buildManager.SelectHexagon();
+                lockOnManager.SelectEnemy();
+            }
         }
     }
 }

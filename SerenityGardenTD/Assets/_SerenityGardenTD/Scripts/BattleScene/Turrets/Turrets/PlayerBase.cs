@@ -28,12 +28,15 @@ namespace SerenityGarden
 
         private void Update()
         {
-            BaseUpdateCalls();
-            //Search for a target at certain intervals
-            if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
-                FindTarget();
-            if (Time.time - LastAttackTime > AttackCooldown)
-                Attack();
+            if (!GamePauseManager.GamePaused)
+            {
+                BaseUpdateCalls();
+                //Search for a target at certain intervals
+                if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
+                    FindTarget();
+                if (Time.time - LastAttackTime > AttackCooldown)
+                    Attack();
+            }
         }
 
         public override void FindTarget()

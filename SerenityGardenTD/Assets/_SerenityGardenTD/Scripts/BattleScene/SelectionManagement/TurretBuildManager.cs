@@ -67,12 +67,15 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if(inspectTurretUI.activeInHierarchy && sceneClickManager.selectedTurret != null)
-            {
-                BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
-                if (buildable != null)
+            if (!GamePauseManager.GamePaused)
+            { 
+                if (inspectTurretUI.activeInHierarchy && sceneClickManager.selectedTurret != null)
                 {
-                    repairText.text = "$" + buildable.GetRecoveryCost();
+                    BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
+                    if (buildable != null)
+                    {
+                        repairText.text = "$" + buildable.GetRecoveryCost();
+                    }
                 }
             }
         }

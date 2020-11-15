@@ -18,7 +18,8 @@ namespace SerenityGarden
 
         private void Update()
         {
-            base.BaseUpdateCalls();
+            if (!GamePauseManager.GamePaused)
+                base.BaseUpdateCalls();
         }
 
         public override void Attack()
