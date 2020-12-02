@@ -38,7 +38,7 @@ namespace SerenityGarden
         protected float range;
 
         //Instantiated range object. It will be deleted when deselecting a turret
-        private GameObject rangeObj;
+        protected GameObject rangeObj;
 
         #region Properties
         public int Health

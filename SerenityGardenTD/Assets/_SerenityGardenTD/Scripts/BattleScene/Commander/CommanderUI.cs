@@ -53,6 +53,17 @@ namespace SerenityGarden
             }
         }
 
+        public bool PowerupTurret(TurretBase selectedTurret)
+        {
+            BuildableTurret buildable = selectedTurret.gameObject.GetComponent<BuildableTurret>();
+            if (buildable)
+            {
+                commander.PowerupTurret(buildable);
+                return true;
+            }
+            return false;
+        }
+
         public void SetCommanderDestination(HexagonalBlock destination)
         {
             if (!GamePauseManager.GamePaused)
@@ -72,6 +83,48 @@ namespace SerenityGarden
                 clickManager.selectedCommander.DrawRange(false);
                 selectDestination = true;
                 commanderUI.SetActive(false);
+            }
+        }
+
+        /// <summary>
+        /// Called by button press on the button that appears when the commander is powering up a turret. It will remove the commander from the turret and move him to the closest available block.
+        /// </summary>
+        public void _UnpowerupTurret()
+        {
+            if(clickManager.selectedTurret != null)
+            {
+                BuildableTurret buildable = clickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
+                if(buildable != null)
+                {
+                    buildable.HasCommander = false;
+                    commander.gameObject.SetActive(true);
+
+                    //Find the place to position the commander;
+                    HexagonalBlock closestPos = null;
+                    for(float range = 1; true; range += 1)
+                    {
+                        Collider[] hits = Physics.OverlapSphere(buildable.transform.position, range);
+                        foreach(Collider item in hits)
+                        {
+                            HexagonalBlock current = item.transform.gameObject.GetComponent<HexagonalBlock>();
+                            if(current != null && current.Type == HexagonType.Walkable)
+                            {
+                                closestPos = current;
+                                break;
+                            }
+                        }
+                        if (closestPos != null)
+                            break;
+                    }
+                    commander.CurrentBlock = closestPos;
+                    commander.EndBlock = closestPos;
+                    commander.ReachedDestination = false;
+                    commander.FindNextBlock();
+
+                    clickManager.DisablePreviousStates();
+                    clickManager.selectedTurret = null;
+                    clickManager.UpdateSelectedReferences();
+                }
             }
         }
 

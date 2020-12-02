@@ -158,7 +158,9 @@ namespace SerenityGarden
                         commander.transform.position = commanderSpawnBlock.transform.position;
                         Commander script = commander.GetComponent<Commander>();
                         script.CurrentBlock = commanderSpawnBlock;
-                        commanderSpawnBlock.Type = HexagonType.Occupied;
+
+                        //Will be set to occupied by the property EndBlock. It needs to be Walkable so that when the commander leaves the block, it will set it to walkable
+                        commanderSpawnBlock.Type = HexagonType.Walkable;
                         script.EndBlock = commanderSpawnBlock;
                     }
 

@@ -36,46 +36,79 @@ namespace SerenityGarden
             if (!GamePauseManager.GamePaused)
             {
                 //If we clicked a turret in the previous click, then disable it
-                if (selectedTurret != null)
-                {
-                    selectedTurret.DrawRange(false);
-                    selectedTurret = null;
-                }
-                if(selectedCommander != null && commanderUI.selectDestination == false)
-                {
+                DisablePreviousStates();
+                FindCurrentSelected();
 
-                    selectedCommander.DrawRange(false);
-                    selectedCommander = null;
-                }
-
-                if (inputManager.clickedObject != null)
+                bool updateSelected = true;
+                if (commanderUI.selectDestination)
                 {
-                    //For the hexagon we don't want to get the parent, because it is an empty GameObject
-                    selectedHexagon = inputManager.clickedObject.GetComponent<HexagonalBlock>();
+                    if (selectedHexagon != null && selectedHexagon.Type != HexagonType.Occupied)
+                    {
+                        commanderUI.SetCommanderDestination(selectedHexagon);
+                        updateSelected = false;
+                        commanderUI.selectDestination = false;
+                    }
+                    else if(selectedTurret != null && selectedTurret.turretType != TurretType.PlayerBase)
+                    {
+                        if(commanderUI.PowerupTurret(selectedTurret))
+                        {
+                            selectedTurret = null;
+                            updateSelected = true;
+                            commanderUI.selectDestination = false;
+                        }
+                        else
+                        {
+                            updateSelected = false;
+                        }
+                    }
                 }
-                if (inputManager.clickedParent != null)
+                if(updateSelected)
                 {
-                    //For the turret and enemies, we want to get the parent, because they will have GFX child objects, that will contain the actual colliders, but the scripts will sit on the parent objects
-                    selectedTurret = inputManager.clickedParent.GetComponent<TurretBase>();
-                    selectedEnemy = inputManager.clickedParent.GetComponent<EnemyBase>();
-                    selectedCommander = inputManager.clickedParent.GetComponent<Commander>();
-                }
-
-                if (commanderUI.selectDestination && selectedHexagon != null)
-                {
-                    commanderUI.SetCommanderDestination(selectedHexagon);
-                }
-                else
-                {
-                    commanderUI.selectDestination = false;
-
-                    //Call the dependent methods, so that they can select/deselect
-                    buildManager.SelectTurret();
-                    buildManager.SelectHexagon();
-                    lockOnManager.SelectEnemy();
-                    commanderUI.SelectCommander();
+                    UpdateSelectedReferences();
                 }
             }
+        }
+
+        public void DisablePreviousStates()
+        {
+            if (selectedTurret != null)
+            {
+                selectedTurret.DrawRange(false);
+                selectedTurret = null;
+            }
+            if (selectedCommander != null && commanderUI.selectDestination == false)
+            {
+
+                selectedCommander.DrawRange(false);
+                selectedCommander = null;
+            }
+        }
+
+        public void FindCurrentSelected()
+        {
+            if (inputManager.clickedObject != null)
+            {
+                //For the hexagon we don't want to get the parent, because it is an empty GameObject
+                selectedHexagon = inputManager.clickedObject.GetComponent<HexagonalBlock>();
+            }
+            if (inputManager.clickedParent != null)
+            {
+                //For the turret and enemies, we want to get the parent, because they will have GFX child objects, that will contain the actual colliders, but the scripts will sit on the parent objects
+                selectedTurret = inputManager.clickedParent.GetComponent<TurretBase>();
+                selectedEnemy = inputManager.clickedParent.GetComponent<EnemyBase>();
+                selectedCommander = inputManager.clickedParent.GetComponent<Commander>();
+            }
+        }
+
+        public void UpdateSelectedReferences()
+        {
+            commanderUI.selectDestination = false;
+
+            //Call the dependent methods, so that they can select/deselect
+            buildManager.SelectTurret();
+            buildManager.SelectHexagon();
+            lockOnManager.SelectEnemy();
+            commanderUI.SelectCommander();
         }
     }
 }

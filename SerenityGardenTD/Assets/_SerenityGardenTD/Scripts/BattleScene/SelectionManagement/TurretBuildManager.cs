@@ -39,6 +39,7 @@ namespace SerenityGarden
         public GameObject inspectTurretUI;
         public GameObject buildableTurretsUI;
         public GameObject excavatorUI;
+        public GameObject removeCommanderButton;
 
         [Header("Money texts")]
         public TextMeshProUGUI moneyText;
@@ -54,10 +55,12 @@ namespace SerenityGarden
 
         //Reference to the click manager, because it is dependent on it, to know where to build the turret or what turret to inspect
         private SceneClickManager sceneClickManager;
+        private CommanderUI commanderUI;
 
         private void Start()
         {
             sceneClickManager = FindObjectOfType<SceneClickManager>();
+            commanderUI = FindObjectOfType<CommanderUI>();
             for (int index = 0; index < turretPrefabs.Length; index++)
             {
                 turretBuildCostText[index].text = "$" + turretPrefabs[index].GetComponent<BuildableTurret>().GetBuildCost();
@@ -100,6 +103,11 @@ namespace SerenityGarden
                     else
                         upgradeText.text = "$" + buildable.GetUpgradeCost();
                     sellText.text = "$" + buildable.DestroyReward;
+
+                    if (buildable.HasCommander)
+                        removeCommanderButton.SetActive(true);
+                    else
+                        removeCommanderButton.SetActive(false);
                 }
                 else //It means that we selected the player base, and we don't have options for it yet
                     inspectTurretUI.SetActive(false);   
@@ -180,9 +188,12 @@ namespace SerenityGarden
                 else
                     buildable.hexagonBlock.Type = HexagonType.TurretBuildable;
 
+                if (buildable.HasCommander)
+                    commanderUI._UnpowerupTurret();
+
                 //Deselect and destroy the turret
-                sceneClickManager.selectedTurret.DrawRange(false);
-                Destroy(sceneClickManager.selectedTurret.gameObject);
+                buildable.DrawRange(false);
+                Destroy(buildable.gameObject);
                 sceneClickManager.selectedTurret = null;
                 inspectTurretUI.SetActive(false);
             }

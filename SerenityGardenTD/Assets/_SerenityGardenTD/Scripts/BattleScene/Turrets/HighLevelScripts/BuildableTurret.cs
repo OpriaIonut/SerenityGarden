@@ -21,6 +21,32 @@ namespace SerenityGarden
         public float RecoveryCostPer1Hp { get; set; } = 1;
         public float RecoveryPerSecond { get; set; } = 20;
 
+        private bool hasCommander = false;
+        public bool HasCommander
+        {
+            get { return hasCommander; }
+            set
+            {
+                if(rangeObj != null)
+                    DrawRange(false);
+                if (hasCommander == false && value == true)
+                {
+                    Range *= 2;
+                    AttackCooldown /= 2;
+                    Damage *= 2;
+                }
+                else if(hasCommander == true && value == false)
+                {
+                    Range /= 2;
+                    AttackCooldown *= 2;
+                    Damage /= 2;
+                }
+                hasCommander = value;
+                if (rangeObj != null)
+                    DrawRange(true);
+            }
+        }
+
         private float currentRecovery = 0;
         private float recoveryAmmount;
 

@@ -17,6 +17,11 @@ namespace SerenityGarden
 
         private HexagonalBlock endBlock;
 
+        private bool powerupTurret;
+        private BuildableTurret powerupTarget;
+
+        private HexagonType previousEndBlockType = HexagonType.Walkable;
+
         #region Inherited Properties
         public HexagonalBlock CurrentBlock { get; set; }
         public HexagonalBlock EndBlock
@@ -25,9 +30,13 @@ namespace SerenityGarden
             set
             {
                 if(endBlock != null)
-                    endBlock.Type = HexagonType.Walkable;
+                    endBlock.Type = previousEndBlockType;
                 endBlock = value;
-                endBlock.Type = HexagonType.Occupied;
+                if (endBlock != null)
+                {
+                    previousEndBlockType = endBlock.Type;
+                    endBlock.Type = HexagonType.Occupied;
+                }
             }
         }
         public HexagonalBlock NextBlock { get; set; }
@@ -69,11 +78,23 @@ namespace SerenityGarden
                     {
                         //Otherwise, check to see if we reached the destination
                         ReachedDestination = CheckReachedTarget();
+                        if(ReachedDestination)
+                        {
+                            if (powerupTurret)
+                            {
+                                if (powerupTarget != null)
+                                {
+                                    powerupTarget.HasCommander = true;
+                                    gameObject.SetActive(false);
+                                    powerupTurret = false;
+                                }
+                            }
+                        }
                     }
                     if (ReachedDestination == false)
                         Move();
                 }
-                else //Attack only if we reached a ddestination
+                else //Attack only if we reached a destination
                 {
                     //At certain time intervals check to find if a turret/something that we can attack is in range
                     if (Time.time - LastSearchTargetTime > SearchTargetCooldown && Target == null)
@@ -84,6 +105,14 @@ namespace SerenityGarden
                         Attack();
                 }
             }
+        }
+
+        public void PowerupTurret(BuildableTurret selectedTurret)
+        {
+            powerupTurret = true;
+            EndBlock = selectedTurret.hexagonBlock;
+            powerupTarget = selectedTurret;
+            ReachedDestination = false;
         }
 
         public void Attack()
