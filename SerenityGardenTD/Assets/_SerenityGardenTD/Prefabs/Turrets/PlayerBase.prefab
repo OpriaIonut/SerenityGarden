@@ -175,6 +175,7 @@ MonoBehaviour:
     type: 3}
   firePoint: {fileID: 2931575074485184069}
   baseStatus: {fileID: 11400000, guid: e8966edb05786324db6f57201aa949b2, type: 2}
+  gun: {fileID: 1877788707595251573}
 --- !u!1 &7040655272759040095
 GameObject:
   m_ObjectHideFlags: 0

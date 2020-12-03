@@ -40,16 +40,16 @@ namespace SerenityGarden
             set 
             { 
                 type = value;  
-                if(renderer == null)
-                    renderer = gameObject.GetComponent<MeshRenderer>();
-                renderer.material = materialList[(int)value];
+                if(meshRend == null)
+                    meshRend = gameObject.GetComponent<MeshRenderer>();
+                meshRend.material = materialList[(int)value];
             }
         }
 
         [Tooltip("Will be used when the hexagon is of type SPawnPoint")]
         public SpawnPointsID spawnPointsID;
 
-        private MeshRenderer renderer;
+        private MeshRenderer meshRend;
 
         /// <summary>
         /// Place the block at the given position and scale it
@@ -64,19 +64,19 @@ namespace SerenityGarden
             float targetScale = diameter / 2 / currentRadius;
             transform.localScale = Vector3.one * targetScale;
 
-            if(renderer == null)
-                renderer = gameObject.GetComponent<MeshRenderer>();
+            if(meshRend == null)
+                meshRend = gameObject.GetComponent<MeshRenderer>();
             type = HexagonType.Walkable;
         }
 
         public void DisplayHexagon()
         {
-            renderer.enabled = true;
+            meshRend.enabled = true;
         }
 
         public void HideHexagon()
         {
-            renderer.enabled = false;
+            meshRend.enabled = false;
         }
     }
 }

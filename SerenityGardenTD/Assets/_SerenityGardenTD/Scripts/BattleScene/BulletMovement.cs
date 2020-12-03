@@ -9,7 +9,7 @@ namespace SerenityGarden
         //Variables used to move the bullet using the physics system
         public float force = 100.0f;
         private Rigidbody rb;
-        public bool enemyBullet = true;
+        public bool enemyBullet = true; //False - it will hit enemies, True - it will hit turrets
 
         private void Start()
         {
@@ -32,6 +32,7 @@ namespace SerenityGarden
         {
             if(enemyBullet)
             {
+                //If it is a bullet that was shot by an enemy, then check if it collided with a turret
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if (turret != null)
                 {
@@ -40,8 +41,9 @@ namespace SerenityGarden
                     Destroy(this.gameObject);
                 }
             }
-            else //It is a turret bullet
+            else
             {
+                //If it is a bullet that was shot by a turret, then check if it collided with an enemy
                 EnemyBase enemy = other.transform.root.gameObject.GetComponent<EnemyBase>();
                 if (enemy != null)
                 {

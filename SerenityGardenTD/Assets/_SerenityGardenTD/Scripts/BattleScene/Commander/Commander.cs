@@ -20,6 +20,7 @@ namespace SerenityGarden
         private bool powerupTurret;
         private BuildableTurret powerupTarget;
 
+        //Will retain the type of the block that the commander moves towards, so that we can reset it when he leaves the block
         private HexagonType previousEndBlockType = HexagonType.Walkable;
 
         #region Inherited Properties
@@ -29,11 +30,13 @@ namespace SerenityGarden
             get { return endBlock; }
             set
             {
+                //Reset the current block of the commander
                 if(endBlock != null)
                     endBlock.Type = previousEndBlockType;
                 endBlock = value;
                 if (endBlock != null)
                 {
+                    //Remember the type of the block that we are moving towards, and set it to Occupied.
                     previousEndBlockType = endBlock.Type;
                     endBlock.Type = HexagonType.Occupied;
                 }
@@ -80,10 +83,12 @@ namespace SerenityGarden
                         ReachedDestination = CheckReachedTarget();
                         if(ReachedDestination)
                         {
+                            //If we reached the destination and we need to power up a turret
                             if (powerupTurret)
                             {
                                 if (powerupTarget != null)
                                 {
+                                    //Then power up the turret and hide the commander
                                     powerupTarget.HasCommander = true;
                                     gameObject.SetActive(false);
                                     powerupTurret = false;
@@ -107,6 +112,7 @@ namespace SerenityGarden
             }
         }
 
+        //Called when we click on ui, it will move towards the turret and when he collides with it, he will enter the turret, increasing it's stats
         public void PowerupTurret(BuildableTurret selectedTurret)
         {
             powerupTurret = true;

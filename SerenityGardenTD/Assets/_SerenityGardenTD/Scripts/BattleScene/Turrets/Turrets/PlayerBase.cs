@@ -10,6 +10,7 @@ namespace SerenityGarden
         public GameObject bulletPrefab;
         public Transform firePoint;
         public TurretStatusScriptable baseStatus;
+        public Transform gun;
 
         private void Awake()
         {

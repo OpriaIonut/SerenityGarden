@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    /// <summary>
+    /// Will hold the properties for a turret at a specific level
+    /// </summary>
     [System.Serializable]
     public class TurretLevel
     {

@@ -17,7 +17,7 @@ MonoBehaviour:
   - health: 50
     damage: 5
     attackCooldown: 2
-    range: 1
+    range: 2
     upgradeCost: 100
     sellReward: 50
     gfx: {fileID: 0}

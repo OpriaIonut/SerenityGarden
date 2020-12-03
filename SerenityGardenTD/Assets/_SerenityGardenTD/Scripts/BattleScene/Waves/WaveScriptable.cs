@@ -15,7 +15,8 @@ namespace SerenityGarden
     public class WaveScriptable : ScriptableObject
     {
         public EnemySpawn[] waveEnemies;
-        public SpawnPointsID spawnPointsID;
+        //Each spawn point will have an id, this way we can specify that all enemeis will come from a certain spawn point
+        public SpawnPointsID spawnPointsID; 
         public bool spawnRandomly;
     }
 }

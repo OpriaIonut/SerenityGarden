@@ -21,22 +21,26 @@ namespace SerenityGarden
         public float RecoveryCostPer1Hp { get; set; } = 1;
         public float RecoveryPerSecond { get; set; } = 20;
 
+        //Will specify if the turret is powered up by the commander or not
         private bool hasCommander = false;
         public bool HasCommander
         {
             get { return hasCommander; }
             set
             {
+                //If we had a range displayed, hide it, because the range property will be displayed too
                 if(rangeObj != null)
                     DrawRange(false);
                 if (hasCommander == false && value == true)
                 {
+                    //If the commander entered the turret now, then power up the turret
                     Range *= 2;
                     AttackCooldown /= 2;
                     Damage *= 2;
                 }
                 else if(hasCommander == true && value == false)
                 {
+                    //If the commander leaves the turret, then reset the properties
                     Range /= 2;
                     AttackCooldown *= 2;
                     Damage /= 2;

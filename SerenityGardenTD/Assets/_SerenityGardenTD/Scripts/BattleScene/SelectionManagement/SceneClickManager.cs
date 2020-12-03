@@ -82,6 +82,7 @@ namespace SerenityGarden
                 selectedCommander.DrawRange(false);
                 selectedCommander = null;
             }
+            selectedHexagon = null;
         }
 
         public void FindCurrentSelected()

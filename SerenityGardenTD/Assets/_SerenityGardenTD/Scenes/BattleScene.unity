@@ -8024,7 +8024,7 @@ MonoBehaviour:
   moneyPerSecondSkip: 3
   enemySpawnDelay: 3
   waveDelay: 30
-  selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
+  selectedStage: {fileID: 11400000, guid: 2642a33f71905f147825d41076f6359b, type: 2}
 --- !u!114 &696150183
 MonoBehaviour:
   m_ObjectHideFlags: 0

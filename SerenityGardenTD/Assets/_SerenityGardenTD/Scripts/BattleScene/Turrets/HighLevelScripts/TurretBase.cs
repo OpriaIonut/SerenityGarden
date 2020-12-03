@@ -98,6 +98,8 @@ namespace SerenityGarden
             base.BaseStartCalls();
             GamePauseManager.AddUnpauseEvent(ResumeGame);
         }
+
+        //Pausing time will mess up the attack time, so we need to correct the problem when unpausing
         private void ResumeGame()
         {
             LastAttackTime += GamePauseManager.PausedTime;

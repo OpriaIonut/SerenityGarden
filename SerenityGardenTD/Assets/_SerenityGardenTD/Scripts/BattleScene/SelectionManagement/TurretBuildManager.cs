@@ -98,6 +98,7 @@ namespace SerenityGarden
                 BuildableTurret buildable = sceneClickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
                 if (buildable != null)
                 {
+                    //Update the ui text of the turret
                     if (buildable.GetUpgradeCost() == 0)
                         upgradeText.text = "MAX";
                     else

@@ -40,6 +40,7 @@ namespace SerenityGarden
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
+            //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem
             GamePauseManager.AddUnpauseEvent(ResumeGame);
         }
 
@@ -140,9 +141,21 @@ namespace SerenityGarden
             }
             else
             {
-                //Otherwise, end spawning forever!
-                spawnWaves = false;
-                Debug.Log("Stage won");
+                //If we spawned all waves
+                while (true)
+                {
+                    //Check from time to time if there are any enemies alive
+                    yield return new WaitForSeconds(0.5f);
+
+                    EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
+                    if (enemies.Length == 0)
+                    {
+                        //If no enemy is alive, then end the wave.
+                        spawnWaves = false;
+                        Debug.Log("Stage won");
+                        break;
+                    }
+                }
             }
 
             startedWave = false;
