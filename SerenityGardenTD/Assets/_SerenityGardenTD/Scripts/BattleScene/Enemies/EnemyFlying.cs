@@ -34,8 +34,7 @@ namespace SerenityGarden
             //Shoot a bullet towards it
             BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
             bulletScript.damage = Damage;
-            bulletScript.enemyBullet = true;
-            bulletScript.SetTarget(Target.transform.position);
+            bulletScript.SetTarget(Target.transform.position, Target.gameObject);
             LastAttackTime = Time.time;
         }
     }

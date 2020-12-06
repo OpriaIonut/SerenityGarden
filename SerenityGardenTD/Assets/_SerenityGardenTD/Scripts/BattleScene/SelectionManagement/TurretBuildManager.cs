@@ -34,6 +34,8 @@ namespace SerenityGarden
             }
         }
 
+        public Material recoveryMaterial;
+
         [Header("UI components")]
         public GameObject buildMenuUI;
         public GameObject inspectTurretUI;
@@ -208,7 +210,7 @@ namespace SerenityGarden
                 if(buildable != null)
                 {
                     int recoveryCost = buildable.GetRecoveryCost();
-                    if (recoveryCost <= Money && buildable.StartRecovery())
+                    if (recoveryCost <= Money && buildable.StartRecovery(recoveryMaterial))
                         Money -= recoveryCost;
                 }
             }

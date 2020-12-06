@@ -26,6 +26,8 @@ namespace SerenityGarden
         private int currentWaveIndex = 0;   //The current wave
         private bool spawnWaves = false;    //Will be set to false when we finished spawning all waves
 
+        private int enemyIndex = 0;
+
         private void Awake()
         {
             gridManager = FindObjectOfType<HexagonalGrid>();
@@ -193,6 +195,8 @@ namespace SerenityGarden
             EnemyBase clone = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity).GetComponent<EnemyBase>();
             clone.SetStartBlock(spawnBlock);
             clone.transform.position += Vector3.up * 0.5f;
+            clone.name = clone.name.Replace("Clone", enemyIndex.ToString());
+            enemyIndex++;
         }
 
         /// <summary>

@@ -109,7 +109,7 @@ namespace SerenityGarden
                 Move();
 
             //At certain time intervals check to find if a turret/something that we can attack is in range
-            if (Time.time - LastSearchTargetTime > SearchTargetCooldown && Target == null)
+            if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
                 FindTarget();
 
             //At certain time intervals, attack the target, if it exists

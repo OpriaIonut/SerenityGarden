@@ -14,6 +14,7 @@ namespace SerenityGarden
         private GameObject rangeObj;
         private HexagonalGrid hexagonalGrid;
         private NavigationManager navigationManager;
+        private CommanderUI commanderUI;
 
         private HexagonalBlock endBlock;
 
@@ -22,6 +23,7 @@ namespace SerenityGarden
 
         //Will retain the type of the block that the commander moves towards, so that we can reset it when he leaves the block
         private HexagonType previousEndBlockType = HexagonType.Walkable;
+
 
         #region Inherited Properties
         public HexagonalBlock CurrentBlock { get; set; }
@@ -64,6 +66,7 @@ namespace SerenityGarden
 
         private void Start()
         {
+            commanderUI = FindObjectOfType<CommanderUI>();
             base.BaseStartCalls();
         }
 
@@ -92,6 +95,7 @@ namespace SerenityGarden
                                     powerupTarget.HasCommander = true;
                                     gameObject.SetActive(false);
                                     powerupTurret = false;
+                                    commanderUI.PowerupTarget(powerupTarget.gameObject);
                                 }
                             }
                         }
@@ -102,7 +106,7 @@ namespace SerenityGarden
                 else //Attack only if we reached a destination
                 {
                     //At certain time intervals check to find if a turret/something that we can attack is in range
-                    if (Time.time - LastSearchTargetTime > SearchTargetCooldown && Target == null)
+                    if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
                         FindTarget();
 
                     //At certain time intervals, attack the target, if it exists
@@ -130,8 +134,7 @@ namespace SerenityGarden
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
-                bulletScript.enemyBullet = false;
-                bulletScript.SetTarget(Target.transform.position);
+                bulletScript.SetTarget(Target.transform.position, Target.gameObject);
                 LastAttackTime = Time.time;
             }
         }
@@ -174,7 +177,6 @@ namespace SerenityGarden
 
         public void FindTarget()
         {
-            //It can find melee enemies, but who knows, maybe a ranged enemy will be close enough so that it can hit it. It is unlikely, but worth checking for.
             Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
             EnemyBase _target = null;
             EnemyBase aux;
@@ -184,11 +186,8 @@ namespace SerenityGarden
                 aux = item.transform.root.gameObject.GetComponent<EnemyBase>();
                 if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
                 {
-                    if (aux.EnemyType == EnemyType.Melee || aux.EnemyType == EnemyType.Ranged)
-                    {
-                        _target = aux;
-                        minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
-                    }
+                    _target = aux;
+                    minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
 
                     if (aux == LockOnManager.SelectedEnemy)
                         break;

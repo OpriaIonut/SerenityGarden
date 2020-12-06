@@ -10,6 +10,8 @@ namespace SerenityGarden
         [HideInInspector] public HexagonalBlock hexagonBlock;
         public TurretStatusScriptable turretUpgradePattern;
 
+        private List<Material> beforeRecoveryMaterial;
+
         private int currentLevel;
         public int CurrentLevel
         {
@@ -58,6 +60,7 @@ namespace SerenityGarden
         {
             base.BaseStartCalls();
             SetLevelProp(0);
+            beforeRecoveryMaterial = new List<Material>();
         }
 
         public override void BaseUpdateCalls()
@@ -75,6 +78,14 @@ namespace SerenityGarden
                     {
                         if (Health > maxHealth)
                             health = maxHealth;
+
+                        MeshRenderer[] renderers = gameObject.GetComponentsInChildren<MeshRenderer>();
+                        for(int index = 0; index < renderers.Length; index++)
+                        {
+                            renderers[index].material = beforeRecoveryMaterial[index];
+                        }
+                        beforeRecoveryMaterial.Clear();
+
                         IsRecovering = false;
                         currentRecovery = 0;
                     }
@@ -127,6 +138,7 @@ namespace SerenityGarden
 
         public override void Die()
         {
+            DrawRange(false);
             if (turretType == TurretType.Excavator)
                 hexagonBlock.Type = HexagonType.ResourceExtraction;
             else
@@ -152,12 +164,23 @@ namespace SerenityGarden
                 return 0;   //We are at the last level so return 0, as there are no more upgrades
         }
 
-        public bool StartRecovery()
+        public bool StartRecovery(Material recoveryMaterial)
         {
             if (Health != maxHealth && IsRecovering == false)
             {
                 IsRecovering = true;
                 recoveryAmmount = maxHealth - Health;
+
+                beforeRecoveryMaterial.Clear();
+                MeshRenderer[] renderers = gameObject.GetComponentsInChildren<MeshRenderer>();
+                foreach(MeshRenderer rend in renderers)
+                {
+                    beforeRecoveryMaterial.Add(rend.material);
+                    Color col = rend.material.color;
+                    rend.material = recoveryMaterial;
+                    rend.material.SetColor("Color_F53F0220", col);
+                }
+
                 return true;
             }
             return false;

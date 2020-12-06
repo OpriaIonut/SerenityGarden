@@ -10,6 +10,6 @@ namespace SerenityGarden
         float RecoveryCostPer1Hp { get; set; }
         float RecoveryPerSecond { get; set; }
 
-        bool StartRecovery();
+        bool StartRecovery(Material recoveryMaterial);
     }
 }

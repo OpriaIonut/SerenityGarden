@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,11 +14,17 @@ namespace SerenityGarden
         public EnemyBase selectedEnemy;
         public Commander selectedCommander;
 
+        [Header("Selection Materials")]
+        public float powIntensity = 3;
+        public Material selectedHexagonMaterial;
+
         //Reference to systems that are dependent on what we clicked 
         private InputManager inputManager;
         private TurretBuildManager buildManager;
         private LockOnManager lockOnManager;
         private CommanderUI commanderUI;
+
+        private Material previousHexagonMaterial;
 
         private void Start()
         {
@@ -45,12 +52,13 @@ namespace SerenityGarden
                     if (selectedHexagon != null && selectedHexagon.Type != HexagonType.Occupied)
                     {
                         commanderUI.SetCommanderDestination(selectedHexagon);
+                        selectedHexagon = null;
                         updateSelected = false;
                         commanderUI.selectDestination = false;
                     }
                     else if(selectedTurret != null && selectedTurret.turretType != TurretType.PlayerBase)
                     {
-                        if(commanderUI.PowerupTurret(selectedTurret))
+                        if(commanderUI.SelectPowerupTarget(selectedTurret))
                         {
                             selectedTurret = null;
                             updateSelected = true;
@@ -82,7 +90,12 @@ namespace SerenityGarden
                 selectedCommander.DrawRange(false);
                 selectedCommander = null;
             }
-            selectedHexagon = null;
+            if (selectedHexagon != null)
+            {
+                if (previousHexagonMaterial != null)
+                    selectedHexagon.gameObject.GetComponent<MeshRenderer>().material = previousHexagonMaterial;
+                selectedHexagon = null;
+            }
         }
 
         public void FindCurrentSelected()
@@ -91,6 +104,29 @@ namespace SerenityGarden
             {
                 //For the hexagon we don't want to get the parent, because it is an empty GameObject
                 selectedHexagon = inputManager.clickedObject.GetComponent<HexagonalBlock>();
+                if(selectedHexagon != null)
+                {
+                    MeshRenderer rend = selectedHexagon.gameObject.GetComponent<MeshRenderer>();
+                    previousHexagonMaterial = rend.material;
+
+                    float intensity = Mathf.Pow(2, powIntensity);
+                    Color color = Color.red * intensity;
+                    switch (selectedHexagon.Type)
+                    {
+                        case HexagonType.Walkable:
+                            color = Color.gray * intensity;
+                            break;
+                        case HexagonType.TurretBuildable:
+                            color = Color.cyan * intensity;
+                            break;
+                        case HexagonType.ResourceExtraction:
+                            color = Color.green * intensity;
+                            break;
+                    }
+
+                    rend.material = selectedHexagonMaterial;
+                    rend.material.SetColor("Color_EE45A1F6", color);
+                }
             }
             if (inputManager.clickedParent != null)
             {

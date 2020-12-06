@@ -8,10 +8,12 @@ namespace SerenityGarden
     {
         public bool selectDestination = false;
         public GameObject commanderUI;
+        public Material powerupMaterial;
 
         private SceneClickManager clickManager;
         private Commander commander;
 
+        private List<Material> powerupPreviousMaterials;
         private void Awake()
         {
             base.BaseAwakeCalls();
@@ -19,6 +21,7 @@ namespace SerenityGarden
 
         private void Start()
         {
+            powerupPreviousMaterials = new List<Material>();
             clickManager = FindObjectOfType<SceneClickManager>();
             base.BaseStartCalls();
         }
@@ -53,7 +56,7 @@ namespace SerenityGarden
             }
         }
 
-        public bool PowerupTurret(TurretBase selectedTurret)
+        public bool SelectPowerupTarget(TurretBase selectedTurret)
         {
             BuildableTurret buildable = selectedTurret.gameObject.GetComponent<BuildableTurret>();
             if (buildable)
@@ -86,6 +89,18 @@ namespace SerenityGarden
             }
         }
 
+        public void PowerupTarget(GameObject target)
+        {
+            MeshRenderer[] renderers = target.gameObject.GetComponentsInChildren<MeshRenderer>();
+            foreach (MeshRenderer rend in renderers)
+            {
+                powerupPreviousMaterials.Add(rend.material);
+                Color col = rend.material.color;
+                rend.material = powerupMaterial;
+                rend.material.SetColor("Color_62F993A2", col);
+            }
+        }
+
         /// <summary>
         /// Called by button press on the button that appears when the commander is powering up a turret. It will remove the commander from the turret and move him to the closest available block.
         /// </summary>
@@ -98,6 +113,14 @@ namespace SerenityGarden
                 {
                     buildable.HasCommander = false;
                     commander.gameObject.SetActive(true);
+
+                    int listIndex = 0;
+                    MeshRenderer[] renderers = buildable.gameObject.gameObject.GetComponentsInChildren<MeshRenderer>();
+                    foreach (MeshRenderer rend in renderers)
+                    {
+                        rend.material = powerupPreviousMaterials[listIndex];
+                        listIndex++;
+                    }
 
                     //Find the place to position the commander;
                     HexagonalBlock closestPos = null;
