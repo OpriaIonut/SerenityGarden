@@ -12,6 +12,10 @@ namespace SerenityGarden
 
         private List<Material> beforeRecoveryMaterial;
 
+        public GameObject partToRotate;
+        public GameObject firePoint;
+        private GameObject levelGfx;
+
         private int currentLevel;
         public int CurrentLevel
         {
@@ -111,6 +115,33 @@ namespace SerenityGarden
             {
                 Debug.LogWarning("Could not set prop level for turret: " + gameObject.name + "; level: " + level);
                 return;
+            }
+
+            //When upgrading a turret, the first time (when setting level to 0) it won't have the proper connections, so make them
+            if (levelGfx == null)
+            {
+                levelGfx = HelperMethods.FindChildWithName(transform, "GFX").transform.GetChild(0).gameObject;
+                if (levelGfx != null)
+                {
+                    firePoint = HelperMethods.FindChildWithName(levelGfx.transform, "FirePoint");
+                    partToRotate = HelperMethods.FindChildWithName(levelGfx.transform, "PartToRotate");
+                }
+            }
+            else
+            {
+                //Otherwise, if it has the connections, it means that it's not the instantiation of the turret
+                //So destroy the previous gfx
+                Destroy(levelGfx);
+
+                //Instantiate a new one and set up the connections
+                Transform gfxParent = HelperMethods.FindChildWithName(transform, "GFX").transform;
+                levelGfx = Instantiate(turretUpgradePattern.levelProp[level].gfx, gfxParent);
+                levelGfx.transform.position += Vector3.up * 0.04f;
+                if (levelGfx != null)
+                {
+                    firePoint = HelperMethods.FindChildWithName(levelGfx.transform, "FirePoint");
+                    partToRotate = HelperMethods.FindChildWithName(levelGfx.transform, "PartToRotate");
+                }
             }
 
             turretType = turretUpgradePattern.turretType;

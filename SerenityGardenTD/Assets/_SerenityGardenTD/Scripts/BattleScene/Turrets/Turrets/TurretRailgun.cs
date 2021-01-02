@@ -7,7 +7,6 @@ namespace SerenityGarden
     public class TurretRailgun : BuildableTurret
     {
         public GameObject bulletPrefab;
-        public Transform firePoint;
 
         private void Awake()
         {
@@ -29,10 +28,10 @@ namespace SerenityGarden
         {
             if (Target != null)
             {
-                HelperMethods.RotateObjTowardsTarget(transform, Target.transform.position, true);
+                HelperMethods.RotateObjTowardsTarget(partToRotate.transform, Target.transform.position, true);
 
                 //Shoot a bullet towards it
-                BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
+                BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
                 bulletScript.SetTarget(Target.transform.position, Target.gameObject);
                 LastAttackTime = Time.time;

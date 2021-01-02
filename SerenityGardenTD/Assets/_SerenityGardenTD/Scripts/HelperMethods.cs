@@ -78,5 +78,22 @@ namespace SerenityGarden
                 list[n] = value;
             }
         }
+
+        /// <summary>
+        /// Will find the child of 'parent' that has the specified name. It is case sensitive so beware.
+        /// </summary>
+        /// <param name="parent">The point where the search starts</param>
+        /// <param name="childName">The name of the child</param>
+        /// <returns>Returns the child or null if not found.</returns>
+        public static GameObject FindChildWithName(Transform parent, string childName)
+        {
+            Transform[] transf = parent.GetComponentsInChildren<Transform>();
+            foreach(Transform item in transf)
+            {
+                if (item.gameObject.name == childName)
+                    return item.gameObject;
+            }
+            return null;
+        }
     }
 }

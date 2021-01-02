@@ -26,7 +26,7 @@ namespace SerenityGarden
         {
             if(Target != null)
             {
-                HelperMethods.RotateObjTowardsTarget(transform, Target.transform.position, true);
+                HelperMethods.RotateObjTowardsTarget(partToRotate.transform, Target.transform.position, true);
 
                 Target.Health -= Damage;
                 LastAttackTime = Time.time;

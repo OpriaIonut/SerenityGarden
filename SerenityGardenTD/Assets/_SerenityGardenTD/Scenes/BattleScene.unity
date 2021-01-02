@@ -8004,7 +8004,7 @@ Transform:
   - {fileID: 1209300976}
   - {fileID: 779886245}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &696150182
 MonoBehaviour:
@@ -18683,7 +18683,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
@@ -21985,7 +21985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6941f961da4cb884b933479ae97de242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 1000
+  startMoney: 10000
   recoveryMaterial: {fileID: 2100000, guid: 29764c284089cee41a554f1dfdcb36f7, type: 2}
   buildMenuUI: {fileID: 1409319525}
   inspectTurretUI: {fileID: 219446415}

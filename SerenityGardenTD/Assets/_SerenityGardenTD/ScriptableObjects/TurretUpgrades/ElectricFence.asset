@@ -20,18 +20,18 @@ MonoBehaviour:
     range: 2
     upgradeCost: 100
     sellReward: 50
-    gfx: {fileID: 0}
+    gfx: {fileID: 919132149155446097, guid: a3e2ed5bb35d38748b332a931e28f9b5, type: 3}
   - health: 100
     damage: 10
     attackCooldown: 1.5
     range: 1.5
     upgradeCost: 150
     sellReward: 100
-    gfx: {fileID: 0}
+    gfx: {fileID: 919132149155446097, guid: b3af7519c28d79e44a5bcacc87fff197, type: 3}
   - health: 150
     damage: 15
     attackCooldown: 1
     range: 2
     upgradeCost: 200
     sellReward: 150
-    gfx: {fileID: 0}
+    gfx: {fileID: 919132149155446097, guid: 53093e0e268e1a94592b6922ca37ea42, type: 3}
