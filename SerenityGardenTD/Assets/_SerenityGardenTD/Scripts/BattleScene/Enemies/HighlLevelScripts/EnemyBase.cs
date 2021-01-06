@@ -85,9 +85,9 @@ namespace SerenityGarden
         public override void BaseStartCalls()
         {
             base.BaseStartCalls();
-            GamePauseManager.AddUnpauseEvent(ResumeGame);
+            GamePauseManager.AddUnpauseEvent(OnResumeGame);
         }
-        private void ResumeGame()
+        private void OnResumeGame()
         {
             LastAttackTime += GamePauseManager.PausedTime;
             LastSearchTargetTime += GamePauseManager.PausedTime;
@@ -132,7 +132,7 @@ namespace SerenityGarden
             }
             if (CurrentBlock != null)
             {
-                NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
+                NextBlock = NavigationManager.instance.FindNextBlock(CurrentBlock, EndBlock);
                 if (NextBlock != null)
                 {
                     HelperMethods.RotateObjTowardsTarget(transform, NextBlock.transform.position, true);
@@ -159,7 +159,7 @@ namespace SerenityGarden
             CurrentBlock = startBlock;
             if (EndBlock != null)
             {
-                NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
+                NextBlock = NavigationManager.instance.FindNextBlock(CurrentBlock, EndBlock);
                 if(NextBlock != null)
                 {
                     HelperMethods.RotateObjTowardsTarget(transform, NextBlock.transform.position, true);
@@ -203,7 +203,7 @@ namespace SerenityGarden
         {
             if(NextBlock != null)
                 CurrentBlock = NextBlock;
-            NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
+            NextBlock = NavigationManager.instance.FindNextBlock(CurrentBlock, EndBlock);
         }
 
         public void DrawRange(bool draw)

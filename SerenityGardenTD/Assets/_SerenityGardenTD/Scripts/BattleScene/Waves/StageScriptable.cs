@@ -7,6 +7,8 @@ namespace SerenityGarden
     [CreateAssetMenu(fileName = "Stage", menuName = "ScriptableObjects/Stage")]
     public class StageScriptable : ScriptableObject
     {
+        [Tooltip("Without file extension")]
+        public string gridFileName;
         public WaveScriptable[] waves;
         public int stageReward;
         public int starRanking;

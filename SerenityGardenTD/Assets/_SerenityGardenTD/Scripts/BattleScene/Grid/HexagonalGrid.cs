@@ -51,13 +51,15 @@ namespace SerenityGarden
         public float diameter;
         public float offset = -0.15f;
 
+        public StageScriptable selectedStage;
         //Reference to all instantiated blocks
-        public List<HexagonalBlock> gridCells = new List<HexagonalBlock>();
+        public List<HexagonalBlock> gridCells;
 
         public static List<HexagonalBlock> enemyGoal;
 
         private void Awake()
         {
+            gridCells = new List<HexagonalBlock>();
             BaseAwakeCalls();
         }
 
@@ -68,14 +70,19 @@ namespace SerenityGarden
 
         public override void Init()
         {
+            Debug.Log("Start grid init");
             if (gridCells.Count != 0)
                 ClearGrid();
-            LoadPresetGrid(Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".json");
+
+            Debug.Log("Start initialization");
+            Debug.Log("Path manager: " + PathManager.instance);
+            Debug.Log("Path manager init: " + PathManager.instance.isInitialized);
+            LoadPresetGrid(PathManager.instance.GetFilePath(selectedStage.gridFileName + ".json"));
         }
 
         public override bool HasAllDependencies()
         {
-            return true;
+            return PathManager.instance.isInitialized;
         }
 
         /// <summary>
@@ -102,15 +109,18 @@ namespace SerenityGarden
             if (!File.Exists(savePath))
             {
                 //If we didn't find the file, then throw an error
-                Debug.LogError("Could not load preset grid.");
+                Debug.LogError("Could not load preset grid at: " + savePath);
                 CreateGrid();
                 return;
             }
             try
             {
+                Debug.Log("File path: " + savePath);
                 //Get contents from json file
                 string contents = File.ReadAllText(savePath);
+                Debug.Log("Contents: " + contents);
                 GridSaveData saveData = JsonConvert.DeserializeObject<GridSaveData>(contents);
+                Debug.Log("Loaded successfully");
                 diameter = saveData.diameter;
                 offset = saveData.offset;
 

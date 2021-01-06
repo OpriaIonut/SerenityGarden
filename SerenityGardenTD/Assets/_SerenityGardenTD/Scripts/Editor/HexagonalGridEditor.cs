@@ -26,6 +26,7 @@ namespace SerenityGarden
         public override void OnInspectorGUI()
         {
             //Draw object fields for prefabs needed
+            grid.selectedStage = (StageScriptable)EditorGUILayout.ObjectField("Selected stage: ", grid.selectedStage, typeof(StageScriptable));
             grid.playerBasePrefab = (GameObject)EditorGUILayout.ObjectField("PlayerBasePrefab: ", grid.playerBasePrefab, typeof(GameObject));
             grid.commanderPrefab = (GameObject)EditorGUILayout.ObjectField("Commander Prefab: ", grid.commanderPrefab, typeof(GameObject));
             GameObject walkableArea = (GameObject)EditorGUILayout.ObjectField("Walkable Area: ", grid.walkableArea, typeof(GameObject));

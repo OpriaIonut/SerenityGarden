@@ -6,11 +6,9 @@ namespace SerenityGarden
 {
     public sealed class PlayerBase : TurretBase
     {
-        public Transform objToRotate;
         public GameObject bulletPrefab;
         public Transform firePoint;
         public TurretStatusScriptable baseStatus;
-        public Transform gun;
 
         private void Awake()
         {

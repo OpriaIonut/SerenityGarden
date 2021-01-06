@@ -43,7 +43,7 @@ namespace SerenityGarden
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
             //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem
-            GamePauseManager.AddUnpauseEvent(ResumeGame);
+            GamePauseManager.AddUnpauseEvent(OnResumeGame);
         }
 
         private void Update()
@@ -70,7 +70,7 @@ namespace SerenityGarden
             }
         }
 
-        private void ResumeGame()
+        private void OnResumeGame()
         {
             lastWaveEndTime += GamePauseManager.PausedTime;
         }

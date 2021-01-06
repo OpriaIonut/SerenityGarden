@@ -6,7 +6,7 @@ namespace SerenityGarden
 {
     public class Commander : LogicProcessBase, IMovable, IAttacker<EnemyBase>
     {
-        public CommanderScriptable statuses;
+        public CommanderScriptable status;
         public Transform firePoint;
         public GameObject bulletPrefab;
         public GameObject rangePrefab;
@@ -172,7 +172,7 @@ namespace SerenityGarden
         {
             if (NextBlock != null)
                 CurrentBlock = NextBlock;
-            NextBlock = NavigationManager.instance.FindNext(CurrentBlock, EndBlock);
+            NextBlock = NavigationManager.instance.FindNextBlock(CurrentBlock, EndBlock);
         }
 
         public void FindTarget()
@@ -205,10 +205,10 @@ namespace SerenityGarden
 
         public override void Init()
         {
-            Speed = statuses.speed;
-            Damage = statuses.damage;
-            Range = statuses.range;
-            AttackCooldown = statuses.attackCooldown;
+            Speed = status.speed;
+            Damage = status.damage;
+            Range = status.range;
+            AttackCooldown = status.attackCooldown;
         }
 
         public void Move()

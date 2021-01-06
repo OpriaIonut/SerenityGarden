@@ -76,6 +76,18 @@ namespace SerenityGarden
             }
         }
 
+        public void PowerupTarget(GameObject target)
+        {
+            MeshRenderer[] renderers = target.gameObject.GetComponentsInChildren<MeshRenderer>();
+            foreach (MeshRenderer rend in renderers)
+            {
+                powerupPreviousMaterials.Add(rend.material);
+                Color col = rend.material.color;
+                rend.material = powerupMaterial;
+                rend.material.SetColor("Color_62F993A2", col);
+            }
+        }
+
         /// <summary>
         /// Called by button press, in order to start moving the target
         /// </summary>
@@ -86,18 +98,6 @@ namespace SerenityGarden
                 clickManager.selectedCommander.DrawRange(false);
                 selectDestination = true;
                 commanderUI.SetActive(false);
-            }
-        }
-
-        public void PowerupTarget(GameObject target)
-        {
-            MeshRenderer[] renderers = target.gameObject.GetComponentsInChildren<MeshRenderer>();
-            foreach (MeshRenderer rend in renderers)
-            {
-                powerupPreviousMaterials.Add(rend.material);
-                Color col = rend.material.color;
-                rend.material = powerupMaterial;
-                rend.material.SetColor("Color_62F993A2", col);
             }
         }
 

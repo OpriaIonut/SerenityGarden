@@ -32,7 +32,7 @@ namespace SerenityGarden
         }
 
         //Reference to the grid, because it is VERY dependent on it
-        public HexagonalGrid gridManager;
+        private HexagonalGrid gridManager;
 
         //Matrix that will retain the minimum cost from one node to all other nodes
         private float[,] costMatrix;
@@ -78,7 +78,7 @@ namespace SerenityGarden
         /// <param name="current">Current node that it sits on</param>
         /// <param name="end">The goal that it needs to reach</param>
         /// <returns></returns>
-        public HexagonalBlock FindNext(HexagonalBlock current, HexagonalBlock end)
+        public HexagonalBlock FindNextBlock(HexagonalBlock current, HexagonalBlock end)
         {
             if (!isInitialized)
                 return null;

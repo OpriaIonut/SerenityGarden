@@ -21,7 +21,6 @@ namespace SerenityGarden
         //Prefab for the range object, that will be shown when selecting a turret
         public GameObject rangePrefab;
         [HideInInspector] public TurretType turretType;
-        public GameObject gfx;
         public Image healthbarUI;
 
         //A delay time for searching for a target, because it may be an expensive process to do every frame
@@ -96,11 +95,11 @@ namespace SerenityGarden
         public override void BaseStartCalls()
         {
             base.BaseStartCalls();
-            GamePauseManager.AddUnpauseEvent(ResumeGame);
+            GamePauseManager.AddUnpauseEvent(OnResumeGame);
         }
 
         //Pausing time will mess up the attack time, so we need to correct the problem when unpausing
-        private void ResumeGame()
+        private void OnResumeGame()
         {
             LastAttackTime += GamePauseManager.PausedTime;
             LastSearchTargetTime += GamePauseManager.PausedTime;

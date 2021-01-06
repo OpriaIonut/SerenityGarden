@@ -1,0 +1,247 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.CompilerServices;
+using UnityEngine;
+
+namespace SerenityGarden
+{
+    public class NavigationManager : LogicProcessBase
+    {
+        #region Singleton
+        public static NavigationManager instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Warning! There are multiple instances of NavigationManager in the scene. Deleting from " + gameObject.name);
+                return;
+            }
+            else
+                instance = this;
+
+            gridManager = FindObjectOfType<HexagonalGrid>();
+            BaseAwakeCalls();   //Call initialization for this process
+        }
+        #endregion
+
+        private void Start()
+        {
+            BaseStartCalls();
+        }
+
+        public class Edge
+        {
+            public int v1, v2;
+            public float distance;
+            public Edge(int _v1, int _v2, float _distance) { v1 = _v1; v2 = _v2; distance = _distance; }
+        }
+
+        public class Node
+        {
+            public int nodeIndex;
+            public Node parent;
+            public float f;
+            public Node(int index, Node parentIndex, float _f) { nodeIndex = index; parent = parentIndex; f = _f; }
+        }
+
+        //Reference to the grid, because it is VERY dependent on it
+        public HexagonalGrid gridManager;
+        List<List<Edge>> adjacencyList;
+
+        public override void Init()
+        {
+            //Create the matrixes
+            int length = gridManager.gridCells.Count;
+
+            //Find edges in the graph by initializing the adjacencyList
+            FindEdges(length);
+        }
+
+        /// <summary>
+        /// Any script can call this method to know the shortest path to a goal
+        /// </summary>
+        /// <param name="current">Current node that it sits on</param>
+        /// <param name="end">The goal that it needs to reach</param>
+        /// <returns></returns>
+        public HexagonalBlock FindNext(HexagonalBlock current, HexagonalBlock end, bool ignoreOccupied)
+        {
+            if (!isInitialized)
+                return null;
+
+            if (current == end)
+                return current;
+
+            List<HexagonalBlock> path = AStar(current, end, ignoreOccupied);
+            if (path == null)
+                return null;
+
+            return path[1];
+        }
+
+        #region AlgorithmMethods
+
+        /// <summary>
+        /// Find pairs of connected nodes
+        /// </summary>
+        /// <param name="length"></param>
+        private void FindEdges(int length)
+        {
+            //The maximum distance allowed for a node to be considered adjacent.
+            float maxDistanceAllowed = gridManager.diameter * gridManager.diameter;
+            adjacencyList = new List<List<Edge>>();
+
+            //For each node
+            for (int index = 0; index < length; index++)
+            {
+                adjacencyList.Add(new List<Edge>());
+                //Check the distance to all nodes in the grid.
+                //Initially I was trying with Pysics.OverlapSphere, but it didn't recognize hexagon block, probably because they were instantiated on the same frame.
+                for(int index2 = 0; index2 < length; index2++)
+                {
+                    //Find the distance between the two nodes
+                    float distance = HelperMethods.SquaredDistance(gridManager.gridCells[index].transform.position, gridManager.gridCells[index2].transform.position);
+
+                    //If it isn't the same node and it's close enough to be adjacent
+                    if (index != index2 && distance <= maxDistanceAllowed)
+                    {
+                        adjacencyList[index].Add(new Edge(index, index2, distance));
+                    }
+                }
+            }
+        }
+
+        public List<HexagonalBlock> AStar(HexagonalBlock current, HexagonalBlock end, bool ignoreOccupied)
+        {
+            //Create the needed lists.
+            List<Node> openList = new List<Node>(); //Will hold the nodes that we visited
+            //Will hold the nodes in the actual path, but there may be more nodes than needed (because the path changed to a shorter one mid-way)
+            List<Node> closedList = new List<Node>(); 
+
+            //Add the start node to the open list
+            openList.Add(new Node(current.listId, null, 0));
+
+            Node minNode = new Node(0, null, 0);
+            float minCost;
+            //While we still have nodes to explore
+            while(openList.Count != 0)
+            {
+                //Find the node with the minimum cost
+                minCost = float.MaxValue;
+                int minIndex = -1;
+                for(int index = 0; index < openList.Count; index++)
+                {
+                    if(openList[index].f < minCost)
+                    {
+                        minCost = openList[index].f;
+                        minNode = new Node(openList[index].nodeIndex, openList[index].parent, openList[index].f);
+                        minIndex = index;
+                    }
+                }
+
+                //Remove it from the open set and add him to the path
+                openList.RemoveAt(minIndex);
+                closedList.Add(minNode);
+
+                //For all adjacent nodes to the current one
+                for (int adjIndex = 0; adjIndex < adjacencyList[minNode.nodeIndex].Count; adjIndex++)
+                {
+                    //Find the adjacent node
+                    HexagonalBlock successor = gridManager.gridCells[adjacencyList[minNode.nodeIndex][adjIndex].v2];
+
+                    //If the adjacent node is the end node
+                    if(successor.listId == end.listId)
+                    {
+                        float totalDist = minNode.f + adjacencyList[minNode.nodeIndex][adjIndex].distance;
+                        return ReconstructPath(new Node(successor.listId, minNode, totalDist));
+                    }
+
+                    //If the node is not walkable, then skip it
+                    if (!ignoreOccupied && successor.Type == HexagonType.Occupied)
+                        continue;
+
+                    //Do the same if it is in the closed set already
+                    bool skipCurrent = false;
+                    for (int closedIndex = 0; closedIndex < closedList.Count; closedIndex++)
+                    {
+                        if (closedList[closedIndex].nodeIndex == successor.listId)
+                        {
+                            skipCurrent = true;
+                            break;
+                        }
+                    }
+                    if (skipCurrent)
+                        continue;
+
+                    //Calculate the heuristic
+                    float g = minNode.f + adjacencyList[minNode.nodeIndex][adjIndex].distance;
+                    float f = g + HelperMethods.SquaredDistance(successor.transform.position, end.transform.position);
+
+                    //Search for the adjacent node in the open list
+                    bool addToList = true;
+                    for(int openListIndex = 0; openListIndex < openList.Count; openListIndex++)
+                    {
+                        if(openList[openListIndex].nodeIndex == successor.listId)
+                        {
+                            //If we found it, then check to see if the current path is shorter
+                            addToList = false;
+                            if(openList[openListIndex].f > f)
+                            {
+                                //And if so, change it's parent in order to remember the path
+                                openList[openListIndex].parent = minNode;
+                            }
+                        }
+                    }
+                    //If the adjacent node isn't in the open list, then add him to the open list
+                    if (addToList)
+                        openList.Add(new Node(successor.listId, minNode, f));
+                }
+            }
+            //If we didn't find the end node, return the path found up until this point.
+            Node closestToGoal = new Node(0, null, 0);
+            float minDist = float.MaxValue;
+            foreach(Node item in closedList)
+            {
+                if(item.f < minDist)
+                {
+                    closestToGoal.f = item.f;
+                    closestToGoal.nodeIndex = item.nodeIndex;
+                    closestToGoal.parent = item.parent;
+                }
+            }
+            return ReconstructPath(closestToGoal);
+        }
+
+        private List<HexagonalBlock> ReconstructPath(Node endNode)
+        {
+            List<int> reversedPath = new List<int>();
+            List<HexagonalBlock> path = new List<HexagonalBlock>();
+
+            //Reconstruct the path;
+            Node iterator = endNode;
+            while (iterator != null)
+            {
+                reversedPath.Add(iterator.nodeIndex);
+                iterator = iterator.parent;
+            }
+
+            //The constructed path is in reverse order, so we need to flip it around
+            for (int index = reversedPath.Count - 1; index >= 0; index--)
+            {
+                path.Add(gridManager.gridCells[reversedPath[index]]);
+            }
+            return path;
+        }
+
+        #endregion
+        
+        public override bool HasAllDependencies()
+        {
+            //This system is dependent on the grid manager, so initialize it only after it was initialized
+            if (gridManager != null && gridManager.isInitialized)
+                return true;
+            return false;
+        }
+    }
+}
