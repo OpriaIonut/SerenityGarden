@@ -6,6 +6,23 @@ namespace SerenityGarden
 {
     public class GamePauseManager : MonoBehaviour
     {
+        //Default singleton
+        #region Singleton
+
+        public static GamePauseManager instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Warning! Multiple instances of GamePauseManager in scene. Deleting from: " + gameObject.name);
+                Destroy(this);
+            }
+            else
+                instance = this;
+        }
+
+        #endregion
+
         public GameObject pauseMenu;
 
         private static bool gamePaused = false;
@@ -21,6 +38,12 @@ namespace SerenityGarden
 
         private float pauseStartTime;
 
+        private InputManager inputManager;
+        private void Start()
+        {
+            inputManager = InputManager.instance;
+        }
+
         public void _PauseGame()
         {
             gamePaused = !gamePaused;
@@ -28,9 +51,11 @@ namespace SerenityGarden
             if(gamePaused == true)
             {
                 pauseStartTime = Time.time;
+                inputManager.AddOnPressEvent(_PauseGame);
             }
             else
             {
+                inputManager.RemoveOnPressEvent(_PauseGame);
                 pausedTime = Time.time - pauseStartTime;
                 if (Event_UnpauseGame != null && Event_UnpauseGame.GetInvocationList().Length != 0)
                     Event_UnpauseGame.Invoke();

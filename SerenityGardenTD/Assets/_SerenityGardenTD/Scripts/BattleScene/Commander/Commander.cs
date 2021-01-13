@@ -205,10 +205,12 @@ namespace SerenityGarden
 
         public override void Init()
         {
+            Debug.Log("Start commander init; satus obj: " + status.ToString());
             Speed = status.speed;
             Damage = status.damage;
             Range = status.range;
             AttackCooldown = status.attackCooldown;
+            Debug.Log("Finish commander init");
         }
 
         public void Move()

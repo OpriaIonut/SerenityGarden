@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInitialized: 0
-  statuses: {fileID: 11400000, guid: 318396aea0028c940b9d4967909d2399, type: 2}
+  status: {fileID: 11400000, guid: 318396aea0028c940b9d4967909d2399, type: 2}
   firePoint: {fileID: 7925109683109128954}
   bulletPrefab: {fileID: 6760037018435719773, guid: e0ca4546c60a64244bdabf91f609030a,
     type: 3}

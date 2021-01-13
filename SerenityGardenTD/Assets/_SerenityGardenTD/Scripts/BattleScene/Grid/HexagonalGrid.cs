@@ -11,10 +11,19 @@ namespace SerenityGarden
     /// <summary>
     /// Class used to display the list in the editor.
     /// </summary>
-    public class GridList
+    public class BlockTypes
     {
-        public List<int> list;
-        public GridList(List<int> values)
+        public List<int> list { get; set; }
+        public BlockTypes(List<int> values)
+        {
+            list = values;
+        }
+    }
+
+    public class BlockSpawnIds
+    {
+        public List<int> list { get; set; }
+        public BlockSpawnIds(List<int> values)
         {
             list = values;
         }
@@ -25,17 +34,17 @@ namespace SerenityGarden
     /// </summary>
     public class GridSaveData
     {
-        public float diameter;
-        public float offset;
-        public GridList blockTypes;
-        public GridList blockSpawnIds;
+        public float diameter { get; set; }
+        public float offset { get; set; }
+        public BlockTypes blockTypes { get; set; }
+        public BlockSpawnIds blockSpawnIds { get; set; }
 
         public GridSaveData(float _diameter, float _offset, List<int> hexagonTypes, List<int> spawnId)
         {
             diameter = _diameter;
             offset = _offset;
-            blockTypes = new GridList(hexagonTypes);
-            blockSpawnIds = new GridList(spawnId);
+            blockTypes = new BlockTypes(hexagonTypes);
+            blockSpawnIds = new BlockSpawnIds(spawnId);
         }
     }
 
@@ -59,7 +68,8 @@ namespace SerenityGarden
 
         private void Awake()
         {
-            gridCells = new List<HexagonalBlock>();
+            if (gridCells == null)
+                gridCells = new List<HexagonalBlock>();
             BaseAwakeCalls();
         }
 
@@ -90,6 +100,9 @@ namespace SerenityGarden
         /// </summary>
         public void ClearGrid()
         {
+            if (gridCells == null)
+                gridCells = new List<HexagonalBlock>();
+
             for(int index = 0; index < gridCells.Count; index++)
             {
                 if (gridCells[index] == null)
@@ -117,9 +130,10 @@ namespace SerenityGarden
             {
                 Debug.Log("File path: " + savePath);
                 //Get contents from json file
-                string contents = File.ReadAllText(savePath);
-                Debug.Log("Contents: " + contents);
-                GridSaveData saveData = JsonConvert.DeserializeObject<GridSaveData>(contents);
+                //string contents = File.ReadAllText(savePath);
+                //Debug.Log("Contents: " + contents);
+                GridSaveData saveData = GridDataSaver.LoadData(savePath);
+                //GridSaveData saveData = JsonConvert.DeserializeObject<GridSaveData>(contents);
                 Debug.Log("Loaded successfully");
                 diameter = saveData.diameter;
                 offset = saveData.offset;
@@ -136,7 +150,7 @@ namespace SerenityGarden
                 {
                     gridCells[index].Type = (HexagonType)saveData.blockTypes.list[index];
                     gridCells[index].spawnPointsID = (SpawnPointsID)saveData.blockSpawnIds.list[index];
-                    if (gridCells[index].Type == HexagonType.PlayerBase)
+                    if (gridCells[index].Type == HexagonType.PlayerBase && isInitialized == true)
                     {
                         enemyGoal.Add(gridCells[index]);
                         yPos = gridCells[index].transform.position.y;
@@ -221,7 +235,7 @@ namespace SerenityGarden
                     //Place the block
                     HexagonalBlock block = Instantiate(hexagonPrefab, transform).GetComponent<HexagonalBlock>();
                     block.PlaceHexagon(new Vector3(x, bounds.min.y, zTarget), diameter);
-
+                    block.name = "HexagonalBlock " + gridCells.Count;
                     //Check to see if it is within the playable area
                     bool cond = false;
                     RaycastHit[] hit = Physics.RaycastAll(new Ray(block.transform.position + Vector3.up, Vector3.down * 10));

@@ -35,47 +35,55 @@ namespace SerenityGarden
 
         #region Delegates
 
+        //NonUI events will check if the mouse is over an ui component before calling the delegate.
+        //Normal events will call the component before that.
+
         //Delegates for calling other script's functionality on certain user input
         public delegate void InputEventOnPress();
+        private InputEventOnPress Event_NonUI_OnPress;
         private InputEventOnPress Event_OnPress;
         /// <summary>
         /// All methods that need to be called when pressing click/tap should call this method
         /// </summary>
         /// <param name="subscriber">A method that will be called.</param>
-        public void AddOnPressEvent(InputEventOnPress subscriber)           {   Event_OnPress += subscriber;        }
-        public void RemoveOnPressEvent(InputEventOnPress unsubscriber)      {   Event_OnPress -= unsubscriber;      }
+        public void AddNonUIOnPressEvent(InputEventOnPress subscriber)           {   Event_NonUI_OnPress += subscriber;        }
+        public void RemoveNonUIOnPressEvent(InputEventOnPress unsubscriber)      {   Event_NonUI_OnPress -= unsubscriber;      }
+        public void AddOnPressEvent(InputEventOnPress subscriber) { Event_OnPress += subscriber; }
+        public void RemoveOnPressEvent(InputEventOnPress unsubscriber) { Event_OnPress -= unsubscriber; }
 
 
         public delegate void InputEventOnRelease();
+        private InputEventOnRelease Event_NonUI_OnRelease;
         private InputEventOnRelease Event_OnRelease;
         /// <summary>
         /// All methods that need to be called when pressing click/tap should call this method
         /// </summary>
         /// <param name="subscriber">A method that will be called.</param>
-        public void AddOnReleaseEvent(InputEventOnRelease subscriber)       {   Event_OnRelease += subscriber;      }
-        public void RemoveOnReleaseEvent(InputEventOnRelease unsubscriber)  {   Event_OnRelease -= unsubscriber;    }
+        public void AddNonUIOnReleaseEvent(InputEventOnRelease subscriber)       {   Event_NonUI_OnRelease += subscriber;      }
+        public void RemoveNonUIOnReleaseEvent(InputEventOnRelease unsubscriber)  {   Event_NonUI_OnRelease -= unsubscriber; }
+        public void AddOnReleaseEvent(InputEventOnRelease subscriber) { Event_OnRelease += subscriber; }
+        public void RemoveOnReleaseEvent(InputEventOnRelease unsubscriber) { Event_OnRelease -= unsubscriber; }
 
 
         public delegate void InputEventOnDrag();
+        private InputEventOnDrag Event_NonUI_OnDrag;
         private InputEventOnDrag Event_OnDrag;
         /// <summary>
         /// All methods that need to be called when pressing click/tap should call this method
         /// </summary>
         /// <param name="subscriber">A method that will be called.</param>
-        public void AddOnDragEvent(InputEventOnDrag subscriber)             {   Event_OnDrag += subscriber;         }
-        public void RemoveOnDragEvent(InputEventOnDrag unsubscriber)        {   Event_OnDrag -= unsubscriber;       }
+        public void AddNonUIOnDragEvent(InputEventOnDrag subscriber)             {   Event_NonUI_OnDrag += subscriber;         }
+        public void RemoveNonUIOnDragEvent(InputEventOnDrag unsubscriber)        {   Event_NonUI_OnDrag -= unsubscriber; }
+        public void AddOnDragEvent(InputEventOnDrag subscriber) { Event_NonUI_OnDrag += subscriber; }
+        public void RemoveOnDragEvent(InputEventOnDrag unsubscriber) { Event_NonUI_OnDrag -= unsubscriber; }
 
         #endregion
 
         private void Update()
         {
-            //If the mouse is over an ui component, stop input
-            if (EventSystem.current.IsPointerOverGameObject())
-                return;
-
 #if UNITY_STANDALONE
-            
-            if(Input.GetMouseButtonDown(0))
+
+            if (Input.GetMouseButtonDown(0))
             {
                 pressPosition = Input.mousePosition;
                 isPressed = true;
@@ -85,7 +93,7 @@ namespace SerenityGarden
                 if (Event_OnPress != null && Event_OnPress.GetInvocationList().Length != 0)
                     Event_OnPress.Invoke();
             }
-            if(Input.GetMouseButtonUp(0))
+            if (Input.GetMouseButtonUp(0))
             {
                 releasePosition = Input.mousePosition;
                 isPressed = false;
@@ -94,42 +102,91 @@ namespace SerenityGarden
                 if (Event_OnRelease != null && Event_OnRelease.GetInvocationList().Length != 0)
                     Event_OnRelease.Invoke();
             }
-            if(Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0))
             {
                 //Call all methods that are subscribed to this event
                 if (Event_OnDrag != null && Event_OnDrag.GetInvocationList().Length != 0)
                     Event_OnDrag.Invoke();
             }
 
+            //If the mouse is over an ui component, stop input
+            if (EventSystem.current.IsPointerOverGameObject())
+                return;
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                //Call all methods that are subscribed to this event
+                if (Event_NonUI_OnPress != null && Event_NonUI_OnPress.GetInvocationList().Length != 0)
+                    Event_NonUI_OnPress.Invoke();
+            }
+            if(Input.GetMouseButtonUp(0))
+            {
+                //Call all methods that are subscribed to this event
+                if (Event_NonUI_OnRelease != null && Event_NonUI_OnRelease.GetInvocationList().Length != 0)
+                    Event_NonUI_OnRelease.Invoke();
+            }
+            if(Input.GetMouseButton(0))
+            {
+                //Call all methods that are subscribed to this event
+                if (Event_NonUI_OnDrag != null && Event_NonUI_OnDrag.GetInvocationList().Length != 0)
+                    Event_NonUI_OnDrag.Invoke();
+            }
+
 #endif
 
 #if UNITY_ANDROID
 
-            //Same code, but for android
-            if(Input.touchCount > 0)
+            if (Input.touchCount > 0)
             {
-                Touch currentTouch = Input.GetTouch(0);
-                if(currentTouch.phase == TouchPhase.Began)
+                Touch touch = Input.GetTouch(0);
+                //Same code, but for android
+                if (touch.phase == TouchPhase.Began)
                 {
-                    pressPosition = currentTouch.position;
+                    pressPosition = Input.mousePosition;
                     isPressed = true;
                     pressTime = Time.time;
-                    GetHitObjects();
+                    GetHitObjects();    //Get the object that we clicked
+                                        //Call all methods that are subscribed to this event
                     if (Event_OnPress != null && Event_OnPress.GetInvocationList().Length != 0)
                         Event_OnPress.Invoke();
                 }
-                if(currentTouch.phase == TouchPhase.Ended)
+                else if (touch.phase == TouchPhase.Ended)
                 {
-                    releasePosition = currentTouch.position;
+                    releasePosition = Input.mousePosition;
                     isPressed = false;
                     releaseTime = Time.time;
+                    //Call all methods that are subscribed to this event
                     if (Event_OnRelease != null && Event_OnRelease.GetInvocationList().Length != 0)
                         Event_OnRelease.Invoke();
                 }
-                if(currentTouch.phase == TouchPhase.Moved)
+                else
                 {
+                    //Call all methods that are subscribed to this event
                     if (Event_OnDrag != null && Event_OnDrag.GetInvocationList().Length != 0)
                         Event_OnDrag.Invoke();
+                }
+
+                //If the mouse is over an ui component, stop input
+                if (EventSystem.current.IsPointerOverGameObject())
+                    return;
+
+                if (touch.phase == TouchPhase.Began)
+                {
+                    //Call all methods that are subscribed to this event
+                    if (Event_NonUI_OnPress != null && Event_NonUI_OnPress.GetInvocationList().Length != 0)
+                        Event_NonUI_OnPress.Invoke();
+                }
+                else if (touch.phase == TouchPhase.Ended)
+                {
+                    //Call all methods that are subscribed to this event
+                    if (Event_NonUI_OnRelease != null && Event_NonUI_OnRelease.GetInvocationList().Length != 0)
+                        Event_NonUI_OnRelease.Invoke();
+                }
+                else
+                {
+                    //Call all methods that are subscribed to this event
+                    if (Event_NonUI_OnDrag != null && Event_NonUI_OnDrag.GetInvocationList().Length != 0)
+                        Event_NonUI_OnDrag.Invoke();
                 }
             }
 

@@ -32,7 +32,8 @@ namespace SerenityGarden
             buildManager = FindObjectOfType<TurretBuildManager>();
             lockOnManager = FindObjectOfType<LockOnManager>();
             commanderUI = FindObjectOfType<CommanderUI>();
-            inputManager.AddOnPressEvent(OnPressHandler);
+
+            inputManager.AddNonUIOnPressEvent(OnPressHandler);
         }
 
         /// <summary>

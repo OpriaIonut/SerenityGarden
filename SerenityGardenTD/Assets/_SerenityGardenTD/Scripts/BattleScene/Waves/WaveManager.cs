@@ -21,6 +21,8 @@ namespace SerenityGarden
         private List<HexagonalBlock> spawnPoints;   //Will contain all spawn points in a scene
         private HexagonalGrid gridManager;
         private TurretBuildManager buildManager;
+        private BattleStageStateManager stageManager;
+
         private TextMeshProUGUI waveSkipText;       //Text component that will display the remaining time before the next wave
 
         private int currentWaveIndex = 0;   //The current wave
@@ -38,6 +40,7 @@ namespace SerenityGarden
         {
             base.BaseStartCalls();
             buildManager = TurretBuildManager.instance;
+            stageManager = BattleStageStateManager.instance;
             stageStartButton.SetActive(true);
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
@@ -143,21 +146,8 @@ namespace SerenityGarden
             }
             else
             {
-                //If we spawned all waves
-                while (true)
-                {
-                    //Check from time to time if there are any enemies alive
-                    yield return new WaitForSeconds(0.5f);
-
-                    EnemyBase[] enemies = FindObjectsOfType<EnemyBase>();
-                    if (enemies.Length == 0)
-                    {
-                        //If no enemy is alive, then end the wave.
-                        spawnWaves = false;
-                        Debug.Log("Stage won");
-                        break;
-                    }
-                }
+                //Else, tell the stage manager that we finished spawning, so that he will know when to consider the game as won.
+                stageManager.SpawnedAllEnemies();
             }
 
             startedWave = false;

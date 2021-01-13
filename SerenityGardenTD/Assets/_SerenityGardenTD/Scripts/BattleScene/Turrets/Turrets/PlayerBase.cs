@@ -78,7 +78,7 @@ namespace SerenityGarden
 
         public override void Die()
         {
-            Debug.Log("Game over!");
+            BattleStageStateManager.instance.GameOver();
             Destroy(this.gameObject);
         }
 

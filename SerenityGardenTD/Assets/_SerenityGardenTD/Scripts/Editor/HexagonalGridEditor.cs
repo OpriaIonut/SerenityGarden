@@ -82,8 +82,13 @@ namespace SerenityGarden
                 gridSpawnId.Add((int)item.spawnPointsID);
             }
             GridSaveData gridSaveData = new GridSaveData(grid.diameter, grid.offset, gridType, gridSpawnId);
-            string json = JsonConvert.SerializeObject(gridSaveData, Formatting.Indented);
-            File.WriteAllText(savePath, json);
+            //string json = JsonConvert.SerializeObject(gridSaveData, Formatting.Indented);
+            //File.WriteAllText(savePath, json);
+
+            GridDataSaver.SaveData(gridSaveData, savePath);
+
+            //FileParser.GenerateFileContent(gridSaveData);
+            //FileParser.SaveFileContent(Application.streamingAssetsPath + "/demo.json", true);
         }
     }
 }
