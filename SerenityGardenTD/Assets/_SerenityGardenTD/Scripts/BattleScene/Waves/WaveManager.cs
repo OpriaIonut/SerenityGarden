@@ -12,11 +12,11 @@ namespace SerenityGarden
         public float moneyPerSecondSkip = 3;    //If you choose to skip the wave ddelay, you will receive money based on this
         public float enemySpawnDelay = 1f;      //The delay between each enemy gets spawned
         public float waveDelay = 30.0f;         //The delay between waves
-        public StageScriptable selectedStage;   //The current stage containing waves
 
         private float lastWaveEndTime;      //The time the last wave ended at
         private bool startedWave = false;   //Are we spawning a wave or waiting for the delay
 
+        private StageScriptable selectedStage;   //The current stage containing waves
         //List of spawn points, that will be found based on the grid system
         private List<HexagonalBlock> spawnPoints;   //Will contain all spawn points in a scene
         private HexagonalGrid gridManager;
@@ -47,6 +47,7 @@ namespace SerenityGarden
 
             //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem
             GamePauseManager.AddUnpauseEvent(OnResumeGame);
+            selectedStage = SceneDataRetainer.instance.GetStage();
         }
 
         private void Update()

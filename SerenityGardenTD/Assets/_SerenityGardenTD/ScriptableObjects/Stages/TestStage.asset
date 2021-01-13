@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2ee4aa6f7a69b419023cbb83e0040f, type: 3}
   m_Name: TestStage
   m_EditorClassIdentifier: 
+  stageName: Demo Stage
+  stageDescription: 
+  gridFileName: 
   waves:
   - {fileID: 11400000, guid: d21711bcab528ec4d90dfb4e59b3831c, type: 2}
   stageReward: 100
-  starRanking: 0
+  starRanking: 2
   rewardPerStar: 20

@@ -75,7 +75,7 @@ namespace SerenityGarden
 
         private void ReloadScene()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadScene("StageSelection");
         }
     }
 }

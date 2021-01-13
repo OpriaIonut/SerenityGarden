@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2ee4aa6f7a69b419023cbb83e0040f, type: 3}
   m_Name: Stage1
   m_EditorClassIdentifier: 
+  stageName: Stage 1-1
+  stageDescription: 
   gridFileName: BattleScene
   waves:
   - {fileID: 11400000, guid: ffcee2daab0e00f4fa3f72a3eec67f6d, type: 2}
