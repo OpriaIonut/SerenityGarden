@@ -22,7 +22,8 @@ namespace SerenityGarden
         ResourceExtraction,
         Occupied,
         SpawnPoint,
-        CommanderSpawn
+        CommanderSpawn,
+        Impassable
     }
 
     public class HexagonalBlock : MonoBehaviour

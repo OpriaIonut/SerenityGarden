@@ -36,13 +36,15 @@ namespace SerenityGarden
     {
         public float diameter { get; set; }
         public float offset { get; set; }
+        public float mapScaleOffset { get; set; }
         public BlockTypes blockTypes { get; set; }
         public BlockSpawnIds blockSpawnIds { get; set; }
 
-        public GridSaveData(float _diameter, float _offset, List<int> hexagonTypes, List<int> spawnId)
+        public GridSaveData(float _diameter, float _offset, float _mapScaleOffset, List<int> hexagonTypes, List<int> spawnId)
         {
             diameter = _diameter;
             offset = _offset;
+            mapScaleOffset = _mapScaleOffset;
             blockTypes = new BlockTypes(hexagonTypes);
             blockSpawnIds = new BlockSpawnIds(spawnId);
         }
@@ -50,15 +52,37 @@ namespace SerenityGarden
 
     public class HexagonalGrid : LogicProcessBase
     {
+        #region Singleton
+        public static HexagonalGrid instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Warning! There are multiple instances of HexagonalGrid in the scene. Deleting from " + gameObject.name);
+                return;
+            }
+            else
+                instance = this;
+
+            if (gridCells == null)
+                gridCells = new List<HexagonalBlock>();
+            BaseAwakeCalls();   //Call initialization for this process
+        }
+        #endregion
+
         [Header("Prefabs")]
         public GameObject playerBasePrefab;
         public GameObject commanderPrefab;
         public GameObject hexagonPrefab;
-        public GameObject walkableArea;
 
         [Header("Scaling properties")]
         public float diameter;
         public float offset = -0.15f;
+        //The map will be scaled to fit the screen. But we will want to scale it so that the spawn points don't show up, so we will use this scale offset for that.
+        public float mapScaleOffset;
+
+
+        public string mapPresetFile;
 
         public StageScriptable selectedStage;
         //Reference to all instantiated blocks
@@ -66,12 +90,9 @@ namespace SerenityGarden
 
         public static List<HexagonalBlock> enemyGoal;
 
-        private void Awake()
-        {
-            if (gridCells == null)
-                gridCells = new List<HexagonalBlock>();
-            BaseAwakeCalls();
-        }
+
+        public float scaleFact;
+        public GameObject walkableArea;
 
         private void Start()
         {
@@ -80,19 +101,18 @@ namespace SerenityGarden
 
         public override void Init()
         {
-            Debug.Log("Start grid init");
+            selectedStage = SceneDataRetainer.instance.GetStage();
+            mapScaleOffset = 1;
+
             if (gridCells.Count != 0)
                 ClearGrid();
-
-            Debug.Log("Start initialization");
-            Debug.Log("Path manager: " + PathManager.instance);
-            Debug.Log("Path manager init: " + PathManager.instance.isInitialized);
-            LoadPresetGrid(PathManager.instance.GetFilePath(selectedStage.gridFileName + ".json"));
+            SpawnAndScaleMap();
+            LoadPresetGrid(Application.streamingAssetsPath + "/" + selectedStage.stageName + ".json");
         }
 
         public override bool HasAllDependencies()
         {
-            return PathManager.instance.isInitialized;
+            return true;
         }
 
         /// <summary>
@@ -113,6 +133,31 @@ namespace SerenityGarden
             gridCells.Clear();
         }
 
+        public void SpawnAndScaleMap()
+        {
+            walkableArea = Instantiate(selectedStage.mapObj, Vector3.zero, Quaternion.identity);
+            walkableArea.AddComponent<MeshCollider>();
+            walkableArea.tag = "WalkableArea";
+            ScaleMap();
+        }
+
+        public void ScaleMap()
+        {
+            Bounds bounds = walkableArea.GetComponent<MeshRenderer>().bounds;
+            Vector3 screenBoundsMin = Camera.main.WorldToScreenPoint(bounds.min);
+            Vector3 screenBoundsMax = Camera.main.WorldToScreenPoint(bounds.max);
+            float widthDiff = screenBoundsMax.x - screenBoundsMin.x;
+            float heightDiff = screenBoundsMax.y - screenBoundsMin.y;
+
+            float xScale = (Screen.width * walkableArea.transform.localScale.x) / widthDiff;
+            float yScale = (Screen.height * walkableArea.transform.localScale.x) / heightDiff;
+
+            scaleFact = xScale < yScale ? xScale : yScale;
+            scaleFact += mapScaleOffset;
+            walkableArea.transform.localScale = new Vector3(scaleFact, scaleFact, scaleFact);
+            Physics.SyncTransforms();
+        }
+
         /// <summary>
         /// Load the grid from a preset file, if it exists
         /// </summary>
@@ -128,15 +173,17 @@ namespace SerenityGarden
             }
             try
             {
-                Debug.Log("File path: " + savePath);
+                Debug.Log("Grid File path: " + savePath);
                 //Get contents from json file
                 //string contents = File.ReadAllText(savePath);
                 //Debug.Log("Contents: " + contents);
                 GridSaveData saveData = GridDataSaver.LoadData(savePath);
                 //GridSaveData saveData = JsonConvert.DeserializeObject<GridSaveData>(contents);
-                Debug.Log("Loaded successfully");
+                Debug.Log("Grid Loaded successfully");
+
                 diameter = saveData.diameter;
                 offset = saveData.offset;
+                mapScaleOffset = saveData.mapScaleOffset;
 
                 CreateGrid();
 
@@ -216,25 +263,31 @@ namespace SerenityGarden
         {
             ClearGrid();
 
+            if (scaleFact == 0)
+                ScaleMap();
+
+            float scaledDiameter = diameter * scaleFact;
+            float scaledOffset = offset * scaleFact;
+
             Bounds bounds = walkableArea.GetComponent<MeshRenderer>().bounds;
 
             //Some math formula for calculating the side of a echilateral hexagon based on the radius
-            float sideLength = Mathf.Abs(diameter * Mathf.Sin(30));
+            float sideLength = Mathf.Abs(scaledDiameter * Mathf.Sin(30));
 
             //The spawn method will be left to right, down to up
             //In order to have a hexagonal grid, some cells will be higher than others, this flip bool will control that
             bool flip = false;
             float zTarget;
-            for (float z = bounds.min.z + diameter / 2; z < bounds.max.z; z += diameter + offset / 4)
+            for (float z = bounds.min.z + scaledDiameter / 2; z < bounds.max.z; z += scaledDiameter + scaledOffset / 4)
             {
-                for (float x = bounds.min.x + diameter / 2; x < bounds.max.x; x += diameter / 2 + sideLength / 2 + offset)
+                for (float x = bounds.min.x + scaledDiameter / 2; x < bounds.max.x; x += scaledDiameter / 2 + sideLength / 2 + scaledOffset)
                 {
-                    zTarget = flip ? z : z + diameter / 2;
+                    zTarget = flip ? z : z + scaledDiameter / 2;
                     flip = !flip;
 
                     //Place the block
                     HexagonalBlock block = Instantiate(hexagonPrefab, transform).GetComponent<HexagonalBlock>();
-                    block.PlaceHexagon(new Vector3(x, bounds.min.y, zTarget), diameter);
+                    block.PlaceHexagon(new Vector3(x, bounds.min.y, zTarget), scaledDiameter);
                     block.name = "HexagonalBlock " + gridCells.Count;
                     //Check to see if it is within the playable area
                     bool cond = false;

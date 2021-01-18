@@ -81,10 +81,5 @@ namespace SerenityGarden
             foundTarget = _target;
             lastSearchTargetTime = Time.time;
         }
-
-        public override void Init()
-        {
-            //Intentionally left empty
-        }
     }
 }

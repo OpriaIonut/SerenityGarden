@@ -7,6 +7,7 @@ namespace SerenityGarden
     public class TurretExcavator : BuildableTurret
     {
         public TurretBuildManager turretBuildManager;
+        private WaveManager waveManager;
 
         private void Awake()
         {
@@ -17,11 +18,12 @@ namespace SerenityGarden
         {
             BaseStartCalls();
             turretBuildManager = TurretBuildManager.instance;
+            waveManager = WaveManager.instance;
         }
 
         private void Update()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.GamePaused && waveManager.spawnWaves == true)
                 BaseUpdateCalls();
         }
 
@@ -34,11 +36,6 @@ namespace SerenityGarden
         public override void FindTarget()
         {
             //Intentionally left empty, because it can't attack any enemies
-        }
-
-        public override void Init()
-        {
-            //Intentionally left empty
         }
     }
 }

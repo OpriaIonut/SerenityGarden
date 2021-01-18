@@ -101,7 +101,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4197193163948045240}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -0.15}
+  m_LocalPosition: {x: 0, y: 0, z: -0.275}
   m_LocalScale: {x: 0.01, y: 0.0009999999, z: 0.099999994}
   m_Children:
   - {fileID: 5522351304132556260}
@@ -222,7 +222,6 @@ MonoBehaviour:
   rangePrefab: {fileID: 9019118548607386279, guid: 2a857bdb626a7ec40a7cca0d2c1baea4,
     type: 3}
   turretType: 0
-  gfx: {fileID: 0}
   healthbarUI: {fileID: 5983284326676020773}
   hexagonBlock: {fileID: 0}
   turretUpgradePattern: {fileID: 11400000, guid: 6f3bb6c49040aba48863bb053f0eb5c0,

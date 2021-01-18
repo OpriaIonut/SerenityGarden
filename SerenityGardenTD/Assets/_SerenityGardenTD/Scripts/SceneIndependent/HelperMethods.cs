@@ -95,5 +95,82 @@ namespace SerenityGarden
             }
             return null;
         }
+
+        /// <summary>
+        /// WIll try to find the actual bounds of the object by searching in all childrens of it.
+        /// </summary>
+        /// <param name="target"></param>
+        /// <param name="objBounds"></param>
+        /// <returns></returns>
+        public static bool FindBounds(GameObject target, out Bounds objBounds)
+        {
+            objBounds = new Bounds();
+            MeshRenderer targetMeshRenderer = target.GetComponent<MeshRenderer>();
+
+            if (targetMeshRenderer != null)
+            {
+                //If the object has a mesh renderer then take it's bounds
+                objBounds.max = targetMeshRenderer.bounds.max;
+                objBounds.min = targetMeshRenderer.bounds.min;
+                objBounds.center = targetMeshRenderer.bounds.center;
+            }
+            else
+            {
+                //Otherwise, check if it has children
+                List<MeshRenderer> childObj = new List<MeshRenderer>();
+                AddAllChildrenRecursively(childObj, target.transform);
+
+                if (childObj.Count == 0)
+                {
+                    Debug.LogWarning("Warning! Object: " + target.name + " doesn't have a MeshRenderer and it's child objects doesn't have it either. Can't calculate bounds. Stopping generation...");
+                    return false;
+                }
+
+                Vector3 boundsMin, boundsMax;
+
+                boundsMin = childObj[0].bounds.min;
+                boundsMax = childObj[0].bounds.max;
+
+                //If it does have children, then calculate the min and max bounds
+                foreach (MeshRenderer rend in childObj)
+                {
+                    if (boundsMin.x > rend.bounds.min.x)
+                        boundsMin.x = rend.bounds.min.x;
+                    if (boundsMin.y > rend.bounds.min.y)
+                        boundsMin.y = rend.bounds.min.y;
+                    if (boundsMin.z > rend.bounds.min.z)
+                        boundsMin.z = rend.bounds.min.z;
+
+                    if (boundsMax.x < rend.bounds.max.x)
+                        boundsMax.x = rend.bounds.max.x;
+                    if (boundsMax.y < rend.bounds.max.y)
+                        boundsMax.y = rend.bounds.max.y;
+                    if (boundsMax.z < rend.bounds.max.z)
+                        boundsMax.z = rend.bounds.max.z;
+                }
+                //Calculate the center and set the center
+                objBounds.center = (boundsMin + boundsMax) / 2.0f;
+                objBounds.min = boundsMin;
+                objBounds.max = boundsMax;
+            }
+            return true;
+        }
+
+        /// <summary>
+        /// Used by FindBounds method
+        /// </summary>
+        /// <param name="childObj"></param>
+        /// <param name="parent"></param>
+        private static void AddAllChildrenRecursively(List<MeshRenderer> childObj, Transform parent)
+        {
+            foreach (Transform child in parent)
+            {
+                MeshRenderer rend = child.GetComponent<MeshRenderer>();
+                if (rend != null)
+                    childObj.Add(rend);
+
+                AddAllChildrenRecursively(childObj, child);
+            }
+        }
     }
 }

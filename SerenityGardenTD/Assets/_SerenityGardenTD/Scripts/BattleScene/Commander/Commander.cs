@@ -205,12 +205,22 @@ namespace SerenityGarden
 
         public override void Init()
         {
-            Debug.Log("Start commander init; satus obj: " + status.ToString());
+            //Scale the object based so that it fits the scale of the map.
+            Bounds bounds;
+            Bounds hexagonBounds;
+            if (HelperMethods.FindBounds(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
+            {
+                float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x) * 2;
+                float currentDist = HelperMethods.SquaredDistance(bounds.min, bounds.max);
+
+                float targetScale = (diameter * transform.localScale.x) / currentDist;
+                transform.localScale = Vector3.one * targetScale;
+            }
+
             Speed = status.speed;
             Damage = status.damage;
             Range = status.range;
             AttackCooldown = status.attackCooldown;
-            Debug.Log("Finish commander init");
         }
 
         public void Move()

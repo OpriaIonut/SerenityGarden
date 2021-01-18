@@ -122,13 +122,28 @@ namespace SerenityGarden
         public override bool HasAllDependencies()
         {
             //Id doesn't have any dependencies at the moment, but it needs the other methods from LogicProcessBase
-            return true;
+            return HexagonalGrid.instance != null && HexagonalGrid.instance.isInitialized;
         }
 
         public abstract void Attack();
         public virtual void Die()
         {
             Destroy(this.gameObject);
+        }
+
+        public override void Init()
+        {
+            //Scale the object based so that it fits the scale of the map.
+            Bounds bounds;
+            Bounds hexagonBounds;
+            if (HelperMethods.FindBounds(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
+            {
+                float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x);
+                float currentDist = HelperMethods.SquaredDistance(bounds.min, bounds.max);
+
+                float targetScale = (diameter * transform.localScale.x) / currentDist;
+                transform.localScale = Vector3.one * targetScale;
+            }
         }
     }
 }

@@ -98,14 +98,21 @@ namespace SerenityGarden
         private void FindEdges(int length)
         {
             //The maximum distance allowed for a node to be considered adjacent.
-            float maxDistanceAllowed = gridManager.diameter * gridManager.diameter;
+            float maxDistanceAllowed = gridManager.diameter * gridManager.diameter * gridManager.scaleFact * gridManager.scaleFact;
+
             //For each node
             for (int index = 0; index < length; index++)
             {
+                if (gridManager.gridCells[index].Type == HexagonType.Impassable)
+                    continue;
+
                 //Check the distance to all nodes in the grid.
                 //Initially I was trying with Pysics.OverlapSphere, but it didn't recognize hexagon block, probably because they were instantiated on the same frame.
                 for(int index2 = 0; index2 < length; index2++)
                 {
+                    if (gridManager.gridCells[index2].Type == HexagonType.Impassable)
+                        continue;
+
                     //Find the distance between the two nodes
                     float distance = HelperMethods.SquaredDistance(gridManager.gridCells[index].transform.position, gridManager.gridCells[index2].transform.position);
 

@@ -61,7 +61,7 @@ namespace SerenityGarden
                 LogicProcessBase currentProcess = processesToInitialize.Dequeue();
                 if (currentProcess.HasAllDependencies())
                 {
-                    //If it hass all the dependencies, then initialize it
+                    //If it has all the dependencies, then initialize it
                     currentProcess.isInitialized = true;
                     currentProcess.Init();
                     //And reset the count

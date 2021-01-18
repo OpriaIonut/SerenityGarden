@@ -14,30 +14,25 @@ namespace SerenityGarden
     {
         private HexagonalGrid grid;
 
-        //To do: change this to Application.persistentDataPath
-        private string savePath;
-
         private void OnEnable()
         {
-            savePath = Application.streamingAssetsPath + "/" + SceneManager.GetActiveScene().name + ".json";
             grid = (HexagonalGrid)target;
         }
 
         public override void OnInspectorGUI()
         {
             //Draw object fields for prefabs needed
-            grid.selectedStage = (StageScriptable)EditorGUILayout.ObjectField("Selected stage: ", grid.selectedStage, typeof(StageScriptable));
             grid.playerBasePrefab = (GameObject)EditorGUILayout.ObjectField("PlayerBasePrefab: ", grid.playerBasePrefab, typeof(GameObject));
             grid.commanderPrefab = (GameObject)EditorGUILayout.ObjectField("Commander Prefab: ", grid.commanderPrefab, typeof(GameObject));
-            GameObject walkableArea = (GameObject)EditorGUILayout.ObjectField("Walkable Area: ", grid.walkableArea, typeof(GameObject));
-            if (walkableArea.GetComponent<MeshRenderer>())
-                grid.walkableArea = walkableArea;
+            grid.walkableArea = (GameObject)EditorGUILayout.ObjectField("Walkable Area: ", grid.walkableArea, typeof(GameObject));
 
             //Variables used for grid scale calculation
             grid.diameter = EditorGUILayout.FloatField("Hexagon Diameter: ", grid.diameter);
             grid.offset = EditorGUILayout.FloatField("Hexagon Offset: ", grid.offset);
+            grid.mapScaleOffset = EditorGUILayout.FloatField("Map scale offset: ", grid.mapScaleOffset);
+            grid.mapPresetFile = EditorGUILayout.TextField("Map preset file name: ", grid.mapPresetFile);
 
-            if(GUILayout.Button("Generate Grid"))
+            if (GUILayout.Button("Generate Grid"))
             {
                 //If we clicked generate grid, we first need to clear the previous one
                 grid.ClearGrid();
@@ -52,7 +47,8 @@ namespace SerenityGarden
             {
                 //Will load the grid setup from the file with the same name as the scene
                 grid.ClearGrid();
-                grid.LoadPresetGrid(savePath);
+                grid.LoadPresetGrid(Application.streamingAssetsPath + "/" + grid.mapPresetFile);
+                grid.scaleFact = 0;
             }
 
             if(GUILayout.Button("Save Preset"))
@@ -81,11 +77,11 @@ namespace SerenityGarden
                 gridType.Add((int)item.Type);
                 gridSpawnId.Add((int)item.spawnPointsID);
             }
-            GridSaveData gridSaveData = new GridSaveData(grid.diameter, grid.offset, gridType, gridSpawnId);
+            GridSaveData gridSaveData = new GridSaveData(grid.diameter, grid.offset, grid.mapScaleOffset, gridType, gridSpawnId);
             //string json = JsonConvert.SerializeObject(gridSaveData, Formatting.Indented);
             //File.WriteAllText(savePath, json);
 
-            GridDataSaver.SaveData(gridSaveData, savePath);
+            GridDataSaver.SaveData(gridSaveData, Application.streamingAssetsPath + "/" + grid.mapPresetFile);
 
             //FileParser.GenerateFileContent(gridSaveData);
             //FileParser.SaveFileContent(Application.streamingAssetsPath + "/demo.json", true);

@@ -7,6 +7,23 @@ namespace SerenityGarden
 {
     public class WaveManager : LogicProcessBase
     {
+        #region Singleton
+        public static WaveManager instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Warning! There are multiple instances of WaveManager in the scene. Deleting from: " + gameObject.name);
+                Destroy(this.gameObject);
+            }
+            else
+                instance = this;
+
+            gridManager = FindObjectOfType<HexagonalGrid>();
+            base.BaseAwakeCalls();
+        }
+        #endregion
+
         public GameObject waveSkipButton;       //Button that will display the remaining time before the next wave
         public GameObject stageStartButton;     //Button that when clicked, will start the game
         public float moneyPerSecondSkip = 3;    //If you choose to skip the wave ddelay, you will receive money based on this
@@ -26,15 +43,9 @@ namespace SerenityGarden
         private TextMeshProUGUI waveSkipText;       //Text component that will display the remaining time before the next wave
 
         private int currentWaveIndex = 0;   //The current wave
-        private bool spawnWaves = false;    //Will be set to false when we finished spawning all waves
+        [HideInInspector] public bool spawnWaves = false;    //Will be set to false when we finished spawning all waves
 
         private int enemyIndex = 0;
-
-        private void Awake()
-        {
-            gridManager = FindObjectOfType<HexagonalGrid>();
-            base.BaseAwakeCalls();
-        }
 
         private void Start()
         {

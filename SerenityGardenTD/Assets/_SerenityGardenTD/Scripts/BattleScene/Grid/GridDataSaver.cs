@@ -12,6 +12,7 @@ namespace SerenityGarden
             {
                 file.WriteLine(data.diameter);
                 file.WriteLine(data.offset);
+                file.WriteLine(data.mapScaleOffset);
 
                 file.WriteLine(data.blockTypes.list.Count);
                 for (int index = 0; index < data.blockTypes.list.Count; index++)
@@ -25,11 +26,12 @@ namespace SerenityGarden
 
         public static GridSaveData LoadData(string fileLocation)
         {
-            GridSaveData data = new GridSaveData(0, 0, null, null);
+            GridSaveData data = new GridSaveData(0, 0, 0, null, null);
             using(System.IO.StreamReader reader = new System.IO.StreamReader(fileLocation))
             {
                 data.diameter = float.Parse(reader.ReadLine());
                 data.offset = float.Parse(reader.ReadLine());
+                data.mapScaleOffset = float.Parse(reader.ReadLine());
                 int count = int.Parse(reader.ReadLine());
 
                 List<int> blockTypes = new List<int>();
