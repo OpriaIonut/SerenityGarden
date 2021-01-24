@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: TestStage
   m_EditorClassIdentifier: 
   stageName: Stage 1-2
+  stageFilePath: Stages
   mapObj: {fileID: 919132149155446097, guid: 47f8d40837d76a542a541b171221ca30, type: 3}
   waves:
   - {fileID: 11400000, guid: d21711bcab528ec4d90dfb4e59b3831c, type: 2}
-  stageReward: 100
-  starRanking: 2
+  baseReward: 20
+  starRanking: 0
   rewardPerStar: 20

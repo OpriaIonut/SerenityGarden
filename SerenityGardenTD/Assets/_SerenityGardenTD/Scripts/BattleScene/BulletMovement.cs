@@ -7,25 +7,32 @@ namespace SerenityGarden
     public class BulletMovement : MonoBehaviour
     {
         //Variables used to move the bullet using the physics system
-        public float force = 100.0f;
+        public float speed = 10.0f;
         private Rigidbody rb;
 
         private GameObject target;
 
         private void Start()
         {
+            rb = GetComponent<Rigidbody>();
             Destroy(this.gameObject, 10.0f);
+        }
+
+        private void FixedUpdate()
+        {
+            if (target == null)
+                Destroy(this);
+
+            Vector3 direction = target.transform.position - transform.position; //Calculate the image that you need to shot towards
+            rb.velocity += direction * speed * Time.fixedDeltaTime;
         }
 
         /// <summary>
         /// Should be called by the script that instantiates the bullet.
         /// </summary>
         /// <param name="targetPos"></param>
-        public void SetTarget(Vector3 targetPos, GameObject _target)
+        public void SetTarget(GameObject _target)
         {
-            rb = GetComponent<Rigidbody>();
-            Vector3 direction = targetPos - transform.position; //Calculate the image that you need to shot towards
-            rb.AddForce(direction * force);
             target = _target;
         }
 

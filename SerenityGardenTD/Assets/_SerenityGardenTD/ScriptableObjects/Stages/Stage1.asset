@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Stage1
   m_EditorClassIdentifier: 
   stageName: Stage 1-1
+  stageFilePath: Stages
   mapObj: {fileID: 919132149155446097, guid: 8e84478f9823dfd4681a732dd82c981d, type: 3}
-  gridFileName: 
   waves:
   - {fileID: 11400000, guid: ffcee2daab0e00f4fa3f72a3eec67f6d, type: 2}
   - {fileID: 11400000, guid: 012155facf0ce8a47b05a6d915369ef8, type: 2}
   - {fileID: 11400000, guid: 355ce83728b988547b91821169ab29ac, type: 2}
-  stageReward: 100
+  baseReward: 20
   starRanking: 0
   rewardPerStar: 100

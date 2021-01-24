@@ -29,10 +29,10 @@ namespace SerenityGarden
         {
             //Add the current process to the initialization queue
             //The Singleton may not work because it is set in awake, and considering this method will also be called in an awake method, it may be called before it is properly initialized.
-            if (BattleInitializationManager.instance == null)
-                FindObjectOfType<BattleInitializationManager>().PrepareToInitialize(this);
+            if (ProcessInitializationManager.instance == null)
+                FindObjectOfType<ProcessInitializationManager>().PrepareToInitialize(this);
             else
-                BattleInitializationManager.instance.PrepareToInitialize(this);
+                ProcessInitializationManager.instance.PrepareToInitialize(this);
         }
 
         /// <summary>

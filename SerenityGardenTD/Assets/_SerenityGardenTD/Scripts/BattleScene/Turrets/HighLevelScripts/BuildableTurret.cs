@@ -27,6 +27,13 @@ namespace SerenityGarden
         public float RecoveryCostPer1Hp { get; set; } = 1;
         public float RecoveryPerSecond { get; set; } = 20;
 
+        //private int maxHealth;
+        //public int MaxHealth
+        //{
+        //    get { return maxHealth; }
+        //}
+
+
         //Will specify if the turret is powered up by the commander or not
         private bool hasCommander = false;
         public bool HasCommander

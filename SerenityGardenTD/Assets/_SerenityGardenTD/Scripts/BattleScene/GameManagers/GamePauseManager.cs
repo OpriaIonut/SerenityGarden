@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace SerenityGarden
 {
     public class GamePauseManager : MonoBehaviour
     {
+
         //Default singleton
         #region Singleton
 
@@ -24,6 +27,8 @@ namespace SerenityGarden
         #endregion
 
         public GameObject pauseMenu;
+        public GameObject confirmationMenu;
+        public TextMeshProUGUI confirmationText;
 
         private static bool gamePaused = false;
         public static bool GamePaused { get { return gamePaused; } }
@@ -51,15 +56,41 @@ namespace SerenityGarden
             if(gamePaused == true)
             {
                 pauseStartTime = Time.time;
-                inputManager.AddOnPressEvent(_PauseGame);
             }
             else
             {
-                inputManager.RemoveOnPressEvent(_PauseGame);
                 pausedTime = Time.time - pauseStartTime;
                 if (Event_UnpauseGame != null && Event_UnpauseGame.GetInvocationList().Length != 0)
                     Event_UnpauseGame.Invoke();
             }
+        }
+
+        private bool exitLevel = false;
+        public void OnClick_ExitLevel()
+        {
+            exitLevel = true;
+            confirmationMenu.SetActive(true);
+            confirmationText.text = "Are you sure you want to exit the level?";
+        }
+
+        public void OnClick_ExitGame()
+        {
+            exitLevel = false;
+            confirmationMenu.SetActive(true);
+            confirmationText.text = "Are you sure you want to quit the game?";
+        }
+
+        public void OnClick_PopupConfirm()
+        {
+            if (exitLevel)
+                SceneManager.LoadScene("StageSelection");
+            else
+                Application.Quit();
+        }
+        
+        public void OnClick_PopupCancel()
+        {
+            confirmationMenu.SetActive(false);
         }
     }
 }

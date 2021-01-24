@@ -32,6 +32,8 @@ namespace SerenityGarden
         protected float lastAttackTime;
 
         protected int maxHealth;
+        public int MaxHealth { get { return maxHealth; } }
+
         protected int health;
         protected int damage;
         protected float range;

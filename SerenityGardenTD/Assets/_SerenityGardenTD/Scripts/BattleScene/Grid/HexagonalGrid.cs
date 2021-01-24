@@ -107,7 +107,7 @@ namespace SerenityGarden
             if (gridCells.Count != 0)
                 ClearGrid();
             SpawnAndScaleMap();
-            LoadPresetGrid(Application.streamingAssetsPath + "/" + selectedStage.stageName + ".json");
+            LoadPresetGrid(Application.streamingAssetsPath + "/" + selectedStage.stageFilePath + "/" + selectedStage.stageName + ".json");
         }
 
         public override bool HasAllDependencies()

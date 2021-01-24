@@ -10,6 +10,10 @@ SerenityGardenTD/[Mm]emoryCaptures/
 SerenityGardenTD/Logs/
 SerenityGardenTD/Packages/
 
+# Game data that should not be shared
+SerenityGardenTD/Assets/StreamingAssets/saveData.txt
+SerenityGardenTD/Assets/StreamingAssets/saveData.txt.meta
+
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
 

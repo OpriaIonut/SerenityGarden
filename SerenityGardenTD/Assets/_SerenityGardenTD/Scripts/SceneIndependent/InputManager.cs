@@ -74,8 +74,8 @@ namespace SerenityGarden
         /// <param name="subscriber">A method that will be called.</param>
         public void AddNonUIOnDragEvent(InputEventOnDrag subscriber)             {   Event_NonUI_OnDrag += subscriber;         }
         public void RemoveNonUIOnDragEvent(InputEventOnDrag unsubscriber)        {   Event_NonUI_OnDrag -= unsubscriber; }
-        public void AddOnDragEvent(InputEventOnDrag subscriber) { Event_NonUI_OnDrag += subscriber; }
-        public void RemoveOnDragEvent(InputEventOnDrag unsubscriber) { Event_NonUI_OnDrag -= unsubscriber; }
+        public void AddOnDragEvent(InputEventOnDrag subscriber) { Event_OnDrag += subscriber; }
+        public void RemoveOnDragEvent(InputEventOnDrag unsubscriber) { Event_OnDrag -= unsubscriber; }
 
         #endregion
 

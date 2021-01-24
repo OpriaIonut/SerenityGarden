@@ -4,12 +4,12 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
-    public class BattleInitializationManager : MonoBehaviour
+    public class ProcessInitializationManager : MonoBehaviour
     {
         //Default singleton
         #region Singleton
 
-        public static BattleInitializationManager instance;
+        public static ProcessInitializationManager instance;
         private void Awake()
         {
             if (instance != null)

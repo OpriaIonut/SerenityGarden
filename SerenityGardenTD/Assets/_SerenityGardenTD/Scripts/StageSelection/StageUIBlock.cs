@@ -53,7 +53,7 @@ namespace SerenityGarden
             foreach (KeyValuePair<string, int> entry in waveEnemies)
                 generatedDescription += "-" + entry.Key + " x" + entry.Value + "\n";
 
-            generatedDescription += "\nReward: $" + stage.stageReward;
+            generatedDescription += "\nReward: $" + stage.baseReward;
         }
 
         public void _SelectThisStage()

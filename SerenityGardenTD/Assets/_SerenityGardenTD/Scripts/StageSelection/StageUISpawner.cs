@@ -4,16 +4,26 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
-    public class StageUISpawner : MonoBehaviour
+    public class StageUISpawner : LogicProcessBase
     {
         public GameObject stageUIPrefab;
         public Transform spawnParent;
 
         public List<StageScriptable> allStages;
 
-        private void Start()
+        public void Awake()
         {
-            foreach(StageScriptable item in allStages)
+            BaseAwakeCalls();
+        }
+
+        public override bool HasAllDependencies()
+        {
+            return PlayerDataSaver.instance != null && PlayerDataSaver.instance.isInitialized;
+        }
+
+        public override void Init()
+        {
+            foreach (StageScriptable item in allStages)
             {
                 StageUIBlock script = Instantiate(stageUIPrefab, spawnParent).GetComponent<StageUIBlock>();
                 script.InitializeBlock(item);

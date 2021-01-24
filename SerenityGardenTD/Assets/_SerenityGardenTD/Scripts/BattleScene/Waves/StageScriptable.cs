@@ -9,11 +9,12 @@ namespace SerenityGarden
     {
         [Header("Stage init variables")]
         public string stageName;
+        public string stageFilePath;
         public GameObject mapObj;
         public WaveScriptable[] waves;
 
         [Header("Stage end variables")]
-        public int stageReward;
+        public int baseReward;
         public int starRanking;
         public int rewardPerStar;
     }
