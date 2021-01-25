@@ -66,7 +66,7 @@ namespace SerenityGarden
             if (!GamePauseManager.GamePaused)
             {
                 //If we can/want to spawn a wave
-                if (spawnWaves && startedWave == false)
+                if (spawnWaves && startedWave == false && currentWaveIndex < selectedStage.waves.Length - 1)
                 {
                     //See if enough time passed
                     if (Time.time - lastWaveEndTime >= waveDelay)

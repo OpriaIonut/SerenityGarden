@@ -107,7 +107,7 @@ namespace SerenityGarden
             if (gridCells.Count != 0)
                 ClearGrid();
             SpawnAndScaleMap();
-            LoadPresetGrid(Application.streamingAssetsPath + "/" + selectedStage.stageFilePath + "/" + selectedStage.stageName + ".json");
+            LoadPresetGrid(selectedStage.stageFilePath + "/" + selectedStage.stageName + ".json");
         }
 
         public override bool HasAllDependencies()
@@ -164,7 +164,9 @@ namespace SerenityGarden
         /// <param name="savePath"></param>
         public void LoadPresetGrid(string savePath)
         {
-            if (!File.Exists(savePath))
+            string contents = FileManager.GetFileContents(true, savePath);
+
+            if (contents == null || contents == "")
             {
                 //If we didn't find the file, then throw an error
                 Debug.LogError("Could not load preset grid at: " + savePath);
@@ -173,13 +175,7 @@ namespace SerenityGarden
             }
             try
             {
-                Debug.Log("Grid File path: " + savePath);
-                //Get contents from json file
-                //string contents = File.ReadAllText(savePath);
-                //Debug.Log("Contents: " + contents);
-                GridSaveData saveData = GridDataSaver.LoadData(savePath);
-                //GridSaveData saveData = JsonConvert.DeserializeObject<GridSaveData>(contents);
-                Debug.Log("Grid Loaded successfully");
+                GridSaveData saveData = GridDataSaver.LoadData(contents);
 
                 diameter = saveData.diameter;
                 offset = saveData.offset;

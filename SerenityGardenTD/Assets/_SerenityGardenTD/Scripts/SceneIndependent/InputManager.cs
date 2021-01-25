@@ -167,7 +167,7 @@ namespace SerenityGarden
                 }
 
                 //If the mouse is over an ui component, stop input
-                if (EventSystem.current.IsPointerOverGameObject())
+                if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
                     return;
 
                 if (touch.phase == TouchPhase.Began)

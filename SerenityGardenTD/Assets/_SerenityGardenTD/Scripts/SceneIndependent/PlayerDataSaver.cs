@@ -66,7 +66,6 @@ namespace SerenityGarden
 
         public override void Init()
         {
-            savePath = Application.streamingAssetsPath + "/saveData.txt";
             LoadData();
         }
 
@@ -97,16 +96,17 @@ namespace SerenityGarden
             {
                 fileData += "\n" + data.stageName + " " + data.stageStars;
             }
-            File.WriteAllText(savePath, fileData);
+            FileManager.SetFileContents(false, fileData, "saveData.txt");
         }
 
         private void LoadData()
         {
+            string contents = FileManager.GetFileContents(false, "saveData.txt");
+
             //If we have a save file
-            if (File.Exists(savePath))
+            if (contents != null && contents != "")
             {
-                string fileData = File.ReadAllText(savePath);
-                string[] rows = fileData.Split('\n');
+                string[] rows = contents.Split('\n');
 
                 //Load the data from it
                 playerData = new PlayerData();

@@ -8,43 +8,44 @@ namespace SerenityGarden
     {
         public static void SaveData(GridSaveData data, string fileLocation)
         {
-            using(System.IO.StreamWriter file = new System.IO.StreamWriter(fileLocation))
-            {
-                file.WriteLine(data.diameter);
-                file.WriteLine(data.offset);
-                file.WriteLine(data.mapScaleOffset);
+            string contents = "";
 
-                file.WriteLine(data.blockTypes.list.Count);
-                for (int index = 0; index < data.blockTypes.list.Count; index++)
-                    file.WriteLine(data.blockTypes.list[index]);
+            contents += data.diameter + "\n";
+            contents += data.offset + "\n";
+            contents += data.mapScaleOffset + "\n";
 
-                file.WriteLine(data.blockSpawnIds.list.Count);
-                for (int index = 0; index < data.blockSpawnIds.list.Count; index++)
-                    file.WriteLine(data.blockSpawnIds.list[index]);
-            }
+            contents += data.blockTypes.list.Count + "\n";
+            for (int index = 0; index < data.blockTypes.list.Count; index++)
+                contents += data.blockTypes.list[index] + "\n";
+
+            contents += data.blockSpawnIds.list.Count + "\n";
+            for (int index = 0; index < data.blockSpawnIds.list.Count; index++)
+                contents += data.blockSpawnIds.list[index] + "\n";
+
+            FileManager.SetFileContents(true, contents, fileLocation);
         }
 
-        public static GridSaveData LoadData(string fileLocation)
+        public static GridSaveData LoadData(string fileContents)
         {
             GridSaveData data = new GridSaveData(0, 0, 0, null, null);
-            using(System.IO.StreamReader reader = new System.IO.StreamReader(fileLocation))
-            {
-                data.diameter = float.Parse(reader.ReadLine());
-                data.offset = float.Parse(reader.ReadLine());
-                data.mapScaleOffset = float.Parse(reader.ReadLine());
-                int count = int.Parse(reader.ReadLine());
+            string[] fileLines = fileContents.Split('\n');
 
-                List<int> blockTypes = new List<int>();
-                for (int index = 0; index < count; index++)
-                    blockTypes.Add(int.Parse(reader.ReadLine()));
-                data.blockTypes = new BlockTypes(blockTypes);
+            data.diameter = float.Parse(fileLines[0]);
+            data.offset = float.Parse(fileLines[1]);
+            data.mapScaleOffset = float.Parse(fileLines[2]);
+            int count = int.Parse(fileLines[3]);
 
-                count = int.Parse(reader.ReadLine());
-                List<int> spawnIds = new List<int>();
-                for (int index = 0; index < count; index++)
-                    spawnIds.Add(int.Parse(reader.ReadLine()));
-                data.blockSpawnIds = new BlockSpawnIds(spawnIds);
-            }
+            List<int> blockTypes = new List<int>();
+            for (int index = 0; index < count; index++)
+                blockTypes.Add(int.Parse(fileLines[4 + index]));
+            data.blockTypes = new BlockTypes(blockTypes);
+
+            count = int.Parse(fileLines[4 + count]);
+            List<int> spawnIds = new List<int>();
+            for (int index = 0; index < count; index++)
+                spawnIds.Add(int.Parse(fileLines[5 + count + index]));
+            data.blockSpawnIds = new BlockSpawnIds(spawnIds);
+
             return data;
         }
     }

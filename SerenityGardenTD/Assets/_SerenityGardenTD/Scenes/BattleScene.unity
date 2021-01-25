@@ -1270,17 +1270,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.853818
+      value: 4.8538184
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.853818
+      value: 4.8538184
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.853818
+      value: 4.8538184
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
@@ -3055,7 +3055,7 @@ MonoBehaviour:
   diameter: 0.15
   offset: -0.025
   mapScaleOffset: 1
-  mapPresetFile: Stage 1-2.json
+  mapPresetFile: Stages/Stage 1-2.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
   scaleFact: 0

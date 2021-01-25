@@ -47,7 +47,7 @@ namespace SerenityGarden
             {
                 //Will load the grid setup from the file with the same name as the scene
                 grid.ClearGrid();
-                grid.LoadPresetGrid(Application.streamingAssetsPath + "/" + grid.mapPresetFile);
+                grid.LoadPresetGrid(grid.mapPresetFile);
                 grid.scaleFact = 0;
             }
 
@@ -78,13 +78,7 @@ namespace SerenityGarden
                 gridSpawnId.Add((int)item.spawnPointsID);
             }
             GridSaveData gridSaveData = new GridSaveData(grid.diameter, grid.offset, grid.mapScaleOffset, gridType, gridSpawnId);
-            //string json = JsonConvert.SerializeObject(gridSaveData, Formatting.Indented);
-            //File.WriteAllText(savePath, json);
-
-            GridDataSaver.SaveData(gridSaveData, Application.streamingAssetsPath + "/" + grid.mapPresetFile);
-
-            //FileParser.GenerateFileContent(gridSaveData);
-            //FileParser.SaveFileContent(Application.streamingAssetsPath + "/demo.json", true);
+            GridDataSaver.SaveData(gridSaveData, grid.mapPresetFile);
         }
     }
 }

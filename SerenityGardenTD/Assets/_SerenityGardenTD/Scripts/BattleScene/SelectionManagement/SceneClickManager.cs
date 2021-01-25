@@ -87,7 +87,6 @@ namespace SerenityGarden
             }
             if (selectedCommander != null && commanderUI.selectDestination == false)
             {
-
                 selectedCommander.DrawRange(false);
                 selectedCommander = null;
             }
