@@ -21,7 +21,7 @@ namespace SerenityGarden
         private void FixedUpdate()
         {
             if (target == null)
-                Destroy(this);
+                Destroy(this.gameObject);
 
             Vector3 direction = target.transform.position - transform.position; //Calculate the image that you need to shot towards
             rb.velocity += direction * speed * Time.fixedDeltaTime;

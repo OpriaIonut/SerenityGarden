@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67bae2a34ee1194d8f2f6b72c2684cd, type: 3}
   m_Name: PlayerBase
   m_EditorClassIdentifier: 
-  turretType: 6
+  turretType: 0
   levelProp:
   - health: 100
     damage: 15

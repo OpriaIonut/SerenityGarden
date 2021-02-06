@@ -140,7 +140,7 @@ namespace SerenityGarden
                         }
                     }
                 }
-                catch(Exception ex)
+                catch (Exception)
                 {
                     Debug.LogWarning("Save file was corrupted. Reseting data...");
 
