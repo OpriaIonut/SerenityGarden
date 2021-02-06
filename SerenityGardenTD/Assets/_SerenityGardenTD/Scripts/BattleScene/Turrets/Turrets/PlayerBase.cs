@@ -7,8 +7,6 @@ namespace SerenityGarden
     public sealed class PlayerBase : TurretBase
     {
         public GameObject bulletPrefab;
-        public Transform firePoint;
-        public TurretStatusScriptable baseStatus;
 
         private void Awake()
         {
@@ -18,11 +16,6 @@ namespace SerenityGarden
         private void Start()
         {
             BaseStartCalls();
-            Range = baseStatus.levelProp[0].range;
-            maxHealth = baseStatus.levelProp[0].health;
-            Health = maxHealth;
-            Damage = baseStatus.levelProp[0].damage;
-            AttackCooldown = baseStatus.levelProp[0].attackCooldown;
         }
 
         private void Update()
@@ -69,7 +62,7 @@ namespace SerenityGarden
             if (Target != null)
             {
                 //Shoot a bullet towards it
-                BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
+                BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
                 bulletScript.SetTarget(Target.gameObject);
                 LastAttackTime = Time.time;

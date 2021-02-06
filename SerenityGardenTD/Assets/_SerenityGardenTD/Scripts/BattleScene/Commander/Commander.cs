@@ -49,7 +49,7 @@ namespace SerenityGarden
         public float ReachedThreshold { get; set; } = 0.01f;
         public bool ReachedDestination { get; set; } = true;
         public EnemyBase Target { get; set; }
-        public int Damage { get; set; }
+        public float Damage { get; set; }
         public float Range { get; set; }
         public float AttackCooldown { get; set; }
         public float LastAttackTime { get; set; }

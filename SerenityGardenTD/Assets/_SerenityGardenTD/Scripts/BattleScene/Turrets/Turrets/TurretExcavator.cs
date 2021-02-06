@@ -29,7 +29,7 @@ namespace SerenityGarden
 
         public override void Attack()
         {
-            turretBuildManager.Money += Damage;
+            turretBuildManager.Money += (int)Damage;
             LastAttackTime = Time.time;
         }
 

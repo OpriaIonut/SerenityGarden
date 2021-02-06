@@ -26,13 +26,13 @@ namespace SerenityGarden
         private HexagonalGrid hexagonalGrid;
 
         //Health property.
-        private int health;
-        protected int maxHealth;
+        protected float health;
+        protected float maxHealth;
 
         #region Properties
 
         public EnemyType EnemyType { get; set; }
-        public int Health
+        public float Health
         {
             get { return health; }
             set 
@@ -64,7 +64,7 @@ namespace SerenityGarden
         //Properties inherited from IAttacker interface
         #region IAttacker
         public TurretBase Target { get; set; }      //Turret that is in it's range, if it is, it will attack it
-        public int Damage { get; set; }
+        public float Damage { get; set; }
         public float Range { get; set; }
         public float AttackCooldown { get; set; }   //How often it attacks
         public float LastAttackTime { get; set; }

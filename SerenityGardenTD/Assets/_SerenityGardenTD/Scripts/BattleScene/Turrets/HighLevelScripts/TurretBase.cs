@@ -23,6 +23,12 @@ namespace SerenityGarden
         [HideInInspector] public TurretType turretType;
         public Image healthbarUI;
 
+        public TurretStatusScriptable turretUpgradePattern;
+
+        public GameObject partToRotate;
+        public GameObject firePoint;
+        private GameObject levelGfx;
+
         //A delay time for searching for a target, because it may be an expensive process to do every frame
         protected float searchTargetDelay = 0.1f;
         protected float lastSearchTargetTime = 0;
@@ -31,18 +37,17 @@ namespace SerenityGarden
         protected float attackCooldown;
         protected float lastAttackTime;
 
-        protected int maxHealth;
-        public int MaxHealth { get { return maxHealth; } }
-
-        protected int health;
-        protected int damage;
+        protected float maxHealth;
+        protected float health;
+        protected float damage;
         protected float range;
 
         //Instantiated range object. It will be deleted when deselecting a turret
         protected GameObject rangeObj;
 
         #region Properties
-        public int Health
+        public float MaxHealth { get { return maxHealth; } }
+        public float Health
         {
             get { return health; }
             set
@@ -60,7 +65,7 @@ namespace SerenityGarden
             get { return foundTarget; } 
             set { foundTarget = value; } 
         }
-        public int Damage 
+        public float Damage 
         { 
             get { return damage; }
             set { damage = value; }
@@ -98,6 +103,85 @@ namespace SerenityGarden
         {
             base.BaseStartCalls();
             GamePauseManager.AddUnpauseEvent(OnResumeGame);
+        }
+
+        /// <summary>
+        /// Will set the turret to be at the give level
+        /// </summary>
+        /// <param name="level">starts at 0</param>
+        public void SetLevelProp(int level)
+        {
+            if (level < 0 || level >= turretUpgradePattern.levelProp.Length)
+            {
+                Debug.LogWarning("Could not set prop level for turret: " + gameObject.name + "; level: " + level);
+                return;
+            }
+
+            if (turretType != TurretType.PlayerBase)
+            {
+                //When upgrading a turret, the first time (when setting level to 0) it won't have the proper connections, so make them
+                if (levelGfx == null)
+                {
+                    levelGfx = HelperMethods.FindChildWithName(transform, "GFX").transform.GetChild(0).gameObject;
+                    if (levelGfx != null)
+                    {
+                        firePoint = HelperMethods.FindChildWithName(levelGfx.transform, "FirePoint");
+                        partToRotate = HelperMethods.FindChildWithName(levelGfx.transform, "PartToRotate");
+                    }
+                }
+                else
+                {
+                    //Otherwise, if it has the connections, it means that it's not the instantiation of the turret
+                    //So destroy the previous gfx
+                    Destroy(levelGfx);
+
+                    //Instantiate a new one and set up the connections
+                    Transform gfxParent = HelperMethods.FindChildWithName(transform, "GFX").transform;
+                    levelGfx = Instantiate(turretUpgradePattern.levelProp[level].gfx, gfxParent);
+                    levelGfx.transform.position += Vector3.up * 0.04f;
+                    if (levelGfx != null)
+                    {
+                        firePoint = HelperMethods.FindChildWithName(levelGfx.transform, "FirePoint");
+                        partToRotate = HelperMethods.FindChildWithName(levelGfx.transform, "PartToRotate");
+                    }
+                }
+            }
+            else if(level != 0)
+            {
+                Debug.LogWarning("Warning! Wrong level for player base. Received level: " + level);
+                return;
+            }
+
+            turretType = turretUpgradePattern.turretType;
+
+            TurretPermanentUpgrades permanentUpgrade = SceneDataRetainer.instance.GetMultipliers(turretType);
+
+            if (permanentUpgrade == null)
+            {
+                Debug.LogWarning("Warning! could not find permanent upgrades");
+
+                float healthDiff = maxHealth - health;
+
+                maxHealth = turretUpgradePattern.levelProp[level].health;
+                Health = maxHealth - healthDiff;
+                Damage = turretUpgradePattern.levelProp[level].damage;
+                Range = turretUpgradePattern.levelProp[level].range;
+                AttackCooldown = turretUpgradePattern.levelProp[level].attackCooldown;
+                DestroyReward = turretUpgradePattern.levelProp[level].sellReward;
+            }
+            else
+            {
+                float healthDiff = maxHealth - health;
+
+                maxHealth = turretUpgradePattern.levelProp[level].health * permanentUpgrade.GetMultiplier(UpgradeType.Health);
+                Health = maxHealth - healthDiff;
+                Damage = turretUpgradePattern.levelProp[level].damage * permanentUpgrade.GetMultiplier(UpgradeType.Damage);
+                Range = turretUpgradePattern.levelProp[level].range * permanentUpgrade.GetMultiplier(UpgradeType.Range);
+                AttackCooldown = turretUpgradePattern.levelProp[level].attackCooldown / permanentUpgrade.GetMultiplier(UpgradeType.FireRate);
+                DestroyReward = turretUpgradePattern.levelProp[level].sellReward;
+            }
+
+            DrawRange(false);
         }
 
         //Pausing time will mess up the attack time, so we need to correct the problem when unpausing

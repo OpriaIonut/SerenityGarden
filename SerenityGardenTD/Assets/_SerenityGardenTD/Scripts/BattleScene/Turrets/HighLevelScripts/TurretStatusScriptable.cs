@@ -10,8 +10,8 @@ namespace SerenityGarden
     [System.Serializable]
     public class TurretLevel
     {
-        public int health;
-        public int damage;
+        public float health;
+        public float damage;
         public float attackCooldown;
         public float range;
         public int upgradeCost;

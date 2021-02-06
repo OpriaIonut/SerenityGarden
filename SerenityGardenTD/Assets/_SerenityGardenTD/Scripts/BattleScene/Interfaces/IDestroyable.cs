@@ -6,7 +6,7 @@ namespace SerenityGarden
 {
     public interface IDestroyable
     {
-        int Health { get; set; }
+        float Health { get; set; }
         int DestroyReward { get; set; }
 
         void Die();

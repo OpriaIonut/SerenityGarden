@@ -36,7 +36,7 @@ namespace SerenityGarden
             target = _target;
         }
 
-        public int damage;
+        public float damage;
         private void OnTriggerEnter(Collider other)
         {
             if(other.transform.root.gameObject == target)

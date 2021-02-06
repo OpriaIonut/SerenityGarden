@@ -7,7 +7,7 @@ namespace SerenityGarden
     public interface IAttacker<T>
     {
         T Target { get; set; }
-        int Damage { get; set; }
+        float Damage { get; set; }
         float Range { get; set; }
 
         float AttackCooldown { get; set; }
