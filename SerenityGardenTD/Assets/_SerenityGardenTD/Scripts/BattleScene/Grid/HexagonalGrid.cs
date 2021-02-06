@@ -143,18 +143,25 @@ namespace SerenityGarden
 
         public void ScaleMap()
         {
+            //Find the bounds of the map in screen coordinates
             Bounds bounds = walkableArea.GetComponent<MeshRenderer>().bounds;
             Vector3 screenBoundsMin = Camera.main.WorldToScreenPoint(bounds.min);
             Vector3 screenBoundsMax = Camera.main.WorldToScreenPoint(bounds.max);
+
+            //Find the width and height from screen bounds
             float widthDiff = screenBoundsMax.x - screenBoundsMin.x;
             float heightDiff = screenBoundsMax.y - screenBoundsMin.y;
 
+            //Find the factor the map needs to be scaled by to fill the entire screen
             float xScale = (Screen.width * walkableArea.transform.localScale.x) / widthDiff;
             float yScale = (Screen.height * walkableArea.transform.localScale.x) / heightDiff;
 
+            //Pick the minimum scale (so that the entire map is shown) and add an offset to hide the spawn points
             scaleFact = xScale < yScale ? xScale : yScale;
             scaleFact += mapScaleOffset;
             walkableArea.transform.localScale = new Vector3(scaleFact, scaleFact, scaleFact);
+
+            //Apply physics so that we can raycast to it
             Physics.SyncTransforms();
         }
 

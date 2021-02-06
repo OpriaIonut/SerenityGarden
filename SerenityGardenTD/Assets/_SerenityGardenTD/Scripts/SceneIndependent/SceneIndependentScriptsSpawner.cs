@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    /// <summary>
+    /// Script that will spawn all Don't Destroy On Load scripts
+    /// </summary>
     public class SceneIndependentScriptsSpawner : MonoBehaviour
     {
         public StageScriptable[] stages;

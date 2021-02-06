@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    /// <summary>
+    /// Class that will hold data related to each stage so it can be saved to the disk.
+    /// </summary>
     public class StageSaveData
     {
         public string stageName;

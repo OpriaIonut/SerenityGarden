@@ -6,10 +6,10 @@ namespace SerenityGarden
 {
     public class Commander : LogicProcessBase, IMovable, IAttacker<EnemyBase>
     {
-        public CommanderScriptable status;
+        public CommanderScriptable status;  //Scriptable object that specified the status of the commander.
         public Transform firePoint;
         public GameObject bulletPrefab;
-        public GameObject rangePrefab;
+        public GameObject rangePrefab;  //Range prefab shown when we click on the commander.
 
         private GameObject rangeObj;
         private HexagonalGrid hexagonalGrid;

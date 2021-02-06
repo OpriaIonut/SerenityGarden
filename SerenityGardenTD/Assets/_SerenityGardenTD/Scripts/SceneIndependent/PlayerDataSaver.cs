@@ -69,6 +69,8 @@ namespace SerenityGarden
         public void SaveData()
         {
             string fileData = "" + playerData.Money;
+
+            //Save stage progress for all stages
             fileData += "\n" + playerData.stageData.Count;
             foreach(StageSaveData data in playerData.stageData)
             {
@@ -77,6 +79,7 @@ namespace SerenityGarden
 
             TurretPermanentUpgrades[] upgrades = dataRetainer.GetPermanentUpgrades();
 
+            //Save permanent upgrades bought by the user
             fileData += "\n" + upgrades.Length;
             foreach (TurretPermanentUpgrades item in upgrades)
             {
@@ -99,6 +102,8 @@ namespace SerenityGarden
                     //Load the data from it
                     playerData = new PlayerData();
                     playerData.Money = int.Parse(rows[0]);
+
+                    //Load the stage progress
                     int stageCount = int.Parse(rows[1]);
                     for (int rowIndex = 2; rowIndex < 2 + stageCount; rowIndex++)
                     {
@@ -117,6 +122,7 @@ namespace SerenityGarden
                         }
                     }
 
+                    //Reset all upgrades (some of them may not appear in the save file, so this is a precaution
                     TurretPermanentUpgrades[] upgrades = dataRetainer.GetPermanentUpgrades();
                     foreach (TurretPermanentUpgrades item in upgrades)
                     {
@@ -125,6 +131,7 @@ namespace SerenityGarden
                         item.upgrades[2].currentLevel = 0;
                     }
 
+                    //Load bought upgrades
                     int permanentUpgradeCount = int.Parse(rows[2 + stageCount]) + 2 + stageCount;
                     for(int index = 2 + stageCount; index < permanentUpgradeCount; index++)
                     {
@@ -142,6 +149,7 @@ namespace SerenityGarden
                 }
                 catch (Exception)
                 {
+                    //If any error was encountered, it means the data was corrupted, so we will reset everything (like starting a new game)
                     Debug.LogWarning("Save file was corrupted. Reseting data...");
 
                     //If the file doesn't exist, initialize all data with default values

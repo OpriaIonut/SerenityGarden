@@ -154,11 +154,12 @@ namespace SerenityGarden
                 return;
             }
 
-
+            //Find the permanent upgrades for the current turret
             TurretPermanentUpgrades permanentUpgrade = SceneDataRetainer.instance.GetMultipliers(turretType);
 
             if (permanentUpgrade == null)
             {
+                //If we don't have one, set the statuses to their starting values
                 Debug.LogWarning("Warning! could not find permanent upgrades");
 
                 float healthDiff = maxHealth - health;
@@ -172,6 +173,7 @@ namespace SerenityGarden
             }
             else
             {
+                //Otherwise, take into account the multipliers bought by the player.
                 float healthDiff = maxHealth - health;
 
                 maxHealth = turretUpgradePattern.levelProp[level].health * permanentUpgrade.GetMultiplier(UpgradeType.Health);

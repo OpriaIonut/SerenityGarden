@@ -34,6 +34,9 @@ namespace SerenityGarden
             UpdateUIImages(false);
         }
 
+        /// <summary>
+        /// Calculate the cost of the current upgrade and display it
+        /// </summary>
         private void CalculateCost()
         {
             if (upgrade.currentLevel == upgrade.maxLevel)
@@ -52,6 +55,10 @@ namespace SerenityGarden
             }
         }
 
+        /// <summary>
+        /// Activate/deactivate upgrade images based on how many upgrades you bought.
+        /// </summary>
+        /// <param name="deactivateAll"></param>
         private void UpdateUIImages(bool deactivateAll)
         {
             if(deactivateAll)
@@ -72,6 +79,9 @@ namespace SerenityGarden
             }
         }
 
+        /// <summary>
+        /// Give color to the cost component based on if we have enough money or not.
+        /// </summary>
         public void ColorCostText()
         {
             if (shopManager.CheckUpgradeCost(upgradeCost))

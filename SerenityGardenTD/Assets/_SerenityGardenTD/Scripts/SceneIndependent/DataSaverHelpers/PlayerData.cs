@@ -4,10 +4,12 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    /// <summary>
+    /// Class that will hold all player-related data so it can be saved to the disk.
+    /// </summary>
     public class PlayerData
     {
         public List<StageSaveData> stageData;
-        public Dictionary<TurretType, TurretUpgradeDataSaver> permanentUpgrades;
 
         private int money;
         public int Money

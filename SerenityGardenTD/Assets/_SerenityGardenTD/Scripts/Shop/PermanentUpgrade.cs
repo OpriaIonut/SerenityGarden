@@ -23,6 +23,6 @@ namespace SerenityGarden
         public float costMultiplierPerLevel = 1.7f;
 
         public int currentLevel = 0;
-        public int maxLevel = 5;
+        public int maxLevel = 10;
     }
 }
