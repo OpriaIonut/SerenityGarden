@@ -15,6 +15,7 @@ namespace SerenityGarden
                 actualPath = Application.streamingAssetsPath + "/";
             else
                 actualPath = Application.persistentDataPath + "/";
+            actualPath += filePath;
 
             string contents = "";
 #if UNITY_ANDROID
@@ -29,11 +30,12 @@ namespace SerenityGarden
                 }
                 contents = request.downloadHandler.text;
             }
-            else
+            else if(File.Exists(actualPath))
                 contents = File.ReadAllText(actualPath);
 
 #elif UNITY_STANDALONE_WIN
-            contents = File.ReadAllText(actualPath);
+            if(File.Exists(actualPath))
+                contents = File.ReadAllText(actualPath);
 #endif
             return contents;
         }

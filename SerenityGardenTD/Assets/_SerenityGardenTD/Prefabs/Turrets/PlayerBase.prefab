@@ -168,14 +168,13 @@ MonoBehaviour:
   rangePrefab: {fileID: 9019118548607386279, guid: 2a857bdb626a7ec40a7cca0d2c1baea4,
     type: 3}
   turretType: 0
-  gfx: {fileID: 371960728274864211}
   healthbarUI: {fileID: 8801993967011105948}
-  objToRotate: {fileID: 1877788707595251573}
+  turretUpgradePattern: {fileID: 11400000, guid: e8966edb05786324db6f57201aa949b2,
+    type: 2}
+  partToRotate: {fileID: 0}
+  firePoint: {fileID: 0}
   bulletPrefab: {fileID: 6760037018435719773, guid: e0ca4546c60a64244bdabf91f609030a,
     type: 3}
-  firePoint: {fileID: 2931575074485184069}
-  baseStatus: {fileID: 11400000, guid: e8966edb05786324db6f57201aa949b2, type: 2}
-  gun: {fileID: 1877788707595251573}
 --- !u!1 &7040655272759040095
 GameObject:
   m_ObjectHideFlags: 0

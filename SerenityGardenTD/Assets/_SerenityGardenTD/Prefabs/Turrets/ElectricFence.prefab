@@ -150,11 +150,11 @@ MonoBehaviour:
     type: 3}
   turretType: 0
   healthbarUI: {fileID: 5514245315906665341}
-  hexagonBlock: {fileID: 0}
   turretUpgradePattern: {fileID: 11400000, guid: f538b8fbfb93e684a851ea3b725c3ca4,
     type: 2}
-  partToRotate: {fileID: 0}
+  partToRotate: {fileID: 6756906371839237659}
   firePoint: {fileID: 0}
+  hexagonBlock: {fileID: 0}
 --- !u!54 &6559989264594154461
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -437,6 +437,12 @@ PrefabInstance:
 --- !u!4 &6252993087347398902 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a3e2ed5bb35d38748b332a931e28f9b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 5858516159215566621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6756906371839237659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8320123356525305594, guid: a3e2ed5bb35d38748b332a931e28f9b5,
     type: 3}
   m_PrefabInstance: {fileID: 5858516159215566621}
   m_PrefabAsset: {fileID: 0}

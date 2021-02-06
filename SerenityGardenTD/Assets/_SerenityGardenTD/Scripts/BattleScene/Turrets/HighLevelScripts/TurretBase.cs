@@ -117,6 +117,8 @@ namespace SerenityGarden
                 return;
             }
 
+            turretType = turretUpgradePattern.turretType;
+
             if (turretType != TurretType.PlayerBase)
             {
                 //When upgrading a turret, the first time (when setting level to 0) it won't have the proper connections, so make them
@@ -152,7 +154,6 @@ namespace SerenityGarden
                 return;
             }
 
-            turretType = turretUpgradePattern.turretType;
 
             TurretPermanentUpgrades permanentUpgrade = SceneDataRetainer.instance.GetMultipliers(turretType);
 

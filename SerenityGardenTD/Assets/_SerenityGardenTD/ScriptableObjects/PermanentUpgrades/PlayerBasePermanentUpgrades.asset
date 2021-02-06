@@ -15,8 +15,23 @@ MonoBehaviour:
   turretType: 0
   upgrades:
   - type: 0
-    multiplier: 1
+    minMultiplier: 1
+    maxMultiplier: 2
+    startCost: 10
+    costMultiplierPerLevel: 1.7
+    currentLevel: 0
+    maxLevel: 10
   - type: 3
-    multiplier: 1
+    minMultiplier: 1
+    maxMultiplier: 2
+    startCost: 10
+    costMultiplierPerLevel: 1.7
+    currentLevel: 0
+    maxLevel: 10
   - type: 1
-    multiplier: 1
+    minMultiplier: 1
+    maxMultiplier: 2
+    startCost: 10
+    costMultiplierPerLevel: 1.7
+    currentLevel: 0
+    maxLevel: 10

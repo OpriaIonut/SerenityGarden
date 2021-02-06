@@ -16,6 +16,7 @@ namespace SerenityGarden
         private void Start()
         {
             BaseStartCalls();
+            SetLevelProp(0);
         }
 
         private void Update()

@@ -43,6 +43,21 @@ namespace SerenityGarden
             permanentUpgrades = _permanentUpgrades;
         }
 
+        public int GetPermanentUpgradesCount()
+        {
+            return permanentUpgrades.Length;
+        }
+
+        public TurretPermanentUpgrades[] GetPermanentUpgrades()
+        {
+            return permanentUpgrades;
+        }
+
+        public TurretType GetPermanentUpgradeTurretType(int turretIndex)
+        {
+            return permanentUpgrades[turretIndex].turretType;
+        }
+
         public TurretPermanentUpgrades GetMultipliers(TurretType _turretType)
         {
             for(int index = 0; index < permanentUpgrades.Length; index++)
@@ -51,6 +66,11 @@ namespace SerenityGarden
                     return permanentUpgrades[index];
             }
             return null;
+        }
+
+        public TurretPermanentUpgrades GetMultipliers(int turretIndex)
+        {
+            return permanentUpgrades[turretIndex];
         }
 
         public void SetMultiplier(TurretType turret, UpgradeType type, float newMultiplier)

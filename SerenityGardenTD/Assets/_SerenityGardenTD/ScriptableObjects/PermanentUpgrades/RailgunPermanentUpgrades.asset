@@ -12,11 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7d586711c38cd4882660779327523d, type: 3}
   m_Name: RailgunPermanentUpgrades
   m_EditorClassIdentifier: 
-  turret: 1
+  turretType: 5
   upgrades:
   - type: 0
-    multiplier: 1
+    minMultiplier: 1
+    maxMultiplier: 2
+    startCost: 10
+    costMultiplierPerLevel: 1.7
+    currentLevel: 10
+    maxLevel: 10
   - type: 1
-    multiplier: 1
+    minMultiplier: 1
+    maxMultiplier: 2
+    startCost: 10
+    costMultiplierPerLevel: 1.7
+    currentLevel: 10
+    maxLevel: 10
   - type: 2
-    multiplier: 1
+    minMultiplier: 1
+    maxMultiplier: 1.5
+    startCost: 10
+    costMultiplierPerLevel: 1.7
+    currentLevel: 0
+    maxLevel: 10

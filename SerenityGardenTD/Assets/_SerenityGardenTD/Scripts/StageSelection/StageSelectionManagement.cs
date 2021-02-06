@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 namespace SerenityGarden
 {
-    public class StageSelectionManagement : MonoBehaviour
+    public class StageSelectionManagement : LogicProcessBase
     {
         //Default singleton
-        #region Singleton
+        #region Singleton + BaseAwakeCall
 
         public static StageSelectionManagement instance;
         private void Awake()
@@ -21,13 +21,31 @@ namespace SerenityGarden
             }
             else
                 instance = this;
+
+            BaseAwakeCalls();
         }
 
         #endregion
 
         public TextMeshProUGUI descriptionText;
+        public TextMeshProUGUI moneyText;
 
         private StageScriptable selectedStage;
+
+        private void Start()
+        {
+            BaseStartCalls();
+        }
+
+        public override void Init()
+        {
+            moneyText.text = "$ " + PlayerDataSaver.instance.playerData.Money;
+        }
+
+        public override bool HasAllDependencies()
+        {
+            return PlayerDataSaver.instance != null && PlayerDataSaver.instance.isInitialized;
+        }
 
         public void SelectStage(StageUIBlock stageBlock)
         {
