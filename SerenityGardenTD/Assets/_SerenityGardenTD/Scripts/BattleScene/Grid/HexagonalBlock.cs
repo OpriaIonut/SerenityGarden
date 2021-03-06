@@ -34,6 +34,7 @@ namespace SerenityGarden
         public int listId;
 
         //Property that will also change the material when changing the property
+        [SerializeField]
         private HexagonType type;
         public HexagonType Type
         {

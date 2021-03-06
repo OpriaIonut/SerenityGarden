@@ -32,6 +32,17 @@ namespace SerenityGarden
             grid.mapScaleOffset = EditorGUILayout.FloatField("Map scale offset: ", grid.mapScaleOffset);
             grid.mapPresetFile = EditorGUILayout.TextField("Map preset file name: ", grid.mapPresetFile);
 
+            GUILayout.Space(10);
+            if (GUILayout.Button("Scale Map"))
+            {
+                grid.ScaleMap();
+            }
+            if(GUILayout.Button("Reset Scale"))
+            {
+                grid.walkableArea.transform.localScale = Vector3.one;
+            }
+
+            GUILayout.Space(10);
             if (GUILayout.Button("Generate Grid"))
             {
                 //If we clicked generate grid, we first need to clear the previous one
@@ -43,7 +54,8 @@ namespace SerenityGarden
                 grid.ClearGrid();
             }
 
-            if(GUILayout.Button("Load Preset"))
+            GUILayout.Space(10);
+            if (GUILayout.Button("Load Preset"))
             {
                 //Will load the grid setup from the file with the same name as the scene
                 grid.ClearGrid();

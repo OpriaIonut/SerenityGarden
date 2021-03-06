@@ -14,6 +14,11 @@ namespace SerenityGarden
             SceneManager.LoadScene("StageSelection");
         }
 
+        public void OnClick_Coop()
+        {
+            SceneManager.LoadScene("CoopLobby");
+        }
+
         public void OnClick_Options()
         {
             //To do: crete this menu
