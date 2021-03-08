@@ -13,6 +13,9 @@ namespace SerenityGarden
         public GameObject mapObj;
         public WaveScriptable[] waves;
 
+        [Header("Raid stage")]
+        public bool isBossStage;
+
         [Header("Stage end variables")]
         public int baseReward;
         public int starRanking;

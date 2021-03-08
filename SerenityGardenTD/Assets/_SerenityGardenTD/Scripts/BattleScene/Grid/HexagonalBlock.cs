@@ -41,10 +41,8 @@ namespace SerenityGarden
             get { return type; }
             set 
             { 
-                type = value;  
-                if(meshRend == null)
-                    meshRend = gameObject.GetComponent<MeshRenderer>();
-                meshRend.material = materialList[(int)value];
+                type = value;
+                UpdateMaterial();
             }
         }
 
@@ -52,6 +50,13 @@ namespace SerenityGarden
         public SpawnPointsID spawnPointsID;
 
         private MeshRenderer meshRend;
+
+        public void UpdateMaterial()
+        {
+            if (meshRend == null)
+                meshRend = gameObject.GetComponent<MeshRenderer>();
+            meshRend.material = materialList[(int)type];
+        }
 
         /// <summary>
         /// Place the block at the given position and scale it
