@@ -43,7 +43,7 @@ namespace SerenityGarden
 
         public GameObject InstantiateWithCheck(GameObject obj, Vector3 pos, Quaternion rot, PhotonObj objType)
         {
-            if(SceneDataRetainer.instance.GetStage().isBossStage)
+            if(NetworkManager.instance != null)
             {
                 string path = GetObjPath(objType);
                 GameObject clone = PhotonNetwork.Instantiate(path, pos, rot);

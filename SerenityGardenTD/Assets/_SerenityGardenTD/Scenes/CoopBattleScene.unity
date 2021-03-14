@@ -3147,6 +3147,7 @@ GameObject:
   - component: {fileID: 696150180}
   - component: {fileID: 696150183}
   - component: {fileID: 696150182}
+  - component: {fileID: 696150184}
   m_Layer: 0
   m_Name: '[GRID]'
   m_TagString: Untagged
@@ -3227,6 +3228,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInitialized: 0
+--- !u!114 &696150184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696150179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 696150182}
+  sceneViewId: 2
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &704917611
 GameObject:
   m_ObjectHideFlags: 0
@@ -5017,6 +5041,7 @@ GameObject:
   - component: {fileID: 1102853119}
   - component: {fileID: 1102853120}
   - component: {fileID: 1102853121}
+  - component: {fileID: 1102853122}
   m_Layer: 0
   m_Name: '[BATTLE_INITIALIZATION_MANAGER]'
   m_TagString: Untagged
@@ -5097,6 +5122,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0c4cc6e23e68a0428a317247ac4c2cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1102853122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102853116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 1102853119}
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1114016681
 GameObject:
   m_ObjectHideFlags: 0
@@ -7123,17 +7171,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.634204
+      value: 5.354032
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.634204
+      value: 5.354032
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.634204
+      value: 5.354032
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
@@ -7987,7 +8035,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901568030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb8a74cbbaece5c46b2f43ffc0399ac2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c0566937b53f5346b24eb75c18eb56d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1901568032

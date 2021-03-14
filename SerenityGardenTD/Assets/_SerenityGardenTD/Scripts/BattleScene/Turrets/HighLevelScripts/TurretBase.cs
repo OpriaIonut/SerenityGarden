@@ -17,7 +17,7 @@ namespace SerenityGarden
         Excavator
     }
 
-    public abstract class TurretBase : LogicProcessBase, IDestroyable, IAttacker<EnemyBase>
+    public abstract class TurretBase : LogicProcessBase, IDestroyable, IAttacker<EnemyBase>, IPunObservable
     {
         //Prefab for the range object, that will be shown when selecting a turret
         public GameObject rangePrefab;
@@ -47,6 +47,8 @@ namespace SerenityGarden
         protected GameObject rangeObj;
 
         private PhotonView view;
+        private bool netHealthChanged = false;
+        private bool netReceiveHealth = false;
 
         #region Properties
         public float MaxHealth { get { return maxHealth; } }
@@ -56,7 +58,13 @@ namespace SerenityGarden
             set
             {
                 health = value;
-                if(maxHealth != 0)
+
+                if (!netReceiveHealth)
+                    netHealthChanged = true;
+                else
+                    netReceiveHealth = false;
+
+                if (maxHealth != 0)
                     healthbarUI.rectTransform.localScale = new Vector3(health / (float)maxHealth, 1.0f, 1.0f);
                 if (value < 0)
                     Die();
@@ -106,7 +114,7 @@ namespace SerenityGarden
         {
             view = GetComponent<PhotonView>();
             base.BaseStartCalls();
-            GamePauseManager.AddUnpauseEvent(OnResumeGame);
+            GamePauseManager.instance.AddUnpauseEvent(OnResumeGame);
         }
 
         /// <summary>
@@ -194,8 +202,8 @@ namespace SerenityGarden
         //Pausing time will mess up the attack time, so we need to correct the problem when unpausing
         private void OnResumeGame()
         {
-            LastAttackTime += GamePauseManager.PausedTime;
-            LastSearchTargetTime += GamePauseManager.PausedTime;
+            LastAttackTime += GamePauseManager.instance.PausedTime;
+            LastSearchTargetTime += GamePauseManager.instance.PausedTime;
         }
 
         public void DrawRange(bool draw)
@@ -245,6 +253,30 @@ namespace SerenityGarden
 
             if (view != null && !view.IsMine)
                 return;
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsReading)
+            {
+                string strReceived = (string)stream.ReceiveNext();
+                object objReceived = stream.ReceiveNext();
+
+                if (strReceived == "HealthChanged")
+                {
+                    netReceiveHealth = true;
+                    Health = (float)objReceived;
+                }
+            }
+            if (stream.IsWriting)
+            {
+                if (netHealthChanged)
+                {
+                    stream.SendNext("HealthChanged");
+                    stream.SendNext(Health);
+                    netHealthChanged = false;
+                }
+            }
         }
     }
 }

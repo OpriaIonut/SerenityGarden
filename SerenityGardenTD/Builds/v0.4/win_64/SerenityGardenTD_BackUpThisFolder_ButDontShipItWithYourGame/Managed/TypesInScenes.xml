@@ -72,7 +72,6 @@
 		<type fullname="SerenityGarden.EnemyRanged" preserve="nothing"/>
 		<type fullname="SerenityGarden.EnemyScriptable" preserve="nothing"/>
 		<type fullname="SerenityGarden.GamePauseManager" preserve="nothing"/>
-		<type fullname="SerenityGarden.GameSetupController" preserve="nothing"/>
 		<type fullname="SerenityGarden.HexagonalBlock" preserve="nothing"/>
 		<type fullname="SerenityGarden.HexagonalGrid" preserve="nothing"/>
 		<type fullname="SerenityGarden.InputManager" preserve="nothing"/>
@@ -80,6 +79,7 @@
 		<type fullname="SerenityGarden.LockOnManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.MainMenuClickEvents" preserve="nothing"/>
 		<type fullname="SerenityGarden.NavigationManager" preserve="nothing"/>
+		<type fullname="SerenityGarden.NetworkManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.PlayerBase" preserve="nothing"/>
 		<type fullname="SerenityGarden.ProcessInitializationManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.RaidStageSelection" preserve="nothing"/>

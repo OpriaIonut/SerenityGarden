@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -21,7 +22,7 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
                 base.BaseUpdateCalls();
         }
 

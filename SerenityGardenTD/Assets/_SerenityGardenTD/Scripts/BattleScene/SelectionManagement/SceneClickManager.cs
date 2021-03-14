@@ -42,13 +42,11 @@ namespace SerenityGarden
         /// </summary>
         private void OnPressHandler()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
             {
-                Debug.Log(selectedCommander);
                 //If we clicked a turret in the previous click, then disable it
                 DisablePreviousStates();
                 FindCurrentSelected();
-                Debug.Log(selectedCommander);
 
                 bool updateSelected = true;
                 if (commanderUI.selectDestination)

@@ -8,9 +8,8 @@ using Photon.Realtime;
 
 namespace SerenityGarden
 {
-    public class GamePauseManager : MonoBehaviourPunCallbacks
+    public class GamePauseManager : MonoBehaviourPunCallbacks, IPunObservable
     {
-
         //Default singleton
         #region Singleton
 
@@ -32,18 +31,20 @@ namespace SerenityGarden
         public GameObject confirmationMenu;
         public TextMeshProUGUI confirmationText;
 
-        private static bool gamePaused = false;
-        public static bool GamePaused { get { return gamePaused; } }
+        private bool gamePaused = false;
+        public bool GamePaused { get { return gamePaused; } }
 
-        private static float pausedTime;
-        public static float PausedTime { get { return pausedTime; } }
+        private float pausedTime;
+        public float PausedTime { get { return pausedTime; } }
 
         public delegate void UnpauseGameEvent();
-        private static UnpauseGameEvent Event_UnpauseGame;
-        public static void AddUnpauseEvent(UnpauseGameEvent subscriber) { Event_UnpauseGame += subscriber; }
-        public static void RemoveUnpauseEvent(UnpauseGameEvent unsubscriber) { Event_UnpauseGame -= unsubscriber; }
+        private UnpauseGameEvent Event_UnpauseGame;
+        public void AddUnpauseEvent(UnpauseGameEvent subscriber) { Event_UnpauseGame += subscriber; }
+        public void RemoveUnpauseEvent(UnpauseGameEvent unsubscriber) { Event_UnpauseGame -= unsubscriber; }
 
         private float pauseStartTime;
+
+        private bool netTogglePauseGame = false;
 
         private InputManager inputManager;
         private void Start()
@@ -54,6 +55,7 @@ namespace SerenityGarden
         public void _PauseGame()
         {
             gamePaused = !gamePaused;
+            netTogglePauseGame = true;
             pauseMenu.SetActive(gamePaused);
             if(gamePaused == true)
             {
@@ -103,6 +105,28 @@ namespace SerenityGarden
         public void OnClick_PopupCancel()
         {
             confirmationMenu.SetActive(false);
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if(stream.IsReading)
+            {
+                string strReceived = (string)stream.ReceiveNext();
+
+                if(strReceived == "TogglePauseGame")
+                {
+                    _PauseGame();
+                    netTogglePauseGame = false;
+                }
+            }
+            if(stream.IsWriting)
+            {
+                if (netTogglePauseGame)
+                {
+                    stream.SendNext("TogglePauseGame");
+                    netTogglePauseGame = false;
+                }
+            }
         }
     }
 }

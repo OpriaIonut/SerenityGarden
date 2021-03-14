@@ -15,7 +15,7 @@ namespace SerenityGarden
         Ambusher
     }
 
-    public abstract class EnemyBase : LogicProcessBase, IMovable, IAttacker<TurretBase>, IDestroyable
+    public abstract class EnemyBase : LogicProcessBase, IMovable, IAttacker<TurretBase>, IDestroyable, IPunObservable
     {
         //Scriptable object that will set the starting properties of the current enemy
         public EnemyScriptable enemyScriptable;
@@ -41,6 +41,12 @@ namespace SerenityGarden
             set 
             { 
                 health = value;
+
+                if (!netReceiveHealth)
+                    netHealthChanged = true;
+                else
+                    netReceiveHealth = false;
+
                 //Update the ui if the enemy was initialized properly
                 if (maxHealth != 0)
                     healthbarUI.rectTransform.localScale = new Vector3(health / (float)maxHealth, 1.0f, 1.0f);
@@ -78,6 +84,9 @@ namespace SerenityGarden
 
         #endregion
 
+        protected bool netHealthChanged = false;
+        protected bool netReceiveHealth = false;
+
         public override void BaseAwakeCalls()
         {
             hexagonalGrid = FindObjectOfType<HexagonalGrid>();
@@ -89,19 +98,19 @@ namespace SerenityGarden
         {
             view = GetComponent<PhotonView>();
             base.BaseStartCalls();
-            GamePauseManager.AddUnpauseEvent(OnResumeGame);
+            GamePauseManager.instance.AddUnpauseEvent(OnResumeGame);
         }
         private void OnResumeGame()
         {
-            LastAttackTime += GamePauseManager.PausedTime;
-            LastSearchTargetTime += GamePauseManager.PausedTime;
+            LastAttackTime += GamePauseManager.instance.PausedTime;
+            LastSearchTargetTime += GamePauseManager.instance.PausedTime;
         }
 
         public override void BaseUpdateCalls()
         {
             base.BaseUpdateCalls();
 
-            if (view != null && !view.IsMine)
+            if (!PhotonNetwork.IsMasterClient)
                 return;
 
             if (NextBlock == null)
@@ -258,6 +267,30 @@ namespace SerenityGarden
         {
             TurretBuildManager.instance.Money += DestroyReward;
             Destroy(gameObject);
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsReading)
+            {
+                string strReceived = (string)stream.ReceiveNext();
+                object objReceived = stream.ReceiveNext();
+
+                if (strReceived == "HealthChanged")
+                {
+                    netReceiveHealth = true;
+                    Health = (float)objReceived;
+                }
+            }
+            if (stream.IsWriting)
+            {
+                if (netHealthChanged)
+                {
+                    stream.SendNext("HealthChanged");
+                    stream.SendNext(Health);
+                    netHealthChanged = false;
+                }
+            }
         }
     }
 }

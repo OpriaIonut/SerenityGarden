@@ -5,7 +5,7 @@ using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public class Commander : LogicProcessBase, IMovable, IAttacker<EnemyBase>
+    public class Commander : LogicProcessBase, IMovable, IAttacker<EnemyBase>, IPunObservable
     {
         public CommanderScriptable status;  //Scriptable object that specified the status of the commander.
         public Transform firePoint;
@@ -44,6 +44,10 @@ namespace SerenityGarden
                     previousEndBlockType = endBlock.Type;
                     endBlock.Type = HexagonType.Occupied;
                 }
+                if (netReceivedEndBlock)
+                    netReceivedEndBlock = false;
+                else
+                    netSendEndBlock = true;
             }
         }
         public HexagonalBlock NextBlock { get; set; }
@@ -57,6 +61,13 @@ namespace SerenityGarden
         public float LastAttackTime { get; set; }
         public float SearchTargetCooldown { get; set; }
         public float LastSearchTargetTime { get; set; }
+        #endregion
+
+        #region NetworkingVariables
+
+        private bool netSendEndBlock = false;
+        private bool netReceivedEndBlock = false;
+
         #endregion
 
         private void Awake()
@@ -75,10 +86,7 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if (view != null && !view.IsMine)
-                return;
-
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
             {
                 base.BaseUpdateCalls();
 
@@ -227,6 +235,22 @@ namespace SerenityGarden
             Damage = status.damage;
             Range = status.range;
             AttackCooldown = status.attackCooldown;
+
+            //if (!view.IsMine && CurrentBlock == null)
+            //{
+            //    foreach(HexagonalBlock item in HexagonalGrid.instance.gridCells)
+            //    {
+            //        if((PhotonNetwork.IsMasterClient && item.Type == HexagonType.CommanderSpawn1) || (!PhotonNetwork.IsMasterClient && item.Type == HexagonType.CommanderSpawn2))
+            //        {
+            //            CurrentBlock = item;
+
+            //            //Will be set to occupied by the property EndBlock. It needs to be Walkable so that when the commander leaves the block, it will set it to walkable
+            //            item.Type = HexagonType.Walkable;
+            //            EndBlock = item;
+            //            break;
+            //        }
+            //    }
+            //}
         }
 
         public void Move()
@@ -236,6 +260,40 @@ namespace SerenityGarden
 
             //Move method that doesn't use pysics, because it doesn't need to be precise
             HelperMethods.MoveTowards(transform, NextBlock.transform.position, Speed * Time.deltaTime, true);
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsReading)
+            {
+                string receivedMessage = (string)stream.ReceiveNext();
+                object receivedObj = stream.ReceiveNext();
+                if (receivedMessage == "UpdateEndBlock")
+                {
+                    netReceivedEndBlock = true;
+                    GameObject objToFind = GameObject.Find((string)receivedObj);
+                    if (objToFind != null)
+                    {
+                        HexagonalBlock block = objToFind.GetComponent<HexagonalBlock>();
+                        if (CurrentBlock == null)
+                        {
+                            CurrentBlock = block;
+                            block.Type = HexagonType.Walkable;
+                        }
+                        EndBlock = block;
+                        ReachedDestination = false;
+                    }
+                }
+            }
+            if (stream.IsWriting)
+            {
+                if (netSendEndBlock)
+                {
+                    stream.SendNext("UpdateEndBlock");
+                    stream.SendNext(EndBlock.name);
+                    netSendEndBlock = false;
+                }
+            }
         }
     }
 }

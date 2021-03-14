@@ -23,7 +23,7 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if (!GamePauseManager.GamePaused && waveManager.spawnWaves == true)
+            if (!GamePauseManager.instance.GamePaused && waveManager.spawnWaves == true)
                 BaseUpdateCalls();
         }
 

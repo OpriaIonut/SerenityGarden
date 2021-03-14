@@ -6,7 +6,7 @@ using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public class WaveManager : LogicProcessBase
+    public class WaveManager : LogicProcessBase, IPunObservable
     {
         #region Singleton
         public static WaveManager instance;
@@ -48,6 +48,8 @@ namespace SerenityGarden
 
         private int enemyIndex = 0;
 
+        private bool netStartGame = false;
+
         private void Start()
         {
             base.BaseStartCalls();
@@ -57,14 +59,17 @@ namespace SerenityGarden
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
+            if(!PhotonNetwork.IsMasterClient)
+                stageStartButton.SetActive(false);
+
             //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem
-            GamePauseManager.AddUnpauseEvent(OnResumeGame);
+            GamePauseManager.instance.AddUnpauseEvent(OnResumeGame);
             selectedStage = SceneDataRetainer.instance.GetStage();
         }
 
         private void Update()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
             {
                 //If we can/want to spawn a wave
                 if (spawnWaves && startedWave == false && currentWaveIndex < selectedStage.waves.Length - 1)
@@ -88,7 +93,7 @@ namespace SerenityGarden
 
         private void OnResumeGame()
         {
-            lastWaveEndTime += GamePauseManager.PausedTime;
+            lastWaveEndTime += GamePauseManager.instance.PausedTime;
         }
 
         private IEnumerator WaveSpawner(WaveScriptable wave)
@@ -116,7 +121,7 @@ namespace SerenityGarden
                         HexagonalBlock block = targetSpawnPoints[randIndex];
                         SpawnEnemy(item.enemy, block);
 
-                        if (GamePauseManager.GamePaused)
+                        if (GamePauseManager.instance.GamePaused)
                             yield return null;
 
                         yield return new WaitForSeconds(enemySpawnDelay);
@@ -145,7 +150,7 @@ namespace SerenityGarden
                     SpawnEnemy(enemyToSpawn[0], block);
                     enemyToSpawn.RemoveAt(0);
 
-                    if (GamePauseManager.GamePaused)
+                    if (GamePauseManager.instance.GamePaused)
                         yield return null;
 
                     yield return new WaitForSeconds(enemySpawnDelay);
@@ -194,7 +199,7 @@ namespace SerenityGarden
         /// <param name="spawnBlock"></param>
         private void SpawnEnemy(GameObject enemyPrefab, HexagonalBlock spawnBlock)
         {
-            if (SceneDataRetainer.instance.GetStage().isBossStage && !PhotonNetwork.IsMasterClient)
+            if (NetworkManager.instance != null && !PhotonNetwork.IsMasterClient)
                 return;
 
             PhotonObj photonObj = PhotonObj.Bullet;
@@ -230,6 +235,7 @@ namespace SerenityGarden
         {
             spawnWaves = true;
             startedWave = true;
+            netStartGame = true;
             stageStartButton.SetActive(false);
             StartCoroutine(WaveSpawner(selectedStage.waves[currentWaveIndex]));
         }
@@ -253,6 +259,29 @@ namespace SerenityGarden
         {
             //This class is dependent on the grid manager
             return gridManager.isInitialized;
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if(stream.IsReading)
+            {
+                string strReceived = (string)stream.ReceiveNext();
+
+                if(strReceived == "StartGame")
+                {
+                    spawnWaves = true;
+                    startedWave = true;
+                    StartCoroutine(WaveSpawner(selectedStage.waves[currentWaveIndex]));
+                }
+            }
+            if(stream.IsWriting)
+            {
+                if(PhotonNetwork.IsMasterClient && netStartGame)
+                {
+                    stream.SendNext("StartGame");
+                    netStartGame = false;
+                }
+            }
         }
     }
 }

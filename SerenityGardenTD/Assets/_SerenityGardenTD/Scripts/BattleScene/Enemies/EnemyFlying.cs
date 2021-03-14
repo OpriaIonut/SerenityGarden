@@ -21,7 +21,7 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
                 base.BaseUpdateCalls();
         }
 

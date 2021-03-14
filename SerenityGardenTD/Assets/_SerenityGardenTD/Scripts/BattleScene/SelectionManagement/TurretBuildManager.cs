@@ -72,7 +72,7 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
             { 
                 if (inspectTurretUI.activeInHierarchy && sceneClickManager.selectedTurret != null)
                 {

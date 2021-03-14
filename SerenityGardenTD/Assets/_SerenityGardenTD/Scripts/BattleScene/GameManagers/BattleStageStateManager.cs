@@ -33,13 +33,17 @@ namespace SerenityGarden
         public GameObject[] starsUI;
         public TextMeshProUGUI moneyWonText;
 
-        private GamePauseManager pauseManager;
         private InputManager inputManager;
         private bool spawnedAllEnemies = false;
 
+        #region Networking
+
+        private bool netSatrtGame = false;
+
+        #endregion
+
         private void Start()
         {
-            pauseManager = GamePauseManager.instance;
             inputManager = InputManager.instance;
 
             gameOverCanvas.SetActive(false);

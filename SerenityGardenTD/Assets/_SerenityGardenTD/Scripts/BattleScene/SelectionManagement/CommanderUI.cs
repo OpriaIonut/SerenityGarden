@@ -28,13 +28,13 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
                 base.BaseUpdateCalls();
         }
 
         public void SelectCommander()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
             {
                 if (clickManager.selectedCommander == null)
                     commanderUI.SetActive(false);
@@ -70,9 +70,8 @@ namespace SerenityGarden
 
         public void SetCommanderDestination(HexagonalBlock destination)
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
             {
-                Debug.Log("UI: " + commander.name);
                 commander.EndBlock = destination;
                 commander.ReachedDestination = false;
             }
@@ -95,7 +94,7 @@ namespace SerenityGarden
         /// </summary>
         public void _StartDestinationSearch()
         {
-            if (!GamePauseManager.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
             {
                 clickManager.selectedCommander.DrawRange(false);
                 selectDestination = true;

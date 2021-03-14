@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
     //Class that will properly initialize processes, without any conflicts or inheritance problems (if implemented right)
-    public abstract class LogicProcessBase : MonoBehaviour
+    public abstract class LogicProcessBase : MonoBehaviourPun
     {
         //Will be set after the Init() method is called
         [HideInInspector] public bool isInitialized = false;
