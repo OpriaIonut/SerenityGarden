@@ -14,7 +14,7 @@ namespace SerenityGarden
         {
             if (instance != null)
             {
-                Debug.LogWarning("Warning! Multiple instances of BatleProcessManager in scene. Deleting from: " + gameObject.name);
+                Debug.LogWarning("Warning! Multiple instances of ProcessInitializationManager in scene. Deleting from: " + gameObject.name);
                 Destroy(this);
             }
             else
@@ -59,6 +59,12 @@ namespace SerenityGarden
             {
                 //Get the current process
                 LogicProcessBase currentProcess = processesToInitialize.Dequeue();
+                if (currentProcess.isInitialized)
+                {
+                    noChangeCount = 0;
+                    continue;
+                }
+
                 if (currentProcess.HasAllDependencies())
                 {
                     //If it has all the dependencies, then initialize it

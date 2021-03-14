@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -44,6 +45,8 @@ namespace SerenityGarden
 
         //Instantiated range object. It will be deleted when deselecting a turret
         protected GameObject rangeObj;
+
+        private PhotonView view;
 
         #region Properties
         public float MaxHealth { get { return maxHealth; } }
@@ -101,6 +104,7 @@ namespace SerenityGarden
 
         public override void BaseStartCalls()
         {
+            view = GetComponent<PhotonView>();
             base.BaseStartCalls();
             GamePauseManager.AddUnpauseEvent(OnResumeGame);
         }
@@ -233,6 +237,14 @@ namespace SerenityGarden
                 float targetScale = (diameter * transform.localScale.x) / currentDist;
                 transform.localScale = Vector3.one * targetScale;
             }
+        }
+
+        public override void BaseUpdateCalls()
+        {
+            base.BaseUpdateCalls();
+
+            if (view != null && !view.IsMine)
+                return;
         }
     }
 }

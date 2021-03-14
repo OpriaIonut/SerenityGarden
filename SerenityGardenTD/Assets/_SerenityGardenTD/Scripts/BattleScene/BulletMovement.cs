@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -11,17 +12,26 @@ namespace SerenityGarden
         private Rigidbody rb;
 
         private GameObject target;
+        private PhotonView view;
 
         private void Start()
         {
             rb = GetComponent<Rigidbody>();
+            view = GetComponent<PhotonView>();
+
             Destroy(this.gameObject, 10.0f);
         }
 
         private void FixedUpdate()
         {
+            if (view != null && !view.IsMine)
+                return;
+
             if (target == null)
-                Destroy(this.gameObject);
+            {
+                DestroyImmediate(this.gameObject);
+                return;
+            }
 
             Vector3 direction = target.transform.position - transform.position; //Calculate the image that you need to shot towards
             rb.velocity += direction * speed * Time.fixedDeltaTime;

@@ -5,6 +5,7 @@ using Newtonsoft.Json;
 using UnityEngine.SceneManagement;
 using System.IO;
 using System;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -103,16 +104,27 @@ namespace SerenityGarden
         {
             selectedStage = SceneDataRetainer.instance.GetStage();
             mapScaleOffset = 1;
+            string savePath = selectedStage.stageFilePath + "/" + selectedStage.stageName + ".json";
 
             if (gridCells.Count != 0)
                 ClearGrid();
+
+            string contents = FileManager.GetFileContents(true, savePath);
+            if (contents != null && contents != "")
+            {
+                GridSaveData saveData = GridDataSaver.LoadData(contents);
+                diameter = saveData.diameter;
+                offset = saveData.offset;
+                mapScaleOffset = saveData.mapScaleOffset;
+            }
+
             SpawnAndScaleMap();
-            LoadPresetGrid(selectedStage.stageFilePath + "/" + selectedStage.stageName + ".json");
+            LoadPresetGrid(savePath);
         }
 
         public override bool HasAllDependencies()
         {
-            return true;
+            return InstantiationManager.instance != null;
         }
 
         /// <summary>
@@ -152,6 +164,7 @@ namespace SerenityGarden
             float widthDiff = screenBoundsMax.x - screenBoundsMin.x;
             float heightDiff = screenBoundsMax.y - screenBoundsMin.y;
 
+            Debug.Log("Screen: " + Screen.width + " " + Screen.height);
             //Find the factor the map needs to be scaled by to fill the entire screen
             float xScale = (Screen.width * walkableArea.transform.localScale.x) / widthDiff;
             float yScale = (Screen.height * walkableArea.transform.localScale.x) / heightDiff;
@@ -191,34 +204,49 @@ namespace SerenityGarden
                 CreateGrid();
 
                 //Set the properties for each grid cell
-                List<float> xPos = new List<float>();
-                List<float> zPos = new List<float>();
-                float yPos = 0;
+                List<Transform> playerSpawn = new List<Transform>();
+
                 enemyGoal = new List<HexagonalBlock>();
                 HexagonalBlock commanderSpawnBlock = null;
                 for (int index = 0; index < gridCells.Count; index++)
                 {
                     gridCells[index].Type = (HexagonType)saveData.blockTypes.list[index];
                     gridCells[index].spawnPointsID = (SpawnPointsID)saveData.blockSpawnIds.list[index];
-                    if (gridCells[index].Type == HexagonType.PlayerBase && isInitialized == true)
+                    if (isInitialized)
                     {
-                        enemyGoal.Add(gridCells[index]);
-                        yPos = gridCells[index].transform.position.y;
-                        if (!xPos.Contains(gridCells[index].transform.position.x))
-                            xPos.Add(gridCells[index].transform.position.x);
-                        if (!zPos.Contains(gridCells[index].transform.position.z))
-                            zPos.Add(gridCells[index].transform.position.z);
 
-                        gridCells[index].Type = HexagonType.Occupied;
-                    }
-                    if(gridCells[index].Type == HexagonType.CommanderSpawn)
-                    {
-                        if(commanderSpawnBlock == null)
+                        if (PhotonNetwork.IsMasterClient)
                         {
-                            commanderSpawnBlock = gridCells[index];
+                            if (gridCells[index].Type == HexagonType.PlayerBase1 && !playerSpawn.Contains(gridCells[index].transform))
+                            {
+                                playerSpawn.Add(gridCells[index].transform);
+                                gridCells[index].Type = HexagonType.Occupied;
+                                enemyGoal.Add(gridCells[index]);
+                            }
+                            if (gridCells[index].Type == HexagonType.CommanderSpawn1)
+                            {
+                                if (commanderSpawnBlock == null)
+                                    commanderSpawnBlock = gridCells[index];
+                                else
+                                    Debug.LogWarning("Warning! there are multiple commander spawn blocks");
+                            }
                         }
                         else
-                            Debug.LogWarning("Warning! there are multiple commander spawn points.");
+                        {
+                            if (gridCells[index].Type == HexagonType.PlayerBase2 && !playerSpawn.Contains(gridCells[index].transform))
+                            {
+                                playerSpawn.Add(gridCells[index].transform);
+                                gridCells[index].Type = HexagonType.Occupied;
+                                enemyGoal.Add(gridCells[index]);
+                            }
+                            if (gridCells[index].Type == HexagonType.CommanderSpawn2)
+                            {
+                                if (commanderSpawnBlock == null)
+                                    commanderSpawnBlock = gridCells[index];
+                                else
+                                    Debug.LogWarning("Warning! there are multiple commander spawn blocks");
+                            }
+                        }
                     }
                 }
                 if(isInitialized)
@@ -228,8 +256,7 @@ namespace SerenityGarden
                         Debug.LogWarning("Warning! couldn't find a commander spawn block.");
                     else
                     {
-                        GameObject commander = Instantiate(commanderPrefab);
-                        commander.transform.position = commanderSpawnBlock.transform.position;
+                        GameObject commander = InstantiationManager.instance.InstantiateWithCheck(commanderPrefab, commanderSpawnBlock.transform.position, Quaternion.identity, PhotonObj.Commander);
                         Commander script = commander.GetComponent<Commander>();
                         script.CurrentBlock = commanderSpawnBlock;
 
@@ -239,17 +266,17 @@ namespace SerenityGarden
                     }
 
                     //If it is initialized, then calculate where to spawn the player's base
-                    float xMean = 0;
-                    float zMean = 0;
-                    for(int index = 0; index < xPos.Count; index++)
-                        xMean += xPos[index];
-                    for (int index = 0; index < zPos.Count; index++)
-                        zMean += zPos[index];
+                    float xMean = 0, zMean = 0;
+                    for(int index = 0; index < playerSpawn.Count; index++)
+                    {
+                        xMean += playerSpawn[index].position.x;
+                        zMean += playerSpawn[index].position.z;
+                    }
+                    xMean /= playerSpawn.Count;
+                    zMean /= playerSpawn.Count;
+                    Vector3 spawnPos = new Vector3(xMean, playerSpawn[0].position.y, zMean);
 
-                    xMean /= xPos.Count;
-                    zMean /= zPos.Count;
-
-                    Instantiate(playerBasePrefab, new Vector3(xMean, yPos, zMean), Quaternion.identity);
+                    InstantiationManager.instance.InstantiateWithCheck(playerBasePrefab, spawnPos, Quaternion.identity, PhotonObj.PlayerBase);
                     Physics.SyncTransforms();
                 }
             }

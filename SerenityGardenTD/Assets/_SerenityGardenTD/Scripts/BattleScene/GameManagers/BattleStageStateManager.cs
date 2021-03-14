@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Photon.Pun;
+using Photon.Realtime;
 
 namespace SerenityGarden
 {
-    public class BattleStageStateManager : MonoBehaviour
+    public class BattleStageStateManager : MonoBehaviourPunCallbacks
     {
         //Default singleton
         #region Singleton
@@ -131,7 +133,15 @@ namespace SerenityGarden
 
         private void ReloadScene()
         {
-            SceneManager.LoadScene("StageSelection");
+            if (PhotonNetwork.IsConnected)
+                PhotonNetwork.Disconnect();
+            else
+                SceneManager.LoadScene("StageSelection");
+        }
+
+        public override void OnDisconnected(DisconnectCause cause)
+        {
+            SceneManager.LoadScene("CoopLobby");
         }
     }
 }

@@ -363,6 +363,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -389,6 +390,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -411,6 +413,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -470,6 +473,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -483,6 +487,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -505,6 +510,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -518,6 +524,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -531,6 +538,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -659,6 +667,7 @@
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
                 "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -901,6 +910,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "SerenityGarden.InstantiationManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "SerenityGarden.LockOnManager",
             "moduleName": "",
             "usedInScenes": []
@@ -930,6 +946,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "SerenityGarden.ProcessInitializationManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "SerenityGarden.RaidStageSelection",
             "moduleName": "",
             "usedInScenes": []
         },

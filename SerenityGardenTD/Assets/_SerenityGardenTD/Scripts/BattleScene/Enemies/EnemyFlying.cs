@@ -32,7 +32,7 @@ namespace SerenityGarden
             transform.rotation = Quaternion.LookRotation(targetDirection);
 
             //Shoot a bullet towards it
-            BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
+            BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
             bulletScript.damage = Damage;
             bulletScript.SetTarget(Target.gameObject);
             LastAttackTime = Time.time;

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -43,9 +44,11 @@ namespace SerenityGarden
         {
             if (!GamePauseManager.GamePaused)
             {
+                Debug.Log(selectedCommander);
                 //If we clicked a turret in the previous click, then disable it
                 DisablePreviousStates();
                 FindCurrentSelected();
+                Debug.Log(selectedCommander);
 
                 bool updateSelected = true;
                 if (commanderUI.selectDestination)
@@ -134,6 +137,20 @@ namespace SerenityGarden
                 selectedTurret = inputManager.clickedParent.GetComponent<TurretBase>();
                 selectedEnemy = inputManager.clickedParent.GetComponent<EnemyBase>();
                 selectedCommander = inputManager.clickedParent.GetComponent<Commander>();
+
+                if (selectedTurret != null)
+                {
+                    PhotonView view = selectedTurret.GetComponent<PhotonView>();
+                    if (view != null && !view.IsMine)
+                        selectedTurret = null;
+                }
+
+                if (selectedCommander != null)
+                {
+                    PhotonView view = selectedCommander.GetComponent<PhotonView>();
+                    if (view != null && !view.IsMine)
+                        selectedCommander = null;
+                }
             }
         }
 

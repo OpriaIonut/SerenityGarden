@@ -16,6 +16,16 @@ namespace SerenityGarden
             BaseAwakeCalls();
         }
 
+        private void Start()
+        {
+            BaseStartCalls();
+        }
+
+        private void Update()
+        {
+            BaseUpdateCalls();
+        }
+
         public override bool HasAllDependencies()
         {
             return PlayerDataSaver.instance != null && PlayerDataSaver.instance.isInitialized;

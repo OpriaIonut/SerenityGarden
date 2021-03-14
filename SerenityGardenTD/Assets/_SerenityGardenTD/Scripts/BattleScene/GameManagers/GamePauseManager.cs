@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Photon.Pun;
+using Photon.Realtime;
 
 namespace SerenityGarden
 {
-    public class GamePauseManager : MonoBehaviour
+    public class GamePauseManager : MonoBehaviourPunCallbacks
     {
 
         //Default singleton
@@ -80,14 +82,24 @@ namespace SerenityGarden
             confirmationText.text = "Are you sure you want to quit the game?";
         }
 
+        private bool quit = false;
         public void OnClick_PopupConfirm()
         {
             if (exitLevel)
-                SceneManager.LoadScene("StageSelection");
+                quit = false;
             else
-                Application.Quit();
+                quit = true;
+            PhotonNetwork.Disconnect();
         }
-        
+
+        public override void OnDisconnected(DisconnectCause cause)
+        {
+            if(quit)
+                Application.Quit();
+            else
+                SceneManager.LoadScene("StageSelection");
+        }
+
         public void OnClick_PopupCancel()
         {
             confirmationMenu.SetActive(false);

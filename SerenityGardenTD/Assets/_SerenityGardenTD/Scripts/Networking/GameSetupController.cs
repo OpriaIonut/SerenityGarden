@@ -15,8 +15,7 @@ namespace SerenityGarden
 
         private void CreatePlayer()
         {
-            Debug.Log("Creating Player");
-            PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PhotonPlayer"), Vector3.zero, Quaternion.identity);
+            InstantiationManager.instance.InstantiateWithCheck(null, Vector3.zero, Quaternion.identity, PhotonObj.PhotonPlayer);
         }
     }
 }

@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7562850951455885646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3452206683847846471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &6819919779486371088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8695375344672817697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 0
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!1001 &5352077170505532784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3668824123785348945, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_Name
+      value: PhotonPlayerBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4894783760908383002, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ec7e3d09dc8fcc64394b00aca8214c9e, type: 3}
+--- !u!1 &8695375344672817697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3668824123785348945, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5352077170505532784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3452206683847846471 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7327029369964015415, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5352077170505532784}
+  m_PrefabAsset: {fileID: 0}

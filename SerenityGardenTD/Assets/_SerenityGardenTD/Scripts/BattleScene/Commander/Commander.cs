@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -24,6 +25,7 @@ namespace SerenityGarden
         //Will retain the type of the block that the commander moves towards, so that we can reset it when he leaves the block
         private HexagonType previousEndBlockType = HexagonType.Walkable;
 
+        private PhotonView view;
 
         #region Inherited Properties
         public HexagonalBlock CurrentBlock { get; set; }
@@ -66,12 +68,16 @@ namespace SerenityGarden
 
         private void Start()
         {
+            view = GetComponent<PhotonView>();
             commanderUI = FindObjectOfType<CommanderUI>();
             base.BaseStartCalls();
         }
 
         private void Update()
         {
+            if (view != null && !view.IsMine)
+                return;
+
             if (!GamePauseManager.GamePaused)
             {
                 base.BaseUpdateCalls();
@@ -132,7 +138,7 @@ namespace SerenityGarden
                 HelperMethods.RotateObjTowardsTarget(transform, Target.transform.position, true);
 
                 //Shoot a bullet towards it
-                BulletMovement bulletScript = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation).GetComponent<BulletMovement>();
+                BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
                 bulletScript.SetTarget(Target.gameObject);
                 LastAttackTime = Time.time;
@@ -200,7 +206,7 @@ namespace SerenityGarden
         public override bool HasAllDependencies()
         {
             //This script is dependent on the hexagonal grid and the navigation system
-            return hexagonalGrid.isInitialized && navigationManager.isInitialized;
+            return hexagonalGrid.isInitialized && navigationManager.isInitialized && InstantiationManager.instance != null;
         }
 
         public override void Init()

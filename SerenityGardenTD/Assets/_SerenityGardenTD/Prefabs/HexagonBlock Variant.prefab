@@ -35,7 +35,10 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 12e4183ead6665a4ab34effba1b61fb5, type: 2}
   - {fileID: 2100000, guid: 946e20c876963eb47a00e7865c10efa5, type: 2}
   - {fileID: 2100000, guid: 58d38fd0bcaf9bf41aae0a1bc53dbd78, type: 2}
+  - {fileID: 2100000, guid: 061afcd42d68a4341841afc9e3fb588d, type: 2}
+  - {fileID: 2100000, guid: 946e20c876963eb47a00e7865c10efa5, type: 2}
   listId: 0
+  type: 0
   spawnPointsID: 0
 --- !u!1001 &8963953096963847574
 PrefabInstance:

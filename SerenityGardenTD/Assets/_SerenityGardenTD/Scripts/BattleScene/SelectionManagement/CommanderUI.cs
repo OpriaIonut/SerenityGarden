@@ -53,6 +53,7 @@ namespace SerenityGarden
                         clickManager.selectedCommander.DrawRange(true);
                     }
                 }
+                commander = clickManager.selectedCommander;
             }
         }
 
@@ -71,6 +72,7 @@ namespace SerenityGarden
         {
             if (!GamePauseManager.GamePaused)
             {
+                Debug.Log("UI: " + commander.name);
                 commander.EndBlock = destination;
                 commander.ReachedDestination = false;
             }

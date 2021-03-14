@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -193,8 +194,29 @@ namespace SerenityGarden
         /// <param name="spawnBlock"></param>
         private void SpawnEnemy(GameObject enemyPrefab, HexagonalBlock spawnBlock)
         {
+            if (SceneDataRetainer.instance.GetStage().isBossStage && !PhotonNetwork.IsMasterClient)
+                return;
+
+            PhotonObj photonObj = PhotonObj.Bullet;
+
+            EnemyBase enemy = enemyPrefab.GetComponent<EnemyMelee>();
+            if (enemy != null)
+                photonObj = PhotonObj.EnemyMelee;
+
+            enemy = enemyPrefab.GetComponent<EnemyRanged>();
+            if (enemy != null)
+                photonObj = PhotonObj.EnemyRanged;
+
+            enemy = enemyPrefab.GetComponent<EnemyAmbusher>();
+            if (enemy != null)
+                photonObj = PhotonObj.EnemyAmbusher;
+
+            enemy = enemyPrefab.GetComponent<EnemyFlying>();
+            if (enemy != null)
+                photonObj = PhotonObj.EnemyFlying;
+
             Vector3 spawnPosition = spawnBlock.transform.position;
-            EnemyBase clone = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity).GetComponent<EnemyBase>();
+            EnemyBase clone = InstantiationManager.instance.InstantiateWithCheck(enemyPrefab, spawnPosition, Quaternion.identity, photonObj).GetComponent<EnemyBase>();
             clone.SetStartBlock(spawnBlock);
             clone.transform.position += Vector3.up * 0.5f;
             clone.name = clone.name.Replace("Clone", enemyIndex.ToString());

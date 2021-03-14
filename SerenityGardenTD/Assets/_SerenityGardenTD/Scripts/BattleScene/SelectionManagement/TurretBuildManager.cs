@@ -162,9 +162,42 @@ namespace SerenityGarden
             //Set the grid to be occupied, so that we can't build on it
             sceneClickManager.selectedHexagon.Type = HexagonType.Occupied;
 
+            PhotonObj photonObj = PhotonObj.Bullet;
+
+            #region TurretCheck
+
+            TurretBase turretBase = turretPrefabs[index].GetComponent<PlayerBase>();
+            if(turretBase != null)
+                photonObj = PhotonObj.PlayerBase;
+
+            turretBase = turretPrefabs[index].GetComponent<TurretMachineGun>();
+            if (turretBase != null)
+                photonObj = PhotonObj.TurretMachineGun;
+
+            turretBase = turretPrefabs[index].GetComponent<TurretElectricFence>();
+            if (turretBase != null)
+                photonObj = PhotonObj.TurretElectricFence;
+
+            turretBase = turretPrefabs[index].GetComponent<TurretVulkan>();
+            if (turretBase != null)
+                photonObj = PhotonObj.TurretVulkan;
+
+            turretBase = turretPrefabs[index].GetComponent<TurretMachineCannon>();
+            if (turretBase != null)
+                photonObj = PhotonObj.TurretMachineCannon;
+
+            turretBase = turretPrefabs[index].GetComponent<TurretRailgun>();
+            if (turretBase != null)
+                photonObj = PhotonObj.TurretRailgun;
+
+            turretBase = turretPrefabs[index].GetComponent<TurretExcavator>();
+            if (turretBase != null)
+                photonObj = PhotonObj.TurretExcavator;
+
+            #endregion
+
             //Build the turret
-            Transform clone = Instantiate(turretPrefabs[index]).transform;
-            clone.position = sceneClickManager.selectedHexagon.transform.position;
+            Transform clone = InstantiationManager.instance.InstantiateWithCheck(turretPrefabs[index], sceneClickManager.selectedHexagon.transform.position, Quaternion.identity, photonObj).transform;
             BuildableTurret script = clone.GetComponent<BuildableTurret>();
             script.hexagonBlock = sceneClickManager.selectedHexagon;
 

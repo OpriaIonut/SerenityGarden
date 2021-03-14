@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
@@ -28,6 +29,8 @@ namespace SerenityGarden
         //Health property.
         protected float health;
         protected float maxHealth;
+
+        private PhotonView view;
 
         #region Properties
 
@@ -84,6 +87,7 @@ namespace SerenityGarden
 
         public override void BaseStartCalls()
         {
+            view = GetComponent<PhotonView>();
             base.BaseStartCalls();
             GamePauseManager.AddUnpauseEvent(OnResumeGame);
         }
@@ -96,6 +100,10 @@ namespace SerenityGarden
         public override void BaseUpdateCalls()
         {
             base.BaseUpdateCalls();
+
+            if (view != null && !view.IsMine)
+                return;
+
             if (NextBlock == null)
                 FindNextBlock();    //If we don't have a destination, the search for it
             else

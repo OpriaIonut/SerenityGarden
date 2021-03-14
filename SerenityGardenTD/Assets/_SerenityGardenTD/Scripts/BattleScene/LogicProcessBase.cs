@@ -27,12 +27,7 @@ namespace SerenityGarden
         /// </summary>
         public virtual void BaseAwakeCalls()
         {
-            //Add the current process to the initialization queue
-            //The Singleton may not work because it is set in awake, and considering this method will also be called in an awake method, it may be called before it is properly initialized.
-            if (ProcessInitializationManager.instance == null)
-                FindObjectOfType<ProcessInitializationManager>().PrepareToInitialize(this);
-            else
-                ProcessInitializationManager.instance.PrepareToInitialize(this);
+            
         }
 
         /// <summary>
@@ -40,7 +35,9 @@ namespace SerenityGarden
         /// </summary>
         public virtual void BaseStartCalls()
         {
-
+            //Add the current process to the initialization queue
+            //The Singleton may not work because it is set in awake, and considering this method will also be called in an awake method, it may be called before it is properly initialized.
+            ProcessInitializationManager.instance.PrepareToInitialize(this);
         }
 
         /// <summary>

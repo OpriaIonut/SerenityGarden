@@ -4895,6 +4895,7 @@ GameObject:
   - component: {fileID: 1102853117}
   - component: {fileID: 1102853119}
   - component: {fileID: 1102853120}
+  - component: {fileID: 1102853121}
   m_Layer: 0
   m_Name: '[BATTLE_INITIALIZATION_MANAGER]'
   m_TagString: Untagged
@@ -4963,6 +4964,18 @@ MonoBehaviour:
   - {fileID: 162655146}
   - {fileID: 1909440230}
   moneyWonText: {fileID: 558013171}
+--- !u!114 &1102853121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102853116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0c4cc6e23e68a0428a317247ac4c2cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1114016681
 GameObject:
   m_ObjectHideFlags: 0

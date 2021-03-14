@@ -18,12 +18,14 @@ namespace SerenityGarden
     {
         Walkable,
         TurretBuildable,
-        PlayerBase,
+        PlayerBase1,
         ResourceExtraction,
         Occupied,
         SpawnPoint,
-        CommanderSpawn,
-        Impassable
+        CommanderSpawn1,
+        Impassable,
+        PlayerBase2,
+        CommanderSpawn2
     }
 
     public class HexagonalBlock : MonoBehaviour
