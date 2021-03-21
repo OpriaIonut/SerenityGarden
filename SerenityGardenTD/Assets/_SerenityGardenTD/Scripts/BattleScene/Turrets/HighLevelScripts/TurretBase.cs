@@ -17,7 +17,7 @@ namespace SerenityGarden
         Excavator
     }
 
-    public abstract class TurretBase : LogicProcessBase, IDestroyable, IAttacker<EnemyBase>, IPunObservable
+    public abstract class TurretBase : LogicProcessBase, IDestroyable, IAttacker<EnemyBase>
     {
         //Prefab for the range object, that will be shown when selecting a turret
         public GameObject rangePrefab;
@@ -255,28 +255,28 @@ namespace SerenityGarden
                 return;
         }
 
-        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-        {
-            if (stream.IsReading)
-            {
-                string strReceived = (string)stream.ReceiveNext();
-                object objReceived = stream.ReceiveNext();
+        //public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        //{
+        //    if (stream.IsReading)
+        //    {
+        //        string strReceived = stream.ReceiveNext() as string;
+        //        object objReceived = stream.ReceiveNext();
 
-                if (strReceived == "HealthChanged")
-                {
-                    netReceiveHealth = true;
-                    Health = (float)objReceived;
-                }
-            }
-            if (stream.IsWriting)
-            {
-                if (netHealthChanged)
-                {
-                    stream.SendNext("HealthChanged");
-                    stream.SendNext(Health);
-                    netHealthChanged = false;
-                }
-            }
-        }
+        //        if (strReceived == "HealthChanged")
+        //        {
+        //            netReceiveHealth = true;
+        //            Health = (float)objReceived;
+        //        }
+        //    }
+        //    if (stream.IsWriting)
+        //    {
+        //        if (netHealthChanged)
+        //        {
+        //            stream.SendNext("HealthChanged");
+        //            stream.SendNext(Health);
+        //            netHealthChanged = false;
+        //        }
+        //    }
+        //}
     }
 }

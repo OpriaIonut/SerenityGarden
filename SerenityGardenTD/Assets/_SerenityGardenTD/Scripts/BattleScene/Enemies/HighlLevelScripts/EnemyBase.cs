@@ -15,7 +15,7 @@ namespace SerenityGarden
         Ambusher
     }
 
-    public abstract class EnemyBase : LogicProcessBase, IMovable, IAttacker<TurretBase>, IDestroyable, IPunObservable
+    public abstract class EnemyBase : LogicProcessBase, IMovable, IAttacker<TurretBase>, IDestroyable//, IPunObservable
     {
         //Scriptable object that will set the starting properties of the current enemy
         public EnemyScriptable enemyScriptable;
@@ -110,6 +110,14 @@ namespace SerenityGarden
         {
             base.BaseUpdateCalls();
 
+            //At certain time intervals check to find if a turret/something that we can attack is in range
+            if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
+                FindTarget();
+
+            //At certain time intervals, attack the target, if it exists
+            if (Time.time - LastAttackTime > AttackCooldown && Target != null)
+                Attack();
+
             if (!PhotonNetwork.IsMasterClient)
                 return;
 
@@ -124,14 +132,6 @@ namespace SerenityGarden
             //If we didn't reach the destination then move towards it
             if (!ReachedDestination && Target == null)
                 Move();
-
-            //At certain time intervals check to find if a turret/something that we can attack is in range
-            if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
-                FindTarget();
-
-            //At certain time intervals, attack the target, if it exists
-            if (Time.time - LastAttackTime > AttackCooldown && Target != null)
-                Attack();
         }
 
         public override void Init()
@@ -269,28 +269,30 @@ namespace SerenityGarden
             Destroy(gameObject);
         }
 
-        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-        {
-            if (stream.IsReading)
-            {
-                string strReceived = (string)stream.ReceiveNext();
-                object objReceived = stream.ReceiveNext();
+        //public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        //{
+        //    if (stream.IsReading)
+        //    {
+        //        string strReceived = stream.ReceiveNext() as string;
+        //        object objReceived = stream.ReceiveNext();
 
-                if (strReceived == "HealthChanged")
-                {
-                    netReceiveHealth = true;
-                    Health = (float)objReceived;
-                }
-            }
-            if (stream.IsWriting)
-            {
-                if (netHealthChanged)
-                {
-                    stream.SendNext("HealthChanged");
-                    stream.SendNext(Health);
-                    netHealthChanged = false;
-                }
-            }
-        }
+        //        Debug.Log(gameObject.name + " Received: " + strReceived + " " + objReceived);
+
+        //        if (strReceived == "HealthChanged")
+        //        {
+        //            netReceiveHealth = true;
+        //            Health = (float)objReceived;
+        //        }
+        //    }
+        //    if (stream.IsWriting)
+        //    {
+        //        if (netHealthChanged)
+        //        {
+        //            stream.SendNext("HealthChanged");
+        //            stream.SendNext(Health);
+        //            netHealthChanged = false;
+        //        }
+        //    }
+        //}
     }
 }

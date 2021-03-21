@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SynchronizePosition: 1
   m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
+  m_SynchronizeScale: 1
   m_UseLocal: 1
 --- !u!114 &7579646343052134940
 MonoBehaviour:
@@ -35,7 +35,6 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 2013595085228951039}
   - {fileID: 1141800072125932511}
   sceneViewId: 9
   InstantiationId: 0
@@ -115,15 +114,3 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7132428534472069948}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2013595085228951039 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8721999105785206467, guid: fba25671a535c3d46b17eed344a4c308,
-    type: 3}
-  m_PrefabInstance: {fileID: 7132428534472069948}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013595085228951024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f838487bed9bf104fa5996d47a8253bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

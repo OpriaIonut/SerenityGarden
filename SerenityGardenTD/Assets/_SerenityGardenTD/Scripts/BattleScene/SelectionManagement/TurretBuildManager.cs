@@ -196,8 +196,11 @@ namespace SerenityGarden
 
             #endregion
 
+            object[] turretData = new object[1];
+            turretData[0] = sceneClickManager.selectedHexagon.name;
+
             //Build the turret
-            Transform clone = InstantiationManager.instance.InstantiateWithCheck(turretPrefabs[index], sceneClickManager.selectedHexagon.transform.position, Quaternion.identity, photonObj).transform;
+            Transform clone = InstantiationManager.instance.InstantiateWithCheck(turretPrefabs[index], sceneClickManager.selectedHexagon.transform.position, Quaternion.identity, photonObj, turretData).transform;
             BuildableTurret script = clone.GetComponent<BuildableTurret>();
             script.hexagonBlock = sceneClickManager.selectedHexagon;
 

@@ -111,7 +111,7 @@ namespace SerenityGarden
         {
             if(stream.IsReading)
             {
-                string strReceived = (string)stream.ReceiveNext();
+                string strReceived = stream.ReceiveNext() as string;
 
                 if(strReceived == "TogglePauseGame")
                 {

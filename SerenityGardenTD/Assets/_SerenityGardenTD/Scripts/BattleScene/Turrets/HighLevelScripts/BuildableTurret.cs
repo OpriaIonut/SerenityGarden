@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public abstract class BuildableTurret : TurretBase, IRecoverable
+    public abstract class BuildableTurret : TurretBase, IRecoverable, IPunInstantiateMagicCallback
     {
         //Block that the turret will sit on
         [HideInInspector] public HexagonalBlock hexagonBlock;
@@ -166,6 +167,18 @@ namespace SerenityGarden
                 return true;
             }
             return false;
+        }
+
+        public void OnPhotonInstantiate(PhotonMessageInfo info)
+        {
+            object[] initData = info.photonView.InstantiationData;
+
+            if (initData != null)
+            {
+                string hexagonName = (string)initData[0];
+                hexagonBlock = GameObject.Find(hexagonName).GetComponent<HexagonalBlock>();
+                hexagonBlock.Type = HexagonType.Occupied;
+            }
         }
     }
 }

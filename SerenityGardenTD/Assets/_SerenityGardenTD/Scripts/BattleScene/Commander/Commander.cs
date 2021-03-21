@@ -266,22 +266,31 @@ namespace SerenityGarden
         {
             if (stream.IsReading)
             {
-                string receivedMessage = (string)stream.ReceiveNext();
+                string receivedMessage = stream.ReceiveNext() as string;
                 object receivedObj = stream.ReceiveNext();
+
                 if (receivedMessage == "UpdateEndBlock")
                 {
                     netReceivedEndBlock = true;
-                    GameObject objToFind = GameObject.Find((string)receivedObj);
-                    if (objToFind != null)
+                    string objName = receivedObj as string;
+                    if (objName != null)
                     {
-                        HexagonalBlock block = objToFind.GetComponent<HexagonalBlock>();
-                        if (CurrentBlock == null)
+                        GameObject objToFind = GameObject.Find(objName);
+                        if (objToFind != null)
                         {
-                            CurrentBlock = block;
-                            block.Type = HexagonType.Walkable;
+                            HexagonalBlock block = objToFind.GetComponent<HexagonalBlock>();
+                            if (CurrentBlock == null)
+                            {
+                                CurrentBlock = block;
+                                block.Type = HexagonType.Walkable;
+                            }
+                            EndBlock = block;
+                            ReachedDestination = false;
                         }
-                        EndBlock = block;
-                        ReachedDestination = false;
+                    }
+                    else
+                    {
+                        Debug.LogError("Could not cast: " + objName + " to string");
                     }
                 }
             }

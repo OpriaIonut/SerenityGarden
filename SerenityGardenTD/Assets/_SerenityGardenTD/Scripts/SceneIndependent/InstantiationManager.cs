@@ -41,12 +41,16 @@ namespace SerenityGarden
 
 
 
-        public GameObject InstantiateWithCheck(GameObject obj, Vector3 pos, Quaternion rot, PhotonObj objType)
+        public GameObject InstantiateWithCheck(GameObject obj, Vector3 pos, Quaternion rot, PhotonObj objType, object[] initData = null)
         {
             if(NetworkManager.instance != null)
             {
                 string path = GetObjPath(objType);
-                GameObject clone = PhotonNetwork.Instantiate(path, pos, rot);
+                GameObject clone;
+                if(initData == null)
+                    clone = PhotonNetwork.Instantiate(path, pos, rot);
+                else
+                    clone = PhotonNetwork.Instantiate(path, pos, rot, 0, initData);
                 clone.name = PhotonNetwork.NetworkingClient.NickName + " " + clone.name;
                 return clone;
             }
