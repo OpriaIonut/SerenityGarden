@@ -15,6 +15,8 @@ namespace SerenityGarden
 
         private float initTime;
 
+        private bool hitTarget = false;
+
         private void Start()
         {
             rb = GetComponent<Rigidbody>();
@@ -47,10 +49,8 @@ namespace SerenityGarden
         public float damage;
         private void OnTriggerEnter(Collider other)
         {
-            if (Time.time - initTime > 0.1f)
+            if (Time.time - initTime > 0.1f && hitTarget == false)
             {
-                //if(other.transform.root.gameObject == target)
-                //{
                 //If it is a bullet that was shot by an enemy, then check if it collided with a turret
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if (turret != null)
@@ -58,6 +58,7 @@ namespace SerenityGarden
                     //If we hit a turret, then damage it and destroy the bullet.
                     turret.Health -= damage;
                     Destroy(this.gameObject);
+                    hitTarget = true;
                 }
                 else
                 {
@@ -67,9 +68,9 @@ namespace SerenityGarden
                     {
                         enemy.Health -= damage;
                         Destroy(this.gameObject);
+                        hitTarget = true;
                     }
                 }
-                //}
             }
         }
     }

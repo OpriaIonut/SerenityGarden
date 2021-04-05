@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public sealed class PlayerBase : TurretBase
+    public sealed class PlayerBase : TurretBase, IPunObservable
     {
         public GameObject bulletPrefab;
 
@@ -17,6 +18,16 @@ namespace SerenityGarden
         {
             BaseStartCalls();
             SetLevelProp(0);
+
+            if(view != null && !view.IsMine)
+            {
+                HexagonalGrid grid = HexagonalGrid.instance;
+                for (int index = 0; index < grid.gridCells.Count; index++)
+                {
+                    if (grid.gridCells[index].Type == HexagonType.PlayerBase1 || grid.gridCells[index].Type == HexagonType.PlayerBase2)
+                        grid.gridCells[index].Type = HexagonType.Occupied;
+                }
+            }
         }
 
         private void Update()
@@ -24,6 +35,7 @@ namespace SerenityGarden
             if (!GamePauseManager.instance.GamePaused)
             {
                 BaseUpdateCalls();
+
                 //Search for a target at certain intervals
                 if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
                     FindTarget();
@@ -88,6 +100,18 @@ namespace SerenityGarden
 
                 float targetScale = (diameter * transform.localScale.x) / currentDist;
                 transform.localScale = Vector3.one * targetScale;
+            }
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                stream.SendNext(Health);
+            }
+            if (stream.IsReading)
+            {
+                Health = (float)Health;
             }
         }
     }

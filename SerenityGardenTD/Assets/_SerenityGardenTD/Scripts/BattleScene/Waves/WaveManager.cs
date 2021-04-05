@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
+using UnityEngine.UI;
 
 namespace SerenityGarden
 {
@@ -49,6 +50,8 @@ namespace SerenityGarden
         private int enemyIndex = 0;
 
         private bool netStartGame = false;
+        private bool netSkipWaveDelay = false;
+        private bool netReceiveSkipDelay = false;
 
         private void Start()
         {
@@ -161,6 +164,8 @@ namespace SerenityGarden
             if(currentWaveIndex != selectedStage.waves.Length - 1)
             {
                 waveSkipButton.SetActive(true);
+                if (!PhotonNetwork.IsMasterClient)
+                    waveSkipButton.GetComponent<Button>().interactable = false;
             }
             else
             {
@@ -249,6 +254,11 @@ namespace SerenityGarden
             float timeDiff = waveDelay - (Time.time - lastWaveEndTime);
             buildManager.Money += (int)(timeDiff * moneyPerSecondSkip);
 
+            if (netReceiveSkipDelay)
+                netReceiveSkipDelay = false;
+            else
+                netSkipWaveDelay = true;
+
             //And start the wave
             startedWave = true;
             currentWaveIndex++;
@@ -273,14 +283,29 @@ namespace SerenityGarden
                     startedWave = true;
                     StartCoroutine(WaveSpawner(selectedStage.waves[currentWaveIndex]));
                 }
+                if(strReceived == "SKipDelay")
+                {
+                    netReceiveSkipDelay = true;
+                    _SkipWaveDelay();
+                }
             }
             if(stream.IsWriting)
             {
-                if(PhotonNetwork.IsMasterClient && netStartGame)
+                string eventType = "";
+                if(PhotonNetwork.IsMasterClient)
                 {
-                    stream.SendNext("StartGame");
-                    netStartGame = false;
+                    if (netStartGame)
+                    {
+                        eventType = "StartGame";
+                        netStartGame = false;
+                    }
+                    if (netSkipWaveDelay)
+                    {
+                        eventType = "SkipDelay";
+                        netSkipWaveDelay = false;
+                    }
                 }
+                
             }
         }
     }

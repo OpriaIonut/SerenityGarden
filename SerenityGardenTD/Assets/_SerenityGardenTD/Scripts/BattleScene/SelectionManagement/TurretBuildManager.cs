@@ -49,6 +49,9 @@ namespace SerenityGarden
         public TextMeshProUGUI repairText;
         public TextMeshProUGUI upgradeText;
 
+        //Delete this
+        public TextMeshProUGUI debugText;
+
         [Tooltip("Be careful to put them in the right order (the order from the next field.")]
         public TextMeshProUGUI[] turretBuildCostText;
 
@@ -221,18 +224,12 @@ namespace SerenityGarden
             {
                 Money += buildable.DestroyReward;
 
-                //Reset the grid block to what it was before
-                if (buildable.turretType == TurretType.Excavator)
-                    buildable.hexagonBlock.Type = HexagonType.ResourceExtraction;
-                else
-                    buildable.hexagonBlock.Type = HexagonType.TurretBuildable;
-
                 if (buildable.HasCommander)
                     commanderUI._UnpowerupTurret();
 
+                buildable.SellTurret();
+
                 //Deselect and destroy the turret
-                buildable.DrawRange(false);
-                Destroy(buildable.gameObject);
                 sceneClickManager.selectedTurret = null;
                 inspectTurretUI.SetActive(false);
             }
@@ -264,7 +261,6 @@ namespace SerenityGarden
                     {
                         Money -= upgradeCost;
 
-                        sceneClickManager.selectedTurret.DrawRange(false);
                         sceneClickManager.selectedTurret = null;
                         inspectTurretUI.SetActive(false);
                     }

@@ -5,7 +5,7 @@ using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public abstract class BuildableTurret : TurretBase, IRecoverable, IPunInstantiateMagicCallback
+    public abstract class BuildableTurret : TurretBase, IRecoverable, IPunInstantiateMagicCallback, IPunObservable
     {
         //Block that the turret will sit on
         [HideInInspector] public HexagonalBlock hexagonBlock;
@@ -38,7 +38,7 @@ namespace SerenityGarden
             set
             {
                 //If we had a range displayed, hide it, because the range property will be displayed too
-                if(rangeObj != null)
+                if (rangeObj != null)
                     DrawRange(false);
                 if (hasCommander == false && value == true)
                 {
@@ -47,7 +47,7 @@ namespace SerenityGarden
                     AttackCooldown /= 2;
                     Damage *= 2;
                 }
-                else if(hasCommander == true && value == false)
+                else if (hasCommander == true && value == false)
                 {
                     //If the commander leaves the turret, then reset the properties
                     Range /= 2;
@@ -63,6 +63,12 @@ namespace SerenityGarden
         private float currentRecovery = 0;
         private float recoveryAmmount;
 
+        private bool netSendTurretSell = false;
+        private bool netSendTurretUpgrade = false;
+        private bool netSendTurretRepair = false;
+
+        private bool netReceivedEventData = false;
+
         public override void BaseStartCalls()
         {
             base.BaseStartCalls();
@@ -73,21 +79,22 @@ namespace SerenityGarden
         public override void BaseUpdateCalls()
         {
             base.BaseUpdateCalls();
-            if(IsRecovering)
+
+            if (IsRecovering)
             {
                 currentRecovery += 1 / RecoveryPerSecond;
-                if(currentRecovery > 1)
+                if (currentRecovery > 1)
                 {
                     Health += (int)currentRecovery;
                     recoveryAmmount -= (int)currentRecovery;
                     currentRecovery -= (int)currentRecovery;
-                    if(recoveryAmmount <= 0)
+                    if (recoveryAmmount <= 0)
                     {
                         if (Health > maxHealth)
                             health = maxHealth;
 
                         MeshRenderer[] renderers = gameObject.GetComponentsInChildren<MeshRenderer>();
-                        for(int index = 0; index < renderers.Length; index++)
+                        for (int index = 0; index < renderers.Length; index++)
                         {
                             renderers[index].material = beforeRecoveryMaterial[index];
                         }
@@ -110,10 +117,17 @@ namespace SerenityGarden
 
         public bool Upgrade()
         {
-            if(currentLevel < turretUpgradePattern.levelProp.Length - 1)
+            if (currentLevel < turretUpgradePattern.levelProp.Length - 1)
             {
                 currentLevel++;
                 SetLevelProp(currentLevel);
+                DrawRange(false);
+
+                if (netReceivedEventData)
+                    netReceivedEventData = false;
+                else
+                    netSendTurretUpgrade = true;
+
                 return true;
             }
             return false;
@@ -154,19 +168,41 @@ namespace SerenityGarden
                 IsRecovering = true;
                 recoveryAmmount = maxHealth - Health;
 
+                TurretBuildManager.instance.debugText.text = string.Format("MaxHealth: {0};\nHealth: {1};\nRecovery: {2}", maxHealth, Health, recoveryAmmount);
+
                 beforeRecoveryMaterial.Clear();
                 MeshRenderer[] renderers = gameObject.GetComponentsInChildren<MeshRenderer>();
-                foreach(MeshRenderer rend in renderers)
+                foreach (MeshRenderer rend in renderers)
                 {
                     beforeRecoveryMaterial.Add(rend.material);
-                    Color col = rend.material.color;
+                    //Color col = rend.material.color;
                     rend.material = recoveryMaterial;
-                    rend.material.SetColor("Color_F53F0220", col);
+                    //rend.material.SetColor("Color_F53F0220", col);
                 }
+
+                if (netReceivedEventData)
+                    netReceivedEventData = false;
+                else
+                    netSendTurretRepair = true;
 
                 return true;
             }
             return false;
+        }
+
+        public void SellTurret()
+        {
+            //Reset the grid block to what it was before
+            if (turretType == TurretType.Excavator)
+                hexagonBlock.Type = HexagonType.ResourceExtraction;
+            else
+                hexagonBlock.Type = HexagonType.TurretBuildable;
+
+            if (netReceivedEventData)
+                netReceivedEventData = false;
+            else
+                netSendTurretSell = true;
+            DrawRange(false);
         }
 
         public void OnPhotonInstantiate(PhotonMessageInfo info)
@@ -178,6 +214,54 @@ namespace SerenityGarden
                 string hexagonName = (string)initData[0];
                 hexagonBlock = GameObject.Find(hexagonName).GetComponent<HexagonalBlock>();
                 hexagonBlock.Type = HexagonType.Occupied;
+            }
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if (stream.IsWriting)
+            {
+                string eventType = "";
+                if (netSendTurretSell)
+                {
+                    eventType = "SellTurret";
+                    netSendTurretSell = false;
+                    Destroy(gameObject);
+                }
+                if (netSendTurretUpgrade)
+                {
+                    eventType = "Upgrade";
+                    netSendTurretUpgrade = false;
+                }
+                if (netSendTurretRepair)
+                {
+                    eventType = "Repair";
+                    netSendTurretRepair = false;
+                }
+                stream.SendNext(eventType);
+                stream.SendNext(Health);
+            }
+            if (stream.IsReading)
+            {
+                string eventType = (string)stream.ReceiveNext();
+                Health = (float)stream.ReceiveNext();
+
+                if (eventType == "SellTurret")
+                {
+                    netReceivedEventData = true;
+                    SellTurret();
+                    Destroy(gameObject);
+                }
+                if (eventType == "Upgrade")
+                {
+                    netReceivedEventData = true;
+                    Upgrade();
+                }
+                if (eventType == "Repair")
+                {
+                    netReceivedEventData = true;
+                    StartRecovery(TurretBuildManager.instance.recoveryMaterial);
+                }
             }
         }
     }

@@ -214,7 +214,6 @@ namespace SerenityGarden
                     gridCells[index].spawnPointsID = (SpawnPointsID)saveData.blockSpawnIds.list[index];
                     if (isInitialized)
                     {
-
                         if (PhotonNetwork.IsMasterClient)
                         {
                             if (gridCells[index].Type == HexagonType.PlayerBase1 && !playerSpawn.Contains(gridCells[index].transform))

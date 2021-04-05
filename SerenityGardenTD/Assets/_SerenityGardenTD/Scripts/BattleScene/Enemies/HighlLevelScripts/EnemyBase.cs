@@ -15,7 +15,7 @@ namespace SerenityGarden
         Ambusher
     }
 
-    public abstract class EnemyBase : LogicProcessBase, IMovable, IAttacker<TurretBase>, IDestroyable//, IPunObservable
+    public abstract class EnemyBase : LogicProcessBase, IMovable, IAttacker<TurretBase>, IDestroyable
     {
         //Scriptable object that will set the starting properties of the current enemy
         public EnemyScriptable enemyScriptable;
@@ -38,8 +38,8 @@ namespace SerenityGarden
         public float Health
         {
             get { return health; }
-            set 
-            { 
+            set
+            {
                 health = value;
 
                 if (!netReceiveHealth)
@@ -150,7 +150,7 @@ namespace SerenityGarden
 
             //Find the goal that we need to reach
             float minDist = float.MaxValue;
-            for(int index = 0; index < HexagonalGrid.enemyGoal.Count; index++)
+            for (int index = 0; index < HexagonalGrid.enemyGoal.Count; index++)
             {
                 float dist = HelperMethods.SquaredDistance(transform.position, HexagonalGrid.enemyGoal[index].transform.position);
                 if (dist < minDist)
@@ -189,7 +189,7 @@ namespace SerenityGarden
             if (EndBlock != null)
             {
                 NextBlock = NavigationManager.instance.FindNextBlock(CurrentBlock, EndBlock);
-                if(NextBlock != null)
+                if (NextBlock != null)
                 {
                     HelperMethods.RotateObjTowardsTarget(transform, NextBlock.transform.position, true);
                 }
@@ -230,7 +230,7 @@ namespace SerenityGarden
 
         public virtual void FindNextBlock()
         {
-            if(NextBlock != null)
+            if (NextBlock != null)
                 CurrentBlock = NextBlock;
             NextBlock = NavigationManager.instance.FindNextBlock(CurrentBlock, EndBlock);
         }
@@ -268,31 +268,5 @@ namespace SerenityGarden
             TurretBuildManager.instance.Money += DestroyReward;
             Destroy(gameObject);
         }
-
-        //public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-        //{
-        //    if (stream.IsReading)
-        //    {
-        //        string strReceived = stream.ReceiveNext() as string;
-        //        object objReceived = stream.ReceiveNext();
-
-        //        Debug.Log(gameObject.name + " Received: " + strReceived + " " + objReceived);
-
-        //        if (strReceived == "HealthChanged")
-        //        {
-        //            netReceiveHealth = true;
-        //            Health = (float)objReceived;
-        //        }
-        //    }
-        //    if (stream.IsWriting)
-        //    {
-        //        if (netHealthChanged)
-        //        {
-        //            stream.SendNext("HealthChanged");
-        //            stream.SendNext(Health);
-        //            netHealthChanged = false;
-        //        }
-        //    }
-        //}
     }
 }

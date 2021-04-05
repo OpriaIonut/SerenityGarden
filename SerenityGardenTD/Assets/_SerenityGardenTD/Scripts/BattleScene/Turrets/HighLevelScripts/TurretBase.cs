@@ -46,9 +46,7 @@ namespace SerenityGarden
         //Instantiated range object. It will be deleted when deselecting a turret
         protected GameObject rangeObj;
 
-        private PhotonView view;
-        private bool netHealthChanged = false;
-        private bool netReceiveHealth = false;
+        protected PhotonView view;
 
         #region Properties
         public float MaxHealth { get { return maxHealth; } }
@@ -58,13 +56,10 @@ namespace SerenityGarden
             set
             {
                 health = value;
+                if (maxHealth == 0)
+                    maxHealth = value;
 
-                if (!netReceiveHealth)
-                    netHealthChanged = true;
-                else
-                    netReceiveHealth = false;
-
-                if (maxHealth != 0)
+                if(maxHealth != 0)
                     healthbarUI.rectTransform.localScale = new Vector3(health / (float)maxHealth, 1.0f, 1.0f);
                 if (value < 0)
                     Die();
@@ -158,6 +153,14 @@ namespace SerenityGarden
                         firePoint = HelperMethods.FindChildWithName(levelGfx.transform, "FirePoint");
                         partToRotate = HelperMethods.FindChildWithName(levelGfx.transform, "PartToRotate");
                     }
+
+                    if (PhotonNetwork.IsConnectedAndReady)
+                    {
+                        PhotonTransformView tView = partToRotate.AddComponent<PhotonTransformView>();
+                        tView.m_SynchronizePosition = false;
+                        tView.m_SynchronizeRotation = true;
+                        tView.m_SynchronizeScale = false;
+                    }
                 }
             }
             else if(level != 0)
@@ -250,33 +253,6 @@ namespace SerenityGarden
         public override void BaseUpdateCalls()
         {
             base.BaseUpdateCalls();
-
-            if (view != null && !view.IsMine)
-                return;
         }
-
-        //public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-        //{
-        //    if (stream.IsReading)
-        //    {
-        //        string strReceived = stream.ReceiveNext() as string;
-        //        object objReceived = stream.ReceiveNext();
-
-        //        if (strReceived == "HealthChanged")
-        //        {
-        //            netReceiveHealth = true;
-        //            Health = (float)objReceived;
-        //        }
-        //    }
-        //    if (stream.IsWriting)
-        //    {
-        //        if (netHealthChanged)
-        //        {
-        //            stream.SendNext("HealthChanged");
-        //            stream.SendNext(Health);
-        //            netHealthChanged = false;
-        //        }
-        //    }
-        //}
     }
 }
