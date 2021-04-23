@@ -762,7 +762,7 @@ public:
 struct  VisualTreeUpdater_t8BEB4BA17B59E1585E2A6BAA60CC204BDF20DE00  : public RuntimeObject
 {
 public:
-	// UnityEngine.UIElements.VisualTreeUpdater_UpdaterArray UnityEngine.UIElements.VisualTreeUpdater::m_UpdaterArray
+	// UnityEngine.UIElements.VisualTreeUpdater/UpdaterArray UnityEngine.UIElements.VisualTreeUpdater::m_UpdaterArray
 	UpdaterArray_t93CA64534EAECBB98F27909516A929F0182E96F6 * ___m_UpdaterArray_0;
 
 public:
@@ -777,11 +777,11 @@ public:
 };
 
 
-// UnityEngine.UIElements.VisualTreeUpdater_UpdaterArray
+// UnityEngine.UIElements.VisualTreeUpdater/UpdaterArray
 struct  UpdaterArray_t93CA64534EAECBB98F27909516A929F0182E96F6  : public RuntimeObject
 {
 public:
-	// UnityEngine.UIElements.IVisualTreeUpdater[] UnityEngine.UIElements.VisualTreeUpdater_UpdaterArray::m_VisualTreeUpdaters
+	// UnityEngine.UIElements.IVisualTreeUpdater[] UnityEngine.UIElements.VisualTreeUpdater/UpdaterArray::m_VisualTreeUpdaters
 	IVisualTreeUpdaterU5BU5D_t5904B964DFD38F10C5DC8BC4B79623B67337012E* ___m_VisualTreeUpdaters_0;
 
 public:
@@ -1352,11 +1352,11 @@ public:
 };
 
 
-// UnityEngine.UIElements.VisualElement_Hierarchy
+// UnityEngine.UIElements.VisualElement/Hierarchy
 struct  Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F 
 {
 public:
-	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement_Hierarchy::m_Owner
+	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement/Hierarchy::m_Owner
 	VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * ___m_Owner_0;
 
 public:
@@ -2100,11 +2100,11 @@ public:
 };
 
 
-// Unity.Profiling.ProfilerMarker_AutoScope
+// Unity.Profiling.ProfilerMarker/AutoScope
 struct  AutoScope_tFCF9F27FF85DCD3A3880FAADCB520F29B1543A7F 
 {
 public:
-	// System.IntPtr Unity.Profiling.ProfilerMarker_AutoScope::m_Ptr
+	// System.IntPtr Unity.Profiling.ProfilerMarker/AutoScope::m_Ptr
 	intptr_t ___m_Ptr_0;
 
 public:
@@ -2192,11 +2192,11 @@ public:
 };
 
 
-// UnityEngine.UIElements.EventBase_EventPropagation
+// UnityEngine.UIElements.EventBase/EventPropagation
 struct  EventPropagation_tA9A7EB847940ABD70842FA9EBA217C32F977DA20 
 {
 public:
-	// System.Int32 UnityEngine.UIElements.EventBase_EventPropagation::value__
+	// System.Int32 UnityEngine.UIElements.EventBase/EventPropagation::value__
 	int32_t ___value___2;
 
 public:
@@ -2210,11 +2210,11 @@ public:
 };
 
 
-// UnityEngine.UIElements.EventBase_LifeCycleStatus
+// UnityEngine.UIElements.EventBase/LifeCycleStatus
 struct  LifeCycleStatus_t261998375F205A68CDAE646A82B1A16389926883 
 {
 public:
-	// System.Int32 UnityEngine.UIElements.EventBase_LifeCycleStatus::value__
+	// System.Int32 UnityEngine.UIElements.EventBase/LifeCycleStatus::value__
 	int32_t ___value___2;
 
 public:
@@ -2424,11 +2424,11 @@ public:
 	uint64_t ___U3CeventIdU3Ek__BackingField_3;
 	// System.UInt64 UnityEngine.UIElements.EventBase::<triggerEventId>k__BackingField
 	uint64_t ___U3CtriggerEventIdU3Ek__BackingField_4;
-	// UnityEngine.UIElements.EventBase_EventPropagation UnityEngine.UIElements.EventBase::<propagation>k__BackingField
+	// UnityEngine.UIElements.EventBase/EventPropagation UnityEngine.UIElements.EventBase::<propagation>k__BackingField
 	int32_t ___U3CpropagationU3Ek__BackingField_5;
 	// UnityEngine.UIElements.PropagationPaths UnityEngine.UIElements.EventBase::m_Path
 	PropagationPaths_t59C288865B38FA5B8E17CA28D79FC4E1C58CE10D * ___m_Path_6;
-	// UnityEngine.UIElements.EventBase_LifeCycleStatus UnityEngine.UIElements.EventBase::<lifeCycleStatus>k__BackingField
+	// UnityEngine.UIElements.EventBase/LifeCycleStatus UnityEngine.UIElements.EventBase::<lifeCycleStatus>k__BackingField
 	int32_t ___U3ClifeCycleStatusU3Ek__BackingField_7;
 	// UnityEngine.UIElements.IEventHandler UnityEngine.UIElements.EventBase::<leafTarget>k__BackingField
 	RuntimeObject* ___U3CleafTargetU3Ek__BackingField_8;
@@ -2630,7 +2630,7 @@ public:
 	ComputedStyle_tB5824B48158F8503B606231911B3BC842BB81A91  ___U3CcomputedStyleU3Ek__BackingField_26;
 	// System.Int32 UnityEngine.UIElements.VisualElement::imguiContainerDescendantCount
 	int32_t ___imguiContainerDescendantCount_27;
-	// UnityEngine.UIElements.VisualElement_Hierarchy UnityEngine.UIElements.VisualElement::<hierarchy>k__BackingField
+	// UnityEngine.UIElements.VisualElement/Hierarchy UnityEngine.UIElements.VisualElement::<hierarchy>k__BackingField
 	Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F  ___U3ChierarchyU3Ek__BackingField_28;
 	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement::m_PhysicalParent
 	VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * ___m_PhysicalParent_29;
@@ -3467,7 +3467,7 @@ IL2CPP_EXTERN_C void Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F_marshal
 IL2CPP_EXTERN_C void Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F_marshal_com_cleanup(Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F_marshaled_com& marshaled)
 {
 }
-// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement_Hierarchy::get_parent()
+// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement/Hierarchy::get_parent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * Hierarchy_get_parent_mB5F0897D8288DE7D36E376B44975CAE6649FBE54 (Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * __this, const RuntimeMethod* method)
 {
 	VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * V_0 = NULL;
@@ -3491,7 +3491,7 @@ IL2CPP_EXTERN_C  VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * Hiera
 	Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * _thisAdjusted = reinterpret_cast<Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F *>(__this + _offset);
 	return Hierarchy_get_parent_mB5F0897D8288DE7D36E376B44975CAE6649FBE54(_thisAdjusted, method);
 }
-// System.Int32 UnityEngine.UIElements.VisualElement_Hierarchy::get_childCount()
+// System.Int32 UnityEngine.UIElements.VisualElement/Hierarchy::get_childCount()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Hierarchy_get_childCount_m55A62C949CD95C8E9A99C1F3E1BB66200E5D9F25 (Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3523,7 +3523,7 @@ IL2CPP_EXTERN_C  int32_t Hierarchy_get_childCount_m55A62C949CD95C8E9A99C1F3E1BB6
 	Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * _thisAdjusted = reinterpret_cast<Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F *>(__this + _offset);
 	return Hierarchy_get_childCount_m55A62C949CD95C8E9A99C1F3E1BB66200E5D9F25(_thisAdjusted, method);
 }
-// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement_Hierarchy::get_Item(System.Int32)
+// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.VisualElement/Hierarchy::get_Item(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * Hierarchy_get_Item_m920E811BEA80C655F08E77CFE6B47EA29B213DE8 (Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * __this, int32_t ___key0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3556,7 +3556,7 @@ IL2CPP_EXTERN_C  VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * Hiera
 	Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * _thisAdjusted = reinterpret_cast<Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F *>(__this + _offset);
 	return Hierarchy_get_Item_m920E811BEA80C655F08E77CFE6B47EA29B213DE8(_thisAdjusted, ___key0, method);
 }
-// System.Boolean UnityEngine.UIElements.VisualElement_Hierarchy::Equals(UnityEngine.UIElements.VisualElement_Hierarchy)
+// System.Boolean UnityEngine.UIElements.VisualElement/Hierarchy::Equals(UnityEngine.UIElements.VisualElement/Hierarchy)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hierarchy_Equals_m52AE91927F4AAFDBF9D7B44B1F0D423D22696756 (Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * __this, Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F  ___other0, const RuntimeMethod* method)
 {
 	bool V_0 = false;
@@ -3580,7 +3580,7 @@ IL2CPP_EXTERN_C  bool Hierarchy_Equals_m52AE91927F4AAFDBF9D7B44B1F0D423D22696756
 	Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * _thisAdjusted = reinterpret_cast<Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F *>(__this + _offset);
 	return Hierarchy_Equals_m52AE91927F4AAFDBF9D7B44B1F0D423D22696756(_thisAdjusted, ___other0, method);
 }
-// System.Boolean UnityEngine.UIElements.VisualElement_Hierarchy::Equals(System.Object)
+// System.Boolean UnityEngine.UIElements.VisualElement/Hierarchy::Equals(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hierarchy_Equals_m616F3BA8BB9C14B75D463BE09C13631E16D2ECBD (Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3644,7 +3644,7 @@ IL2CPP_EXTERN_C  bool Hierarchy_Equals_m616F3BA8BB9C14B75D463BE09C13631E16D2ECBD
 	Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * _thisAdjusted = reinterpret_cast<Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F *>(__this + _offset);
 	return Hierarchy_Equals_m616F3BA8BB9C14B75D463BE09C13631E16D2ECBD(_thisAdjusted, ___obj0, method);
 }
-// System.Int32 UnityEngine.UIElements.VisualElement_Hierarchy::GetHashCode()
+// System.Int32 UnityEngine.UIElements.VisualElement/Hierarchy::GetHashCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Hierarchy_GetHashCode_m4F98157C3D8DBF7B093B614938CC85FA41E764A8 (Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * __this, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -3687,7 +3687,7 @@ IL2CPP_EXTERN_C  int32_t Hierarchy_GetHashCode_m4F98157C3D8DBF7B093B614938CC85FA
 	Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F * _thisAdjusted = reinterpret_cast<Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F *>(__this + _offset);
 	return Hierarchy_GetHashCode_m4F98157C3D8DBF7B093B614938CC85FA41E764A8(_thisAdjusted, method);
 }
-// System.Boolean UnityEngine.UIElements.VisualElement_Hierarchy::op_Equality(UnityEngine.UIElements.VisualElement_Hierarchy,UnityEngine.UIElements.VisualElement_Hierarchy)
+// System.Boolean UnityEngine.UIElements.VisualElement/Hierarchy::op_Equality(UnityEngine.UIElements.VisualElement/Hierarchy,UnityEngine.UIElements.VisualElement/Hierarchy)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Hierarchy_op_Equality_mA5C6AF77C3F896889D97DDC58DC1093862253093 (Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F  ___x0, Hierarchy_tF2E587A276B2AC4CFA66BEAA0C74BD2F6711528F  ___y1, const RuntimeMethod* method)
 {
 	bool V_0 = false;
@@ -4227,7 +4227,7 @@ IL_0021:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// UnityEngine.UIElements.IVisualTreeUpdater UnityEngine.UIElements.VisualTreeUpdater_UpdaterArray::get_Item(UnityEngine.UIElements.VisualTreeUpdatePhase)
+// UnityEngine.UIElements.IVisualTreeUpdater UnityEngine.UIElements.VisualTreeUpdater/UpdaterArray::get_Item(UnityEngine.UIElements.VisualTreeUpdatePhase)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UpdaterArray_get_Item_m7EDA64425B194BC3004BE74C7D3F8D37FACE3A28 (UpdaterArray_t93CA64534EAECBB98F27909516A929F0182E96F6 * __this, int32_t ___phase0, const RuntimeMethod* method)
 {
 	RuntimeObject* V_0 = NULL;
@@ -4247,7 +4247,7 @@ IL_000c:
 		return L_4;
 	}
 }
-// UnityEngine.UIElements.IVisualTreeUpdater UnityEngine.UIElements.VisualTreeUpdater_UpdaterArray::get_Item(System.Int32)
+// UnityEngine.UIElements.IVisualTreeUpdater UnityEngine.UIElements.VisualTreeUpdater/UpdaterArray::get_Item(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UpdaterArray_get_Item_m29DE9853F5765D6F552BD1F068BADCAD599EC262 (UpdaterArray_t93CA64534EAECBB98F27909516A929F0182E96F6 * __this, int32_t ___index0, const RuntimeMethod* method)
 {
 	RuntimeObject* V_0 = NULL;
@@ -5056,7 +5056,7 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m507C9149FF7F
 {
 	{
 		int32_t L_0 = (int32_t)__this->get__size_2();
-		return L_0;
+		return (int32_t)L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * List_1_get_Item_mFDB8AD680C600072736579BBF5F38F7416396588_gshared_inline (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t ___index0, const RuntimeMethod* method)
@@ -5078,7 +5078,7 @@ IL_000e:
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)__this->get__items_1();
 		int32_t L_3 = ___index0;
 		RuntimeObject * L_4 = IL2CPP_ARRAY_UNSAFE_LOAD((ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_2, (int32_t)L_3);
-		return L_4;
+		return (RuntimeObject *)L_4;
 	}
 }
 IL2CPP_EXTERN_C inline  IL2CPP_METHOD_ATTR void AutoScope__ctor_mDB99051F3C5C2BFFF71574AC515AB523F04E3320_inline (AutoScope_tFCF9F27FF85DCD3A3880FAADCB520F29B1543A7F * __this, intptr_t ___markerPtr0, const RuntimeMethod* method)

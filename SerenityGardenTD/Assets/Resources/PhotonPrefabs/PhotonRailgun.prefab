@@ -49,6 +49,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 507031177503746694, guid: d69d75de14bba814c887365aa8bd3774,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 507031177503746694, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -61,6 +66,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 507031177503746694, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 507031177503746694, guid: d69d75de14bba814c887365aa8bd3774,
         type: 3}
@@ -79,16 +89,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 507031177503746694, guid: d69d75de14bba814c887365aa8bd3774,
         type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 507031177503746694, guid: d69d75de14bba814c887365aa8bd3774,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 507031177503746694, guid: d69d75de14bba814c887365aa8bd3774,
-        type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
@@ -102,11 +102,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 553056235319235465, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d62b34ff4f3f58f40a9b8cb198fd6282, type: 2}
+    - target: {fileID: 1528406733752807835, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: d62b34ff4f3f58f40a9b8cb198fd6282, type: 2}
     - target: {fileID: 2461872282195137907, guid: d69d75de14bba814c887365aa8bd3774,
         type: 3}
       propertyPath: m_Name
       value: PhotonRailgun
       objectReference: {fileID: 0}
+    - target: {fileID: 8363764918513435436, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d62b34ff4f3f58f40a9b8cb198fd6282, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d69d75de14bba814c887365aa8bd3774, type: 3}
 --- !u!1 &3625167561657144921 stripped

@@ -154,7 +154,7 @@ namespace SerenityGarden
                         partToRotate = HelperMethods.FindChildWithName(levelGfx.transform, "PartToRotate");
                     }
 
-                    if (PhotonNetwork.IsConnectedAndReady)
+                    if (PhotonNetwork.IsConnectedAndReady && turretType != TurretType.Excavator)
                     {
                         PhotonTransformView tView = partToRotate.AddComponent<PhotonTransformView>();
                         tView.m_SynchronizePosition = false;

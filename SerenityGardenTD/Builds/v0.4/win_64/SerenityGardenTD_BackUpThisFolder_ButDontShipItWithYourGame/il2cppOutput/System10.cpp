@@ -1113,11 +1113,11 @@ public:
 };
 
 
-// System.Uri_Flags
+// System.Uri/Flags
 struct  Flags_tEBE7CABEBD13F16920D6950B384EB8F988250A2A 
 {
 public:
-	// System.UInt64 System.Uri_Flags::value__
+	// System.UInt64 System.Uri/Flags::value__
 	uint64_t ___value___2;
 
 public:
@@ -1167,11 +1167,11 @@ public:
 };
 
 
-// System.UriParser_UriQuirksVersion
+// System.UriParser/UriQuirksVersion
 struct  UriQuirksVersion_tB044080854D030F26EB17D99FFE997D0FFB8A374 
 {
 public:
-	// System.Int32 System.UriParser_UriQuirksVersion::value__
+	// System.Int32 System.UriParser/UriQuirksVersion::value__
 	int32_t ___value___2;
 
 public:
@@ -1324,9 +1324,9 @@ public:
 	UriParser_t07C77D673CCE8D2DA253B8A7ACCB010147F1A4AC * ___m_Syntax_15;
 	// System.String System.Uri::m_DnsSafeHost
 	String_t* ___m_DnsSafeHost_16;
-	// System.Uri_Flags System.Uri::m_Flags
+	// System.Uri/Flags System.Uri::m_Flags
 	uint64_t ___m_Flags_17;
-	// System.Uri_UriInfo System.Uri::m_Info
+	// System.Uri/UriInfo System.Uri::m_Info
 	UriInfo_t9FCC6BD4EC1EA14D75209E6A35417057BF6EDC5E * ___m_Info_18;
 	// System.Boolean System.Uri::m_iriParsing
 	bool ___m_iriParsing_19;
@@ -1734,7 +1734,7 @@ public:
 	UriParser_t07C77D673CCE8D2DA253B8A7ACCB010147F1A4AC * ___NetPipeUri_21;
 	// System.UriParser System.UriParser::VsMacrosUri
 	UriParser_t07C77D673CCE8D2DA253B8A7ACCB010147F1A4AC * ___VsMacrosUri_22;
-	// System.UriParser_UriQuirksVersion System.UriParser::s_QuirksVersion
+	// System.UriParser/UriQuirksVersion System.UriParser::s_QuirksVersion
 	int32_t ___s_QuirksVersion_23;
 	// System.UriSyntaxFlags System.UriParser::HttpSyntaxFlags
 	int32_t ___HttpSyntaxFlags_24;
@@ -1976,7 +1976,7 @@ public:
 };
 
 
-// System.UriParser_BuiltInUriParser
+// System.UriParser/BuiltInUriParser
 struct  BuiltInUriParser_t5C00B9ABDAFDD2FFEAAA5C4A6FF01FF0BE58E57B  : public UriParser_t07C77D673CCE8D2DA253B8A7ACCB010147F1A4AC
 {
 public:
@@ -2069,7 +2069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlatformNotSupportedException__ctor_m651
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.UriParser_BuiltInUriParser::.ctor(System.String,System.Int32,System.UriSyntaxFlags)
+// System.Void System.UriParser/BuiltInUriParser::.ctor(System.String,System.Int32,System.UriSyntaxFlags)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BuiltInUriParser__ctor_m66250DC53CE01410149D46279D0B413FC1C5CA1C (BuiltInUriParser_t5C00B9ABDAFDD2FFEAAA5C4A6FF01FF0BE58E57B * __this, String_t* ___lwrCaseScheme0, int32_t ___defaultPort1, int32_t ___syntaxFlags2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2426,7 +2426,7 @@ IL_006a:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Unity.ThrowStub::ThrowNotSupportedException()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowStub_ThrowNotSupportedException_mF1DE187697F740D8C18B8966BBEB276878CD86FD ()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowStub_ThrowNotSupportedException_mF1DE187697F740D8C18B8966BBEB276878CD86FD (const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)

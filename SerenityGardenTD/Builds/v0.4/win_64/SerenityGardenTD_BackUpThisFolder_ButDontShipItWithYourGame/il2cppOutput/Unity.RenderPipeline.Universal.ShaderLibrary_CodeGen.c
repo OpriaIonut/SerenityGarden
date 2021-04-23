@@ -26,6 +26,8 @@ const Il2CppCodeGenModule g_Unity_RenderPipeline_Universal_ShaderLibraryCodeGenM
 	"Unity.RenderPipeline.Universal.ShaderLibrary.dll",
 	0,
 	NULL,
+	0,
+	NULL,
 	NULL,
 	0,
 	NULL,

@@ -86,7 +86,7 @@ extern void MaterialReferenceManager_TryGetMaterialInternal_mECB393FEA232E1D3190
 // 0x00000027 System.Void TMPro.MaterialReferenceManager::.ctor()
 extern void MaterialReferenceManager__ctor_m641E0CCC402113B0B1971DD6E7E6807F2CDB2D8B (void);
 // 0x00000028 System.Void TMPro.MaterialReference::.ctor(System.Int32,TMPro.TMP_FontAsset,TMPro.TMP_SpriteAsset,UnityEngine.Material,System.Single)
-extern void MaterialReference__ctor_m8A0224802E6CCD9EDA5544A462856716F3D9D2CA_AdjustorThunk (void);
+extern void MaterialReference__ctor_m8A0224802E6CCD9EDA5544A462856716F3D9D2CA (void);
 // 0x00000029 System.Boolean TMPro.MaterialReference::Contains(TMPro.MaterialReference[],TMPro.TMP_FontAsset)
 extern void MaterialReference_Contains_mCC513D0DA4B0D1DCE09B35F6BD342BB86854CF18 (void);
 // 0x0000002A System.Int32 TMPro.MaterialReference::AddMaterialReference(UnityEngine.Material,TMPro.TMP_FontAsset,TMPro.MaterialReference[],System.Collections.Generic.Dictionary`2<System.Int32,System.Int32>)
@@ -110,35 +110,35 @@ extern void TMP_Vertex_get_zero_m095D835F077B1128E647CC3327790ED8C990F2A1 (void)
 // 0x00000033 System.Void TMPro.TMP_Vertex::.cctor()
 extern void TMP_Vertex__cctor_mD5A0AE973ACF9F48E191BF0E94D82BC7E1F6BCB5 (void);
 // 0x00000034 System.Single TMPro.TMP_Offset::get_left()
-extern void TMP_Offset_get_left_m7111593CAC18B4079F2D0C6FE0F5EF2355F1ABB0_AdjustorThunk (void);
+extern void TMP_Offset_get_left_m7111593CAC18B4079F2D0C6FE0F5EF2355F1ABB0 (void);
 // 0x00000035 System.Void TMPro.TMP_Offset::set_left(System.Single)
-extern void TMP_Offset_set_left_mC96D081DBD8E448425537531F671F74C9D3AFACB_AdjustorThunk (void);
+extern void TMP_Offset_set_left_mC96D081DBD8E448425537531F671F74C9D3AFACB (void);
 // 0x00000036 System.Single TMPro.TMP_Offset::get_right()
-extern void TMP_Offset_get_right_mD16DC4C5B865B67B0C3DEB9FA2CB20AE63B37241_AdjustorThunk (void);
+extern void TMP_Offset_get_right_mD16DC4C5B865B67B0C3DEB9FA2CB20AE63B37241 (void);
 // 0x00000037 System.Void TMPro.TMP_Offset::set_right(System.Single)
-extern void TMP_Offset_set_right_mC2091554376960B07474D232D57BCFD312971F93_AdjustorThunk (void);
+extern void TMP_Offset_set_right_mC2091554376960B07474D232D57BCFD312971F93 (void);
 // 0x00000038 System.Single TMPro.TMP_Offset::get_top()
-extern void TMP_Offset_get_top_m222049807EB4BDC29323B8FC10BDEDB0D7255962_AdjustorThunk (void);
+extern void TMP_Offset_get_top_m222049807EB4BDC29323B8FC10BDEDB0D7255962 (void);
 // 0x00000039 System.Void TMPro.TMP_Offset::set_top(System.Single)
-extern void TMP_Offset_set_top_mF4D5C73F78B6AE7E187D98AF94D6D410CAE08FE4_AdjustorThunk (void);
+extern void TMP_Offset_set_top_mF4D5C73F78B6AE7E187D98AF94D6D410CAE08FE4 (void);
 // 0x0000003A System.Single TMPro.TMP_Offset::get_bottom()
-extern void TMP_Offset_get_bottom_m7A24544C0E773DC3C4CA744F7854E47ADF6DDF6C_AdjustorThunk (void);
+extern void TMP_Offset_get_bottom_m7A24544C0E773DC3C4CA744F7854E47ADF6DDF6C (void);
 // 0x0000003B System.Void TMPro.TMP_Offset::set_bottom(System.Single)
-extern void TMP_Offset_set_bottom_mD0A15F93791E0317CC3BA970BCA11B2FB8F7ECD4_AdjustorThunk (void);
+extern void TMP_Offset_set_bottom_mD0A15F93791E0317CC3BA970BCA11B2FB8F7ECD4 (void);
 // 0x0000003C System.Single TMPro.TMP_Offset::get_horizontal()
-extern void TMP_Offset_get_horizontal_m250DDED66F972933AE9FEA8DE078A16B28E0EAE3_AdjustorThunk (void);
+extern void TMP_Offset_get_horizontal_m250DDED66F972933AE9FEA8DE078A16B28E0EAE3 (void);
 // 0x0000003D System.Void TMPro.TMP_Offset::set_horizontal(System.Single)
-extern void TMP_Offset_set_horizontal_mA2395FC2E5FA7735723E123F7BA613A35670A3A0_AdjustorThunk (void);
+extern void TMP_Offset_set_horizontal_mA2395FC2E5FA7735723E123F7BA613A35670A3A0 (void);
 // 0x0000003E System.Single TMPro.TMP_Offset::get_vertical()
-extern void TMP_Offset_get_vertical_m76EC378717F2A7A1E46C903FBD1602BAFE2E5264_AdjustorThunk (void);
+extern void TMP_Offset_get_vertical_m76EC378717F2A7A1E46C903FBD1602BAFE2E5264 (void);
 // 0x0000003F System.Void TMPro.TMP_Offset::set_vertical(System.Single)
-extern void TMP_Offset_set_vertical_mD28A9F3B55B57020082CF334C123C54BD834B2C6_AdjustorThunk (void);
+extern void TMP_Offset_set_vertical_mD28A9F3B55B57020082CF334C123C54BD834B2C6 (void);
 // 0x00000040 TMPro.TMP_Offset TMPro.TMP_Offset::get_zero()
 extern void TMP_Offset_get_zero_mFDC76D7602C35C005FD456175B7859A9459507FE (void);
 // 0x00000041 System.Void TMPro.TMP_Offset::.ctor(System.Single,System.Single,System.Single,System.Single)
-extern void TMP_Offset__ctor_mAB27756EC3883CE1184DF74B0FA5270A7BA8072E_AdjustorThunk (void);
+extern void TMP_Offset__ctor_mAB27756EC3883CE1184DF74B0FA5270A7BA8072E (void);
 // 0x00000042 System.Void TMPro.TMP_Offset::.ctor(System.Single,System.Single)
-extern void TMP_Offset__ctor_mE2B70D1B00F5EBAD9FC83DF4BD141824A9FADD7B_AdjustorThunk (void);
+extern void TMP_Offset__ctor_mE2B70D1B00F5EBAD9FC83DF4BD141824A9FADD7B (void);
 // 0x00000043 System.Boolean TMPro.TMP_Offset::op_Equality(TMPro.TMP_Offset,TMPro.TMP_Offset)
 extern void TMP_Offset_op_Equality_m42AD3E1BBD3F8149CFD1FECF40D895C7FBD9B8C8 (void);
 // 0x00000044 System.Boolean TMPro.TMP_Offset::op_Inequality(TMPro.TMP_Offset,TMPro.TMP_Offset)
@@ -146,25 +146,25 @@ extern void TMP_Offset_op_Inequality_m1FC2CDD17A9DD01D8EC4363AD8866983F7CDF6E2 (
 // 0x00000045 TMPro.TMP_Offset TMPro.TMP_Offset::op_Multiply(TMPro.TMP_Offset,System.Single)
 extern void TMP_Offset_op_Multiply_mD09F79C67B1FA8CCEC733617CD9D7D8D7A0322E4 (void);
 // 0x00000046 System.Int32 TMPro.TMP_Offset::GetHashCode()
-extern void TMP_Offset_GetHashCode_m548BF72C33352EFC439F2538C8552E309A3F80AE_AdjustorThunk (void);
+extern void TMP_Offset_GetHashCode_m548BF72C33352EFC439F2538C8552E309A3F80AE (void);
 // 0x00000047 System.Boolean TMPro.TMP_Offset::Equals(System.Object)
-extern void TMP_Offset_Equals_m31E80A4B31069AC7FBBA0E7951899FFCF8FB1351_AdjustorThunk (void);
+extern void TMP_Offset_Equals_m31E80A4B31069AC7FBBA0E7951899FFCF8FB1351 (void);
 // 0x00000048 System.Boolean TMPro.TMP_Offset::Equals(TMPro.TMP_Offset)
-extern void TMP_Offset_Equals_m63031D047454A40947395DE96C4C76333BA9B3FF_AdjustorThunk (void);
+extern void TMP_Offset_Equals_m63031D047454A40947395DE96C4C76333BA9B3FF (void);
 // 0x00000049 System.Void TMPro.TMP_Offset::.cctor()
 extern void TMP_Offset__cctor_m14901D153E407027F0A47AD5BB649EC581D81A2F (void);
 // 0x0000004A System.Void TMPro.HighlightState::.ctor(UnityEngine.Color32,TMPro.TMP_Offset)
-extern void HighlightState__ctor_mD7C4923EBEABB28FA3C1F4D99A0A9576BD3C9685_AdjustorThunk (void);
+extern void HighlightState__ctor_mD7C4923EBEABB28FA3C1F4D99A0A9576BD3C9685 (void);
 // 0x0000004B System.Boolean TMPro.HighlightState::op_Equality(TMPro.HighlightState,TMPro.HighlightState)
 extern void HighlightState_op_Equality_m8C452347EB265E6BBB6DFB297A607C08987C2836 (void);
 // 0x0000004C System.Boolean TMPro.HighlightState::op_Inequality(TMPro.HighlightState,TMPro.HighlightState)
 extern void HighlightState_op_Inequality_mE6A683BA0C3040EE201A06B15EBD5088A40F508B (void);
 // 0x0000004D System.Int32 TMPro.HighlightState::GetHashCode()
-extern void HighlightState_GetHashCode_m1368EE338E940DC3F6AE976186CB7F19C23D5315_AdjustorThunk (void);
+extern void HighlightState_GetHashCode_m1368EE338E940DC3F6AE976186CB7F19C23D5315 (void);
 // 0x0000004E System.Boolean TMPro.HighlightState::Equals(System.Object)
-extern void HighlightState_Equals_mA688E4EDA7BBEFAAD715CD68996B7EAD52C4602B_AdjustorThunk (void);
+extern void HighlightState_Equals_mA688E4EDA7BBEFAAD715CD68996B7EAD52C4602B (void);
 // 0x0000004F System.Boolean TMPro.HighlightState::Equals(TMPro.HighlightState)
-extern void HighlightState_Equals_m15C11E8C2AAE79291B8AA75FD35349AC0F540FAD_AdjustorThunk (void);
+extern void HighlightState_Equals_m15C11E8C2AAE79291B8AA75FD35349AC0F540FAD (void);
 // 0x00000050 System.Void TMPro.TMP_ColorGradient::.ctor()
 extern void TMP_ColorGradient__ctor_m4FBD4203CA2850680B85F3E36B0EC6CA5EEFFB57 (void);
 // 0x00000051 System.Void TMPro.TMP_ColorGradient::.ctor(UnityEngine.Color)
@@ -180,61 +180,61 @@ extern void TMP_Compatibility_ConvertTextAlignmentEnumValues_mDE763B094DB71BE299
 // 0x00000057 System.Single TMPro.ITweenValue::get_duration()
 // 0x00000058 System.Boolean TMPro.ITweenValue::ValidTarget()
 // 0x00000059 UnityEngine.Color TMPro.ColorTween::get_startColor()
-extern void ColorTween_get_startColor_m79C9747E3C651BC5D1123AB25863EE23008175A8_AdjustorThunk (void);
+extern void ColorTween_get_startColor_m79C9747E3C651BC5D1123AB25863EE23008175A8 (void);
 // 0x0000005A System.Void TMPro.ColorTween::set_startColor(UnityEngine.Color)
-extern void ColorTween_set_startColor_mB4B46C8FB825F06DF2A22FA5A496DE1DCE801CE6_AdjustorThunk (void);
+extern void ColorTween_set_startColor_mB4B46C8FB825F06DF2A22FA5A496DE1DCE801CE6 (void);
 // 0x0000005B UnityEngine.Color TMPro.ColorTween::get_targetColor()
-extern void ColorTween_get_targetColor_m9FC04D007878395E9C323188AF2B1BC2177E787F_AdjustorThunk (void);
+extern void ColorTween_get_targetColor_m9FC04D007878395E9C323188AF2B1BC2177E787F (void);
 // 0x0000005C System.Void TMPro.ColorTween::set_targetColor(UnityEngine.Color)
-extern void ColorTween_set_targetColor_mC48FD8CFFB87569AF5D81B6EE3717FDAC46768D1_AdjustorThunk (void);
-// 0x0000005D TMPro.ColorTween_ColorTweenMode TMPro.ColorTween::get_tweenMode()
-extern void ColorTween_get_tweenMode_m768147B7D6714EAAFD670793B7CF7A6CF01C6379_AdjustorThunk (void);
-// 0x0000005E System.Void TMPro.ColorTween::set_tweenMode(TMPro.ColorTween_ColorTweenMode)
-extern void ColorTween_set_tweenMode_m641C8A51D8DFB3BA7EC81A656AFBCB82DB42E5D3_AdjustorThunk (void);
+extern void ColorTween_set_targetColor_mC48FD8CFFB87569AF5D81B6EE3717FDAC46768D1 (void);
+// 0x0000005D TMPro.ColorTween/ColorTweenMode TMPro.ColorTween::get_tweenMode()
+extern void ColorTween_get_tweenMode_m768147B7D6714EAAFD670793B7CF7A6CF01C6379 (void);
+// 0x0000005E System.Void TMPro.ColorTween::set_tweenMode(TMPro.ColorTween/ColorTweenMode)
+extern void ColorTween_set_tweenMode_m641C8A51D8DFB3BA7EC81A656AFBCB82DB42E5D3 (void);
 // 0x0000005F System.Single TMPro.ColorTween::get_duration()
-extern void ColorTween_get_duration_m620392D83A7B1514379863C0B28ACA3F351499D4_AdjustorThunk (void);
+extern void ColorTween_get_duration_m620392D83A7B1514379863C0B28ACA3F351499D4 (void);
 // 0x00000060 System.Void TMPro.ColorTween::set_duration(System.Single)
-extern void ColorTween_set_duration_m437051180E4B9A415C1D3567074DCC7987031E78_AdjustorThunk (void);
+extern void ColorTween_set_duration_m437051180E4B9A415C1D3567074DCC7987031E78 (void);
 // 0x00000061 System.Boolean TMPro.ColorTween::get_ignoreTimeScale()
-extern void ColorTween_get_ignoreTimeScale_mE3C8672A317D63A77271E00C56C2E7EAD59D79BE_AdjustorThunk (void);
+extern void ColorTween_get_ignoreTimeScale_mE3C8672A317D63A77271E00C56C2E7EAD59D79BE (void);
 // 0x00000062 System.Void TMPro.ColorTween::set_ignoreTimeScale(System.Boolean)
-extern void ColorTween_set_ignoreTimeScale_mA60EF7D068FD1F937B7856E55A3F27EF6B923EB3_AdjustorThunk (void);
+extern void ColorTween_set_ignoreTimeScale_mA60EF7D068FD1F937B7856E55A3F27EF6B923EB3 (void);
 // 0x00000063 System.Void TMPro.ColorTween::TweenValue(System.Single)
-extern void ColorTween_TweenValue_m6CFA463FFBCB9159C54F54BB83BE7E2A173951A2_AdjustorThunk (void);
+extern void ColorTween_TweenValue_m6CFA463FFBCB9159C54F54BB83BE7E2A173951A2 (void);
 // 0x00000064 System.Void TMPro.ColorTween::AddOnChangedCallback(UnityEngine.Events.UnityAction`1<UnityEngine.Color>)
-extern void ColorTween_AddOnChangedCallback_m7980448B91E65D8B2442FBEE8278518F8C9F0A4B_AdjustorThunk (void);
+extern void ColorTween_AddOnChangedCallback_m7980448B91E65D8B2442FBEE8278518F8C9F0A4B (void);
 // 0x00000065 System.Boolean TMPro.ColorTween::GetIgnoreTimescale()
-extern void ColorTween_GetIgnoreTimescale_m1C6B3D1293170A21AD3BFC6046D94E46141169A0_AdjustorThunk (void);
+extern void ColorTween_GetIgnoreTimescale_m1C6B3D1293170A21AD3BFC6046D94E46141169A0 (void);
 // 0x00000066 System.Single TMPro.ColorTween::GetDuration()
-extern void ColorTween_GetDuration_m98630993C66DCDC1169EAAE7A97BC1F87E0219FB_AdjustorThunk (void);
+extern void ColorTween_GetDuration_m98630993C66DCDC1169EAAE7A97BC1F87E0219FB (void);
 // 0x00000067 System.Boolean TMPro.ColorTween::ValidTarget()
-extern void ColorTween_ValidTarget_m73286CC6D66E4CF18422448A13216DA15B97A5E7_AdjustorThunk (void);
+extern void ColorTween_ValidTarget_m73286CC6D66E4CF18422448A13216DA15B97A5E7 (void);
 // 0x00000068 System.Single TMPro.FloatTween::get_startValue()
-extern void FloatTween_get_startValue_m24465BFC3FF33EFE53A224AC26563056266E0243_AdjustorThunk (void);
+extern void FloatTween_get_startValue_m24465BFC3FF33EFE53A224AC26563056266E0243 (void);
 // 0x00000069 System.Void TMPro.FloatTween::set_startValue(System.Single)
-extern void FloatTween_set_startValue_mE1012A0EE3E8B964B85BAAFC1A9ACCAAC9F89EAF_AdjustorThunk (void);
+extern void FloatTween_set_startValue_mE1012A0EE3E8B964B85BAAFC1A9ACCAAC9F89EAF (void);
 // 0x0000006A System.Single TMPro.FloatTween::get_targetValue()
-extern void FloatTween_get_targetValue_mE849355C0DA1D81C57AA149B3BDD07CD3D0383B3_AdjustorThunk (void);
+extern void FloatTween_get_targetValue_mE849355C0DA1D81C57AA149B3BDD07CD3D0383B3 (void);
 // 0x0000006B System.Void TMPro.FloatTween::set_targetValue(System.Single)
-extern void FloatTween_set_targetValue_mD6B41E937B0AC0563C944548487C12B82C39C8EF_AdjustorThunk (void);
+extern void FloatTween_set_targetValue_mD6B41E937B0AC0563C944548487C12B82C39C8EF (void);
 // 0x0000006C System.Single TMPro.FloatTween::get_duration()
-extern void FloatTween_get_duration_mF4EDC7886A6648CA9C080BA506BDCDF1E90E8EAB_AdjustorThunk (void);
+extern void FloatTween_get_duration_mF4EDC7886A6648CA9C080BA506BDCDF1E90E8EAB (void);
 // 0x0000006D System.Void TMPro.FloatTween::set_duration(System.Single)
-extern void FloatTween_set_duration_m4671C2A9607F55CAEC364549F5FDABA7CD785E94_AdjustorThunk (void);
+extern void FloatTween_set_duration_m4671C2A9607F55CAEC364549F5FDABA7CD785E94 (void);
 // 0x0000006E System.Boolean TMPro.FloatTween::get_ignoreTimeScale()
-extern void FloatTween_get_ignoreTimeScale_m0655DF2E573BABA2A03581E2BDBCF20F616ACA75_AdjustorThunk (void);
+extern void FloatTween_get_ignoreTimeScale_m0655DF2E573BABA2A03581E2BDBCF20F616ACA75 (void);
 // 0x0000006F System.Void TMPro.FloatTween::set_ignoreTimeScale(System.Boolean)
-extern void FloatTween_set_ignoreTimeScale_mD28514DDC388403086D6638C10C81E499EC20E02_AdjustorThunk (void);
+extern void FloatTween_set_ignoreTimeScale_mD28514DDC388403086D6638C10C81E499EC20E02 (void);
 // 0x00000070 System.Void TMPro.FloatTween::TweenValue(System.Single)
-extern void FloatTween_TweenValue_m6FCEDE4DEACE698BF5B0F59C7AE7DF86FA24B4FE_AdjustorThunk (void);
+extern void FloatTween_TweenValue_m6FCEDE4DEACE698BF5B0F59C7AE7DF86FA24B4FE (void);
 // 0x00000071 System.Void TMPro.FloatTween::AddOnChangedCallback(UnityEngine.Events.UnityAction`1<System.Single>)
-extern void FloatTween_AddOnChangedCallback_m21B9C6C3958BC0D300F71CFC993DCD58F837B8BA_AdjustorThunk (void);
+extern void FloatTween_AddOnChangedCallback_m21B9C6C3958BC0D300F71CFC993DCD58F837B8BA (void);
 // 0x00000072 System.Boolean TMPro.FloatTween::GetIgnoreTimescale()
-extern void FloatTween_GetIgnoreTimescale_m76F243806700345FA0BBA1E56EAA3689D4B70293_AdjustorThunk (void);
+extern void FloatTween_GetIgnoreTimescale_m76F243806700345FA0BBA1E56EAA3689D4B70293 (void);
 // 0x00000073 System.Single TMPro.FloatTween::GetDuration()
-extern void FloatTween_GetDuration_m04B2176ECB45D130DBCD0A404B95914091E4E264_AdjustorThunk (void);
+extern void FloatTween_GetDuration_m04B2176ECB45D130DBCD0A404B95914091E4E264 (void);
 // 0x00000074 System.Boolean TMPro.FloatTween::ValidTarget()
-extern void FloatTween_ValidTarget_m6BE627E7379BE53302471D8E04C9A12724EC9896_AdjustorThunk (void);
+extern void FloatTween_ValidTarget_m6BE627E7379BE53302471D8E04C9A12724EC9896 (void);
 // 0x00000075 System.Collections.IEnumerator TMPro.TweenRunner`1::Start(T)
 // 0x00000076 System.Void TMPro.TweenRunner`1::Init(UnityEngine.MonoBehaviour)
 // 0x00000077 System.Void TMPro.TweenRunner`1::StartTween(T)
@@ -252,15 +252,15 @@ extern void TMP_DefaultControls_SetDefaultColorTransitionValues_m4AE658402D62396
 extern void TMP_DefaultControls_SetParentAndAlign_m0C458E3EC89C0F6DAB9C03F459A1A3271B7F9001 (void);
 // 0x0000007F System.Void TMPro.TMP_DefaultControls::SetLayerRecursively(UnityEngine.GameObject,System.Int32)
 extern void TMP_DefaultControls_SetLayerRecursively_m875D6D771D7878DFEFE30989ED67516DCDB06B4A (void);
-// 0x00000080 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateScrollbar(TMPro.TMP_DefaultControls_Resources)
+// 0x00000080 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateScrollbar(TMPro.TMP_DefaultControls/Resources)
 extern void TMP_DefaultControls_CreateScrollbar_m747F36EF9FC7A7119F67A12F03BD7059DD07B44E (void);
-// 0x00000081 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateButton(TMPro.TMP_DefaultControls_Resources)
+// 0x00000081 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateButton(TMPro.TMP_DefaultControls/Resources)
 extern void TMP_DefaultControls_CreateButton_m98AF4DEDCC0EABBEB5F30D53BFFBE601BF190A51 (void);
-// 0x00000082 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateText(TMPro.TMP_DefaultControls_Resources)
+// 0x00000082 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateText(TMPro.TMP_DefaultControls/Resources)
 extern void TMP_DefaultControls_CreateText_m28427FDD1065C39A07A7AACCE346AA5DE55CA9E6 (void);
-// 0x00000083 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateInputField(TMPro.TMP_DefaultControls_Resources)
+// 0x00000083 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateInputField(TMPro.TMP_DefaultControls/Resources)
 extern void TMP_DefaultControls_CreateInputField_m4E19E547CE8951B0BA05437CCA3691BB01FA4E34 (void);
-// 0x00000084 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateDropdown(TMPro.TMP_DefaultControls_Resources)
+// 0x00000084 UnityEngine.GameObject TMPro.TMP_DefaultControls::CreateDropdown(TMPro.TMP_DefaultControls/Resources)
 extern void TMP_DefaultControls_CreateDropdown_m34AF012613C6D85C4FE2A75CEF81026497AA7B28 (void);
 // 0x00000085 System.Void TMPro.TMP_DefaultControls::.cctor()
 extern void TMP_DefaultControls__cctor_m00E965619ED596BBD5AE6712740016491E91C54A (void);
@@ -288,13 +288,13 @@ extern void TMP_Dropdown_set_itemText_m5D1E173BE403775C03AD97819194B3F2D5C207B5 
 extern void TMP_Dropdown_get_itemImage_mFAF67CACDA6587BF56BC790E5749DC4A40751082 (void);
 // 0x00000091 System.Void TMPro.TMP_Dropdown::set_itemImage(UnityEngine.UI.Image)
 extern void TMP_Dropdown_set_itemImage_m0C93F94CDD14DE4B962D6A9CD074C2CB4D24658F (void);
-// 0x00000092 System.Collections.Generic.List`1<TMPro.TMP_Dropdown_OptionData> TMPro.TMP_Dropdown::get_options()
+// 0x00000092 System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData> TMPro.TMP_Dropdown::get_options()
 extern void TMP_Dropdown_get_options_m16A7C03F6D8E87A24B0C8CB6FE716BBBCF166D0D (void);
-// 0x00000093 System.Void TMPro.TMP_Dropdown::set_options(System.Collections.Generic.List`1<TMPro.TMP_Dropdown_OptionData>)
+// 0x00000093 System.Void TMPro.TMP_Dropdown::set_options(System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData>)
 extern void TMP_Dropdown_set_options_mC9D41D8004B4C0BEA345285BA52B7137609DCD9C (void);
-// 0x00000094 TMPro.TMP_Dropdown_DropdownEvent TMPro.TMP_Dropdown::get_onValueChanged()
+// 0x00000094 TMPro.TMP_Dropdown/DropdownEvent TMPro.TMP_Dropdown::get_onValueChanged()
 extern void TMP_Dropdown_get_onValueChanged_mB5CDDACD9AA95837D6305648143E308C2CAB8576 (void);
-// 0x00000095 System.Void TMPro.TMP_Dropdown::set_onValueChanged(TMPro.TMP_Dropdown_DropdownEvent)
+// 0x00000095 System.Void TMPro.TMP_Dropdown::set_onValueChanged(TMPro.TMP_Dropdown/DropdownEvent)
 extern void TMP_Dropdown_set_onValueChanged_m006B6721DEFE4A0EEC6317294447758D0F76EB56 (void);
 // 0x00000096 System.Single TMPro.TMP_Dropdown::get_alphaFadeSpeed()
 extern void TMP_Dropdown_get_alphaFadeSpeed_mE2699711D02151546B021D3F186A037BAA7D58A8 (void);
@@ -320,7 +320,7 @@ extern void TMP_Dropdown_Start_m1689F3D551A5BF6383017A9820FB6F6D41FBE9EA (void);
 extern void TMP_Dropdown_OnDisable_mCD4FF0D0BD653842D17EA7472DDFC0478DF5210C (void);
 // 0x000000A1 System.Void TMPro.TMP_Dropdown::RefreshShownValue()
 extern void TMP_Dropdown_RefreshShownValue_m68441A759CEC4D9A2277EDD902BB5AF27FE36092 (void);
-// 0x000000A2 System.Void TMPro.TMP_Dropdown::AddOptions(System.Collections.Generic.List`1<TMPro.TMP_Dropdown_OptionData>)
+// 0x000000A2 System.Void TMPro.TMP_Dropdown::AddOptions(System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData>)
 extern void TMP_Dropdown_AddOptions_m68AEA54E89F1E109F8A8002BF4313DAE5C2A4081 (void);
 // 0x000000A3 System.Void TMPro.TMP_Dropdown::AddOptions(System.Collections.Generic.List`1<System.String>)
 extern void TMP_Dropdown_AddOptions_m15FA923A89ABBE73DD0E56EAF3A67D256E026D72 (void);
@@ -347,11 +347,11 @@ extern void TMP_Dropdown_DestroyBlocker_m4C45463420670F3DA8A8D7D51C8BB0FCDF8FA1B
 extern void TMP_Dropdown_CreateDropdownList_mDD27064E69DF4722A378C0AD1B025028504C38EB (void);
 // 0x000000AF System.Void TMPro.TMP_Dropdown::DestroyDropdownList(UnityEngine.GameObject)
 extern void TMP_Dropdown_DestroyDropdownList_mD1EA7F5A3CAC66A3BD869472EAF5D634B224E0A7 (void);
-// 0x000000B0 TMPro.TMP_Dropdown_DropdownItem TMPro.TMP_Dropdown::CreateItem(TMPro.TMP_Dropdown_DropdownItem)
+// 0x000000B0 TMPro.TMP_Dropdown/DropdownItem TMPro.TMP_Dropdown::CreateItem(TMPro.TMP_Dropdown/DropdownItem)
 extern void TMP_Dropdown_CreateItem_mA5038ADA189AC780133B66865A6B6935D6A71046 (void);
-// 0x000000B1 System.Void TMPro.TMP_Dropdown::DestroyItem(TMPro.TMP_Dropdown_DropdownItem)
+// 0x000000B1 System.Void TMPro.TMP_Dropdown::DestroyItem(TMPro.TMP_Dropdown/DropdownItem)
 extern void TMP_Dropdown_DestroyItem_m7A7029F0D2E12FED403918492E648270E977568F (void);
-// 0x000000B2 TMPro.TMP_Dropdown_DropdownItem TMPro.TMP_Dropdown::AddItem(TMPro.TMP_Dropdown_OptionData,System.Boolean,TMPro.TMP_Dropdown_DropdownItem,System.Collections.Generic.List`1<TMPro.TMP_Dropdown_DropdownItem>)
+// 0x000000B2 TMPro.TMP_Dropdown/DropdownItem TMPro.TMP_Dropdown::AddItem(TMPro.TMP_Dropdown/OptionData,System.Boolean,TMPro.TMP_Dropdown/DropdownItem,System.Collections.Generic.List`1<TMPro.TMP_Dropdown/DropdownItem>)
 extern void TMP_Dropdown_AddItem_mFAD9EEF532E25EA8EC048C5E1BCC4E52D3FC0CB3 (void);
 // 0x000000B3 System.Void TMPro.TMP_Dropdown::AlphaFadeList(System.Single,System.Single)
 extern void TMP_Dropdown_AlphaFadeList_mA601005CEF61668254CF574BD1997FE045685762 (void);
@@ -559,11 +559,11 @@ extern void TMP_Glyph_Clone_mF464BF08B6C0729452C76A3FB3BA415D34BC8B95 (void);
 // 0x00000119 System.Void TMPro.TMP_Glyph::.ctor()
 extern void TMP_Glyph__ctor_mCD09617810AD48FA160FDEA526773510E10638FC (void);
 // 0x0000011A System.Void TMPro.FontAssetCreationSettings::.ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Int32)
-extern void FontAssetCreationSettings__ctor_m5E1E74A0F624E77A48A245FF893D4B2AE606BE53_AdjustorThunk (void);
+extern void FontAssetCreationSettings__ctor_m5E1E74A0F624E77A48A245FF893D4B2AE606BE53 (void);
 // 0x0000011B System.Void TMPro.KerningPairKey::.ctor(System.UInt32,System.UInt32)
-extern void KerningPairKey__ctor_mCE68D007678E645AB597CE97559FC1F6F06B9265_AdjustorThunk (void);
+extern void KerningPairKey__ctor_mCE68D007678E645AB597CE97559FC1F6F06B9265 (void);
 // 0x0000011C System.Void TMPro.GlyphValueRecord_Legacy::.ctor(UnityEngine.TextCore.LowLevel.GlyphValueRecord)
-extern void GlyphValueRecord_Legacy__ctor_m3EC72C474F6953D16C1040C012FE00FE38720F94_AdjustorThunk (void);
+extern void GlyphValueRecord_Legacy__ctor_m3EC72C474F6953D16C1040C012FE00FE38720F94 (void);
 // 0x0000011D TMPro.GlyphValueRecord_Legacy TMPro.GlyphValueRecord_Legacy::op_Addition(TMPro.GlyphValueRecord_Legacy,TMPro.GlyphValueRecord_Legacy)
 extern void GlyphValueRecord_Legacy_op_Addition_m6297D838D9AFA09202A110280AF5DF4AC6DEE43E (void);
 // 0x0000011E System.UInt32 TMPro.KerningPair::get_firstGlyph()
@@ -637,41 +637,41 @@ extern void TMP_FontFeatureTable__ctor_mA46F5DFF466AE07A6E873ABB3B29C2BD00E5C5F9
 // 0x00000140 System.Void TMPro.TMP_FontFeatureTable::SortGlyphPairAdjustmentRecords()
 extern void TMP_FontFeatureTable_SortGlyphPairAdjustmentRecords_m598DFA55F04B1369D8FC7BEA14413F2D6A6AC2A0 (void);
 // 0x00000141 System.Single TMPro.TMP_GlyphValueRecord::get_xPlacement()
-extern void TMP_GlyphValueRecord_get_xPlacement_m3E6AF4FD83B8F62BDD175D65B5AC602F76CE7D87_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_xPlacement_m3E6AF4FD83B8F62BDD175D65B5AC602F76CE7D87 (void);
 // 0x00000142 System.Void TMPro.TMP_GlyphValueRecord::set_xPlacement(System.Single)
-extern void TMP_GlyphValueRecord_set_xPlacement_mE5713B3E6F00C9C4C294C41071CD1B3F3CEDA0F3_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_xPlacement_mE5713B3E6F00C9C4C294C41071CD1B3F3CEDA0F3 (void);
 // 0x00000143 System.Single TMPro.TMP_GlyphValueRecord::get_yPlacement()
-extern void TMP_GlyphValueRecord_get_yPlacement_mDC2BA3411D3612D8672FB71170636CBC33B16D60_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_yPlacement_mDC2BA3411D3612D8672FB71170636CBC33B16D60 (void);
 // 0x00000144 System.Void TMPro.TMP_GlyphValueRecord::set_yPlacement(System.Single)
-extern void TMP_GlyphValueRecord_set_yPlacement_mB8AFE695B38A4F73016C4486016FD3904B72A683_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_yPlacement_mB8AFE695B38A4F73016C4486016FD3904B72A683 (void);
 // 0x00000145 System.Single TMPro.TMP_GlyphValueRecord::get_xAdvance()
-extern void TMP_GlyphValueRecord_get_xAdvance_mABABA715297F9E0A3AC8E4D38847A34FF0E57207_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_xAdvance_mABABA715297F9E0A3AC8E4D38847A34FF0E57207 (void);
 // 0x00000146 System.Void TMPro.TMP_GlyphValueRecord::set_xAdvance(System.Single)
-extern void TMP_GlyphValueRecord_set_xAdvance_mA6CC02535F44692B8B7210E23BE2B27647B624BC_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_xAdvance_mA6CC02535F44692B8B7210E23BE2B27647B624BC (void);
 // 0x00000147 System.Single TMPro.TMP_GlyphValueRecord::get_yAdvance()
-extern void TMP_GlyphValueRecord_get_yAdvance_m2C178AACE0DA6C5291CD4476C2198C98131771D1_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_yAdvance_m2C178AACE0DA6C5291CD4476C2198C98131771D1 (void);
 // 0x00000148 System.Void TMPro.TMP_GlyphValueRecord::set_yAdvance(System.Single)
-extern void TMP_GlyphValueRecord_set_yAdvance_mC1DF1EFF7929984821409D3FDD64950603A7F552_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_yAdvance_mC1DF1EFF7929984821409D3FDD64950603A7F552 (void);
 // 0x00000149 System.Void TMPro.TMP_GlyphValueRecord::.ctor(System.Single,System.Single,System.Single,System.Single)
-extern void TMP_GlyphValueRecord__ctor_mA49CDDE5921B64F7AAD13359885FF07CE4C48F44_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord__ctor_mA49CDDE5921B64F7AAD13359885FF07CE4C48F44 (void);
 // 0x0000014A System.Void TMPro.TMP_GlyphValueRecord::.ctor(TMPro.GlyphValueRecord_Legacy)
-extern void TMP_GlyphValueRecord__ctor_mC0A12FE3477C4D9599FA6666B303034772686226_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord__ctor_mC0A12FE3477C4D9599FA6666B303034772686226 (void);
 // 0x0000014B System.Void TMPro.TMP_GlyphValueRecord::.ctor(UnityEngine.TextCore.LowLevel.GlyphValueRecord)
-extern void TMP_GlyphValueRecord__ctor_m62AF77F03E7D6D9F3858A6DC7DDA642B4378E608_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord__ctor_m62AF77F03E7D6D9F3858A6DC7DDA642B4378E608 (void);
 // 0x0000014C TMPro.TMP_GlyphValueRecord TMPro.TMP_GlyphValueRecord::op_Addition(TMPro.TMP_GlyphValueRecord,TMPro.TMP_GlyphValueRecord)
 extern void TMP_GlyphValueRecord_op_Addition_m84B89D0F31EC63BF8D2953D50DF0616900789A75 (void);
 // 0x0000014D System.UInt32 TMPro.TMP_GlyphAdjustmentRecord::get_glyphIndex()
-extern void TMP_GlyphAdjustmentRecord_get_glyphIndex_m97684786D7ABD7F8BF7F7781C3BF79A164BDEC89_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_get_glyphIndex_m97684786D7ABD7F8BF7F7781C3BF79A164BDEC89 (void);
 // 0x0000014E System.Void TMPro.TMP_GlyphAdjustmentRecord::set_glyphIndex(System.UInt32)
-extern void TMP_GlyphAdjustmentRecord_set_glyphIndex_m07A306FC838306B90259663CC6DBE35C32572D7A_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_set_glyphIndex_m07A306FC838306B90259663CC6DBE35C32572D7A (void);
 // 0x0000014F TMPro.TMP_GlyphValueRecord TMPro.TMP_GlyphAdjustmentRecord::get_glyphValueRecord()
-extern void TMP_GlyphAdjustmentRecord_get_glyphValueRecord_m4CF829EF02D359F77A9A6542F9ABF2555F367A94_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_get_glyphValueRecord_m4CF829EF02D359F77A9A6542F9ABF2555F367A94 (void);
 // 0x00000150 System.Void TMPro.TMP_GlyphAdjustmentRecord::set_glyphValueRecord(TMPro.TMP_GlyphValueRecord)
-extern void TMP_GlyphAdjustmentRecord_set_glyphValueRecord_mA9B3AFB92880ED199F1335CDDC4FF3705E13643E_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_set_glyphValueRecord_mA9B3AFB92880ED199F1335CDDC4FF3705E13643E (void);
 // 0x00000151 System.Void TMPro.TMP_GlyphAdjustmentRecord::.ctor(System.UInt32,TMPro.TMP_GlyphValueRecord)
-extern void TMP_GlyphAdjustmentRecord__ctor_m203C1EFFD1DFEBD03A7F0AC25A57E1C6C070F80B_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord__ctor_m203C1EFFD1DFEBD03A7F0AC25A57E1C6C070F80B (void);
 // 0x00000152 System.Void TMPro.TMP_GlyphAdjustmentRecord::.ctor(UnityEngine.TextCore.LowLevel.GlyphAdjustmentRecord)
-extern void TMP_GlyphAdjustmentRecord__ctor_m6F292B32E26655446BB1454495E0B870433C15D5_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord__ctor_m6F292B32E26655446BB1454495E0B870433C15D5 (void);
 // 0x00000153 TMPro.TMP_GlyphAdjustmentRecord TMPro.TMP_GlyphPairAdjustmentRecord::get_firstAdjustmentRecord()
 extern void TMP_GlyphPairAdjustmentRecord_get_firstAdjustmentRecord_m3D2D29FD06EC99FB5D290E86A8B48C926508BBDF (void);
 // 0x00000154 System.Void TMPro.TMP_GlyphPairAdjustmentRecord::set_firstAdjustmentRecord(TMPro.TMP_GlyphAdjustmentRecord)
@@ -689,9 +689,9 @@ extern void TMP_GlyphPairAdjustmentRecord__ctor_m5CF8EA7FA15BD84A3541D8BE4F45884
 // 0x0000015A System.Void TMPro.TMP_GlyphPairAdjustmentRecord::.ctor(UnityEngine.TextCore.LowLevel.GlyphPairAdjustmentRecord)
 extern void TMP_GlyphPairAdjustmentRecord__ctor_mD5EB30AC2987FC1948FB4E64CEA7AB4A733488D6 (void);
 // 0x0000015B System.Void TMPro.GlyphPairKey::.ctor(System.UInt32,System.UInt32)
-extern void GlyphPairKey__ctor_m340350DBD8B7C5756DEC2848A8ABC9E5A01249D9_AdjustorThunk (void);
+extern void GlyphPairKey__ctor_m340350DBD8B7C5756DEC2848A8ABC9E5A01249D9 (void);
 // 0x0000015C System.Void TMPro.GlyphPairKey::.ctor(TMPro.TMP_GlyphPairAdjustmentRecord)
-extern void GlyphPairKey__ctor_m4A07E3A122E9CEA67160762D9739C9B6F1B9ACE2_AdjustorThunk (void);
+extern void GlyphPairKey__ctor_m4A07E3A122E9CEA67160762D9739C9B6F1B9ACE2 (void);
 // 0x0000015D UnityEngine.EventSystems.BaseInput TMPro.TMP_InputField::get_inputSystem()
 extern void TMP_InputField_get_inputSystem_mD5B5E9EFA905368372A8159A7A08C644FCF24028 (void);
 // 0x0000015E System.String TMPro.TMP_InputField::get_compositionString()
@@ -762,41 +762,41 @@ extern void TMP_InputField_set_customCaretColor_m9BA750177BED0E64FA1A9876BAC6D06
 extern void TMP_InputField_get_selectionColor_m3EB3B8AB2C2011FFE82890BE0EDC8BD273DBCDD3 (void);
 // 0x0000017F System.Void TMPro.TMP_InputField::set_selectionColor(UnityEngine.Color)
 extern void TMP_InputField_set_selectionColor_m972FEA99F14D2828FEC95B868B55056BD28C018B (void);
-// 0x00000180 TMPro.TMP_InputField_SubmitEvent TMPro.TMP_InputField::get_onEndEdit()
+// 0x00000180 TMPro.TMP_InputField/SubmitEvent TMPro.TMP_InputField::get_onEndEdit()
 extern void TMP_InputField_get_onEndEdit_m2D1630CDCE0A49EBD0D934E349116BBE73124938 (void);
-// 0x00000181 System.Void TMPro.TMP_InputField::set_onEndEdit(TMPro.TMP_InputField_SubmitEvent)
+// 0x00000181 System.Void TMPro.TMP_InputField::set_onEndEdit(TMPro.TMP_InputField/SubmitEvent)
 extern void TMP_InputField_set_onEndEdit_m8244B4D7B30536670351CA85B05A3F7A2BF50C09 (void);
-// 0x00000182 TMPro.TMP_InputField_SubmitEvent TMPro.TMP_InputField::get_onSubmit()
+// 0x00000182 TMPro.TMP_InputField/SubmitEvent TMPro.TMP_InputField::get_onSubmit()
 extern void TMP_InputField_get_onSubmit_m32478BB548DFCDAFC4B0EE7DEC8A8AA1B9BB92F1 (void);
-// 0x00000183 System.Void TMPro.TMP_InputField::set_onSubmit(TMPro.TMP_InputField_SubmitEvent)
+// 0x00000183 System.Void TMPro.TMP_InputField::set_onSubmit(TMPro.TMP_InputField/SubmitEvent)
 extern void TMP_InputField_set_onSubmit_m80B16ECBB204C6B07BD8D56C107CA3779829698A (void);
-// 0x00000184 TMPro.TMP_InputField_SelectionEvent TMPro.TMP_InputField::get_onSelect()
+// 0x00000184 TMPro.TMP_InputField/SelectionEvent TMPro.TMP_InputField::get_onSelect()
 extern void TMP_InputField_get_onSelect_m01C3A1948C9C8A2E4A96BB28BD7458C3A221A051 (void);
-// 0x00000185 System.Void TMPro.TMP_InputField::set_onSelect(TMPro.TMP_InputField_SelectionEvent)
+// 0x00000185 System.Void TMPro.TMP_InputField::set_onSelect(TMPro.TMP_InputField/SelectionEvent)
 extern void TMP_InputField_set_onSelect_mDE8A735EDBF3CB26E7A58D2E83474A9E27FBB60A (void);
-// 0x00000186 TMPro.TMP_InputField_SelectionEvent TMPro.TMP_InputField::get_onDeselect()
+// 0x00000186 TMPro.TMP_InputField/SelectionEvent TMPro.TMP_InputField::get_onDeselect()
 extern void TMP_InputField_get_onDeselect_mD666ADC8DE452860618902F189943E005D18D6D8 (void);
-// 0x00000187 System.Void TMPro.TMP_InputField::set_onDeselect(TMPro.TMP_InputField_SelectionEvent)
+// 0x00000187 System.Void TMPro.TMP_InputField::set_onDeselect(TMPro.TMP_InputField/SelectionEvent)
 extern void TMP_InputField_set_onDeselect_m8BDB9AFD467717CEC87FFEFA4D3AAD1A055D0FB1 (void);
-// 0x00000188 TMPro.TMP_InputField_TextSelectionEvent TMPro.TMP_InputField::get_onTextSelection()
+// 0x00000188 TMPro.TMP_InputField/TextSelectionEvent TMPro.TMP_InputField::get_onTextSelection()
 extern void TMP_InputField_get_onTextSelection_mCCAF739E6B46A3405202CF91910320DF42F5862D (void);
-// 0x00000189 System.Void TMPro.TMP_InputField::set_onTextSelection(TMPro.TMP_InputField_TextSelectionEvent)
+// 0x00000189 System.Void TMPro.TMP_InputField::set_onTextSelection(TMPro.TMP_InputField/TextSelectionEvent)
 extern void TMP_InputField_set_onTextSelection_m428F46002187A437802492FC2B9D4FF11C564FA0 (void);
-// 0x0000018A TMPro.TMP_InputField_TextSelectionEvent TMPro.TMP_InputField::get_onEndTextSelection()
+// 0x0000018A TMPro.TMP_InputField/TextSelectionEvent TMPro.TMP_InputField::get_onEndTextSelection()
 extern void TMP_InputField_get_onEndTextSelection_m8767C4F7152128E2EE8BF2856A2FF997A4DF99C4 (void);
-// 0x0000018B System.Void TMPro.TMP_InputField::set_onEndTextSelection(TMPro.TMP_InputField_TextSelectionEvent)
+// 0x0000018B System.Void TMPro.TMP_InputField::set_onEndTextSelection(TMPro.TMP_InputField/TextSelectionEvent)
 extern void TMP_InputField_set_onEndTextSelection_m9E442BB8A278133E1216CE31200982A1D3A80AA2 (void);
-// 0x0000018C TMPro.TMP_InputField_OnChangeEvent TMPro.TMP_InputField::get_onValueChanged()
+// 0x0000018C TMPro.TMP_InputField/OnChangeEvent TMPro.TMP_InputField::get_onValueChanged()
 extern void TMP_InputField_get_onValueChanged_mD17CC6295CE93EF4D2F7A4C19F73E837214B725D (void);
-// 0x0000018D System.Void TMPro.TMP_InputField::set_onValueChanged(TMPro.TMP_InputField_OnChangeEvent)
+// 0x0000018D System.Void TMPro.TMP_InputField::set_onValueChanged(TMPro.TMP_InputField/OnChangeEvent)
 extern void TMP_InputField_set_onValueChanged_m8CB3884AA7300967B267C8A54A28EB0AE6EF6A4A (void);
-// 0x0000018E TMPro.TMP_InputField_TouchScreenKeyboardEvent TMPro.TMP_InputField::get_onTouchScreenKeyboardStatusChanged()
+// 0x0000018E TMPro.TMP_InputField/TouchScreenKeyboardEvent TMPro.TMP_InputField::get_onTouchScreenKeyboardStatusChanged()
 extern void TMP_InputField_get_onTouchScreenKeyboardStatusChanged_mE8E40D1CB46176A21A83BDAFC9178A8ED805256E (void);
-// 0x0000018F System.Void TMPro.TMP_InputField::set_onTouchScreenKeyboardStatusChanged(TMPro.TMP_InputField_TouchScreenKeyboardEvent)
+// 0x0000018F System.Void TMPro.TMP_InputField::set_onTouchScreenKeyboardStatusChanged(TMPro.TMP_InputField/TouchScreenKeyboardEvent)
 extern void TMP_InputField_set_onTouchScreenKeyboardStatusChanged_m1D78D33A78DF2AC77DA5F19708634C544C323E4C (void);
-// 0x00000190 TMPro.TMP_InputField_OnValidateInput TMPro.TMP_InputField::get_onValidateInput()
+// 0x00000190 TMPro.TMP_InputField/OnValidateInput TMPro.TMP_InputField::get_onValidateInput()
 extern void TMP_InputField_get_onValidateInput_m22A1437592B32640790C4A4C5F0BF2861CFAA1B0 (void);
-// 0x00000191 System.Void TMPro.TMP_InputField::set_onValidateInput(TMPro.TMP_InputField_OnValidateInput)
+// 0x00000191 System.Void TMPro.TMP_InputField::set_onValidateInput(TMPro.TMP_InputField/OnValidateInput)
 extern void TMP_InputField_set_onValidateInput_m446345EC7D6D905EF64562846DA90DA1EF2CBB91 (void);
 // 0x00000192 System.Int32 TMPro.TMP_InputField::get_characterLimit()
 extern void TMP_InputField_get_characterLimit_mDC3A1F059062967F08E4BF440A3EFE2104BFADDD (void);
@@ -826,29 +826,29 @@ extern void TMP_InputField_set_restoreOriginalTextOnEscape_m264786545B47B1FEA619
 extern void TMP_InputField_get_isRichTextEditingAllowed_m73E1355EF70E28BFD9E8072B580B8247186176B4 (void);
 // 0x0000019F System.Void TMPro.TMP_InputField::set_isRichTextEditingAllowed(System.Boolean)
 extern void TMP_InputField_set_isRichTextEditingAllowed_m3B574CD81CF4574A0BBBE49D13F707EC163F1CE3 (void);
-// 0x000001A0 TMPro.TMP_InputField_ContentType TMPro.TMP_InputField::get_contentType()
+// 0x000001A0 TMPro.TMP_InputField/ContentType TMPro.TMP_InputField::get_contentType()
 extern void TMP_InputField_get_contentType_mF8BF483423065F1F6C037ED9306C4DB3F9ED3806 (void);
-// 0x000001A1 System.Void TMPro.TMP_InputField::set_contentType(TMPro.TMP_InputField_ContentType)
+// 0x000001A1 System.Void TMPro.TMP_InputField::set_contentType(TMPro.TMP_InputField/ContentType)
 extern void TMP_InputField_set_contentType_mD9C08E59EF527B3B0E6FF5C8AD31D9B3A7DC6587 (void);
-// 0x000001A2 TMPro.TMP_InputField_LineType TMPro.TMP_InputField::get_lineType()
+// 0x000001A2 TMPro.TMP_InputField/LineType TMPro.TMP_InputField::get_lineType()
 extern void TMP_InputField_get_lineType_mB84156D88F036BBBEA54DBA9A2DC4C696C6D5ADA (void);
-// 0x000001A3 System.Void TMPro.TMP_InputField::set_lineType(TMPro.TMP_InputField_LineType)
+// 0x000001A3 System.Void TMPro.TMP_InputField::set_lineType(TMPro.TMP_InputField/LineType)
 extern void TMP_InputField_set_lineType_mB54759A8B66685CC0262CAC43681B05BB85E3ED7 (void);
 // 0x000001A4 System.Int32 TMPro.TMP_InputField::get_lineLimit()
 extern void TMP_InputField_get_lineLimit_m108E3432AD5996B3EA25360647B018CDF30DA05C (void);
 // 0x000001A5 System.Void TMPro.TMP_InputField::set_lineLimit(System.Int32)
 extern void TMP_InputField_set_lineLimit_mB0F7351EA12AA1973E9E93D435B3417A96DECF40 (void);
-// 0x000001A6 TMPro.TMP_InputField_InputType TMPro.TMP_InputField::get_inputType()
+// 0x000001A6 TMPro.TMP_InputField/InputType TMPro.TMP_InputField::get_inputType()
 extern void TMP_InputField_get_inputType_mFF56880328B9DF2F42CA3CE2E2FCF47DD251486A (void);
-// 0x000001A7 System.Void TMPro.TMP_InputField::set_inputType(TMPro.TMP_InputField_InputType)
+// 0x000001A7 System.Void TMPro.TMP_InputField::set_inputType(TMPro.TMP_InputField/InputType)
 extern void TMP_InputField_set_inputType_mC3501318CAD278F88B9FB0FA0196C0021720BA0F (void);
 // 0x000001A8 UnityEngine.TouchScreenKeyboardType TMPro.TMP_InputField::get_keyboardType()
 extern void TMP_InputField_get_keyboardType_mC950A01BDA84084B48DA2C4207FD8CBB6D688624 (void);
 // 0x000001A9 System.Void TMPro.TMP_InputField::set_keyboardType(UnityEngine.TouchScreenKeyboardType)
 extern void TMP_InputField_set_keyboardType_mA5FF91B483C8E5B9D444EB764409947B5A2BCF2A (void);
-// 0x000001AA TMPro.TMP_InputField_CharacterValidation TMPro.TMP_InputField::get_characterValidation()
+// 0x000001AA TMPro.TMP_InputField/CharacterValidation TMPro.TMP_InputField::get_characterValidation()
 extern void TMP_InputField_get_characterValidation_mE9761B78E3A1A9F889A0E945BA9704405D84C14E (void);
-// 0x000001AB System.Void TMPro.TMP_InputField::set_characterValidation(TMPro.TMP_InputField_CharacterValidation)
+// 0x000001AB System.Void TMPro.TMP_InputField::set_characterValidation(TMPro.TMP_InputField/CharacterValidation)
 extern void TMP_InputField_set_characterValidation_mF42D4AFD0A74EF86EB695B895850F146A7E44361 (void);
 // 0x000001AC TMPro.TMP_InputValidator TMPro.TMP_InputField::get_inputValidator()
 extern void TMP_InputField_get_inputValidator_mC717418E121B68C0DD1DCDADF20F5B14A1C1FEF3 (void);
@@ -962,7 +962,7 @@ extern void TMP_InputField_MouseDragOutsideRect_mAC56AD10D2592EF4657119B21C3C38F
 extern void TMP_InputField_OnEndDrag_mB8FDC24F9AB86124B8F3CFC0164DCF90A1CE7C2C (void);
 // 0x000001E3 System.Void TMPro.TMP_InputField::OnPointerDown(UnityEngine.EventSystems.PointerEventData)
 extern void TMP_InputField_OnPointerDown_m8F5425A38D851DDA2FEECF5F8990D6D7BFEAC4F8 (void);
-// 0x000001E4 TMPro.TMP_InputField_EditState TMPro.TMP_InputField::KeyPressed(UnityEngine.Event)
+// 0x000001E4 TMPro.TMP_InputField/EditState TMPro.TMP_InputField::KeyPressed(UnityEngine.Event)
 extern void TMP_InputField_KeyPressed_m2BEC2846C67990B855652138D9A726A8E3944783 (void);
 // 0x000001E5 System.Boolean TMPro.TMP_InputField::IsValidChar(System.Char)
 extern void TMP_InputField_IsValidChar_mE3DF89EFDA1FD9E0A395498E72756D5427A6426B (void);
@@ -1106,13 +1106,13 @@ extern void TMP_InputField_EnforceContentType_m4EC4172D29031557E176916128EF28EEA
 extern void TMP_InputField_SetTextComponentWrapMode_m1C5510CDB4C0A00ADA348F9E76813F651D22B8EB (void);
 // 0x0000022B System.Void TMPro.TMP_InputField::SetTextComponentRichTextMode()
 extern void TMP_InputField_SetTextComponentRichTextMode_mB6EE5B70554242429F8E843D8161DA104DBBC547 (void);
-// 0x0000022C System.Void TMPro.TMP_InputField::SetToCustomIfContentTypeIsNot(TMPro.TMP_InputField_ContentType[])
+// 0x0000022C System.Void TMPro.TMP_InputField::SetToCustomIfContentTypeIsNot(TMPro.TMP_InputField/ContentType[])
 extern void TMP_InputField_SetToCustomIfContentTypeIsNot_mB40014AA8EF1E7D441D05EF6444E69ADD029EA22 (void);
 // 0x0000022D System.Void TMPro.TMP_InputField::SetToCustom()
 extern void TMP_InputField_SetToCustom_m6E49A14E401E70E683535A9EF13936D93DDCE2C0 (void);
-// 0x0000022E System.Void TMPro.TMP_InputField::SetToCustom(TMPro.TMP_InputField_CharacterValidation)
+// 0x0000022E System.Void TMPro.TMP_InputField::SetToCustom(TMPro.TMP_InputField/CharacterValidation)
 extern void TMP_InputField_SetToCustom_m440109F2D4D148857F9B61476F80D7CFADB96776 (void);
-// 0x0000022F System.Void TMPro.TMP_InputField::DoStateTransition(UnityEngine.UI.Selectable_SelectionState,System.Boolean)
+// 0x0000022F System.Void TMPro.TMP_InputField::DoStateTransition(UnityEngine.UI.Selectable/SelectionState,System.Boolean)
 extern void TMP_InputField_DoStateTransition_mE6CB3CD04132DF459FB3DAC819CC2A8BA9030AA9 (void);
 // 0x00000230 System.Void TMPro.TMP_InputField::CalculateLayoutInputHorizontal()
 extern void TMP_InputField_CalculateLayoutInputHorizontal_m56AF3D90123D79E64FE6E48D6D1963314EA7BC37 (void);
@@ -1194,29 +1194,29 @@ extern void TMP_MaterialManager_ReleaseFallbackMaterial_m1478AD35DE200376DA2177D
 // 0x0000025A System.Void TMPro.TMP_MaterialManager::CopyMaterialPresetProperties(UnityEngine.Material,UnityEngine.Material)
 extern void TMP_MaterialManager_CopyMaterialPresetProperties_m973D09273F976AEB7EB51D798326F269C9C0D949 (void);
 // 0x0000025B System.Void TMPro.TMP_MeshInfo::.ctor(UnityEngine.Mesh,System.Int32)
-extern void TMP_MeshInfo__ctor_m0AA8D99217692981881D64BB71CC21BA2ACC712A_AdjustorThunk (void);
+extern void TMP_MeshInfo__ctor_m0AA8D99217692981881D64BB71CC21BA2ACC712A (void);
 // 0x0000025C System.Void TMPro.TMP_MeshInfo::.ctor(UnityEngine.Mesh,System.Int32,System.Boolean)
-extern void TMP_MeshInfo__ctor_m668079D11DEB14AA406F0F0BAAD75DA72B587535_AdjustorThunk (void);
+extern void TMP_MeshInfo__ctor_m668079D11DEB14AA406F0F0BAAD75DA72B587535 (void);
 // 0x0000025D System.Void TMPro.TMP_MeshInfo::ResizeMeshInfo(System.Int32)
-extern void TMP_MeshInfo_ResizeMeshInfo_m743BE9D1F3F26C267432C96D77FA72257736A263_AdjustorThunk (void);
+extern void TMP_MeshInfo_ResizeMeshInfo_m743BE9D1F3F26C267432C96D77FA72257736A263 (void);
 // 0x0000025E System.Void TMPro.TMP_MeshInfo::ResizeMeshInfo(System.Int32,System.Boolean)
-extern void TMP_MeshInfo_ResizeMeshInfo_mA9F5355D090855A192774E64FA491BF12F145483_AdjustorThunk (void);
+extern void TMP_MeshInfo_ResizeMeshInfo_mA9F5355D090855A192774E64FA491BF12F145483 (void);
 // 0x0000025F System.Void TMPro.TMP_MeshInfo::Clear()
-extern void TMP_MeshInfo_Clear_m2AA4C8FACF6B614E3210427C9D62C3F41634981B_AdjustorThunk (void);
+extern void TMP_MeshInfo_Clear_m2AA4C8FACF6B614E3210427C9D62C3F41634981B (void);
 // 0x00000260 System.Void TMPro.TMP_MeshInfo::Clear(System.Boolean)
-extern void TMP_MeshInfo_Clear_m21ABD0D8633F88ADBEDD157073A2B34BEEC1A863_AdjustorThunk (void);
+extern void TMP_MeshInfo_Clear_m21ABD0D8633F88ADBEDD157073A2B34BEEC1A863 (void);
 // 0x00000261 System.Void TMPro.TMP_MeshInfo::ClearUnusedVertices()
-extern void TMP_MeshInfo_ClearUnusedVertices_m97D0F43FE73E644FE6EACE3E5CA45305C0FB2C0B_AdjustorThunk (void);
+extern void TMP_MeshInfo_ClearUnusedVertices_m97D0F43FE73E644FE6EACE3E5CA45305C0FB2C0B (void);
 // 0x00000262 System.Void TMPro.TMP_MeshInfo::ClearUnusedVertices(System.Int32)
-extern void TMP_MeshInfo_ClearUnusedVertices_m2B60D5441CBCB3D39AFD26EEAAD0C10A3A6B5B8F_AdjustorThunk (void);
+extern void TMP_MeshInfo_ClearUnusedVertices_m2B60D5441CBCB3D39AFD26EEAAD0C10A3A6B5B8F (void);
 // 0x00000263 System.Void TMPro.TMP_MeshInfo::ClearUnusedVertices(System.Int32,System.Boolean)
-extern void TMP_MeshInfo_ClearUnusedVertices_m54C8607D64F41E9824E3250E399F4DEC464FDDDE_AdjustorThunk (void);
+extern void TMP_MeshInfo_ClearUnusedVertices_m54C8607D64F41E9824E3250E399F4DEC464FDDDE (void);
 // 0x00000264 System.Void TMPro.TMP_MeshInfo::SortGeometry(TMPro.VertexSortingOrder)
-extern void TMP_MeshInfo_SortGeometry_m1D26B8D8216DECA9CECF6FA40238CA7455918236_AdjustorThunk (void);
+extern void TMP_MeshInfo_SortGeometry_m1D26B8D8216DECA9CECF6FA40238CA7455918236 (void);
 // 0x00000265 System.Void TMPro.TMP_MeshInfo::SortGeometry(System.Collections.Generic.IList`1<System.Int32>)
-extern void TMP_MeshInfo_SortGeometry_mA05A54EF431AA4B24C457B8AD248B016DBB17B37_AdjustorThunk (void);
+extern void TMP_MeshInfo_SortGeometry_mA05A54EF431AA4B24C457B8AD248B016DBB17B37 (void);
 // 0x00000266 System.Void TMPro.TMP_MeshInfo::SwapVertexData(System.Int32,System.Int32)
-extern void TMP_MeshInfo_SwapVertexData_mE63CEE8F8876263B986D6C0995E4B98DF122CD08_AdjustorThunk (void);
+extern void TMP_MeshInfo_SwapVertexData_mE63CEE8F8876263B986D6C0995E4B98DF122CD08 (void);
 // 0x00000267 System.Void TMPro.TMP_MeshInfo::.cctor()
 extern void TMP_MeshInfo__cctor_m1B5F0977345B19FE5AA023AD8828BF149263F583 (void);
 // 0x00000268 System.Int32 TMPro.TMP_ObjectPool`1::get_countAll()
@@ -1320,7 +1320,7 @@ extern void TMP_Settings_get_styleSheetsResourcePath_m87490DCC33305C17797BF32D56
 extern void TMP_Settings_get_leadingCharacters_m95154CD657757BC593FBBF37B378A21D2471E702 (void);
 // 0x0000029D UnityEngine.TextAsset TMPro.TMP_Settings::get_followingCharacters()
 extern void TMP_Settings_get_followingCharacters_m5F087720CC241CF188D79D55D6E5D5F862EEA7FA (void);
-// 0x0000029E TMPro.TMP_Settings_LineBreakingTable TMPro.TMP_Settings::get_linebreakingRules()
+// 0x0000029E TMPro.TMP_Settings/LineBreakingTable TMPro.TMP_Settings::get_linebreakingRules()
 extern void TMP_Settings_get_linebreakingRules_m8F2BFCE7A88AA20EFE38B4EF93A0FF098B022F83 (void);
 // 0x0000029F System.Boolean TMPro.TMP_Settings::get_useModernHangulLineBreakingRules()
 extern void TMP_Settings_get_useModernHangulLineBreakingRules_mE9D7232CE206F95CF1E0464630B5725D4F7F565E (void);
@@ -2079,33 +2079,33 @@ extern void TMP_Text_SetCharArray_m62D76FABB80FF408A9DD120E8FEBE761692DDD0A (voi
 extern void TMP_Text_SetCharArray_m358A4F04B478966E0DB3FA4F658FEBEB0C267AD2 (void);
 // 0x0000041A System.Void TMPro.TMP_Text::SetCharArray(System.Int32[],System.Int32,System.Int32)
 extern void TMP_Text_SetCharArray_m7B4A5E513D4AAD1E266792F56E2036204BA61CAD (void);
-// 0x0000041B System.Int32 TMPro.TMP_Text::CharArrayToInternalParsingBuffer(System.Char[],TMPro.TMP_Text_UnicodeChar[]&)
+// 0x0000041B System.Int32 TMPro.TMP_Text::CharArrayToInternalParsingBuffer(System.Char[],TMPro.TMP_Text/UnicodeChar[]&)
 extern void TMP_Text_CharArrayToInternalParsingBuffer_mCF1FF893B3672D5E2B41F97188050AE7D4DA7E38 (void);
-// 0x0000041C System.Int32 TMPro.TMP_Text::StringToInternalParsingBuffer(System.String,TMPro.TMP_Text_UnicodeChar[]&)
+// 0x0000041C System.Int32 TMPro.TMP_Text::StringToInternalParsingBuffer(System.String,TMPro.TMP_Text/UnicodeChar[]&)
 extern void TMP_Text_StringToInternalParsingBuffer_mC94B6D6762FC71A4690E1055610E3C8E8E793E07 (void);
-// 0x0000041D System.Int32 TMPro.TMP_Text::StringBuilderToInternalParsingBuffer(System.Text.StringBuilder,TMPro.TMP_Text_UnicodeChar[]&)
+// 0x0000041D System.Int32 TMPro.TMP_Text::StringBuilderToInternalParsingBuffer(System.Text.StringBuilder,TMPro.TMP_Text/UnicodeChar[]&)
 extern void TMP_Text_StringBuilderToInternalParsingBuffer_mF0B954BCBDB7252256EFB5E1C476E488D3656EE6 (void);
-// 0x0000041E System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.String&,System.Int32,System.Int32&,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x0000041E System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.String&,System.Int32,System.Int32&,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceOpeningStyleTag_m9AF1AF6FC3AB432271735D6941504E176009402F (void);
-// 0x0000041F System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.Int32[]&,System.Int32,System.Int32&,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x0000041F System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.Int32[]&,System.Int32,System.Int32&,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceOpeningStyleTag_m25B63E2C901430BEAB7377A0BB3FBEC4245B7A4C (void);
-// 0x00000420 System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.Char[]&,System.Int32,System.Int32&,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000420 System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.Char[]&,System.Int32,System.Int32&,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceOpeningStyleTag_mC287949169663034C2A7704EB9D880EE21FB58F9 (void);
-// 0x00000421 System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.Text.StringBuilder&,System.Int32,System.Int32&,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000421 System.Boolean TMPro.TMP_Text::ReplaceOpeningStyleTag(System.Text.StringBuilder&,System.Int32,System.Int32&,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceOpeningStyleTag_mF2C6A413D3CC472F80606643F8ABE8A8294CD33B (void);
-// 0x00000422 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.String&,System.Int32,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000422 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.String&,System.Int32,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceClosingStyleTag_m9BDD71AFF341BAA779B2B5FBF9A92852BD9A2D3B (void);
-// 0x00000423 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.Int32[]&,System.Int32,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000423 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.Int32[]&,System.Int32,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceClosingStyleTag_m2C71031F6E6F00F8C4D30CC37E966001BAE3C92C (void);
-// 0x00000424 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.Char[]&,System.Int32,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000424 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.Char[]&,System.Int32,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceClosingStyleTag_m91C3B2369F186E734BB39F183F708AD04300A1F2 (void);
-// 0x00000425 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.Text.StringBuilder&,System.Int32,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000425 System.Boolean TMPro.TMP_Text::ReplaceClosingStyleTag(System.Text.StringBuilder&,System.Int32,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_ReplaceClosingStyleTag_m97FA769C48F77039BEF8E0CF04B8AC8DA9705BE0 (void);
 // 0x00000426 TMPro.TMP_Style TMPro.TMP_Text::GetStyle(System.Int32)
 extern void TMP_Text_GetStyle_m33614E6762EE4516BC862FFA7776B95AACACFAF7 (void);
-// 0x00000427 System.Boolean TMPro.TMP_Text::InsertOpeningStyleTag(TMPro.TMP_Style,System.Int32,TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000427 System.Boolean TMPro.TMP_Text::InsertOpeningStyleTag(TMPro.TMP_Style,System.Int32,TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_InsertOpeningStyleTag_m4D6FB6B1B454EF2ED2EDD769FC08C79A150ACF34 (void);
-// 0x00000428 System.Boolean TMPro.TMP_Text::InsertClosingStyleTag(TMPro.TMP_Text_UnicodeChar[]&,System.Int32&)
+// 0x00000428 System.Boolean TMPro.TMP_Text::InsertClosingStyleTag(TMPro.TMP_Text/UnicodeChar[]&,System.Int32&)
 extern void TMP_Text_InsertClosingStyleTag_m8589EC2BFD792E075E78A52703A0A079DE91EB50 (void);
 // 0x00000429 System.Boolean TMPro.TMP_Text::IsTagName(System.String&,System.String,System.Int32)
 extern void TMP_Text_IsTagName_m33D22B7B731DEF43F1F437F2F67126F9A7C23804 (void);
@@ -2129,7 +2129,7 @@ extern void TMP_Text_GetTagHashCode_m0654B55FA3E11906A1EFE263FF09A3FF6AA65070 (v
 extern void TMP_Text_AddFloatToCharArray_mB3DCAEE92004DF488756A6F87F5609EDA2F7AB5F (void);
 // 0x00000434 System.Void TMPro.TMP_Text::AddIntegerToCharArray(System.Double,System.Int32,System.Int32&)
 extern void TMP_Text_AddIntegerToCharArray_m3BBE4A9288F357003B05928A7A5588D31CEF61EA (void);
-// 0x00000435 System.Int32 TMPro.TMP_Text::SetArraySizes(TMPro.TMP_Text_UnicodeChar[])
+// 0x00000435 System.Int32 TMPro.TMP_Text::SetArraySizes(TMPro.TMP_Text/UnicodeChar[])
 extern void TMP_Text_SetArraySizes_m24B37F9C5511E29190DABDBA654F8AFBE056CE8B (void);
 // 0x00000436 System.Void TMPro.TMP_Text::GenerateTextMesh()
 extern void TMP_Text_GenerateTextMesh_m21AD24EDDCD36FA15BDD003256B636B306CE77A9 (void);
@@ -2257,7 +2257,7 @@ extern void TMP_Text_GetAttributeParameters_m155F101A1E4EFEE3AE0C008A3C3B74D915E
 extern void TMP_Text_ConvertToFloat_m913191D4DCF1398B0BE2B4D2F8903A8EEEFB6F56 (void);
 // 0x00000474 System.Single TMPro.TMP_Text::ConvertToFloat(System.Char[],System.Int32,System.Int32,System.Int32&)
 extern void TMP_Text_ConvertToFloat_m2156C5AD242684C7C3EEE1DD51DE2234B7CF9B2F (void);
-// 0x00000475 System.Boolean TMPro.TMP_Text::ValidateHtmlTag(TMPro.TMP_Text_UnicodeChar[],System.Int32,System.Int32&)
+// 0x00000475 System.Boolean TMPro.TMP_Text::ValidateHtmlTag(TMPro.TMP_Text/UnicodeChar[],System.Int32,System.Int32&)
 extern void TMP_Text_ValidateHtmlTag_m09BC52A48F8D6921515AD1EE7A8EF92C0ABC2A6B (void);
 // 0x00000476 System.Void TMPro.TMP_Text::.ctor()
 extern void TMP_Text__ctor_mC2261395B7E6695E1793CB54E728BB807716ED18 (void);
@@ -2338,11 +2338,11 @@ extern void TMP_TextParsingUtilities_IsLowSurrogate_m1891FFB218074FD4063400FB1F0
 // 0x0000049D System.Void TMPro.TMP_TextParsingUtilities::.ctor()
 extern void TMP_TextParsingUtilities__ctor_m17DE5714DD2BB0313BAD096012914CBA61B3B304 (void);
 // 0x0000049E System.Void TMPro.TMP_FontStyleStack::Clear()
-extern void TMP_FontStyleStack_Clear_m7A96493A98DC6BED34069521501A6A35F49DFDBC_AdjustorThunk (void);
+extern void TMP_FontStyleStack_Clear_m7A96493A98DC6BED34069521501A6A35F49DFDBC (void);
 // 0x0000049F System.Byte TMPro.TMP_FontStyleStack::Add(TMPro.FontStyles)
-extern void TMP_FontStyleStack_Add_mD8C2B00C27004168A89121113090BA7E9BFC54CC_AdjustorThunk (void);
+extern void TMP_FontStyleStack_Add_mD8C2B00C27004168A89121113090BA7E9BFC54CC (void);
 // 0x000004A0 System.Byte TMPro.TMP_FontStyleStack::Remove(TMPro.FontStyles)
-extern void TMP_FontStyleStack_Remove_mC7F6AA55F58016C36E196430D676E11F179168A0_AdjustorThunk (void);
+extern void TMP_FontStyleStack_Remove_mC7F6AA55F58016C36E196430D676E11F179168A0 (void);
 // 0x000004A1 System.Void TMPro.TMP_TextProcessingStack`1::.ctor(T[])
 // 0x000004A2 System.Void TMPro.TMP_TextProcessingStack`1::.ctor(System.Int32)
 // 0x000004A3 System.Void TMPro.TMP_TextProcessingStack`1::.ctor(System.Int32,System.Int32)
@@ -2360,7 +2360,7 @@ extern void TMP_FontStyleStack_Remove_mC7F6AA55F58016C36E196430D676E11F179168A0_
 // 0x000004AF T TMPro.TMP_TextProcessingStack`1::CurrentItem()
 // 0x000004B0 T TMPro.TMP_TextProcessingStack`1::PreviousItem()
 // 0x000004B1 System.Void TMPro.CaretInfo::.ctor(System.Int32,TMPro.CaretPosition)
-extern void CaretInfo__ctor_m027A49BE4CEF97C36FB56B2946E036D93869E694_AdjustorThunk (void);
+extern void CaretInfo__ctor_m027A49BE4CEF97C36FB56B2946E036D93869E694 (void);
 // 0x000004B2 System.Int32 TMPro.TMP_TextUtilities::GetCursorIndexFromPosition(TMPro.TMP_Text,UnityEngine.Vector3,UnityEngine.Camera)
 extern void TMP_TextUtilities_GetCursorIndexFromPosition_m207C781323EC02275F074608CB3261F813BFF5BE (void);
 // 0x000004B3 System.Int32 TMPro.TMP_TextUtilities::GetCursorIndexFromPosition(TMPro.TMP_Text,UnityEngine.Vector3,UnityEngine.Camera,TMPro.CaretPosition&)
@@ -2389,7 +2389,7 @@ extern void TMP_TextUtilities_FindNearestLink_m07C930EAF55216D1C61C78B96A5FC2482
 extern void TMP_TextUtilities_PointIntersectRectangle_mFE870E3A81A510FCF195CD0D3B4190E7B38C529B (void);
 // 0x000004BF System.Boolean TMPro.TMP_TextUtilities::ScreenPointToWorldPointInRectangle(UnityEngine.Transform,UnityEngine.Vector2,UnityEngine.Camera,UnityEngine.Vector3&)
 extern void TMP_TextUtilities_ScreenPointToWorldPointInRectangle_m013F4B5F82996E5067A82AB4DA5198A9FF0A7581 (void);
-// 0x000004C0 System.Boolean TMPro.TMP_TextUtilities::IntersectLinePlane(TMPro.TMP_TextUtilities_LineSegment,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&)
+// 0x000004C0 System.Boolean TMPro.TMP_TextUtilities::IntersectLinePlane(TMPro.TMP_TextUtilities/LineSegment,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3&)
 extern void TMP_TextUtilities_IntersectLinePlane_m94F3429BE5301E6726AF67E84B30E9E56B5A23CA (void);
 // 0x000004C1 System.Single TMPro.TMP_TextUtilities::DistanceToLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)
 extern void TMP_TextUtilities_DistanceToLine_m76149A3D67111316F621D01579A7DAA28F66BBFC (void);
@@ -2531,27 +2531,27 @@ extern void TMP_Math_Mod_m4F9045F20927902128280AB74EFC210E577D7025 (void);
 // 0x00000506 System.Void TMPro.TMP_Math::.cctor()
 extern void TMP_Math__cctor_mDB1D10F48068C9AE4D4CC8DBFE6D457174441B8A (void);
 // 0x00000507 System.Void TMPro.VertexGradient::.ctor(UnityEngine.Color)
-extern void VertexGradient__ctor_mE2211E9FF5EB4FD910EA4D38FBA1BFC67CB4393F_AdjustorThunk (void);
+extern void VertexGradient__ctor_mE2211E9FF5EB4FD910EA4D38FBA1BFC67CB4393F (void);
 // 0x00000508 System.Void TMPro.VertexGradient::.ctor(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color)
-extern void VertexGradient__ctor_m5AAE113F629912122A0947CA8048E2DE542529B8_AdjustorThunk (void);
+extern void VertexGradient__ctor_m5AAE113F629912122A0947CA8048E2DE542529B8 (void);
 // 0x00000509 System.Void TMPro.TMP_LinkInfo::SetLinkID(System.Char[],System.Int32,System.Int32)
-extern void TMP_LinkInfo_SetLinkID_m009C3D2FB74DE74701B133C5E1658C37D6478E01_AdjustorThunk (void);
+extern void TMP_LinkInfo_SetLinkID_m009C3D2FB74DE74701B133C5E1658C37D6478E01 (void);
 // 0x0000050A System.String TMPro.TMP_LinkInfo::GetLinkText()
-extern void TMP_LinkInfo_GetLinkText_m7C78982CD398EBC8AF2303E0A665A76C26FE0352_AdjustorThunk (void);
+extern void TMP_LinkInfo_GetLinkText_m7C78982CD398EBC8AF2303E0A665A76C26FE0352 (void);
 // 0x0000050B System.String TMPro.TMP_LinkInfo::GetLinkID()
-extern void TMP_LinkInfo_GetLinkID_m97C3C9028EF1FA90BF6315BFDF42AAD3A7463B53_AdjustorThunk (void);
+extern void TMP_LinkInfo_GetLinkID_m97C3C9028EF1FA90BF6315BFDF42AAD3A7463B53 (void);
 // 0x0000050C System.String TMPro.TMP_WordInfo::GetWord()
-extern void TMP_WordInfo_GetWord_m45402062300ED4455F6C6F5E96E42C4904E18133_AdjustorThunk (void);
+extern void TMP_WordInfo_GetWord_m45402062300ED4455F6C6F5E96E42C4904E18133 (void);
 // 0x0000050D System.Void TMPro.Extents::.ctor(UnityEngine.Vector2,UnityEngine.Vector2)
-extern void Extents__ctor_m49123A9E50868E0DE6D0FA3404B52951C1A5F272_AdjustorThunk (void);
+extern void Extents__ctor_m49123A9E50868E0DE6D0FA3404B52951C1A5F272 (void);
 // 0x0000050E System.String TMPro.Extents::ToString()
-extern void Extents_ToString_mE7D4606209C02F28F8B8667E38375EFAA61FA728_AdjustorThunk (void);
+extern void Extents_ToString_mE7D4606209C02F28F8B8667E38375EFAA61FA728 (void);
 // 0x0000050F System.Void TMPro.Extents::.cctor()
 extern void Extents__cctor_m2D276B3DD7CDC3BFBEA456B406044D180CFA1547 (void);
 // 0x00000510 System.Void TMPro.Mesh_Extents::.ctor(UnityEngine.Vector2,UnityEngine.Vector2)
-extern void Mesh_Extents__ctor_mC314341788DAA461D4C419A9FBF52C56F66300E0_AdjustorThunk (void);
+extern void Mesh_Extents__ctor_mC314341788DAA461D4C419A9FBF52C56F66300E0 (void);
 // 0x00000511 System.String TMPro.Mesh_Extents::ToString()
-extern void Mesh_Extents_ToString_m1F6D3CC4767D55BDCB31DC9ABE54493885FA3641_AdjustorThunk (void);
+extern void Mesh_Extents_ToString_m1F6D3CC4767D55BDCB31DC9ABE54493885FA3641 (void);
 // 0x00000512 System.Void TMPro.TextMeshPro::Awake()
 extern void TextMeshPro_Awake_mF475F1DCF79FD954F03AFBA6621E366162DB5E9E (void);
 // 0x00000513 System.Void TMPro.TextMeshPro::OnEnable()
@@ -2600,7 +2600,7 @@ extern void TextMeshPro_SetShaderDepth_m3D26C5536BEF21843E09A269E43766AE7DD46581
 extern void TextMeshPro_SetCulling_mFA1622513BA037687B8733B1DE51699B06BA9FFF (void);
 // 0x00000529 System.Void TMPro.TextMeshPro::SetPerspectiveCorrection()
 extern void TextMeshPro_SetPerspectiveCorrection_mE15ED75C4C73D321ED3859EC03DBF0C442A801E7 (void);
-// 0x0000052A System.Int32 TMPro.TextMeshPro::SetArraySizes(TMPro.TMP_Text_UnicodeChar[])
+// 0x0000052A System.Int32 TMPro.TextMeshPro::SetArraySizes(TMPro.TMP_Text/UnicodeChar[])
 extern void TextMeshPro_SetArraySizes_mFB0E793E5D4BE80318D0F7FB1F605668E352BBFB (void);
 // 0x0000052B System.Void TMPro.TextMeshPro::ComputeMarginSize()
 extern void TextMeshPro_ComputeMarginSize_mD8C0351DE51C876191E89C4500378756C20ED7EA (void);
@@ -2742,7 +2742,7 @@ extern void TextMeshProUGUI_SetCulling_m66D133DE3D5CC35969EDABCA3B968F27415DE0A0
 extern void TextMeshProUGUI_SetPerspectiveCorrection_m55F933AC72997A55F66A071161430B0DE2105418 (void);
 // 0x00000570 System.Void TMPro.TextMeshProUGUI::SetMeshArrays(System.Int32)
 extern void TextMeshProUGUI_SetMeshArrays_m4A5C386DC75B70982820BB220CB280F8CBB988E9 (void);
-// 0x00000571 System.Int32 TMPro.TextMeshProUGUI::SetArraySizes(TMPro.TMP_Text_UnicodeChar[])
+// 0x00000571 System.Int32 TMPro.TextMeshProUGUI::SetArraySizes(TMPro.TMP_Text/UnicodeChar[])
 extern void TextMeshProUGUI_SetArraySizes_m67A1041CFDCDFC9D7463140EDA8CC1A625F9F6C3 (void);
 // 0x00000572 System.Void TMPro.TextMeshProUGUI::ComputeMarginSize()
 extern void TextMeshProUGUI_ComputeMarginSize_mED7A66F020A6286CEE4431035F5CBCA576FF35AC (void);
@@ -2914,242 +2914,242 @@ extern void TextContainer__ctor_m2547EF601CC1EC464919B154C1ACF6A0B075473D (void)
 extern void TextContainer__cctor_mA0E4237F709F02B7D9B020AC3044B58C5584F234 (void);
 // 0x000005C6 System.Void TMPro.SpriteAssetUtilities.TexturePacker_JsonArray::.ctor()
 extern void TexturePacker_JsonArray__ctor_m789022150409E322104B595FFC7C7BB62030C225 (void);
-// 0x000005C7 System.Void TMPro.ColorTween_ColorTweenCallback::.ctor()
+// 0x000005C7 System.Void TMPro.ColorTween/ColorTweenCallback::.ctor()
 extern void ColorTweenCallback__ctor_mCC951168E76216D4A49E34702AD17238F3A3ABBA (void);
-// 0x000005C8 System.Void TMPro.FloatTween_FloatTweenCallback::.ctor()
+// 0x000005C8 System.Void TMPro.FloatTween/FloatTweenCallback::.ctor()
 extern void FloatTweenCallback__ctor_m70AC8CF0A7B12DBBE4BCB3A261E5FFFDC9169E01 (void);
-// 0x000005C9 System.Void TMPro.TweenRunner`1_<Start>d__2::.ctor(System.Int32)
-// 0x000005CA System.Void TMPro.TweenRunner`1_<Start>d__2::System.IDisposable.Dispose()
-// 0x000005CB System.Boolean TMPro.TweenRunner`1_<Start>d__2::MoveNext()
-// 0x000005CC System.Object TMPro.TweenRunner`1_<Start>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-// 0x000005CD System.Void TMPro.TweenRunner`1_<Start>d__2::System.Collections.IEnumerator.Reset()
-// 0x000005CE System.Object TMPro.TweenRunner`1_<Start>d__2::System.Collections.IEnumerator.get_Current()
-// 0x000005CF TMPro.TMP_Text TMPro.TMP_Dropdown_DropdownItem::get_text()
+// 0x000005C9 System.Void TMPro.TweenRunner`1/<Start>d__2::.ctor(System.Int32)
+// 0x000005CA System.Void TMPro.TweenRunner`1/<Start>d__2::System.IDisposable.Dispose()
+// 0x000005CB System.Boolean TMPro.TweenRunner`1/<Start>d__2::MoveNext()
+// 0x000005CC System.Object TMPro.TweenRunner`1/<Start>d__2::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000005CD System.Void TMPro.TweenRunner`1/<Start>d__2::System.Collections.IEnumerator.Reset()
+// 0x000005CE System.Object TMPro.TweenRunner`1/<Start>d__2::System.Collections.IEnumerator.get_Current()
+// 0x000005CF TMPro.TMP_Text TMPro.TMP_Dropdown/DropdownItem::get_text()
 extern void DropdownItem_get_text_m265E86336F652B2361FD8B4D81C3ED5D03FE261A (void);
-// 0x000005D0 System.Void TMPro.TMP_Dropdown_DropdownItem::set_text(TMPro.TMP_Text)
+// 0x000005D0 System.Void TMPro.TMP_Dropdown/DropdownItem::set_text(TMPro.TMP_Text)
 extern void DropdownItem_set_text_m9119F2CE4187831D876A40E1D4BEF77005A5256A (void);
-// 0x000005D1 UnityEngine.UI.Image TMPro.TMP_Dropdown_DropdownItem::get_image()
+// 0x000005D1 UnityEngine.UI.Image TMPro.TMP_Dropdown/DropdownItem::get_image()
 extern void DropdownItem_get_image_m49AB0D285796A7BB112B3640E44B8F8F70C73070 (void);
-// 0x000005D2 System.Void TMPro.TMP_Dropdown_DropdownItem::set_image(UnityEngine.UI.Image)
+// 0x000005D2 System.Void TMPro.TMP_Dropdown/DropdownItem::set_image(UnityEngine.UI.Image)
 extern void DropdownItem_set_image_mE564882D05CFA94847AEA51455A816190A901FED (void);
-// 0x000005D3 UnityEngine.RectTransform TMPro.TMP_Dropdown_DropdownItem::get_rectTransform()
+// 0x000005D3 UnityEngine.RectTransform TMPro.TMP_Dropdown/DropdownItem::get_rectTransform()
 extern void DropdownItem_get_rectTransform_mF0F78A3EE59C906576CE2AFADBE3808A7CCB661D (void);
-// 0x000005D4 System.Void TMPro.TMP_Dropdown_DropdownItem::set_rectTransform(UnityEngine.RectTransform)
+// 0x000005D4 System.Void TMPro.TMP_Dropdown/DropdownItem::set_rectTransform(UnityEngine.RectTransform)
 extern void DropdownItem_set_rectTransform_mFF7D18DBF51F390EEE0C6521AE96C221F9C0CF03 (void);
-// 0x000005D5 UnityEngine.UI.Toggle TMPro.TMP_Dropdown_DropdownItem::get_toggle()
+// 0x000005D5 UnityEngine.UI.Toggle TMPro.TMP_Dropdown/DropdownItem::get_toggle()
 extern void DropdownItem_get_toggle_mEBCC39E603EAAE9541A7BB816EE35B82A4EDF696 (void);
-// 0x000005D6 System.Void TMPro.TMP_Dropdown_DropdownItem::set_toggle(UnityEngine.UI.Toggle)
+// 0x000005D6 System.Void TMPro.TMP_Dropdown/DropdownItem::set_toggle(UnityEngine.UI.Toggle)
 extern void DropdownItem_set_toggle_m176D0840B7110F7D0C765489EF1B1A27C20BF8BF (void);
-// 0x000005D7 System.Void TMPro.TMP_Dropdown_DropdownItem::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+// 0x000005D7 System.Void TMPro.TMP_Dropdown/DropdownItem::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
 extern void DropdownItem_OnPointerEnter_mEEA698AF43D995C13BDA525AB5BE8C3835147619 (void);
-// 0x000005D8 System.Void TMPro.TMP_Dropdown_DropdownItem::OnCancel(UnityEngine.EventSystems.BaseEventData)
+// 0x000005D8 System.Void TMPro.TMP_Dropdown/DropdownItem::OnCancel(UnityEngine.EventSystems.BaseEventData)
 extern void DropdownItem_OnCancel_m3588ECE02601DEBBF49E42C773A4B0C8F9281C8B (void);
-// 0x000005D9 System.Void TMPro.TMP_Dropdown_DropdownItem::.ctor()
+// 0x000005D9 System.Void TMPro.TMP_Dropdown/DropdownItem::.ctor()
 extern void DropdownItem__ctor_m7CB05D75D7E31086017836FA6BE9BD91C92AB159 (void);
-// 0x000005DA System.String TMPro.TMP_Dropdown_OptionData::get_text()
+// 0x000005DA System.String TMPro.TMP_Dropdown/OptionData::get_text()
 extern void OptionData_get_text_m7E09B94A1211114D963FE4DD7440E5342538691E (void);
-// 0x000005DB System.Void TMPro.TMP_Dropdown_OptionData::set_text(System.String)
+// 0x000005DB System.Void TMPro.TMP_Dropdown/OptionData::set_text(System.String)
 extern void OptionData_set_text_m7A88256CD239C2B95EBF0309657F7B5B2B06B56B (void);
-// 0x000005DC UnityEngine.Sprite TMPro.TMP_Dropdown_OptionData::get_image()
+// 0x000005DC UnityEngine.Sprite TMPro.TMP_Dropdown/OptionData::get_image()
 extern void OptionData_get_image_m40827FAD87A1F471CE5C566BF057829D8F5DD555 (void);
-// 0x000005DD System.Void TMPro.TMP_Dropdown_OptionData::set_image(UnityEngine.Sprite)
+// 0x000005DD System.Void TMPro.TMP_Dropdown/OptionData::set_image(UnityEngine.Sprite)
 extern void OptionData_set_image_m4E323ED01635352A1DE17232E839DD7DF32D18A9 (void);
-// 0x000005DE System.Void TMPro.TMP_Dropdown_OptionData::.ctor()
+// 0x000005DE System.Void TMPro.TMP_Dropdown/OptionData::.ctor()
 extern void OptionData__ctor_mF077693CDB6AE26688761A6D35F0ADC659FB90FE (void);
-// 0x000005DF System.Void TMPro.TMP_Dropdown_OptionData::.ctor(System.String)
+// 0x000005DF System.Void TMPro.TMP_Dropdown/OptionData::.ctor(System.String)
 extern void OptionData__ctor_mA4BB11016B258EA5AF5A1036E993DC0DB9E1976D (void);
-// 0x000005E0 System.Void TMPro.TMP_Dropdown_OptionData::.ctor(UnityEngine.Sprite)
+// 0x000005E0 System.Void TMPro.TMP_Dropdown/OptionData::.ctor(UnityEngine.Sprite)
 extern void OptionData__ctor_m4A7E8F3FED700D3B9DC4A8EEBAC63B1DE5F06498 (void);
-// 0x000005E1 System.Void TMPro.TMP_Dropdown_OptionData::.ctor(System.String,UnityEngine.Sprite)
+// 0x000005E1 System.Void TMPro.TMP_Dropdown/OptionData::.ctor(System.String,UnityEngine.Sprite)
 extern void OptionData__ctor_m4742DA8FFEEDA867814059D58688633D635AF6BB (void);
-// 0x000005E2 System.Collections.Generic.List`1<TMPro.TMP_Dropdown_OptionData> TMPro.TMP_Dropdown_OptionDataList::get_options()
+// 0x000005E2 System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData> TMPro.TMP_Dropdown/OptionDataList::get_options()
 extern void OptionDataList_get_options_mF44E780B7851FA2A0C267DDF4944F6DFE446FBD6 (void);
-// 0x000005E3 System.Void TMPro.TMP_Dropdown_OptionDataList::set_options(System.Collections.Generic.List`1<TMPro.TMP_Dropdown_OptionData>)
+// 0x000005E3 System.Void TMPro.TMP_Dropdown/OptionDataList::set_options(System.Collections.Generic.List`1<TMPro.TMP_Dropdown/OptionData>)
 extern void OptionDataList_set_options_mF77D067A7FF40DC92299038BB5FEAF99F3F8E4AB (void);
-// 0x000005E4 System.Void TMPro.TMP_Dropdown_OptionDataList::.ctor()
+// 0x000005E4 System.Void TMPro.TMP_Dropdown/OptionDataList::.ctor()
 extern void OptionDataList__ctor_mCB020708C8D56A03BEE311C5CE29E5123A472AE5 (void);
-// 0x000005E5 System.Void TMPro.TMP_Dropdown_DropdownEvent::.ctor()
+// 0x000005E5 System.Void TMPro.TMP_Dropdown/DropdownEvent::.ctor()
 extern void DropdownEvent__ctor_mABC3BBE2C48C576FD6661FB8A46634B9CCB3F934 (void);
-// 0x000005E6 System.Void TMPro.TMP_Dropdown_<>c__DisplayClass69_0::.ctor()
+// 0x000005E6 System.Void TMPro.TMP_Dropdown/<>c__DisplayClass69_0::.ctor()
 extern void U3CU3Ec__DisplayClass69_0__ctor_m76D3697AB15BA8FC241F7643DDC3984558B00715 (void);
-// 0x000005E7 System.Void TMPro.TMP_Dropdown_<>c__DisplayClass69_0::<Show>b__0(System.Boolean)
+// 0x000005E7 System.Void TMPro.TMP_Dropdown/<>c__DisplayClass69_0::<Show>b__0(System.Boolean)
 extern void U3CU3Ec__DisplayClass69_0_U3CShowU3Eb__0_m5A5F0C13FACECCEA239C94BF58302924AEDFD818 (void);
-// 0x000005E8 System.Void TMPro.TMP_Dropdown_<DelayedDestroyDropdownList>d__81::.ctor(System.Int32)
+// 0x000005E8 System.Void TMPro.TMP_Dropdown/<DelayedDestroyDropdownList>d__81::.ctor(System.Int32)
 extern void U3CDelayedDestroyDropdownListU3Ed__81__ctor_m6DC28CF8964E92265FF1A30BB7B864DCB7271EE3 (void);
-// 0x000005E9 System.Void TMPro.TMP_Dropdown_<DelayedDestroyDropdownList>d__81::System.IDisposable.Dispose()
+// 0x000005E9 System.Void TMPro.TMP_Dropdown/<DelayedDestroyDropdownList>d__81::System.IDisposable.Dispose()
 extern void U3CDelayedDestroyDropdownListU3Ed__81_System_IDisposable_Dispose_m72F1294BF6674AD255E16E8D3F16DED6B7B278AE (void);
-// 0x000005EA System.Boolean TMPro.TMP_Dropdown_<DelayedDestroyDropdownList>d__81::MoveNext()
+// 0x000005EA System.Boolean TMPro.TMP_Dropdown/<DelayedDestroyDropdownList>d__81::MoveNext()
 extern void U3CDelayedDestroyDropdownListU3Ed__81_MoveNext_m5E94B3ED46FCF43475F5C8CD28DAF6E2E94CBEFC (void);
-// 0x000005EB System.Object TMPro.TMP_Dropdown_<DelayedDestroyDropdownList>d__81::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000005EB System.Object TMPro.TMP_Dropdown/<DelayedDestroyDropdownList>d__81::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDelayedDestroyDropdownListU3Ed__81_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m42A405662A1897823B8784381FDC07DC0E3FCE2F (void);
-// 0x000005EC System.Void TMPro.TMP_Dropdown_<DelayedDestroyDropdownList>d__81::System.Collections.IEnumerator.Reset()
+// 0x000005EC System.Void TMPro.TMP_Dropdown/<DelayedDestroyDropdownList>d__81::System.Collections.IEnumerator.Reset()
 extern void U3CDelayedDestroyDropdownListU3Ed__81_System_Collections_IEnumerator_Reset_m1550726E649B50ACC168BC7FD4DBBDE45DD17DA2 (void);
-// 0x000005ED System.Object TMPro.TMP_Dropdown_<DelayedDestroyDropdownList>d__81::System.Collections.IEnumerator.get_Current()
+// 0x000005ED System.Object TMPro.TMP_Dropdown/<DelayedDestroyDropdownList>d__81::System.Collections.IEnumerator.get_Current()
 extern void U3CDelayedDestroyDropdownListU3Ed__81_System_Collections_IEnumerator_get_Current_m8A65D0DE80B8AD5EF5AE7D0D0AC55045E3B7202C (void);
-// 0x000005EE System.Void TMPro.TMP_FontAsset_<>c::.cctor()
+// 0x000005EE System.Void TMPro.TMP_FontAsset/<>c::.cctor()
 extern void U3CU3Ec__cctor_m2381BFED3DA6B006E56E34B5011B8928167DB9C1 (void);
-// 0x000005EF System.Void TMPro.TMP_FontAsset_<>c::.ctor()
+// 0x000005EF System.Void TMPro.TMP_FontAsset/<>c::.ctor()
 extern void U3CU3Ec__ctor_mAC4B1B80D5F7368795561E7D92D5D46EEB9CB44D (void);
-// 0x000005F0 System.UInt32 TMPro.TMP_FontAsset_<>c::<SortCharacterTable>b__113_0(TMPro.TMP_Character)
+// 0x000005F0 System.UInt32 TMPro.TMP_FontAsset/<>c::<SortCharacterTable>b__113_0(TMPro.TMP_Character)
 extern void U3CU3Ec_U3CSortCharacterTableU3Eb__113_0_m488387F78DE5CFE51B145C460AEEF1B2A789A8AC (void);
-// 0x000005F1 System.UInt32 TMPro.TMP_FontAsset_<>c::<SortGlyphTable>b__114_0(UnityEngine.TextCore.Glyph)
+// 0x000005F1 System.UInt32 TMPro.TMP_FontAsset/<>c::<SortGlyphTable>b__114_0(UnityEngine.TextCore.Glyph)
 extern void U3CU3Ec_U3CSortGlyphTableU3Eb__114_0_m6ABB5BE48952A042AFC489795D9151789072B022 (void);
-// 0x000005F2 System.Void TMPro.KerningTable_<>c__DisplayClass3_0::.ctor()
+// 0x000005F2 System.Void TMPro.KerningTable/<>c__DisplayClass3_0::.ctor()
 extern void U3CU3Ec__DisplayClass3_0__ctor_mBC0F1BC2B9D8FEB935D0AB32FA4ED2B99F8CCB59 (void);
-// 0x000005F3 System.Boolean TMPro.KerningTable_<>c__DisplayClass3_0::<AddKerningPair>b__0(TMPro.KerningPair)
+// 0x000005F3 System.Boolean TMPro.KerningTable/<>c__DisplayClass3_0::<AddKerningPair>b__0(TMPro.KerningPair)
 extern void U3CU3Ec__DisplayClass3_0_U3CAddKerningPairU3Eb__0_m525DE7AFB5B2870CA0C748F991F7984C7C460978 (void);
-// 0x000005F4 System.Void TMPro.KerningTable_<>c__DisplayClass4_0::.ctor()
+// 0x000005F4 System.Void TMPro.KerningTable/<>c__DisplayClass4_0::.ctor()
 extern void U3CU3Ec__DisplayClass4_0__ctor_m4B0F4285C7A369CCE0A04A7C9C2CED2C1D1B0E7F (void);
-// 0x000005F5 System.Boolean TMPro.KerningTable_<>c__DisplayClass4_0::<AddGlyphPairAdjustmentRecord>b__0(TMPro.KerningPair)
+// 0x000005F5 System.Boolean TMPro.KerningTable/<>c__DisplayClass4_0::<AddGlyphPairAdjustmentRecord>b__0(TMPro.KerningPair)
 extern void U3CU3Ec__DisplayClass4_0_U3CAddGlyphPairAdjustmentRecordU3Eb__0_m692B5727E555E3319F364CAC340FD2317BD3F209 (void);
-// 0x000005F6 System.Void TMPro.KerningTable_<>c__DisplayClass5_0::.ctor()
+// 0x000005F6 System.Void TMPro.KerningTable/<>c__DisplayClass5_0::.ctor()
 extern void U3CU3Ec__DisplayClass5_0__ctor_mFCB51BFA7F06E0E59C35F423952C07F5870E245B (void);
-// 0x000005F7 System.Boolean TMPro.KerningTable_<>c__DisplayClass5_0::<RemoveKerningPair>b__0(TMPro.KerningPair)
+// 0x000005F7 System.Boolean TMPro.KerningTable/<>c__DisplayClass5_0::<RemoveKerningPair>b__0(TMPro.KerningPair)
 extern void U3CU3Ec__DisplayClass5_0_U3CRemoveKerningPairU3Eb__0_m4D4F121037BB69F91925A6950D61A5B4A815FB4C (void);
-// 0x000005F8 System.Void TMPro.KerningTable_<>c::.cctor()
+// 0x000005F8 System.Void TMPro.KerningTable/<>c::.cctor()
 extern void U3CU3Ec__cctor_m2CA91EF6E521821EF85E6FFDEC999C5CE11AC9CD (void);
-// 0x000005F9 System.Void TMPro.KerningTable_<>c::.ctor()
+// 0x000005F9 System.Void TMPro.KerningTable/<>c::.ctor()
 extern void U3CU3Ec__ctor_m3735070CA2B9F3C3389E82012A4C89B97C3695E7 (void);
-// 0x000005FA System.UInt32 TMPro.KerningTable_<>c::<SortKerningPairs>b__7_0(TMPro.KerningPair)
+// 0x000005FA System.UInt32 TMPro.KerningTable/<>c::<SortKerningPairs>b__7_0(TMPro.KerningPair)
 extern void U3CU3Ec_U3CSortKerningPairsU3Eb__7_0_m21082CC9A625FCB13C906C4CBFBF6FF71C8F48AD (void);
-// 0x000005FB System.UInt32 TMPro.KerningTable_<>c::<SortKerningPairs>b__7_1(TMPro.KerningPair)
+// 0x000005FB System.UInt32 TMPro.KerningTable/<>c::<SortKerningPairs>b__7_1(TMPro.KerningPair)
 extern void U3CU3Ec_U3CSortKerningPairsU3Eb__7_1_m8099FEE8871463771E55E8D70D9E0B9669E84E01 (void);
-// 0x000005FC System.Void TMPro.TMP_FontFeatureTable_<>c::.cctor()
+// 0x000005FC System.Void TMPro.TMP_FontFeatureTable/<>c::.cctor()
 extern void U3CU3Ec__cctor_mB782ED25C9758DA873B2CC0C8643942623EAE4AE (void);
-// 0x000005FD System.Void TMPro.TMP_FontFeatureTable_<>c::.ctor()
+// 0x000005FD System.Void TMPro.TMP_FontFeatureTable/<>c::.ctor()
 extern void U3CU3Ec__ctor_m8AB0761A7ECA51C2248F740C93634A93967D221A (void);
-// 0x000005FE System.UInt32 TMPro.TMP_FontFeatureTable_<>c::<SortGlyphPairAdjustmentRecords>b__6_0(TMPro.TMP_GlyphPairAdjustmentRecord)
+// 0x000005FE System.UInt32 TMPro.TMP_FontFeatureTable/<>c::<SortGlyphPairAdjustmentRecords>b__6_0(TMPro.TMP_GlyphPairAdjustmentRecord)
 extern void U3CU3Ec_U3CSortGlyphPairAdjustmentRecordsU3Eb__6_0_mEF8743892AFD50895933116CAA378664ABBFFB27 (void);
-// 0x000005FF System.UInt32 TMPro.TMP_FontFeatureTable_<>c::<SortGlyphPairAdjustmentRecords>b__6_1(TMPro.TMP_GlyphPairAdjustmentRecord)
+// 0x000005FF System.UInt32 TMPro.TMP_FontFeatureTable/<>c::<SortGlyphPairAdjustmentRecords>b__6_1(TMPro.TMP_GlyphPairAdjustmentRecord)
 extern void U3CU3Ec_U3CSortGlyphPairAdjustmentRecordsU3Eb__6_1_mD98E447D4A3C0BC57D180CDDDFA1EB27764BE844 (void);
-// 0x00000600 System.Void TMPro.TMP_InputField_OnValidateInput::.ctor(System.Object,System.IntPtr)
+// 0x00000600 System.Void TMPro.TMP_InputField/OnValidateInput::.ctor(System.Object,System.IntPtr)
 extern void OnValidateInput__ctor_m2F63C9B8DDB868372B67D0429E9A23D1998589B1 (void);
-// 0x00000601 System.Char TMPro.TMP_InputField_OnValidateInput::Invoke(System.String,System.Int32,System.Char)
+// 0x00000601 System.Char TMPro.TMP_InputField/OnValidateInput::Invoke(System.String,System.Int32,System.Char)
 extern void OnValidateInput_Invoke_mD24AE3D81A605CC344E2839339A6A2C03B46C658 (void);
-// 0x00000602 System.IAsyncResult TMPro.TMP_InputField_OnValidateInput::BeginInvoke(System.String,System.Int32,System.Char,System.AsyncCallback,System.Object)
+// 0x00000602 System.IAsyncResult TMPro.TMP_InputField/OnValidateInput::BeginInvoke(System.String,System.Int32,System.Char,System.AsyncCallback,System.Object)
 extern void OnValidateInput_BeginInvoke_mB2603567CC5D4318850BA4E18E23A74191837900 (void);
-// 0x00000603 System.Char TMPro.TMP_InputField_OnValidateInput::EndInvoke(System.IAsyncResult)
+// 0x00000603 System.Char TMPro.TMP_InputField/OnValidateInput::EndInvoke(System.IAsyncResult)
 extern void OnValidateInput_EndInvoke_mC5E38DC4DC16E9922502A8BE87800761E7A1BA2C (void);
-// 0x00000604 System.Void TMPro.TMP_InputField_SubmitEvent::.ctor()
+// 0x00000604 System.Void TMPro.TMP_InputField/SubmitEvent::.ctor()
 extern void SubmitEvent__ctor_mCAB226C761F0E3975FCF6CF9E12DC22EF3266B1B (void);
-// 0x00000605 System.Void TMPro.TMP_InputField_OnChangeEvent::.ctor()
+// 0x00000605 System.Void TMPro.TMP_InputField/OnChangeEvent::.ctor()
 extern void OnChangeEvent__ctor_m12590EAE44EABFB7933CBC4C1E89E8FA0509EC7F (void);
-// 0x00000606 System.Void TMPro.TMP_InputField_SelectionEvent::.ctor()
+// 0x00000606 System.Void TMPro.TMP_InputField/SelectionEvent::.ctor()
 extern void SelectionEvent__ctor_m82171CFE1C95992521DF25DB5C78B8F956758CB9 (void);
-// 0x00000607 System.Void TMPro.TMP_InputField_TextSelectionEvent::.ctor()
+// 0x00000607 System.Void TMPro.TMP_InputField/TextSelectionEvent::.ctor()
 extern void TextSelectionEvent__ctor_m982A33FBA9544C6D261621D84D5585871CC5C6D3 (void);
-// 0x00000608 System.Void TMPro.TMP_InputField_TouchScreenKeyboardEvent::.ctor()
+// 0x00000608 System.Void TMPro.TMP_InputField/TouchScreenKeyboardEvent::.ctor()
 extern void TouchScreenKeyboardEvent__ctor_m5C7D8394CC95315B7A88E56680200997F45BC8FA (void);
-// 0x00000609 System.Void TMPro.TMP_InputField_<CaretBlink>d__277::.ctor(System.Int32)
+// 0x00000609 System.Void TMPro.TMP_InputField/<CaretBlink>d__277::.ctor(System.Int32)
 extern void U3CCaretBlinkU3Ed__277__ctor_m4849608F3C95119F294353C1FBCD9BBD560B271F (void);
-// 0x0000060A System.Void TMPro.TMP_InputField_<CaretBlink>d__277::System.IDisposable.Dispose()
+// 0x0000060A System.Void TMPro.TMP_InputField/<CaretBlink>d__277::System.IDisposable.Dispose()
 extern void U3CCaretBlinkU3Ed__277_System_IDisposable_Dispose_mD44EF093781D79A68208EE55B72970BFE3B9B899 (void);
-// 0x0000060B System.Boolean TMPro.TMP_InputField_<CaretBlink>d__277::MoveNext()
+// 0x0000060B System.Boolean TMPro.TMP_InputField/<CaretBlink>d__277::MoveNext()
 extern void U3CCaretBlinkU3Ed__277_MoveNext_m7AE72A34AF2CC2739C55E0AA34B2AAD7E517BDE1 (void);
-// 0x0000060C System.Object TMPro.TMP_InputField_<CaretBlink>d__277::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000060C System.Object TMPro.TMP_InputField/<CaretBlink>d__277::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CCaretBlinkU3Ed__277_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD7B67C64D34E812302EAB41A3A3B3909F019A8A3 (void);
-// 0x0000060D System.Void TMPro.TMP_InputField_<CaretBlink>d__277::System.Collections.IEnumerator.Reset()
+// 0x0000060D System.Void TMPro.TMP_InputField/<CaretBlink>d__277::System.Collections.IEnumerator.Reset()
 extern void U3CCaretBlinkU3Ed__277_System_Collections_IEnumerator_Reset_m782E12EDC7C859517681DD9AD1044E3AE0FD12A4 (void);
-// 0x0000060E System.Object TMPro.TMP_InputField_<CaretBlink>d__277::System.Collections.IEnumerator.get_Current()
+// 0x0000060E System.Object TMPro.TMP_InputField/<CaretBlink>d__277::System.Collections.IEnumerator.get_Current()
 extern void U3CCaretBlinkU3Ed__277_System_Collections_IEnumerator_get_Current_m7D3437527A7AB72E1396BEFF57CCA3507CF99526 (void);
-// 0x0000060F System.Void TMPro.TMP_InputField_<MouseDragOutsideRect>d__295::.ctor(System.Int32)
+// 0x0000060F System.Void TMPro.TMP_InputField/<MouseDragOutsideRect>d__295::.ctor(System.Int32)
 extern void U3CMouseDragOutsideRectU3Ed__295__ctor_m58059005763D1FFA2BA03C57C05E2FFCC6A12671 (void);
-// 0x00000610 System.Void TMPro.TMP_InputField_<MouseDragOutsideRect>d__295::System.IDisposable.Dispose()
+// 0x00000610 System.Void TMPro.TMP_InputField/<MouseDragOutsideRect>d__295::System.IDisposable.Dispose()
 extern void U3CMouseDragOutsideRectU3Ed__295_System_IDisposable_Dispose_m18A62E872BAF1890D9BFD3A215EB4EACBDDEBB41 (void);
-// 0x00000611 System.Boolean TMPro.TMP_InputField_<MouseDragOutsideRect>d__295::MoveNext()
+// 0x00000611 System.Boolean TMPro.TMP_InputField/<MouseDragOutsideRect>d__295::MoveNext()
 extern void U3CMouseDragOutsideRectU3Ed__295_MoveNext_m8114BE833F81CEF5067C3515A7E737CB0EBACE70 (void);
-// 0x00000612 System.Object TMPro.TMP_InputField_<MouseDragOutsideRect>d__295::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000612 System.Object TMPro.TMP_InputField/<MouseDragOutsideRect>d__295::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CMouseDragOutsideRectU3Ed__295_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mAFC5E85A673A015710F337C7CD9D2129EEB66950 (void);
-// 0x00000613 System.Void TMPro.TMP_InputField_<MouseDragOutsideRect>d__295::System.Collections.IEnumerator.Reset()
+// 0x00000613 System.Void TMPro.TMP_InputField/<MouseDragOutsideRect>d__295::System.Collections.IEnumerator.Reset()
 extern void U3CMouseDragOutsideRectU3Ed__295_System_Collections_IEnumerator_Reset_m528BD21CE97142B0A4C5EEFD1283B754C3BFB2E1 (void);
-// 0x00000614 System.Object TMPro.TMP_InputField_<MouseDragOutsideRect>d__295::System.Collections.IEnumerator.get_Current()
+// 0x00000614 System.Object TMPro.TMP_InputField/<MouseDragOutsideRect>d__295::System.Collections.IEnumerator.get_Current()
 extern void U3CMouseDragOutsideRectU3Ed__295_System_Collections_IEnumerator_get_Current_mDA975AFEF913DF2BDAB3FF0E7E928C37392E836B (void);
-// 0x00000615 System.Void TMPro.TMP_ListPool`1_<>c::.cctor()
-// 0x00000616 System.Void TMPro.TMP_ListPool`1_<>c::.ctor()
-// 0x00000617 System.Void TMPro.TMP_ListPool`1_<>c::<.cctor>b__3_0(System.Collections.Generic.List`1<T>)
-// 0x00000618 System.Void TMPro.TMP_MaterialManager_FallbackMaterial::.ctor()
+// 0x00000615 System.Void TMPro.TMP_ListPool`1/<>c::.cctor()
+// 0x00000616 System.Void TMPro.TMP_ListPool`1/<>c::.ctor()
+// 0x00000617 System.Void TMPro.TMP_ListPool`1/<>c::<.cctor>b__3_0(System.Collections.Generic.List`1<T>)
+// 0x00000618 System.Void TMPro.TMP_MaterialManager/FallbackMaterial::.ctor()
 extern void FallbackMaterial__ctor_m8C02231993016F0FBBCF0720AE9C3C734C544B2E (void);
-// 0x00000619 System.Void TMPro.TMP_MaterialManager_MaskingMaterial::.ctor()
+// 0x00000619 System.Void TMPro.TMP_MaterialManager/MaskingMaterial::.ctor()
 extern void MaskingMaterial__ctor_m2287407D082F66D9CCCC65EDDBD59C0875672B4F (void);
-// 0x0000061A System.Void TMPro.TMP_MaterialManager_<>c__DisplayClass10_0::.ctor()
+// 0x0000061A System.Void TMPro.TMP_MaterialManager/<>c__DisplayClass10_0::.ctor()
 extern void U3CU3Ec__DisplayClass10_0__ctor_m32415E35550EF2A3B071AAA741BD23A5AAA0CFD5 (void);
-// 0x0000061B System.Boolean TMPro.TMP_MaterialManager_<>c__DisplayClass10_0::<GetBaseMaterial>b__0(TMPro.TMP_MaterialManager_MaskingMaterial)
+// 0x0000061B System.Boolean TMPro.TMP_MaterialManager/<>c__DisplayClass10_0::<GetBaseMaterial>b__0(TMPro.TMP_MaterialManager/MaskingMaterial)
 extern void U3CU3Ec__DisplayClass10_0_U3CGetBaseMaterialU3Eb__0_mC1650A2D70AD037C655F58614C1694771134F738 (void);
-// 0x0000061C System.Void TMPro.TMP_MaterialManager_<>c__DisplayClass12_0::.ctor()
+// 0x0000061C System.Void TMPro.TMP_MaterialManager/<>c__DisplayClass12_0::.ctor()
 extern void U3CU3Ec__DisplayClass12_0__ctor_m78949FFFB8E4D5717E516C57829E4955BE008DA9 (void);
-// 0x0000061D System.Boolean TMPro.TMP_MaterialManager_<>c__DisplayClass12_0::<AddMaskingMaterial>b__0(TMPro.TMP_MaterialManager_MaskingMaterial)
+// 0x0000061D System.Boolean TMPro.TMP_MaterialManager/<>c__DisplayClass12_0::<AddMaskingMaterial>b__0(TMPro.TMP_MaterialManager/MaskingMaterial)
 extern void U3CU3Ec__DisplayClass12_0_U3CAddMaskingMaterialU3Eb__0_mA355A120A378A7CBFA9DC04CB7C5A21208FF1F25 (void);
-// 0x0000061E System.Void TMPro.TMP_MaterialManager_<>c__DisplayClass13_0::.ctor()
+// 0x0000061E System.Void TMPro.TMP_MaterialManager/<>c__DisplayClass13_0::.ctor()
 extern void U3CU3Ec__DisplayClass13_0__ctor_mBEEED38222A1B74896A52BFE5E7F2CE02D703274 (void);
-// 0x0000061F System.Boolean TMPro.TMP_MaterialManager_<>c__DisplayClass13_0::<RemoveStencilMaterial>b__0(TMPro.TMP_MaterialManager_MaskingMaterial)
+// 0x0000061F System.Boolean TMPro.TMP_MaterialManager/<>c__DisplayClass13_0::<RemoveStencilMaterial>b__0(TMPro.TMP_MaterialManager/MaskingMaterial)
 extern void U3CU3Ec__DisplayClass13_0_U3CRemoveStencilMaterialU3Eb__0_mC6A5C87C06FEB59DFD8F775620E06D12F373A21A (void);
-// 0x00000620 System.Void TMPro.TMP_MaterialManager_<>c__DisplayClass14_0::.ctor()
+// 0x00000620 System.Void TMPro.TMP_MaterialManager/<>c__DisplayClass14_0::.ctor()
 extern void U3CU3Ec__DisplayClass14_0__ctor_mF4154F7E08253A5632883186309D56F25599414E (void);
-// 0x00000621 System.Boolean TMPro.TMP_MaterialManager_<>c__DisplayClass14_0::<ReleaseBaseMaterial>b__0(TMPro.TMP_MaterialManager_MaskingMaterial)
+// 0x00000621 System.Boolean TMPro.TMP_MaterialManager/<>c__DisplayClass14_0::<ReleaseBaseMaterial>b__0(TMPro.TMP_MaterialManager/MaskingMaterial)
 extern void U3CU3Ec__DisplayClass14_0_U3CReleaseBaseMaterialU3Eb__0_m9D6928ECA56D7667D503FF7F2EEC62C535260776 (void);
-// 0x00000622 System.Void TMPro.TMP_Settings_LineBreakingTable::.ctor()
+// 0x00000622 System.Void TMPro.TMP_Settings/LineBreakingTable::.ctor()
 extern void LineBreakingTable__ctor_mC410A1A7E117279F6EDAF80D502339EFA444836D (void);
-// 0x00000623 System.Void TMPro.TMP_SpriteAnimator_<DoSpriteAnimationInternal>d__7::.ctor(System.Int32)
+// 0x00000623 System.Void TMPro.TMP_SpriteAnimator/<DoSpriteAnimationInternal>d__7::.ctor(System.Int32)
 extern void U3CDoSpriteAnimationInternalU3Ed__7__ctor_m2585844CBE481DEB7DF282F35DB566501DA3B8CE (void);
-// 0x00000624 System.Void TMPro.TMP_SpriteAnimator_<DoSpriteAnimationInternal>d__7::System.IDisposable.Dispose()
+// 0x00000624 System.Void TMPro.TMP_SpriteAnimator/<DoSpriteAnimationInternal>d__7::System.IDisposable.Dispose()
 extern void U3CDoSpriteAnimationInternalU3Ed__7_System_IDisposable_Dispose_mE1622D54FCE475394DC2C715756ACDBB37CE44A2 (void);
-// 0x00000625 System.Boolean TMPro.TMP_SpriteAnimator_<DoSpriteAnimationInternal>d__7::MoveNext()
+// 0x00000625 System.Boolean TMPro.TMP_SpriteAnimator/<DoSpriteAnimationInternal>d__7::MoveNext()
 extern void U3CDoSpriteAnimationInternalU3Ed__7_MoveNext_m2CB1DB75182F93017CCA491CE73D80B030F9B618 (void);
-// 0x00000626 System.Object TMPro.TMP_SpriteAnimator_<DoSpriteAnimationInternal>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000626 System.Object TMPro.TMP_SpriteAnimator/<DoSpriteAnimationInternal>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDoSpriteAnimationInternalU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7DFA72A28211D6E507C160A6A020DD369452DA5F (void);
-// 0x00000627 System.Void TMPro.TMP_SpriteAnimator_<DoSpriteAnimationInternal>d__7::System.Collections.IEnumerator.Reset()
+// 0x00000627 System.Void TMPro.TMP_SpriteAnimator/<DoSpriteAnimationInternal>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CDoSpriteAnimationInternalU3Ed__7_System_Collections_IEnumerator_Reset_m07491AB94A20BB45497A3C3702CE4F7B973CAABC (void);
-// 0x00000628 System.Object TMPro.TMP_SpriteAnimator_<DoSpriteAnimationInternal>d__7::System.Collections.IEnumerator.get_Current()
+// 0x00000628 System.Object TMPro.TMP_SpriteAnimator/<DoSpriteAnimationInternal>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CDoSpriteAnimationInternalU3Ed__7_System_Collections_IEnumerator_get_Current_m15B6B9BC7AA5CAB00B568096D900BE3E19C4478D (void);
-// 0x00000629 System.Void TMPro.TMP_SpriteAsset_<>c::.cctor()
+// 0x00000629 System.Void TMPro.TMP_SpriteAsset/<>c::.cctor()
 extern void U3CU3Ec__cctor_m4F58211D148109DA8B2A6324066DF25D041A2645 (void);
-// 0x0000062A System.Void TMPro.TMP_SpriteAsset_<>c::.ctor()
+// 0x0000062A System.Void TMPro.TMP_SpriteAsset/<>c::.ctor()
 extern void U3CU3Ec__ctor_mB61A04B3EE3B54FF6481E41A27100C2A68E72D53 (void);
-// 0x0000062B System.UInt32 TMPro.TMP_SpriteAsset_<>c::<SortGlyphTable>b__40_0(TMPro.TMP_SpriteGlyph)
+// 0x0000062B System.UInt32 TMPro.TMP_SpriteAsset/<>c::<SortGlyphTable>b__40_0(TMPro.TMP_SpriteGlyph)
 extern void U3CU3Ec_U3CSortGlyphTableU3Eb__40_0_m7668441E4295B66BF6246D684155CBADEFD171AD (void);
-// 0x0000062C System.UInt32 TMPro.TMP_SpriteAsset_<>c::<SortCharacterTable>b__41_0(TMPro.TMP_SpriteCharacter)
+// 0x0000062C System.UInt32 TMPro.TMP_SpriteAsset/<>c::<SortCharacterTable>b__41_0(TMPro.TMP_SpriteCharacter)
 extern void U3CU3Ec_U3CSortCharacterTableU3Eb__41_0_mFE558EA15B86233E5023B0F851438712B25C1D3F (void);
-// 0x0000062D System.Void TMPro.TMP_Text_CharacterSubstitution::.ctor(System.Int32,System.UInt32)
-extern void CharacterSubstitution__ctor_m499EB56C0FDE4BF20DEDC346AA9E93EAD3825F0E_AdjustorThunk (void);
-// 0x0000062E System.Void TMPro.TMP_Text_SpecialCharacter::.ctor(TMPro.TMP_Character,System.Int32)
-extern void SpecialCharacter__ctor_m7C210805AA75202222967909F3FB7EE5CE6D1976_AdjustorThunk (void);
-// 0x0000062F System.Void TMPro.TMP_Text_<>c::.cctor()
+// 0x0000062D System.Void TMPro.TMP_Text/CharacterSubstitution::.ctor(System.Int32,System.UInt32)
+extern void CharacterSubstitution__ctor_m499EB56C0FDE4BF20DEDC346AA9E93EAD3825F0E (void);
+// 0x0000062E System.Void TMPro.TMP_Text/SpecialCharacter::.ctor(TMPro.TMP_Character,System.Int32)
+extern void SpecialCharacter__ctor_m7C210805AA75202222967909F3FB7EE5CE6D1976 (void);
+// 0x0000062F System.Void TMPro.TMP_Text/<>c::.cctor()
 extern void U3CU3Ec__cctor_m3CD664E2EED7EE7DFF931BFC2D0DAF1A19F542A3 (void);
-// 0x00000630 System.Void TMPro.TMP_Text_<>c::.ctor()
+// 0x00000630 System.Void TMPro.TMP_Text/<>c::.ctor()
 extern void U3CU3Ec__ctor_mECEF1C8E50D281B7739C32B11DA510F9255BA454 (void);
-// 0x00000631 System.Void TMPro.TMP_Text_<>c::<.ctor>b__625_0(TMPro.TMP_TextInfo)
+// 0x00000631 System.Void TMPro.TMP_Text/<>c::<.ctor>b__625_0(TMPro.TMP_TextInfo)
 extern void U3CU3Ec_U3C_ctorU3Eb__625_0_mF3971C5201FA5D27A30FABACC93B99BECD4DB340 (void);
-// 0x00000632 System.Void TMPro.TMP_TextUtilities_LineSegment::.ctor(UnityEngine.Vector3,UnityEngine.Vector3)
-extern void LineSegment__ctor_mC3D7CF247BBB4409049F9CCC8B1A4788DCA7FF38_AdjustorThunk (void);
-// 0x00000633 System.Void TMPro.TextMeshProUGUI_<DelayedGraphicRebuild>d__68::.ctor(System.Int32)
+// 0x00000632 System.Void TMPro.TMP_TextUtilities/LineSegment::.ctor(UnityEngine.Vector3,UnityEngine.Vector3)
+extern void LineSegment__ctor_mC3D7CF247BBB4409049F9CCC8B1A4788DCA7FF38 (void);
+// 0x00000633 System.Void TMPro.TextMeshProUGUI/<DelayedGraphicRebuild>d__68::.ctor(System.Int32)
 extern void U3CDelayedGraphicRebuildU3Ed__68__ctor_m362DB869A01B9BC9E4F0A96DBCB387BBC83D8CBC (void);
-// 0x00000634 System.Void TMPro.TextMeshProUGUI_<DelayedGraphicRebuild>d__68::System.IDisposable.Dispose()
+// 0x00000634 System.Void TMPro.TextMeshProUGUI/<DelayedGraphicRebuild>d__68::System.IDisposable.Dispose()
 extern void U3CDelayedGraphicRebuildU3Ed__68_System_IDisposable_Dispose_m7BF1D5BE0F54F484ADA45806896CD7BC6AC527E6 (void);
-// 0x00000635 System.Boolean TMPro.TextMeshProUGUI_<DelayedGraphicRebuild>d__68::MoveNext()
+// 0x00000635 System.Boolean TMPro.TextMeshProUGUI/<DelayedGraphicRebuild>d__68::MoveNext()
 extern void U3CDelayedGraphicRebuildU3Ed__68_MoveNext_m6CB912C1254D74E6EFAB3C18E964ABA69EC71E9F (void);
-// 0x00000636 System.Object TMPro.TextMeshProUGUI_<DelayedGraphicRebuild>d__68::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000636 System.Object TMPro.TextMeshProUGUI/<DelayedGraphicRebuild>d__68::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDelayedGraphicRebuildU3Ed__68_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA1CA279A3F7A6FF2587BF31581A276DE40C92BD9 (void);
-// 0x00000637 System.Void TMPro.TextMeshProUGUI_<DelayedGraphicRebuild>d__68::System.Collections.IEnumerator.Reset()
+// 0x00000637 System.Void TMPro.TextMeshProUGUI/<DelayedGraphicRebuild>d__68::System.Collections.IEnumerator.Reset()
 extern void U3CDelayedGraphicRebuildU3Ed__68_System_Collections_IEnumerator_Reset_m52D8D1830CC5EC8DBDB9C67EC24FE5F8C3C93871 (void);
-// 0x00000638 System.Object TMPro.TextMeshProUGUI_<DelayedGraphicRebuild>d__68::System.Collections.IEnumerator.get_Current()
+// 0x00000638 System.Object TMPro.TextMeshProUGUI/<DelayedGraphicRebuild>d__68::System.Collections.IEnumerator.get_Current()
 extern void U3CDelayedGraphicRebuildU3Ed__68_System_Collections_IEnumerator_get_Current_mCC981E264B742E182B3F09BF5931BDD6C1AE7E6E (void);
-// 0x00000639 System.Void TMPro.TextMeshProUGUI_<DelayedMaterialRebuild>d__69::.ctor(System.Int32)
+// 0x00000639 System.Void TMPro.TextMeshProUGUI/<DelayedMaterialRebuild>d__69::.ctor(System.Int32)
 extern void U3CDelayedMaterialRebuildU3Ed__69__ctor_mE68C40A21C8894C64A6119A7A275D8F0958A1E7A (void);
-// 0x0000063A System.Void TMPro.TextMeshProUGUI_<DelayedMaterialRebuild>d__69::System.IDisposable.Dispose()
+// 0x0000063A System.Void TMPro.TextMeshProUGUI/<DelayedMaterialRebuild>d__69::System.IDisposable.Dispose()
 extern void U3CDelayedMaterialRebuildU3Ed__69_System_IDisposable_Dispose_mC37A2395603A30A31FFE7D731354D04544FDDCCF (void);
-// 0x0000063B System.Boolean TMPro.TextMeshProUGUI_<DelayedMaterialRebuild>d__69::MoveNext()
+// 0x0000063B System.Boolean TMPro.TextMeshProUGUI/<DelayedMaterialRebuild>d__69::MoveNext()
 extern void U3CDelayedMaterialRebuildU3Ed__69_MoveNext_m2603888D3E9EF147AA0AE159DF980152F0CE5BD7 (void);
-// 0x0000063C System.Object TMPro.TextMeshProUGUI_<DelayedMaterialRebuild>d__69::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000063C System.Object TMPro.TextMeshProUGUI/<DelayedMaterialRebuild>d__69::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDelayedMaterialRebuildU3Ed__69_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDFC62765DCF8A0B60B500F33CBC23D41624F7ECC (void);
-// 0x0000063D System.Void TMPro.TextMeshProUGUI_<DelayedMaterialRebuild>d__69::System.Collections.IEnumerator.Reset()
+// 0x0000063D System.Void TMPro.TextMeshProUGUI/<DelayedMaterialRebuild>d__69::System.Collections.IEnumerator.Reset()
 extern void U3CDelayedMaterialRebuildU3Ed__69_System_Collections_IEnumerator_Reset_m61338BF18B6D43FFC5DCF8767CB72AFDED153D1C (void);
-// 0x0000063E System.Object TMPro.TextMeshProUGUI_<DelayedMaterialRebuild>d__69::System.Collections.IEnumerator.get_Current()
+// 0x0000063E System.Object TMPro.TextMeshProUGUI/<DelayedMaterialRebuild>d__69::System.Collections.IEnumerator.get_Current()
 extern void U3CDelayedMaterialRebuildU3Ed__69_System_Collections_IEnumerator_get_Current_mD884D17ABFEEE2A8D732584F0EE41C88D44B2FFC (void);
-// 0x0000063F System.String TMPro.SpriteAssetUtilities.TexturePacker_JsonArray_SpriteFrame::ToString()
-extern void SpriteFrame_ToString_mBE426825315E87D0E1CA8E58C66928B50D9F8F0A_AdjustorThunk (void);
-// 0x00000640 System.String TMPro.SpriteAssetUtilities.TexturePacker_JsonArray_SpriteSize::ToString()
-extern void SpriteSize_ToString_m36860AE1A6008CA831041259E35DDEF8CC1A3175_AdjustorThunk (void);
-// 0x00000641 System.Void TMPro.SpriteAssetUtilities.TexturePacker_JsonArray_SpriteDataObject::.ctor()
+// 0x0000063F System.String TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/SpriteFrame::ToString()
+extern void SpriteFrame_ToString_mBE426825315E87D0E1CA8E58C66928B50D9F8F0A (void);
+// 0x00000640 System.String TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/SpriteSize::ToString()
+extern void SpriteSize_ToString_m36860AE1A6008CA831041259E35DDEF8CC1A3175 (void);
+// 0x00000641 System.Void TMPro.SpriteAssetUtilities.TexturePacker_JsonArray/SpriteDataObject::.ctor()
 extern void SpriteDataObject__ctor_mB0E1D1ACF5A6AA8811A8F38757298D9050359BC5 (void);
 static Il2CppMethodPointer s_methodPointers[1601] = 
 {
@@ -3192,7 +3192,7 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	MaterialReferenceManager_TryGetMaterial_m2AA4852A535C0F514937A51B6EB0E3D2F7B1552C,
 	MaterialReferenceManager_TryGetMaterialInternal_mECB393FEA232E1D3190CD2196013743BC61C7966,
 	MaterialReferenceManager__ctor_m641E0CCC402113B0B1971DD6E7E6807F2CDB2D8B,
-	MaterialReference__ctor_m8A0224802E6CCD9EDA5544A462856716F3D9D2CA_AdjustorThunk,
+	MaterialReference__ctor_m8A0224802E6CCD9EDA5544A462856716F3D9D2CA,
 	MaterialReference_Contains_mCC513D0DA4B0D1DCE09B35F6BD342BB86854CF18,
 	MaterialReference_AddMaterialReference_mDC8CFAEAF14DD6FB6226FD18C9909795164DFCC4,
 	MaterialReference_AddMaterialReference_m487BEAA603F6F7D1DBAD38D01F4674D7650F8FD2,
@@ -3204,34 +3204,34 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	TMP_Character__ctor_m92CCCAC2D62FF33A8FEF1E296E70DD3184EADAA6,
 	TMP_Vertex_get_zero_m095D835F077B1128E647CC3327790ED8C990F2A1,
 	TMP_Vertex__cctor_mD5A0AE973ACF9F48E191BF0E94D82BC7E1F6BCB5,
-	TMP_Offset_get_left_m7111593CAC18B4079F2D0C6FE0F5EF2355F1ABB0_AdjustorThunk,
-	TMP_Offset_set_left_mC96D081DBD8E448425537531F671F74C9D3AFACB_AdjustorThunk,
-	TMP_Offset_get_right_mD16DC4C5B865B67B0C3DEB9FA2CB20AE63B37241_AdjustorThunk,
-	TMP_Offset_set_right_mC2091554376960B07474D232D57BCFD312971F93_AdjustorThunk,
-	TMP_Offset_get_top_m222049807EB4BDC29323B8FC10BDEDB0D7255962_AdjustorThunk,
-	TMP_Offset_set_top_mF4D5C73F78B6AE7E187D98AF94D6D410CAE08FE4_AdjustorThunk,
-	TMP_Offset_get_bottom_m7A24544C0E773DC3C4CA744F7854E47ADF6DDF6C_AdjustorThunk,
-	TMP_Offset_set_bottom_mD0A15F93791E0317CC3BA970BCA11B2FB8F7ECD4_AdjustorThunk,
-	TMP_Offset_get_horizontal_m250DDED66F972933AE9FEA8DE078A16B28E0EAE3_AdjustorThunk,
-	TMP_Offset_set_horizontal_mA2395FC2E5FA7735723E123F7BA613A35670A3A0_AdjustorThunk,
-	TMP_Offset_get_vertical_m76EC378717F2A7A1E46C903FBD1602BAFE2E5264_AdjustorThunk,
-	TMP_Offset_set_vertical_mD28A9F3B55B57020082CF334C123C54BD834B2C6_AdjustorThunk,
+	TMP_Offset_get_left_m7111593CAC18B4079F2D0C6FE0F5EF2355F1ABB0,
+	TMP_Offset_set_left_mC96D081DBD8E448425537531F671F74C9D3AFACB,
+	TMP_Offset_get_right_mD16DC4C5B865B67B0C3DEB9FA2CB20AE63B37241,
+	TMP_Offset_set_right_mC2091554376960B07474D232D57BCFD312971F93,
+	TMP_Offset_get_top_m222049807EB4BDC29323B8FC10BDEDB0D7255962,
+	TMP_Offset_set_top_mF4D5C73F78B6AE7E187D98AF94D6D410CAE08FE4,
+	TMP_Offset_get_bottom_m7A24544C0E773DC3C4CA744F7854E47ADF6DDF6C,
+	TMP_Offset_set_bottom_mD0A15F93791E0317CC3BA970BCA11B2FB8F7ECD4,
+	TMP_Offset_get_horizontal_m250DDED66F972933AE9FEA8DE078A16B28E0EAE3,
+	TMP_Offset_set_horizontal_mA2395FC2E5FA7735723E123F7BA613A35670A3A0,
+	TMP_Offset_get_vertical_m76EC378717F2A7A1E46C903FBD1602BAFE2E5264,
+	TMP_Offset_set_vertical_mD28A9F3B55B57020082CF334C123C54BD834B2C6,
 	TMP_Offset_get_zero_mFDC76D7602C35C005FD456175B7859A9459507FE,
-	TMP_Offset__ctor_mAB27756EC3883CE1184DF74B0FA5270A7BA8072E_AdjustorThunk,
-	TMP_Offset__ctor_mE2B70D1B00F5EBAD9FC83DF4BD141824A9FADD7B_AdjustorThunk,
+	TMP_Offset__ctor_mAB27756EC3883CE1184DF74B0FA5270A7BA8072E,
+	TMP_Offset__ctor_mE2B70D1B00F5EBAD9FC83DF4BD141824A9FADD7B,
 	TMP_Offset_op_Equality_m42AD3E1BBD3F8149CFD1FECF40D895C7FBD9B8C8,
 	TMP_Offset_op_Inequality_m1FC2CDD17A9DD01D8EC4363AD8866983F7CDF6E2,
 	TMP_Offset_op_Multiply_mD09F79C67B1FA8CCEC733617CD9D7D8D7A0322E4,
-	TMP_Offset_GetHashCode_m548BF72C33352EFC439F2538C8552E309A3F80AE_AdjustorThunk,
-	TMP_Offset_Equals_m31E80A4B31069AC7FBBA0E7951899FFCF8FB1351_AdjustorThunk,
-	TMP_Offset_Equals_m63031D047454A40947395DE96C4C76333BA9B3FF_AdjustorThunk,
+	TMP_Offset_GetHashCode_m548BF72C33352EFC439F2538C8552E309A3F80AE,
+	TMP_Offset_Equals_m31E80A4B31069AC7FBBA0E7951899FFCF8FB1351,
+	TMP_Offset_Equals_m63031D047454A40947395DE96C4C76333BA9B3FF,
 	TMP_Offset__cctor_m14901D153E407027F0A47AD5BB649EC581D81A2F,
-	HighlightState__ctor_mD7C4923EBEABB28FA3C1F4D99A0A9576BD3C9685_AdjustorThunk,
+	HighlightState__ctor_mD7C4923EBEABB28FA3C1F4D99A0A9576BD3C9685,
 	HighlightState_op_Equality_m8C452347EB265E6BBB6DFB297A607C08987C2836,
 	HighlightState_op_Inequality_mE6A683BA0C3040EE201A06B15EBD5088A40F508B,
-	HighlightState_GetHashCode_m1368EE338E940DC3F6AE976186CB7F19C23D5315_AdjustorThunk,
-	HighlightState_Equals_mA688E4EDA7BBEFAAD715CD68996B7EAD52C4602B_AdjustorThunk,
-	HighlightState_Equals_m15C11E8C2AAE79291B8AA75FD35349AC0F540FAD_AdjustorThunk,
+	HighlightState_GetHashCode_m1368EE338E940DC3F6AE976186CB7F19C23D5315,
+	HighlightState_Equals_mA688E4EDA7BBEFAAD715CD68996B7EAD52C4602B,
+	HighlightState_Equals_m15C11E8C2AAE79291B8AA75FD35349AC0F540FAD,
 	TMP_ColorGradient__ctor_m4FBD4203CA2850680B85F3E36B0EC6CA5EEFFB57,
 	TMP_ColorGradient__ctor_mFE36AC4A25E3E693AD6BB7FDDF700E36EDB3C4D5,
 	TMP_ColorGradient__ctor_mCFBFA0057530F48BD0FE4AE6D2F9E6D25CBAF075,
@@ -3241,34 +3241,34 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	NULL,
 	NULL,
 	NULL,
-	ColorTween_get_startColor_m79C9747E3C651BC5D1123AB25863EE23008175A8_AdjustorThunk,
-	ColorTween_set_startColor_mB4B46C8FB825F06DF2A22FA5A496DE1DCE801CE6_AdjustorThunk,
-	ColorTween_get_targetColor_m9FC04D007878395E9C323188AF2B1BC2177E787F_AdjustorThunk,
-	ColorTween_set_targetColor_mC48FD8CFFB87569AF5D81B6EE3717FDAC46768D1_AdjustorThunk,
-	ColorTween_get_tweenMode_m768147B7D6714EAAFD670793B7CF7A6CF01C6379_AdjustorThunk,
-	ColorTween_set_tweenMode_m641C8A51D8DFB3BA7EC81A656AFBCB82DB42E5D3_AdjustorThunk,
-	ColorTween_get_duration_m620392D83A7B1514379863C0B28ACA3F351499D4_AdjustorThunk,
-	ColorTween_set_duration_m437051180E4B9A415C1D3567074DCC7987031E78_AdjustorThunk,
-	ColorTween_get_ignoreTimeScale_mE3C8672A317D63A77271E00C56C2E7EAD59D79BE_AdjustorThunk,
-	ColorTween_set_ignoreTimeScale_mA60EF7D068FD1F937B7856E55A3F27EF6B923EB3_AdjustorThunk,
-	ColorTween_TweenValue_m6CFA463FFBCB9159C54F54BB83BE7E2A173951A2_AdjustorThunk,
-	ColorTween_AddOnChangedCallback_m7980448B91E65D8B2442FBEE8278518F8C9F0A4B_AdjustorThunk,
-	ColorTween_GetIgnoreTimescale_m1C6B3D1293170A21AD3BFC6046D94E46141169A0_AdjustorThunk,
-	ColorTween_GetDuration_m98630993C66DCDC1169EAAE7A97BC1F87E0219FB_AdjustorThunk,
-	ColorTween_ValidTarget_m73286CC6D66E4CF18422448A13216DA15B97A5E7_AdjustorThunk,
-	FloatTween_get_startValue_m24465BFC3FF33EFE53A224AC26563056266E0243_AdjustorThunk,
-	FloatTween_set_startValue_mE1012A0EE3E8B964B85BAAFC1A9ACCAAC9F89EAF_AdjustorThunk,
-	FloatTween_get_targetValue_mE849355C0DA1D81C57AA149B3BDD07CD3D0383B3_AdjustorThunk,
-	FloatTween_set_targetValue_mD6B41E937B0AC0563C944548487C12B82C39C8EF_AdjustorThunk,
-	FloatTween_get_duration_mF4EDC7886A6648CA9C080BA506BDCDF1E90E8EAB_AdjustorThunk,
-	FloatTween_set_duration_m4671C2A9607F55CAEC364549F5FDABA7CD785E94_AdjustorThunk,
-	FloatTween_get_ignoreTimeScale_m0655DF2E573BABA2A03581E2BDBCF20F616ACA75_AdjustorThunk,
-	FloatTween_set_ignoreTimeScale_mD28514DDC388403086D6638C10C81E499EC20E02_AdjustorThunk,
-	FloatTween_TweenValue_m6FCEDE4DEACE698BF5B0F59C7AE7DF86FA24B4FE_AdjustorThunk,
-	FloatTween_AddOnChangedCallback_m21B9C6C3958BC0D300F71CFC993DCD58F837B8BA_AdjustorThunk,
-	FloatTween_GetIgnoreTimescale_m76F243806700345FA0BBA1E56EAA3689D4B70293_AdjustorThunk,
-	FloatTween_GetDuration_m04B2176ECB45D130DBCD0A404B95914091E4E264_AdjustorThunk,
-	FloatTween_ValidTarget_m6BE627E7379BE53302471D8E04C9A12724EC9896_AdjustorThunk,
+	ColorTween_get_startColor_m79C9747E3C651BC5D1123AB25863EE23008175A8,
+	ColorTween_set_startColor_mB4B46C8FB825F06DF2A22FA5A496DE1DCE801CE6,
+	ColorTween_get_targetColor_m9FC04D007878395E9C323188AF2B1BC2177E787F,
+	ColorTween_set_targetColor_mC48FD8CFFB87569AF5D81B6EE3717FDAC46768D1,
+	ColorTween_get_tweenMode_m768147B7D6714EAAFD670793B7CF7A6CF01C6379,
+	ColorTween_set_tweenMode_m641C8A51D8DFB3BA7EC81A656AFBCB82DB42E5D3,
+	ColorTween_get_duration_m620392D83A7B1514379863C0B28ACA3F351499D4,
+	ColorTween_set_duration_m437051180E4B9A415C1D3567074DCC7987031E78,
+	ColorTween_get_ignoreTimeScale_mE3C8672A317D63A77271E00C56C2E7EAD59D79BE,
+	ColorTween_set_ignoreTimeScale_mA60EF7D068FD1F937B7856E55A3F27EF6B923EB3,
+	ColorTween_TweenValue_m6CFA463FFBCB9159C54F54BB83BE7E2A173951A2,
+	ColorTween_AddOnChangedCallback_m7980448B91E65D8B2442FBEE8278518F8C9F0A4B,
+	ColorTween_GetIgnoreTimescale_m1C6B3D1293170A21AD3BFC6046D94E46141169A0,
+	ColorTween_GetDuration_m98630993C66DCDC1169EAAE7A97BC1F87E0219FB,
+	ColorTween_ValidTarget_m73286CC6D66E4CF18422448A13216DA15B97A5E7,
+	FloatTween_get_startValue_m24465BFC3FF33EFE53A224AC26563056266E0243,
+	FloatTween_set_startValue_mE1012A0EE3E8B964B85BAAFC1A9ACCAAC9F89EAF,
+	FloatTween_get_targetValue_mE849355C0DA1D81C57AA149B3BDD07CD3D0383B3,
+	FloatTween_set_targetValue_mD6B41E937B0AC0563C944548487C12B82C39C8EF,
+	FloatTween_get_duration_mF4EDC7886A6648CA9C080BA506BDCDF1E90E8EAB,
+	FloatTween_set_duration_m4671C2A9607F55CAEC364549F5FDABA7CD785E94,
+	FloatTween_get_ignoreTimeScale_m0655DF2E573BABA2A03581E2BDBCF20F616ACA75,
+	FloatTween_set_ignoreTimeScale_mD28514DDC388403086D6638C10C81E499EC20E02,
+	FloatTween_TweenValue_m6FCEDE4DEACE698BF5B0F59C7AE7DF86FA24B4FE,
+	FloatTween_AddOnChangedCallback_m21B9C6C3958BC0D300F71CFC993DCD58F837B8BA,
+	FloatTween_GetIgnoreTimescale_m76F243806700345FA0BBA1E56EAA3689D4B70293,
+	FloatTween_GetDuration_m04B2176ECB45D130DBCD0A404B95914091E4E264,
+	FloatTween_ValidTarget_m6BE627E7379BE53302471D8E04C9A12724EC9896,
 	NULL,
 	NULL,
 	NULL,
@@ -3434,9 +3434,9 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	FaceInfo_Legacy__ctor_m21A6C35593D730695282EAA9B95FECB1FC7B6D07,
 	TMP_Glyph_Clone_mF464BF08B6C0729452C76A3FB3BA415D34BC8B95,
 	TMP_Glyph__ctor_mCD09617810AD48FA160FDEA526773510E10638FC,
-	FontAssetCreationSettings__ctor_m5E1E74A0F624E77A48A245FF893D4B2AE606BE53_AdjustorThunk,
-	KerningPairKey__ctor_mCE68D007678E645AB597CE97559FC1F6F06B9265_AdjustorThunk,
-	GlyphValueRecord_Legacy__ctor_m3EC72C474F6953D16C1040C012FE00FE38720F94_AdjustorThunk,
+	FontAssetCreationSettings__ctor_m5E1E74A0F624E77A48A245FF893D4B2AE606BE53,
+	KerningPairKey__ctor_mCE68D007678E645AB597CE97559FC1F6F06B9265,
+	GlyphValueRecord_Legacy__ctor_m3EC72C474F6953D16C1040C012FE00FE38720F94,
 	GlyphValueRecord_Legacy_op_Addition_m6297D838D9AFA09202A110280AF5DF4AC6DEE43E,
 	KerningPair_get_firstGlyph_mBAAEC0435760967479A815532FCB235C58217F4B,
 	KerningPair_set_firstGlyph_m6F35456FF13F8919BF0EC3760AF0D871D6B64A5E,
@@ -3473,24 +3473,24 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	TMP_FontFeatureTable_set_glyphPairAdjustmentRecords_mBE3AA691410A00FFDC89482568FDE311409D2FA7,
 	TMP_FontFeatureTable__ctor_mA46F5DFF466AE07A6E873ABB3B29C2BD00E5C5F9,
 	TMP_FontFeatureTable_SortGlyphPairAdjustmentRecords_m598DFA55F04B1369D8FC7BEA14413F2D6A6AC2A0,
-	TMP_GlyphValueRecord_get_xPlacement_m3E6AF4FD83B8F62BDD175D65B5AC602F76CE7D87_AdjustorThunk,
-	TMP_GlyphValueRecord_set_xPlacement_mE5713B3E6F00C9C4C294C41071CD1B3F3CEDA0F3_AdjustorThunk,
-	TMP_GlyphValueRecord_get_yPlacement_mDC2BA3411D3612D8672FB71170636CBC33B16D60_AdjustorThunk,
-	TMP_GlyphValueRecord_set_yPlacement_mB8AFE695B38A4F73016C4486016FD3904B72A683_AdjustorThunk,
-	TMP_GlyphValueRecord_get_xAdvance_mABABA715297F9E0A3AC8E4D38847A34FF0E57207_AdjustorThunk,
-	TMP_GlyphValueRecord_set_xAdvance_mA6CC02535F44692B8B7210E23BE2B27647B624BC_AdjustorThunk,
-	TMP_GlyphValueRecord_get_yAdvance_m2C178AACE0DA6C5291CD4476C2198C98131771D1_AdjustorThunk,
-	TMP_GlyphValueRecord_set_yAdvance_mC1DF1EFF7929984821409D3FDD64950603A7F552_AdjustorThunk,
-	TMP_GlyphValueRecord__ctor_mA49CDDE5921B64F7AAD13359885FF07CE4C48F44_AdjustorThunk,
-	TMP_GlyphValueRecord__ctor_mC0A12FE3477C4D9599FA6666B303034772686226_AdjustorThunk,
-	TMP_GlyphValueRecord__ctor_m62AF77F03E7D6D9F3858A6DC7DDA642B4378E608_AdjustorThunk,
+	TMP_GlyphValueRecord_get_xPlacement_m3E6AF4FD83B8F62BDD175D65B5AC602F76CE7D87,
+	TMP_GlyphValueRecord_set_xPlacement_mE5713B3E6F00C9C4C294C41071CD1B3F3CEDA0F3,
+	TMP_GlyphValueRecord_get_yPlacement_mDC2BA3411D3612D8672FB71170636CBC33B16D60,
+	TMP_GlyphValueRecord_set_yPlacement_mB8AFE695B38A4F73016C4486016FD3904B72A683,
+	TMP_GlyphValueRecord_get_xAdvance_mABABA715297F9E0A3AC8E4D38847A34FF0E57207,
+	TMP_GlyphValueRecord_set_xAdvance_mA6CC02535F44692B8B7210E23BE2B27647B624BC,
+	TMP_GlyphValueRecord_get_yAdvance_m2C178AACE0DA6C5291CD4476C2198C98131771D1,
+	TMP_GlyphValueRecord_set_yAdvance_mC1DF1EFF7929984821409D3FDD64950603A7F552,
+	TMP_GlyphValueRecord__ctor_mA49CDDE5921B64F7AAD13359885FF07CE4C48F44,
+	TMP_GlyphValueRecord__ctor_mC0A12FE3477C4D9599FA6666B303034772686226,
+	TMP_GlyphValueRecord__ctor_m62AF77F03E7D6D9F3858A6DC7DDA642B4378E608,
 	TMP_GlyphValueRecord_op_Addition_m84B89D0F31EC63BF8D2953D50DF0616900789A75,
-	TMP_GlyphAdjustmentRecord_get_glyphIndex_m97684786D7ABD7F8BF7F7781C3BF79A164BDEC89_AdjustorThunk,
-	TMP_GlyphAdjustmentRecord_set_glyphIndex_m07A306FC838306B90259663CC6DBE35C32572D7A_AdjustorThunk,
-	TMP_GlyphAdjustmentRecord_get_glyphValueRecord_m4CF829EF02D359F77A9A6542F9ABF2555F367A94_AdjustorThunk,
-	TMP_GlyphAdjustmentRecord_set_glyphValueRecord_mA9B3AFB92880ED199F1335CDDC4FF3705E13643E_AdjustorThunk,
-	TMP_GlyphAdjustmentRecord__ctor_m203C1EFFD1DFEBD03A7F0AC25A57E1C6C070F80B_AdjustorThunk,
-	TMP_GlyphAdjustmentRecord__ctor_m6F292B32E26655446BB1454495E0B870433C15D5_AdjustorThunk,
+	TMP_GlyphAdjustmentRecord_get_glyphIndex_m97684786D7ABD7F8BF7F7781C3BF79A164BDEC89,
+	TMP_GlyphAdjustmentRecord_set_glyphIndex_m07A306FC838306B90259663CC6DBE35C32572D7A,
+	TMP_GlyphAdjustmentRecord_get_glyphValueRecord_m4CF829EF02D359F77A9A6542F9ABF2555F367A94,
+	TMP_GlyphAdjustmentRecord_set_glyphValueRecord_mA9B3AFB92880ED199F1335CDDC4FF3705E13643E,
+	TMP_GlyphAdjustmentRecord__ctor_m203C1EFFD1DFEBD03A7F0AC25A57E1C6C070F80B,
+	TMP_GlyphAdjustmentRecord__ctor_m6F292B32E26655446BB1454495E0B870433C15D5,
 	TMP_GlyphPairAdjustmentRecord_get_firstAdjustmentRecord_m3D2D29FD06EC99FB5D290E86A8B48C926508BBDF,
 	TMP_GlyphPairAdjustmentRecord_set_firstAdjustmentRecord_m43490F83D1FEB3AF01DB5943535100B030A3E19C,
 	TMP_GlyphPairAdjustmentRecord_get_secondAdjustmentRecord_m76F782AA89B22791AC5B452509F241D1E86A96A8,
@@ -3499,8 +3499,8 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	TMP_GlyphPairAdjustmentRecord_set_featureLookupFlags_m9C4782896841C43E6E250E64F81612AEC2A01280,
 	TMP_GlyphPairAdjustmentRecord__ctor_m5CF8EA7FA15BD84A3541D8BE4F458844D9E65703,
 	TMP_GlyphPairAdjustmentRecord__ctor_mD5EB30AC2987FC1948FB4E64CEA7AB4A733488D6,
-	GlyphPairKey__ctor_m340350DBD8B7C5756DEC2848A8ABC9E5A01249D9_AdjustorThunk,
-	GlyphPairKey__ctor_m4A07E3A122E9CEA67160762D9739C9B6F1B9ACE2_AdjustorThunk,
+	GlyphPairKey__ctor_m340350DBD8B7C5756DEC2848A8ABC9E5A01249D9,
+	GlyphPairKey__ctor_m4A07E3A122E9CEA67160762D9739C9B6F1B9ACE2,
 	TMP_InputField_get_inputSystem_mD5B5E9EFA905368372A8159A7A08C644FCF24028,
 	TMP_InputField_get_compositionString_m2CEBCE91E97D5E8D2B5D532191AAE0CE92F7FB2B,
 	TMP_InputField_get_compositionLength_m83DB87B9B516912E332188BFE459142A91BACDFA,
@@ -3755,18 +3755,18 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	TMP_MaterialManager_CleanupFallbackMaterials_m95976F612371CAA754990E2CA8F100432824E08B,
 	TMP_MaterialManager_ReleaseFallbackMaterial_m1478AD35DE200376DA2177DD98B05BB7FA374DC5,
 	TMP_MaterialManager_CopyMaterialPresetProperties_m973D09273F976AEB7EB51D798326F269C9C0D949,
-	TMP_MeshInfo__ctor_m0AA8D99217692981881D64BB71CC21BA2ACC712A_AdjustorThunk,
-	TMP_MeshInfo__ctor_m668079D11DEB14AA406F0F0BAAD75DA72B587535_AdjustorThunk,
-	TMP_MeshInfo_ResizeMeshInfo_m743BE9D1F3F26C267432C96D77FA72257736A263_AdjustorThunk,
-	TMP_MeshInfo_ResizeMeshInfo_mA9F5355D090855A192774E64FA491BF12F145483_AdjustorThunk,
-	TMP_MeshInfo_Clear_m2AA4C8FACF6B614E3210427C9D62C3F41634981B_AdjustorThunk,
-	TMP_MeshInfo_Clear_m21ABD0D8633F88ADBEDD157073A2B34BEEC1A863_AdjustorThunk,
-	TMP_MeshInfo_ClearUnusedVertices_m97D0F43FE73E644FE6EACE3E5CA45305C0FB2C0B_AdjustorThunk,
-	TMP_MeshInfo_ClearUnusedVertices_m2B60D5441CBCB3D39AFD26EEAAD0C10A3A6B5B8F_AdjustorThunk,
-	TMP_MeshInfo_ClearUnusedVertices_m54C8607D64F41E9824E3250E399F4DEC464FDDDE_AdjustorThunk,
-	TMP_MeshInfo_SortGeometry_m1D26B8D8216DECA9CECF6FA40238CA7455918236_AdjustorThunk,
-	TMP_MeshInfo_SortGeometry_mA05A54EF431AA4B24C457B8AD248B016DBB17B37_AdjustorThunk,
-	TMP_MeshInfo_SwapVertexData_mE63CEE8F8876263B986D6C0995E4B98DF122CD08_AdjustorThunk,
+	TMP_MeshInfo__ctor_m0AA8D99217692981881D64BB71CC21BA2ACC712A,
+	TMP_MeshInfo__ctor_m668079D11DEB14AA406F0F0BAAD75DA72B587535,
+	TMP_MeshInfo_ResizeMeshInfo_m743BE9D1F3F26C267432C96D77FA72257736A263,
+	TMP_MeshInfo_ResizeMeshInfo_mA9F5355D090855A192774E64FA491BF12F145483,
+	TMP_MeshInfo_Clear_m2AA4C8FACF6B614E3210427C9D62C3F41634981B,
+	TMP_MeshInfo_Clear_m21ABD0D8633F88ADBEDD157073A2B34BEEC1A863,
+	TMP_MeshInfo_ClearUnusedVertices_m97D0F43FE73E644FE6EACE3E5CA45305C0FB2C0B,
+	TMP_MeshInfo_ClearUnusedVertices_m2B60D5441CBCB3D39AFD26EEAAD0C10A3A6B5B8F,
+	TMP_MeshInfo_ClearUnusedVertices_m54C8607D64F41E9824E3250E399F4DEC464FDDDE,
+	TMP_MeshInfo_SortGeometry_m1D26B8D8216DECA9CECF6FA40238CA7455918236,
+	TMP_MeshInfo_SortGeometry_mA05A54EF431AA4B24C457B8AD248B016DBB17B37,
+	TMP_MeshInfo_SwapVertexData_mE63CEE8F8876263B986D6C0995E4B98DF122CD08,
 	TMP_MeshInfo__cctor_m1B5F0977345B19FE5AA023AD8828BF149263F583,
 	NULL,
 	NULL,
@@ -4334,9 +4334,9 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	TMP_TextParsingUtilities_IsHighSurrogate_m6C63DC1BC9F701A2B93103FA3482664EA08D6C7A,
 	TMP_TextParsingUtilities_IsLowSurrogate_m1891FFB218074FD4063400FB1F0A7D18E189D7C2,
 	TMP_TextParsingUtilities__ctor_m17DE5714DD2BB0313BAD096012914CBA61B3B304,
-	TMP_FontStyleStack_Clear_m7A96493A98DC6BED34069521501A6A35F49DFDBC_AdjustorThunk,
-	TMP_FontStyleStack_Add_mD8C2B00C27004168A89121113090BA7E9BFC54CC_AdjustorThunk,
-	TMP_FontStyleStack_Remove_mC7F6AA55F58016C36E196430D676E11F179168A0_AdjustorThunk,
+	TMP_FontStyleStack_Clear_m7A96493A98DC6BED34069521501A6A35F49DFDBC,
+	TMP_FontStyleStack_Add_mD8C2B00C27004168A89121113090BA7E9BFC54CC,
+	TMP_FontStyleStack_Remove_mC7F6AA55F58016C36E196430D676E11F179168A0,
 	NULL,
 	NULL,
 	NULL,
@@ -4353,7 +4353,7 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	NULL,
 	NULL,
 	NULL,
-	CaretInfo__ctor_m027A49BE4CEF97C36FB56B2946E036D93869E694_AdjustorThunk,
+	CaretInfo__ctor_m027A49BE4CEF97C36FB56B2946E036D93869E694,
 	TMP_TextUtilities_GetCursorIndexFromPosition_m207C781323EC02275F074608CB3261F813BFF5BE,
 	TMP_TextUtilities_GetCursorIndexFromPosition_mC194F297AC81DBE2AF44735706A92D4EA5A1E61D,
 	TMP_TextUtilities_FindNearestLine_mAFD322A888657AE7FAB84B9324EBDC6640F37835,
@@ -4439,17 +4439,17 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	TMP_Math_Approximately_mDD4C9F674C912D70286995687090962419BEA3E7,
 	TMP_Math_Mod_m4F9045F20927902128280AB74EFC210E577D7025,
 	TMP_Math__cctor_mDB1D10F48068C9AE4D4CC8DBFE6D457174441B8A,
-	VertexGradient__ctor_mE2211E9FF5EB4FD910EA4D38FBA1BFC67CB4393F_AdjustorThunk,
-	VertexGradient__ctor_m5AAE113F629912122A0947CA8048E2DE542529B8_AdjustorThunk,
-	TMP_LinkInfo_SetLinkID_m009C3D2FB74DE74701B133C5E1658C37D6478E01_AdjustorThunk,
-	TMP_LinkInfo_GetLinkText_m7C78982CD398EBC8AF2303E0A665A76C26FE0352_AdjustorThunk,
-	TMP_LinkInfo_GetLinkID_m97C3C9028EF1FA90BF6315BFDF42AAD3A7463B53_AdjustorThunk,
-	TMP_WordInfo_GetWord_m45402062300ED4455F6C6F5E96E42C4904E18133_AdjustorThunk,
-	Extents__ctor_m49123A9E50868E0DE6D0FA3404B52951C1A5F272_AdjustorThunk,
-	Extents_ToString_mE7D4606209C02F28F8B8667E38375EFAA61FA728_AdjustorThunk,
+	VertexGradient__ctor_mE2211E9FF5EB4FD910EA4D38FBA1BFC67CB4393F,
+	VertexGradient__ctor_m5AAE113F629912122A0947CA8048E2DE542529B8,
+	TMP_LinkInfo_SetLinkID_m009C3D2FB74DE74701B133C5E1658C37D6478E01,
+	TMP_LinkInfo_GetLinkText_m7C78982CD398EBC8AF2303E0A665A76C26FE0352,
+	TMP_LinkInfo_GetLinkID_m97C3C9028EF1FA90BF6315BFDF42AAD3A7463B53,
+	TMP_WordInfo_GetWord_m45402062300ED4455F6C6F5E96E42C4904E18133,
+	Extents__ctor_m49123A9E50868E0DE6D0FA3404B52951C1A5F272,
+	Extents_ToString_mE7D4606209C02F28F8B8667E38375EFAA61FA728,
 	Extents__cctor_m2D276B3DD7CDC3BFBEA456B406044D180CFA1547,
-	Mesh_Extents__ctor_mC314341788DAA461D4C419A9FBF52C56F66300E0_AdjustorThunk,
-	Mesh_Extents_ToString_m1F6D3CC4767D55BDCB31DC9ABE54493885FA3641_AdjustorThunk,
+	Mesh_Extents__ctor_mC314341788DAA461D4C419A9FBF52C56F66300E0,
+	Mesh_Extents_ToString_m1F6D3CC4767D55BDCB31DC9ABE54493885FA3641,
 	TextMeshPro_Awake_mF475F1DCF79FD954F03AFBA6621E366162DB5E9E,
 	TextMeshPro_OnEnable_mB33FA5576FBA4BD87CD4B3F88C4254790136D5CA,
 	TextMeshPro_OnDisable_m5C8F471C43BB774C4905F48A2FB5AA51B3B20B65,
@@ -4733,12 +4733,12 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	U3CU3Ec__ctor_mB61A04B3EE3B54FF6481E41A27100C2A68E72D53,
 	U3CU3Ec_U3CSortGlyphTableU3Eb__40_0_m7668441E4295B66BF6246D684155CBADEFD171AD,
 	U3CU3Ec_U3CSortCharacterTableU3Eb__41_0_mFE558EA15B86233E5023B0F851438712B25C1D3F,
-	CharacterSubstitution__ctor_m499EB56C0FDE4BF20DEDC346AA9E93EAD3825F0E_AdjustorThunk,
-	SpecialCharacter__ctor_m7C210805AA75202222967909F3FB7EE5CE6D1976_AdjustorThunk,
+	CharacterSubstitution__ctor_m499EB56C0FDE4BF20DEDC346AA9E93EAD3825F0E,
+	SpecialCharacter__ctor_m7C210805AA75202222967909F3FB7EE5CE6D1976,
 	U3CU3Ec__cctor_m3CD664E2EED7EE7DFF931BFC2D0DAF1A19F542A3,
 	U3CU3Ec__ctor_mECEF1C8E50D281B7739C32B11DA510F9255BA454,
 	U3CU3Ec_U3C_ctorU3Eb__625_0_mF3971C5201FA5D27A30FABACC93B99BECD4DB340,
-	LineSegment__ctor_mC3D7CF247BBB4409049F9CCC8B1A4788DCA7FF38_AdjustorThunk,
+	LineSegment__ctor_mC3D7CF247BBB4409049F9CCC8B1A4788DCA7FF38,
 	U3CDelayedGraphicRebuildU3Ed__68__ctor_m362DB869A01B9BC9E4F0A96DBCB387BBC83D8CBC,
 	U3CDelayedGraphicRebuildU3Ed__68_System_IDisposable_Dispose_m7BF1D5BE0F54F484ADA45806896CD7BC6AC527E6,
 	U3CDelayedGraphicRebuildU3Ed__68_MoveNext_m6CB912C1254D74E6EFAB3C18E964ABA69EC71E9F,
@@ -4751,9 +4751,218 @@ static Il2CppMethodPointer s_methodPointers[1601] =
 	U3CDelayedMaterialRebuildU3Ed__69_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDFC62765DCF8A0B60B500F33CBC23D41624F7ECC,
 	U3CDelayedMaterialRebuildU3Ed__69_System_Collections_IEnumerator_Reset_m61338BF18B6D43FFC5DCF8767CB72AFDED153D1C,
 	U3CDelayedMaterialRebuildU3Ed__69_System_Collections_IEnumerator_get_Current_mD884D17ABFEEE2A8D732584F0EE41C88D44B2FFC,
-	SpriteFrame_ToString_mBE426825315E87D0E1CA8E58C66928B50D9F8F0A_AdjustorThunk,
-	SpriteSize_ToString_m36860AE1A6008CA831041259E35DDEF8CC1A3175_AdjustorThunk,
+	SpriteFrame_ToString_mBE426825315E87D0E1CA8E58C66928B50D9F8F0A,
+	SpriteSize_ToString_m36860AE1A6008CA831041259E35DDEF8CC1A3175,
 	SpriteDataObject__ctor_mB0E1D1ACF5A6AA8811A8F38757298D9050359BC5,
+};
+extern void MaterialReference__ctor_m8A0224802E6CCD9EDA5544A462856716F3D9D2CA_AdjustorThunk (void);
+extern void TMP_Offset_get_left_m7111593CAC18B4079F2D0C6FE0F5EF2355F1ABB0_AdjustorThunk (void);
+extern void TMP_Offset_set_left_mC96D081DBD8E448425537531F671F74C9D3AFACB_AdjustorThunk (void);
+extern void TMP_Offset_get_right_mD16DC4C5B865B67B0C3DEB9FA2CB20AE63B37241_AdjustorThunk (void);
+extern void TMP_Offset_set_right_mC2091554376960B07474D232D57BCFD312971F93_AdjustorThunk (void);
+extern void TMP_Offset_get_top_m222049807EB4BDC29323B8FC10BDEDB0D7255962_AdjustorThunk (void);
+extern void TMP_Offset_set_top_mF4D5C73F78B6AE7E187D98AF94D6D410CAE08FE4_AdjustorThunk (void);
+extern void TMP_Offset_get_bottom_m7A24544C0E773DC3C4CA744F7854E47ADF6DDF6C_AdjustorThunk (void);
+extern void TMP_Offset_set_bottom_mD0A15F93791E0317CC3BA970BCA11B2FB8F7ECD4_AdjustorThunk (void);
+extern void TMP_Offset_get_horizontal_m250DDED66F972933AE9FEA8DE078A16B28E0EAE3_AdjustorThunk (void);
+extern void TMP_Offset_set_horizontal_mA2395FC2E5FA7735723E123F7BA613A35670A3A0_AdjustorThunk (void);
+extern void TMP_Offset_get_vertical_m76EC378717F2A7A1E46C903FBD1602BAFE2E5264_AdjustorThunk (void);
+extern void TMP_Offset_set_vertical_mD28A9F3B55B57020082CF334C123C54BD834B2C6_AdjustorThunk (void);
+extern void TMP_Offset__ctor_mAB27756EC3883CE1184DF74B0FA5270A7BA8072E_AdjustorThunk (void);
+extern void TMP_Offset__ctor_mE2B70D1B00F5EBAD9FC83DF4BD141824A9FADD7B_AdjustorThunk (void);
+extern void TMP_Offset_GetHashCode_m548BF72C33352EFC439F2538C8552E309A3F80AE_AdjustorThunk (void);
+extern void TMP_Offset_Equals_m31E80A4B31069AC7FBBA0E7951899FFCF8FB1351_AdjustorThunk (void);
+extern void TMP_Offset_Equals_m63031D047454A40947395DE96C4C76333BA9B3FF_AdjustorThunk (void);
+extern void HighlightState__ctor_mD7C4923EBEABB28FA3C1F4D99A0A9576BD3C9685_AdjustorThunk (void);
+extern void HighlightState_GetHashCode_m1368EE338E940DC3F6AE976186CB7F19C23D5315_AdjustorThunk (void);
+extern void HighlightState_Equals_mA688E4EDA7BBEFAAD715CD68996B7EAD52C4602B_AdjustorThunk (void);
+extern void HighlightState_Equals_m15C11E8C2AAE79291B8AA75FD35349AC0F540FAD_AdjustorThunk (void);
+extern void ColorTween_get_startColor_m79C9747E3C651BC5D1123AB25863EE23008175A8_AdjustorThunk (void);
+extern void ColorTween_set_startColor_mB4B46C8FB825F06DF2A22FA5A496DE1DCE801CE6_AdjustorThunk (void);
+extern void ColorTween_get_targetColor_m9FC04D007878395E9C323188AF2B1BC2177E787F_AdjustorThunk (void);
+extern void ColorTween_set_targetColor_mC48FD8CFFB87569AF5D81B6EE3717FDAC46768D1_AdjustorThunk (void);
+extern void ColorTween_get_tweenMode_m768147B7D6714EAAFD670793B7CF7A6CF01C6379_AdjustorThunk (void);
+extern void ColorTween_set_tweenMode_m641C8A51D8DFB3BA7EC81A656AFBCB82DB42E5D3_AdjustorThunk (void);
+extern void ColorTween_get_duration_m620392D83A7B1514379863C0B28ACA3F351499D4_AdjustorThunk (void);
+extern void ColorTween_set_duration_m437051180E4B9A415C1D3567074DCC7987031E78_AdjustorThunk (void);
+extern void ColorTween_get_ignoreTimeScale_mE3C8672A317D63A77271E00C56C2E7EAD59D79BE_AdjustorThunk (void);
+extern void ColorTween_set_ignoreTimeScale_mA60EF7D068FD1F937B7856E55A3F27EF6B923EB3_AdjustorThunk (void);
+extern void ColorTween_TweenValue_m6CFA463FFBCB9159C54F54BB83BE7E2A173951A2_AdjustorThunk (void);
+extern void ColorTween_AddOnChangedCallback_m7980448B91E65D8B2442FBEE8278518F8C9F0A4B_AdjustorThunk (void);
+extern void ColorTween_GetIgnoreTimescale_m1C6B3D1293170A21AD3BFC6046D94E46141169A0_AdjustorThunk (void);
+extern void ColorTween_GetDuration_m98630993C66DCDC1169EAAE7A97BC1F87E0219FB_AdjustorThunk (void);
+extern void ColorTween_ValidTarget_m73286CC6D66E4CF18422448A13216DA15B97A5E7_AdjustorThunk (void);
+extern void FloatTween_get_startValue_m24465BFC3FF33EFE53A224AC26563056266E0243_AdjustorThunk (void);
+extern void FloatTween_set_startValue_mE1012A0EE3E8B964B85BAAFC1A9ACCAAC9F89EAF_AdjustorThunk (void);
+extern void FloatTween_get_targetValue_mE849355C0DA1D81C57AA149B3BDD07CD3D0383B3_AdjustorThunk (void);
+extern void FloatTween_set_targetValue_mD6B41E937B0AC0563C944548487C12B82C39C8EF_AdjustorThunk (void);
+extern void FloatTween_get_duration_mF4EDC7886A6648CA9C080BA506BDCDF1E90E8EAB_AdjustorThunk (void);
+extern void FloatTween_set_duration_m4671C2A9607F55CAEC364549F5FDABA7CD785E94_AdjustorThunk (void);
+extern void FloatTween_get_ignoreTimeScale_m0655DF2E573BABA2A03581E2BDBCF20F616ACA75_AdjustorThunk (void);
+extern void FloatTween_set_ignoreTimeScale_mD28514DDC388403086D6638C10C81E499EC20E02_AdjustorThunk (void);
+extern void FloatTween_TweenValue_m6FCEDE4DEACE698BF5B0F59C7AE7DF86FA24B4FE_AdjustorThunk (void);
+extern void FloatTween_AddOnChangedCallback_m21B9C6C3958BC0D300F71CFC993DCD58F837B8BA_AdjustorThunk (void);
+extern void FloatTween_GetIgnoreTimescale_m76F243806700345FA0BBA1E56EAA3689D4B70293_AdjustorThunk (void);
+extern void FloatTween_GetDuration_m04B2176ECB45D130DBCD0A404B95914091E4E264_AdjustorThunk (void);
+extern void FloatTween_ValidTarget_m6BE627E7379BE53302471D8E04C9A12724EC9896_AdjustorThunk (void);
+extern void FontAssetCreationSettings__ctor_m5E1E74A0F624E77A48A245FF893D4B2AE606BE53_AdjustorThunk (void);
+extern void KerningPairKey__ctor_mCE68D007678E645AB597CE97559FC1F6F06B9265_AdjustorThunk (void);
+extern void GlyphValueRecord_Legacy__ctor_m3EC72C474F6953D16C1040C012FE00FE38720F94_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_xPlacement_m3E6AF4FD83B8F62BDD175D65B5AC602F76CE7D87_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_xPlacement_mE5713B3E6F00C9C4C294C41071CD1B3F3CEDA0F3_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_yPlacement_mDC2BA3411D3612D8672FB71170636CBC33B16D60_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_yPlacement_mB8AFE695B38A4F73016C4486016FD3904B72A683_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_xAdvance_mABABA715297F9E0A3AC8E4D38847A34FF0E57207_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_xAdvance_mA6CC02535F44692B8B7210E23BE2B27647B624BC_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_get_yAdvance_m2C178AACE0DA6C5291CD4476C2198C98131771D1_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord_set_yAdvance_mC1DF1EFF7929984821409D3FDD64950603A7F552_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord__ctor_mA49CDDE5921B64F7AAD13359885FF07CE4C48F44_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord__ctor_mC0A12FE3477C4D9599FA6666B303034772686226_AdjustorThunk (void);
+extern void TMP_GlyphValueRecord__ctor_m62AF77F03E7D6D9F3858A6DC7DDA642B4378E608_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_get_glyphIndex_m97684786D7ABD7F8BF7F7781C3BF79A164BDEC89_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_set_glyphIndex_m07A306FC838306B90259663CC6DBE35C32572D7A_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_get_glyphValueRecord_m4CF829EF02D359F77A9A6542F9ABF2555F367A94_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord_set_glyphValueRecord_mA9B3AFB92880ED199F1335CDDC4FF3705E13643E_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord__ctor_m203C1EFFD1DFEBD03A7F0AC25A57E1C6C070F80B_AdjustorThunk (void);
+extern void TMP_GlyphAdjustmentRecord__ctor_m6F292B32E26655446BB1454495E0B870433C15D5_AdjustorThunk (void);
+extern void GlyphPairKey__ctor_m340350DBD8B7C5756DEC2848A8ABC9E5A01249D9_AdjustorThunk (void);
+extern void GlyphPairKey__ctor_m4A07E3A122E9CEA67160762D9739C9B6F1B9ACE2_AdjustorThunk (void);
+extern void TMP_MeshInfo__ctor_m0AA8D99217692981881D64BB71CC21BA2ACC712A_AdjustorThunk (void);
+extern void TMP_MeshInfo__ctor_m668079D11DEB14AA406F0F0BAAD75DA72B587535_AdjustorThunk (void);
+extern void TMP_MeshInfo_ResizeMeshInfo_m743BE9D1F3F26C267432C96D77FA72257736A263_AdjustorThunk (void);
+extern void TMP_MeshInfo_ResizeMeshInfo_mA9F5355D090855A192774E64FA491BF12F145483_AdjustorThunk (void);
+extern void TMP_MeshInfo_Clear_m2AA4C8FACF6B614E3210427C9D62C3F41634981B_AdjustorThunk (void);
+extern void TMP_MeshInfo_Clear_m21ABD0D8633F88ADBEDD157073A2B34BEEC1A863_AdjustorThunk (void);
+extern void TMP_MeshInfo_ClearUnusedVertices_m97D0F43FE73E644FE6EACE3E5CA45305C0FB2C0B_AdjustorThunk (void);
+extern void TMP_MeshInfo_ClearUnusedVertices_m2B60D5441CBCB3D39AFD26EEAAD0C10A3A6B5B8F_AdjustorThunk (void);
+extern void TMP_MeshInfo_ClearUnusedVertices_m54C8607D64F41E9824E3250E399F4DEC464FDDDE_AdjustorThunk (void);
+extern void TMP_MeshInfo_SortGeometry_m1D26B8D8216DECA9CECF6FA40238CA7455918236_AdjustorThunk (void);
+extern void TMP_MeshInfo_SortGeometry_mA05A54EF431AA4B24C457B8AD248B016DBB17B37_AdjustorThunk (void);
+extern void TMP_MeshInfo_SwapVertexData_mE63CEE8F8876263B986D6C0995E4B98DF122CD08_AdjustorThunk (void);
+extern void TMP_FontStyleStack_Clear_m7A96493A98DC6BED34069521501A6A35F49DFDBC_AdjustorThunk (void);
+extern void TMP_FontStyleStack_Add_mD8C2B00C27004168A89121113090BA7E9BFC54CC_AdjustorThunk (void);
+extern void TMP_FontStyleStack_Remove_mC7F6AA55F58016C36E196430D676E11F179168A0_AdjustorThunk (void);
+extern void CaretInfo__ctor_m027A49BE4CEF97C36FB56B2946E036D93869E694_AdjustorThunk (void);
+extern void VertexGradient__ctor_mE2211E9FF5EB4FD910EA4D38FBA1BFC67CB4393F_AdjustorThunk (void);
+extern void VertexGradient__ctor_m5AAE113F629912122A0947CA8048E2DE542529B8_AdjustorThunk (void);
+extern void TMP_LinkInfo_SetLinkID_m009C3D2FB74DE74701B133C5E1658C37D6478E01_AdjustorThunk (void);
+extern void TMP_LinkInfo_GetLinkText_m7C78982CD398EBC8AF2303E0A665A76C26FE0352_AdjustorThunk (void);
+extern void TMP_LinkInfo_GetLinkID_m97C3C9028EF1FA90BF6315BFDF42AAD3A7463B53_AdjustorThunk (void);
+extern void TMP_WordInfo_GetWord_m45402062300ED4455F6C6F5E96E42C4904E18133_AdjustorThunk (void);
+extern void Extents__ctor_m49123A9E50868E0DE6D0FA3404B52951C1A5F272_AdjustorThunk (void);
+extern void Extents_ToString_mE7D4606209C02F28F8B8667E38375EFAA61FA728_AdjustorThunk (void);
+extern void Mesh_Extents__ctor_mC314341788DAA461D4C419A9FBF52C56F66300E0_AdjustorThunk (void);
+extern void Mesh_Extents_ToString_m1F6D3CC4767D55BDCB31DC9ABE54493885FA3641_AdjustorThunk (void);
+extern void CharacterSubstitution__ctor_m499EB56C0FDE4BF20DEDC346AA9E93EAD3825F0E_AdjustorThunk (void);
+extern void SpecialCharacter__ctor_m7C210805AA75202222967909F3FB7EE5CE6D1976_AdjustorThunk (void);
+extern void LineSegment__ctor_mC3D7CF247BBB4409049F9CCC8B1A4788DCA7FF38_AdjustorThunk (void);
+extern void SpriteFrame_ToString_mBE426825315E87D0E1CA8E58C66928B50D9F8F0A_AdjustorThunk (void);
+extern void SpriteSize_ToString_m36860AE1A6008CA831041259E35DDEF8CC1A3175_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[103] = 
+{
+	{ 0x06000028, MaterialReference__ctor_m8A0224802E6CCD9EDA5544A462856716F3D9D2CA_AdjustorThunk },
+	{ 0x06000034, TMP_Offset_get_left_m7111593CAC18B4079F2D0C6FE0F5EF2355F1ABB0_AdjustorThunk },
+	{ 0x06000035, TMP_Offset_set_left_mC96D081DBD8E448425537531F671F74C9D3AFACB_AdjustorThunk },
+	{ 0x06000036, TMP_Offset_get_right_mD16DC4C5B865B67B0C3DEB9FA2CB20AE63B37241_AdjustorThunk },
+	{ 0x06000037, TMP_Offset_set_right_mC2091554376960B07474D232D57BCFD312971F93_AdjustorThunk },
+	{ 0x06000038, TMP_Offset_get_top_m222049807EB4BDC29323B8FC10BDEDB0D7255962_AdjustorThunk },
+	{ 0x06000039, TMP_Offset_set_top_mF4D5C73F78B6AE7E187D98AF94D6D410CAE08FE4_AdjustorThunk },
+	{ 0x0600003A, TMP_Offset_get_bottom_m7A24544C0E773DC3C4CA744F7854E47ADF6DDF6C_AdjustorThunk },
+	{ 0x0600003B, TMP_Offset_set_bottom_mD0A15F93791E0317CC3BA970BCA11B2FB8F7ECD4_AdjustorThunk },
+	{ 0x0600003C, TMP_Offset_get_horizontal_m250DDED66F972933AE9FEA8DE078A16B28E0EAE3_AdjustorThunk },
+	{ 0x0600003D, TMP_Offset_set_horizontal_mA2395FC2E5FA7735723E123F7BA613A35670A3A0_AdjustorThunk },
+	{ 0x0600003E, TMP_Offset_get_vertical_m76EC378717F2A7A1E46C903FBD1602BAFE2E5264_AdjustorThunk },
+	{ 0x0600003F, TMP_Offset_set_vertical_mD28A9F3B55B57020082CF334C123C54BD834B2C6_AdjustorThunk },
+	{ 0x06000041, TMP_Offset__ctor_mAB27756EC3883CE1184DF74B0FA5270A7BA8072E_AdjustorThunk },
+	{ 0x06000042, TMP_Offset__ctor_mE2B70D1B00F5EBAD9FC83DF4BD141824A9FADD7B_AdjustorThunk },
+	{ 0x06000046, TMP_Offset_GetHashCode_m548BF72C33352EFC439F2538C8552E309A3F80AE_AdjustorThunk },
+	{ 0x06000047, TMP_Offset_Equals_m31E80A4B31069AC7FBBA0E7951899FFCF8FB1351_AdjustorThunk },
+	{ 0x06000048, TMP_Offset_Equals_m63031D047454A40947395DE96C4C76333BA9B3FF_AdjustorThunk },
+	{ 0x0600004A, HighlightState__ctor_mD7C4923EBEABB28FA3C1F4D99A0A9576BD3C9685_AdjustorThunk },
+	{ 0x0600004D, HighlightState_GetHashCode_m1368EE338E940DC3F6AE976186CB7F19C23D5315_AdjustorThunk },
+	{ 0x0600004E, HighlightState_Equals_mA688E4EDA7BBEFAAD715CD68996B7EAD52C4602B_AdjustorThunk },
+	{ 0x0600004F, HighlightState_Equals_m15C11E8C2AAE79291B8AA75FD35349AC0F540FAD_AdjustorThunk },
+	{ 0x06000059, ColorTween_get_startColor_m79C9747E3C651BC5D1123AB25863EE23008175A8_AdjustorThunk },
+	{ 0x0600005A, ColorTween_set_startColor_mB4B46C8FB825F06DF2A22FA5A496DE1DCE801CE6_AdjustorThunk },
+	{ 0x0600005B, ColorTween_get_targetColor_m9FC04D007878395E9C323188AF2B1BC2177E787F_AdjustorThunk },
+	{ 0x0600005C, ColorTween_set_targetColor_mC48FD8CFFB87569AF5D81B6EE3717FDAC46768D1_AdjustorThunk },
+	{ 0x0600005D, ColorTween_get_tweenMode_m768147B7D6714EAAFD670793B7CF7A6CF01C6379_AdjustorThunk },
+	{ 0x0600005E, ColorTween_set_tweenMode_m641C8A51D8DFB3BA7EC81A656AFBCB82DB42E5D3_AdjustorThunk },
+	{ 0x0600005F, ColorTween_get_duration_m620392D83A7B1514379863C0B28ACA3F351499D4_AdjustorThunk },
+	{ 0x06000060, ColorTween_set_duration_m437051180E4B9A415C1D3567074DCC7987031E78_AdjustorThunk },
+	{ 0x06000061, ColorTween_get_ignoreTimeScale_mE3C8672A317D63A77271E00C56C2E7EAD59D79BE_AdjustorThunk },
+	{ 0x06000062, ColorTween_set_ignoreTimeScale_mA60EF7D068FD1F937B7856E55A3F27EF6B923EB3_AdjustorThunk },
+	{ 0x06000063, ColorTween_TweenValue_m6CFA463FFBCB9159C54F54BB83BE7E2A173951A2_AdjustorThunk },
+	{ 0x06000064, ColorTween_AddOnChangedCallback_m7980448B91E65D8B2442FBEE8278518F8C9F0A4B_AdjustorThunk },
+	{ 0x06000065, ColorTween_GetIgnoreTimescale_m1C6B3D1293170A21AD3BFC6046D94E46141169A0_AdjustorThunk },
+	{ 0x06000066, ColorTween_GetDuration_m98630993C66DCDC1169EAAE7A97BC1F87E0219FB_AdjustorThunk },
+	{ 0x06000067, ColorTween_ValidTarget_m73286CC6D66E4CF18422448A13216DA15B97A5E7_AdjustorThunk },
+	{ 0x06000068, FloatTween_get_startValue_m24465BFC3FF33EFE53A224AC26563056266E0243_AdjustorThunk },
+	{ 0x06000069, FloatTween_set_startValue_mE1012A0EE3E8B964B85BAAFC1A9ACCAAC9F89EAF_AdjustorThunk },
+	{ 0x0600006A, FloatTween_get_targetValue_mE849355C0DA1D81C57AA149B3BDD07CD3D0383B3_AdjustorThunk },
+	{ 0x0600006B, FloatTween_set_targetValue_mD6B41E937B0AC0563C944548487C12B82C39C8EF_AdjustorThunk },
+	{ 0x0600006C, FloatTween_get_duration_mF4EDC7886A6648CA9C080BA506BDCDF1E90E8EAB_AdjustorThunk },
+	{ 0x0600006D, FloatTween_set_duration_m4671C2A9607F55CAEC364549F5FDABA7CD785E94_AdjustorThunk },
+	{ 0x0600006E, FloatTween_get_ignoreTimeScale_m0655DF2E573BABA2A03581E2BDBCF20F616ACA75_AdjustorThunk },
+	{ 0x0600006F, FloatTween_set_ignoreTimeScale_mD28514DDC388403086D6638C10C81E499EC20E02_AdjustorThunk },
+	{ 0x06000070, FloatTween_TweenValue_m6FCEDE4DEACE698BF5B0F59C7AE7DF86FA24B4FE_AdjustorThunk },
+	{ 0x06000071, FloatTween_AddOnChangedCallback_m21B9C6C3958BC0D300F71CFC993DCD58F837B8BA_AdjustorThunk },
+	{ 0x06000072, FloatTween_GetIgnoreTimescale_m76F243806700345FA0BBA1E56EAA3689D4B70293_AdjustorThunk },
+	{ 0x06000073, FloatTween_GetDuration_m04B2176ECB45D130DBCD0A404B95914091E4E264_AdjustorThunk },
+	{ 0x06000074, FloatTween_ValidTarget_m6BE627E7379BE53302471D8E04C9A12724EC9896_AdjustorThunk },
+	{ 0x0600011A, FontAssetCreationSettings__ctor_m5E1E74A0F624E77A48A245FF893D4B2AE606BE53_AdjustorThunk },
+	{ 0x0600011B, KerningPairKey__ctor_mCE68D007678E645AB597CE97559FC1F6F06B9265_AdjustorThunk },
+	{ 0x0600011C, GlyphValueRecord_Legacy__ctor_m3EC72C474F6953D16C1040C012FE00FE38720F94_AdjustorThunk },
+	{ 0x06000141, TMP_GlyphValueRecord_get_xPlacement_m3E6AF4FD83B8F62BDD175D65B5AC602F76CE7D87_AdjustorThunk },
+	{ 0x06000142, TMP_GlyphValueRecord_set_xPlacement_mE5713B3E6F00C9C4C294C41071CD1B3F3CEDA0F3_AdjustorThunk },
+	{ 0x06000143, TMP_GlyphValueRecord_get_yPlacement_mDC2BA3411D3612D8672FB71170636CBC33B16D60_AdjustorThunk },
+	{ 0x06000144, TMP_GlyphValueRecord_set_yPlacement_mB8AFE695B38A4F73016C4486016FD3904B72A683_AdjustorThunk },
+	{ 0x06000145, TMP_GlyphValueRecord_get_xAdvance_mABABA715297F9E0A3AC8E4D38847A34FF0E57207_AdjustorThunk },
+	{ 0x06000146, TMP_GlyphValueRecord_set_xAdvance_mA6CC02535F44692B8B7210E23BE2B27647B624BC_AdjustorThunk },
+	{ 0x06000147, TMP_GlyphValueRecord_get_yAdvance_m2C178AACE0DA6C5291CD4476C2198C98131771D1_AdjustorThunk },
+	{ 0x06000148, TMP_GlyphValueRecord_set_yAdvance_mC1DF1EFF7929984821409D3FDD64950603A7F552_AdjustorThunk },
+	{ 0x06000149, TMP_GlyphValueRecord__ctor_mA49CDDE5921B64F7AAD13359885FF07CE4C48F44_AdjustorThunk },
+	{ 0x0600014A, TMP_GlyphValueRecord__ctor_mC0A12FE3477C4D9599FA6666B303034772686226_AdjustorThunk },
+	{ 0x0600014B, TMP_GlyphValueRecord__ctor_m62AF77F03E7D6D9F3858A6DC7DDA642B4378E608_AdjustorThunk },
+	{ 0x0600014D, TMP_GlyphAdjustmentRecord_get_glyphIndex_m97684786D7ABD7F8BF7F7781C3BF79A164BDEC89_AdjustorThunk },
+	{ 0x0600014E, TMP_GlyphAdjustmentRecord_set_glyphIndex_m07A306FC838306B90259663CC6DBE35C32572D7A_AdjustorThunk },
+	{ 0x0600014F, TMP_GlyphAdjustmentRecord_get_glyphValueRecord_m4CF829EF02D359F77A9A6542F9ABF2555F367A94_AdjustorThunk },
+	{ 0x06000150, TMP_GlyphAdjustmentRecord_set_glyphValueRecord_mA9B3AFB92880ED199F1335CDDC4FF3705E13643E_AdjustorThunk },
+	{ 0x06000151, TMP_GlyphAdjustmentRecord__ctor_m203C1EFFD1DFEBD03A7F0AC25A57E1C6C070F80B_AdjustorThunk },
+	{ 0x06000152, TMP_GlyphAdjustmentRecord__ctor_m6F292B32E26655446BB1454495E0B870433C15D5_AdjustorThunk },
+	{ 0x0600015B, GlyphPairKey__ctor_m340350DBD8B7C5756DEC2848A8ABC9E5A01249D9_AdjustorThunk },
+	{ 0x0600015C, GlyphPairKey__ctor_m4A07E3A122E9CEA67160762D9739C9B6F1B9ACE2_AdjustorThunk },
+	{ 0x0600025B, TMP_MeshInfo__ctor_m0AA8D99217692981881D64BB71CC21BA2ACC712A_AdjustorThunk },
+	{ 0x0600025C, TMP_MeshInfo__ctor_m668079D11DEB14AA406F0F0BAAD75DA72B587535_AdjustorThunk },
+	{ 0x0600025D, TMP_MeshInfo_ResizeMeshInfo_m743BE9D1F3F26C267432C96D77FA72257736A263_AdjustorThunk },
+	{ 0x0600025E, TMP_MeshInfo_ResizeMeshInfo_mA9F5355D090855A192774E64FA491BF12F145483_AdjustorThunk },
+	{ 0x0600025F, TMP_MeshInfo_Clear_m2AA4C8FACF6B614E3210427C9D62C3F41634981B_AdjustorThunk },
+	{ 0x06000260, TMP_MeshInfo_Clear_m21ABD0D8633F88ADBEDD157073A2B34BEEC1A863_AdjustorThunk },
+	{ 0x06000261, TMP_MeshInfo_ClearUnusedVertices_m97D0F43FE73E644FE6EACE3E5CA45305C0FB2C0B_AdjustorThunk },
+	{ 0x06000262, TMP_MeshInfo_ClearUnusedVertices_m2B60D5441CBCB3D39AFD26EEAAD0C10A3A6B5B8F_AdjustorThunk },
+	{ 0x06000263, TMP_MeshInfo_ClearUnusedVertices_m54C8607D64F41E9824E3250E399F4DEC464FDDDE_AdjustorThunk },
+	{ 0x06000264, TMP_MeshInfo_SortGeometry_m1D26B8D8216DECA9CECF6FA40238CA7455918236_AdjustorThunk },
+	{ 0x06000265, TMP_MeshInfo_SortGeometry_mA05A54EF431AA4B24C457B8AD248B016DBB17B37_AdjustorThunk },
+	{ 0x06000266, TMP_MeshInfo_SwapVertexData_mE63CEE8F8876263B986D6C0995E4B98DF122CD08_AdjustorThunk },
+	{ 0x0600049E, TMP_FontStyleStack_Clear_m7A96493A98DC6BED34069521501A6A35F49DFDBC_AdjustorThunk },
+	{ 0x0600049F, TMP_FontStyleStack_Add_mD8C2B00C27004168A89121113090BA7E9BFC54CC_AdjustorThunk },
+	{ 0x060004A0, TMP_FontStyleStack_Remove_mC7F6AA55F58016C36E196430D676E11F179168A0_AdjustorThunk },
+	{ 0x060004B1, CaretInfo__ctor_m027A49BE4CEF97C36FB56B2946E036D93869E694_AdjustorThunk },
+	{ 0x06000507, VertexGradient__ctor_mE2211E9FF5EB4FD910EA4D38FBA1BFC67CB4393F_AdjustorThunk },
+	{ 0x06000508, VertexGradient__ctor_m5AAE113F629912122A0947CA8048E2DE542529B8_AdjustorThunk },
+	{ 0x06000509, TMP_LinkInfo_SetLinkID_m009C3D2FB74DE74701B133C5E1658C37D6478E01_AdjustorThunk },
+	{ 0x0600050A, TMP_LinkInfo_GetLinkText_m7C78982CD398EBC8AF2303E0A665A76C26FE0352_AdjustorThunk },
+	{ 0x0600050B, TMP_LinkInfo_GetLinkID_m97C3C9028EF1FA90BF6315BFDF42AAD3A7463B53_AdjustorThunk },
+	{ 0x0600050C, TMP_WordInfo_GetWord_m45402062300ED4455F6C6F5E96E42C4904E18133_AdjustorThunk },
+	{ 0x0600050D, Extents__ctor_m49123A9E50868E0DE6D0FA3404B52951C1A5F272_AdjustorThunk },
+	{ 0x0600050E, Extents_ToString_mE7D4606209C02F28F8B8667E38375EFAA61FA728_AdjustorThunk },
+	{ 0x06000510, Mesh_Extents__ctor_mC314341788DAA461D4C419A9FBF52C56F66300E0_AdjustorThunk },
+	{ 0x06000511, Mesh_Extents_ToString_m1F6D3CC4767D55BDCB31DC9ABE54493885FA3641_AdjustorThunk },
+	{ 0x0600062D, CharacterSubstitution__ctor_m499EB56C0FDE4BF20DEDC346AA9E93EAD3825F0E_AdjustorThunk },
+	{ 0x0600062E, SpecialCharacter__ctor_m7C210805AA75202222967909F3FB7EE5CE6D1976_AdjustorThunk },
+	{ 0x06000632, LineSegment__ctor_mC3D7CF247BBB4409049F9CCC8B1A4788DCA7FF38_AdjustorThunk },
+	{ 0x0600063F, SpriteFrame_ToString_mBE426825315E87D0E1CA8E58C66928B50D9F8F0A_AdjustorThunk },
+	{ 0x06000640, SpriteSize_ToString_m36860AE1A6008CA831041259E35DDEF8CC1A3175_AdjustorThunk },
 };
 static const int32_t s_InvokerIndices[1601] = 
 {
@@ -4787,16 +4996,16 @@ static const int32_t s_InvokerIndices[1601] =
 	62,
 	9,
 	9,
-	2565,
-	1762,
-	2565,
-	1762,
-	2565,
-	1762,
-	2565,
-	1762,
+	2561,
+	1760,
+	2561,
+	1760,
+	2561,
+	1760,
+	2561,
+	1760,
 	23,
-	2566,
+	2562,
 	121,
 	798,
 	798,
@@ -4806,49 +5015,49 @@ static const int32_t s_InvokerIndices[1601] =
 	62,
 	380,
 	136,
+	2563,
+	3,
+	740,
+	349,
+	740,
+	349,
+	740,
+	349,
+	740,
+	349,
+	740,
+	349,
+	740,
+	349,
+	2564,
+	1410,
+	1565,
+	2565,
+	2565,
+	2566,
+	10,
+	9,
 	2567,
 	3,
-	740,
-	349,
-	740,
-	349,
-	740,
-	349,
-	740,
-	349,
-	740,
-	349,
-	740,
-	349,
 	2568,
-	1412,
-	1567,
 	2569,
 	2569,
+	10,
+	9,
 	2570,
-	10,
-	9,
-	2571,
-	3,
-	2572,
-	2573,
-	2573,
-	10,
-	9,
-	2574,
 	23,
-	1486,
-	2575,
+	1484,
+	2571,
 	3,
 	21,
 	349,
 	89,
 	740,
 	89,
-	1421,
-	1486,
-	1421,
-	1486,
+	1419,
+	1484,
+	1419,
+	1484,
 	10,
 	32,
 	740,
@@ -4878,17 +5087,17 @@ static const int32_t s_InvokerIndices[1601] =
 	-1,
 	-1,
 	-1,
-	2576,
+	2572,
 	1,
 	168,
 	168,
 	142,
 	384,
-	2577,
-	2577,
-	2577,
-	2577,
-	2577,
+	2573,
+	2573,
+	2573,
+	2573,
+	2573,
 	3,
 	14,
 	26,
@@ -4934,12 +5143,12 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	28,
 	26,
-	862,
-	1567,
-	1539,
+	860,
+	1565,
+	1537,
 	349,
 	23,
-	2250,
+	2246,
 	23,
 	26,
 	3,
@@ -4949,8 +5158,8 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	10,
 	32,
-	2578,
-	2579,
+	2574,
+	2575,
 	14,
 	26,
 	14,
@@ -4980,12 +5189,12 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	14,
 	26,
-	2580,
-	2581,
+	2576,
+	2577,
 	14,
 	26,
 	0,
-	2582,
+	2578,
 	23,
 	23,
 	23,
@@ -5000,10 +5209,10 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	23,
 	30,
-	2583,
-	2584,
+	2579,
+	2580,
 	813,
-	2585,
+	2581,
 	9,
 	0,
 	0,
@@ -5013,11 +5222,11 @@ static const int32_t s_InvokerIndices[1601] =
 	168,
 	3,
 	489,
-	2586,
+	2582,
 	489,
-	2586,
-	1762,
-	1762,
+	2582,
+	1760,
+	1760,
 	23,
 	89,
 	23,
@@ -5038,40 +5247,40 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	0,
 	23,
-	2587,
+	2583,
 	136,
-	2588,
-	2589,
+	2584,
+	2585,
 	10,
 	32,
-	2590,
+	2586,
 	10,
 	32,
-	2590,
+	2586,
 	89,
 	23,
-	1559,
-	2591,
+	1557,
+	2587,
 	23,
 	3,
 	23,
 	23,
-	2592,
-	2593,
+	2588,
+	2589,
 	136,
 	32,
 	23,
-	1377,
-	1377,
-	1377,
-	1377,
+	1375,
+	1375,
+	1375,
+	1375,
 	3,
 	4,
-	2594,
-	2594,
-	2595,
-	2596,
-	2596,
+	2590,
+	2590,
+	2591,
+	2592,
+	2592,
 	23,
 	14,
 	26,
@@ -5085,24 +5294,24 @@ static const int32_t s_InvokerIndices[1601] =
 	349,
 	740,
 	349,
-	1412,
-	2597,
-	2588,
-	2598,
+	1410,
+	2593,
+	2584,
+	2594,
 	10,
 	32,
+	2595,
+	2596,
+	2597,
+	2598,
 	2599,
 	2600,
-	2601,
-	2020,
-	2602,
-	2603,
-	2602,
-	2603,
+	2599,
+	2600,
 	10,
 	32,
-	2604,
-	2605,
+	2601,
+	2602,
 	136,
 	26,
 	14,
@@ -5134,12 +5343,12 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	740,
 	349,
-	1421,
-	1486,
+	1419,
+	1484,
 	89,
 	31,
-	1421,
-	1486,
+	1419,
+	1484,
 	14,
 	26,
 	14,
@@ -5295,11 +5504,11 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	23,
 	26,
-	2267,
+	2263,
 	23,
-	2267,
-	2606,
-	2268,
+	2263,
+	2603,
+	2264,
 	23,
 	23,
 	26,
@@ -5329,11 +5538,11 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	3,
 	14,
-	2298,
+	2294,
 	-1,
 	-1,
 	-1,
-	2607,
+	2604,
 	23,
 	-1,
 	-1,
@@ -5382,14 +5591,14 @@ static const int32_t s_InvokerIndices[1601] =
 	3,
 	4,
 	168,
-	2565,
+	2561,
 	178,
 	23,
 	26,
 	26,
 	26,
 	23,
-	2247,
+	2243,
 	23,
 	23,
 	4,
@@ -5405,20 +5614,20 @@ static const int32_t s_InvokerIndices[1601] =
 	49,
 	4,
 	4,
-	1473,
-	1473,
-	1473,
-	1599,
-	1599,
+	1471,
+	1471,
+	1471,
+	1597,
+	1597,
 	49,
 	49,
-	871,
+	869,
 	4,
 	49,
 	4,
 	4,
 	49,
-	871,
+	869,
 	106,
 	178,
 	4,
@@ -5428,7 +5637,7 @@ static const int32_t s_InvokerIndices[1601] =
 	4,
 	4,
 	49,
-	871,
+	869,
 	4,
 	4,
 	4,
@@ -5443,22 +5652,22 @@ static const int32_t s_InvokerIndices[1601] =
 	3,
 	3,
 	168,
-	1654,
+	1652,
 	116,
-	2608,
-	2608,
+	2605,
+	2605,
 	23,
 	23,
 	23,
 	23,
 	23,
-	2609,
-	2610,
+	2606,
+	2607,
 	23,
 	14,
 	26,
-	2578,
-	2579,
+	2574,
+	2575,
 	14,
 	26,
 	14,
@@ -5471,12 +5680,12 @@ static const int32_t s_InvokerIndices[1601] =
 	37,
 	37,
 	112,
-	2611,
-	2611,
-	2611,
-	2611,
-	2611,
-	2611,
+	2608,
+	2608,
+	2608,
+	2608,
+	2608,
+	2608,
 	23,
 	23,
 	23,
@@ -5490,8 +5699,8 @@ static const int32_t s_InvokerIndices[1601] =
 	380,
 	136,
 	23,
-	2016,
-	2612,
+	2014,
+	2609,
 	4,
 	14,
 	26,
@@ -5531,7 +5740,7 @@ static const int32_t s_InvokerIndices[1601] =
 	14,
 	26,
 	14,
-	2613,
+	2610,
 	23,
 	23,
 	23,
@@ -5567,7 +5776,7 @@ static const int32_t s_InvokerIndices[1601] =
 	14,
 	26,
 	14,
-	2613,
+	2610,
 	23,
 	23,
 	23,
@@ -5582,7 +5791,7 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	23,
 	14,
-	2247,
+	2243,
 	23,
 	32,
 	23,
@@ -5613,14 +5822,14 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	14,
 	26,
-	1421,
-	1486,
+	1419,
+	1484,
 	740,
 	349,
 	89,
 	31,
-	2614,
-	2615,
+	2611,
+	2612,
 	14,
 	26,
 	14,
@@ -5633,10 +5842,10 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	89,
 	31,
-	2616,
-	2076,
-	2616,
-	2076,
+	2613,
+	2072,
+	2613,
+	2072,
 	740,
 	349,
 	740,
@@ -5725,8 +5934,8 @@ static const int32_t s_InvokerIndices[1601] =
 	31,
 	10,
 	32,
-	1646,
-	1808,
+	1644,
+	1806,
 	14,
 	89,
 	31,
@@ -5739,8 +5948,8 @@ static const int32_t s_InvokerIndices[1601] =
 	14,
 	89,
 	31,
-	1480,
-	1480,
+	1478,
+	1478,
 	168,
 	168,
 	168,
@@ -5771,8 +5980,8 @@ static const int32_t s_InvokerIndices[1601] =
 	26,
 	32,
 	26,
-	2076,
-	2076,
+	2072,
+	2072,
 	349,
 	23,
 	23,
@@ -5787,94 +5996,94 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	26,
 	23,
-	2252,
-	2255,
-	2252,
-	2255,
+	2248,
+	2251,
+	2248,
+	2251,
 	23,
 	467,
-	971,
-	1630,
-	2061,
+	969,
+	1628,
+	2057,
+	2614,
+	2615,
+	2616,
 	2617,
 	2618,
+	26,
+	26,
+	35,
+	26,
+	35,
+	35,
+	428,
+	428,
+	428,
+	2619,
+	2619,
+	2619,
 	2619,
 	2620,
-	2621,
-	26,
-	26,
-	35,
-	26,
-	35,
-	35,
-	428,
-	428,
-	428,
-	2622,
-	2622,
-	2622,
-	2622,
-	2623,
-	2623,
-	2623,
-	2623,
+	2620,
+	2620,
+	2620,
 	34,
-	1323,
+	1321,
 	812,
-	2624,
-	2624,
-	2624,
-	2624,
-	2625,
-	2625,
-	2625,
-	2625,
+	2621,
+	2621,
+	2621,
+	2621,
+	2622,
+	2622,
+	2622,
+	2622,
 	-1,
 	-1,
-	2626,
-	2627,
+	2623,
+	2624,
 	112,
 	23,
-	1450,
+	1448,
+	2625,
+	1959,
+	2626,
+	740,
+	2627,
+	740,
+	2627,
+	1448,
 	2628,
-	1961,
+	740,
 	2629,
 	740,
+	2629,
 	2630,
-	740,
-	2630,
-	1450,
+	1478,
+	1420,
+	1478,
 	2631,
-	740,
-	2632,
-	740,
-	2632,
-	2633,
-	1480,
-	1422,
-	1480,
-	2634,
-	1559,
+	1557,
 	32,
 	28,
 	23,
-	2635,
+	2632,
 	504,
-	1419,
-	2636,
-	2076,
+	1417,
+	2633,
+	2072,
 	136,
-	1302,
+	1300,
 	136,
-	2637,
-	2638,
+	2634,
+	2635,
 	23,
 	26,
 	26,
 	26,
-	2639,
+	2636,
 	34,
-	2640,
+	2637,
 	31,
 	23,
 	23,
@@ -5882,8 +6091,8 @@ static const int32_t s_InvokerIndices[1601] =
 	14,
 	9,
 	26,
-	2641,
-	2642,
+	2638,
+	2639,
 	23,
 	246,
 	518,
@@ -5892,12 +6101,12 @@ static const int32_t s_InvokerIndices[1601] =
 	518,
 	518,
 	518,
+	2640,
+	2641,
+	645,
+	2642,
 	2643,
 	2644,
-	645,
-	2645,
-	2646,
-	2647,
 	23,
 	3,
 	89,
@@ -5958,22 +6167,22 @@ static const int32_t s_InvokerIndices[1601] =
 	-1,
 	-1,
 	136,
+	2645,
+	2646,
+	2645,
+	2647,
 	2648,
 	2649,
-	2648,
+	2649,
+	2645,
+	2645,
+	2645,
+	2645,
+	2645,
 	2650,
+	2160,
 	2651,
 	2652,
-	2652,
-	2648,
-	2648,
-	2648,
-	2648,
-	2648,
-	2653,
-	2164,
-	2654,
-	2655,
 	249,
 	249,
 	94,
@@ -6015,7 +6224,7 @@ static const int32_t s_InvokerIndices[1601] =
 	783,
 	783,
 	201,
-	871,
+	869,
 	168,
 	168,
 	3,
@@ -6023,36 +6232,36 @@ static const int32_t s_InvokerIndices[1601] =
 	783,
 	142,
 	3,
-	1047,
+	1045,
 	62,
 	0,
 	0,
 	0,
 	208,
 	-1,
+	2653,
+	2653,
+	1542,
+	1542,
+	2654,
+	2654,
+	2655,
+	1539,
 	2656,
-	2656,
-	1544,
-	1544,
 	2657,
-	2657,
-	2658,
-	1541,
-	2659,
-	2660,
-	1589,
+	1587,
 	182,
 	3,
-	1486,
-	2575,
+	1484,
+	2571,
 	35,
 	14,
 	14,
 	14,
-	1447,
+	1445,
 	14,
 	3,
-	1447,
+	1445,
 	14,
 	23,
 	23,
@@ -6061,8 +6270,8 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	23,
 	32,
-	1808,
-	2661,
+	1806,
+	2658,
 	23,
 	23,
 	23,
@@ -6072,8 +6281,8 @@ static const int32_t s_InvokerIndices[1601] =
 	14,
 	26,
 	349,
-	2076,
-	2076,
+	2072,
+	2072,
 	23,
 	23,
 	23,
@@ -6091,23 +6300,23 @@ static const int32_t s_InvokerIndices[1601] =
 	31,
 	31,
 	23,
-	1480,
-	349,
-	10,
-	32,
-	10,
-	32,
-	89,
-	31,
-	14,
-	14,
-	14,
-	14,
-	14,
-	10,
-	32,
 	1478,
-	2662,
+	349,
+	10,
+	32,
+	10,
+	32,
+	89,
+	31,
+	14,
+	14,
+	14,
+	14,
+	14,
+	10,
+	32,
+	1476,
+	2659,
 	23,
 	23,
 	23,
@@ -6143,8 +6352,8 @@ static const int32_t s_InvokerIndices[1601] =
 	14,
 	26,
 	349,
-	2076,
-	2076,
+	2072,
+	2072,
 	23,
 	23,
 	23,
@@ -6161,8 +6370,8 @@ static const int32_t s_InvokerIndices[1601] =
 	14,
 	31,
 	23,
-	1480,
-	1422,
+	1478,
+	1420,
 	349,
 	14,
 	89,
@@ -6181,14 +6390,14 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	28,
 	23,
-	1646,
-	1808,
+	1644,
+	1806,
 	23,
-	2247,
+	2243,
 	23,
 	23,
-	2252,
-	2255,
+	2248,
+	2251,
 	42,
 	28,
 	23,
@@ -6201,14 +6410,14 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	89,
 	31,
-	1450,
-	1451,
+	1448,
+	1449,
 	10,
 	32,
-	1422,
-	1423,
-	1450,
-	1451,
+	1420,
+	1421,
+	1448,
+	1449,
 	740,
 	349,
 	740,
@@ -6219,8 +6428,8 @@ static const int32_t s_InvokerIndices[1601] =
 	31,
 	14,
 	14,
-	1646,
-	1808,
+	1644,
+	1806,
 	14,
 	14,
 	23,
@@ -6228,10 +6437,10 @@ static const int32_t s_InvokerIndices[1601] =
 	23,
 	23,
 	23,
-	1451,
+	1449,
 	23,
-	2528,
-	2266,
+	2524,
+	2262,
 	23,
 	3,
 	23,
@@ -6293,8 +6502,8 @@ static const int32_t s_InvokerIndices[1601] =
 	112,
 	112,
 	131,
-	2268,
-	2269,
+	2264,
+	2265,
 	231,
 	23,
 	23,
@@ -6342,7 +6551,7 @@ static const int32_t s_InvokerIndices[1601] =
 	3,
 	23,
 	26,
-	1440,
+	1438,
 	32,
 	23,
 	89,
@@ -6383,101 +6592,101 @@ static const Il2CppTokenRangePair s_rgctxIndices[19] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[95] = 
 {
-	{ (Il2CppRGCTXDataType)3, 24843 },
-	{ (Il2CppRGCTXDataType)3, 24844 },
-	{ (Il2CppRGCTXDataType)3, 24845 },
-	{ (Il2CppRGCTXDataType)3, 24846 },
-	{ (Il2CppRGCTXDataType)3, 24847 },
-	{ (Il2CppRGCTXDataType)3, 24848 },
-	{ (Il2CppRGCTXDataType)3, 24849 },
-	{ (Il2CppRGCTXDataType)3, 24850 },
-	{ (Il2CppRGCTXDataType)3, 24851 },
-	{ (Il2CppRGCTXDataType)3, 24852 },
-	{ (Il2CppRGCTXDataType)2, 32827 },
-	{ (Il2CppRGCTXDataType)3, 24853 },
-	{ (Il2CppRGCTXDataType)2, 32828 },
-	{ (Il2CppRGCTXDataType)3, 24854 },
-	{ (Il2CppRGCTXDataType)3, 24855 },
-	{ (Il2CppRGCTXDataType)3, 24856 },
-	{ (Il2CppRGCTXDataType)3, 24857 },
-	{ (Il2CppRGCTXDataType)3, 24858 },
-	{ (Il2CppRGCTXDataType)3, 24859 },
-	{ (Il2CppRGCTXDataType)3, 24860 },
-	{ (Il2CppRGCTXDataType)3, 24861 },
-	{ (Il2CppRGCTXDataType)3, 24862 },
-	{ (Il2CppRGCTXDataType)3, 24863 },
-	{ (Il2CppRGCTXDataType)3, 24864 },
-	{ (Il2CppRGCTXDataType)2, 32829 },
-	{ (Il2CppRGCTXDataType)3, 24865 },
-	{ (Il2CppRGCTXDataType)2, 32830 },
-	{ (Il2CppRGCTXDataType)3, 24866 },
-	{ (Il2CppRGCTXDataType)3, 24867 },
-	{ (Il2CppRGCTXDataType)3, 24868 },
-	{ (Il2CppRGCTXDataType)3, 24869 },
-	{ (Il2CppRGCTXDataType)3, 24870 },
-	{ (Il2CppRGCTXDataType)3, 24871 },
-	{ (Il2CppRGCTXDataType)3, 24872 },
-	{ (Il2CppRGCTXDataType)3, 24873 },
-	{ (Il2CppRGCTXDataType)3, 24874 },
-	{ (Il2CppRGCTXDataType)3, 24875 },
-	{ (Il2CppRGCTXDataType)3, 24876 },
-	{ (Il2CppRGCTXDataType)2, 32831 },
-	{ (Il2CppRGCTXDataType)3, 24877 },
-	{ (Il2CppRGCTXDataType)2, 32832 },
-	{ (Il2CppRGCTXDataType)3, 24878 },
-	{ (Il2CppRGCTXDataType)2, 32833 },
-	{ (Il2CppRGCTXDataType)3, 24879 },
-	{ (Il2CppRGCTXDataType)3, 24880 },
-	{ (Il2CppRGCTXDataType)2, 30623 },
-	{ (Il2CppRGCTXDataType)3, 24881 },
-	{ (Il2CppRGCTXDataType)2, 32834 },
-	{ (Il2CppRGCTXDataType)2, 32835 },
-	{ (Il2CppRGCTXDataType)3, 24882 },
-	{ (Il2CppRGCTXDataType)2, 30633 },
-	{ (Il2CppRGCTXDataType)3, 24883 },
-	{ (Il2CppRGCTXDataType)3, 24884 },
-	{ (Il2CppRGCTXDataType)2, 30668 },
-	{ (Il2CppRGCTXDataType)3, 24885 },
-	{ (Il2CppRGCTXDataType)3, 24886 },
-	{ (Il2CppRGCTXDataType)2, 30797 },
-	{ (Il2CppRGCTXDataType)2, 30798 },
-	{ (Il2CppRGCTXDataType)3, 24887 },
-	{ (Il2CppRGCTXDataType)2, 30800 },
-	{ (Il2CppRGCTXDataType)2, 30802 },
-	{ (Il2CppRGCTXDataType)2, 32836 },
-	{ (Il2CppRGCTXDataType)3, 24888 },
-	{ (Il2CppRGCTXDataType)3, 24889 },
-	{ (Il2CppRGCTXDataType)2, 32837 },
-	{ (Il2CppRGCTXDataType)3, 24890 },
-	{ (Il2CppRGCTXDataType)2, 32838 },
-	{ (Il2CppRGCTXDataType)3, 24891 },
-	{ (Il2CppRGCTXDataType)2, 32839 },
-	{ (Il2CppRGCTXDataType)3, 24892 },
-	{ (Il2CppRGCTXDataType)2, 32840 },
-	{ (Il2CppRGCTXDataType)3, 24893 },
-	{ (Il2CppRGCTXDataType)2, 32840 },
-	{ (Il2CppRGCTXDataType)3, 24894 },
-	{ (Il2CppRGCTXDataType)3, 24895 },
-	{ (Il2CppRGCTXDataType)3, 24896 },
-	{ (Il2CppRGCTXDataType)3, 24897 },
-	{ (Il2CppRGCTXDataType)2, 32841 },
-	{ (Il2CppRGCTXDataType)3, 24898 },
-	{ (Il2CppRGCTXDataType)3, 24899 },
-	{ (Il2CppRGCTXDataType)3, 24900 },
-	{ (Il2CppRGCTXDataType)3, 24901 },
-	{ (Il2CppRGCTXDataType)3, 24902 },
-	{ (Il2CppRGCTXDataType)3, 24903 },
-	{ (Il2CppRGCTXDataType)2, 30844 },
-	{ (Il2CppRGCTXDataType)3, 24904 },
-	{ (Il2CppRGCTXDataType)3, 24905 },
-	{ (Il2CppRGCTXDataType)3, 24906 },
-	{ (Il2CppRGCTXDataType)3, 24907 },
-	{ (Il2CppRGCTXDataType)3, 24908 },
-	{ (Il2CppRGCTXDataType)2, 31067 },
-	{ (Il2CppRGCTXDataType)3, 24909 },
-	{ (Il2CppRGCTXDataType)2, 31110 },
-	{ (Il2CppRGCTXDataType)3, 24910 },
-	{ (Il2CppRGCTXDataType)3, 24911 },
+	{ (Il2CppRGCTXDataType)3, 24687 },
+	{ (Il2CppRGCTXDataType)3, 24688 },
+	{ (Il2CppRGCTXDataType)3, 24689 },
+	{ (Il2CppRGCTXDataType)3, 24690 },
+	{ (Il2CppRGCTXDataType)3, 24691 },
+	{ (Il2CppRGCTXDataType)3, 24692 },
+	{ (Il2CppRGCTXDataType)3, 24693 },
+	{ (Il2CppRGCTXDataType)3, 24694 },
+	{ (Il2CppRGCTXDataType)3, 24695 },
+	{ (Il2CppRGCTXDataType)3, 24696 },
+	{ (Il2CppRGCTXDataType)2, 32581 },
+	{ (Il2CppRGCTXDataType)3, 24697 },
+	{ (Il2CppRGCTXDataType)2, 32582 },
+	{ (Il2CppRGCTXDataType)3, 24698 },
+	{ (Il2CppRGCTXDataType)3, 24699 },
+	{ (Il2CppRGCTXDataType)3, 24700 },
+	{ (Il2CppRGCTXDataType)3, 24701 },
+	{ (Il2CppRGCTXDataType)3, 24702 },
+	{ (Il2CppRGCTXDataType)3, 24703 },
+	{ (Il2CppRGCTXDataType)3, 24704 },
+	{ (Il2CppRGCTXDataType)3, 24705 },
+	{ (Il2CppRGCTXDataType)3, 24706 },
+	{ (Il2CppRGCTXDataType)3, 24707 },
+	{ (Il2CppRGCTXDataType)3, 24708 },
+	{ (Il2CppRGCTXDataType)2, 32583 },
+	{ (Il2CppRGCTXDataType)3, 24709 },
+	{ (Il2CppRGCTXDataType)2, 32584 },
+	{ (Il2CppRGCTXDataType)3, 24710 },
+	{ (Il2CppRGCTXDataType)3, 24711 },
+	{ (Il2CppRGCTXDataType)3, 24712 },
+	{ (Il2CppRGCTXDataType)3, 24713 },
+	{ (Il2CppRGCTXDataType)3, 24714 },
+	{ (Il2CppRGCTXDataType)3, 24715 },
+	{ (Il2CppRGCTXDataType)3, 24716 },
+	{ (Il2CppRGCTXDataType)3, 24717 },
+	{ (Il2CppRGCTXDataType)3, 24718 },
+	{ (Il2CppRGCTXDataType)3, 24719 },
+	{ (Il2CppRGCTXDataType)3, 24720 },
+	{ (Il2CppRGCTXDataType)2, 32585 },
+	{ (Il2CppRGCTXDataType)3, 24721 },
+	{ (Il2CppRGCTXDataType)2, 32586 },
+	{ (Il2CppRGCTXDataType)3, 24722 },
+	{ (Il2CppRGCTXDataType)2, 32587 },
+	{ (Il2CppRGCTXDataType)3, 24723 },
+	{ (Il2CppRGCTXDataType)3, 24724 },
+	{ (Il2CppRGCTXDataType)2, 30388 },
+	{ (Il2CppRGCTXDataType)3, 24725 },
+	{ (Il2CppRGCTXDataType)2, 32588 },
+	{ (Il2CppRGCTXDataType)2, 32589 },
+	{ (Il2CppRGCTXDataType)3, 24726 },
+	{ (Il2CppRGCTXDataType)2, 30398 },
+	{ (Il2CppRGCTXDataType)3, 24727 },
+	{ (Il2CppRGCTXDataType)3, 24728 },
+	{ (Il2CppRGCTXDataType)2, 30433 },
+	{ (Il2CppRGCTXDataType)3, 24729 },
+	{ (Il2CppRGCTXDataType)3, 24730 },
+	{ (Il2CppRGCTXDataType)2, 30562 },
+	{ (Il2CppRGCTXDataType)2, 30563 },
+	{ (Il2CppRGCTXDataType)3, 24731 },
+	{ (Il2CppRGCTXDataType)2, 30565 },
+	{ (Il2CppRGCTXDataType)2, 30567 },
+	{ (Il2CppRGCTXDataType)2, 32590 },
+	{ (Il2CppRGCTXDataType)3, 24732 },
+	{ (Il2CppRGCTXDataType)3, 24733 },
+	{ (Il2CppRGCTXDataType)2, 32591 },
+	{ (Il2CppRGCTXDataType)3, 24734 },
+	{ (Il2CppRGCTXDataType)2, 32592 },
+	{ (Il2CppRGCTXDataType)3, 24735 },
+	{ (Il2CppRGCTXDataType)2, 32593 },
+	{ (Il2CppRGCTXDataType)3, 24736 },
+	{ (Il2CppRGCTXDataType)2, 32594 },
+	{ (Il2CppRGCTXDataType)3, 24737 },
+	{ (Il2CppRGCTXDataType)2, 32594 },
+	{ (Il2CppRGCTXDataType)3, 24738 },
+	{ (Il2CppRGCTXDataType)3, 24739 },
+	{ (Il2CppRGCTXDataType)3, 24740 },
+	{ (Il2CppRGCTXDataType)3, 24741 },
+	{ (Il2CppRGCTXDataType)2, 32595 },
+	{ (Il2CppRGCTXDataType)3, 24742 },
+	{ (Il2CppRGCTXDataType)3, 24743 },
+	{ (Il2CppRGCTXDataType)3, 24744 },
+	{ (Il2CppRGCTXDataType)3, 24745 },
+	{ (Il2CppRGCTXDataType)3, 24746 },
+	{ (Il2CppRGCTXDataType)3, 24747 },
+	{ (Il2CppRGCTXDataType)2, 30609 },
+	{ (Il2CppRGCTXDataType)3, 24748 },
+	{ (Il2CppRGCTXDataType)3, 24749 },
+	{ (Il2CppRGCTXDataType)3, 24750 },
+	{ (Il2CppRGCTXDataType)3, 24751 },
+	{ (Il2CppRGCTXDataType)3, 24752 },
+	{ (Il2CppRGCTXDataType)2, 30831 },
+	{ (Il2CppRGCTXDataType)3, 24753 },
+	{ (Il2CppRGCTXDataType)2, 30874 },
+	{ (Il2CppRGCTXDataType)3, 24754 },
+	{ (Il2CppRGCTXDataType)3, 24755 },
 };
 extern const Il2CppCodeGenModule g_Unity_TextMeshProCodeGenModule;
 const Il2CppCodeGenModule g_Unity_TextMeshProCodeGenModule = 
@@ -6485,6 +6694,8 @@ const Il2CppCodeGenModule g_Unity_TextMeshProCodeGenModule =
 	"Unity.TextMeshPro.dll",
 	1601,
 	s_methodPointers,
+	103,
+	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,

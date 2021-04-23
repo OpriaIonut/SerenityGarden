@@ -53,10 +53,10 @@
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
+		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.ComputeShader" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
-		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbes" preserve="nothing"/>
 		<type fullname="UnityEngine.FlareLayer" preserve="nothing"/>
 	</assembly>
@@ -80,6 +80,7 @@
 		<type fullname="SerenityGarden.MainMenuClickEvents" preserve="nothing"/>
 		<type fullname="SerenityGarden.NavigationManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.NetworkManager" preserve="nothing"/>
+		<type fullname="SerenityGarden.NetworkPlayer" preserve="nothing"/>
 		<type fullname="SerenityGarden.PlayerBase" preserve="nothing"/>
 		<type fullname="SerenityGarden.ProcessInitializationManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.RaidStageSelection" preserve="nothing"/>

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace SerenityGarden
 {
-    public class WaveManager : LogicProcessBase, IPunObservable
+    public class WaveManager : LogicProcessBase
     {
         #region Singleton
         public static WaveManager instance;
@@ -48,10 +48,6 @@ namespace SerenityGarden
         [HideInInspector] public bool spawnWaves = false;    //Will be set to false when we finished spawning all waves
 
         private int enemyIndex = 0;
-
-        private bool netStartGame = false;
-        private bool netSkipWaveDelay = false;
-        private bool netReceiveSkipDelay = false;
 
         private void Start()
         {
@@ -240,7 +236,6 @@ namespace SerenityGarden
         {
             spawnWaves = true;
             startedWave = true;
-            netStartGame = true;
             stageStartButton.SetActive(false);
             StartCoroutine(WaveSpawner(selectedStage.waves[currentWaveIndex]));
         }
@@ -254,11 +249,6 @@ namespace SerenityGarden
             float timeDiff = waveDelay - (Time.time - lastWaveEndTime);
             buildManager.Money += (int)(timeDiff * moneyPerSecondSkip);
 
-            if (netReceiveSkipDelay)
-                netReceiveSkipDelay = false;
-            else
-                netSkipWaveDelay = true;
-
             //And start the wave
             startedWave = true;
             currentWaveIndex++;
@@ -269,44 +259,6 @@ namespace SerenityGarden
         {
             //This class is dependent on the grid manager
             return gridManager.isInitialized;
-        }
-
-        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-        {
-            if(stream.IsReading)
-            {
-                string strReceived = stream.ReceiveNext() as string;
-
-                if(strReceived == "StartGame")
-                {
-                    spawnWaves = true;
-                    startedWave = true;
-                    StartCoroutine(WaveSpawner(selectedStage.waves[currentWaveIndex]));
-                }
-                if(strReceived == "SKipDelay")
-                {
-                    netReceiveSkipDelay = true;
-                    _SkipWaveDelay();
-                }
-            }
-            if(stream.IsWriting)
-            {
-                string eventType = "";
-                if(PhotonNetwork.IsMasterClient)
-                {
-                    if (netStartGame)
-                    {
-                        eventType = "StartGame";
-                        netStartGame = false;
-                    }
-                    if (netSkipWaveDelay)
-                    {
-                        eventType = "SkipDelay";
-                        netSkipWaveDelay = false;
-                    }
-                }
-                
-            }
         }
     }
 }

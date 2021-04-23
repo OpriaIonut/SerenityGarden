@@ -198,10 +198,12 @@ namespace SerenityGarden
             else
                 hexagonBlock.Type = HexagonType.TurretBuildable;
 
-            if (netReceivedEventData)
-                netReceivedEventData = false;
+            if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+                Destroy(gameObject);
             else
-                netSendTurretSell = true;
+            {
+                PhotonNetwork.Destroy(gameObject);
+            }
             DrawRange(false);
         }
 
@@ -211,10 +213,18 @@ namespace SerenityGarden
 
             if (initData != null)
             {
-                string hexagonName = (string)initData[0];
+                string hexagonName = initData[0].ToString();
                 hexagonBlock = GameObject.Find(hexagonName).GetComponent<HexagonalBlock>();
                 hexagonBlock.Type = HexagonType.Occupied;
             }
+        }
+
+        private void OnDestroy()
+        {
+            if (turretType == TurretType.Excavator)
+                hexagonBlock.Type = HexagonType.ResourceExtraction;
+            else
+                hexagonBlock.Type = HexagonType.TurretBuildable;
         }
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
@@ -222,12 +232,6 @@ namespace SerenityGarden
             if (stream.IsWriting)
             {
                 string eventType = "";
-                if (netSendTurretSell)
-                {
-                    eventType = "SellTurret";
-                    netSendTurretSell = false;
-                    Destroy(gameObject);
-                }
                 if (netSendTurretUpgrade)
                 {
                     eventType = "Upgrade";
@@ -243,15 +247,9 @@ namespace SerenityGarden
             }
             if (stream.IsReading)
             {
-                string eventType = (string)stream.ReceiveNext();
+                string eventType = stream.ReceiveNext().ToString();
                 Health = (float)stream.ReceiveNext();
 
-                if (eventType == "SellTurret")
-                {
-                    netReceivedEventData = true;
-                    SellTurret();
-                    Destroy(gameObject);
-                }
                 if (eventType == "Upgrade")
                 {
                     netReceivedEventData = true;

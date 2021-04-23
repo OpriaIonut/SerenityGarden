@@ -8,7 +8,7 @@ using Photon.Realtime;
 
 namespace SerenityGarden
 {
-    public class GamePauseManager : MonoBehaviourPunCallbacks, IPunObservable
+    public class GamePauseManager : MonoBehaviourPunCallbacks
     {
         //Default singleton
         #region Singleton
@@ -44,18 +44,11 @@ namespace SerenityGarden
 
         private float pauseStartTime;
 
-        private bool netTogglePauseGame = false;
-
-        private InputManager inputManager;
-        private void Start()
-        {
-            inputManager = InputManager.instance;
-        }
+        [HideInInspector] public bool netReceivedEvent = false;
 
         public void _PauseGame()
         {
             gamePaused = !gamePaused;
-            netTogglePauseGame = true;
             pauseMenu.SetActive(gamePaused);
             if(gamePaused == true)
             {
@@ -66,6 +59,25 @@ namespace SerenityGarden
                 pausedTime = Time.time - pauseStartTime;
                 if (Event_UnpauseGame != null && Event_UnpauseGame.GetInvocationList().Length != 0)
                     Event_UnpauseGame.Invoke();
+            }
+
+            if (netReceivedEvent)
+            {
+                netReceivedEvent = false;
+                return;
+            }
+
+            if (PhotonNetwork.IsConnectedAndReady)
+            {
+                NetworkPlayer[] players = FindObjectsOfType<NetworkPlayer>();
+                foreach (NetworkPlayer player in players)
+                {
+                    if (player.view.IsMine)
+                    {
+                        player.SendNetworkEvent("PauseGame");
+                        break;
+                    }
+                }
             }
         }
 
@@ -105,28 +117,6 @@ namespace SerenityGarden
         public void OnClick_PopupCancel()
         {
             confirmationMenu.SetActive(false);
-        }
-
-        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-        {
-            if(stream.IsReading)
-            {
-                string strReceived = stream.ReceiveNext() as string;
-
-                if(strReceived == "TogglePauseGame")
-                {
-                    _PauseGame();
-                    netTogglePauseGame = false;
-                }
-            }
-            if(stream.IsWriting)
-            {
-                if (netTogglePauseGame)
-                {
-                    stream.SendNext("TogglePauseGame");
-                    netTogglePauseGame = false;
-                }
-            }
         }
     }
 }

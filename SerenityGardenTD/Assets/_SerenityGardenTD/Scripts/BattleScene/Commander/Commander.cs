@@ -68,6 +68,9 @@ namespace SerenityGarden
         private bool netSendEndBlock = false;
         private bool netReceivedEndBlock = false;
 
+        private bool netSendPowerupTarget = false;
+        private bool netReceivedPowerup = false;
+
         #endregion
 
         private void Awake()
@@ -133,6 +136,11 @@ namespace SerenityGarden
         //Called when we click on ui, it will move towards the turret and when he collides with it, he will enter the turret, increasing it's stats
         public void PowerupTurret(BuildableTurret selectedTurret)
         {
+            if (netReceivedPowerup)
+                netReceivedPowerup = false;
+            else
+                netSendPowerupTarget = true;
+
             powerupTurret = true;
             EndBlock = selectedTurret.hexagonBlock;
             powerupTarget = selectedTurret;
@@ -235,22 +243,6 @@ namespace SerenityGarden
             Damage = status.damage;
             Range = status.range;
             AttackCooldown = status.attackCooldown;
-
-            //if (!view.IsMine && CurrentBlock == null)
-            //{
-            //    foreach(HexagonalBlock item in HexagonalGrid.instance.gridCells)
-            //    {
-            //        if((PhotonNetwork.IsMasterClient && item.Type == HexagonType.CommanderSpawn1) || (!PhotonNetwork.IsMasterClient && item.Type == HexagonType.CommanderSpawn2))
-            //        {
-            //            CurrentBlock = item;
-
-            //            //Will be set to occupied by the property EndBlock. It needs to be Walkable so that when the commander leaves the block, it will set it to walkable
-            //            item.Type = HexagonType.Walkable;
-            //            EndBlock = item;
-            //            break;
-            //        }
-            //    }
-            //}
         }
 
         public void Move()
@@ -264,15 +256,30 @@ namespace SerenityGarden
 
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
+            if (stream.IsWriting)
+            {
+                if (netSendEndBlock)
+                {
+                    stream.SendNext("UpdateEndBlock");
+                    stream.SendNext(EndBlock.name);
+                    netSendEndBlock = false;
+                }
+                if (netSendPowerupTarget)
+                {
+                    stream.SendNext("PowerupTarget");
+                    stream.SendNext(powerupTarget.photonView.ViewID);
+                    netSendPowerupTarget = false;
+                }
+            }
             if (stream.IsReading)
             {
-                string receivedMessage = stream.ReceiveNext() as string;
+                string receivedMessage = stream.ReceiveNext().ToString();
                 object receivedObj = stream.ReceiveNext();
 
                 if (receivedMessage == "UpdateEndBlock")
                 {
                     netReceivedEndBlock = true;
-                    string objName = receivedObj as string;
+                    string objName = receivedObj.ToString(); ;
                     if (objName != null)
                     {
                         GameObject objToFind = GameObject.Find(objName);
@@ -288,19 +295,23 @@ namespace SerenityGarden
                             ReachedDestination = false;
                         }
                     }
-                    else
-                    {
-                        Debug.LogError("Could not cast: " + objName + " to string");
-                    }
                 }
-            }
-            if (stream.IsWriting)
-            {
-                if (netSendEndBlock)
+                else if(receivedMessage == "PowerupTarget")
                 {
-                    stream.SendNext("UpdateEndBlock");
-                    stream.SendNext(EndBlock.name);
-                    netSendEndBlock = false;
+                    int viewId = (int)receivedObj;
+                    Debug.Log(viewId);
+                    PhotonView[] views = FindObjectsOfType<PhotonView>();
+                    foreach(PhotonView item in views)
+                    {
+                        if(item.ViewID == viewId)
+                        {
+                            BuildableTurret script = item.gameObject.GetComponent<BuildableTurret>();
+                            Debug.Log("FoundObj");
+                            netReceivedPowerup = true;
+                            PowerupTurret(script);
+                            break;
+                        }
+                    }
                 }
             }
         }

@@ -59,7 +59,6 @@ struct Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017;
 struct XmlReader_t13F08E3C651EB9F2AE882342BCD5E2CA86F29ABB;
 
 IL2CPP_EXTERN_C RuntimeClass* PlatformNotSupportedException_t14FE109377F8FA8B3B2F9A0C4FE3BF10662C73B5_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C const RuntimeMethod* ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ConfigurationElementCollection_get_ThrowOnDuplicate_mE9A81BD23AF7A397705927E83969F28FB0352FAC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ConfigurationElement_DeserializeElement_mF73F06B4B2E7710DBCA22A87271375C4D1DCF029_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ConfigurationElement_InitializeDefault_m60D9D20FEFA9971FD0F37525AE1868DDDAEADD09_RuntimeMethod_var;
@@ -80,7 +79,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* IgnoreSection_SerializeSection_m03CB506F46A
 IL2CPP_EXTERN_C const RuntimeMethod* IgnoreSection__ctor_m30C69267DD27E85879BA3AE28ABCDAE783B28350_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* IgnoreSection_get_Properties_m654A228B012E724695AFD79627F13FCF739244E4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A_RuntimeMethod_var;
-IL2CPP_EXTERN_C const uint32_t ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ConfigurationElementCollection_get_ThrowOnDuplicate_mE9A81BD23AF7A397705927E83969F28FB0352FAC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ConfigurationElement_DeserializeElement_mF73F06B4B2E7710DBCA22A87271375C4D1DCF029_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t ConfigurationElement_InitializeDefault_m60D9D20FEFA9971FD0F37525AE1868DDDAEADD09_MetadataUsageId;
@@ -397,24 +395,6 @@ struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_marshaled_pinvoke
 struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_marshaled_com
 {
 };
-
-// System.Int32
-struct  Int32_t585191389E07734F19F3156FF88FB3EF4800D102 
-{
-public:
-	// System.Int32 System.Int32::m_value
-	int32_t ___m_value_0;
-
-public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(Int32_t585191389E07734F19F3156FF88FB3EF4800D102, ___m_value_0)); }
-	inline int32_t get_m_value_0() const { return ___m_value_0; }
-	inline int32_t* get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(int32_t value)
-	{
-		___m_value_0 = value;
-	}
-};
-
 
 // System.IntPtr
 struct  IntPtr_t 
@@ -1071,23 +1051,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConfigurationElement_ResetModified_m6AAF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Int32 System.Configuration.ConfigurationElementCollection::get_Count()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA (ConfigurationElementCollection_tB0DA3194B9C1528D2627B291C79B560C68A78FCC * __this, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	{
-		il2cpp_codegen_raise_profile_exception(ConfigurationElementCollection_get_Count_m58EFBCAA164C912FEBD007AACF85784B80C54EFA_RuntimeMethod_var);
-		il2cpp_codegen_initobj((&V_0), sizeof(int32_t));
-		int32_t L_0 = V_0;
-		return L_0;
-	}
-}
 // System.Boolean System.Configuration.ConfigurationElementCollection::get_ThrowOnDuplicate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ConfigurationElementCollection_get_ThrowOnDuplicate_mE9A81BD23AF7A397705927E83969F28FB0352FAC (ConfigurationElementCollection_tB0DA3194B9C1528D2627B291C79B560C68A78FCC * __this, const RuntimeMethod* method)
 {
@@ -1314,7 +1277,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* IgnoreSection_SerializeSection_m03C
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Unity.ThrowStub::ThrowNotSupportedException()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A ()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowStub_ThrowNotSupportedException_mF0DAFE591641D359313AB87E6900E4B05E42390A (const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)

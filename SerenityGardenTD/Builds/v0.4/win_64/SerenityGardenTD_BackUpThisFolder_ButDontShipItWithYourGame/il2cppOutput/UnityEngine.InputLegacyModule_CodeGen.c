@@ -21,13 +21,13 @@ IL2CPP_EXTERN_C_END
 
 
 // 0x00000001 System.Int32 UnityEngine.Touch::get_fingerId()
-extern void Touch_get_fingerId_m2EF0EF2E6E388C8D9D38C58EF5D03EA30E568E1D_AdjustorThunk (void);
+extern void Touch_get_fingerId_m2EF0EF2E6E388C8D9D38C58EF5D03EA30E568E1D (void);
 // 0x00000002 UnityEngine.Vector2 UnityEngine.Touch::get_position()
-extern void Touch_get_position_m2E60676112DA3628CF2DC76418A275C7FE521D8F_AdjustorThunk (void);
+extern void Touch_get_position_m2E60676112DA3628CF2DC76418A275C7FE521D8F (void);
 // 0x00000003 UnityEngine.TouchPhase UnityEngine.Touch::get_phase()
-extern void Touch_get_phase_m759A61477ECBBD90A57E36F1166EB9340A0FE349_AdjustorThunk (void);
+extern void Touch_get_phase_m759A61477ECBBD90A57E36F1166EB9340A0FE349 (void);
 // 0x00000004 UnityEngine.TouchType UnityEngine.Touch::get_type()
-extern void Touch_get_type_mAF919D12756ABA000A17146E82FDDFCEBFD6EEA9_AdjustorThunk (void);
+extern void Touch_get_type_mAF919D12756ABA000A17146E82FDDFCEBFD6EEA9 (void);
 // 0x00000005 UnityEngine.GameObject UnityEngine.CameraRaycastHelper::RaycastTry(UnityEngine.Camera,UnityEngine.Ray,System.Single,System.Int32)
 extern void CameraRaycastHelper_RaycastTry_m6E6369E18DAA7CA518D8B826E1030FFBDAA79B95 (void);
 // 0x00000006 UnityEngine.GameObject UnityEngine.CameraRaycastHelper::RaycastTry2D(UnityEngine.Camera,UnityEngine.Ray,System.Single,System.Int32)
@@ -100,22 +100,22 @@ extern void Input_set_compositionCursorPos_Injected_mFED26C8FCDE955B227669C90231
 extern void SendMouseEvents_SetMouseMoved_m9B185D9ECD0C159C5DFA17F8F0ECBFD3420F32A6 (void);
 // 0x00000028 System.Void UnityEngine.SendMouseEvents::DoSendMouseEvents(System.Int32)
 extern void SendMouseEvents_DoSendMouseEvents_m045BF5CABD2F263140E5F1427F81702EE0D3C507 (void);
-// 0x00000029 System.Void UnityEngine.SendMouseEvents::SendEvents(System.Int32,UnityEngine.SendMouseEvents_HitInfo)
+// 0x00000029 System.Void UnityEngine.SendMouseEvents::SendEvents(System.Int32,UnityEngine.SendMouseEvents/HitInfo)
 extern void SendMouseEvents_SendEvents_m2E266CFBE23F89BA8563312C8488DF1E9A7C25F0 (void);
 // 0x0000002A System.Void UnityEngine.SendMouseEvents::.cctor()
 extern void SendMouseEvents__cctor_m702309EA7759031619D3963B6EA517ABEB888053 (void);
-// 0x0000002B System.Void UnityEngine.SendMouseEvents_HitInfo::SendMessage(System.String)
-extern void HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434_AdjustorThunk (void);
-// 0x0000002C System.Boolean UnityEngine.SendMouseEvents_HitInfo::op_Implicit(UnityEngine.SendMouseEvents_HitInfo)
+// 0x0000002B System.Void UnityEngine.SendMouseEvents/HitInfo::SendMessage(System.String)
+extern void HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434 (void);
+// 0x0000002C System.Boolean UnityEngine.SendMouseEvents/HitInfo::op_Implicit(UnityEngine.SendMouseEvents/HitInfo)
 extern void HitInfo_op_Implicit_mBB6DB77D68B22445EC255E34E7EE7667FD584322 (void);
-// 0x0000002D System.Boolean UnityEngine.SendMouseEvents_HitInfo::Compare(UnityEngine.SendMouseEvents_HitInfo,UnityEngine.SendMouseEvents_HitInfo)
+// 0x0000002D System.Boolean UnityEngine.SendMouseEvents/HitInfo::Compare(UnityEngine.SendMouseEvents/HitInfo,UnityEngine.SendMouseEvents/HitInfo)
 extern void HitInfo_Compare_m5643F7A11E2F60B86286330548DF614BD9691582 (void);
 static Il2CppMethodPointer s_methodPointers[45] = 
 {
-	Touch_get_fingerId_m2EF0EF2E6E388C8D9D38C58EF5D03EA30E568E1D_AdjustorThunk,
-	Touch_get_position_m2E60676112DA3628CF2DC76418A275C7FE521D8F_AdjustorThunk,
-	Touch_get_phase_m759A61477ECBBD90A57E36F1166EB9340A0FE349_AdjustorThunk,
-	Touch_get_type_mAF919D12756ABA000A17146E82FDDFCEBFD6EEA9_AdjustorThunk,
+	Touch_get_fingerId_m2EF0EF2E6E388C8D9D38C58EF5D03EA30E568E1D,
+	Touch_get_position_m2E60676112DA3628CF2DC76418A275C7FE521D8F,
+	Touch_get_phase_m759A61477ECBBD90A57E36F1166EB9340A0FE349,
+	Touch_get_type_mAF919D12756ABA000A17146E82FDDFCEBFD6EEA9,
 	CameraRaycastHelper_RaycastTry_m6E6369E18DAA7CA518D8B826E1030FFBDAA79B95,
 	CameraRaycastHelper_RaycastTry2D_mE4F905B8FC0FC471EB8DDF2F3B8A7C2B9E54CEDE,
 	CameraRaycastHelper_RaycastTry_Injected_m2326FE94A96F40A5D51E4261E68C5E42B914D894,
@@ -154,20 +154,33 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	SendMouseEvents_DoSendMouseEvents_m045BF5CABD2F263140E5F1427F81702EE0D3C507,
 	SendMouseEvents_SendEvents_m2E266CFBE23F89BA8563312C8488DF1E9A7C25F0,
 	SendMouseEvents__cctor_m702309EA7759031619D3963B6EA517ABEB888053,
-	HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434_AdjustorThunk,
+	HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434,
 	HitInfo_op_Implicit_mBB6DB77D68B22445EC255E34E7EE7667FD584322,
 	HitInfo_Compare_m5643F7A11E2F60B86286330548DF614BD9691582,
+};
+extern void Touch_get_fingerId_m2EF0EF2E6E388C8D9D38C58EF5D03EA30E568E1D_AdjustorThunk (void);
+extern void Touch_get_position_m2E60676112DA3628CF2DC76418A275C7FE521D8F_AdjustorThunk (void);
+extern void Touch_get_phase_m759A61477ECBBD90A57E36F1166EB9340A0FE349_AdjustorThunk (void);
+extern void Touch_get_type_mAF919D12756ABA000A17146E82FDDFCEBFD6EEA9_AdjustorThunk (void);
+extern void HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[5] = 
+{
+	{ 0x06000001, Touch_get_fingerId_m2EF0EF2E6E388C8D9D38C58EF5D03EA30E568E1D_AdjustorThunk },
+	{ 0x06000002, Touch_get_position_m2E60676112DA3628CF2DC76418A275C7FE521D8F_AdjustorThunk },
+	{ 0x06000003, Touch_get_phase_m759A61477ECBBD90A57E36F1166EB9340A0FE349_AdjustorThunk },
+	{ 0x06000004, Touch_get_type_mAF919D12756ABA000A17146E82FDDFCEBFD6EEA9_AdjustorThunk },
+	{ 0x0600002B, HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434_AdjustorThunk },
 };
 static const int32_t s_InvokerIndices[45] = 
 {
 	10,
-	1450,
+	1448,
 	10,
 	10,
-	1976,
-	1976,
-	1977,
-	1977,
+	1974,
+	1974,
+	1975,
+	1975,
 	46,
 	46,
 	46,
@@ -179,32 +192,32 @@ static const int32_t s_InvokerIndices[45] =
 	46,
 	46,
 	46,
-	1978,
+	1976,
 	46,
 	46,
 	46,
-	1571,
-	1599,
+	1569,
+	1597,
 	106,
 	178,
 	4,
-	1599,
-	1979,
+	1597,
+	1977,
 	49,
 	106,
 	49,
-	952,
+	950,
 	17,
 	17,
 	17,
 	17,
 	3,
 	178,
-	1980,
+	1978,
 	3,
 	26,
-	1981,
-	1982,
+	1979,
+	1980,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_InputLegacyModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_InputLegacyModuleCodeGenModule = 
@@ -212,6 +225,8 @@ const Il2CppCodeGenModule g_UnityEngine_InputLegacyModuleCodeGenModule =
 	"UnityEngine.InputLegacyModule.dll",
 	45,
 	s_methodPointers,
+	5,
+	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,

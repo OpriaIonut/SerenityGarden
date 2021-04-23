@@ -26,6 +26,8 @@ const Il2CppCodeGenModule g_UnityEngineCodeGenModule =
 	"UnityEngine.dll",
 	0,
 	NULL,
+	0,
+	NULL,
 	NULL,
 	0,
 	NULL,

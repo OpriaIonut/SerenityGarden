@@ -449,7 +449,7 @@ public:
 };
 
 
-// System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>
+// System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>
 struct  ArraySortHelper_1_tE448A7E14448B9A29C1DC2FD77F1AB4657D230E1  : public RuntimeObject
 {
 public:
@@ -512,7 +512,7 @@ public:
 };
 
 
-// System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>
+// System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>
 struct  ArraySortHelper_1_t9B9D766A7B7EFD3BDA37C4C3C820613ACDF2F71C  : public RuntimeObject
 {
 public:
@@ -539,7 +539,7 @@ public:
 };
 
 
-// System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>
+// System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>
 struct  ArraySortHelper_1_tD35B97A65EC42619B197F14012FA4F719475A6DC  : public RuntimeObject
 {
 public:
@@ -809,7 +809,7 @@ public:
 };
 
 
-// System.Collections.Generic.Comparer`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>
+// System.Collections.Generic.Comparer`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>
 struct  Comparer_1_t81FBFF4B1E70ACB122E4968D1C4860F2A2E24E10  : public RuntimeObject
 {
 public:
@@ -991,7 +991,7 @@ public:
 };
 
 
-// System.Collections.Generic.Comparer`1<UnityEngine.UIElements.FocusController_FocusedElement>
+// System.Collections.Generic.Comparer`1<UnityEngine.UIElements.FocusController/FocusedElement>
 struct  Comparer_1_t4B42F97CA5098AA5C1835EA73354366AD979DA28  : public RuntimeObject
 {
 public:
@@ -1069,7 +1069,7 @@ public:
 };
 
 
-// System.Collections.Generic.Comparer`1<UnityEngine.UnitySynchronizationContext_WorkRequest>
+// System.Collections.Generic.Comparer`1<UnityEngine.UnitySynchronizationContext/WorkRequest>
 struct  Comparer_1_tE47259BC1CE77BD0F5BEA8A6F9FD64494298235B  : public RuntimeObject
 {
 public:
@@ -1667,13 +1667,13 @@ public:
 };
 
 
-// UnityEngine.UIElements.FocusController_FocusedElement
+// UnityEngine.UIElements.FocusController/FocusedElement
 struct  FocusedElement_t6C6023CCCFE4A5763A2ADBA3CBAFB38ECD964070 
 {
 public:
-	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.FocusController_FocusedElement::m_SubTreeRoot
+	// UnityEngine.UIElements.VisualElement UnityEngine.UIElements.FocusController/FocusedElement::m_SubTreeRoot
 	VisualElement_t0EB50F3AD9103B6EEB58682651950BE7C7A4AD57 * ___m_SubTreeRoot_0;
-	// UnityEngine.UIElements.Focusable UnityEngine.UIElements.FocusController_FocusedElement::m_FocusedElement
+	// UnityEngine.UIElements.Focusable UnityEngine.UIElements.FocusController/FocusedElement::m_FocusedElement
 	Focusable_tE75872B8E11B244036F83AB8FFBB20F782F19C6B * ___m_FocusedElement_1;
 
 public:
@@ -1757,15 +1757,15 @@ public:
 };
 
 
-// UnityEngine.UnitySynchronizationContext_WorkRequest
+// UnityEngine.UnitySynchronizationContext/WorkRequest
 struct  WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94 
 {
 public:
-	// System.Threading.SendOrPostCallback UnityEngine.UnitySynchronizationContext_WorkRequest::m_DelagateCallback
+	// System.Threading.SendOrPostCallback UnityEngine.UnitySynchronizationContext/WorkRequest::m_DelagateCallback
 	SendOrPostCallback_t3F9C0164860E4AA5138DF8B4488DFB0D33147F01 * ___m_DelagateCallback_0;
-	// System.Object UnityEngine.UnitySynchronizationContext_WorkRequest::m_DelagateState
+	// System.Object UnityEngine.UnitySynchronizationContext/WorkRequest::m_DelagateState
 	RuntimeObject * ___m_DelagateState_1;
-	// System.Threading.ManualResetEvent UnityEngine.UnitySynchronizationContext_WorkRequest::m_WaitHandle
+	// System.Threading.ManualResetEvent UnityEngine.UnitySynchronizationContext/WorkRequest::m_WaitHandle
 	ManualResetEvent_tDFAF117B200ECA4CCF4FD09593F949A016D55408 * ___m_WaitHandle_2;
 
 public:
@@ -2769,17 +2769,17 @@ struct ContourVertex_t67A305DD504D7CB0E1CA881D94A814242522B1DE_marshaled_com
 	Il2CppIUnknown* ___Data_1;
 };
 
-// UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge
+// UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge
 struct  Edge_t4AFA67E936024EBBE692EBD257724A651FCAB0D0 
 {
 public:
-	// System.Int32 UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge::vertexIndex0
+	// System.Int32 UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge::vertexIndex0
 	int32_t ___vertexIndex0_0;
-	// System.Int32 UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge::vertexIndex1
+	// System.Int32 UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge::vertexIndex1
 	int32_t ___vertexIndex1_1;
-	// UnityEngine.Vector4 UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge::tangent
+	// UnityEngine.Vector4 UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge::tangent
 	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___tangent_2;
-	// System.Boolean UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge::compareReversed
+	// System.Boolean UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge::compareReversed
 	bool ___compareReversed_3;
 
 public:
@@ -3366,7 +3366,7 @@ public:
 };
 
 
-// System.Comparison`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>
+// System.Comparison`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>
 struct  Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C  : public MulticastDelegate_t
 {
 public:
@@ -3429,7 +3429,7 @@ public:
 };
 
 
-// System.Comparison`1<UnityEngine.UIElements.FocusController_FocusedElement>
+// System.Comparison`1<UnityEngine.UIElements.FocusController/FocusedElement>
 struct  Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F  : public MulticastDelegate_t
 {
 public:
@@ -3456,7 +3456,7 @@ public:
 };
 
 
-// System.Comparison`1<UnityEngine.UnitySynchronizationContext_WorkRequest>
+// System.Comparison`1<UnityEngine.UnitySynchronizationContext/WorkRequest>
 struct  Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352  : public MulticastDelegate_t
 {
 public:
@@ -3697,7 +3697,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___Data_1), (void*)NULL);
 	}
 };
-// UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge[]
+// UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge[]
 struct EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1  : public RuntimeArray
 {
 public:
@@ -3942,7 +3942,7 @@ public:
 		m_Items[index] = value;
 	}
 };
-// UnityEngine.UIElements.FocusController_FocusedElement[]
+// UnityEngine.UIElements.FocusController/FocusedElement[]
 struct FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13  : public RuntimeArray
 {
 public:
@@ -4055,7 +4055,7 @@ public:
 		m_Items[index] = value;
 	}
 };
-// UnityEngine.UnitySynchronizationContext_WorkRequest[]
+// UnityEngine.UnitySynchronizationContext/WorkRequest[]
 struct WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0  : public RuntimeArray
 {
 public:
@@ -4444,7 +4444,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Color>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -4546,7 +4546,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -4580,7 +4580,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Color>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -4961,7 +4961,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((ColorU5BU5D_t166D390E0E6F24360F990D1F81881A72B73CA399*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Color>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -5386,7 +5386,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.EventSystems.RaycastResult>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -5488,7 +5488,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -5522,7 +5522,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.EventSystems.RaycastResult>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -5903,7 +5903,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (RaycastResultU5BU5D_t9A7AEDFED07FDC6A5F4E1F1C064699FCC9745D65*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((RaycastResultU5BU5D_t9A7AEDFED07FDC6A5F4E1F1C064699FCC9745D65*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.EventSystems.RaycastResult>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -6328,7 +6328,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphMutableResource>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -6430,7 +6430,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -6464,7 +6464,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphMutableResource>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -6845,7 +6845,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (RenderGraphMutableResourceU5BU5D_tC5DD0DF1CAE7DE95421B26158C9F5E24169156CA*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((RenderGraphMutableResourceU5BU5D_tC5DD0DF1CAE7DE95421B26158C9F5E24169156CA*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphMutableResource>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -7270,7 +7270,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphResource>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -7372,7 +7372,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -7406,7 +7406,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphResource>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -7787,7 +7787,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (RenderGraphResourceU5BU5D_tB3A76B05D0BFF43192C3081E627196BF620A45B0*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((RenderGraphResourceU5BU5D_tB3A76B05D0BFF43192C3081E627196BF620A45B0*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.RenderGraphModule.RenderGraphResource>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -8212,7 +8212,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.LibTessDotNet.ContourVertex>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -8314,7 +8314,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -8348,7 +8348,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.LibTessDotNet.ContourVertex>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -8729,7 +8729,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (ContourVertexU5BU5D_t6A7626ED7D5846583F834C822C28220AFE0E396D*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((ContourVertexU5BU5D_t6A7626ED7D5846583F834C822C28220AFE0E396D*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.LibTessDotNet.ContourVertex>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -9007,7 +9007,7 @@ IL_0049:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::Sort(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::Sort(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Sort_m9E337A040580324BC309922DD78360F3A55D1370_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___index1, int32_t ___length2, RuntimeObject* ___comparer3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9086,7 +9086,7 @@ IL_0037:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::BinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::BinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_BinarySearch_m9C007F1F943D4B9E3E20E52B790577B6B2E69672_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___array0, int32_t ___index1, int32_t ___length2, Edge_t4AFA67E936024EBBE692EBD257724A651FCAB0D0  ___value3, RuntimeObject* ___comparer4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9154,10 +9154,10 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Sort_m007C8B97829A213E4A57254AE533429F3A4289BD_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___index1, int32_t ___length2, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9216,7 +9216,7 @@ IL_0021:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::InternalBinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::InternalBinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_InternalBinarySearch_m05AC9DEFF67DB9DF81E6995B5B37881AD79B15FA_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___array0, int32_t ___index1, int32_t ___length2, Edge_t4AFA67E936024EBBE692EBD257724A651FCAB0D0  ___value3, RuntimeObject* ___comparer4, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -9256,7 +9256,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -9290,10 +9290,10 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_SwapIfGreater_m6F01A86D2D9D42A6E8229667FA67718697C9F225_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer1, int32_t ___a2, int32_t ___b3, const RuntimeMethod* method)
 {
 	Edge_t4AFA67E936024EBBE692EBD257724A651FCAB0D0  V_0;
@@ -9353,7 +9353,7 @@ IL_0039:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::Swap(T[],System.Int32,System.Int32)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::Swap(T[],System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Swap_m3958B7A246B1D65569402DDFA2D65EFBC00754C6_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___a0, int32_t ___i1, int32_t ___j2, const RuntimeMethod* method)
 {
 	Edge_t4AFA67E936024EBBE692EBD257724A651FCAB0D0  V_0;
@@ -9394,7 +9394,7 @@ IL_0022:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::IntrospectiveSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::IntrospectiveSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_IntrospectiveSort_m269BB49AFD73167527B0A93FD1A132BE4519EECE_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___left1, int32_t ___length2, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer3, const RuntimeMethod* method)
 {
 	{
@@ -9422,7 +9422,7 @@ IL_0005:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::IntroSort(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::IntroSort(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_IntroSort_mAE5F62E22EF75768EC758D504C4BA5B210FF5C6F_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___lo1, int32_t ___hi2, int32_t ___depthLimit3, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer4, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -9557,7 +9557,7 @@ IL_0086:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::PickPivotAndPartition(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::PickPivotAndPartition(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_PickPivotAndPartition_m18D2FE595E635BE0CC45EEC49FA803D4A1BB9BC8_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -9671,10 +9671,10 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Heapsort_m80B648F2D3AA2967A9FBF7CE65583FDA493F60B1_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -9743,7 +9743,7 @@ IL_003e:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::DownHeap(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::DownHeap(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_DownHeap_m81FED75AA3DFE9F6703FD8F61AC7B4782AEF68FD_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___i1, int32_t ___n2, int32_t ___lo3, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer4, const RuntimeMethod* method)
 {
 	Edge_t4AFA67E936024EBBE692EBD257724A651FCAB0D0  V_0;
@@ -9851,7 +9851,7 @@ IL_006d:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility_Edge>::InsertionSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Experimental.Rendering.Universal.ShadowUtility/Edge>::InsertionSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_InsertionSort_m9C46D3137899C6774F8B80803FE127825AA3BB14_gshared (EdgeU5BU5D_t109E874E4BB26DA4C9ACBA09E19B95274DD805C1* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_t8EFC36556F2B8E2921BD405247BE00C762BEE68C * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -10096,7 +10096,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.RaycastHit2D>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -10198,7 +10198,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -10232,7 +10232,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.RaycastHit2D>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -10613,7 +10613,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((RaycastHit2DU5BU5D_t5F37B944987342C401FA9A231A75AD2991A66165*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.RaycastHit2D>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -11038,7 +11038,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.RaycastHit>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -11140,7 +11140,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -11174,7 +11174,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.RaycastHit>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -11555,7 +11555,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((RaycastHitU5BU5D_tE9BB282384F0196211AD1A480477254188211F57*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.RaycastHit>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -11980,7 +11980,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Rendering.RenderTargetIdentifier>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -12082,7 +12082,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -12116,7 +12116,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Rendering.RenderTargetIdentifier>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -12497,7 +12497,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (RenderTargetIdentifierU5BU5D_t57069CA3F97B36638E39044168D1BEB956436DD4*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((RenderTargetIdentifierU5BU5D_t57069CA3F97B36638E39044168D1BEB956436DD4*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Rendering.RenderTargetIdentifier>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -12922,7 +12922,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Rendering.ShaderTagId>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -13024,7 +13024,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -13058,7 +13058,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Rendering.ShaderTagId>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -13439,7 +13439,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (ShaderTagIdU5BU5D_tFA48D4C6A2EF95AF0BF3EEB90B9719F0154CBEF0*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((ShaderTagIdU5BU5D_tFA48D4C6A2EF95AF0BF3EEB90B9719F0154CBEF0*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Rendering.ShaderTagId>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -13864,7 +13864,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.TextCore.GlyphRect>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -13966,7 +13966,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -14000,7 +14000,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.TextCore.GlyphRect>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -14381,7 +14381,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (GlyphRectU5BU5D_t0C8059848359C24B032007E1B643D747C2BB2FB2*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((GlyphRectU5BU5D_t0C8059848359C24B032007E1B643D747C2BB2FB2*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.TextCore.GlyphRect>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -14806,7 +14806,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UICharInfo>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -14908,7 +14908,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -14942,7 +14942,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UICharInfo>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -15323,7 +15323,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (UICharInfoU5BU5D_t8C4FF69B643D49D3881FCB7A8525C5C5A9367482*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((UICharInfoU5BU5D_t8C4FF69B643D49D3881FCB7A8525C5C5A9367482*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UICharInfo>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -15601,7 +15601,7 @@ IL_0049:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::Sort(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::Sort(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Sort_m66D39A27663EA89CD36D696A5BF1DB73988A0371_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___index1, int32_t ___length2, RuntimeObject* ___comparer3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15680,7 +15680,7 @@ IL_0037:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::BinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::BinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_BinarySearch_m1783B85D523F84E6E484BF12458520F78D16B7A6_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___array0, int32_t ___index1, int32_t ___length2, FocusedElement_t6C6023CCCFE4A5763A2ADBA3CBAFB38ECD964070  ___value3, RuntimeObject* ___comparer4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15748,10 +15748,10 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Sort_mA2118D25E92D62F829D559A0A6B2A6A273532426_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___index1, int32_t ___length2, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15810,7 +15810,7 @@ IL_0021:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::InternalBinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::InternalBinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_InternalBinarySearch_m313E0EDA26E3A8538E268BF6F5B1DE99E57B5FA9_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___array0, int32_t ___index1, int32_t ___length2, FocusedElement_t6C6023CCCFE4A5763A2ADBA3CBAFB38ECD964070  ___value3, RuntimeObject* ___comparer4, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -15850,7 +15850,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -15884,10 +15884,10 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_SwapIfGreater_m1820BD66AEE3379DAF304AE0D683D4BEA1745653_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer1, int32_t ___a2, int32_t ___b3, const RuntimeMethod* method)
 {
 	FocusedElement_t6C6023CCCFE4A5763A2ADBA3CBAFB38ECD964070  V_0;
@@ -15947,7 +15947,7 @@ IL_0039:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::Swap(T[],System.Int32,System.Int32)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::Swap(T[],System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Swap_m4FA8F5AD31F08BF5E485C712F1C78363F5134953_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___a0, int32_t ___i1, int32_t ___j2, const RuntimeMethod* method)
 {
 	FocusedElement_t6C6023CCCFE4A5763A2ADBA3CBAFB38ECD964070  V_0;
@@ -15988,7 +15988,7 @@ IL_0022:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::IntrospectiveSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::IntrospectiveSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_IntrospectiveSort_m74179A5BDE10CB7E7CE437C66C6DC2A8F32CBA99_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___left1, int32_t ___length2, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer3, const RuntimeMethod* method)
 {
 	{
@@ -16016,7 +16016,7 @@ IL_0005:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::IntroSort(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::IntroSort(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_IntroSort_m17B8205E74430C1F4471DB5EDD1686EFFE469BFB_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___lo1, int32_t ___hi2, int32_t ___depthLimit3, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer4, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -16151,7 +16151,7 @@ IL_0086:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::PickPivotAndPartition(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::PickPivotAndPartition(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_PickPivotAndPartition_mE5F9670F1F36EB66872E8442CF5D4E9F9B6D267C_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -16265,10 +16265,10 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Heapsort_m423AB22769B39E476DF9C89ACDAF787D647D38B9_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -16337,7 +16337,7 @@ IL_003e:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::DownHeap(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::DownHeap(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_DownHeap_m99502AC1AEF9A674D70D491A0770D5C834808667_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___i1, int32_t ___n2, int32_t ___lo3, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer4, const RuntimeMethod* method)
 {
 	FocusedElement_t6C6023CCCFE4A5763A2ADBA3CBAFB38ECD964070  V_0;
@@ -16445,7 +16445,7 @@ IL_006d:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController_FocusedElement>::InsertionSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIElements.FocusController/FocusedElement>::InsertionSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_InsertionSort_m447B100019B0332DB3398AB1EA9F0CCAE5F9022A_gshared (FocusedElementU5BU5D_t64FC9A029ED86FA4C46BC885D17EB0FCE386BB13* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_tD9F050EEA7BFCE8C82D23F3DAAAF42E3D4839E8F * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -16690,7 +16690,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UILineInfo>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -16792,7 +16792,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -16826,7 +16826,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UILineInfo>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -17207,7 +17207,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (UILineInfoU5BU5D_t923CC56F4D67E9FA97CC73992DF16268B6A54FAC*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((UILineInfoU5BU5D_t923CC56F4D67E9FA97CC73992DF16268B6A54FAC*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UILineInfo>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -17632,7 +17632,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIVertex>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -17734,7 +17734,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -17768,7 +17768,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIVertex>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -18149,7 +18149,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (UIVertexU5BU5D_tB560F9F9269864891FCE1677971F603A08AA857A*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((UIVertexU5BU5D_tB560F9F9269864891FCE1677971F603A08AA857A*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UIVertex>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -18427,7 +18427,7 @@ IL_0049:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::Sort(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::Sort(T[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Sort_mADEE5FBCAD715C00E3A268DD78F013F8723D63AE_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___index1, int32_t ___length2, RuntimeObject* ___comparer3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18506,7 +18506,7 @@ IL_0037:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::BinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::BinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_BinarySearch_mBC1D837D4E9F0E9FD14B1B5E3E96A8F7D12C29B4_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___array0, int32_t ___index1, int32_t ___length2, WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94  ___value3, RuntimeObject* ___comparer4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18574,10 +18574,10 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Sort_m450BEF3CAA3C9C629B8A72559F7F183ABC870C05_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___index1, int32_t ___length2, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18636,7 +18636,7 @@ IL_0021:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::InternalBinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::InternalBinarySearch(T[],System.Int32,System.Int32,T,System.Collections.Generic.IComparer`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_InternalBinarySearch_m966EE932EBB03833AABD349B863859ED250553F8_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___array0, int32_t ___index1, int32_t ___length2, WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94  ___value3, RuntimeObject* ___comparer4, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -18676,7 +18676,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -18710,10 +18710,10 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_SwapIfGreater_m722761D90D137309A3E3019FC8E4CA35EE83B493_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer1, int32_t ___a2, int32_t ___b3, const RuntimeMethod* method)
 {
 	WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94  V_0;
@@ -18773,7 +18773,7 @@ IL_0039:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::Swap(T[],System.Int32,System.Int32)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::Swap(T[],System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Swap_mB1729B3FAC23C1C912FD3507371AB4082C648DD0_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___a0, int32_t ___i1, int32_t ___j2, const RuntimeMethod* method)
 {
 	WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94  V_0;
@@ -18814,7 +18814,7 @@ IL_0022:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::IntrospectiveSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::IntrospectiveSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_IntrospectiveSort_m6B6E3D7F8BB361A002B7C0908B756A9827377C5B_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___left1, int32_t ___length2, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer3, const RuntimeMethod* method)
 {
 	{
@@ -18842,7 +18842,7 @@ IL_0005:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::IntroSort(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::IntroSort(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_IntroSort_mD0752E032AC3B1428CC7F9F2C9A7192FC95361E6_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___lo1, int32_t ___hi2, int32_t ___depthLimit3, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer4, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -18977,7 +18977,7 @@ IL_0086:
 		return;
 	}
 }
-// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::PickPivotAndPartition(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Int32 System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::PickPivotAndPartition(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ArraySortHelper_1_PickPivotAndPartition_mE494121C05702CBD688322BAF8AFC3249CC35B6F_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -19091,10 +19091,10 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_Heapsort_mCFC724DBE0DCCDFB5CDA9F42954AC7E5E61C25D1_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -19163,7 +19163,7 @@ IL_003e:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::DownHeap(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::DownHeap(T[],System.Int32,System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_DownHeap_mCE3DE84325423ECB34AFFB1001593A5214081B69_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___i1, int32_t ___n2, int32_t ___lo3, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer4, const RuntimeMethod* method)
 {
 	WorkRequest_t0247B62D135204EAA95FC0B2EC829CB27B433F94  V_0;
@@ -19271,7 +19271,7 @@ IL_006d:
 		return;
 	}
 }
-// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext_WorkRequest>::InsertionSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
+// System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.UnitySynchronizationContext/WorkRequest>::InsertionSort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArraySortHelper_1_InsertionSort_mB23615451F6BE13E75978F28F34C62B8FA9497B8_gshared (WorkRequestU5BU5D_tB89678B9C27973604A434C63C8BD307990C8EBF0* ___keys0, int32_t ___lo1, int32_t ___hi2, Comparison_1_t0B3C5B68BF37DDED8FD6A28A59AF2338826F4352 * ___comparer3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -19516,7 +19516,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector2>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -19618,7 +19618,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -19652,7 +19652,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector2>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -20033,7 +20033,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((Vector2U5BU5D_tA065A07DFC060C1B8786BBAA5F3A6577CCEB27D6*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector2>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -20458,7 +20458,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector3>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -20560,7 +20560,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -20594,7 +20594,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector3>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -20975,7 +20975,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((Vector3U5BU5D_tB9EC3346CC4A0EA5447D968E84A9AC1F6F372C28*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector3>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -21400,7 +21400,7 @@ CATCH_0019:
 IL_0026:
 	{
 		int32_t L_10 = V_0;
-		return L_10;
+		return (int32_t)L_10;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector4>::Sort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -21502,7 +21502,7 @@ IL_000a:
 	}
 	{
 		int32_t L_14 = V_2;
-		return L_14;
+		return (int32_t)L_14;
 	}
 
 IL_0027:
@@ -21536,7 +21536,7 @@ IL_0035:
 	}
 	{
 		int32_t L_20 = V_0;
-		return ((~L_20));
+		return (int32_t)((~L_20));
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector4>::SwapIfGreater(T[],System.Comparison`1<T>,System.Int32,System.Int32)
@@ -21917,7 +21917,7 @@ IL_0077:
 		int32_t L_49 = ___hi2;
 		((  void (*) (Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15)->methodPointer)((Vector4U5BU5D_t51402C154FFFCF7217A9BEC4B834F0B726C10F66*)L_47, (int32_t)L_48, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_49, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 15));
 		int32_t L_50 = V_2;
-		return L_50;
+		return (int32_t)L_50;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`1<UnityEngine.Vector4>::Heapsort(T[],System.Int32,System.Int32,System.Comparison`1<T>)
@@ -22217,7 +22217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArraySortHelper_2_tC7587DA2B97E46D9E26E78C686
 IL_0011:
 	{
 		ArraySortHelper_2_tC7587DA2B97E46D9E26E78C6864D7A2460A57E7F * L_3 = V_0;
-		return L_3;
+		return (ArraySortHelper_2_tC7587DA2B97E46D9E26E78C6864D7A2460A57E7F *)L_3;
 	}
 }
 // System.Collections.Generic.ArraySortHelper`2<TKey,TValue> System.Collections.Generic.ArraySortHelper`2<System.Object,System.Object>::CreateArraySortHelper()
@@ -22230,7 +22230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArraySortHelper_2_tC7587DA2B97E46D9E26E78C686
 		((ArraySortHelper_2_tC7587DA2B97E46D9E26E78C6864D7A2460A57E7F_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->set_s_defaultArraySortHelper_0(L_0);
 		ArraySortHelper_2_tC7587DA2B97E46D9E26E78C6864D7A2460A57E7F * L_1 = ((ArraySortHelper_2_tC7587DA2B97E46D9E26E78C6864D7A2460A57E7F_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->get_s_defaultArraySortHelper_0();
 		il2cpp_codegen_memory_barrier();
-		return L_1;
+		return (ArraySortHelper_2_tC7587DA2B97E46D9E26E78C6864D7A2460A57E7F *)L_1;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`2<System.Object,System.Object>::Sort(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
@@ -22766,7 +22766,7 @@ IL_0081:
 		int32_t L_55 = ___hi3;
 		((  void (*) (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13)->methodPointer)((ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_52, (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_53, (int32_t)L_54, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_55, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
 		int32_t L_56 = V_2;
-		return L_56;
+		return (int32_t)L_56;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`2<System.Object,System.Object>::Heapsort(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
@@ -23210,7 +23210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArraySortHelper_2_t2FF12471052A6F38EFFD02AD40
 IL_0011:
 	{
 		ArraySortHelper_2_t2FF12471052A6F38EFFD02AD4037EB23260332A5 * L_3 = V_0;
-		return L_3;
+		return (ArraySortHelper_2_t2FF12471052A6F38EFFD02AD4037EB23260332A5 *)L_3;
 	}
 }
 // System.Collections.Generic.ArraySortHelper`2<TKey,TValue> System.Collections.Generic.ArraySortHelper`2<System.UInt64,System.Object>::CreateArraySortHelper()
@@ -23223,7 +23223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArraySortHelper_2_t2FF12471052A6F38EFFD02AD40
 		((ArraySortHelper_2_t2FF12471052A6F38EFFD02AD4037EB23260332A5_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->set_s_defaultArraySortHelper_0(L_0);
 		ArraySortHelper_2_t2FF12471052A6F38EFFD02AD4037EB23260332A5 * L_1 = ((ArraySortHelper_2_t2FF12471052A6F38EFFD02AD4037EB23260332A5_StaticFields*)il2cpp_codegen_static_fields_for(IL2CPP_RGCTX_DATA(InitializedTypeInfo(method->klass)->rgctx_data, 0)))->get_s_defaultArraySortHelper_0();
 		il2cpp_codegen_memory_barrier();
-		return L_1;
+		return (ArraySortHelper_2_t2FF12471052A6F38EFFD02AD4037EB23260332A5 *)L_1;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`2<System.UInt64,System.Object>::Sort(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)
@@ -23759,7 +23759,7 @@ IL_0081:
 		int32_t L_55 = ___hi3;
 		((  void (*) (UInt64U5BU5D_tA808FE881491284FF25AFDF5C4BC92A826031EF4*, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*, int32_t, int32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13)->methodPointer)((UInt64U5BU5D_tA808FE881491284FF25AFDF5C4BC92A826031EF4*)L_52, (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_53, (int32_t)L_54, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)L_55, (int32_t)1)), /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(InitializedTypeInfo(method->klass)->rgctx_data, 13));
 		int32_t L_56 = V_2;
-		return L_56;
+		return (int32_t)L_56;
 	}
 }
 // System.Void System.Collections.Generic.ArraySortHelper`2<System.UInt64,System.Object>::Heapsort(TKey[],TValue[],System.Int32,System.Int32,System.Collections.Generic.IComparer`1<TKey>)

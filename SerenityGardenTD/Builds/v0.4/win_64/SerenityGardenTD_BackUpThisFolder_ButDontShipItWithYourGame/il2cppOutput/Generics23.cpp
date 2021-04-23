@@ -123,22 +123,6 @@ struct Delegate_t;
 struct DelegateData_t1BF9F691B56DAE5F8C28C5E084FDE94F15F27BBE;
 // System.Delegate[]
 struct DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int64,System.SByte>
-struct Transformer_1_t01DCD4DD4A9D8250EDA7C3884A31ADCBC0CA2F31;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int64,System.Single>
-struct Transformer_1_tDC0440FA1979CE8CAEE05E55C3F77B191B3864A5;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int64,System.TimeSpan>
-struct Transformer_1_t5D03480C8430BB4B110B1A825293797FEA351E99;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int64,System.UInt16>
-struct Transformer_1_t8A89FB68F46FF4353E966CC00B908CA34497EA95;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int64,System.UInt32>
-struct Transformer_1_t0AFADFC854814929C26DD9D901BE57FF25AD0FAE;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int64,System.UInt64>
-struct Transformer_1_t1DABC0789361F050A97DCB9B0BF426488849447B;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Int64,System.UIntPtr>
-struct Transformer_1_tB15772C7E9B7C5700966A8D43542601D4E3C1E66;
-// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.Object,System.Object>
-struct Transformer_1_t338D76BCAA91120B467D3111015F22FB4F0FD2FA;
 // System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Boolean>
 struct Transformer_1_t79570F2F3007DB1835D814B8075FDC98BC3553A7;
 // System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Byte>
@@ -515,6 +499,26 @@ struct EnumUInt16TypeInfo_1_t249252C199868D90F7276FCD09B2DE61399BC667;
 struct EnumUInt16TypeInfo_1_tD7F3D36EA90E59426D4E28BEC781B0D48C7AB08F;
 // System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int32>
 struct EnumUInt16TypeInfo_1_t8F1B6DEF25C3173AA03E8F6D831A6C3DD763D173;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int64>
+struct EnumUInt16TypeInfo_1_tA629F4A6B0E33EAB8F6C7BBDED330F36ECCF25D8;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.IntPtr>
+struct EnumUInt16TypeInfo_1_t6F9CF7FB3CE0484176ABB8294011C57661A28F52;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Object>
+struct EnumUInt16TypeInfo_1_t35C0CC36D5DCACA5BAEC8DB005ECCFAD3153D8B8;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.SByte>
+struct EnumUInt16TypeInfo_1_t11F063E5825E1AA9578BA020FE9D10E8B253F150;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Single>
+struct EnumUInt16TypeInfo_1_tF6647E7B73F2982D12CC851344287CE21B96912B;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.TimeSpan>
+struct EnumUInt16TypeInfo_1_t5B12DCEE17829B04EFC1B172C716435F8276F52E;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt16>
+struct EnumUInt16TypeInfo_1_tA3D5A7672FD5EDFAD4935ECA329A2C7E7B143AD7;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt32>
+struct EnumUInt16TypeInfo_1_t542B0805A6994C007A37A16049B47E47EEA26411;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt64>
+struct EnumUInt16TypeInfo_1_tAEA9CF6482001D4F456C1B2869309BCD3D0494AF;
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UIntPtr>
+struct EnumUInt16TypeInfo_1_t41858CAB5C37D081E5B80ED774E72C62CD2E3BC6;
 // System.Diagnostics.Tracing.FieldMetadata
 struct FieldMetadata_tF8338AA83F53559A65AC62864F69CCC2FCAE24CC;
 // System.Diagnostics.Tracing.TraceLoggingDataCollector
@@ -761,29 +765,49 @@ IL2CPP_EXTERN_C const uint32_t EnumSByteTypeInfo_1_WriteMetadata_mED049FA4D2203D
 IL2CPP_EXTERN_C const uint32_t EnumSByteTypeInfo_1_WriteMetadata_mED165E93EFD34321E3C7903AE9D0C1377C52FFAE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumSByteTypeInfo_1_WriteMetadata_mFD20A751A1A8D2DBEEECB392E8EE8CD382A8574C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m029D4D9082344C7A0EE666047D2E777A9377CC4B_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m133AB0AEDE9B97B7DE33EF1B26478473BEC13E0F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m464A5C9F2E622AFE08B7430AE64CAE0015343944_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m475C698428C86CE4DBE000A17E0F7268E7D54CF7_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m58C70C5E3CB7BCB6B4F687C63B837ACA94F126A4_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m694E9DCE68BB784B8922E71142A7F457ED15B355_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m817003F4D0A8208CE359622A10E614A908B52DF6_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m8F8BCEF717A2353D4F9C9135BA1DD8EDE3944C58_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m92AE492BEFB70BF060896CDA796722D3B381833E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_m95EDCC0F614A994B024E342ADF4FC9EC0B6CBD93_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mA5D729A795A50DC4D6F0577C19B91D56DE168FF8_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mA82869B6CA2103FD7A29F431C3FC4447750AD84D_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mAE49703409C74C3195594C924761F6A632E17913_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mBB4A294BF9A6391C5784E4F7A86FBED91BA7F99B_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mC8BF7D45372EB50DC39563EE7328B2D9984FF9B0_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mCC9970954ECBCC8F6DA7FF797B7CC636A147E326_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mCD9CF8E9BEA1132D91E01E893556F681630C0993_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mD03C0C470C6E63A627CED3BB8DEBCD4D3BC27007_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mE1EC3655BA4EC06C143DBDBCC3B4ACAF09EE2F75_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mE84C7F9D17D3B5BE8547C4FC42DF6344833C3BDB_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mE94C8DC2B35050FEA1C148A962384BEA74978A3E_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteData_mEBFE457B430147DE980A8027A1C9DB1C3432750F_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m01F4ED8A79DE14E8F0041342FD310B2E6D57BA7A_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m0D623D062B2CEDC91DEC6129692BF5C02C81CEF0_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m33A64B34B8A94B980FD69F4D5380E20C3A12F5D8_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m3A99273B9656349EFD63AB1A34C3D4E5F4232104_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m3D88D0BFFAD86196CF5642258EB885629207F4EC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m60209588B88DE2539DDF8107F046CC65DD3F8CA3_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m628D1C533040FFF181135CC96C5D912D32B6BF19_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m7E0F69307479F8E4FD3B3EE2398CA032308A83B8_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m7E8A7BFA8712F9D4B7BB6128BD2C3CC841FBE062_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_m83B8B6767BDAD67EF65226FD0C5BCFF5897B1413_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mA1B8CAF7CF8FC13A49782BBCDF4E8F3BA947205F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mB23AA145466577AECD289A14A633F056D0AB11C6_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mB80C1C3F4A9EEC71CFC9FAF68B5596914F127273_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mC7AF495D572C879678987C747A6B94AD0A9DDE01_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mCB974A9A24A84EE62A3402022C407C58104CB8A2_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mCE9D1EC468A589B929EC5C871D0DB3A2AB1CDFE6_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mDCF1EE4765361593865940C640D8BE1DE142826B_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mE0399531C0DB9542E188C807C22B8B9FA4012C47_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mE78F40F26847C3974492617C95A91F40491BB283_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mEDA8C02BBDB55410BF9CFD717CD9076220AA4B77_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mEF30A6BBBAE1C4817BA506C2AC27DA12E61B50EF_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t EnumUInt16TypeInfo_1_WriteMetadata_mF889AE8FB452A84F1033DA89893D72887EBB0887_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m01AEC96A5FFF8DF9BEDC8632CF3379B2070A3337_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m01C4897E881D1103D6141A4DDCB507658E35A79C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m08812BD5B4415E16EC09B45D47E446BE5627D594_MetadataUsageId;
@@ -801,7 +825,6 @@ IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m20D04EBC3B5098B28E4B13
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m24182719FC1BC805A3165BAB1F82E1BEFCB30E56_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m24C3A166979E14347EB97DA251E1F41B50C6731D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m26BEFC82BDB640B4DF55BFD428DF0733A4651E6C_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m2C954C6E9EAD61D3FEEB829CC9793BDA0E049ECF_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m2E1ED4150BEA6141B2A330A992D9859BDAADABE6_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m2FA108EED7F293AD68368F83BFF4A386A323E437_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m2FDB52B98609513C2BCE61B91F323506A0CB92E8_MetadataUsageId;
@@ -812,12 +835,10 @@ IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m36B02C3509511AE9886E1C
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m3A47AE9BF85ED0C4CCC5065B6D2D7DC49C78913A_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m3BC67C1D87D032FFAB42751F75E31969EDA0ECD5_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m41442A265FA114B866F65531B8DD5A55301B0E36_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m46BA7A62E0BBC34E321C6F156D62C9C11F2189D2_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m4FE5B7422C6DA2714608457B90CC9B76FB22C91F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m58B9C45EB7EBAAFA1CA3A6120213612F5A59AA33_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m5A61755371095EC35EE47A86DEE9B077B61DC5E9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m6073035E7015A1A87B664FE33C5C016E08E204F3_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m65D6470D8CD6C67F468B42BEA4C98A9AC99FE5F5_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m6BBAC79E240D44DAFDF7C8F03C5986FBC158C5C7_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m6C8A2CA2F8F9A2E9ACD74D972B23ADC5F04933A8_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m6DA082220D3DDC092464D29FEC47184B8F4D09C5_MetadataUsageId;
@@ -837,18 +858,15 @@ IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m936493227C05B6275E6E94
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m97F99FAA36DA222666319554DD1245F23A278F66_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m996A087DDFA31FC8674905A1E755851C3890054D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m9A30169A6F19599A3B8AE2C3C7DD74795E37D187_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_m9AB6BFE10E8EEE8F6BB5F7DB3C8DDCA90D2728CC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mA099C1354BB8F316CDE959E6BAB537FBC60C406D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mA09DF71D097CB595EB7E53C7650D86B4FA223813_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mA0B2C8811BF8545ED41FB1285A934A75D8889B40_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mA3A81D50EE76397F3136530B47F615E2A439B8EF_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mAB8A5B60E7CD741721ACAB1621F5976A2618187D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mAE5F7AF7E0594738FFCF0049018A63DC02227B7C_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mAF2021EC7AD3A641D4929C923822B5B8079E15CF_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mB165A0EDF61811B0D4FD50504CEEA4D9A9DC170E_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mB76D060B42A823A26484E526BD49506FEE60D96D_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mB883348A4094C8042D20B37282A24405933BDE01_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mB92CDE9753380AC75DCE2D19A7AF16486D5433DC_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mBBCE359AEC3C26FFDC61C57546DCC4A5367A58E1_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mBDB50FDBAB6A72BBD284262D8025BFC52F9D8BA6_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mBFAC6022B1A9832AFCDD15459F33B1FCCE95008F_MetadataUsageId;
@@ -874,7 +892,6 @@ IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mF16D197CC0512E0155E584
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mF4723F219951CFB7A93D90F465107DCAA64D409C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mF574F2D777EAAA0C2078736CC7B326122FE212AE_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mFD4D396C6E05FD6D49CC70FAF806A5D174758A7F_MetadataUsageId;
-IL2CPP_EXTERN_C const uint32_t Transformer_1_BeginInvoke_mFE3502FF56750773D9B449538BA001DB47DA6BE7_MetadataUsageId;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 
@@ -2500,7 +2517,7 @@ public:
 struct  TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E  : public RuntimeObject
 {
 public:
-	// System.Diagnostics.Tracing.TraceLoggingMetadataCollector_Impl System.Diagnostics.Tracing.TraceLoggingMetadataCollector::impl
+	// System.Diagnostics.Tracing.TraceLoggingMetadataCollector/Impl System.Diagnostics.Tracing.TraceLoggingMetadataCollector::impl
 	Impl_tA1F83DA5BE2B28675D369B4585A71C5C1D0E669F * ___impl_0;
 	// System.Diagnostics.Tracing.FieldMetadata System.Diagnostics.Tracing.TraceLoggingMetadataCollector::currentGroup
 	FieldMetadata_tF8338AA83F53559A65AC62864F69CCC2FCAE24CC * ___currentGroup_1;
@@ -2754,79 +2771,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.SByte>
-struct  Transformer_1_t01DCD4DD4A9D8250EDA7C3884A31ADCBC0CA2F31  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.Single>
-struct  Transformer_1_tDC0440FA1979CE8CAEE05E55C3F77B191B3864A5  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.TimeSpan>
-struct  Transformer_1_t5D03480C8430BB4B110B1A825293797FEA351E99  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt16>
-struct  Transformer_1_t8A89FB68F46FF4353E966CC00B908CA34497EA95  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt32>
-struct  Transformer_1_t0AFADFC854814929C26DD9D901BE57FF25AD0FAE  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt64>
-struct  Transformer_1_t1DABC0789361F050A97DCB9B0BF426488849447B  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UIntPtr>
-struct  Transformer_1_tB15772C7E9B7C5700966A8D43542601D4E3C1E66  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Object,System.Object>
-struct  Transformer_1_t338D76BCAA91120B467D3111015F22FB4F0FD2FA  : public MulticastDelegate_t
-{
-public:
-
-public:
-};
-
-
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Boolean>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Boolean>
 struct  Transformer_1_t79570F2F3007DB1835D814B8075FDC98BC3553A7  : public MulticastDelegate_t
 {
 public:
@@ -2835,7 +2780,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Byte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Byte>
 struct  Transformer_1_tF8540D89C13FFD7703F79D80D228D878E23A3ADE  : public MulticastDelegate_t
 {
 public:
@@ -2844,7 +2789,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Char>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Char>
 struct  Transformer_1_tA6C8CCCFAE41F969307DFD6B15049A2AC4E87B2E  : public MulticastDelegate_t
 {
 public:
@@ -2853,7 +2798,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct  Transformer_1_t42D4002780D07F2123783F0D69A304CD6984F13D  : public MulticastDelegate_t
 {
 public:
@@ -2862,7 +2807,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTime>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTime>
 struct  Transformer_1_t7B71FCE554A579C8F8EE31C925E7CC3A260F65B0  : public MulticastDelegate_t
 {
 public:
@@ -2871,7 +2816,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTimeOffset>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTimeOffset>
 struct  Transformer_1_t0C4CCE96CE8A1C5FA519A098E2CBD37BEC2CA324  : public MulticastDelegate_t
 {
 public:
@@ -2880,7 +2825,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Decimal>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Decimal>
 struct  Transformer_1_tC8E702F6B3A43AAD921E235014B8BEE380D6C8E6  : public MulticastDelegate_t
 {
 public:
@@ -2889,7 +2834,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>
 struct  Transformer_1_tBEAC8A938CBDB8AAB69661EFA8EA0FB141525D53  : public MulticastDelegate_t
 {
 public:
@@ -2898,7 +2843,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Double>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Double>
 struct  Transformer_1_tF0766B96906F251FDCA58F9C63D53C429A053601  : public MulticastDelegate_t
 {
 public:
@@ -2907,7 +2852,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Guid>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Guid>
 struct  Transformer_1_tBBF50A3F30EEFDE66991F29F64E2D0A0455DE463  : public MulticastDelegate_t
 {
 public:
@@ -2916,7 +2861,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int16>
 struct  Transformer_1_tA87CAE242D2B98DEB22E378E1E67ABA48B2C74D4  : public MulticastDelegate_t
 {
 public:
@@ -2925,7 +2870,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int32>
 struct  Transformer_1_tD3A676069C04AAC638676241B25E06E84FEDDF60  : public MulticastDelegate_t
 {
 public:
@@ -2934,7 +2879,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int64>
 struct  Transformer_1_tE0C44E54BCD5DF5FF3AC9F52C13F1428FBBD4084  : public MulticastDelegate_t
 {
 public:
@@ -2943,7 +2888,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.IntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.IntPtr>
 struct  Transformer_1_tAE4605051B411219A47F37FD57F817C772C5D831  : public MulticastDelegate_t
 {
 public:
@@ -2952,7 +2897,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Object>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Object>
 struct  Transformer_1_t2100917DAFFEBF22F25BC5382C00308AE7962D49  : public MulticastDelegate_t
 {
 public:
@@ -2961,7 +2906,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.SByte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.SByte>
 struct  Transformer_1_t745DB47A09FCB8577D6C816C1169CFECBB32F2C5  : public MulticastDelegate_t
 {
 public:
@@ -2970,7 +2915,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Single>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Single>
 struct  Transformer_1_tBF9E21F5E62125133BAE8AB29F7A5FF8368A8867  : public MulticastDelegate_t
 {
 public:
@@ -2979,7 +2924,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.TimeSpan>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.TimeSpan>
 struct  Transformer_1_tF26DF9ED555578458A4BEBCC536B42CFE02ACC80  : public MulticastDelegate_t
 {
 public:
@@ -2988,7 +2933,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt16>
 struct  Transformer_1_t8D669EF524B3DA7294AF5ECC32689F786670F3BC  : public MulticastDelegate_t
 {
 public:
@@ -2997,7 +2942,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt32>
 struct  Transformer_1_t2C09253351F9C203CF31F34A19DE66BEA03581F3  : public MulticastDelegate_t
 {
 public:
@@ -3006,7 +2951,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt64>
 struct  Transformer_1_tCF1372796CC314E10F8635C4972C44383BAC7023  : public MulticastDelegate_t
 {
 public:
@@ -3015,7 +2960,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UIntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UIntPtr>
 struct  Transformer_1_tBE6DD3E5AECE0264800ECFE10CF373FC541893E1  : public MulticastDelegate_t
 {
 public:
@@ -3024,7 +2969,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Boolean>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Boolean>
 struct  Transformer_1_t199C978828CCDD3DC4B333BD031B5DA73DE2C968  : public MulticastDelegate_t
 {
 public:
@@ -3033,7 +2978,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Byte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Byte>
 struct  Transformer_1_t6F5F45E771B014CBE6BC711CD4C78E85A692E83F  : public MulticastDelegate_t
 {
 public:
@@ -3042,7 +2987,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Char>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Char>
 struct  Transformer_1_tBBFF9537117C5BC9379D753F5293135DB33DF769  : public MulticastDelegate_t
 {
 public:
@@ -3051,7 +2996,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct  Transformer_1_t43360C920C6CB99E177E7D0C21F4631EB7353195  : public MulticastDelegate_t
 {
 public:
@@ -3060,7 +3005,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTime>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTime>
 struct  Transformer_1_tFF97AD2C8962456276364E309A52E6DE33100D56  : public MulticastDelegate_t
 {
 public:
@@ -3069,7 +3014,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTimeOffset>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTimeOffset>
 struct  Transformer_1_t43FCC452C755864725F9DF93DFBE108575461B01  : public MulticastDelegate_t
 {
 public:
@@ -3078,7 +3023,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Decimal>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Decimal>
 struct  Transformer_1_t0FD280BFFA34F4D2822CCA89C0E579D1D039C6EC  : public MulticastDelegate_t
 {
 public:
@@ -3087,7 +3032,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>
 struct  Transformer_1_t4E404370A1452595E3C5DB7882E5D8953D10E1A5  : public MulticastDelegate_t
 {
 public:
@@ -3096,7 +3041,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Double>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Double>
 struct  Transformer_1_t96993E76204149647596BB8B93F89AF01BBC2DA1  : public MulticastDelegate_t
 {
 public:
@@ -3105,7 +3050,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Guid>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Guid>
 struct  Transformer_1_tC04472BECF0E4CEEAC0DD81250C1C45100A49760  : public MulticastDelegate_t
 {
 public:
@@ -3114,7 +3059,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int16>
 struct  Transformer_1_t752D0C62D1A2E9A30D3F6E06FB35683298BACEE8  : public MulticastDelegate_t
 {
 public:
@@ -3123,7 +3068,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int32>
 struct  Transformer_1_tA6B55D2D785634BAC127EF306F25AD47252837A5  : public MulticastDelegate_t
 {
 public:
@@ -3132,7 +3077,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int64>
 struct  Transformer_1_t634A2D481C50B029D59732E0A8E9D02DF66A0551  : public MulticastDelegate_t
 {
 public:
@@ -3141,7 +3086,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.IntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.IntPtr>
 struct  Transformer_1_t873B2E4C2418F756278367655E1C64D654382460  : public MulticastDelegate_t
 {
 public:
@@ -3150,7 +3095,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Object>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Object>
 struct  Transformer_1_t892625DF88EAC62E91E8CCC189CB451B8DC38F37  : public MulticastDelegate_t
 {
 public:
@@ -3159,7 +3104,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.SByte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.SByte>
 struct  Transformer_1_t1996E09F6BED0E887AFBD3B5A3AE1C93DE6BF87A  : public MulticastDelegate_t
 {
 public:
@@ -3168,7 +3113,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Single>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Single>
 struct  Transformer_1_t4E1FF663FF50350704657A112291CD7D7596CEF1  : public MulticastDelegate_t
 {
 public:
@@ -3177,7 +3122,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.TimeSpan>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.TimeSpan>
 struct  Transformer_1_t91133D744423C020A19D0092C4FC03B6D3A4DFEE  : public MulticastDelegate_t
 {
 public:
@@ -3186,7 +3131,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt16>
 struct  Transformer_1_tE9522CA0DE0A4BE7D2EC9C999D7BDD2F4344FE62  : public MulticastDelegate_t
 {
 public:
@@ -3195,7 +3140,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt32>
 struct  Transformer_1_t1438E2C5AF736F2BAA3201667918AA58BE8FA46C  : public MulticastDelegate_t
 {
 public:
@@ -3204,7 +3149,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt64>
 struct  Transformer_1_t9D893B0CF47F60B5A1B332F156AE7885A7FA04AD  : public MulticastDelegate_t
 {
 public:
@@ -3213,7 +3158,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UIntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UIntPtr>
 struct  Transformer_1_tEF0B2B94C98E007D79F1E9A305F95F950D695A78  : public MulticastDelegate_t
 {
 public:
@@ -3222,7 +3167,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Boolean>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Boolean>
 struct  Transformer_1_tF0E9BE6348CE010BB238AC31417785A08A6FB691  : public MulticastDelegate_t
 {
 public:
@@ -3231,7 +3176,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Byte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Byte>
 struct  Transformer_1_tB3723D31B530FDEAA4A1F13AA0708DA982630899  : public MulticastDelegate_t
 {
 public:
@@ -3240,7 +3185,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Char>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Char>
 struct  Transformer_1_t5476CAC37A40442328D49FE071C30E88285071D4  : public MulticastDelegate_t
 {
 public:
@@ -3249,7 +3194,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct  Transformer_1_t0FB7630995436BE02A2527779DBC4F2527867EEA  : public MulticastDelegate_t
 {
 public:
@@ -3258,7 +3203,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTime>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTime>
 struct  Transformer_1_t5D7AABD550DAD91D1A5365F5D8EF54C4DA2D3C52  : public MulticastDelegate_t
 {
 public:
@@ -3267,7 +3212,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTimeOffset>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTimeOffset>
 struct  Transformer_1_t928A4BC9752332E7976045EDA7D13F6580E95E62  : public MulticastDelegate_t
 {
 public:
@@ -3276,7 +3221,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Decimal>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Decimal>
 struct  Transformer_1_tDCFCB89419FEE534E3F73EC59CE6765F40E3CDDC  : public MulticastDelegate_t
 {
 public:
@@ -3285,7 +3230,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>
 struct  Transformer_1_tC99356A59E2E936732EB9B87073CB69F8D9A0E56  : public MulticastDelegate_t
 {
 public:
@@ -3294,7 +3239,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Double>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Double>
 struct  Transformer_1_tBA40A0C65141CC06E9FE7E2B859F14B7B186F5D6  : public MulticastDelegate_t
 {
 public:
@@ -3303,7 +3248,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Guid>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Guid>
 struct  Transformer_1_tEB01E6A2E0B3756D68B5715EC212184D5FF1583E  : public MulticastDelegate_t
 {
 public:
@@ -3312,7 +3257,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int16>
 struct  Transformer_1_t2F0D48F97FB9DB755CBD7D8BD1063744902DD7D4  : public MulticastDelegate_t
 {
 public:
@@ -3321,7 +3266,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int32>
 struct  Transformer_1_tEE904E877A0E7069658C31FC99833B17AC05794C  : public MulticastDelegate_t
 {
 public:
@@ -3330,7 +3275,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int64>
 struct  Transformer_1_tB77123930E8D4DBBDFEFB1F00D7ABD5F5862C41D  : public MulticastDelegate_t
 {
 public:
@@ -3339,7 +3284,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.IntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.IntPtr>
 struct  Transformer_1_tD21324C229A06C2679EF7ADBF30B4721FCE846A9  : public MulticastDelegate_t
 {
 public:
@@ -3348,7 +3293,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Object>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Object>
 struct  Transformer_1_t9591C03D292D1491DC84BED40FA4074B4BA228BA  : public MulticastDelegate_t
 {
 public:
@@ -3357,7 +3302,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.SByte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.SByte>
 struct  Transformer_1_tB8774B9E44E29CAB971A668FD6481EE169AB7512  : public MulticastDelegate_t
 {
 public:
@@ -3366,7 +3311,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Single>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Single>
 struct  Transformer_1_tF0690E4E722BA56F3D7C83E9AEB806F0B61B361D  : public MulticastDelegate_t
 {
 public:
@@ -3375,7 +3320,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.TimeSpan>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.TimeSpan>
 struct  Transformer_1_t8B10503B337E6FE4E07A3B64D22B131931C9A9F4  : public MulticastDelegate_t
 {
 public:
@@ -3384,7 +3329,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt16>
 struct  Transformer_1_t047D5C4AD3C79057AB7D69ECC9D23F74520D09D6  : public MulticastDelegate_t
 {
 public:
@@ -3393,7 +3338,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt32>
 struct  Transformer_1_t31C88D9234A257CF232D08C38BBC668EA052939A  : public MulticastDelegate_t
 {
 public:
@@ -3402,7 +3347,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt64>
 struct  Transformer_1_t1C223741D12F9A057F5F088DE61B4E5D53913211  : public MulticastDelegate_t
 {
 public:
@@ -3411,7 +3356,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UIntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UIntPtr>
 struct  Transformer_1_tEB25E9328D7461EC15D82291238C49E2485032FD  : public MulticastDelegate_t
 {
 public:
@@ -3420,7 +3365,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Boolean>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Boolean>
 struct  Transformer_1_tE1D6D1C9A05B546D9C9CE23F63F38C39519B5CF5  : public MulticastDelegate_t
 {
 public:
@@ -3429,7 +3374,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Byte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Byte>
 struct  Transformer_1_tA04593391E3C9151CF09B88E7F0B95B6EED79BFF  : public MulticastDelegate_t
 {
 public:
@@ -3438,7 +3383,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Char>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Char>
 struct  Transformer_1_t6A70E5F51E34115D67058F5FBD3AD020056FE5F9  : public MulticastDelegate_t
 {
 public:
@@ -3447,7 +3392,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>
 struct  Transformer_1_t68FC4FB75CD82563AB347351CEFAE5414DA6F5EA  : public MulticastDelegate_t
 {
 public:
@@ -3456,7 +3401,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTime>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTime>
 struct  Transformer_1_t3914ABAA4D6712C66DD4949F2BA84F3EC15B4FA3  : public MulticastDelegate_t
 {
 public:
@@ -3465,7 +3410,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTimeOffset>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTimeOffset>
 struct  Transformer_1_tF6A13C624CBEF022B6BF46EA8998763A1BCF8A60  : public MulticastDelegate_t
 {
 public:
@@ -3474,7 +3419,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Decimal>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Decimal>
 struct  Transformer_1_t1CCCD2A03706FE289179D42973958253711E1220  : public MulticastDelegate_t
 {
 public:
@@ -3483,7 +3428,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>
 struct  Transformer_1_t26EAA5376E027613D84066BFDACD29135BC0417F  : public MulticastDelegate_t
 {
 public:
@@ -3492,7 +3437,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Double>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Double>
 struct  Transformer_1_tF7A377BD38E31E579BBB868F25B50E99BE887082  : public MulticastDelegate_t
 {
 public:
@@ -3501,7 +3446,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Guid>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Guid>
 struct  Transformer_1_t7A3CC6284B43CD7AE97F37A34B608ACB60C9BBF4  : public MulticastDelegate_t
 {
 public:
@@ -3510,7 +3455,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int16>
 struct  Transformer_1_t07F206606D946D6F7126E2639D2BA30EE77B275C  : public MulticastDelegate_t
 {
 public:
@@ -3519,7 +3464,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int32>
 struct  Transformer_1_tF8885F335E1C8610DD2BC9AC39EF6912377CA731  : public MulticastDelegate_t
 {
 public:
@@ -3528,7 +3473,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int64>
 struct  Transformer_1_tFC99DD5D67093DCEBB44F3A5BFDC47FDBBD7CF71  : public MulticastDelegate_t
 {
 public:
@@ -3537,7 +3482,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.IntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.IntPtr>
 struct  Transformer_1_t8E4B28C9AAE813C657018A0863EED6247E00BC14  : public MulticastDelegate_t
 {
 public:
@@ -3546,7 +3491,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Object>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Object>
 struct  Transformer_1_t402296E3476F5F09B16B675F17D3CDA6FCB34A9B  : public MulticastDelegate_t
 {
 public:
@@ -3555,7 +3500,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.SByte>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.SByte>
 struct  Transformer_1_t2F20C0EB7F9357AF924B13ACE76627B27A3EE8C6  : public MulticastDelegate_t
 {
 public:
@@ -3564,7 +3509,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Single>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Single>
 struct  Transformer_1_t589CB07AE354480F71F892CCEF416B4B90FD20E1  : public MulticastDelegate_t
 {
 public:
@@ -3573,7 +3518,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.TimeSpan>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.TimeSpan>
 struct  Transformer_1_t92CD444E28392786C719A80E3BD6F19859C0F66F  : public MulticastDelegate_t
 {
 public:
@@ -3582,7 +3527,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt16>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt16>
 struct  Transformer_1_tEBBF3209CF2963A466018B425608A6F9A5DB0E30  : public MulticastDelegate_t
 {
 public:
@@ -3591,7 +3536,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt32>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt32>
 struct  Transformer_1_t8958FB9131F13E8258DE33FA6B69C3FF6197E880  : public MulticastDelegate_t
 {
 public:
@@ -3600,7 +3545,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt64>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt64>
 struct  Transformer_1_t3B28CAE7458C713C7593265008775661D4E2EBAE  : public MulticastDelegate_t
 {
 public:
@@ -3609,7 +3554,7 @@ public:
 };
 
 
-// System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UIntPtr>
+// System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UIntPtr>
 struct  Transformer_1_t77F1FDC69827B944451ACE5D2F9AF2FF2BBE0913  : public MulticastDelegate_t
 {
 public:
@@ -5089,6 +5034,96 @@ public:
 public:
 };
 
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int64>
+struct  EnumUInt16TypeInfo_1_tA629F4A6B0E33EAB8F6C7BBDED330F36ECCF25D8  : public TraceLoggingTypeInfo_1_t443169292A139EC54B708D4B6023EA2449412265
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.IntPtr>
+struct  EnumUInt16TypeInfo_1_t6F9CF7FB3CE0484176ABB8294011C57661A28F52  : public TraceLoggingTypeInfo_1_t49721B614FCA52E6F380ACEE1AE32F5BA19815F1
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Object>
+struct  EnumUInt16TypeInfo_1_t35C0CC36D5DCACA5BAEC8DB005ECCFAD3153D8B8  : public TraceLoggingTypeInfo_1_t30CA664F8DBC78F9161D725EAC6B8DB1F89C4C81
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.SByte>
+struct  EnumUInt16TypeInfo_1_t11F063E5825E1AA9578BA020FE9D10E8B253F150  : public TraceLoggingTypeInfo_1_tBCFB1C63D7D7837A0D7EAC07CF250A313B982794
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Single>
+struct  EnumUInt16TypeInfo_1_tF6647E7B73F2982D12CC851344287CE21B96912B  : public TraceLoggingTypeInfo_1_t80BF4A689F205E66ABE5177817C623F9DF91E6CD
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.TimeSpan>
+struct  EnumUInt16TypeInfo_1_t5B12DCEE17829B04EFC1B172C716435F8276F52E  : public TraceLoggingTypeInfo_1_t8DC6FE358F90681BDCCD5350065A9767D2AC90DD
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt16>
+struct  EnumUInt16TypeInfo_1_tA3D5A7672FD5EDFAD4935ECA329A2C7E7B143AD7  : public TraceLoggingTypeInfo_1_tCBF51B2E677BE976178EC8AC986798F9B65E2EC6
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt32>
+struct  EnumUInt16TypeInfo_1_t542B0805A6994C007A37A16049B47E47EEA26411  : public TraceLoggingTypeInfo_1_tC4AD26ADEB2206747827432E8A7EDA1A37681F10
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt64>
+struct  EnumUInt16TypeInfo_1_tAEA9CF6482001D4F456C1B2869309BCD3D0494AF  : public TraceLoggingTypeInfo_1_t2BDE5AE3D48BE884906B4ABADD9FA7EB16AD333C
+{
+public:
+
+public:
+};
+
+
+// System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UIntPtr>
+struct  EnumUInt16TypeInfo_1_t41858CAB5C37D081E5B80ED774E72C62CD2E3BC6  : public TraceLoggingTypeInfo_1_tB931FCDE5F91B9AE5C5515AA58B5518C97F86330
+{
+public:
+
+public:
+};
+
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -5161,954 +5196,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TraceLoggingDataCollector_AddScalar_mC40
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.SByte>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mF5C09C91FB6112466B12744AAD592CBDCC95EDE2_gshared (Transformer_1_t01DCD4DD4A9D8250EDA7C3884A31ADCBC0CA2F31 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.SByte>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_Invoke_m79B01DE32311480293FB93F869E273A23E7474E0_gshared (Transformer_1_t01DCD4DD4A9D8250EDA7C3884A31ADCBC0CA2F31 * __this, int8_t ___value0, const RuntimeMethod* method)
-{
-	int64_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef int64_t (*FunctionPointerType) (int8_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int64_t (*FunctionPointerType) (void*, int8_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< int64_t, int8_t >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< int64_t, int8_t >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< int64_t, int8_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< int64_t, int8_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				typedef int64_t (*FunctionPointerType) (void*, int8_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m9AB6BFE10E8EEE8F6BB5F7DB3C8DDCA90D2728CC_gshared (Transformer_1_t01DCD4DD4A9D8250EDA7C3884A31ADCBC0CA2F31 * __this, int8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Transformer_1_BeginInvoke_m9AB6BFE10E8EEE8F6BB5F7DB3C8DDCA90D2728CC_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(SByte_t9070AEA2966184235653CB9B4D33B149CDA831DF_il2cpp_TypeInfo_var, &___value0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.SByte>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_EndInvoke_m4D8B2636F8AD9F949EEE02CB90D81FA4209B6FC6_gshared (Transformer_1_t01DCD4DD4A9D8250EDA7C3884A31ADCBC0CA2F31 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int64_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.Single>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m8EBB2FF500800C70D102FFA1CD06BA246F2C928C_gshared (Transformer_1_tDC0440FA1979CE8CAEE05E55C3F77B191B3864A5 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.Single>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_Invoke_mAEEC1B8CD9139CDA04F93033C2D9D7CB9D7E9749_gshared (Transformer_1_tDC0440FA1979CE8CAEE05E55C3F77B191B3864A5 * __this, float ___value0, const RuntimeMethod* method)
-{
-	int64_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef int64_t (*FunctionPointerType) (float, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int64_t (*FunctionPointerType) (void*, float, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< int64_t, float >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< int64_t, float >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< int64_t, float >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< int64_t, float >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				typedef int64_t (*FunctionPointerType) (void*, float, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m46BA7A62E0BBC34E321C6F156D62C9C11F2189D2_gshared (Transformer_1_tDC0440FA1979CE8CAEE05E55C3F77B191B3864A5 * __this, float ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Transformer_1_BeginInvoke_m46BA7A62E0BBC34E321C6F156D62C9C11F2189D2_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &___value0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.Single>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_EndInvoke_mB24577507FE1AD2AEF1EFFFBCE4D5B3CAB817397_gshared (Transformer_1_tDC0440FA1979CE8CAEE05E55C3F77B191B3864A5 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int64_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mD4E2454EDAFF61F3E60A75B040D8D73B20DC11DB_gshared (Transformer_1_t5D03480C8430BB4B110B1A825293797FEA351E99 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.TimeSpan>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_Invoke_m233B23D7587054B7405EC596B150C079E52737D9_gshared (Transformer_1_t5D03480C8430BB4B110B1A825293797FEA351E99 * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, const RuntimeMethod* method)
-{
-	int64_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef int64_t (*FunctionPointerType) (TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 , const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int64_t (*FunctionPointerType) (void*, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 , const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< int64_t, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< int64_t, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< int64_t, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< int64_t, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((RuntimeObject*)(reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				else
-				{
-					typedef int64_t (*FunctionPointerType) (void*, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 , const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-				}
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mFE3502FF56750773D9B449538BA001DB47DA6BE7_gshared (Transformer_1_t5D03480C8430BB4B110B1A825293797FEA351E99 * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Transformer_1_BeginInvoke_mFE3502FF56750773D9B449538BA001DB47DA6BE7_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4_il2cpp_TypeInfo_var, &___value0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.TimeSpan>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_EndInvoke_mCAFB0CCE33F014CB33E4F4794E474BB0F62F6F95_gshared (Transformer_1_t5D03480C8430BB4B110B1A825293797FEA351E99 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int64_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt16>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mA2ABC830BA90FD0C23BAA684D5EB4C9179C5A3A5_gshared (Transformer_1_t8A89FB68F46FF4353E966CC00B908CA34497EA95 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt16>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_Invoke_m6DA1CABF843AF347A33832A94C4D027327CA2639_gshared (Transformer_1_t8A89FB68F46FF4353E966CC00B908CA34497EA95 * __this, uint16_t ___value0, const RuntimeMethod* method)
-{
-	int64_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef int64_t (*FunctionPointerType) (uint16_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int64_t (*FunctionPointerType) (void*, uint16_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< int64_t, uint16_t >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< int64_t, uint16_t >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< int64_t, uint16_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< int64_t, uint16_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				typedef int64_t (*FunctionPointerType) (void*, uint16_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m2C954C6E9EAD61D3FEEB829CC9793BDA0E049ECF_gshared (Transformer_1_t8A89FB68F46FF4353E966CC00B908CA34497EA95 * __this, uint16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Transformer_1_BeginInvoke_m2C954C6E9EAD61D3FEEB829CC9793BDA0E049ECF_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(UInt16_tAE45CEF73BF720100519F6867F32145D075F928E_il2cpp_TypeInfo_var, &___value0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt16>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_EndInvoke_mB5365EA3840E07728020536BBBF35EF47DB42DEE_gshared (Transformer_1_t8A89FB68F46FF4353E966CC00B908CA34497EA95 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int64_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt32>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m225994969E66190D868BBF0B41FBF400A5CBAEEA_gshared (Transformer_1_t0AFADFC854814929C26DD9D901BE57FF25AD0FAE * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt32>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_Invoke_m46F39CABFF561C7BC36E2A428DEC6A12D221B614_gshared (Transformer_1_t0AFADFC854814929C26DD9D901BE57FF25AD0FAE * __this, uint32_t ___value0, const RuntimeMethod* method)
-{
-	int64_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef int64_t (*FunctionPointerType) (uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int64_t (*FunctionPointerType) (void*, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< int64_t, uint32_t >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< int64_t, uint32_t >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< int64_t, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< int64_t, uint32_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				typedef int64_t (*FunctionPointerType) (void*, uint32_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mAF2021EC7AD3A641D4929C923822B5B8079E15CF_gshared (Transformer_1_t0AFADFC854814929C26DD9D901BE57FF25AD0FAE * __this, uint32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Transformer_1_BeginInvoke_mAF2021EC7AD3A641D4929C923822B5B8079E15CF_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___value0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt32>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_EndInvoke_mCC295ADE1E791838BFBCFF4963F6FFEB8253048D_gshared (Transformer_1_t0AFADFC854814929C26DD9D901BE57FF25AD0FAE * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int64_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt64>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mB2E5A4CA5D051ACC1439132B6840E5073D6B4269_gshared (Transformer_1_t1DABC0789361F050A97DCB9B0BF426488849447B * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt64>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_Invoke_m0FB6BA9B2708A4576C373D767BBE6448C32E8669_gshared (Transformer_1_t1DABC0789361F050A97DCB9B0BF426488849447B * __this, uint64_t ___value0, const RuntimeMethod* method)
-{
-	int64_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef int64_t (*FunctionPointerType) (uint64_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int64_t (*FunctionPointerType) (void*, uint64_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< int64_t, uint64_t >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< int64_t, uint64_t >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< int64_t, uint64_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< int64_t, uint64_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				typedef int64_t (*FunctionPointerType) (void*, uint64_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m65D6470D8CD6C67F468B42BEA4C98A9AC99FE5F5_gshared (Transformer_1_t1DABC0789361F050A97DCB9B0BF426488849447B * __this, uint64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Transformer_1_BeginInvoke_m65D6470D8CD6C67F468B42BEA4C98A9AC99FE5F5_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var, &___value0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UInt64>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_EndInvoke_mC8E1649B3D6D434BF15F55338E68C44AAF9BAC7B_gshared (Transformer_1_t1DABC0789361F050A97DCB9B0BF426488849447B * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int64_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mFB445DC58F8D19B75986AFD6BF005CA794E64EF0_gshared (Transformer_1_tB15772C7E9B7C5700966A8D43542601D4E3C1E66 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UIntPtr>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_Invoke_mED615A8E7C22944D880F4AEC1E462BA96C42DFA9_gshared (Transformer_1_tB15772C7E9B7C5700966A8D43542601D4E3C1E66 * __this, uintptr_t ___value0, const RuntimeMethod* method)
-{
-	int64_t result = 0;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef int64_t (*FunctionPointerType) (uintptr_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef int64_t (*FunctionPointerType) (void*, uintptr_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< int64_t, uintptr_t >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< int64_t, uintptr_t >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< int64_t, uintptr_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< int64_t, uintptr_t >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef int64_t (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(&___value0) - 1), targetMethod);
-				}
-				typedef int64_t (*FunctionPointerType) (void*, uintptr_t, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mB92CDE9753380AC75DCE2D19A7AF16486D5433DC_gshared (Transformer_1_tB15772C7E9B7C5700966A8D43542601D4E3C1E66 * __this, uintptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_method (Transformer_1_BeginInvoke_mB92CDE9753380AC75DCE2D19A7AF16486D5433DC_MetadataUsageId);
-		s_Il2CppMethodInitialized = true;
-	}
-	void *__d_args[2] = {0};
-	__d_args[0] = Box(UIntPtr_t_il2cpp_TypeInfo_var, &___value0);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Int64,System.UIntPtr>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Transformer_1_EndInvoke_mC9DC8D147A2E06C9455C28B1C0D8BCC4451280F0_gshared (Transformer_1_tB15772C7E9B7C5700966A8D43542601D4E3C1E66 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return *(int64_t*)UnBox ((RuntimeObject*)__result);
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Object,System.Object>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m4EC9073F9C1DE3CE2B97BE8B1D13D3746A613F29_gshared (Transformer_1_t338D76BCAA91120B467D3111015F22FB4F0FD2FA * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
-{
-	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
-	__this->set_method_3(___method1);
-	__this->set_m_target_2(___object0);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Object,System.Object>::Invoke(ValueType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Transformer_1_Invoke_m34ECE0292EFCF9DA4B987D53FF650B4867112898_gshared (Transformer_1_t338D76BCAA91120B467D3111015F22FB4F0FD2FA * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
-{
-	RuntimeObject * result = NULL;
-	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
-	Delegate_t** delegatesToInvoke;
-	il2cpp_array_size_t length;
-	if (delegateArrayToInvoke != NULL)
-	{
-		length = delegateArrayToInvoke->max_length;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(delegateArrayToInvoke->GetAddressAtUnchecked(0));
-	}
-	else
-	{
-		length = 1;
-		delegatesToInvoke = reinterpret_cast<Delegate_t**>(&__this);
-	}
-
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Delegate_t* currentDelegate = delegatesToInvoke[i];
-		Il2CppMethodPointer targetMethodPointer = currentDelegate->get_method_ptr_0();
-		RuntimeObject* targetThis = currentDelegate->get_m_target_2();
-		RuntimeMethod* targetMethod = (RuntimeMethod*)(currentDelegate->get_method_3());
-		if (!il2cpp_codegen_method_is_virtual(targetMethod))
-		{
-			il2cpp_codegen_raise_execution_engine_exception_if_method_is_not_found(targetMethod);
-		}
-		bool ___methodIsStatic = MethodIsStatic(targetMethod);
-		int ___parameterCount = il2cpp_codegen_method_parameter_count(targetMethod);
-		if (___methodIsStatic)
-		{
-			if (___parameterCount == 1)
-			{
-				// open
-				typedef RuntimeObject * (*FunctionPointerType) (RuntimeObject *, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-			else
-			{
-				// closed
-				typedef RuntimeObject * (*FunctionPointerType) (void*, RuntimeObject *, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-			}
-		}
-		else if (___parameterCount != 1)
-		{
-			// open
-			if (il2cpp_codegen_method_is_virtual(targetMethod) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker0< RuntimeObject * >::Invoke(targetMethod, ___value0);
-					else
-						result = GenericVirtFuncInvoker0< RuntimeObject * >::Invoke(targetMethod, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), ___value0);
-					else
-						result = VirtFuncInvoker0< RuntimeObject * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), ___value0);
-				}
-			}
-			else
-			{
-				typedef RuntimeObject * (*FunctionPointerType) (RuntimeObject *, const RuntimeMethod*);
-				result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-			}
-		}
-		else
-		{
-			// closed
-			if (targetThis != NULL && il2cpp_codegen_method_is_virtual(targetMethod) && !il2cpp_codegen_object_is_of_sealed_type(targetThis) && il2cpp_codegen_delegate_has_invoker((Il2CppDelegate*)__this))
-			{
-				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(targetMethod, targetThis, ___value0);
-					else
-						result = GenericVirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(targetMethod, targetThis, ___value0);
-				}
-				else
-				{
-					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___value0);
-					else
-						result = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___value0);
-				}
-			}
-			else
-			{
-				if (targetThis == NULL && il2cpp_codegen_class_is_value_type(il2cpp_codegen_method_get_declaring_type(targetMethod)))
-				{
-					typedef RuntimeObject * (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)((reinterpret_cast<RuntimeObject*>(___value0) - 1), targetMethod);
-				}
-				if (targetThis == NULL)
-				{
-					typedef RuntimeObject * (*FunctionPointerType) (RuntimeObject *, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(___value0, targetMethod);
-				}
-				else
-				{
-					typedef RuntimeObject * (*FunctionPointerType) (void*, RuntimeObject *, const RuntimeMethod*);
-					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___value0, targetMethod);
-				}
-			}
-		}
-	}
-	return result;
-}
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Object,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mFAA0BB93D1214754214E07A96E539F313132EEF8_gshared (Transformer_1_t338D76BCAA91120B467D3111015F22FB4F0FD2FA * __this, RuntimeObject * ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
-{
-	void *__d_args[2] = {0};
-	__d_args[0] = ___value0;
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
-}
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.Object,System.Object>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Transformer_1_EndInvoke_mD3499209F8675939D861ADDD71D15E29E346CECE_gshared (Transformer_1_t338D76BCAA91120B467D3111015F22FB4F0FD2FA * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
-{
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
-	return (RuntimeObject *)__result;
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Boolean>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Boolean>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m53148E3526E31F8326974BD4B87FE4C6476B813A_gshared (Transformer_1_t79570F2F3007DB1835D814B8075FDC98BC3553A7 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Boolean>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Boolean>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mE0E78E4BA08D157F8B956F71E9B8D188A1FEFC84_gshared (Transformer_1_t79570F2F3007DB1835D814B8075FDC98BC3553A7 * __this, bool ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -6187,7 +5282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mE0E78E4BA08D157F
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m20D04EBC3B5098B28E4B13474B5D9E1A3E2CFD84_gshared (Transformer_1_t79570F2F3007DB1835D814B8075FDC98BC3553A7 * __this, bool ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6200,7 +5295,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m20D
 	__d_args[0] = Box(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Boolean>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Boolean>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m884B52A1249615B06866B70F331C48568FE7D079_gshared (Transformer_1_t79570F2F3007DB1835D814B8075FDC98BC3553A7 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -6214,14 +5309,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m884B52A124961
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Byte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Byte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m7BA79D47B826D92401C40BEBFD8CA5423953CAEF_gshared (Transformer_1_tF8540D89C13FFD7703F79D80D228D878E23A3ADE * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Byte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Byte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m55B052CF298AB5DE8DB3791BAEE285962E015EEA_gshared (Transformer_1_tF8540D89C13FFD7703F79D80D228D878E23A3ADE * __this, uint8_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -6300,7 +5395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m55B052CF298AB5DE
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m4FE5B7422C6DA2714608457B90CC9B76FB22C91F_gshared (Transformer_1_tF8540D89C13FFD7703F79D80D228D878E23A3ADE * __this, uint8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6313,7 +5408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m4FE
 	__d_args[0] = Box(Byte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Byte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Byte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m3C481A5F04CB48FCBCBCDB54DD0158DBA196531B_gshared (Transformer_1_tF8540D89C13FFD7703F79D80D228D878E23A3ADE * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -6327,14 +5422,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m3C481A5F04CB4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Char>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Char>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m2FA853E8768C8333DDA876405FEAD7C65626FF83_gshared (Transformer_1_tA6C8CCCFAE41F969307DFD6B15049A2AC4E87B2E * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Char>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Char>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mD96718C9A0753A56F8E412F5C6CB9323AF740D63_gshared (Transformer_1_tA6C8CCCFAE41F969307DFD6B15049A2AC4E87B2E * __this, Il2CppChar ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -6413,7 +5508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mD96718C9A0753A56
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m2FDB52B98609513C2BCE61B91F323506A0CB92E8_gshared (Transformer_1_tA6C8CCCFAE41F969307DFD6B15049A2AC4E87B2E * __this, Il2CppChar ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6426,7 +5521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m2FD
 	__d_args[0] = Box(Char_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Char>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Char>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mDE78413014C27D9B68211B821B95315A61ACB345_gshared (Transformer_1_tA6C8CCCFAE41F969307DFD6B15049A2AC4E87B2E * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -6440,14 +5535,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mDE78413014C27
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m0B6C57C7E5FC1765623B89499C6929802F936303_gshared (Transformer_1_t42D4002780D07F2123783F0D69A304CD6984F13D * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m3EA08D924C574CEA58E54AEE87D72CA4CE6725BD_gshared (Transformer_1_t42D4002780D07F2123783F0D69A304CD6984F13D * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -6534,7 +5629,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m3EA08D924C574CEA
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCB50E313D6981689B77C2ACA9BEFD1FFDEB94665_gshared (Transformer_1_t42D4002780D07F2123783F0D69A304CD6984F13D * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6547,7 +5642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCB5
 	__d_args[0] = Box(KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mC8EF612D244B1199F68D1C88B0508611A8162A3A_gshared (Transformer_1_t42D4002780D07F2123783F0D69A304CD6984F13D * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -6561,14 +5656,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mC8EF612D244B1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTime>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTime>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m4E8C2BF0982AB63A57CA6D4E170EDCEABC57EA6B_gshared (Transformer_1_t7B71FCE554A579C8F8EE31C925E7CC3A260F65B0 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTime>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTime>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mABDCD1CB6CBF8469F2908E071613C11E22A20D05_gshared (Transformer_1_t7B71FCE554A579C8F8EE31C925E7CC3A260F65B0 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -6655,7 +5750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mABDCD1CB6CBF8469
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA099C1354BB8F316CDE959E6BAB537FBC60C406D_gshared (Transformer_1_t7B71FCE554A579C8F8EE31C925E7CC3A260F65B0 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6668,7 +5763,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA09
 	__d_args[0] = Box(DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTime>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTime>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mD3F93C5E81FE7351FDF23203617C723B91DE423D_gshared (Transformer_1_t7B71FCE554A579C8F8EE31C925E7CC3A260F65B0 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -6682,14 +5777,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mD3F93C5E81FE7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mC6583F9B1E2DD9E1BD0AC962FAF48A4DCA1AD692_gshared (Transformer_1_t0C4CCE96CE8A1C5FA519A098E2CBD37BEC2CA324 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTimeOffset>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTimeOffset>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mF672E9B574A1F329F62B7E8DB10FE8D754D8E99A_gshared (Transformer_1_t0C4CCE96CE8A1C5FA519A098E2CBD37BEC2CA324 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -6776,7 +5871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mF672E9B574A1F329
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m1A4213C9C58C2E99CB715713C5F78251ABB383B2_gshared (Transformer_1_t0C4CCE96CE8A1C5FA519A098E2CBD37BEC2CA324 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6789,7 +5884,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m1A4
 	__d_args[0] = Box(DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m477E78EE85CDBD97799E64B7C1EAC07382F4430D_gshared (Transformer_1_t0C4CCE96CE8A1C5FA519A098E2CBD37BEC2CA324 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -6803,14 +5898,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m477E78EE85CDB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Decimal>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Decimal>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mC978F7094DDA3AD6D723F73A4CC224A3BE565F26_gshared (Transformer_1_tC8E702F6B3A43AAD921E235014B8BEE380D6C8E6 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Decimal>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Decimal>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m3CF68824F72C723B37D1305BC856CC977C7E3698_gshared (Transformer_1_tC8E702F6B3A43AAD921E235014B8BEE380D6C8E6 * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -6897,7 +5992,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m3CF68824F72C723B
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m5A61755371095EC35EE47A86DEE9B077B61DC5E9_gshared (Transformer_1_tC8E702F6B3A43AAD921E235014B8BEE380D6C8E6 * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6910,7 +6005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m5A6
 	__d_args[0] = Box(Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Decimal>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Decimal>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m43A27C8FC99BE6BEB291CB76594644819145ABDA_gshared (Transformer_1_tC8E702F6B3A43AAD921E235014B8BEE380D6C8E6 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -6924,14 +6019,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m43A27C8FC99BE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mBB2ED559899D560F48A751E94E1A4962477C7B1B_gshared (Transformer_1_tBEAC8A938CBDB8AAB69661EFA8EA0FB141525D53 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m2308F9778BC756A51B8FF53A683753E2A6689F11_gshared (Transformer_1_tBEAC8A938CBDB8AAB69661EFA8EA0FB141525D53 * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7018,7 +6113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m2308F9778BC756A5
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0899B4D2E9C5AFB03548B172923FEA0261509C24_gshared (Transformer_1_tBEAC8A938CBDB8AAB69661EFA8EA0FB141525D53 * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7031,7 +6126,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m089
 	__d_args[0] = Box(EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m1058B744A81C376422B50240A56C505C09D02E39_gshared (Transformer_1_tBEAC8A938CBDB8AAB69661EFA8EA0FB141525D53 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7045,14 +6140,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m1058B744A81C3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Double>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Double>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m0F0974B9ACE42500A41E59AA9AD793C6F68DB5F2_gshared (Transformer_1_tF0766B96906F251FDCA58F9C63D53C429A053601 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Double>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Double>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mA42C7CA647760E95CC4C222B189A313121CEF2D1_gshared (Transformer_1_tF0766B96906F251FDCA58F9C63D53C429A053601 * __this, double ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7131,7 +6226,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mA42C7CA647760E95
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCC0E13AD9008429EDB613878BD0794A52D4408BE_gshared (Transformer_1_tF0766B96906F251FDCA58F9C63D53C429A053601 * __this, double ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7144,7 +6239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCC0
 	__d_args[0] = Box(Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Double>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Double>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m995D59490197373952B25A4717AE9C5450F842E9_gshared (Transformer_1_tF0766B96906F251FDCA58F9C63D53C429A053601 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7158,14 +6253,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m995D594901973
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Guid>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Guid>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mB9FB9D8425D06325DFFDBA2833063CF9DF58D278_gshared (Transformer_1_tBBF50A3F30EEFDE66991F29F64E2D0A0455DE463 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Guid>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Guid>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mD3A568316EDF778D4A09158D00B0A5E0255D50FC_gshared (Transformer_1_tBBF50A3F30EEFDE66991F29F64E2D0A0455DE463 * __this, Guid_t  ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7252,7 +6347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mD3A568316EDF778D
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCCB038004240FDAC318B941F8A404BE579FE0CED_gshared (Transformer_1_tBBF50A3F30EEFDE66991F29F64E2D0A0455DE463 * __this, Guid_t  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7265,7 +6360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCCB
 	__d_args[0] = Box(Guid_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Guid>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Guid>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m314A1ADA1EF893F478EBDC642BC791C9B08B6C3A_gshared (Transformer_1_tBBF50A3F30EEFDE66991F29F64E2D0A0455DE463 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7279,14 +6374,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m314A1ADA1EF89
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m67EBA83A5F14DCE0BF02AEAC3D8A227B5516D0EF_gshared (Transformer_1_tA87CAE242D2B98DEB22E378E1E67ABA48B2C74D4 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m225692537DBB01F8F1DAE6DB59E85B868C3E2F6F_gshared (Transformer_1_tA87CAE242D2B98DEB22E378E1E67ABA48B2C74D4 * __this, int16_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7365,7 +6460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m225692537DBB01F8
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m41442A265FA114B866F65531B8DD5A55301B0E36_gshared (Transformer_1_tA87CAE242D2B98DEB22E378E1E67ABA48B2C74D4 * __this, int16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7378,7 +6473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m414
 	__d_args[0] = Box(Int16_t823A20635DAF5A3D93A1E01CFBF3CBA27CF00B4D_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m911DD623BF0F27EABB4F5A64CF004C1927ED93E5_gshared (Transformer_1_tA87CAE242D2B98DEB22E378E1E67ABA48B2C74D4 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7392,14 +6487,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m911DD623BF0F2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m9A6B99366A425EE315A546EF2D9B985D9A83F78D_gshared (Transformer_1_tD3A676069C04AAC638676241B25E06E84FEDDF60 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m7F32C38187D4C84999C80C012418A48566A07E7C_gshared (Transformer_1_tD3A676069C04AAC638676241B25E06E84FEDDF60 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7478,7 +6573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m7F32C38187D4C849
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA3A81D50EE76397F3136530B47F615E2A439B8EF_gshared (Transformer_1_tD3A676069C04AAC638676241B25E06E84FEDDF60 * __this, int32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7491,7 +6586,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA3A
 	__d_args[0] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m4C131EF95DF7BCDDCFB4FE627C978966023545A9_gshared (Transformer_1_tD3A676069C04AAC638676241B25E06E84FEDDF60 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7505,14 +6600,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m4C131EF95DF7B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m3429D425414CB252BA28DEC0876AD9CCFA243E7C_gshared (Transformer_1_tE0C44E54BCD5DF5FF3AC9F52C13F1428FBBD4084 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m53D79075FCFA0F749C4F136E035D52B45F5686F8_gshared (Transformer_1_tE0C44E54BCD5DF5FF3AC9F52C13F1428FBBD4084 * __this, int64_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7591,7 +6686,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m53D79075FCFA0F74
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mC02FDEBBD9C4B2AAA194F5F9CD39DA5DE51FC0A5_gshared (Transformer_1_tE0C44E54BCD5DF5FF3AC9F52C13F1428FBBD4084 * __this, int64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7604,7 +6699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mC02
 	__d_args[0] = Box(Int64_t7A386C2FF7B0280A0F516992401DDFCF0FF7B436_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Int64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Int64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m6C057CA4463DCF6E7ABBC498D5FF46D334EC456F_gshared (Transformer_1_tE0C44E54BCD5DF5FF3AC9F52C13F1428FBBD4084 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7618,14 +6713,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m6C057CA4463DC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.IntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.IntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m0BD1C675B70E6A1C52A406696D805F9652A44208_gshared (Transformer_1_tAE4605051B411219A47F37FD57F817C772C5D831 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.IntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.IntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m53DE7A975B9C6D8D9D4D5D3A83F65212E7B64034_gshared (Transformer_1_tAE4605051B411219A47F37FD57F817C772C5D831 * __this, intptr_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7704,7 +6799,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m53DE7A975B9C6D8D
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m7FA41E2CFB58E81D3A8256965BFA36B4F0CA274D_gshared (Transformer_1_tAE4605051B411219A47F37FD57F817C772C5D831 * __this, intptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7717,7 +6812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m7FA
 	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.IntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.IntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mEABF8A9CEC5D50CB8832C82A2E7A2B02941BB536_gshared (Transformer_1_tAE4605051B411219A47F37FD57F817C772C5D831 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7731,14 +6826,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mEABF8A9CEC5D5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Object>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m20C3D0F9200018809BAF413DF1EE62E0FAAD292B_gshared (Transformer_1_t2100917DAFFEBF22F25BC5382C00308AE7962D49 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Object>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Object>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m28436F0C48AEEBECD87D0F89EA674477F56033BE_gshared (Transformer_1_t2100917DAFFEBF22F25BC5382C00308AE7962D49 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7851,14 +6946,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m28436F0C48AEEBEC
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m56E74E270233A213A9B5977C44F489B190C404F0_gshared (Transformer_1_t2100917DAFFEBF22F25BC5382C00308AE7962D49 * __this, RuntimeObject * ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	void *__d_args[2] = {0};
 	__d_args[0] = ___value0;
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Object>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Object>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m84B4FA0DEB35EFD8CFE7B8CEE43EB5F65FE9F2C4_gshared (Transformer_1_t2100917DAFFEBF22F25BC5382C00308AE7962D49 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7872,14 +6967,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m84B4FA0DEB35E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.SByte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.SByte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mD03927151D168CA430CAF5F56FD8A009B2BDEBF1_gshared (Transformer_1_t745DB47A09FCB8577D6C816C1169CFECBB32F2C5 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.SByte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.SByte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mFE52F7B5A9A515D965736B21AF4E38F27FA91AD3_gshared (Transformer_1_t745DB47A09FCB8577D6C816C1169CFECBB32F2C5 * __this, int8_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -7958,7 +7053,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mFE52F7B5A9A515D9
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mBDB50FDBAB6A72BBD284262D8025BFC52F9D8BA6_gshared (Transformer_1_t745DB47A09FCB8577D6C816C1169CFECBB32F2C5 * __this, int8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7971,7 +7066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mBDB
 	__d_args[0] = Box(SByte_t9070AEA2966184235653CB9B4D33B149CDA831DF_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.SByte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.SByte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mED6EBB6D185C9C085224B47CA11E0EBD9D9250F5_gshared (Transformer_1_t745DB47A09FCB8577D6C816C1169CFECBB32F2C5 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -7985,14 +7080,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mED6EBB6D185C9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Single>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Single>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m88D20D53B7160F942EAA4BB8BBBE5E9A5BFDEC89_gshared (Transformer_1_tBF9E21F5E62125133BAE8AB29F7A5FF8368A8867 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Single>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Single>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m940EC14E21977FB4E869443C9C325F3D8EDE480C_gshared (Transformer_1_tBF9E21F5E62125133BAE8AB29F7A5FF8368A8867 * __this, float ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -8071,7 +7166,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m940EC14E21977FB4
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA09DF71D097CB595EB7E53C7650D86B4FA223813_gshared (Transformer_1_tBF9E21F5E62125133BAE8AB29F7A5FF8368A8867 * __this, float ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8084,7 +7179,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA09
 	__d_args[0] = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.Single>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.Single>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mCECE6614E0BFE54503B28041F805D0E878E2C6D1_gshared (Transformer_1_tBF9E21F5E62125133BAE8AB29F7A5FF8368A8867 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8098,14 +7193,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mCECE6614E0BFE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m5BA8C71CCB0070DEA7B32748F94F901A69B24E1B_gshared (Transformer_1_tF26DF9ED555578458A4BEBCC536B42CFE02ACC80 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.TimeSpan>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.TimeSpan>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mBEFF1B1DC8E2B073F394D58AEA29A7BA9B2041E5_gshared (Transformer_1_tF26DF9ED555578458A4BEBCC536B42CFE02ACC80 * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -8192,7 +7287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_mBEFF1B1DC8E2B073
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m82EF02CA53488B5D5874BE367E2F04AA2DADAB9A_gshared (Transformer_1_tF26DF9ED555578458A4BEBCC536B42CFE02ACC80 * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8205,7 +7300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m82E
 	__d_args[0] = Box(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.TimeSpan>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.TimeSpan>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m77D9D8C139E06C1CD2EE24DF65C61CA9801C5330_gshared (Transformer_1_tF26DF9ED555578458A4BEBCC536B42CFE02ACC80 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8219,14 +7314,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m77D9D8C139E06
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mB068B9364CB4267158BBE23820EDE6447F54630E_gshared (Transformer_1_t8D669EF524B3DA7294AF5ECC32689F786670F3BC * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m7C38E89DBA630B1723DA6808D63EC7990AA373EA_gshared (Transformer_1_t8D669EF524B3DA7294AF5ECC32689F786670F3BC * __this, uint16_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -8305,7 +7400,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m7C38E89DBA630B17
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mF574F2D777EAAA0C2078736CC7B326122FE212AE_gshared (Transformer_1_t8D669EF524B3DA7294AF5ECC32689F786670F3BC * __this, uint16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8318,7 +7413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mF57
 	__d_args[0] = Box(UInt16_tAE45CEF73BF720100519F6867F32145D075F928E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m37874491928E70983847F5EDE36C0D873753B9E8_gshared (Transformer_1_t8D669EF524B3DA7294AF5ECC32689F786670F3BC * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8332,14 +7427,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m37874491928E7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m753C5A9FEFF87098A8C2EAF5A6B5164EF9328D5F_gshared (Transformer_1_t2C09253351F9C203CF31F34A19DE66BEA03581F3 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m49E1E256329047184A928E87F4E3CF16229063F2_gshared (Transformer_1_t2C09253351F9C203CF31F34A19DE66BEA03581F3 * __this, uint32_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -8418,7 +7513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m49E1E25632904718
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m13A23DCFF520BA5D6195CFAD7FCB282BE3499241_gshared (Transformer_1_t2C09253351F9C203CF31F34A19DE66BEA03581F3 * __this, uint32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8431,7 +7526,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m13A
 	__d_args[0] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mAB6BD1315730CEC2F0308D760A518693110A9C01_gshared (Transformer_1_t2C09253351F9C203CF31F34A19DE66BEA03581F3 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8445,14 +7540,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_mAB6BD1315730C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m0715B8B8FE6E168EFA23E1BE650E35937A0EBA3D_gshared (Transformer_1_tCF1372796CC314E10F8635C4972C44383BAC7023 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m93EC854B7F88EDA1D5AE618F023B423AD0D35F48_gshared (Transformer_1_tCF1372796CC314E10F8635C4972C44383BAC7023 * __this, uint64_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -8531,7 +7626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m93EC854B7F88EDA1
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0DCDD8683DD5A31B316CC69B15DBFE505577E731_gshared (Transformer_1_tCF1372796CC314E10F8635C4972C44383BAC7023 * __this, uint64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8544,7 +7639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0DC
 	__d_args[0] = Box(UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UInt64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UInt64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m9E91A81BBEE49CD8AAA1A950578CB0D70038FE1E_gshared (Transformer_1_tCF1372796CC314E10F8635C4972C44383BAC7023 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8558,14 +7653,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m9E91A81BBEE49
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m390A1D0161CA72F01C5B625807B9CF1C53EF14EF_gshared (Transformer_1_tBE6DD3E5AECE0264800ECFE10CF373FC541893E1 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UIntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UIntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m9490BC6C5F42467F454149B137A4CB1BE6481479_gshared (Transformer_1_tBE6DD3E5AECE0264800ECFE10CF373FC541893E1 * __this, uintptr_t ___value0, const RuntimeMethod* method)
 {
 	int8_t result = 0x0;
@@ -8644,7 +7739,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_Invoke_m9490BC6C5F42467F
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m01AEC96A5FFF8DF9BEDC8632CF3379B2070A3337_gshared (Transformer_1_tBE6DD3E5AECE0264800ECFE10CF373FC541893E1 * __this, uintptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8657,7 +7752,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m01A
 	__d_args[0] = Box(UIntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.SByte,System.UIntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.SByte,System.UIntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m0D6B7329622E95B1C29DE13B1BC07ED04EB3AA73_gshared (Transformer_1_tBE6DD3E5AECE0264800ECFE10CF373FC541893E1 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8671,14 +7766,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t Transformer_1_EndInvoke_m0D6B7329622E9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Boolean>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Boolean>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mBA5168F8C1B14F31ED298D8133342FA917A57B25_gshared (Transformer_1_t199C978828CCDD3DC4B333BD031B5DA73DE2C968 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Boolean>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Boolean>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mBE745DDB9160566E02ACEEB9D2483D2ECAED9642_gshared (Transformer_1_t199C978828CCDD3DC4B333BD031B5DA73DE2C968 * __this, bool ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -8757,7 +7852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mBE745DDB916056
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m9A30169A6F19599A3B8AE2C3C7DD74795E37D187_gshared (Transformer_1_t199C978828CCDD3DC4B333BD031B5DA73DE2C968 * __this, bool ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8770,7 +7865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m9A3
 	__d_args[0] = Box(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Boolean>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Boolean>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m3200ED77362D3667E8ECDB86889D30F2264AAA30_gshared (Transformer_1_t199C978828CCDD3DC4B333BD031B5DA73DE2C968 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8784,14 +7879,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m3200ED77362
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Byte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Byte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m009486B5D0AE4E1F5B4B2EBDCF449EBADE276A3B_gshared (Transformer_1_t6F5F45E771B014CBE6BC711CD4C78E85A692E83F * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Byte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Byte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mE92AD4F926C40DBDBCFA55F9360739AECCF1CA77_gshared (Transformer_1_t6F5F45E771B014CBE6BC711CD4C78E85A692E83F * __this, uint8_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -8870,7 +7965,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mE92AD4F926C40D
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6DA082220D3DDC092464D29FEC47184B8F4D09C5_gshared (Transformer_1_t6F5F45E771B014CBE6BC711CD4C78E85A692E83F * __this, uint8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8883,7 +7978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6DA
 	__d_args[0] = Box(Byte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Byte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Byte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m8D132708D3D3FFA529696089AB2CF0F8A81865CE_gshared (Transformer_1_t6F5F45E771B014CBE6BC711CD4C78E85A692E83F * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -8897,14 +7992,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m8D132708D3D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Char>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Char>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m7D4BD3613E11F10D4E1414A7BC47FD73CD2AAF87_gshared (Transformer_1_tBBFF9537117C5BC9379D753F5293135DB33DF769 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Char>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Char>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mEC162A22E92658EBF8712D8D271616596FCAD9D5_gshared (Transformer_1_tBBFF9537117C5BC9379D753F5293135DB33DF769 * __this, Il2CppChar ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -8983,7 +8078,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mEC162A22E92658
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m936493227C05B6275E6E94352792375EB1544400_gshared (Transformer_1_tBBFF9537117C5BC9379D753F5293135DB33DF769 * __this, Il2CppChar ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8996,7 +8091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m936
 	__d_args[0] = Box(Char_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Char>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Char>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m4C30DF63DD6E1A969ED2FA1C1D2C1C4E1409580A_gshared (Transformer_1_tBBFF9537117C5BC9379D753F5293135DB33DF769 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9010,14 +8105,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m4C30DF63DD6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mA072F3AB0258512CE7FF23DD9BBE53173ADFB7DD_gshared (Transformer_1_t43360C920C6CB99E177E7D0C21F4631EB7353195 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m229380A53B6D81667A240EB7347E66A6747784C1_gshared (Transformer_1_t43360C920C6CB99E177E7D0C21F4631EB7353195 * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9104,7 +8199,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m229380A53B6D81
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6E3C070D935247898E23C542BB890D1C9C6CAB99_gshared (Transformer_1_t43360C920C6CB99E177E7D0C21F4631EB7353195 * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9117,7 +8212,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6E3
 	__d_args[0] = Box(KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mFDBBF4D0AAD8E0D9BD4DE5BC8B57861C31FF1344_gshared (Transformer_1_t43360C920C6CB99E177E7D0C21F4631EB7353195 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9131,14 +8226,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mFDBBF4D0AAD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTime>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTime>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mF5A3FF38B7DB8540D6C66D5524F3CE89CEF34D59_gshared (Transformer_1_tFF97AD2C8962456276364E309A52E6DE33100D56 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTime>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTime>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m38DE083C779EEEC998D7F60548391ECE2FDABB54_gshared (Transformer_1_tFF97AD2C8962456276364E309A52E6DE33100D56 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9225,7 +8320,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m38DE083C779EEE
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m26BEFC82BDB640B4DF55BFD428DF0733A4651E6C_gshared (Transformer_1_tFF97AD2C8962456276364E309A52E6DE33100D56 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9238,7 +8333,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m26B
 	__d_args[0] = Box(DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTime>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTime>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m26D20A12C72AC9BB0A9640E9ED6F1AF905E2E861_gshared (Transformer_1_tFF97AD2C8962456276364E309A52E6DE33100D56 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9252,14 +8347,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m26D20A12C72
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m5D6EC0A94E3DB6BFB99277F317D4B333B562287F_gshared (Transformer_1_t43FCC452C755864725F9DF93DFBE108575461B01 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTimeOffset>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTimeOffset>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m96BD007377662FF657ED8DB71ED1E9792501AD0A_gshared (Transformer_1_t43FCC452C755864725F9DF93DFBE108575461B01 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9346,7 +8441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m96BD007377662F
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m177CEA92785C8229AF42843882823803E3141CA7_gshared (Transformer_1_t43FCC452C755864725F9DF93DFBE108575461B01 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9359,7 +8454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m177
 	__d_args[0] = Box(DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m9B2A462036E29FCDEF07B08C42531F2EA0A0F7E4_gshared (Transformer_1_t43FCC452C755864725F9DF93DFBE108575461B01 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9373,14 +8468,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m9B2A462036E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Decimal>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Decimal>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mF5828350B0D304A5F0085E4F5528B2247791E9D7_gshared (Transformer_1_t0FD280BFFA34F4D2822CCA89C0E579D1D039C6EC * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Decimal>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Decimal>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mF511CCE528F45337B520C99F30D917CB66733759_gshared (Transformer_1_t0FD280BFFA34F4D2822CCA89C0E579D1D039C6EC * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9467,7 +8562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mF511CCE528F453
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m75AC1FDDA8BE6212E26333336D330B990ACD2325_gshared (Transformer_1_t0FD280BFFA34F4D2822CCA89C0E579D1D039C6EC * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9480,7 +8575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m75A
 	__d_args[0] = Box(Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Decimal>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Decimal>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m75F0912D5C2C0508931A8FEEB2BDBB80BB04AAAF_gshared (Transformer_1_t0FD280BFFA34F4D2822CCA89C0E579D1D039C6EC * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9494,14 +8589,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m75F0912D5C2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mC6F2AB162B6CF244213837182B27ACB2065609D7_gshared (Transformer_1_t4E404370A1452595E3C5DB7882E5D8953D10E1A5 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m0D74862FB34FA82E351FA4E9C27C0C2C141CF4E1_gshared (Transformer_1_t4E404370A1452595E3C5DB7882E5D8953D10E1A5 * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9588,7 +8683,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m0D74862FB34FA8
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0EF094496A9825457A95B801F83319BA2E910705_gshared (Transformer_1_t4E404370A1452595E3C5DB7882E5D8953D10E1A5 * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9601,7 +8696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0EF
 	__d_args[0] = Box(EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mCC36957E420D81AA927EF5CA2D5B3D67D2F8CE97_gshared (Transformer_1_t4E404370A1452595E3C5DB7882E5D8953D10E1A5 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9615,14 +8710,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mCC36957E420
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Double>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Double>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mF9C0A32DEB5585B548ACD8490CA214AC9A12CBA9_gshared (Transformer_1_t96993E76204149647596BB8B93F89AF01BBC2DA1 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Double>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Double>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m60CD8DCDAA72B5F774244A63F19D4765855C5C13_gshared (Transformer_1_t96993E76204149647596BB8B93F89AF01BBC2DA1 * __this, double ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9701,7 +8796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m60CD8DCDAA72B5
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8A4DA441AC3F43284E94269A4BA89BF30F7F056C_gshared (Transformer_1_t96993E76204149647596BB8B93F89AF01BBC2DA1 * __this, double ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9714,7 +8809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8A4
 	__d_args[0] = Box(Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Double>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Double>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mD1459873B0354F2BC23AA38811EA11AD5B022320_gshared (Transformer_1_t96993E76204149647596BB8B93F89AF01BBC2DA1 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9728,14 +8823,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mD1459873B03
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Guid>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Guid>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m953F42761F0E529796CB046B33058100F4C2B68E_gshared (Transformer_1_tC04472BECF0E4CEEAC0DD81250C1C45100A49760 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Guid>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Guid>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m5EC1B94B8D2AE12B06F361290242E39999F903C6_gshared (Transformer_1_tC04472BECF0E4CEEAC0DD81250C1C45100A49760 * __this, Guid_t  ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9822,7 +8917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m5EC1B94B8D2AE1
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m01C4897E881D1103D6141A4DDCB507658E35A79C_gshared (Transformer_1_tC04472BECF0E4CEEAC0DD81250C1C45100A49760 * __this, Guid_t  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9835,7 +8930,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m01C
 	__d_args[0] = Box(Guid_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Guid>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Guid>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m7F16BB52E395305A2A0A7B65CF316A8E8B977FEB_gshared (Transformer_1_tC04472BECF0E4CEEAC0DD81250C1C45100A49760 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9849,14 +8944,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m7F16BB52E39
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mED71261097772210E7EE2348AD5A091511A78997_gshared (Transformer_1_t752D0C62D1A2E9A30D3F6E06FB35683298BACEE8 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mEC2CD5FD3BDE69001844698662D01519A0CE6B23_gshared (Transformer_1_t752D0C62D1A2E9A30D3F6E06FB35683298BACEE8 * __this, int16_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -9935,7 +9030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mEC2CD5FD3BDE69
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA0B2C8811BF8545ED41FB1285A934A75D8889B40_gshared (Transformer_1_t752D0C62D1A2E9A30D3F6E06FB35683298BACEE8 * __this, int16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9948,7 +9043,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mA0B
 	__d_args[0] = Box(Int16_t823A20635DAF5A3D93A1E01CFBF3CBA27CF00B4D_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m191A4B36C4B830CADA3E06CB6E823C061638CB99_gshared (Transformer_1_t752D0C62D1A2E9A30D3F6E06FB35683298BACEE8 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -9962,14 +9057,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m191A4B36C4B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m0335FF519D6E3F6FC86E4AAAB8E2BA22D543240A_gshared (Transformer_1_tA6B55D2D785634BAC127EF306F25AD47252837A5 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mA748B4CC4735C8A75C48D285F0C496CF9BE31ACA_gshared (Transformer_1_tA6B55D2D785634BAC127EF306F25AD47252837A5 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10048,7 +9143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mA748B4CC4735C8
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mEE6F1759E52F0DF2BA674911497ADDA09D07D6E8_gshared (Transformer_1_tA6B55D2D785634BAC127EF306F25AD47252837A5 * __this, int32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10061,7 +9156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mEE6
 	__d_args[0] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m4326F6061CDBBE5E381A9479372B7A7B44A183DD_gshared (Transformer_1_tA6B55D2D785634BAC127EF306F25AD47252837A5 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10075,14 +9170,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m4326F6061CD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m38020908768906E6BC101209CE6D363A6D8D2CDD_gshared (Transformer_1_t634A2D481C50B029D59732E0A8E9D02DF66A0551 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mBFD93F44EE7B74D0E76FAE9A3762AF2C46F6198F_gshared (Transformer_1_t634A2D481C50B029D59732E0A8E9D02DF66A0551 * __this, int64_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10161,7 +9256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mBFD93F44EE7B74
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m34CF81FE926474D8AD31D6D82E99132A3E59776D_gshared (Transformer_1_t634A2D481C50B029D59732E0A8E9D02DF66A0551 * __this, int64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10174,7 +9269,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m34C
 	__d_args[0] = Box(Int64_t7A386C2FF7B0280A0F516992401DDFCF0FF7B436_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Int64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Int64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m9B65CBD04CA4F96F57234F78E7B30AA0C5137D65_gshared (Transformer_1_t634A2D481C50B029D59732E0A8E9D02DF66A0551 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10188,14 +9283,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m9B65CBD04CA
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.IntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.IntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m12C7C5BC1FA7BC342E765EAAB4AAEC89F74EEE8D_gshared (Transformer_1_t873B2E4C2418F756278367655E1C64D654382460 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.IntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.IntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m91279D37ABD4AB5D37597A87A261177608E8CC59_gshared (Transformer_1_t873B2E4C2418F756278367655E1C64D654382460 * __this, intptr_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10274,7 +9369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m91279D37ABD4AB
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m08812BD5B4415E16EC09B45D47E446BE5627D594_gshared (Transformer_1_t873B2E4C2418F756278367655E1C64D654382460 * __this, intptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10287,7 +9382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m088
 	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.IntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.IntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m62E36BE81FDAB79691063F73BAD50568640DFFDD_gshared (Transformer_1_t873B2E4C2418F756278367655E1C64D654382460 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10301,14 +9396,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m62E36BE81FD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Object>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mD8A3D7175A4B2F8A4BF33C948950A8251AAD6F5D_gshared (Transformer_1_t892625DF88EAC62E91E8CCC189CB451B8DC38F37 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Object>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Object>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mE1015EEC52C36235C4B71235429EFA4C744CAB53_gshared (Transformer_1_t892625DF88EAC62E91E8CCC189CB451B8DC38F37 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10421,14 +9516,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mE1015EEC52C362
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m693E42ECF34EDADA31776A1AFDA65F62DA76164F_gshared (Transformer_1_t892625DF88EAC62E91E8CCC189CB451B8DC38F37 * __this, RuntimeObject * ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	void *__d_args[2] = {0};
 	__d_args[0] = ___value0;
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Object>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Object>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m204DB94DE7862F9E98108FE53105C2D55FC1A753_gshared (Transformer_1_t892625DF88EAC62E91E8CCC189CB451B8DC38F37 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10442,14 +9537,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m204DB94DE78
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.SByte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.SByte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mB298D71BFAB7EF1ADF0F9C5AB0122ADCB9A40906_gshared (Transformer_1_t1996E09F6BED0E887AFBD3B5A3AE1C93DE6BF87A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.SByte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.SByte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mE3736C143BA1013BB4F563612BF3D9C47947A4F4_gshared (Transformer_1_t1996E09F6BED0E887AFBD3B5A3AE1C93DE6BF87A * __this, int8_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10528,7 +9623,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mE3736C143BA101
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mB883348A4094C8042D20B37282A24405933BDE01_gshared (Transformer_1_t1996E09F6BED0E887AFBD3B5A3AE1C93DE6BF87A * __this, int8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10541,7 +9636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mB88
 	__d_args[0] = Box(SByte_t9070AEA2966184235653CB9B4D33B149CDA831DF_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.SByte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.SByte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m16431E5F171A1658BD33175410678C1BF41D5AD4_gshared (Transformer_1_t1996E09F6BED0E887AFBD3B5A3AE1C93DE6BF87A * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10555,14 +9650,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m16431E5F171
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Single>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Single>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mDF6592F41824C644D33ADA63450B5896436AE55E_gshared (Transformer_1_t4E1FF663FF50350704657A112291CD7D7596CEF1 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Single>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Single>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m8C1456E0368B022D59C8463CCC2E25A9028EF8B2_gshared (Transformer_1_t4E1FF663FF50350704657A112291CD7D7596CEF1 * __this, float ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10641,7 +9736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m8C1456E0368B02
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m31350CCA56BAF523ECF3A6385B6C95EE3C72AB36_gshared (Transformer_1_t4E1FF663FF50350704657A112291CD7D7596CEF1 * __this, float ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10654,7 +9749,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m313
 	__d_args[0] = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.Single>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.Single>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m2FE325A8CCFE69800B6D4D513CDF118395C19CE4_gshared (Transformer_1_t4E1FF663FF50350704657A112291CD7D7596CEF1 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10668,14 +9763,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m2FE325A8CCF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mE09ADE7DFF59F7437CFAFF7FE083A25359FEA3DA_gshared (Transformer_1_t91133D744423C020A19D0092C4FC03B6D3A4DFEE * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.TimeSpan>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.TimeSpan>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m53AF664B0133D8E0B03111C1AFDF2DC5F8A024D6_gshared (Transformer_1_t91133D744423C020A19D0092C4FC03B6D3A4DFEE * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10762,7 +9857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m53AF664B0133D8
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m761C0B27A9D7CCDAE1A29F2E594C5F46ADD236AC_gshared (Transformer_1_t91133D744423C020A19D0092C4FC03B6D3A4DFEE * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10775,7 +9870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m761
 	__d_args[0] = Box(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.TimeSpan>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.TimeSpan>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m937ED531184E356D7EF6D628AE1691E9E7771D22_gshared (Transformer_1_t91133D744423C020A19D0092C4FC03B6D3A4DFEE * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10789,14 +9884,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m937ED531184
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m3964DF9C502A55AA155C8358F8771EA61873CEE4_gshared (Transformer_1_tE9522CA0DE0A4BE7D2EC9C999D7BDD2F4344FE62 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mB2FC33499A5686520F3D930E3E90EDA0A57FFAD8_gshared (Transformer_1_tE9522CA0DE0A4BE7D2EC9C999D7BDD2F4344FE62 * __this, uint16_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10875,7 +9970,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mB2FC33499A5686
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mD252C193DA5FB49E1ADC445C434D63BDD875D62C_gshared (Transformer_1_tE9522CA0DE0A4BE7D2EC9C999D7BDD2F4344FE62 * __this, uint16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10888,7 +9983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mD25
 	__d_args[0] = Box(UInt16_tAE45CEF73BF720100519F6867F32145D075F928E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mF3AB52FEDC95D5E523B9EF3A41D5E6CEEF99BD00_gshared (Transformer_1_tE9522CA0DE0A4BE7D2EC9C999D7BDD2F4344FE62 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -10902,14 +9997,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mF3AB52FEDC9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m1D85E66CDD9592A8BA1D4021178BF8F4AA19AA41_gshared (Transformer_1_t1438E2C5AF736F2BAA3201667918AA58BE8FA46C * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mD77C4D9372701149D8C1DB45B2C37A73A6378A53_gshared (Transformer_1_t1438E2C5AF736F2BAA3201667918AA58BE8FA46C * __this, uint32_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -10988,7 +10083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_mD77C4D93727011
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m795E6DD13331AD4D8EDF650DD19B4CF025C70F5B_gshared (Transformer_1_t1438E2C5AF736F2BAA3201667918AA58BE8FA46C * __this, uint32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11001,7 +10096,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m795
 	__d_args[0] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mDD3C640FA5C09633E7934FAE3827F4BB2D3C58BA_gshared (Transformer_1_t1438E2C5AF736F2BAA3201667918AA58BE8FA46C * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11015,14 +10110,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mDD3C640FA5C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m132A84E9FA6092FC595798CEB3D68E9A7C83D4FE_gshared (Transformer_1_t9D893B0CF47F60B5A1B332F156AE7885A7FA04AD * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m6F5102EE5C98C064DD02C7B7277876E2B28DC746_gshared (Transformer_1_t9D893B0CF47F60B5A1B332F156AE7885A7FA04AD * __this, uint64_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -11101,7 +10196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m6F5102EE5C98C0
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m2FA108EED7F293AD68368F83BFF4A386A323E437_gshared (Transformer_1_t9D893B0CF47F60B5A1B332F156AE7885A7FA04AD * __this, uint64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11114,7 +10209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m2FA
 	__d_args[0] = Box(UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UInt64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UInt64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m21BA5BF8B3C7AC35B1373E207E500ED99F51051B_gshared (Transformer_1_t9D893B0CF47F60B5A1B332F156AE7885A7FA04AD * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11128,14 +10223,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_m21BA5BF8B3C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m5EF44AA01D0549B58ACE6185BE21601133498CD9_gshared (Transformer_1_tEF0B2B94C98E007D79F1E9A305F95F950D695A78 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UIntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UIntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m26B08149629207360DA5C3D58CDF2B2EBB48A85F_gshared (Transformer_1_tEF0B2B94C98E007D79F1E9A305F95F950D695A78 * __this, uintptr_t ___value0, const RuntimeMethod* method)
 {
 	uint16_t result = 0;
@@ -11214,7 +10309,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_Invoke_m26B08149629207
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6C8A2CA2F8F9A2E9ACD74D972B23ADC5F04933A8_gshared (Transformer_1_tEF0B2B94C98E007D79F1E9A305F95F950D695A78 * __this, uintptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11227,7 +10322,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6C8
 	__d_args[0] = Box(UIntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt16,System.UIntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt16,System.UIntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mB0FE1607D7491E5A60C3BC2494CD8AC643D2EFE8_gshared (Transformer_1_tEF0B2B94C98E007D79F1E9A305F95F950D695A78 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11241,14 +10336,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint16_t Transformer_1_EndInvoke_mB0FE1607D74
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Boolean>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Boolean>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m8D7E2C3C5191FF0E0A315CA1B7E6F4BC4D59FA5E_gshared (Transformer_1_tF0E9BE6348CE010BB238AC31417785A08A6FB691 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Boolean>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Boolean>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mAE8FD4E855CEC07AAA4BBCD89C195BE035E4D34A_gshared (Transformer_1_tF0E9BE6348CE010BB238AC31417785A08A6FB691 * __this, bool ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -11327,7 +10422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mAE8FD4E855CEC0
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m996A087DDFA31FC8674905A1E755851C3890054D_gshared (Transformer_1_tF0E9BE6348CE010BB238AC31417785A08A6FB691 * __this, bool ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11340,7 +10435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m996
 	__d_args[0] = Box(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Boolean>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Boolean>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m85B48DDA821D490B7DAABE0D50409A6096EC863D_gshared (Transformer_1_tF0E9BE6348CE010BB238AC31417785A08A6FB691 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11354,14 +10449,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m85B48DDA821
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Byte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Byte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mCD71F7D5A2EAABE268DCE93747E535D5A4915604_gshared (Transformer_1_tB3723D31B530FDEAA4A1F13AA0708DA982630899 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Byte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Byte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m8E198E044A2AB768C1972BF72A39F2FE94B29584_gshared (Transformer_1_tB3723D31B530FDEAA4A1F13AA0708DA982630899 * __this, uint8_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -11440,7 +10535,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m8E198E044A2AB7
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m80D262E1D05494061CBF7E06BA5AFA1AE592E20C_gshared (Transformer_1_tB3723D31B530FDEAA4A1F13AA0708DA982630899 * __this, uint8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11453,7 +10548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m80D
 	__d_args[0] = Box(Byte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Byte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Byte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m39B50703F6865DCAF516B4D1476C56CB3BB9C1DC_gshared (Transformer_1_tB3723D31B530FDEAA4A1F13AA0708DA982630899 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11467,14 +10562,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m39B50703F68
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Char>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Char>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mA8BAD5B8C107065480DF7BE004E17B6D00767B0C_gshared (Transformer_1_t5476CAC37A40442328D49FE071C30E88285071D4 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Char>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Char>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mA1ADDB2FF4969C8DBE562489FF4E4BF72182258B_gshared (Transformer_1_t5476CAC37A40442328D49FE071C30E88285071D4 * __this, Il2CppChar ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -11553,7 +10648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mA1ADDB2FF4969C
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mDEB2A749C6D64932CA797C9132316FBF84ECA16B_gshared (Transformer_1_t5476CAC37A40442328D49FE071C30E88285071D4 * __this, Il2CppChar ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11566,7 +10661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mDEB
 	__d_args[0] = Box(Char_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Char>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Char>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mC06966BFF3C1959CEFF8ED05AB4DC993330C72FC_gshared (Transformer_1_t5476CAC37A40442328D49FE071C30E88285071D4 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11580,14 +10675,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mC06966BFF3C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mCC346ED5790ABAD465BB06D27A073B495B0C825B_gshared (Transformer_1_t0FB7630995436BE02A2527779DBC4F2527867EEA * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mD85D89A89C22600010B3CB5B03B201CE12201CD3_gshared (Transformer_1_t0FB7630995436BE02A2527779DBC4F2527867EEA * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -11674,7 +10769,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mD85D89A89C2260
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8FA2151BDC74EC475468EEFA3071A7AC146E6AB0_gshared (Transformer_1_t0FB7630995436BE02A2527779DBC4F2527867EEA * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11687,7 +10782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8FA
 	__d_args[0] = Box(KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m928CE1625FE6A7D822C1629EAA3D10CBA0B3F822_gshared (Transformer_1_t0FB7630995436BE02A2527779DBC4F2527867EEA * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11701,14 +10796,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m928CE1625FE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTime>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTime>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m8624BBED84F0FCE5A5C5E9BE85BD562042C7C823_gshared (Transformer_1_t5D7AABD550DAD91D1A5365F5D8EF54C4DA2D3C52 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTime>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTime>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m0E1C01EEEC5E8D483D4CC5FCED7FC365C8D303A2_gshared (Transformer_1_t5D7AABD550DAD91D1A5365F5D8EF54C4DA2D3C52 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -11795,7 +10890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m0E1C01EEEC5E8D
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m24182719FC1BC805A3165BAB1F82E1BEFCB30E56_gshared (Transformer_1_t5D7AABD550DAD91D1A5365F5D8EF54C4DA2D3C52 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11808,7 +10903,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m241
 	__d_args[0] = Box(DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTime>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTime>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m1C3689E4FBEE7977A04A2DAABA7C69C7434DDE70_gshared (Transformer_1_t5D7AABD550DAD91D1A5365F5D8EF54C4DA2D3C52 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11822,14 +10917,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m1C3689E4FBE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mA38B0203D3FC8179A168C09638C792395D426613_gshared (Transformer_1_t928A4BC9752332E7976045EDA7D13F6580E95E62 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTimeOffset>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTimeOffset>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m7E98E584C7E1CC3213CB6A32A6D34A6FFADDC16B_gshared (Transformer_1_t928A4BC9752332E7976045EDA7D13F6580E95E62 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -11916,7 +11011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m7E98E584C7E1CC
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m2E1ED4150BEA6141B2A330A992D9859BDAADABE6_gshared (Transformer_1_t928A4BC9752332E7976045EDA7D13F6580E95E62 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11929,7 +11024,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m2E1
 	__d_args[0] = Box(DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m8B6BB8CC87F231E57260201F3E543F8C0ED01794_gshared (Transformer_1_t928A4BC9752332E7976045EDA7D13F6580E95E62 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -11943,14 +11038,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m8B6BB8CC87F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Decimal>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Decimal>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m158DE4FD9AC13B60425E1361F70DBF744A6E3192_gshared (Transformer_1_tDCFCB89419FEE534E3F73EC59CE6765F40E3CDDC * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Decimal>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Decimal>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m7904E612837BEFC9555780C16013099A8372C032_gshared (Transformer_1_tDCFCB89419FEE534E3F73EC59CE6765F40E3CDDC * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12037,7 +11132,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m7904E612837BEF
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m36B02C3509511AE9886E1C1EEFEDEEC84201A982_gshared (Transformer_1_tDCFCB89419FEE534E3F73EC59CE6765F40E3CDDC * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12050,7 +11145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m36B
 	__d_args[0] = Box(Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Decimal>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Decimal>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m431C8798C6FC5316C8E1B93CB84E61F795E86D2F_gshared (Transformer_1_tDCFCB89419FEE534E3F73EC59CE6765F40E3CDDC * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12064,14 +11159,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m431C8798C6F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mF8AE962B49E6B28455976FCAE3CB7BD25EEC4EAB_gshared (Transformer_1_tC99356A59E2E936732EB9B87073CB69F8D9A0E56 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m3F627F22F3B73C3A42423CCBA38B2B97ECD77FDC_gshared (Transformer_1_tC99356A59E2E936732EB9B87073CB69F8D9A0E56 * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12158,7 +11253,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m3F627F22F3B73C
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mB165A0EDF61811B0D4FD50504CEEA4D9A9DC170E_gshared (Transformer_1_tC99356A59E2E936732EB9B87073CB69F8D9A0E56 * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12171,7 +11266,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mB16
 	__d_args[0] = Box(EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mB6471558F1A8070C2A748193AFF430BEF58B01EB_gshared (Transformer_1_tC99356A59E2E936732EB9B87073CB69F8D9A0E56 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12185,14 +11280,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mB6471558F1A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Double>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Double>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m6D6091F7E68CFE3B4AA82B231795514BD80DE289_gshared (Transformer_1_tBA40A0C65141CC06E9FE7E2B859F14B7B186F5D6 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Double>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Double>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mE9C39EB60BD9621625D1B24A50C9DF512E56D361_gshared (Transformer_1_tBA40A0C65141CC06E9FE7E2B859F14B7B186F5D6 * __this, double ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12271,7 +11366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mE9C39EB60BD962
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0F2B29826A2FB9E3B5EFE550E0DF9856AE775F27_gshared (Transformer_1_tBA40A0C65141CC06E9FE7E2B859F14B7B186F5D6 * __this, double ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12284,7 +11379,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0F2
 	__d_args[0] = Box(Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Double>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Double>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m1C4F5137F0DDAC78C353FB2811D85C3469D00BAD_gshared (Transformer_1_tBA40A0C65141CC06E9FE7E2B859F14B7B186F5D6 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12298,14 +11393,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m1C4F5137F0D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Guid>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Guid>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mBED2A4DCA87526A493F1F7AE8BF4063DD498DC36_gshared (Transformer_1_tEB01E6A2E0B3756D68B5715EC212184D5FF1583E * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Guid>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Guid>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m769037AEEA459ACB81DA6815FBA45898A1AD9F8E_gshared (Transformer_1_tEB01E6A2E0B3756D68B5715EC212184D5FF1583E * __this, Guid_t  ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12392,7 +11487,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m769037AEEA459A
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mC04D1C2D2FAF065A275B86E9B4B373C2A408B8BC_gshared (Transformer_1_tEB01E6A2E0B3756D68B5715EC212184D5FF1583E * __this, Guid_t  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12405,7 +11500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mC04
 	__d_args[0] = Box(Guid_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Guid>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Guid>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m8D564FD87D9FDF89197E5CE741A19649639DA7E8_gshared (Transformer_1_tEB01E6A2E0B3756D68B5715EC212184D5FF1583E * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12419,14 +11514,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m8D564FD87D9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m3A3BA3DE9CA8C5666D0C72D99C3B24A98C30B22A_gshared (Transformer_1_t2F0D48F97FB9DB755CBD7D8BD1063744902DD7D4 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mC7A9DB681854D1E05595DA6B84ED454584D8E66F_gshared (Transformer_1_t2F0D48F97FB9DB755CBD7D8BD1063744902DD7D4 * __this, int16_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12505,7 +11600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mC7A9DB681854D1
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6BBAC79E240D44DAFDF7C8F03C5986FBC158C5C7_gshared (Transformer_1_t2F0D48F97FB9DB755CBD7D8BD1063744902DD7D4 * __this, int16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12518,7 +11613,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6BB
 	__d_args[0] = Box(Int16_t823A20635DAF5A3D93A1E01CFBF3CBA27CF00B4D_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m11BC1AABDCDFAD25411772B59449C87F16049FF2_gshared (Transformer_1_t2F0D48F97FB9DB755CBD7D8BD1063744902DD7D4 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12532,14 +11627,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m11BC1AABDCD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m9A27ECE57F3077D4A2B799EB1196A9BFA4EF5460_gshared (Transformer_1_tEE904E877A0E7069658C31FC99833B17AC05794C * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m7AE23521C5FF7F4068961B6EA59E8D26F65F49AD_gshared (Transformer_1_tEE904E877A0E7069658C31FC99833B17AC05794C * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12618,7 +11713,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m7AE23521C5FF7F
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m3BC67C1D87D032FFAB42751F75E31969EDA0ECD5_gshared (Transformer_1_tEE904E877A0E7069658C31FC99833B17AC05794C * __this, int32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12631,7 +11726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m3BC
 	__d_args[0] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m550DF614320B0D9B13F4F2C61D8F6FBB56D9E001_gshared (Transformer_1_tEE904E877A0E7069658C31FC99833B17AC05794C * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12645,14 +11740,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m550DF614320
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mE471AA15E620BC12FCA3173A805E2D2A050BC5BF_gshared (Transformer_1_tB77123930E8D4DBBDFEFB1F00D7ABD5F5862C41D * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m8069502D173CA979693DDA7AA6EC13E4CFEB3A23_gshared (Transformer_1_tB77123930E8D4DBBDFEFB1F00D7ABD5F5862C41D * __this, int64_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12731,7 +11826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m8069502D173CA9
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mE07ACCD59ED5F4A5F8A5EE4AFFE0BE2F6B2C7131_gshared (Transformer_1_tB77123930E8D4DBBDFEFB1F00D7ABD5F5862C41D * __this, int64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12744,7 +11839,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mE07
 	__d_args[0] = Box(Int64_t7A386C2FF7B0280A0F516992401DDFCF0FF7B436_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Int64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Int64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mE41DA829DED525A91AA6963157803D71528B533D_gshared (Transformer_1_tB77123930E8D4DBBDFEFB1F00D7ABD5F5862C41D * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12758,14 +11853,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mE41DA829DED
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.IntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.IntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m77946662E488CAFAB8F2483FE1FC5889D6EEA07C_gshared (Transformer_1_tD21324C229A06C2679EF7ADBF30B4721FCE846A9 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.IntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.IntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mBA41A9DA276967E40F7CED0031EC1F4449AA83B5_gshared (Transformer_1_tD21324C229A06C2679EF7ADBF30B4721FCE846A9 * __this, intptr_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12844,7 +11939,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mBA41A9DA276967
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mD719ABC997EACDE39DA78AF7B9D7538CE50E25CD_gshared (Transformer_1_tD21324C229A06C2679EF7ADBF30B4721FCE846A9 * __this, intptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12857,7 +11952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mD71
 	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.IntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.IntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mC100BDC7D943BF6AADD7CF8D410A79F23D683EF2_gshared (Transformer_1_tD21324C229A06C2679EF7ADBF30B4721FCE846A9 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -12871,14 +11966,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mC100BDC7D94
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Object>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m84FEC4A2D66507A76D268061C85FB158F01C1229_gshared (Transformer_1_t9591C03D292D1491DC84BED40FA4074B4BA228BA * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Object>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Object>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mD13B199A005114A5531CE5BA59441FA63B659324_gshared (Transformer_1_t9591C03D292D1491DC84BED40FA4074B4BA228BA * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -12991,14 +12086,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mD13B199A005114
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mC96EA66CC28C97571400392760A5A914EEEF770B_gshared (Transformer_1_t9591C03D292D1491DC84BED40FA4074B4BA228BA * __this, RuntimeObject * ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	void *__d_args[2] = {0};
 	__d_args[0] = ___value0;
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Object>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Object>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m1BD85F2B9C8646310A963F78DC2341F2EC1115D4_gshared (Transformer_1_t9591C03D292D1491DC84BED40FA4074B4BA228BA * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13012,14 +12107,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m1BD85F2B9C8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.SByte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.SByte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mD83CDCDE5C31E633BF134F45539B4AC2AC2AE040_gshared (Transformer_1_tB8774B9E44E29CAB971A668FD6481EE169AB7512 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.SByte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.SByte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m1B2F9A8BB0E16516A6E745C7432E98012D999051_gshared (Transformer_1_tB8774B9E44E29CAB971A668FD6481EE169AB7512 * __this, int8_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -13098,7 +12193,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m1B2F9A8BB0E165
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mF4723F219951CFB7A93D90F465107DCAA64D409C_gshared (Transformer_1_tB8774B9E44E29CAB971A668FD6481EE169AB7512 * __this, int8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13111,7 +12206,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mF47
 	__d_args[0] = Box(SByte_t9070AEA2966184235653CB9B4D33B149CDA831DF_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.SByte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.SByte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mFBE0A27D73CC1B9240BB9758B67F7662436A6CBC_gshared (Transformer_1_tB8774B9E44E29CAB971A668FD6481EE169AB7512 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13125,14 +12220,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mFBE0A27D73C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Single>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Single>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mE3EF683B173561909AE7AA9241FAF5B2E5B16F00_gshared (Transformer_1_tF0690E4E722BA56F3D7C83E9AEB806F0B61B361D * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Single>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Single>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mF9614D4E7C2A35A512E72F662D958BA571AAFA5E_gshared (Transformer_1_tF0690E4E722BA56F3D7C83E9AEB806F0B61B361D * __this, float ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -13211,7 +12306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mF9614D4E7C2A35
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8E8BB169FA23128875F03E4AEF72BA3678A4C5A7_gshared (Transformer_1_tF0690E4E722BA56F3D7C83E9AEB806F0B61B361D * __this, float ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13224,7 +12319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8E8
 	__d_args[0] = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.Single>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.Single>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m2F8851804DE39501EACF459C645E3DD05279DABD_gshared (Transformer_1_tF0690E4E722BA56F3D7C83E9AEB806F0B61B361D * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13238,14 +12333,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m2F8851804DE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mC0AC5EB61BF9E2B9D92B0D1219B17221F8F2CCC7_gshared (Transformer_1_t8B10503B337E6FE4E07A3B64D22B131931C9A9F4 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.TimeSpan>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.TimeSpan>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m0A5367309E3BE743AFC6CA9A5F9C1BA25721BC87_gshared (Transformer_1_t8B10503B337E6FE4E07A3B64D22B131931C9A9F4 * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -13332,7 +12427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m0A5367309E3BE7
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mFD4D396C6E05FD6D49CC70FAF806A5D174758A7F_gshared (Transformer_1_t8B10503B337E6FE4E07A3B64D22B131931C9A9F4 * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13345,7 +12440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mFD4
 	__d_args[0] = Box(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.TimeSpan>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.TimeSpan>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m2D76F0A2C81F041AF6F7A4FBD33F847BB4846004_gshared (Transformer_1_t8B10503B337E6FE4E07A3B64D22B131931C9A9F4 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13359,14 +12454,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m2D76F0A2C81
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m781D39A431B636FEB389C51DA2691CB070839D04_gshared (Transformer_1_t047D5C4AD3C79057AB7D69ECC9D23F74520D09D6 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mF592D5E0B081F6E81DB9A3E5323FA145E3BFE802_gshared (Transformer_1_t047D5C4AD3C79057AB7D69ECC9D23F74520D09D6 * __this, uint16_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -13445,7 +12540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mF592D5E0B081F6
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6ED8F0ACC1D8CE44D30F171634286DC77B480D55_gshared (Transformer_1_t047D5C4AD3C79057AB7D69ECC9D23F74520D09D6 * __this, uint16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13458,7 +12553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6ED
 	__d_args[0] = Box(UInt16_tAE45CEF73BF720100519F6867F32145D075F928E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m46BF2FDBEB808BEC44AEE32FB3A609AC9894A7E8_gshared (Transformer_1_t047D5C4AD3C79057AB7D69ECC9D23F74520D09D6 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13472,14 +12567,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m46BF2FDBEB8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m753143D367C68C2C7FFAE9F894D944E462930FE6_gshared (Transformer_1_t31C88D9234A257CF232D08C38BBC668EA052939A * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m9F8635139969D71BFEEB4330C03EA47FA1F5AEF4_gshared (Transformer_1_t31C88D9234A257CF232D08C38BBC668EA052939A * __this, uint32_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -13558,7 +12653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m9F8635139969D7
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mEB55AF77CD33A099120B41B64BE86707938F7EE6_gshared (Transformer_1_t31C88D9234A257CF232D08C38BBC668EA052939A * __this, uint32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13571,7 +12666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mEB5
 	__d_args[0] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m4D7A35477E71A094EBF855449AABDBAA6F271034_gshared (Transformer_1_t31C88D9234A257CF232D08C38BBC668EA052939A * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13585,14 +12680,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m4D7A35477E7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mE0E1A7CD0652D27D40A5DC77B14D502ACB028265_gshared (Transformer_1_t1C223741D12F9A057F5F088DE61B4E5D53913211 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mE2460B87B956EFF20AE4C33838D2F69FFF81DFE6_gshared (Transformer_1_t1C223741D12F9A057F5F088DE61B4E5D53913211 * __this, uint64_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -13671,7 +12766,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_mE2460B87B956EF
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mBFAC6022B1A9832AFCDD15459F33B1FCCE95008F_gshared (Transformer_1_t1C223741D12F9A057F5F088DE61B4E5D53913211 * __this, uint64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13684,7 +12779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mBFA
 	__d_args[0] = Box(UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UInt64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UInt64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m0FE09101F2DA237AE1BE7664F3434B8FF84AFB8A_gshared (Transformer_1_t1C223741D12F9A057F5F088DE61B4E5D53913211 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13698,14 +12793,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_m0FE09101F2D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mD92D808DDBE955CB21BC4ABE9C8AA9D8869D3129_gshared (Transformer_1_tEB25E9328D7461EC15D82291238C49E2485032FD * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UIntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UIntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m9637B41CFC667C43D67AB2003A6382AFF3A634C7_gshared (Transformer_1_tEB25E9328D7461EC15D82291238C49E2485032FD * __this, uintptr_t ___value0, const RuntimeMethod* method)
 {
 	uint32_t result = 0;
@@ -13784,7 +12879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_Invoke_m9637B41CFC667C
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mE415C36BD64D5587F71F948746536E2FAE578715_gshared (Transformer_1_tEB25E9328D7461EC15D82291238C49E2485032FD * __this, uintptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13797,7 +12892,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mE41
 	__d_args[0] = Box(UIntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt32,System.UIntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt32,System.UIntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mB5DA9CC3CD00B3843F959E8EAA72E9201BDDB5DE_gshared (Transformer_1_tEB25E9328D7461EC15D82291238C49E2485032FD * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13811,14 +12906,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t Transformer_1_EndInvoke_mB5DA9CC3CD0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Boolean>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Boolean>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mD82829AA8C712F7EAD242B589BC565C666CCBC7B_gshared (Transformer_1_tE1D6D1C9A05B546D9C9CE23F63F38C39519B5CF5 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Boolean>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Boolean>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m169081FB240338C9248ED2863D558B942E2340D6_gshared (Transformer_1_tE1D6D1C9A05B546D9C9CE23F63F38C39519B5CF5 * __this, bool ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -13897,7 +12992,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m169081FB240338
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Boolean>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mD825747E036D17FA69D0A45A95A77C1F6071BEA7_gshared (Transformer_1_tE1D6D1C9A05B546D9C9CE23F63F38C39519B5CF5 * __this, bool ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13910,7 +13005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mD82
 	__d_args[0] = Box(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Boolean>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Boolean>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m159DAB5CC5BE9EC24179E5F097D668987DED7B63_gshared (Transformer_1_tE1D6D1C9A05B546D9C9CE23F63F38C39519B5CF5 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -13924,14 +13019,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m159DAB5CC5B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Byte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Byte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m7E0F70BF017706CBF7C57272562C076DA6B98AE8_gshared (Transformer_1_tA04593391E3C9151CF09B88E7F0B95B6EED79BFF * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Byte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Byte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m6461C81F928159070854C679E3EB6C2DB669667F_gshared (Transformer_1_tA04593391E3C9151CF09B88E7F0B95B6EED79BFF * __this, uint8_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14010,7 +13105,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m6461C81F928159
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Byte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mDD3731956C284FDE2A8BFD9A196476DC0388CD13_gshared (Transformer_1_tA04593391E3C9151CF09B88E7F0B95B6EED79BFF * __this, uint8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14023,7 +13118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mDD3
 	__d_args[0] = Box(Byte_tF87C579059BD4633E6840EBBBEEF899C6E33EF07_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Byte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Byte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mB960709D2CF01EFF8CFDCE0CFA8ED08105A70E7F_gshared (Transformer_1_tA04593391E3C9151CF09B88E7F0B95B6EED79BFF * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14037,14 +13132,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mB960709D2CF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Char>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Char>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m4A0222CAFABDF0FDF47D69B46D76D3EE6BACA398_gshared (Transformer_1_t6A70E5F51E34115D67058F5FBD3AD020056FE5F9 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Char>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Char>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m7C07C8EF1C377E3931CAA0D4A876D402792412DC_gshared (Transformer_1_t6A70E5F51E34115D67058F5FBD3AD020056FE5F9 * __this, Il2CppChar ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14123,7 +13218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m7C07C8EF1C377E
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Char>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mF16D197CC0512E0155E584214459F31B47908C1E_gshared (Transformer_1_t6A70E5F51E34115D67058F5FBD3AD020056FE5F9 * __this, Il2CppChar ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14136,7 +13231,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mF16
 	__d_args[0] = Box(Char_tBF22D9FC341BE970735250BB6FF1A4A92BBA58B9_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Char>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Char>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mC15EDF7FC49491141AF48503E28C9C382B071D7D_gshared (Transformer_1_t6A70E5F51E34115D67058F5FBD3AD020056FE5F9 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14150,14 +13245,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mC15EDF7FC49
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m9C3EBDA9A9EF1F9785F89C3BA9C085EA7BBA35D0_gshared (Transformer_1_t68FC4FB75CD82563AB347351CEFAE5414DA6F5EA * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mA23E6D6F1D51D518D9411B2186FC8359521D7437_gshared (Transformer_1_t68FC4FB75CD82563AB347351CEFAE5414DA6F5EA * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14244,7 +13339,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mA23E6D6F1D51D5
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mAE5F7AF7E0594738FFCF0049018A63DC02227B7C_gshared (Transformer_1_t68FC4FB75CD82563AB347351CEFAE5414DA6F5EA * __this, KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14257,7 +13352,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mAE5
 	__d_args[0] = Box(KeyValuePair_2_t23481547E419E16E3B96A303578C1EB685C99EEE_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mCD2BF7B7BA5D3967C99002079C196DC9D1B9FB94_gshared (Transformer_1_t68FC4FB75CD82563AB347351CEFAE5414DA6F5EA * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14271,14 +13366,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mCD2BF7B7BA5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTime>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTime>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mEA900760E3CB6172A669E53DF15A624E4C335C99_gshared (Transformer_1_t3914ABAA4D6712C66DD4949F2BA84F3EC15B4FA3 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTime>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTime>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mB79AC49D73DF5A5D9B8B407DC81CDE1A89DF000F_gshared (Transformer_1_t3914ABAA4D6712C66DD4949F2BA84F3EC15B4FA3 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14365,7 +13460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mB79AC49D73DF5A
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTime>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8AC36AA312563160747AF93741F23EE694832F8E_gshared (Transformer_1_t3914ABAA4D6712C66DD4949F2BA84F3EC15B4FA3 * __this, DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14378,7 +13473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m8AC
 	__d_args[0] = Box(DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTime>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTime>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m27C20EC56E8EED76CD67C12B6F33979476BC3035_gshared (Transformer_1_t3914ABAA4D6712C66DD4949F2BA84F3EC15B4FA3 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14392,14 +13487,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m27C20EC56E8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTimeOffset>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mE4C51C3F7408134B518D856D9A8C6DE49352455C_gshared (Transformer_1_tF6A13C624CBEF022B6BF46EA8998763A1BCF8A60 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTimeOffset>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTimeOffset>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mB886D6F68ED0786ACD4EB4E28B30B23C6808927B_gshared (Transformer_1_tF6A13C624CBEF022B6BF46EA8998763A1BCF8A60 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14486,7 +13581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mB886D6F68ED078
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTimeOffset>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m148981BB6BDD89219CC69F942D91B261B8DF872F_gshared (Transformer_1_tF6A13C624CBEF022B6BF46EA8998763A1BCF8A60 * __this, DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14499,7 +13594,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m148
 	__d_args[0] = Box(DateTimeOffset_t6C333873402CAD576160B4F8E159EB6834F06B85_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.DateTimeOffset>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m8623DB82F0EBBC24CA58C4E8437F5AC75A7DA3BC_gshared (Transformer_1_tF6A13C624CBEF022B6BF46EA8998763A1BCF8A60 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14513,14 +13608,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m8623DB82F0E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Decimal>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Decimal>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m4CA25786FBD89308D6BEBD1AD897A93F6D9FC622_gshared (Transformer_1_t1CCCD2A03706FE289179D42973958253711E1220 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Decimal>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Decimal>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m8B945E59101A0C402B5235280B054AA39D0A9A66_gshared (Transformer_1_t1CCCD2A03706FE289179D42973958253711E1220 * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14607,7 +13702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m8B945E59101A0C
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Decimal>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m3A47AE9BF85ED0C4CCC5065B6D2D7DC49C78913A_gshared (Transformer_1_t1CCCD2A03706FE289179D42973958253711E1220 * __this, Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14620,7 +13715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m3A4
 	__d_args[0] = Box(Decimal_t44EE9DA309A1BF848308DE4DDFC070CAE6D95EE8_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Decimal>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Decimal>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m0D005D0D7D7833F4BA537618D07E9C67BA46BA79_gshared (Transformer_1_t1CCCD2A03706FE289179D42973958253711E1220 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14634,14 +13729,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m0D005D0D7D7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m9980D0C3DE6BA2C9254E5FA911AAAC693DB34821_gshared (Transformer_1_t26EAA5376E027613D84066BFDACD29135BC0417F * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m438946F8FF6366EEBB99607F3C3A676EDFF0D14D_gshared (Transformer_1_t26EAA5376E027613D84066BFDACD29135BC0417F * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14728,7 +13823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m438946F8FF6366
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m97F99FAA36DA222666319554DD1245F23A278F66_gshared (Transformer_1_t26EAA5376E027613D84066BFDACD29135BC0417F * __this, EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14741,7 +13836,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m97F
 	__d_args[0] = Box(EmptyStruct_tA4DC90792FEDB6D602D5AF5FBA9B0B8FE7C3D082_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Diagnostics.Tracing.EmptyStruct>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mA27EB628485D5488D8591EF83059140ECC1F4A51_gshared (Transformer_1_t26EAA5376E027613D84066BFDACD29135BC0417F * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14755,14 +13850,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mA27EB628485
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Double>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Double>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mCE174B865D43681E9173DBB235AC309C43A9D2D1_gshared (Transformer_1_tF7A377BD38E31E579BBB868F25B50E99BE887082 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Double>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Double>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mCB4608219721407F6A9648269053C4FF76C13006_gshared (Transformer_1_tF7A377BD38E31E579BBB868F25B50E99BE887082 * __this, double ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14841,7 +13936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mCB460821972140
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Double>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m6073035E7015A1A87B664FE33C5C016E08E204F3_gshared (Transformer_1_tF7A377BD38E31E579BBB868F25B50E99BE887082 * __this, double ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14854,7 +13949,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m607
 	__d_args[0] = Box(Double_t358B8F23BDC52A5DD700E727E204F9F7CDE12409_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Double>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Double>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m2FCA301F1A2179CCA08AEA4447A4D837C426B270_gshared (Transformer_1_tF7A377BD38E31E579BBB868F25B50E99BE887082 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14868,14 +13963,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m2FCA301F1A2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Guid>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Guid>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m65EB5F98A242057F973D8A0EDFAC2F68A46FFD3D_gshared (Transformer_1_t7A3CC6284B43CD7AE97F37A34B608ACB60C9BBF4 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Guid>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Guid>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m6FC28631067D2283A3A97984D34EE6ACE5C5F00A_gshared (Transformer_1_t7A3CC6284B43CD7AE97F37A34B608ACB60C9BBF4 * __this, Guid_t  ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -14962,7 +14057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m6FC28631067D22
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Guid>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m24C3A166979E14347EB97DA251E1F41B50C6731D_gshared (Transformer_1_t7A3CC6284B43CD7AE97F37A34B608ACB60C9BBF4 * __this, Guid_t  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14975,7 +14070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m24C
 	__d_args[0] = Box(Guid_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Guid>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Guid>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m31CECFDA673001D88B09EA526AB5357A0391069A_gshared (Transformer_1_t7A3CC6284B43CD7AE97F37A34B608ACB60C9BBF4 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -14989,14 +14084,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m31CECFDA673
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mE2DB43269BF1ED1FEC35434604ED47AC6C5CAACF_gshared (Transformer_1_t07F206606D946D6F7126E2639D2BA30EE77B275C * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m9F61FB9E174D34DCC3231129D6070F25B1292907_gshared (Transformer_1_t07F206606D946D6F7126E2639D2BA30EE77B275C * __this, int16_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15075,7 +14170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m9F61FB9E174D34
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCF00FE744E74B45688F1AC3F083C8CA133162092_gshared (Transformer_1_t07F206606D946D6F7126E2639D2BA30EE77B275C * __this, int16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15088,7 +14183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mCF0
 	__d_args[0] = Box(Int16_t823A20635DAF5A3D93A1E01CFBF3CBA27CF00B4D_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m5F881F1E5C6CEEECA92DB3B6BD23DAE3AF8605BA_gshared (Transformer_1_t07F206606D946D6F7126E2639D2BA30EE77B275C * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15102,14 +14197,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m5F881F1E5C6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m3C29272C8F576870B10CB1C959F898B3163AD948_gshared (Transformer_1_tF8885F335E1C8610DD2BC9AC39EF6912377CA731 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m15AD2750925D12A3946997D3940515EE398A437F_gshared (Transformer_1_tF8885F335E1C8610DD2BC9AC39EF6912377CA731 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15188,7 +14283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m15AD2750925D12
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m36336CC0468338875D86B840E42E21E18C6AA18A_gshared (Transformer_1_tF8885F335E1C8610DD2BC9AC39EF6912377CA731 * __this, int32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15201,7 +14296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m363
 	__d_args[0] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m94238526D86586BAF9B387A58219F563EF420212_gshared (Transformer_1_tF8885F335E1C8610DD2BC9AC39EF6912377CA731 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15215,14 +14310,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m94238526D86
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mB7903D62990E5B0FB98B3A95102B8D58D770C287_gshared (Transformer_1_tFC99DD5D67093DCEBB44F3A5BFDC47FDBBD7CF71 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mA79E93D1D6F7AD4E95E5F9E068197203AE05E7D2_gshared (Transformer_1_tFC99DD5D67093DCEBB44F3A5BFDC47FDBBD7CF71 * __this, int64_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15301,7 +14396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mA79E93D1D6F7AD
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m58B9C45EB7EBAAFA1CA3A6120213612F5A59AA33_gshared (Transformer_1_tFC99DD5D67093DCEBB44F3A5BFDC47FDBBD7CF71 * __this, int64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15314,7 +14409,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m58B
 	__d_args[0] = Box(Int64_t7A386C2FF7B0280A0F516992401DDFCF0FF7B436_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Int64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Int64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mC18D6F1CE2C853828577BDE2F9C83E10C77B6599_gshared (Transformer_1_tFC99DD5D67093DCEBB44F3A5BFDC47FDBBD7CF71 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15328,14 +14423,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mC18D6F1CE2C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.IntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.IntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mE4B7555AFE043428EECA4C5097FFE2D806FABD5C_gshared (Transformer_1_t8E4B28C9AAE813C657018A0863EED6247E00BC14 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.IntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.IntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m100CEC6CDC4B5505A68C16F666DA9A5140BB8BB1_gshared (Transformer_1_t8E4B28C9AAE813C657018A0863EED6247E00BC14 * __this, intptr_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15414,7 +14509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m100CEC6CDC4B55
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.IntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mBBCE359AEC3C26FFDC61C57546DCC4A5367A58E1_gshared (Transformer_1_t8E4B28C9AAE813C657018A0863EED6247E00BC14 * __this, intptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15427,7 +14522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mBBC
 	__d_args[0] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.IntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.IntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mEEB017A7537ED48CE33C1F3707C240297229B7BF_gshared (Transformer_1_t8E4B28C9AAE813C657018A0863EED6247E00BC14 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15441,14 +14536,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mEEB017A7537
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Object>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m16D582F61BE172FB5329C1C06CCF3E5EBEC72944_gshared (Transformer_1_t402296E3476F5F09B16B675F17D3CDA6FCB34A9B * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Object>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Object>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m9547776EE548A47BB7719EFE43D45A04D06724B5_gshared (Transformer_1_t402296E3476F5F09B16B675F17D3CDA6FCB34A9B * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15561,14 +14656,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m9547776EE548A4
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Object>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m96E1BCFAA173BD7F14522BF580F9F59F179F0846_gshared (Transformer_1_t402296E3476F5F09B16B675F17D3CDA6FCB34A9B * __this, RuntimeObject * ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	void *__d_args[2] = {0};
 	__d_args[0] = ___value0;
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Object>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Object>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m898A825BDFCA54B5FBF6F29E83E864C03B49D90A_gshared (Transformer_1_t402296E3476F5F09B16B675F17D3CDA6FCB34A9B * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15582,14 +14677,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m898A825BDFC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.SByte>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.SByte>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m5B531E012813D19D0D9914ABC432B686AF260EDA_gshared (Transformer_1_t2F20C0EB7F9357AF924B13ACE76627B27A3EE8C6 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.SByte>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.SByte>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m7356766CDA7E479F2890CAABE116E97A1C090D7A_gshared (Transformer_1_t2F20C0EB7F9357AF924B13ACE76627B27A3EE8C6 * __this, int8_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15668,7 +14763,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m7356766CDA7E47
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.SByte>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0EEACA59648ECAB0B24EC5F5D09D9B857B41D28F_gshared (Transformer_1_t2F20C0EB7F9357AF924B13ACE76627B27A3EE8C6 * __this, int8_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15681,7 +14776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m0EE
 	__d_args[0] = Box(SByte_t9070AEA2966184235653CB9B4D33B149CDA831DF_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.SByte>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.SByte>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mE00DCAE4C2EE128DC4584B7F9D90171B1B4863CF_gshared (Transformer_1_t2F20C0EB7F9357AF924B13ACE76627B27A3EE8C6 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15695,14 +14790,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mE00DCAE4C2E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Single>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Single>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m680CD27C6A16EDA0301B3B7A804C8E0040BC1318_gshared (Transformer_1_t589CB07AE354480F71F892CCEF416B4B90FD20E1 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Single>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Single>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m3E75D847014FBB3891990793732988B6AFAA74E3_gshared (Transformer_1_t589CB07AE354480F71F892CCEF416B4B90FD20E1 * __this, float ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15781,7 +14876,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m3E75D847014FBB
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Single>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mB76D060B42A823A26484E526BD49506FEE60D96D_gshared (Transformer_1_t589CB07AE354480F71F892CCEF416B4B90FD20E1 * __this, float ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15794,7 +14889,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mB76
 	__d_args[0] = Box(Single_tDDDA9169C4E4E308AC6D7A824F9B28DC82204AE1_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.Single>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.Single>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mDA2032EFDFB4896BF43FEE3DE923BE0AE945E7F4_gshared (Transformer_1_t589CB07AE354480F71F892CCEF416B4B90FD20E1 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15808,14 +14903,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mDA2032EFDFB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.TimeSpan>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m5B86612CDD524D9B46857ABC67EB2534B86DC668_gshared (Transformer_1_t92CD444E28392786C719A80E3BD6F19859C0F66F * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.TimeSpan>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.TimeSpan>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m4F2DFE0E95C53AC273570E35A316CAC212D4ED85_gshared (Transformer_1_t92CD444E28392786C719A80E3BD6F19859C0F66F * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -15902,7 +14997,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m4F2DFE0E95C53A
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.TimeSpan>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mDA231F3C94C57EDED3CA42739FC275625CC65068_gshared (Transformer_1_t92CD444E28392786C719A80E3BD6F19859C0F66F * __this, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15915,7 +15010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mDA2
 	__d_args[0] = Box(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.TimeSpan>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.TimeSpan>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m16AC389C6272B70D2482E38FC93BD5F29CA9CBFB_gshared (Transformer_1_t92CD444E28392786C719A80E3BD6F19859C0F66F * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -15929,14 +15024,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m16AC389C627
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt16>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt16>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m71703E10EC98BC46D8F0216318A7D5D627DDFDE2_gshared (Transformer_1_tEBBF3209CF2963A466018B425608A6F9A5DB0E30 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt16>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt16>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m9A38B0D6E74F3AE4046AA0DB6DD9A93267F1A9E1_gshared (Transformer_1_tEBBF3209CF2963A466018B425608A6F9A5DB0E30 * __this, uint16_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -16015,7 +15110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m9A38B0D6E74F3A
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt16>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mEE7B9F49C14CE9055158060F40EE7FC852C5446C_gshared (Transformer_1_tEBBF3209CF2963A466018B425608A6F9A5DB0E30 * __this, uint16_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16028,7 +15123,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mEE7
 	__d_args[0] = Box(UInt16_tAE45CEF73BF720100519F6867F32145D075F928E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt16>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt16>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m8211076C6C62D929B0A821BB5B0AE90D60F16940_gshared (Transformer_1_tEBBF3209CF2963A466018B425608A6F9A5DB0E30 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -16042,14 +15137,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m8211076C6C6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt32>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt32>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_mEFA9AD85DCD54C973486815FE9E08A02FEA6232F_gshared (Transformer_1_t8958FB9131F13E8258DE33FA6B69C3FF6197E880 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt32>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt32>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mDC51E180DEDAA3854E53E258DEBBD8A15D4E827F_gshared (Transformer_1_t8958FB9131F13E8258DE33FA6B69C3FF6197E880 * __this, uint32_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -16128,7 +15223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mDC51E180DEDAA3
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt32>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m201068C1C8051FBC5D86283E8BF1D24F22AEDB66_gshared (Transformer_1_t8958FB9131F13E8258DE33FA6B69C3FF6197E880 * __this, uint32_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16141,7 +15236,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_m201
 	__d_args[0] = Box(UInt32_t4980FA09003AFAAB5A6E361BA2748EA9A005709B_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt32>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt32>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mD175C42EEB822901232F13F3E59A691CD01C2EB9_gshared (Transformer_1_t8958FB9131F13E8258DE33FA6B69C3FF6197E880 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -16155,14 +15250,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mD175C42EEB8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt64>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt64>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m069DF7635820C162E4614243AB7536F4577AC680_gshared (Transformer_1_t3B28CAE7458C713C7593265008775661D4E2EBAE * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt64>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt64>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m36F80C51A3E0593DDE96537723616257500AAB73_gshared (Transformer_1_t3B28CAE7458C713C7593265008775661D4E2EBAE * __this, uint64_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -16241,7 +15336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_m36F80C51A3E059
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt64>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mAB8A5B60E7CD741721ACAB1621F5976A2618187D_gshared (Transformer_1_t3B28CAE7458C713C7593265008775661D4E2EBAE * __this, uint64_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16254,7 +15349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mAB8
 	__d_args[0] = Box(UInt64_tA02DF3B59C8FC4A849BD207DA11038CC64E4CB4E_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UInt64>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UInt64>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mB4FBED51EDEC5056A2BB9C82333DFB88FD6DB3A9_gshared (Transformer_1_t3B28CAE7458C713C7593265008775661D4E2EBAE * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -16268,14 +15363,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_mB4FBED51EDE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
+// System.Void System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UIntPtr>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transformer_1__ctor_m90AEFC4DA948E8E4964E16469478B88325DC20CC_gshared (Transformer_1_t77F1FDC69827B944451ACE5D2F9AF2FF2BBE0913 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UIntPtr>::Invoke(ValueType)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UIntPtr>::Invoke(ValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mFEE9A20D681264118E62E9A746395A4546C16F9C_gshared (Transformer_1_t77F1FDC69827B944451ACE5D2F9AF2FF2BBE0913 * __this, uintptr_t ___value0, const RuntimeMethod* method)
 {
 	uint64_t result = 0;
@@ -16354,7 +15449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_Invoke_mFEE9A20D681264
 	}
 	return result;
 }
-// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UIntPtr>::BeginInvoke(ValueType,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mC4910B42FDA9386A00F8E403B576E7B02D8C33FC_gshared (Transformer_1_t77F1FDC69827B944451ACE5D2F9AF2FF2BBE0913 * __this, uintptr_t ___value0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16367,7 +15462,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Transformer_1_BeginInvoke_mC49
 	__d_args[0] = Box(UIntPtr_t_il2cpp_TypeInfo_var, &___value0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1_Transformer`1<System.UInt64,System.UIntPtr>::EndInvoke(System.IAsyncResult)
+// UnderlyingType System.Diagnostics.Tracing.EnumHelper`1/Transformer`1<System.UInt64,System.UIntPtr>::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Transformer_1_EndInvoke_m8C884E4F379B41E9E1B4E6ED4CE113C201C509FF_gshared (Transformer_1_t77F1FDC69827B944451ACE5D2F9AF2FF2BBE0913 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -16669,7 +15764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Boolean>::.ctor()
@@ -16734,7 +15829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Byte>::.ctor()
@@ -16799,7 +15894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Char>::.ctor()
@@ -16864,7 +15959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor()
@@ -16929,7 +16024,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.DateTime>::.ctor()
@@ -16994,7 +16089,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.DateTimeOffset>::.ctor()
@@ -17059,7 +16154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Decimal>::.ctor()
@@ -17124,7 +16219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Diagnostics.Tracing.EmptyStruct>::.ctor()
@@ -17189,7 +16284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Double>::.ctor()
@@ -17254,7 +16349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Guid>::.ctor()
@@ -17319,7 +16414,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Int16>::.ctor()
@@ -17384,7 +16479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Int32>::.ctor()
@@ -17449,7 +16544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Int64>::.ctor()
@@ -17514,7 +16609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.IntPtr>::.ctor()
@@ -17579,7 +16674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Object>::.ctor()
@@ -17644,7 +16739,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.SByte>::.ctor()
@@ -17709,7 +16804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.Single>::.ctor()
@@ -17774,7 +16869,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.TimeSpan>::.ctor()
@@ -17839,7 +16934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.UInt16>::.ctor()
@@ -17904,7 +16999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.UInt32>::.ctor()
@@ -17969,7 +17064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.UInt64>::.ctor()
@@ -18034,7 +17129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt16TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt16TypeInfo`1<System.UIntPtr>::.ctor()
@@ -18099,7 +17194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Boolean>::.ctor()
@@ -18164,7 +17259,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Byte>::.ctor()
@@ -18229,7 +17324,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Char>::.ctor()
@@ -18294,7 +17389,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor()
@@ -18359,7 +17454,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.DateTime>::.ctor()
@@ -18424,7 +17519,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.DateTimeOffset>::.ctor()
@@ -18489,7 +17584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Decimal>::.ctor()
@@ -18554,7 +17649,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Diagnostics.Tracing.EmptyStruct>::.ctor()
@@ -18619,7 +17714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Double>::.ctor()
@@ -18684,7 +17779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Guid>::.ctor()
@@ -18749,7 +17844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Int16>::.ctor()
@@ -18814,7 +17909,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Int32>::.ctor()
@@ -18879,7 +17974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Int64>::.ctor()
@@ -18944,7 +18039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.IntPtr>::.ctor()
@@ -19009,7 +18104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Object>::.ctor()
@@ -19074,7 +18169,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.SByte>::.ctor()
@@ -19139,7 +18234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.Single>::.ctor()
@@ -19204,7 +18299,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.TimeSpan>::.ctor()
@@ -19269,7 +18364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.UInt16>::.ctor()
@@ -19334,7 +18429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.UInt32>::.ctor()
@@ -19399,7 +18494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.UInt64>::.ctor()
@@ -19464,7 +18559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt32TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt32TypeInfo`1<System.UIntPtr>::.ctor()
@@ -19529,7 +18624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Boolean>::.ctor()
@@ -19594,7 +18689,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Byte>::.ctor()
@@ -19659,7 +18754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Char>::.ctor()
@@ -19724,7 +18819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor()
@@ -19789,7 +18884,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.DateTime>::.ctor()
@@ -19854,7 +18949,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.DateTimeOffset>::.ctor()
@@ -19919,7 +19014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Decimal>::.ctor()
@@ -19984,7 +19079,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Diagnostics.Tracing.EmptyStruct>::.ctor()
@@ -20049,7 +19144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Double>::.ctor()
@@ -20114,7 +19209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Guid>::.ctor()
@@ -20179,7 +19274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Int16>::.ctor()
@@ -20244,7 +19339,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Int32>::.ctor()
@@ -20309,7 +19404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Int64>::.ctor()
@@ -20374,7 +19469,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.IntPtr>::.ctor()
@@ -20439,7 +19534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Object>::.ctor()
@@ -20504,7 +19599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.SByte>::.ctor()
@@ -20569,7 +19664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.Single>::.ctor()
@@ -20634,7 +19729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.TimeSpan>::.ctor()
@@ -20699,7 +19794,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.UInt16>::.ctor()
@@ -20764,7 +19859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.UInt32>::.ctor()
@@ -20829,7 +19924,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.UInt64>::.ctor()
@@ -20894,7 +19989,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumInt64TypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumInt64TypeInfo`1<System.UIntPtr>::.ctor()
@@ -20959,7 +20054,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Boolean>::.ctor()
@@ -21024,7 +20119,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Byte>::.ctor()
@@ -21089,7 +20184,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Char>::.ctor()
@@ -21154,7 +20249,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor()
@@ -21219,7 +20314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.DateTime>::.ctor()
@@ -21284,7 +20379,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.DateTimeOffset>::.ctor()
@@ -21349,7 +20444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Decimal>::.ctor()
@@ -21414,7 +20509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Diagnostics.Tracing.EmptyStruct>::.ctor()
@@ -21479,7 +20574,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Double>::.ctor()
@@ -21544,7 +20639,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Guid>::.ctor()
@@ -21609,7 +20704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Int16>::.ctor()
@@ -21674,7 +20769,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Int32>::.ctor()
@@ -21739,7 +20834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Int64>::.ctor()
@@ -21804,7 +20899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.IntPtr>::.ctor()
@@ -21869,7 +20964,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Object>::.ctor()
@@ -21934,7 +21029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.SByte>::.ctor()
@@ -21999,7 +21094,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.Single>::.ctor()
@@ -22064,7 +21159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.TimeSpan>::.ctor()
@@ -22129,7 +21224,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.UInt16>::.ctor()
@@ -22194,7 +21289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.UInt32>::.ctor()
@@ -22259,7 +21354,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.UInt64>::.ctor()
@@ -22324,7 +21419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumSByteTypeInfo_1_GetData_m
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumSByteTypeInfo`1<System.UIntPtr>::.ctor()
@@ -22389,7 +21484,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Boolean>::.ctor()
@@ -22454,7 +21549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Byte>::.ctor()
@@ -22519,7 +21614,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Char>::.ctor()
@@ -22584,7 +21679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>::.ctor()
@@ -22649,7 +21744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.DateTime>::.ctor()
@@ -22714,7 +21809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.DateTimeOffset>::.ctor()
@@ -22779,7 +21874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Decimal>::.ctor()
@@ -22844,7 +21939,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Diagnostics.Tracing.EmptyStruct>::.ctor()
@@ -22909,7 +22004,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Double>::.ctor()
@@ -22974,7 +22069,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Guid>::.ctor()
@@ -23039,7 +22134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int16>::.ctor()
@@ -23104,7 +22199,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_
 {
 	{
 		RuntimeObject * L_0 = ___value0;
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }
 // System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int32>::.ctor()
@@ -23113,6 +22208,656 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_mDE5EC27BD237
 	{
 		NullCheck((TraceLoggingTypeInfo_1_tDD2B74A36968F646CCDFEB9CE4074A216009252C *)__this);
 		((  void (*) (TraceLoggingTypeInfo_1_tDD2B74A36968F646CCDFEB9CE4074A216009252C *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_tDD2B74A36968F646CCDFEB9CE4074A216009252C *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int64>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_m01F4ED8A79DE14E8F0041342FD310B2E6D57BA7A_gshared (EnumUInt16TypeInfo_1_tA629F4A6B0E33EAB8F6C7BBDED330F36ECCF25D8 * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_m01F4ED8A79DE14E8F0041342FD310B2E6D57BA7A_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int64>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_m475C698428C86CE4DBE000A17E0F7268E7D54CF7_gshared (EnumUInt16TypeInfo_1_tA629F4A6B0E33EAB8F6C7BBDED330F36ECCF25D8 * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, int64_t* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_m475C698428C86CE4DBE000A17E0F7268E7D54CF7_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		int64_t* L_1 = ___value1;
+		int64_t L_2 = (*(int64_t*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (int64_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((int64_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int64>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mA11C16CD9846B7EC1B4F00406F4D3FA237BCC909_gshared (EnumUInt16TypeInfo_1_tA629F4A6B0E33EAB8F6C7BBDED330F36ECCF25D8 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Int64>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_m7DE434D186FEBFCAC0C2270FD22D4D13491A72AD_gshared (EnumUInt16TypeInfo_1_tA629F4A6B0E33EAB8F6C7BBDED330F36ECCF25D8 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_t443169292A139EC54B708D4B6023EA2449412265 *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_t443169292A139EC54B708D4B6023EA2449412265 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_t443169292A139EC54B708D4B6023EA2449412265 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.IntPtr>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_m3A99273B9656349EFD63AB1A34C3D4E5F4232104_gshared (EnumUInt16TypeInfo_1_t6F9CF7FB3CE0484176ABB8294011C57661A28F52 * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_m3A99273B9656349EFD63AB1A34C3D4E5F4232104_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.IntPtr>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_m694E9DCE68BB784B8922E71142A7F457ED15B355_gshared (EnumUInt16TypeInfo_1_t6F9CF7FB3CE0484176ABB8294011C57661A28F52 * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, intptr_t* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_m694E9DCE68BB784B8922E71142A7F457ED15B355_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		intptr_t* L_1 = ___value1;
+		intptr_t L_2 = (*(intptr_t*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (intptr_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((intptr_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.IntPtr>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mBF18B21C02568B8D9140A9157819F9A7A6EE1F7F_gshared (EnumUInt16TypeInfo_1_t6F9CF7FB3CE0484176ABB8294011C57661A28F52 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.IntPtr>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_m7823BE4F76C02DC8D679B6D58DB5A2A9233EEAC1_gshared (EnumUInt16TypeInfo_1_t6F9CF7FB3CE0484176ABB8294011C57661A28F52 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_t49721B614FCA52E6F380ACEE1AE32F5BA19815F1 *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_t49721B614FCA52E6F380ACEE1AE32F5BA19815F1 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_t49721B614FCA52E6F380ACEE1AE32F5BA19815F1 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Object>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_mE0399531C0DB9542E188C807C22B8B9FA4012C47_gshared (EnumUInt16TypeInfo_1_t35C0CC36D5DCACA5BAEC8DB005ECCFAD3153D8B8 * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_mE0399531C0DB9542E188C807C22B8B9FA4012C47_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Object>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_mCD9CF8E9BEA1132D91E01E893556F681630C0993_gshared (EnumUInt16TypeInfo_1_t35C0CC36D5DCACA5BAEC8DB005ECCFAD3153D8B8 * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, RuntimeObject ** ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_mCD9CF8E9BEA1132D91E01E893556F681630C0993_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		RuntimeObject ** L_1 = ___value1;
+		RuntimeObject * L_2 = (*(RuntimeObject **)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (RuntimeObject *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((RuntimeObject *)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Object>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mB12B9CAB117D7D6FE8A9F2892CBD263407CACDFC_gshared (EnumUInt16TypeInfo_1_t35C0CC36D5DCACA5BAEC8DB005ECCFAD3153D8B8 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_m6CB551FC67428E9E958F6682E06BC38716BD846C_gshared (EnumUInt16TypeInfo_1_t35C0CC36D5DCACA5BAEC8DB005ECCFAD3153D8B8 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_t30CA664F8DBC78F9161D725EAC6B8DB1F89C4C81 *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_t30CA664F8DBC78F9161D725EAC6B8DB1F89C4C81 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_t30CA664F8DBC78F9161D725EAC6B8DB1F89C4C81 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.SByte>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_m3D88D0BFFAD86196CF5642258EB885629207F4EC_gshared (EnumUInt16TypeInfo_1_t11F063E5825E1AA9578BA020FE9D10E8B253F150 * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_m3D88D0BFFAD86196CF5642258EB885629207F4EC_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.SByte>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_mBB4A294BF9A6391C5784E4F7A86FBED91BA7F99B_gshared (EnumUInt16TypeInfo_1_t11F063E5825E1AA9578BA020FE9D10E8B253F150 * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, int8_t* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_mBB4A294BF9A6391C5784E4F7A86FBED91BA7F99B_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		int8_t* L_1 = ___value1;
+		int8_t L_2 = (*(int8_t*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (int8_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((int8_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.SByte>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mF22D1CE98057209C54E9DD9581A08D245FDF1625_gshared (EnumUInt16TypeInfo_1_t11F063E5825E1AA9578BA020FE9D10E8B253F150 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.SByte>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_mD21AE68EEEC824E58BC99323ADBD242646FD454B_gshared (EnumUInt16TypeInfo_1_t11F063E5825E1AA9578BA020FE9D10E8B253F150 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_tBCFB1C63D7D7837A0D7EAC07CF250A313B982794 *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_tBCFB1C63D7D7837A0D7EAC07CF250A313B982794 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_tBCFB1C63D7D7837A0D7EAC07CF250A313B982794 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Single>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_mF889AE8FB452A84F1033DA89893D72887EBB0887_gshared (EnumUInt16TypeInfo_1_tF6647E7B73F2982D12CC851344287CE21B96912B * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_mF889AE8FB452A84F1033DA89893D72887EBB0887_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Single>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_mEBFE457B430147DE980A8027A1C9DB1C3432750F_gshared (EnumUInt16TypeInfo_1_tF6647E7B73F2982D12CC851344287CE21B96912B * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, float* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_mEBFE457B430147DE980A8027A1C9DB1C3432750F_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		float* L_1 = ___value1;
+		float L_2 = (*(float*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (float, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((float)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Single>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mC9A9E6348A1189C5B430B2312C4B89F70179D869_gshared (EnumUInt16TypeInfo_1_tF6647E7B73F2982D12CC851344287CE21B96912B * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.Single>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_m75795627355DCDFE8595A091F954AE773FE29AD8_gshared (EnumUInt16TypeInfo_1_tF6647E7B73F2982D12CC851344287CE21B96912B * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_t80BF4A689F205E66ABE5177817C623F9DF91E6CD *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_t80BF4A689F205E66ABE5177817C623F9DF91E6CD *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_t80BF4A689F205E66ABE5177817C623F9DF91E6CD *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.TimeSpan>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_m628D1C533040FFF181135CC96C5D912D32B6BF19_gshared (EnumUInt16TypeInfo_1_t5B12DCEE17829B04EFC1B172C716435F8276F52E * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_m628D1C533040FFF181135CC96C5D912D32B6BF19_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.TimeSpan>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_m58C70C5E3CB7BCB6B4F687C63B837ACA94F126A4_gshared (EnumUInt16TypeInfo_1_t5B12DCEE17829B04EFC1B172C716435F8276F52E * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 * ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_m58C70C5E3CB7BCB6B4F687C63B837ACA94F126A4_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 * L_1 = ___value1;
+		TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4  L_2 = (*(TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 *)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 , const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((TimeSpan_tA8069278ACE8A74D6DF7D514A9CD4432433F64C4 )L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.TimeSpan>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mF689E573AAD3FDEA5FA8BDC774726289E6858E7C_gshared (EnumUInt16TypeInfo_1_t5B12DCEE17829B04EFC1B172C716435F8276F52E * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.TimeSpan>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_m3D7A2934AA6D5108D86161FB2E5C29AD8C37C1B4_gshared (EnumUInt16TypeInfo_1_t5B12DCEE17829B04EFC1B172C716435F8276F52E * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_t8DC6FE358F90681BDCCD5350065A9767D2AC90DD *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_t8DC6FE358F90681BDCCD5350065A9767D2AC90DD *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_t8DC6FE358F90681BDCCD5350065A9767D2AC90DD *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt16>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_mA1B8CAF7CF8FC13A49782BBCDF4E8F3BA947205F_gshared (EnumUInt16TypeInfo_1_tA3D5A7672FD5EDFAD4935ECA329A2C7E7B143AD7 * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_mA1B8CAF7CF8FC13A49782BBCDF4E8F3BA947205F_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt16>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_mE84C7F9D17D3B5BE8547C4FC42DF6344833C3BDB_gshared (EnumUInt16TypeInfo_1_tA3D5A7672FD5EDFAD4935ECA329A2C7E7B143AD7 * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, uint16_t* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_mE84C7F9D17D3B5BE8547C4FC42DF6344833C3BDB_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		uint16_t* L_1 = ___value1;
+		uint16_t L_2 = (*(uint16_t*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (uint16_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((uint16_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt16>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_m7BAC4B008BEE121FCC5EB5DE09FEAA95895C8C30_gshared (EnumUInt16TypeInfo_1_tA3D5A7672FD5EDFAD4935ECA329A2C7E7B143AD7 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt16>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_m006EBB28F0891C2E9F1AE3FBACA11F2BA8280F1D_gshared (EnumUInt16TypeInfo_1_tA3D5A7672FD5EDFAD4935ECA329A2C7E7B143AD7 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_tCBF51B2E677BE976178EC8AC986798F9B65E2EC6 *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_tCBF51B2E677BE976178EC8AC986798F9B65E2EC6 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_tCBF51B2E677BE976178EC8AC986798F9B65E2EC6 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt32>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_m7E8A7BFA8712F9D4B7BB6128BD2C3CC841FBE062_gshared (EnumUInt16TypeInfo_1_t542B0805A6994C007A37A16049B47E47EEA26411 * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_m7E8A7BFA8712F9D4B7BB6128BD2C3CC841FBE062_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt32>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_mA82869B6CA2103FD7A29F431C3FC4447750AD84D_gshared (EnumUInt16TypeInfo_1_t542B0805A6994C007A37A16049B47E47EEA26411 * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, uint32_t* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_mA82869B6CA2103FD7A29F431C3FC4447750AD84D_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		uint32_t* L_1 = ___value1;
+		uint32_t L_2 = (*(uint32_t*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (uint32_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((uint32_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt32>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_m308A5B2ACA48A884F5E4035B7B56E31504760289_gshared (EnumUInt16TypeInfo_1_t542B0805A6994C007A37A16049B47E47EEA26411 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt32>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_mF9178EDA008B6B6F1F726ED6C4D798B62067A1B8_gshared (EnumUInt16TypeInfo_1_t542B0805A6994C007A37A16049B47E47EEA26411 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_tC4AD26ADEB2206747827432E8A7EDA1A37681F10 *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_tC4AD26ADEB2206747827432E8A7EDA1A37681F10 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_tC4AD26ADEB2206747827432E8A7EDA1A37681F10 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt64>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_mEDA8C02BBDB55410BF9CFD717CD9076220AA4B77_gshared (EnumUInt16TypeInfo_1_tAEA9CF6482001D4F456C1B2869309BCD3D0494AF * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_mEDA8C02BBDB55410BF9CFD717CD9076220AA4B77_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt64>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_mAE49703409C74C3195594C924761F6A632E17913_gshared (EnumUInt16TypeInfo_1_tAEA9CF6482001D4F456C1B2869309BCD3D0494AF * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, uint64_t* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_mAE49703409C74C3195594C924761F6A632E17913_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		uint64_t* L_1 = ___value1;
+		uint64_t L_2 = (*(uint64_t*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (uint64_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((uint64_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt64>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mFE05ADFF0D4ED0CA99B66460595712C79E7408E6_gshared (EnumUInt16TypeInfo_1_tAEA9CF6482001D4F456C1B2869309BCD3D0494AF * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UInt64>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_m0D96AC231FE9E267B72F47BD50CC5835FD6AA0A8_gshared (EnumUInt16TypeInfo_1_tAEA9CF6482001D4F456C1B2869309BCD3D0494AF * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_t2BDE5AE3D48BE884906B4ABADD9FA7EB16AD333C *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_t2BDE5AE3D48BE884906B4ABADD9FA7EB16AD333C *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_t2BDE5AE3D48BE884906B4ABADD9FA7EB16AD333C *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UIntPtr>::WriteMetadata(System.Diagnostics.Tracing.TraceLoggingMetadataCollector,System.String,System.Diagnostics.Tracing.EventFieldFormat)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteMetadata_mCE9D1EC468A589B929EC5C871D0DB3A2AB1CDFE6_gshared (EnumUInt16TypeInfo_1_t41858CAB5C37D081E5B80ED774E72C62CD2E3BC6 * __this, TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * ___collector0, String_t* ___name1, int32_t ___format2, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteMetadata_mCE9D1EC468A589B929EC5C871D0DB3A2AB1CDFE6_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E * L_0 = ___collector0;
+		String_t* L_1 = ___name1;
+		int32_t L_2 = ___format2;
+		IL2CPP_RUNTIME_CLASS_INIT(Statics_t5E1A1DC56C4617D3659228C6FA20FC98476ACF95_il2cpp_TypeInfo_var);
+		int32_t L_3 = Statics_Format16_m307BF384650F500E54F521F17E146DBBB98F4D08((int32_t)L_2, (int32_t)6, /*hidden argument*/NULL);
+		NullCheck((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0);
+		TraceLoggingMetadataCollector_AddScalar_m136E01C1CEEFA221D5F78507069DFE8590CC15FB((TraceLoggingMetadataCollector_t794F754226AD9DDCF0B4E0055DE3AA7378DEDD7E *)L_0, (String_t*)L_1, (int32_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UIntPtr>::WriteData(System.Diagnostics.Tracing.TraceLoggingDataCollector,EnumType&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1_WriteData_m133AB0AEDE9B97B7DE33EF1B26478473BEC13E0F_gshared (EnumUInt16TypeInfo_1_t41858CAB5C37D081E5B80ED774E72C62CD2E3BC6 * __this, TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * ___collector0, uintptr_t* ___value1, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (EnumUInt16TypeInfo_1_WriteData_m133AB0AEDE9B97B7DE33EF1B26478473BEC13E0F_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA * L_0 = ___collector0;
+		uintptr_t* L_1 = ___value1;
+		uintptr_t L_2 = (*(uintptr_t*)L_1);
+		IL2CPP_RUNTIME_CLASS_INIT(EnumHelper_1_t6CA08F864466AB0FE3C91BD7A9E544E9EDE03759_il2cpp_TypeInfo_var);
+		uint16_t L_3 = ((  uint16_t (*) (uintptr_t, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0)->methodPointer)((uintptr_t)L_2, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 0));
+		NullCheck((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0);
+		TraceLoggingDataCollector_AddScalar_mC4001DABF0B0A58EBB93275501D999A00D7F61C6((TraceLoggingDataCollector_t2954EFEA739CA99BBC0554A317D7BDFE7E1402DA *)L_0, (uint16_t)L_3, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Object System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UIntPtr>::GetData(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * EnumUInt16TypeInfo_1_GetData_mC386CE96BC59B325AAA554690450FF745E97515C_gshared (EnumUInt16TypeInfo_1_t41858CAB5C37D081E5B80ED774E72C62CD2E3BC6 * __this, RuntimeObject * ___value0, const RuntimeMethod* method)
+{
+	{
+		RuntimeObject * L_0 = ___value0;
+		return (RuntimeObject *)L_0;
+	}
+}
+// System.Void System.Diagnostics.Tracing.EnumUInt16TypeInfo`1<System.UIntPtr>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumUInt16TypeInfo_1__ctor_mF3E9BCC9DAC8B2C956C1C28EB22979C70FF2E292_gshared (EnumUInt16TypeInfo_1_t41858CAB5C37D081E5B80ED774E72C62CD2E3BC6 * __this, const RuntimeMethod* method)
+{
+	{
+		NullCheck((TraceLoggingTypeInfo_1_tB931FCDE5F91B9AE5C5515AA58B5518C97F86330 *)__this);
+		((  void (*) (TraceLoggingTypeInfo_1_tB931FCDE5F91B9AE5C5515AA58B5518C97F86330 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1)->methodPointer)((TraceLoggingTypeInfo_1_tB931FCDE5F91B9AE5C5515AA58B5518C97F86330 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 1));
 		return;
 	}
 }

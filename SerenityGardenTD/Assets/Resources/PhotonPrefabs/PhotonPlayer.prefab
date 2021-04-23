@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308542078952312998}
   - component: {fileID: 3871178458767298694}
+  - component: {fileID: 7407138981086959659}
   m_Layer: 0
   m_Name: PhotonPlayer
   m_TagString: Untagged
@@ -46,10 +47,24 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 3
+  Synchronization: 1
   OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
-  sceneViewId: 1
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 7407138981086959659}
+  sceneViewId: 4
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &7407138981086959659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552523741112793855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00d2d8c97c6fa542a0c2d2218056cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  view: {fileID: 0}

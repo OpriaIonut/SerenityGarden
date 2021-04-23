@@ -36,11 +36,7 @@ namespace SerenityGarden
         private InputManager inputManager;
         private bool spawnedAllEnemies = false;
 
-        #region Networking
-
-        private bool netSatrtGame = false;
-
-        #endregion
+        [HideInInspector] public bool netReceivedEvent = false;
 
         private void Start()
         {
@@ -82,7 +78,7 @@ namespace SerenityGarden
             PlayerDataSaver.instance.UpdatePlayerData(SceneDataRetainer.instance.GetStage(), 0, moneyWon);
         }
 
-        private void GameWon()
+        public void GameWon()
         {
             inputManager.AddOnPressEvent(ReloadScene);
             gameWonCanvas.SetActive(true);
@@ -97,6 +93,25 @@ namespace SerenityGarden
             moneyWonText.text = "Money won: $" + moneyWon;
 
             PlayerDataSaver.instance.UpdatePlayerData(SceneDataRetainer.instance.GetStage(), starsWon, moneyWon);
+
+            if (netReceivedEvent)
+            {
+                netReceivedEvent = false;
+                return;
+            }
+
+            if (PhotonNetwork.IsConnectedAndReady)
+            {
+                NetworkPlayer[] players = FindObjectsOfType<NetworkPlayer>();
+                foreach (NetworkPlayer player in players)
+                {
+                    if (player.view.IsMine)
+                    {
+                        player.SendNetworkEvent("GameWon");
+                        break;
+                    }
+                }
+            }
         }
 
         private int GetStarsWon()
