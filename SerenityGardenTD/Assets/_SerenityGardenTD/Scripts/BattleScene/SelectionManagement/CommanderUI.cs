@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,8 +11,11 @@ namespace SerenityGarden
         public GameObject commanderUI;
         public Material powerupMaterial;
 
+        [HideInInspector] public bool netReceivedUnpowerupEvent = false;
+        public Commander commander;
+        public Commander otherPlayerCommander;
+
         private SceneClickManager clickManager;
-        private Commander commander;
 
         private List<Material> powerupPreviousMaterials;
         private void Awake()
@@ -53,7 +57,6 @@ namespace SerenityGarden
                         clickManager.selectedCommander.DrawRange(true);
                     }
                 }
-                commander = clickManager.selectedCommander;
             }
         }
 
@@ -113,7 +116,6 @@ namespace SerenityGarden
                 if(buildable != null)
                 {
                     buildable.HasCommander = false;
-                    commander.gameObject.SetActive(true);
 
                     int listIndex = 0;
                     MeshRenderer[] renderers = buildable.gameObject.gameObject.GetComponentsInChildren<MeshRenderer>();
@@ -123,27 +125,29 @@ namespace SerenityGarden
                         listIndex++;
                     }
 
-                    //Find the place to position the commander;
-                    HexagonalBlock closestPos = null;
-                    for(float range = 1; true; range += 1)
+                    Commander commanderToUse = commander;
+                    
+                    if (netReceivedUnpowerupEvent)
                     {
-                        Collider[] hits = Physics.OverlapSphere(buildable.transform.position, range);
-                        foreach(Collider item in hits)
+                        netReceivedUnpowerupEvent = false;
+                        commanderToUse = otherPlayerCommander;
+                        
+                    }
+                    else if (PhotonNetwork.IsConnectedAndReady)
+                    {
+                        NetworkPlayer[] players = FindObjectsOfType<NetworkPlayer>();
+                        foreach (NetworkPlayer player in players)
                         {
-                            HexagonalBlock current = item.transform.gameObject.GetComponent<HexagonalBlock>();
-                            if(current != null && current.Type == HexagonType.Walkable)
+                            if (player.view.IsMine)
                             {
-                                closestPos = current;
+                                player.SendNetworkEvent("UnpowerupTurret", clickManager.selectedTurret.name);
                                 break;
                             }
                         }
-                        if (closestPos != null)
-                            break;
                     }
-                    commander.CurrentBlock = closestPos;
-                    commander.EndBlock = closestPos;
-                    commander.ReachedDestination = false;
-                    commander.FindNextBlock();
+
+                    commanderToUse.gameObject.SetActive(true);
+                    commanderToUse.UnpowerupTurret(buildable);
 
                     clickManager.DisablePreviousStates();
                     clickManager.selectedTurret = null;

@@ -147,6 +147,31 @@ namespace SerenityGarden
             ReachedDestination = false;
         }
 
+        public void UnpowerupTurret(BuildableTurret selectedTurret)
+        {
+            //Find the place to position the commander;
+            HexagonalBlock closestPos = null;
+            for (float range = 1; true; range += 1)
+            {
+                Collider[] hits = Physics.OverlapSphere(selectedTurret.transform.position, range);
+                foreach (Collider item in hits)
+                {
+                    HexagonalBlock current = item.transform.gameObject.GetComponent<HexagonalBlock>();
+                    if (current != null && current.Type == HexagonType.Walkable)
+                    {
+                        closestPos = current;
+                        break;
+                    }
+                }
+                if (closestPos != null)
+                    break;
+            }
+            CurrentBlock = closestPos;
+            EndBlock = closestPos;
+            ReachedDestination = false;
+            FindNextBlock();
+        }
+
         public void Attack()
         {
             if (Target != null)
@@ -258,18 +283,19 @@ namespace SerenityGarden
         {
             if (stream.IsWriting)
             {
-                if (netSendEndBlock)
-                {
-                    stream.SendNext("UpdateEndBlock");
-                    stream.SendNext(EndBlock.name);
-                    netSendEndBlock = false;
-                }
                 if (netSendPowerupTarget)
                 {
                     stream.SendNext("PowerupTarget");
                     stream.SendNext(powerupTarget.photonView.ViewID);
                     netSendPowerupTarget = false;
                 }
+                else if (netSendEndBlock)
+                {
+                    stream.SendNext("UpdateEndBlock");
+                    stream.SendNext(EndBlock.name);
+                    netSendEndBlock = false;
+                }
+                
             }
             if (stream.IsReading)
             {
@@ -279,7 +305,7 @@ namespace SerenityGarden
                 if (receivedMessage == "UpdateEndBlock")
                 {
                     netReceivedEndBlock = true;
-                    string objName = receivedObj.ToString(); ;
+                    string objName = receivedObj.ToString();
                     if (objName != null)
                     {
                         GameObject objToFind = GameObject.Find(objName);
@@ -299,14 +325,12 @@ namespace SerenityGarden
                 else if(receivedMessage == "PowerupTarget")
                 {
                     int viewId = (int)receivedObj;
-                    Debug.Log(viewId);
                     PhotonView[] views = FindObjectsOfType<PhotonView>();
                     foreach(PhotonView item in views)
                     {
                         if(item.ViewID == viewId)
                         {
                             BuildableTurret script = item.gameObject.GetComponent<BuildableTurret>();
-                            Debug.Log("FoundObj");
                             netReceivedPowerup = true;
                             PowerupTurret(script);
                             break;
