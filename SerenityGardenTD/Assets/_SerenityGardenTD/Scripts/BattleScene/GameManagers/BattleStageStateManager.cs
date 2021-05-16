@@ -37,6 +37,7 @@ namespace SerenityGarden
         private InputManager inputManager;
         private bool spawnedAllEnemies = false;
         private bool gameOver = false;
+        private bool gameWon = false;
 
         [HideInInspector] public bool netReceivedEvent = false;
 
@@ -85,6 +86,8 @@ namespace SerenityGarden
 
         public void GameWon()
         {
+            gameWon = true;
+
             GamePauseManager.instance._PauseGame();
             GamePauseManager.instance.pauseMenu.SetActive(false);
 
@@ -123,7 +126,7 @@ namespace SerenityGarden
 
         public void ActivatePlayerDisconnectedPanel()
         {
-            if (gameOver)
+            if (gameOver ||gameWon)
                 return;
 
             playerDisconnectedPanel.SetActive(true);
