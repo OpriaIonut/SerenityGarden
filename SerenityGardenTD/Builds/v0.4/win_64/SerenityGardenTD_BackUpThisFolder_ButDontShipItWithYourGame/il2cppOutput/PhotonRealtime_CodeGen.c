@@ -369,7 +369,7 @@ extern void LoadBalancingClient_AddCallbackTarget_m69C4A0FA942DBDC4194826AAF2D0A
 extern void LoadBalancingClient_RemoveCallbackTarget_m38086A54319554460FBF07961518B823D8BF1E9F (void);
 // 0x000000AF System.Void Photon.Realtime.LoadBalancingClient::UpdateCallbackTargets()
 extern void LoadBalancingClient_UpdateCallbackTargets_m867603F1F1E155D43ACB95FAE8902E762369C27C (void);
-// 0x000000B0 System.Void Photon.Realtime.LoadBalancingClient::UpdateCallbackTarget(Photon.Realtime.LoadBalancingClient_CallbackTargetChange,System.Collections.Generic.List`1<T>)
+// 0x000000B0 System.Void Photon.Realtime.LoadBalancingClient::UpdateCallbackTarget(Photon.Realtime.LoadBalancingClient/CallbackTargetChange,System.Collections.Generic.List`1<T>)
 // 0x000000B1 System.Void Photon.Realtime.LoadBalancingClient::.cctor()
 extern void LoadBalancingClient__cctor_m738F4D7A4C33670C00D3997356FE58232783E996 (void);
 // 0x000000B2 System.Void Photon.Realtime.IConnectionCallbacks::OnConnected()
@@ -1019,39 +1019,39 @@ extern void WebFlags_set_SendState_m6CB329794B9068C9871B83D5AA428EE63D05D5F8 (vo
 extern void WebFlags__ctor_mEEA8FDD2F2B11851C7A428C104DCC4707910DAF3 (void);
 // 0x00000201 System.Void Photon.Realtime.WebFlags::.cctor()
 extern void WebFlags__cctor_m548A23A5D14773F6F55F48A3CABEA0D04FB5E592 (void);
-// 0x00000202 System.Void Photon.Realtime.LoadBalancingClient_EncryptionDataParameters::.ctor()
+// 0x00000202 System.Void Photon.Realtime.LoadBalancingClient/EncryptionDataParameters::.ctor()
 extern void EncryptionDataParameters__ctor_mB5791979503ACFB9D9089884C0A211D07B2ACDF8 (void);
-// 0x00000203 System.Void Photon.Realtime.LoadBalancingClient_CallbackTargetChange::.ctor(System.Object,System.Boolean)
+// 0x00000203 System.Void Photon.Realtime.LoadBalancingClient/CallbackTargetChange::.ctor(System.Object,System.Boolean)
 extern void CallbackTargetChange__ctor_m2764D7F01912EF248AABEA2B6DC322813AD713FC (void);
-// 0x00000204 System.Void Photon.Realtime.LoadBalancingPeer_<>c::.cctor()
+// 0x00000204 System.Void Photon.Realtime.LoadBalancingPeer/<>c::.cctor()
 extern void U3CU3Ec__cctor_m15C3EE29E28CD701FD0C9FC36E394589BFFB7A64 (void);
-// 0x00000205 System.Void Photon.Realtime.LoadBalancingPeer_<>c::.ctor()
+// 0x00000205 System.Void Photon.Realtime.LoadBalancingPeer/<>c::.ctor()
 extern void U3CU3Ec__ctor_m80E676E4481FB01D1DBBF0FB817863CB7B244D6D (void);
-// 0x00000206 ExitGames.Client.Photon.ParameterDictionary Photon.Realtime.LoadBalancingPeer_<>c::<.ctor>b__4_0()
+// 0x00000206 ExitGames.Client.Photon.ParameterDictionary Photon.Realtime.LoadBalancingPeer/<>c::<.ctor>b__4_0()
 extern void U3CU3Ec_U3C_ctorU3Eb__4_0_mE53F4A4CE2A585787C4DC95B14CC08214CBC0A8F (void);
-// 0x00000207 System.Void Photon.Realtime.LoadBalancingPeer_<>c::<.ctor>b__4_1(ExitGames.Client.Photon.ParameterDictionary)
+// 0x00000207 System.Void Photon.Realtime.LoadBalancingPeer/<>c::<.ctor>b__4_1(ExitGames.Client.Photon.ParameterDictionary)
 extern void U3CU3Ec_U3C_ctorU3Eb__4_1_m15B6E48CEA2EAC25211AA561900F7621D8D5BB1C (void);
-// 0x00000208 System.Void Photon.Realtime.RegionHandler_<>c::.cctor()
+// 0x00000208 System.Void Photon.Realtime.RegionHandler/<>c::.cctor()
 extern void U3CU3Ec__cctor_mBC97F79689D3A82EA69ED48DD44C09091A8B92CC (void);
-// 0x00000209 System.Void Photon.Realtime.RegionHandler_<>c::.ctor()
+// 0x00000209 System.Void Photon.Realtime.RegionHandler/<>c::.ctor()
 extern void U3CU3Ec__ctor_mAD2D81B832F8E1598EF5FA066BC6F71CD537801C (void);
-// 0x0000020A System.Int32 Photon.Realtime.RegionHandler_<>c::<get_BestRegion>b__8_0(Photon.Realtime.Region,Photon.Realtime.Region)
+// 0x0000020A System.Int32 Photon.Realtime.RegionHandler/<>c::<get_BestRegion>b__8_0(Photon.Realtime.Region,Photon.Realtime.Region)
 extern void U3CU3Ec_U3Cget_BestRegionU3Eb__8_0_m05FF938F84ECA9730DCFAB384B54FB2B9DB336BF (void);
-// 0x0000020B System.Void Photon.Realtime.RegionHandler_<>c__DisplayClass21_0::.ctor()
+// 0x0000020B System.Void Photon.Realtime.RegionHandler/<>c__DisplayClass21_0::.ctor()
 extern void U3CU3Ec__DisplayClass21_0__ctor_mA0FDE7E818365C8A6FE8F40F7E4C894B40A32B4A (void);
-// 0x0000020C System.Boolean Photon.Realtime.RegionHandler_<>c__DisplayClass21_0::<PingMinimumOfRegions>b__0(Photon.Realtime.Region)
+// 0x0000020C System.Boolean Photon.Realtime.RegionHandler/<>c__DisplayClass21_0::<PingMinimumOfRegions>b__0(Photon.Realtime.Region)
 extern void U3CU3Ec__DisplayClass21_0_U3CPingMinimumOfRegionsU3Eb__0_m01456D17A66CBE229D8A4B7C8E2C7C229D0A5A5C (void);
-// 0x0000020D System.Void Photon.Realtime.RegionPinger_<RegionPingCoroutine>d__19::.ctor(System.Int32)
+// 0x0000020D System.Void Photon.Realtime.RegionPinger/<RegionPingCoroutine>d__19::.ctor(System.Int32)
 extern void U3CRegionPingCoroutineU3Ed__19__ctor_m12B890D57C19908C84740481EA47A885C3A107C2 (void);
-// 0x0000020E System.Void Photon.Realtime.RegionPinger_<RegionPingCoroutine>d__19::System.IDisposable.Dispose()
+// 0x0000020E System.Void Photon.Realtime.RegionPinger/<RegionPingCoroutine>d__19::System.IDisposable.Dispose()
 extern void U3CRegionPingCoroutineU3Ed__19_System_IDisposable_Dispose_m73D1DFF25112203ECA07189E72ADF5479A1265C3 (void);
-// 0x0000020F System.Boolean Photon.Realtime.RegionPinger_<RegionPingCoroutine>d__19::MoveNext()
+// 0x0000020F System.Boolean Photon.Realtime.RegionPinger/<RegionPingCoroutine>d__19::MoveNext()
 extern void U3CRegionPingCoroutineU3Ed__19_MoveNext_m784836AC2F75A4457A32DE171393B8BC522E3850 (void);
-// 0x00000210 System.Object Photon.Realtime.RegionPinger_<RegionPingCoroutine>d__19::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000210 System.Object Photon.Realtime.RegionPinger/<RegionPingCoroutine>d__19::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRegionPingCoroutineU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m0AF89C7D55E37D72E4F4D517170B99E20110F822 (void);
-// 0x00000211 System.Void Photon.Realtime.RegionPinger_<RegionPingCoroutine>d__19::System.Collections.IEnumerator.Reset()
+// 0x00000211 System.Void Photon.Realtime.RegionPinger/<RegionPingCoroutine>d__19::System.Collections.IEnumerator.Reset()
 extern void U3CRegionPingCoroutineU3Ed__19_System_Collections_IEnumerator_Reset_m95E60A243E5B5075F2CE8D8E9E3166F1688D45E9 (void);
-// 0x00000212 System.Object Photon.Realtime.RegionPinger_<RegionPingCoroutine>d__19::System.Collections.IEnumerator.get_Current()
+// 0x00000212 System.Object Photon.Realtime.RegionPinger/<RegionPingCoroutine>d__19::System.Collections.IEnumerator.get_Current()
 extern void U3CRegionPingCoroutineU3Ed__19_System_Collections_IEnumerator_get_Current_m8DB0E96C859FFAA8721B106B0C549E26D2B77761 (void);
 static Il2CppMethodPointer s_methodPointers[530] = 
 {
@@ -1650,8 +1650,8 @@ static const int32_t s_InvokerIndices[530] =
 	32,
 	14,
 	26,
-	2233,
-	2234,
+	2229,
+	2230,
 	14,
 	89,
 	31,
@@ -1703,7 +1703,7 @@ static const int32_t s_InvokerIndices[530] =
 	14,
 	26,
 	31,
-	987,
+	985,
 	14,
 	9,
 	89,
@@ -1732,12 +1732,12 @@ static const int32_t s_InvokerIndices[530] =
 	9,
 	672,
 	90,
-	2235,
-	2235,
-	947,
-	2236,
-	947,
-	2237,
+	2231,
+	2231,
+	945,
+	2232,
+	945,
+	2233,
 	90,
 	120,
 	58,
@@ -1747,7 +1747,7 @@ static const int32_t s_InvokerIndices[530] =
 	494,
 	105,
 	671,
-	2238,
+	2234,
 	228,
 	88,
 	26,
@@ -1757,9 +1757,9 @@ static const int32_t s_InvokerIndices[530] =
 	26,
 	26,
 	26,
-	2200,
+	2196,
 	26,
-	2105,
+	2101,
 	26,
 	26,
 	23,
@@ -1777,10 +1777,10 @@ static const int32_t s_InvokerIndices[530] =
 	26,
 	26,
 	23,
-	1123,
+	1121,
 	23,
-	1123,
-	1123,
+	1121,
+	1121,
 	23,
 	26,
 	26,
@@ -1800,9 +1800,9 @@ static const int32_t s_InvokerIndices[530] =
 	26,
 	23,
 	23,
-	1123,
-	1123,
-	1123,
+	1121,
+	1121,
+	1121,
 	23,
 	26,
 	26,
@@ -1838,15 +1838,15 @@ static const int32_t s_InvokerIndices[530] =
 	672,
 	90,
 	90,
-	2239,
 	2235,
-	2236,
+	2231,
+	2232,
 	9,
-	947,
-	2240,
-	2241,
-	90,
+	945,
+	2236,
 	2237,
+	90,
+	2233,
 	228,
 	10,
 	23,
@@ -1927,7 +1927,7 @@ static const int32_t s_InvokerIndices[530] =
 	14,
 	26,
 	371,
-	2242,
+	2238,
 	34,
 	14,
 	28,
@@ -1938,7 +1938,7 @@ static const int32_t s_InvokerIndices[530] =
 	9,
 	10,
 	32,
-	947,
+	945,
 	89,
 	14,
 	26,
@@ -2015,7 +2015,7 @@ static const int32_t s_InvokerIndices[530] =
 	161,
 	32,
 	26,
-	947,
+	945,
 	9,
 	26,
 	32,
@@ -2060,10 +2060,10 @@ static const int32_t s_InvokerIndices[530] =
 	26,
 	23,
 	23,
-	1123,
+	1121,
 	23,
-	1123,
-	1123,
+	1121,
+	1121,
 	23,
 	23,
 	32,
@@ -2126,12 +2126,12 @@ static const Il2CppTokenRangePair s_rgctxIndices[2] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[6] = 
 {
-	{ (Il2CppRGCTXDataType)3, 24586 },
-	{ (Il2CppRGCTXDataType)3, 24587 },
-	{ (Il2CppRGCTXDataType)2, 27987 },
-	{ (Il2CppRGCTXDataType)2, 28027 },
-	{ (Il2CppRGCTXDataType)3, 24588 },
-	{ (Il2CppRGCTXDataType)3, 24589 },
+	{ (Il2CppRGCTXDataType)3, 24429 },
+	{ (Il2CppRGCTXDataType)3, 24430 },
+	{ (Il2CppRGCTXDataType)2, 27741 },
+	{ (Il2CppRGCTXDataType)2, 27781 },
+	{ (Il2CppRGCTXDataType)3, 24431 },
+	{ (Il2CppRGCTXDataType)3, 24432 },
 };
 extern const Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule;
 const Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule = 
@@ -2139,6 +2139,8 @@ const Il2CppCodeGenModule g_PhotonRealtimeCodeGenModule =
 	"PhotonRealtime.dll",
 	530,
 	s_methodPointers,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

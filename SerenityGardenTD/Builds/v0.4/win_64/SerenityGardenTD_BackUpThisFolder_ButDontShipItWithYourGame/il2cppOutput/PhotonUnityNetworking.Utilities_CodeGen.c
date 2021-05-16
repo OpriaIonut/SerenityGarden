@@ -58,7 +58,7 @@ extern void CellTree__ctor_mF935449549CE60E2525169773599AB3D5EF2FD64 (void);
 extern void CellTree__ctor_m19DD52CF44E3E0D532D94B38F805A98C0060FCBF (void);
 // 0x00000013 System.Void Photon.Pun.UtilityScripts.CellTreeNode::.ctor()
 extern void CellTreeNode__ctor_m1A22D1198536D18ADE244B82CDE8B7F7B7B5DE3A (void);
-// 0x00000014 System.Void Photon.Pun.UtilityScripts.CellTreeNode::.ctor(System.Byte,Photon.Pun.UtilityScripts.CellTreeNode_ENodeType,Photon.Pun.UtilityScripts.CellTreeNode)
+// 0x00000014 System.Void Photon.Pun.UtilityScripts.CellTreeNode::.ctor(System.Byte,Photon.Pun.UtilityScripts.CellTreeNode/ENodeType,Photon.Pun.UtilityScripts.CellTreeNode)
 extern void CellTreeNode__ctor_m3BE2534314C5C91CB76D2C92B3A230B5BEE9FB66 (void);
 // 0x00000015 System.Void Photon.Pun.UtilityScripts.CellTreeNode::AddChild(Photon.Pun.UtilityScripts.CellTreeNode)
 extern void CellTreeNode_AddChild_mE561CB19AB76FF170FEF0C5D82CEC920ADF6B4DC (void);
@@ -220,9 +220,9 @@ extern void PhotonTeamExtensions_SwitchTeam_m5EE2C2C627A4526E357CF15C39B54B4EFAB
 extern void PhotonTeamExtensions_LeaveCurrentTeam_mA8F0B7704FE86500D6FFBB3780B2C4446E240C05 (void);
 // 0x00000064 System.Boolean Photon.Pun.UtilityScripts.PhotonTeamExtensions::TryGetTeamMates(Photon.Realtime.Player,Photon.Realtime.Player[]&)
 extern void PhotonTeamExtensions_TryGetTeamMates_m1C8768C968585C9B3DD6A751E06419C2C5726F70 (void);
-// 0x00000065 System.Void Photon.Pun.UtilityScripts.PlayerNumbering::add_OnPlayerNumberingChanged(Photon.Pun.UtilityScripts.PlayerNumbering_PlayerNumberingChanged)
+// 0x00000065 System.Void Photon.Pun.UtilityScripts.PlayerNumbering::add_OnPlayerNumberingChanged(Photon.Pun.UtilityScripts.PlayerNumbering/PlayerNumberingChanged)
 extern void PlayerNumbering_add_OnPlayerNumberingChanged_mE41FADACADEA193C9825170F5D10C52C825AF34D (void);
-// 0x00000066 System.Void Photon.Pun.UtilityScripts.PlayerNumbering::remove_OnPlayerNumberingChanged(Photon.Pun.UtilityScripts.PlayerNumbering_PlayerNumberingChanged)
+// 0x00000066 System.Void Photon.Pun.UtilityScripts.PlayerNumbering::remove_OnPlayerNumberingChanged(Photon.Pun.UtilityScripts.PlayerNumbering/PlayerNumberingChanged)
 extern void PlayerNumbering_remove_OnPlayerNumberingChanged_m7DD6178B109326D50FB35732F08A31402279DDED (void);
 // 0x00000067 System.Void Photon.Pun.UtilityScripts.PlayerNumbering::Awake()
 extern void PlayerNumbering_Awake_mD1DE5EC0C35AE785D9973793FC1716DCC464E79E (void);
@@ -270,9 +270,9 @@ extern void PunTeams_OnPlayerEnteredRoom_mC913226A533743870A9C202FD5C87780EEE7F8
 extern void PunTeams_UpdateTeams_m6B693A3002A62B0994CCEAC22BBCCB6E83CA921E (void);
 // 0x0000007D System.Void Photon.Pun.UtilityScripts.PunTeams::.ctor()
 extern void PunTeams__ctor_mB11902A92C0D22C6AD78EEEA48FCF7CABA3AF317 (void);
-// 0x0000007E Photon.Pun.UtilityScripts.PunTeams_Team Photon.Pun.UtilityScripts.TeamExtensions::GetTeam(Photon.Realtime.Player)
+// 0x0000007E Photon.Pun.UtilityScripts.PunTeams/Team Photon.Pun.UtilityScripts.TeamExtensions::GetTeam(Photon.Realtime.Player)
 extern void TeamExtensions_GetTeam_m9409E5D4B011760D6A81E9B022D1EE434BFE76B9 (void);
-// 0x0000007F System.Void Photon.Pun.UtilityScripts.TeamExtensions::SetTeam(Photon.Realtime.Player,Photon.Pun.UtilityScripts.PunTeams_Team)
+// 0x0000007F System.Void Photon.Pun.UtilityScripts.TeamExtensions::SetTeam(Photon.Realtime.Player,Photon.Pun.UtilityScripts.PunTeams/Team)
 extern void TeamExtensions_SetTeam_mA90067A7D24A52621C3B198DD5B93007FDC30362 (void);
 // 0x00000080 System.Void Photon.Pun.UtilityScripts.SmoothSyncMovement::Awake()
 extern void SmoothSyncMovement_Awake_m80BFE56BF434A2DDA0A07D24A70642A8B70E223F (void);
@@ -360,9 +360,9 @@ extern void OnJoinedInstantiate__ctor_m4C9C76129622D1260EA10073294C132200616B44 
 extern void OnStartDelete_Start_mDDF3D7E4B832A6E1097DEF6AF0A8C0C04CC92C76 (void);
 // 0x000000AA System.Void Photon.Pun.UtilityScripts.OnStartDelete::.ctor()
 extern void OnStartDelete__ctor_m8EDDE39E332FEAA319C90E53CB6876BD2DF4EDDF (void);
-// 0x000000AB System.Void Photon.Pun.UtilityScripts.CountdownTimer::add_OnCountdownTimerHasExpired(Photon.Pun.UtilityScripts.CountdownTimer_CountdownTimerHasExpired)
+// 0x000000AB System.Void Photon.Pun.UtilityScripts.CountdownTimer::add_OnCountdownTimerHasExpired(Photon.Pun.UtilityScripts.CountdownTimer/CountdownTimerHasExpired)
 extern void CountdownTimer_add_OnCountdownTimerHasExpired_mB7723504148BE9F41EB52030949F02E55E8778C0 (void);
-// 0x000000AC System.Void Photon.Pun.UtilityScripts.CountdownTimer::remove_OnCountdownTimerHasExpired(Photon.Pun.UtilityScripts.CountdownTimer_CountdownTimerHasExpired)
+// 0x000000AC System.Void Photon.Pun.UtilityScripts.CountdownTimer::remove_OnCountdownTimerHasExpired(Photon.Pun.UtilityScripts.CountdownTimer/CountdownTimerHasExpired)
 extern void CountdownTimer_remove_OnCountdownTimerHasExpired_m76D6805D5E60DB2C5562D7A369EBC8EA570533A9 (void);
 // 0x000000AD System.Void Photon.Pun.UtilityScripts.CountdownTimer::Start()
 extern void CountdownTimer_Start_mB143E27901E8B5368EF1756C4D33EA134E270A83 (void);
@@ -473,7 +473,7 @@ extern void OnPointerOverTooltip__ctor_m2BA769518BE4266BBEAA64039756E20AFC37A460
 extern void TabViewManager_Start_m3A7480FB0AEFE95266C90891CE27DCD97F61913D (void);
 // 0x000000E5 System.Void Photon.Pun.UtilityScripts.TabViewManager::SelectTab(System.String)
 extern void TabViewManager_SelectTab_m87C94C8D1B0B3CBF0147ED06C463ABECF114200B (void);
-// 0x000000E6 System.Void Photon.Pun.UtilityScripts.TabViewManager::OnTabSelected(Photon.Pun.UtilityScripts.TabViewManager_Tab)
+// 0x000000E6 System.Void Photon.Pun.UtilityScripts.TabViewManager::OnTabSelected(Photon.Pun.UtilityScripts.TabViewManager/Tab)
 extern void TabViewManager_OnTabSelected_mECD419A90F2B68EBA2E29D2B5EF8A7BA9700216E (void);
 // 0x000000E7 System.Void Photon.Pun.UtilityScripts.TabViewManager::.ctor()
 extern void TabViewManager__ctor_m855DD2F4A866D211C0E224403AF9E35973D598B5 (void);
@@ -501,63 +501,63 @@ extern void TextToggleIsOnTransition_OnPointerEnter_mEB8BC34579918CCE4CC8F7DEF67
 extern void TextToggleIsOnTransition_OnPointerExit_m1C5250331E1BAA01859F19820083C78C65A6B4BD (void);
 // 0x000000F3 System.Void Photon.Pun.UtilityScripts.TextToggleIsOnTransition::.ctor()
 extern void TextToggleIsOnTransition__ctor_m98EA84C87305170945F1660DD8E760B07BF12739 (void);
-// 0x000000F4 System.Void Photon.Pun.UtilityScripts.PlayerNumbering_PlayerNumberingChanged::.ctor(System.Object,System.IntPtr)
+// 0x000000F4 System.Void Photon.Pun.UtilityScripts.PlayerNumbering/PlayerNumberingChanged::.ctor(System.Object,System.IntPtr)
 extern void PlayerNumberingChanged__ctor_m1C8A80A7508AB82C31540564E2F6D0F675D1CE58 (void);
-// 0x000000F5 System.Void Photon.Pun.UtilityScripts.PlayerNumbering_PlayerNumberingChanged::Invoke()
+// 0x000000F5 System.Void Photon.Pun.UtilityScripts.PlayerNumbering/PlayerNumberingChanged::Invoke()
 extern void PlayerNumberingChanged_Invoke_m696A347FAC9064D08C304BB7DB3174584113B746 (void);
-// 0x000000F6 System.IAsyncResult Photon.Pun.UtilityScripts.PlayerNumbering_PlayerNumberingChanged::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x000000F6 System.IAsyncResult Photon.Pun.UtilityScripts.PlayerNumbering/PlayerNumberingChanged::BeginInvoke(System.AsyncCallback,System.Object)
 extern void PlayerNumberingChanged_BeginInvoke_m241F2F3993196AC3E09E16730FAADA2F93D8E167 (void);
-// 0x000000F7 System.Void Photon.Pun.UtilityScripts.PlayerNumbering_PlayerNumberingChanged::EndInvoke(System.IAsyncResult)
+// 0x000000F7 System.Void Photon.Pun.UtilityScripts.PlayerNumbering/PlayerNumberingChanged::EndInvoke(System.IAsyncResult)
 extern void PlayerNumberingChanged_EndInvoke_m4ACEFE73DE0888A6BCC21022D6BD09DA4CA4DCF8 (void);
-// 0x000000F8 System.Void Photon.Pun.UtilityScripts.PlayerNumbering_<>c::.cctor()
+// 0x000000F8 System.Void Photon.Pun.UtilityScripts.PlayerNumbering/<>c::.cctor()
 extern void U3CU3Ec__cctor_m822F4BA4F6B20728EA7CE3B16512DE3EE3F20922 (void);
-// 0x000000F9 System.Void Photon.Pun.UtilityScripts.PlayerNumbering_<>c::.ctor()
+// 0x000000F9 System.Void Photon.Pun.UtilityScripts.PlayerNumbering/<>c::.ctor()
 extern void U3CU3Ec__ctor_m423EF312AFEF34AFF2BDB61D06AF9297AF5EB78A (void);
-// 0x000000FA System.Int32 Photon.Pun.UtilityScripts.PlayerNumbering_<>c::<RefreshData>b__14_0(Photon.Realtime.Player)
+// 0x000000FA System.Int32 Photon.Pun.UtilityScripts.PlayerNumbering/<>c::<RefreshData>b__14_0(Photon.Realtime.Player)
 extern void U3CU3Ec_U3CRefreshDataU3Eb__14_0_m68B19EEDA20099E49CFCFEA80EB430AFF474C62F (void);
-// 0x000000FB System.Int32 Photon.Pun.UtilityScripts.PlayerNumbering_<>c::<RefreshData>b__14_1(Photon.Realtime.Player)
+// 0x000000FB System.Int32 Photon.Pun.UtilityScripts.PlayerNumbering/<>c::<RefreshData>b__14_1(Photon.Realtime.Player)
 extern void U3CU3Ec_U3CRefreshDataU3Eb__14_1_mAAC6518A7D32D3FCC11919EE5880410C32B63ED9 (void);
-// 0x000000FC System.Int32 Photon.Pun.UtilityScripts.PlayerNumbering_<>c::<RefreshData>b__14_2(Photon.Realtime.Player)
+// 0x000000FC System.Int32 Photon.Pun.UtilityScripts.PlayerNumbering/<>c::<RefreshData>b__14_2(Photon.Realtime.Player)
 extern void U3CU3Ec_U3CRefreshDataU3Eb__14_2_m4DAF0A01CBAB84B26E08567126DAFAF2C5A6DFCE (void);
-// 0x000000FD System.Void Photon.Pun.UtilityScripts.OnClickDestroy_<DestroyRpc>d__4::.ctor(System.Int32)
+// 0x000000FD System.Void Photon.Pun.UtilityScripts.OnClickDestroy/<DestroyRpc>d__4::.ctor(System.Int32)
 extern void U3CDestroyRpcU3Ed__4__ctor_m8A3A3F841B9E1CCD943C04686AB80A52B9027224 (void);
-// 0x000000FE System.Void Photon.Pun.UtilityScripts.OnClickDestroy_<DestroyRpc>d__4::System.IDisposable.Dispose()
+// 0x000000FE System.Void Photon.Pun.UtilityScripts.OnClickDestroy/<DestroyRpc>d__4::System.IDisposable.Dispose()
 extern void U3CDestroyRpcU3Ed__4_System_IDisposable_Dispose_mFCF047B1462CF65217BF36F821B88A56B7D5D7A9 (void);
-// 0x000000FF System.Boolean Photon.Pun.UtilityScripts.OnClickDestroy_<DestroyRpc>d__4::MoveNext()
+// 0x000000FF System.Boolean Photon.Pun.UtilityScripts.OnClickDestroy/<DestroyRpc>d__4::MoveNext()
 extern void U3CDestroyRpcU3Ed__4_MoveNext_m00A40E12515FB4995E2A0E512B9AB6C404919FBC (void);
-// 0x00000100 System.Object Photon.Pun.UtilityScripts.OnClickDestroy_<DestroyRpc>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000100 System.Object Photon.Pun.UtilityScripts.OnClickDestroy/<DestroyRpc>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CDestroyRpcU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mFBB3E943E99B85E9CB622904A7FFF528020670D9 (void);
-// 0x00000101 System.Void Photon.Pun.UtilityScripts.OnClickDestroy_<DestroyRpc>d__4::System.Collections.IEnumerator.Reset()
+// 0x00000101 System.Void Photon.Pun.UtilityScripts.OnClickDestroy/<DestroyRpc>d__4::System.Collections.IEnumerator.Reset()
 extern void U3CDestroyRpcU3Ed__4_System_Collections_IEnumerator_Reset_mC41E8F9924795C3D3CB1B0B9196EFB4608FC5D83 (void);
-// 0x00000102 System.Object Photon.Pun.UtilityScripts.OnClickDestroy_<DestroyRpc>d__4::System.Collections.IEnumerator.get_Current()
+// 0x00000102 System.Object Photon.Pun.UtilityScripts.OnClickDestroy/<DestroyRpc>d__4::System.Collections.IEnumerator.get_Current()
 extern void U3CDestroyRpcU3Ed__4_System_Collections_IEnumerator_get_Current_mF3E807483BBE4F1EF9C3D7F6C9DC635F2DFEBCAA (void);
-// 0x00000103 System.Void Photon.Pun.UtilityScripts.OnClickRpc_<ClickFlash>d__8::.ctor(System.Int32)
+// 0x00000103 System.Void Photon.Pun.UtilityScripts.OnClickRpc/<ClickFlash>d__8::.ctor(System.Int32)
 extern void U3CClickFlashU3Ed__8__ctor_mF71DE57D3BCD3E128EED0E0231079D68C05FBFC7 (void);
-// 0x00000104 System.Void Photon.Pun.UtilityScripts.OnClickRpc_<ClickFlash>d__8::System.IDisposable.Dispose()
+// 0x00000104 System.Void Photon.Pun.UtilityScripts.OnClickRpc/<ClickFlash>d__8::System.IDisposable.Dispose()
 extern void U3CClickFlashU3Ed__8_System_IDisposable_Dispose_m55E33EB3D6BD6084F63464E513ED0E41DFFE57C9 (void);
-// 0x00000105 System.Boolean Photon.Pun.UtilityScripts.OnClickRpc_<ClickFlash>d__8::MoveNext()
+// 0x00000105 System.Boolean Photon.Pun.UtilityScripts.OnClickRpc/<ClickFlash>d__8::MoveNext()
 extern void U3CClickFlashU3Ed__8_MoveNext_mCE3DC0DF23A17B661C82C4827D3E61D8005BBDA0 (void);
-// 0x00000106 System.Object Photon.Pun.UtilityScripts.OnClickRpc_<ClickFlash>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000106 System.Object Photon.Pun.UtilityScripts.OnClickRpc/<ClickFlash>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CClickFlashU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m563C46A4FADE717629184776503358A1D46E99A8 (void);
-// 0x00000107 System.Void Photon.Pun.UtilityScripts.OnClickRpc_<ClickFlash>d__8::System.Collections.IEnumerator.Reset()
+// 0x00000107 System.Void Photon.Pun.UtilityScripts.OnClickRpc/<ClickFlash>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CClickFlashU3Ed__8_System_Collections_IEnumerator_Reset_m8F77D362F3AEC831E9441993C6896DE08705BE26 (void);
-// 0x00000108 System.Object Photon.Pun.UtilityScripts.OnClickRpc_<ClickFlash>d__8::System.Collections.IEnumerator.get_Current()
+// 0x00000108 System.Object Photon.Pun.UtilityScripts.OnClickRpc/<ClickFlash>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CClickFlashU3Ed__8_System_Collections_IEnumerator_get_Current_m80A580D69886F0BFDA854CB94FAD01343C06540D (void);
-// 0x00000109 System.Void Photon.Pun.UtilityScripts.CountdownTimer_CountdownTimerHasExpired::.ctor(System.Object,System.IntPtr)
+// 0x00000109 System.Void Photon.Pun.UtilityScripts.CountdownTimer/CountdownTimerHasExpired::.ctor(System.Object,System.IntPtr)
 extern void CountdownTimerHasExpired__ctor_mD04114E19A0EA56A694D36AC1811A74C9754EF62 (void);
-// 0x0000010A System.Void Photon.Pun.UtilityScripts.CountdownTimer_CountdownTimerHasExpired::Invoke()
+// 0x0000010A System.Void Photon.Pun.UtilityScripts.CountdownTimer/CountdownTimerHasExpired::Invoke()
 extern void CountdownTimerHasExpired_Invoke_mB058935A78E60C3FC6C6EAF9C21460F04ADF550F (void);
-// 0x0000010B System.IAsyncResult Photon.Pun.UtilityScripts.CountdownTimer_CountdownTimerHasExpired::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x0000010B System.IAsyncResult Photon.Pun.UtilityScripts.CountdownTimer/CountdownTimerHasExpired::BeginInvoke(System.AsyncCallback,System.Object)
 extern void CountdownTimerHasExpired_BeginInvoke_m1EBFE5A2312B642780A9E936800F4CB7A85609A6 (void);
-// 0x0000010C System.Void Photon.Pun.UtilityScripts.CountdownTimer_CountdownTimerHasExpired::EndInvoke(System.IAsyncResult)
+// 0x0000010C System.Void Photon.Pun.UtilityScripts.CountdownTimer/CountdownTimerHasExpired::EndInvoke(System.IAsyncResult)
 extern void CountdownTimerHasExpired_EndInvoke_m3C9EC8729C169B47921C17A741BF3FA67264F538 (void);
-// 0x0000010D System.Void Photon.Pun.UtilityScripts.TabViewManager_TabChangeEvent::.ctor()
+// 0x0000010D System.Void Photon.Pun.UtilityScripts.TabViewManager/TabChangeEvent::.ctor()
 extern void TabChangeEvent__ctor_m70C47F5D74FF9520B2B77031D87A796A41FF7422 (void);
-// 0x0000010E System.Void Photon.Pun.UtilityScripts.TabViewManager_Tab::.ctor()
+// 0x0000010E System.Void Photon.Pun.UtilityScripts.TabViewManager/Tab::.ctor()
 extern void Tab__ctor_mE0E1B59AED7A1B9AF4730311CCAFA8112AA11D5B (void);
-// 0x0000010F System.Void Photon.Pun.UtilityScripts.TabViewManager_<>c__DisplayClass7_0::.ctor()
+// 0x0000010F System.Void Photon.Pun.UtilityScripts.TabViewManager/<>c__DisplayClass7_0::.ctor()
 extern void U3CU3Ec__DisplayClass7_0__ctor_mF12C5AE2EF1B28E9BE5DC8F11645E029EB574B00 (void);
-// 0x00000110 System.Void Photon.Pun.UtilityScripts.TabViewManager_<>c__DisplayClass7_0::<Start>b__0(System.Boolean)
+// 0x00000110 System.Void Photon.Pun.UtilityScripts.TabViewManager/<>c__DisplayClass7_0::<Start>b__0(System.Boolean)
 extern void U3CU3Ec__DisplayClass7_0_U3CStartU3Eb__0_m7BEC311007903E50BA46042C1E3AAA57F19AA696 (void);
 static Il2CppMethodPointer s_methodPointers[272] = 
 {
@@ -848,26 +848,26 @@ static const int32_t s_InvokerIndices[272] =
 	137,
 	23,
 	89,
-	2295,
+	2291,
 	23,
 	14,
 	26,
 	23,
 	26,
 	23,
-	849,
+	847,
 	26,
 	23,
-	2520,
-	2521,
-	2521,
+	2516,
+	2517,
+	2517,
 	23,
 	23,
 	23,
 	23,
 	89,
 	23,
-	2332,
+	2328,
 	23,
 	14,
 	26,
@@ -909,10 +909,10 @@ static const int32_t s_InvokerIndices[272] =
 	26,
 	23,
 	23,
-	1433,
+	1431,
 	813,
 	14,
-	1433,
+	1431,
 	813,
 	813,
 	813,
@@ -921,9 +921,9 @@ static const int32_t s_InvokerIndices[272] =
 	112,
 	26,
 	23,
-	1123,
-	1123,
-	1123,
+	1121,
+	1121,
+	1121,
 	26,
 	26,
 	23,
@@ -964,14 +964,14 @@ static const int32_t s_InvokerIndices[272] =
 	116,
 	627,
 	23,
-	2332,
+	2328,
 	23,
 	23,
 	23,
 	23,
 	23,
 	23,
-	1123,
+	1121,
 	32,
 	23,
 	23,
@@ -996,13 +996,13 @@ static const int32_t s_InvokerIndices[272] =
 	31,
 	26,
 	23,
-	1123,
-	1123,
-	1123,
+	1121,
+	1121,
+	1121,
 	23,
 	585,
 	14,
-	1442,
+	1440,
 	23,
 	23,
 	23,
@@ -1032,7 +1032,7 @@ static const int32_t s_InvokerIndices[272] =
 	23,
 	467,
 	9,
-	2522,
+	2518,
 	26,
 	26,
 	23,
@@ -1041,7 +1041,7 @@ static const int32_t s_InvokerIndices[272] =
 	107,
 	107,
 	32,
-	2523,
+	2519,
 	94,
 	94,
 	94,
@@ -1115,6 +1115,8 @@ const Il2CppCodeGenModule g_PhotonUnityNetworking_UtilitiesCodeGenModule =
 	"PhotonUnityNetworking.Utilities.dll",
 	272,
 	s_methodPointers,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

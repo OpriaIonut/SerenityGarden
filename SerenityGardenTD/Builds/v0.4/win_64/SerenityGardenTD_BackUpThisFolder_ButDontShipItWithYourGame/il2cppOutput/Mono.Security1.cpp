@@ -319,11 +319,11 @@ public:
 };
 
 
-// Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator
+// Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator
 struct  X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505  : public RuntimeObject
 {
 public:
-	// System.Collections.IEnumerator Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator::enumerator
+	// System.Collections.IEnumerator Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator::enumerator
 	RuntimeObject* ___enumerator_0;
 
 public:
@@ -4128,7 +4128,7 @@ IL_000e:
 		return L_4;
 	}
 }
-// Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator Mono.Security.X509.X509CertificateCollection::GetEnumerator()
+// Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator Mono.Security.X509.X509CertificateCollection::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505 * X509CertificateCollection_GetEnumerator_mE786AA0C41503620161D81E4D9172932564BAB4C (X509CertificateCollection_t423BA1B9FAA983BA745023994C648C6DAC3E5A1A * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4171,7 +4171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t X509CertificateCollection_GetHashCode
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator::.ctor(Mono.Security.X509.X509CertificateCollection)
+// System.Void Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator::.ctor(Mono.Security.X509.X509CertificateCollection)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void X509CertificateEnumerator__ctor_m6D622EC72DC9F698B6674D0D940C9BE62DD9AB68 (X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505 * __this, X509CertificateCollection_t423BA1B9FAA983BA745023994C648C6DAC3E5A1A * ___mappings0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4189,7 +4189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void X509CertificateEnumerator__ctor_m6D622EC
 		return;
 	}
 }
-// Mono.Security.X509.X509Certificate Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator::get_Current()
+// Mono.Security.X509.X509Certificate Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator::get_Current()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate_t592E2574612B2C554C7B707754AEC3B66A4B476B * X509CertificateEnumerator_get_Current_m68306EF52C95B315E36054119C0422ACAF95C09F (X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4205,7 +4205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate_t592E2574612B2C554C7B707754AE
 		return ((X509Certificate_t592E2574612B2C554C7B707754AEC3B66A4B476B *)CastclassClass((RuntimeObject*)L_1, X509Certificate_t592E2574612B2C554C7B707754AEC3B66A4B476B_il2cpp_TypeInfo_var));
 	}
 }
-// System.Object Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator::System.Collections.IEnumerator.get_Current()
+// System.Object Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator::System.Collections.IEnumerator.get_Current()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * X509CertificateEnumerator_System_Collections_IEnumerator_get_Current_mC3AF6C0A357F9080FF968652C79701F0B5878BD3 (X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4221,7 +4221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * X509CertificateEnumerator_Sys
 		return L_1;
 	}
 }
-// System.Boolean Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator::System.Collections.IEnumerator.MoveNext()
+// System.Boolean Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator::System.Collections.IEnumerator.MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509CertificateEnumerator_System_Collections_IEnumerator_MoveNext_m5A4EC92045952FE946B64B22EF2AB3B819E7F7F9 (X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4237,7 +4237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509CertificateEnumerator_System_Collect
 		return L_1;
 	}
 }
-// System.Void Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator::System.Collections.IEnumerator.Reset()
+// System.Void Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator::System.Collections.IEnumerator.Reset()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void X509CertificateEnumerator_System_Collections_IEnumerator_Reset_m0DC0B0E3F02675E4815703748AAD8E7F9277ED75 (X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4253,7 +4253,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void X509CertificateEnumerator_System_Collect
 		return;
 	}
 }
-// System.Boolean Mono.Security.X509.X509CertificateCollection_X509CertificateEnumerator::MoveNext()
+// System.Boolean Mono.Security.X509.X509CertificateCollection/X509CertificateEnumerator::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool X509CertificateEnumerator_MoveNext_m9E88A7C9685146F7E558267D7D828711C5E898F4 (X509CertificateEnumerator_t1CBC050F10F4BE1E2A8552A1F22E705013EBF505 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;

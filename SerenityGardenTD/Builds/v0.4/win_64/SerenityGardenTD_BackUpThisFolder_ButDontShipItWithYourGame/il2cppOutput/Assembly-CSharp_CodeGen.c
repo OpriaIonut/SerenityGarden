@@ -390,9 +390,9 @@ extern void GamePauseManager_Awake_mA8515798C4E51812CF83EFA1178F4DAF46E4D3CA (vo
 extern void GamePauseManager_get_GamePaused_m7B1A9569EA4C87E4B9762AE427894DD8C58C9372 (void);
 // 0x000000BA System.Single SerenityGarden.GamePauseManager::get_PausedTime()
 extern void GamePauseManager_get_PausedTime_mA7FCB365F4BC7E23C3A8D72CB862647B33E5BB97 (void);
-// 0x000000BB System.Void SerenityGarden.GamePauseManager::AddUnpauseEvent(SerenityGarden.GamePauseManager_UnpauseGameEvent)
+// 0x000000BB System.Void SerenityGarden.GamePauseManager::AddUnpauseEvent(SerenityGarden.GamePauseManager/UnpauseGameEvent)
 extern void GamePauseManager_AddUnpauseEvent_m6790ECE7C7D62681D378B783F8909C81162F183D (void);
-// 0x000000BC System.Void SerenityGarden.GamePauseManager::RemoveUnpauseEvent(SerenityGarden.GamePauseManager_UnpauseGameEvent)
+// 0x000000BC System.Void SerenityGarden.GamePauseManager::RemoveUnpauseEvent(SerenityGarden.GamePauseManager/UnpauseGameEvent)
 extern void GamePauseManager_RemoveUnpauseEvent_mCA54D96AAEB4CDBFC01B4FDB999997430FFF7DF0 (void);
 // 0x000000BD System.Void SerenityGarden.GamePauseManager::_PauseGame()
 extern void GamePauseManager__PauseGame_m6D16C381226A2A1AAF82706C0B9666E7D5EA7BA7 (void);
@@ -584,672 +584,676 @@ extern void LockOnManager_Start_mEFD832FD4C12B21A1262FF9A1E45A3D68A42D440 (void)
 extern void LockOnManager_SelectEnemy_m40AF524AE16E5A44F412A0E9F49FF4C8DA5C1F07 (void);
 // 0x00000132 System.Void SerenityGarden.LockOnManager::.ctor()
 extern void LockOnManager__ctor_m0F57CCE93E380A29DD04117A5CD93D2B284C2C49 (void);
-// 0x00000133 System.Void SerenityGarden.SceneClickManager::Start()
+// 0x00000133 System.Void SerenityGarden.SceneClickManager::Awake()
+extern void SceneClickManager_Awake_mEED19085E5D064ED1B794B533074266B72D05849 (void);
+// 0x00000134 System.Void SerenityGarden.SceneClickManager::Start()
 extern void SceneClickManager_Start_mA2ED68DBDCD563A804A3EDC690115D2638015599 (void);
-// 0x00000134 System.Void SerenityGarden.SceneClickManager::OnPressHandler()
+// 0x00000135 System.Void SerenityGarden.SceneClickManager::OnPressHandler()
 extern void SceneClickManager_OnPressHandler_mFC96EE0A615E58BBFEA573C8F14181DDBC867360 (void);
-// 0x00000135 System.Void SerenityGarden.SceneClickManager::DisablePreviousStates()
+// 0x00000136 System.Void SerenityGarden.SceneClickManager::DisablePreviousStates()
 extern void SceneClickManager_DisablePreviousStates_mE7DEBB224C96D0F7A051BA7FBD97C36DA2FB6889 (void);
-// 0x00000136 System.Void SerenityGarden.SceneClickManager::FindCurrentSelected()
+// 0x00000137 System.Void SerenityGarden.SceneClickManager::FindCurrentSelected()
 extern void SceneClickManager_FindCurrentSelected_mC789EE19AC42DA38F0A509D3029E8F3383D6ED49 (void);
-// 0x00000137 System.Void SerenityGarden.SceneClickManager::UpdateSelectedReferences()
+// 0x00000138 System.Void SerenityGarden.SceneClickManager::UpdateSelectedReferences()
 extern void SceneClickManager_UpdateSelectedReferences_mD69946079BB6E89D3FD6E4A4F0BD5A99E1E832EA (void);
-// 0x00000138 System.Void SerenityGarden.SceneClickManager::.ctor()
+// 0x00000139 System.Void SerenityGarden.SceneClickManager::.ctor()
 extern void SceneClickManager__ctor_m11E62E2B91DC0213C20D426DB6F2B96ECC100401 (void);
-// 0x00000139 System.Void SerenityGarden.TurretBuildManager::Awake()
+// 0x0000013A System.Void SerenityGarden.TurretBuildManager::Awake()
 extern void TurretBuildManager_Awake_m579C5678976EB15D56AC529B5C9B6C21BFC83A5C (void);
-// 0x0000013A System.Int32 SerenityGarden.TurretBuildManager::get_Money()
+// 0x0000013B System.Int32 SerenityGarden.TurretBuildManager::get_Money()
 extern void TurretBuildManager_get_Money_mBA08EAACDFA345614CACDE3CC8B1EFEA02BE2EA9 (void);
-// 0x0000013B System.Void SerenityGarden.TurretBuildManager::set_Money(System.Int32)
+// 0x0000013C System.Void SerenityGarden.TurretBuildManager::set_Money(System.Int32)
 extern void TurretBuildManager_set_Money_mCE514B684D28E883848FA914C34F2501AEC5FAEA (void);
-// 0x0000013C System.Void SerenityGarden.TurretBuildManager::Start()
+// 0x0000013D System.Void SerenityGarden.TurretBuildManager::Start()
 extern void TurretBuildManager_Start_m1A77D99F2EB495DE9AF3E62A92ECCA1EB26610E0 (void);
-// 0x0000013D System.Void SerenityGarden.TurretBuildManager::Update()
+// 0x0000013E System.Void SerenityGarden.TurretBuildManager::Update()
 extern void TurretBuildManager_Update_m7A2CC0F35A87C00513790061CE7A01BDB2D3790D (void);
-// 0x0000013E System.Void SerenityGarden.TurretBuildManager::SelectTurret()
+// 0x0000013F System.Void SerenityGarden.TurretBuildManager::SelectTurret()
 extern void TurretBuildManager_SelectTurret_mE54124F5BFCCF68138E00FFA960033B9E83DDE8E (void);
-// 0x0000013F System.Void SerenityGarden.TurretBuildManager::SelectHexagon()
+// 0x00000140 System.Void SerenityGarden.TurretBuildManager::SelectHexagon()
 extern void TurretBuildManager_SelectHexagon_mE236D0CCC140FA4421B78E6F17C9425975E0E803 (void);
-// 0x00000140 System.Void SerenityGarden.TurretBuildManager::_BuildTurret(System.Int32)
+// 0x00000141 System.Void SerenityGarden.TurretBuildManager::_BuildTurret(System.Int32)
 extern void TurretBuildManager__BuildTurret_mD59EBC2A33968AEFA9901A4AD1C6AB28F2A397B6 (void);
-// 0x00000141 System.Void SerenityGarden.TurretBuildManager::_SellTurret()
+// 0x00000142 System.Void SerenityGarden.TurretBuildManager::_SellTurret()
 extern void TurretBuildManager__SellTurret_mCEE2CCF2FE21267521958526F58B3EE83DEEA9F3 (void);
-// 0x00000142 System.Void SerenityGarden.TurretBuildManager::_RepairTurret()
+// 0x00000143 System.Void SerenityGarden.TurretBuildManager::_RepairTurret()
 extern void TurretBuildManager__RepairTurret_mE400560B3F4A48867345D26DB0BA2C5633BFA310 (void);
-// 0x00000143 System.Void SerenityGarden.TurretBuildManager::_UpgradeTurret()
+// 0x00000144 System.Void SerenityGarden.TurretBuildManager::_UpgradeTurret()
 extern void TurretBuildManager__UpgradeTurret_m09B6412CCF064BD3146391D2552FF7E88CA59001 (void);
-// 0x00000144 System.Void SerenityGarden.TurretBuildManager::.ctor()
+// 0x00000145 System.Void SerenityGarden.TurretBuildManager::.ctor()
 extern void TurretBuildManager__ctor_mBD12F307B774729754AE4825B6AE4EE126BCF9F0 (void);
-// 0x00000145 System.Int32 SerenityGarden.BuildableTurret::get_CurrentLevel()
+// 0x00000146 System.Int32 SerenityGarden.BuildableTurret::get_CurrentLevel()
 extern void BuildableTurret_get_CurrentLevel_m1E2EEAB816741D551747A46CB7EEA6E83FE65546 (void);
-// 0x00000146 System.Void SerenityGarden.BuildableTurret::set_CurrentLevel(System.Int32)
+// 0x00000147 System.Void SerenityGarden.BuildableTurret::set_CurrentLevel(System.Int32)
 extern void BuildableTurret_set_CurrentLevel_m8EA922BAA3AECE57550D065D58BA4918C1FB97A3 (void);
-// 0x00000147 System.Boolean SerenityGarden.BuildableTurret::get_IsRecovering()
+// 0x00000148 System.Boolean SerenityGarden.BuildableTurret::get_IsRecovering()
 extern void BuildableTurret_get_IsRecovering_m3A225E816DDF0D08DB25C4E8073BD5221FC42E4C (void);
-// 0x00000148 System.Void SerenityGarden.BuildableTurret::set_IsRecovering(System.Boolean)
+// 0x00000149 System.Void SerenityGarden.BuildableTurret::set_IsRecovering(System.Boolean)
 extern void BuildableTurret_set_IsRecovering_mA8C9E13FBE8EA15A4A416AF1B4220E12C5CD0ED0 (void);
-// 0x00000149 System.Single SerenityGarden.BuildableTurret::get_RecoveryCostPer1Hp()
+// 0x0000014A System.Single SerenityGarden.BuildableTurret::get_RecoveryCostPer1Hp()
 extern void BuildableTurret_get_RecoveryCostPer1Hp_mD134C536CD074705B4B9898C5FB3075F9451EB0E (void);
-// 0x0000014A System.Void SerenityGarden.BuildableTurret::set_RecoveryCostPer1Hp(System.Single)
+// 0x0000014B System.Void SerenityGarden.BuildableTurret::set_RecoveryCostPer1Hp(System.Single)
 extern void BuildableTurret_set_RecoveryCostPer1Hp_m4B08462D240E2185B6CE03D54C38EC74E9FF3C5D (void);
-// 0x0000014B System.Single SerenityGarden.BuildableTurret::get_RecoveryPerSecond()
+// 0x0000014C System.Single SerenityGarden.BuildableTurret::get_RecoveryPerSecond()
 extern void BuildableTurret_get_RecoveryPerSecond_mE5554389CEC8EF950BDB7282C791FB9B7F300154 (void);
-// 0x0000014C System.Void SerenityGarden.BuildableTurret::set_RecoveryPerSecond(System.Single)
+// 0x0000014D System.Void SerenityGarden.BuildableTurret::set_RecoveryPerSecond(System.Single)
 extern void BuildableTurret_set_RecoveryPerSecond_m0B054DD169A9C10A6D710E3F8DD0DF5CF45F5680 (void);
-// 0x0000014D System.Boolean SerenityGarden.BuildableTurret::get_HasCommander()
+// 0x0000014E System.Boolean SerenityGarden.BuildableTurret::get_HasCommander()
 extern void BuildableTurret_get_HasCommander_m5E2ED31DB76EE61A58CEA5A660DD6A9F9686938E (void);
-// 0x0000014E System.Void SerenityGarden.BuildableTurret::set_HasCommander(System.Boolean)
+// 0x0000014F System.Void SerenityGarden.BuildableTurret::set_HasCommander(System.Boolean)
 extern void BuildableTurret_set_HasCommander_mE7691A491FA68EAA94728C2CD686CD5CE77932F2 (void);
-// 0x0000014F System.Void SerenityGarden.BuildableTurret::BaseStartCalls()
+// 0x00000150 System.Void SerenityGarden.BuildableTurret::BaseStartCalls()
 extern void BuildableTurret_BaseStartCalls_m70A42A41CC7AABCDB047FF4DF7C588411A8DB63D (void);
-// 0x00000150 System.Void SerenityGarden.BuildableTurret::BaseUpdateCalls()
+// 0x00000151 System.Void SerenityGarden.BuildableTurret::BaseUpdateCalls()
 extern void BuildableTurret_BaseUpdateCalls_m3463C7FA73C31DE092688B989BF006E05D8344D6 (void);
-// 0x00000151 System.Boolean SerenityGarden.BuildableTurret::Upgrade()
+// 0x00000152 System.Boolean SerenityGarden.BuildableTurret::Upgrade()
 extern void BuildableTurret_Upgrade_mDDFB2E66B066FB3191C46F21B3BDE9C882CC0182 (void);
-// 0x00000152 System.Void SerenityGarden.BuildableTurret::Die()
+// 0x00000153 System.Void SerenityGarden.BuildableTurret::Die()
 extern void BuildableTurret_Die_m6960AC7C1585CBBE8A05DEBBBD94B97A8CCF9852 (void);
-// 0x00000153 System.Int32 SerenityGarden.BuildableTurret::GetRecoveryCost()
+// 0x00000154 System.Int32 SerenityGarden.BuildableTurret::GetRecoveryCost()
 extern void BuildableTurret_GetRecoveryCost_m4D163BB8818670F8C692F87284B5A59AE4667401 (void);
-// 0x00000154 System.Int32 SerenityGarden.BuildableTurret::GetBuildCost()
+// 0x00000155 System.Int32 SerenityGarden.BuildableTurret::GetBuildCost()
 extern void BuildableTurret_GetBuildCost_mDB394650B184F6EEFFD6C60E54124C3113858C80 (void);
-// 0x00000155 System.Int32 SerenityGarden.BuildableTurret::GetUpgradeCost()
+// 0x00000156 System.Int32 SerenityGarden.BuildableTurret::GetUpgradeCost()
 extern void BuildableTurret_GetUpgradeCost_mD826D4C4EA8A76E4B22A9D679D892939B534FE23 (void);
-// 0x00000156 System.Boolean SerenityGarden.BuildableTurret::StartRecovery(UnityEngine.Material)
+// 0x00000157 System.Boolean SerenityGarden.BuildableTurret::StartRecovery(UnityEngine.Material)
 extern void BuildableTurret_StartRecovery_m2D71F964493425169ED660CBF3DCFB3F09598F9F (void);
-// 0x00000157 System.Void SerenityGarden.BuildableTurret::SellTurret()
+// 0x00000158 System.Void SerenityGarden.BuildableTurret::SellTurret()
 extern void BuildableTurret_SellTurret_mEEF06127255A910571100AC02C821314B4C81049 (void);
-// 0x00000158 System.Void SerenityGarden.BuildableTurret::OnPhotonInstantiate(Photon.Pun.PhotonMessageInfo)
+// 0x00000159 System.Void SerenityGarden.BuildableTurret::OnPhotonInstantiate(Photon.Pun.PhotonMessageInfo)
 extern void BuildableTurret_OnPhotonInstantiate_m456DC41BE9B508784A752D005157FFE84C6DC8D0 (void);
-// 0x00000159 System.Void SerenityGarden.BuildableTurret::OnDestroy()
+// 0x0000015A System.Void SerenityGarden.BuildableTurret::OnDestroy()
 extern void BuildableTurret_OnDestroy_mA817F3DBE07BD649CF6F3287DB25688DE8D9E503 (void);
-// 0x0000015A System.Void SerenityGarden.BuildableTurret::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x0000015B System.Void SerenityGarden.BuildableTurret::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void BuildableTurret_OnPhotonSerializeView_mB238BD94C937ED78C4D79D87FF909956E5034A11 (void);
-// 0x0000015B System.Void SerenityGarden.BuildableTurret::.ctor()
+// 0x0000015C System.Void SerenityGarden.BuildableTurret::.ctor()
 extern void BuildableTurret__ctor_mBE86258842D47DE706BD2140C6E613C46865E833 (void);
-// 0x0000015C System.Single SerenityGarden.TurretBase::get_MaxHealth()
+// 0x0000015D System.Single SerenityGarden.TurretBase::get_MaxHealth()
 extern void TurretBase_get_MaxHealth_m5A3FE31EB2D6E435436C909D53B41354D7453FA4 (void);
-// 0x0000015D System.Single SerenityGarden.TurretBase::get_Health()
+// 0x0000015E System.Single SerenityGarden.TurretBase::get_Health()
 extern void TurretBase_get_Health_m09EDD5F898AD43BC1173E490731376D974CEB602 (void);
-// 0x0000015E System.Void SerenityGarden.TurretBase::set_Health(System.Single)
+// 0x0000015F System.Void SerenityGarden.TurretBase::set_Health(System.Single)
 extern void TurretBase_set_Health_mFD683C42219C58A7F5C2556E1AB7F56E6F703C7E (void);
-// 0x0000015F System.Int32 SerenityGarden.TurretBase::get_DestroyReward()
+// 0x00000160 System.Int32 SerenityGarden.TurretBase::get_DestroyReward()
 extern void TurretBase_get_DestroyReward_mD4E91EE5E147BF7A39CB6369682A671444101E30 (void);
-// 0x00000160 System.Void SerenityGarden.TurretBase::set_DestroyReward(System.Int32)
+// 0x00000161 System.Void SerenityGarden.TurretBase::set_DestroyReward(System.Int32)
 extern void TurretBase_set_DestroyReward_m99E6BAA9CA0184EE841B07962013DFDEA91C6F2D (void);
-// 0x00000161 SerenityGarden.EnemyBase SerenityGarden.TurretBase::get_Target()
+// 0x00000162 SerenityGarden.EnemyBase SerenityGarden.TurretBase::get_Target()
 extern void TurretBase_get_Target_m79F6FB8FB7A4BC5386110C436A950317E0C466D3 (void);
-// 0x00000162 System.Void SerenityGarden.TurretBase::set_Target(SerenityGarden.EnemyBase)
+// 0x00000163 System.Void SerenityGarden.TurretBase::set_Target(SerenityGarden.EnemyBase)
 extern void TurretBase_set_Target_m650ACA86A59A82DEA0DA98CA2BA0234136108377 (void);
-// 0x00000163 System.Single SerenityGarden.TurretBase::get_Damage()
+// 0x00000164 System.Single SerenityGarden.TurretBase::get_Damage()
 extern void TurretBase_get_Damage_mEE7B3381C758C77C36D007C86AE25B75F761BAAF (void);
-// 0x00000164 System.Void SerenityGarden.TurretBase::set_Damage(System.Single)
+// 0x00000165 System.Void SerenityGarden.TurretBase::set_Damage(System.Single)
 extern void TurretBase_set_Damage_mD8051AD5B1139A7892CD729936F497DF54F9E009 (void);
-// 0x00000165 System.Single SerenityGarden.TurretBase::get_AttackCooldown()
+// 0x00000166 System.Single SerenityGarden.TurretBase::get_AttackCooldown()
 extern void TurretBase_get_AttackCooldown_mBFA4AC2473D2E0435CCAFCD7648AF2C9022BC207 (void);
-// 0x00000166 System.Void SerenityGarden.TurretBase::set_AttackCooldown(System.Single)
+// 0x00000167 System.Void SerenityGarden.TurretBase::set_AttackCooldown(System.Single)
 extern void TurretBase_set_AttackCooldown_mCCC82136F238A9F0A81E931214749189CA8BDA12 (void);
-// 0x00000167 System.Single SerenityGarden.TurretBase::get_Range()
+// 0x00000168 System.Single SerenityGarden.TurretBase::get_Range()
 extern void TurretBase_get_Range_m04A266B69890546C41E5AE5BCDEB761CA7CA93E4 (void);
-// 0x00000168 System.Void SerenityGarden.TurretBase::set_Range(System.Single)
+// 0x00000169 System.Void SerenityGarden.TurretBase::set_Range(System.Single)
 extern void TurretBase_set_Range_m8C7A5CB7FD6B85C69D5C3C1C9020581B2557F5D7 (void);
-// 0x00000169 System.Single SerenityGarden.TurretBase::get_LastAttackTime()
+// 0x0000016A System.Single SerenityGarden.TurretBase::get_LastAttackTime()
 extern void TurretBase_get_LastAttackTime_mEB0F46EB85CC44AFEB98320E168CED21F88FFC83 (void);
-// 0x0000016A System.Void SerenityGarden.TurretBase::set_LastAttackTime(System.Single)
+// 0x0000016B System.Void SerenityGarden.TurretBase::set_LastAttackTime(System.Single)
 extern void TurretBase_set_LastAttackTime_m77B277C99B3D6B4986C14A903E27A9AC245DDFF3 (void);
-// 0x0000016B System.Single SerenityGarden.TurretBase::get_SearchTargetCooldown()
+// 0x0000016C System.Single SerenityGarden.TurretBase::get_SearchTargetCooldown()
 extern void TurretBase_get_SearchTargetCooldown_mA1C02FBDD6198E3A76829B82D408FCED74C1E719 (void);
-// 0x0000016C System.Void SerenityGarden.TurretBase::set_SearchTargetCooldown(System.Single)
+// 0x0000016D System.Void SerenityGarden.TurretBase::set_SearchTargetCooldown(System.Single)
 extern void TurretBase_set_SearchTargetCooldown_m88E188F8732F6C84F6092A435F660B62F1322242 (void);
-// 0x0000016D System.Single SerenityGarden.TurretBase::get_LastSearchTargetTime()
+// 0x0000016E System.Single SerenityGarden.TurretBase::get_LastSearchTargetTime()
 extern void TurretBase_get_LastSearchTargetTime_mC628A3BAE2097CB32140DC5E770D8494E4F2BDAC (void);
-// 0x0000016E System.Void SerenityGarden.TurretBase::set_LastSearchTargetTime(System.Single)
+// 0x0000016F System.Void SerenityGarden.TurretBase::set_LastSearchTargetTime(System.Single)
 extern void TurretBase_set_LastSearchTargetTime_mEA8A52F32491215DCA268F061CA48D57924140FE (void);
-// 0x0000016F System.Void SerenityGarden.TurretBase::BaseStartCalls()
+// 0x00000170 System.Void SerenityGarden.TurretBase::BaseStartCalls()
 extern void TurretBase_BaseStartCalls_mA5683D1EDBCE50D4E33E4432CD1C080DF73B8A84 (void);
-// 0x00000170 System.Void SerenityGarden.TurretBase::SetLevelProp(System.Int32)
+// 0x00000171 System.Void SerenityGarden.TurretBase::SetLevelProp(System.Int32)
 extern void TurretBase_SetLevelProp_m7E31D799D9AFAFF79E80D4D1418EAE39DDC77A37 (void);
-// 0x00000171 System.Void SerenityGarden.TurretBase::OnResumeGame()
+// 0x00000172 System.Void SerenityGarden.TurretBase::OnResumeGame()
 extern void TurretBase_OnResumeGame_m366DF0A92058B828288262F08F7C56631510DD74 (void);
-// 0x00000172 System.Void SerenityGarden.TurretBase::DrawRange(System.Boolean)
+// 0x00000173 System.Void SerenityGarden.TurretBase::DrawRange(System.Boolean)
 extern void TurretBase_DrawRange_m29835CFDDA78F6AF9008AA3A35CE388F0FA83D38 (void);
-// 0x00000173 System.Void SerenityGarden.TurretBase::FindTarget()
-// 0x00000174 System.Boolean SerenityGarden.TurretBase::HasAllDependencies()
+// 0x00000174 System.Void SerenityGarden.TurretBase::FindTarget()
+// 0x00000175 System.Boolean SerenityGarden.TurretBase::HasAllDependencies()
 extern void TurretBase_HasAllDependencies_mA63532E1194D190E9DE072B14D3F5FA1C38A3807 (void);
-// 0x00000175 System.Void SerenityGarden.TurretBase::Attack()
-// 0x00000176 System.Void SerenityGarden.TurretBase::Die()
+// 0x00000176 System.Void SerenityGarden.TurretBase::Attack()
+// 0x00000177 System.Void SerenityGarden.TurretBase::Die()
 extern void TurretBase_Die_mD7096E5083F54E64314D4D96A2B0F98D9E99D285 (void);
-// 0x00000177 System.Void SerenityGarden.TurretBase::Init()
+// 0x00000178 System.Void SerenityGarden.TurretBase::Init()
 extern void TurretBase_Init_m7B900B4432021AD12B6CAD3E064B03352DD697D1 (void);
-// 0x00000178 System.Void SerenityGarden.TurretBase::BaseUpdateCalls()
+// 0x00000179 System.Void SerenityGarden.TurretBase::BaseUpdateCalls()
 extern void TurretBase_BaseUpdateCalls_m82B210FBC0F74EF694FE4C589635191C94F33DAC (void);
-// 0x00000179 System.Void SerenityGarden.TurretBase::.ctor()
+// 0x0000017A System.Void SerenityGarden.TurretBase::.ctor()
 extern void TurretBase__ctor_mB9FBB72FD1DD6B00C21247A970D9EE9744C4E32B (void);
-// 0x0000017A System.Void SerenityGarden.TurretLevel::.ctor()
+// 0x0000017B System.Void SerenityGarden.TurretLevel::.ctor()
 extern void TurretLevel__ctor_m0F3B2A45B04E8FB397C985AA768B7CA44608B747 (void);
-// 0x0000017B System.Void SerenityGarden.TurretStatusScriptable::.ctor()
+// 0x0000017C System.Void SerenityGarden.TurretStatusScriptable::.ctor()
 extern void TurretStatusScriptable__ctor_m63DBAA9E0BB399C3332E05EFD76DD79DBF1D1B00 (void);
-// 0x0000017C System.Void SerenityGarden.PlayerBase::Awake()
+// 0x0000017D System.Void SerenityGarden.PlayerBase::Awake()
 extern void PlayerBase_Awake_m4FB93083B355314254C26E910937DACAB8F91D42 (void);
-// 0x0000017D System.Void SerenityGarden.PlayerBase::Start()
+// 0x0000017E System.Void SerenityGarden.PlayerBase::Start()
 extern void PlayerBase_Start_m7214F3D390EF581FCEAE38AD05732B00F4515F6A (void);
-// 0x0000017E System.Void SerenityGarden.PlayerBase::Update()
+// 0x0000017F System.Void SerenityGarden.PlayerBase::Update()
 extern void PlayerBase_Update_m8EFBD6CF46269A9EE1242DADC59C70560A028384 (void);
-// 0x0000017F System.Void SerenityGarden.PlayerBase::FindTarget()
+// 0x00000180 System.Void SerenityGarden.PlayerBase::FindTarget()
 extern void PlayerBase_FindTarget_m22D424141EA728418D16D9BC2E1133E24D0D25E8 (void);
-// 0x00000180 System.Void SerenityGarden.PlayerBase::Attack()
+// 0x00000181 System.Void SerenityGarden.PlayerBase::Attack()
 extern void PlayerBase_Attack_mCB34837D0B3E3882750573E96ED7F8C05FFD5577 (void);
-// 0x00000181 System.Void SerenityGarden.PlayerBase::Die()
+// 0x00000182 System.Void SerenityGarden.PlayerBase::Die()
 extern void PlayerBase_Die_m198BC6740FA58FDD04CDC2BF43667B10E758B807 (void);
-// 0x00000182 System.Void SerenityGarden.PlayerBase::Init()
+// 0x00000183 System.Void SerenityGarden.PlayerBase::Init()
 extern void PlayerBase_Init_m254A57B68E4884A6C4D5F2E89393553C38613AE0 (void);
-// 0x00000183 System.Void SerenityGarden.PlayerBase::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x00000184 System.Void SerenityGarden.PlayerBase::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void PlayerBase_OnPhotonSerializeView_m0759EE3447A77B9C82E01AD1701F06901876ADF7 (void);
-// 0x00000184 System.Void SerenityGarden.PlayerBase::.ctor()
+// 0x00000185 System.Void SerenityGarden.PlayerBase::.ctor()
 extern void PlayerBase__ctor_m91AD4AD7D42EBCE151C7BECCB351E2B4964AF0F4 (void);
-// 0x00000185 System.Void SerenityGarden.TurretElectricFence::Awake()
+// 0x00000186 System.Void SerenityGarden.TurretElectricFence::Awake()
 extern void TurretElectricFence_Awake_m43BDB0D1822A09CC2D8401E96BDCB3D358BECC20 (void);
-// 0x00000186 System.Void SerenityGarden.TurretElectricFence::Start()
+// 0x00000187 System.Void SerenityGarden.TurretElectricFence::Start()
 extern void TurretElectricFence_Start_m1FB2A444AB48BC6B5343B6ECA29D0DC7DE05E1DF (void);
-// 0x00000187 System.Void SerenityGarden.TurretElectricFence::Update()
+// 0x00000188 System.Void SerenityGarden.TurretElectricFence::Update()
 extern void TurretElectricFence_Update_mF5CB5CF546A9388678D97816DA0F94BD80EDE2D3 (void);
-// 0x00000188 System.Void SerenityGarden.TurretElectricFence::Attack()
+// 0x00000189 System.Void SerenityGarden.TurretElectricFence::Attack()
 extern void TurretElectricFence_Attack_m6AFDC3C9CE6002CA58FA117AFA20E565DC98579A (void);
-// 0x00000189 System.Void SerenityGarden.TurretElectricFence::FindTarget()
+// 0x0000018A System.Void SerenityGarden.TurretElectricFence::FindTarget()
 extern void TurretElectricFence_FindTarget_m239528AD86662BE771D5D8E5A787FDA4D41A3922 (void);
-// 0x0000018A System.Void SerenityGarden.TurretElectricFence::.ctor()
+// 0x0000018B System.Void SerenityGarden.TurretElectricFence::.ctor()
 extern void TurretElectricFence__ctor_m2B7EE1A5B2A2FE6399EEE76AA43EEF3E330E9964 (void);
-// 0x0000018B System.Void SerenityGarden.TurretExcavator::Awake()
+// 0x0000018C System.Void SerenityGarden.TurretExcavator::Awake()
 extern void TurretExcavator_Awake_m3AF7AA9D9DE8D1A1909B2F332B3A038AB67FAF88 (void);
-// 0x0000018C System.Void SerenityGarden.TurretExcavator::Start()
+// 0x0000018D System.Void SerenityGarden.TurretExcavator::Start()
 extern void TurretExcavator_Start_m46EF037B1E6FE436F43D064FCD0C74775BDE4F75 (void);
-// 0x0000018D System.Void SerenityGarden.TurretExcavator::Update()
+// 0x0000018E System.Void SerenityGarden.TurretExcavator::Update()
 extern void TurretExcavator_Update_m9DE35E427902EF0A160C49844A4C7D7DE02D2E83 (void);
-// 0x0000018E System.Void SerenityGarden.TurretExcavator::Attack()
+// 0x0000018F System.Void SerenityGarden.TurretExcavator::Attack()
 extern void TurretExcavator_Attack_m2F507E4B7DF63B8CF6473FFDB5EF8DE610D1C3FA (void);
-// 0x0000018F System.Void SerenityGarden.TurretExcavator::FindTarget()
+// 0x00000190 System.Void SerenityGarden.TurretExcavator::FindTarget()
 extern void TurretExcavator_FindTarget_m4ABB5ED2D50216E51137140D8D9173AE9D8E25E4 (void);
-// 0x00000190 System.Void SerenityGarden.TurretExcavator::.ctor()
+// 0x00000191 System.Void SerenityGarden.TurretExcavator::.ctor()
 extern void TurretExcavator__ctor_m14CCC48425450B7DE9977F08015246F097C3F323 (void);
-// 0x00000191 System.Void SerenityGarden.TurretMachineCannon::Awake()
+// 0x00000192 System.Void SerenityGarden.TurretMachineCannon::Awake()
 extern void TurretMachineCannon_Awake_m02741409AD76EA7E92C6DD7E664820B72F45DBA3 (void);
-// 0x00000192 System.Void SerenityGarden.TurretMachineCannon::Start()
+// 0x00000193 System.Void SerenityGarden.TurretMachineCannon::Start()
 extern void TurretMachineCannon_Start_m48EDABB7A96AD38D49B2164219D6FB2B429A12D0 (void);
-// 0x00000193 System.Void SerenityGarden.TurretMachineCannon::Update()
+// 0x00000194 System.Void SerenityGarden.TurretMachineCannon::Update()
 extern void TurretMachineCannon_Update_mF317F0CAECC185E899BC2B1520B8FFEDE94C671A (void);
-// 0x00000194 System.Void SerenityGarden.TurretMachineCannon::Attack()
+// 0x00000195 System.Void SerenityGarden.TurretMachineCannon::Attack()
 extern void TurretMachineCannon_Attack_m45F30EB7A574FE2D748428A0561FB4C9E83F4A59 (void);
-// 0x00000195 System.Void SerenityGarden.TurretMachineCannon::FindTarget()
+// 0x00000196 System.Void SerenityGarden.TurretMachineCannon::FindTarget()
 extern void TurretMachineCannon_FindTarget_mBDB7FEA2BDEBF99E18D84D717297A66C5DDD08D2 (void);
-// 0x00000196 System.Void SerenityGarden.TurretMachineCannon::.ctor()
+// 0x00000197 System.Void SerenityGarden.TurretMachineCannon::.ctor()
 extern void TurretMachineCannon__ctor_m694EE3464A03D5ACA4E74F890FA3A769FEB81097 (void);
-// 0x00000197 System.Void SerenityGarden.TurretMachineGun::Awake()
+// 0x00000198 System.Void SerenityGarden.TurretMachineGun::Awake()
 extern void TurretMachineGun_Awake_m472A81164DB215472099073614821EE39C819B1E (void);
-// 0x00000198 System.Void SerenityGarden.TurretMachineGun::Start()
+// 0x00000199 System.Void SerenityGarden.TurretMachineGun::Start()
 extern void TurretMachineGun_Start_m341FADA9564EE09151F6C44D759A56D1A01F3D4F (void);
-// 0x00000199 System.Void SerenityGarden.TurretMachineGun::Update()
+// 0x0000019A System.Void SerenityGarden.TurretMachineGun::Update()
 extern void TurretMachineGun_Update_m5B90E21E5A181AB6F6F06E109FCDC550C2EEC00B (void);
-// 0x0000019A System.Void SerenityGarden.TurretMachineGun::Attack()
+// 0x0000019B System.Void SerenityGarden.TurretMachineGun::Attack()
 extern void TurretMachineGun_Attack_m4643157D53C01D5758494D7E416735BB55D01D68 (void);
-// 0x0000019B System.Void SerenityGarden.TurretMachineGun::FindTarget()
+// 0x0000019C System.Void SerenityGarden.TurretMachineGun::FindTarget()
 extern void TurretMachineGun_FindTarget_m229269333553572AC9004332D3DF99641B637E4B (void);
-// 0x0000019C System.Void SerenityGarden.TurretMachineGun::.ctor()
+// 0x0000019D System.Void SerenityGarden.TurretMachineGun::.ctor()
 extern void TurretMachineGun__ctor_mDC190BDC6D3914812F4041A8A6D11B1169A3DDFD (void);
-// 0x0000019D System.Void SerenityGarden.TurretRailgun::Awake()
+// 0x0000019E System.Void SerenityGarden.TurretRailgun::Awake()
 extern void TurretRailgun_Awake_m2A095E117B00F99637866600F62AE2FB48B48EFC (void);
-// 0x0000019E System.Void SerenityGarden.TurretRailgun::Start()
+// 0x0000019F System.Void SerenityGarden.TurretRailgun::Start()
 extern void TurretRailgun_Start_m92FE39AC378A9EFCF3E3CB892ACAA8895057D2FA (void);
-// 0x0000019F System.Void SerenityGarden.TurretRailgun::Update()
+// 0x000001A0 System.Void SerenityGarden.TurretRailgun::Update()
 extern void TurretRailgun_Update_mECF16A35F9C7D99CD98E046E0A530D528D9E341A (void);
-// 0x000001A0 System.Void SerenityGarden.TurretRailgun::Attack()
+// 0x000001A1 System.Void SerenityGarden.TurretRailgun::Attack()
 extern void TurretRailgun_Attack_mCE726329142D06552ABDED8E1738E004B7BABA09 (void);
-// 0x000001A1 System.Void SerenityGarden.TurretRailgun::FindTarget()
+// 0x000001A2 System.Void SerenityGarden.TurretRailgun::FindTarget()
 extern void TurretRailgun_FindTarget_mD2396735100B35E602E6A5E6D9F23DCAA44AE946 (void);
-// 0x000001A2 System.Void SerenityGarden.TurretRailgun::.ctor()
+// 0x000001A3 System.Void SerenityGarden.TurretRailgun::.ctor()
 extern void TurretRailgun__ctor_mF42FB9368DDEDF3CDBAF5C7FF9851039FE239E01 (void);
-// 0x000001A3 System.Void SerenityGarden.TurretVulkan::Awake()
+// 0x000001A4 System.Void SerenityGarden.TurretVulkan::Awake()
 extern void TurretVulkan_Awake_m19ADE5AC1A4EC3443DE0B5D3577A8B57BCD458A0 (void);
-// 0x000001A4 System.Void SerenityGarden.TurretVulkan::Start()
+// 0x000001A5 System.Void SerenityGarden.TurretVulkan::Start()
 extern void TurretVulkan_Start_m30F526F435773587B866F42B1F744670B15DE58E (void);
-// 0x000001A5 System.Void SerenityGarden.TurretVulkan::Update()
+// 0x000001A6 System.Void SerenityGarden.TurretVulkan::Update()
 extern void TurretVulkan_Update_m842BBADD1AF6510FE7D0EF79044B7FA15A7C510F (void);
-// 0x000001A6 System.Void SerenityGarden.TurretVulkan::Attack()
+// 0x000001A7 System.Void SerenityGarden.TurretVulkan::Attack()
 extern void TurretVulkan_Attack_mEBFB342E28C3C85ABAB3565299E574C094B1D5CA (void);
-// 0x000001A7 System.Void SerenityGarden.TurretVulkan::FindTarget()
+// 0x000001A8 System.Void SerenityGarden.TurretVulkan::FindTarget()
 extern void TurretVulkan_FindTarget_m6D754723D75BDEFAACAF0EF825007293E68513CB (void);
-// 0x000001A8 System.Void SerenityGarden.TurretVulkan::.ctor()
+// 0x000001A9 System.Void SerenityGarden.TurretVulkan::.ctor()
 extern void TurretVulkan__ctor_m6782E42D84BBF0C354B4AC4C9D43DACB15CA1CF7 (void);
-// 0x000001A9 System.Void SerenityGarden.StageScriptable::.ctor()
+// 0x000001AA System.Void SerenityGarden.StageScriptable::.ctor()
 extern void StageScriptable__ctor_m8E88D21838D7ADF440F898D8CF142F5AED5317CC (void);
-// 0x000001AA System.Void SerenityGarden.WaveManager::Awake()
+// 0x000001AB System.Void SerenityGarden.WaveManager::Awake()
 extern void WaveManager_Awake_mA0ED3904596DBF0DD862FE555C4D35FD7B7C5533 (void);
-// 0x000001AB System.Void SerenityGarden.WaveManager::Start()
+// 0x000001AC System.Void SerenityGarden.WaveManager::Start()
 extern void WaveManager_Start_m333BCF2BC0B91B1A6437E8752B87DE8439776F05 (void);
-// 0x000001AC System.Void SerenityGarden.WaveManager::Update()
+// 0x000001AD System.Void SerenityGarden.WaveManager::Update()
 extern void WaveManager_Update_m2DC0DCD16EA71D939C92040D5043AFAD62BDD947 (void);
-// 0x000001AD System.Void SerenityGarden.WaveManager::OnResumeGame()
+// 0x000001AE System.Void SerenityGarden.WaveManager::OnResumeGame()
 extern void WaveManager_OnResumeGame_mF648BC96990129AFFF2E0B97CCB3F445ED799F90 (void);
-// 0x000001AE System.Collections.IEnumerator SerenityGarden.WaveManager::WaveSpawner(SerenityGarden.WaveScriptable)
+// 0x000001AF System.Collections.IEnumerator SerenityGarden.WaveManager::WaveSpawner(SerenityGarden.WaveScriptable)
 extern void WaveManager_WaveSpawner_m555E275C062BA1B5C2835386259EDBD316E105B5 (void);
-// 0x000001AF System.Void SerenityGarden.WaveManager::Init()
+// 0x000001B0 System.Void SerenityGarden.WaveManager::Init()
 extern void WaveManager_Init_m5C7967C0C41FF4AC629A251963EEA7F384062D3C (void);
-// 0x000001B0 System.Void SerenityGarden.WaveManager::FindSpawnPoints()
+// 0x000001B1 System.Void SerenityGarden.WaveManager::FindSpawnPoints()
 extern void WaveManager_FindSpawnPoints_mFC3B3E57F871A7706C3ECCF775BDA036D5ADF0F6 (void);
-// 0x000001B1 System.Void SerenityGarden.WaveManager::SpawnEnemy(UnityEngine.GameObject,SerenityGarden.HexagonalBlock)
+// 0x000001B2 System.Void SerenityGarden.WaveManager::SpawnEnemy(UnityEngine.GameObject,SerenityGarden.HexagonalBlock)
 extern void WaveManager_SpawnEnemy_mDF86640AA87C3672926F0A8975D08F5A70F36706 (void);
-// 0x000001B2 System.Void SerenityGarden.WaveManager::_StartStage()
+// 0x000001B3 System.Void SerenityGarden.WaveManager::_StartStage()
 extern void WaveManager__StartStage_m15D239920726B05A983FA66967633157EBCB2753 (void);
-// 0x000001B3 System.Void SerenityGarden.WaveManager::_SkipWaveDelay()
+// 0x000001B4 System.Void SerenityGarden.WaveManager::_SkipWaveDelay()
 extern void WaveManager__SkipWaveDelay_m1C108A36609B9AAF573ACBAB406DF13A9F1B0196 (void);
-// 0x000001B4 System.Boolean SerenityGarden.WaveManager::HasAllDependencies()
+// 0x000001B5 System.Boolean SerenityGarden.WaveManager::HasAllDependencies()
 extern void WaveManager_HasAllDependencies_mB09584D50309CFF16641806FA7445C16011F0B45 (void);
-// 0x000001B5 System.Void SerenityGarden.WaveManager::.ctor()
+// 0x000001B6 System.Void SerenityGarden.WaveManager::.ctor()
 extern void WaveManager__ctor_mC64A0B13114349EF1B51090A813C5D4F90D2FBC8 (void);
-// 0x000001B6 System.Void SerenityGarden.EnemySpawn::.ctor()
+// 0x000001B7 System.Void SerenityGarden.EnemySpawn::.ctor()
 extern void EnemySpawn__ctor_m921BC47E9572A81CAD014343B2562A3A5C2BC3C7 (void);
-// 0x000001B7 System.Void SerenityGarden.WaveScriptable::.ctor()
+// 0x000001B8 System.Void SerenityGarden.WaveScriptable::.ctor()
 extern void WaveScriptable__ctor_m7EF5A266B903A1A646D10557F1AF9D4936E0DFF4 (void);
-// 0x000001B8 System.Void SerenityGarden.MainMenuClickEvents::OnClick_StartGame()
+// 0x000001B9 System.Void SerenityGarden.MainMenuClickEvents::OnClick_StartGame()
 extern void MainMenuClickEvents_OnClick_StartGame_m5BAF291562A9F8D30EC8E21D9E3EDE88AC6660B3 (void);
-// 0x000001B9 System.Void SerenityGarden.MainMenuClickEvents::OnClick_Coop()
+// 0x000001BA System.Void SerenityGarden.MainMenuClickEvents::OnClick_Coop()
 extern void MainMenuClickEvents_OnClick_Coop_m1802F21D23B8957E048A07301E6418B3171BDC41 (void);
-// 0x000001BA System.Void SerenityGarden.MainMenuClickEvents::OnClick_Options()
+// 0x000001BB System.Void SerenityGarden.MainMenuClickEvents::OnClick_Options()
 extern void MainMenuClickEvents_OnClick_Options_m6A45A5F6E67B3D8B47E5B65A3C8B90C4FB6CEAC2 (void);
-// 0x000001BB System.Void SerenityGarden.MainMenuClickEvents::OnClick_Credits()
+// 0x000001BC System.Void SerenityGarden.MainMenuClickEvents::OnClick_Credits()
 extern void MainMenuClickEvents_OnClick_Credits_mA09C7ED8FD772EF8E3B8FEFB59DD7F446680E87E (void);
-// 0x000001BC System.Void SerenityGarden.MainMenuClickEvents::OnClick_ExitGame()
+// 0x000001BD System.Void SerenityGarden.MainMenuClickEvents::OnClick_ExitGame()
 extern void MainMenuClickEvents_OnClick_ExitGame_m62807D5D679D726389D46D61F0FD2CC28C875A39 (void);
-// 0x000001BD System.Void SerenityGarden.MainMenuClickEvents::OnClick_ResetProgress()
+// 0x000001BE System.Void SerenityGarden.MainMenuClickEvents::OnClick_ResetProgress()
 extern void MainMenuClickEvents_OnClick_ResetProgress_m81FAD64AFC224FF2FD743534A1A8BDBBB0EA578A (void);
-// 0x000001BE System.Void SerenityGarden.MainMenuClickEvents::OnClick_PopupConfirm()
+// 0x000001BF System.Void SerenityGarden.MainMenuClickEvents::OnClick_PopupConfirm()
 extern void MainMenuClickEvents_OnClick_PopupConfirm_mB0FF3D94BC049BF01BC05E3D3B84AAD1B823A9C5 (void);
-// 0x000001BF System.Void SerenityGarden.MainMenuClickEvents::OnClick_PopupCancel()
+// 0x000001C0 System.Void SerenityGarden.MainMenuClickEvents::OnClick_PopupCancel()
 extern void MainMenuClickEvents_OnClick_PopupCancel_m143B04B255F2B30B3AD60B826F98A06C2D9A13DE (void);
-// 0x000001C0 System.Void SerenityGarden.MainMenuClickEvents::.ctor()
+// 0x000001C1 System.Void SerenityGarden.MainMenuClickEvents::.ctor()
 extern void MainMenuClickEvents__ctor_m9CA82FBC9BE0EF60A5AEEAF6303CE91165E0947A (void);
-// 0x000001C1 System.Void SerenityGarden.NetworkManager::Awake()
+// 0x000001C2 System.Void SerenityGarden.NetworkManager::Awake()
 extern void NetworkManager_Awake_m52EC809395E984D6A02710A6D34FB2CC1455B123 (void);
-// 0x000001C2 System.Void SerenityGarden.NetworkManager::Start()
+// 0x000001C3 System.Void SerenityGarden.NetworkManager::Start()
 extern void NetworkManager_Start_m025EA23B359FA2337590F3ADD637642E0FDF8BAA (void);
-// 0x000001C3 System.Void SerenityGarden.NetworkManager::OnPlayerEnteredRoom(Photon.Realtime.Player)
+// 0x000001C4 System.Void SerenityGarden.NetworkManager::OnPlayerEnteredRoom(Photon.Realtime.Player)
 extern void NetworkManager_OnPlayerEnteredRoom_mB77DB33D444AB7FDE5BAB4F8E37F9820D6F8AD3B (void);
-// 0x000001C4 System.Void SerenityGarden.NetworkManager::OnConnected()
+// 0x000001C5 System.Void SerenityGarden.NetworkManager::OnConnected()
 extern void NetworkManager_OnConnected_m0DB08C471EE3E5C901AAB98EC989CFF64CCA18EA (void);
-// 0x000001C5 System.Void SerenityGarden.NetworkManager::OnConnectedToMaster()
+// 0x000001C6 System.Void SerenityGarden.NetworkManager::OnConnectedToMaster()
 extern void NetworkManager_OnConnectedToMaster_mC3DDF1E18857B43A211CDDF874743A21F462E35A (void);
-// 0x000001C6 System.Void SerenityGarden.NetworkManager::OnCreatedRoom()
+// 0x000001C7 System.Void SerenityGarden.NetworkManager::OnCreatedRoom()
 extern void NetworkManager_OnCreatedRoom_m226FEC63C0DD4C57249ECC9C145EA9D036DD3DE5 (void);
-// 0x000001C7 System.Void SerenityGarden.NetworkManager::OnCreateRoomFailed(System.Int16,System.String)
+// 0x000001C8 System.Void SerenityGarden.NetworkManager::OnCreateRoomFailed(System.Int16,System.String)
 extern void NetworkManager_OnCreateRoomFailed_mB34CF7BECA5A46A0B64557507CDDEC60B89286E0 (void);
-// 0x000001C8 System.Void SerenityGarden.NetworkManager::OnDisconnected(Photon.Realtime.DisconnectCause)
+// 0x000001C9 System.Void SerenityGarden.NetworkManager::OnDisconnected(Photon.Realtime.DisconnectCause)
 extern void NetworkManager_OnDisconnected_mCCC6FFA0774B7AC54639C1CA3A92A2F65E01D20D (void);
-// 0x000001C9 System.Void SerenityGarden.NetworkManager::OnJoinedLobby()
+// 0x000001CA System.Void SerenityGarden.NetworkManager::OnJoinedLobby()
 extern void NetworkManager_OnJoinedLobby_m0FCD9CA51B35F034850A8876C27E2E80A0F7CA6A (void);
-// 0x000001CA System.Void SerenityGarden.NetworkManager::OnJoinRandomFailed(System.Int16,System.String)
+// 0x000001CB System.Void SerenityGarden.NetworkManager::OnJoinRandomFailed(System.Int16,System.String)
 extern void NetworkManager_OnJoinRandomFailed_m30294FFE663743A2742F7F3D93A49D23767C7C1E (void);
-// 0x000001CB System.Void SerenityGarden.NetworkManager::OnLeftLobby()
+// 0x000001CC System.Void SerenityGarden.NetworkManager::OnLeftLobby()
 extern void NetworkManager_OnLeftLobby_mAE53D5AB75F6DC1CAD90952838A1C4441513F155 (void);
-// 0x000001CC System.Void SerenityGarden.NetworkManager::OnLeftRoom()
+// 0x000001CD System.Void SerenityGarden.NetworkManager::OnLeftRoom()
 extern void NetworkManager_OnLeftRoom_m690F6D80B113B363A72AFD89D53DC459B29DE115 (void);
-// 0x000001CD System.Void SerenityGarden.NetworkManager::OnJoinRoomFailed(System.Int16,System.String)
+// 0x000001CE System.Void SerenityGarden.NetworkManager::OnJoinRoomFailed(System.Int16,System.String)
 extern void NetworkManager_OnJoinRoomFailed_mD26630C3C4ED3BE5F52AFD3A16A4A0731024421C (void);
-// 0x000001CE System.Void SerenityGarden.NetworkManager::OnErrorInfo(Photon.Realtime.ErrorInfo)
+// 0x000001CF System.Void SerenityGarden.NetworkManager::OnErrorInfo(Photon.Realtime.ErrorInfo)
 extern void NetworkManager_OnErrorInfo_mEB7E5CFFD5FC46A5DC8995D0E0D0AC0EE7794C48 (void);
-// 0x000001CF System.Void SerenityGarden.NetworkManager::OnJoinedRoom()
+// 0x000001D0 System.Void SerenityGarden.NetworkManager::OnJoinedRoom()
 extern void NetworkManager_OnJoinedRoom_m649E8DF4A12B0E68421E1460E8F2F42BD3BBF083 (void);
-// 0x000001D0 System.Void SerenityGarden.NetworkManager::OnPlayerLeftRoom(Photon.Realtime.Player)
+// 0x000001D1 System.Void SerenityGarden.NetworkManager::OnPlayerLeftRoom(Photon.Realtime.Player)
 extern void NetworkManager_OnPlayerLeftRoom_m48FDA2E5F952940C319E29F53D1019EB5335DEC1 (void);
-// 0x000001D1 System.Void SerenityGarden.NetworkManager::.ctor()
+// 0x000001D2 System.Void SerenityGarden.NetworkManager::.ctor()
 extern void NetworkManager__ctor_m9484E7ADCB5196192DEF7F16BE70462F5D5D373A (void);
-// 0x000001D2 System.Void SerenityGarden.NetworkPlayer::Start()
+// 0x000001D3 System.Void SerenityGarden.NetworkPlayer::Start()
 extern void NetworkPlayer_Start_mE37C64E8517EA1C93349D128504B316FB45E6334 (void);
-// 0x000001D3 System.Void SerenityGarden.NetworkPlayer::SendNetworkEvent(System.String,System.String)
+// 0x000001D4 System.Void SerenityGarden.NetworkPlayer::SendNetworkEvent(System.String,System.String)
 extern void NetworkPlayer_SendNetworkEvent_m73A52159119A362E11DD0E275E6ED9AF93D4A38C (void);
-// 0x000001D4 System.Void SerenityGarden.NetworkPlayer::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
+// 0x000001D5 System.Void SerenityGarden.NetworkPlayer::OnPhotonSerializeView(Photon.Pun.PhotonStream,Photon.Pun.PhotonMessageInfo)
 extern void NetworkPlayer_OnPhotonSerializeView_m3C49BF1319ED04335BD8E9DC12AB7FF276D30C73 (void);
-// 0x000001D5 System.Void SerenityGarden.NetworkPlayer::.ctor()
+// 0x000001D6 System.Void SerenityGarden.NetworkPlayer::.ctor()
 extern void NetworkPlayer__ctor_m80836F56CABEAA31FDBBF6416FC6E1346A422313 (void);
-// 0x000001D6 System.Void SerenityGarden.RaidStageSelection::Awake()
+// 0x000001D7 System.Void SerenityGarden.RaidStageSelection::Awake()
 extern void RaidStageSelection_Awake_m75451FC92D3E211DA391B259C805D144B12F4C80 (void);
-// 0x000001D7 System.Void SerenityGarden.RaidStageSelection::Start()
+// 0x000001D8 System.Void SerenityGarden.RaidStageSelection::Start()
 extern void RaidStageSelection_Start_m398A6D24D7F785FCFC275B613B3C651067AD4AEC (void);
-// 0x000001D8 System.Void SerenityGarden.RaidStageSelection::Update()
+// 0x000001D9 System.Void SerenityGarden.RaidStageSelection::Update()
 extern void RaidStageSelection_Update_m0D3F87445020EFFD666E83341588FC3ABBB1BAFD (void);
-// 0x000001D9 System.Boolean SerenityGarden.RaidStageSelection::HasAllDependencies()
+// 0x000001DA System.Void SerenityGarden.RaidStageSelection::OnClick_Back()
+extern void RaidStageSelection_OnClick_Back_m16F85C2BFCCC8E6F771C5E6E91528AF085FDEEAE (void);
+// 0x000001DB System.Boolean SerenityGarden.RaidStageSelection::HasAllDependencies()
 extern void RaidStageSelection_HasAllDependencies_m5855D8F4DFA6C04B480D248DF497080F8F9462D1 (void);
-// 0x000001DA System.Void SerenityGarden.RaidStageSelection::Init()
+// 0x000001DC System.Void SerenityGarden.RaidStageSelection::Init()
 extern void RaidStageSelection_Init_mE10F072D016F4D143775241DB5B9C5CA0A392916 (void);
-// 0x000001DB System.Void SerenityGarden.RaidStageSelection::.ctor()
+// 0x000001DD System.Void SerenityGarden.RaidStageSelection::.ctor()
 extern void RaidStageSelection__ctor_m30FFE97D27AF69416B91A2E303FF975DFCE7E9CB (void);
-// 0x000001DC System.Int32 SerenityGarden.PlayerData::get_Money()
+// 0x000001DE System.Int32 SerenityGarden.PlayerData::get_Money()
 extern void PlayerData_get_Money_m74973E694D85B706528C3658B73E932066C83AEB (void);
-// 0x000001DD System.Void SerenityGarden.PlayerData::set_Money(System.Int32)
+// 0x000001DF System.Void SerenityGarden.PlayerData::set_Money(System.Int32)
 extern void PlayerData_set_Money_m2E4A1ECE8CB5C33D936AB31460C2B498EA43A249 (void);
-// 0x000001DE System.Void SerenityGarden.PlayerData::.ctor()
+// 0x000001E0 System.Void SerenityGarden.PlayerData::.ctor()
 extern void PlayerData__ctor_m665D2A6F095E1CB4BA69554A42B2460627CB5922 (void);
-// 0x000001DF System.Void SerenityGarden.StageSaveData::.ctor(System.String,System.Int32)
+// 0x000001E1 System.Void SerenityGarden.StageSaveData::.ctor(System.String,System.Int32)
 extern void StageSaveData__ctor_mD33953FB47EE0C38D8BD7957E4C2E9D881C75229 (void);
-// 0x000001E0 System.String SerenityGarden.FileManager::GetFileContents(System.Boolean,System.String)
+// 0x000001E2 System.String SerenityGarden.FileManager::GetFileContents(System.Boolean,System.String)
 extern void FileManager_GetFileContents_m56FC3922B2D6374B15831FB8C8DB5EC282D79258 (void);
-// 0x000001E1 System.Void SerenityGarden.FileManager::SetFileContents(System.Boolean,System.String,System.String)
+// 0x000001E3 System.Void SerenityGarden.FileManager::SetFileContents(System.Boolean,System.String,System.String)
 extern void FileManager_SetFileContents_m077CCBF311FFAF92381037EF4163231F84661AE7 (void);
-// 0x000001E2 System.Single SerenityGarden.HelperMethods::SquaredDistance(UnityEngine.Vector3,UnityEngine.Vector3)
+// 0x000001E4 System.Single SerenityGarden.HelperMethods::SquaredDistance(UnityEngine.Vector3,UnityEngine.Vector3)
 extern void HelperMethods_SquaredDistance_m8FF4B6506494CB66B13643F6A4CE4BDC6433CCC6 (void);
-// 0x000001E3 System.Void SerenityGarden.HelperMethods::RotateObjTowardsTarget(UnityEngine.Transform,UnityEngine.Vector3,System.Boolean)
+// 0x000001E5 System.Void SerenityGarden.HelperMethods::RotateObjTowardsTarget(UnityEngine.Transform,UnityEngine.Vector3,System.Boolean)
 extern void HelperMethods_RotateObjTowardsTarget_mB278065F49C57CC536D0B89E2B4846D1C788863A (void);
-// 0x000001E4 System.Void SerenityGarden.HelperMethods::RotateObjTowardsTarget(UnityEngine.Transform,UnityEngine.Vector3,System.Boolean,System.Single)
+// 0x000001E6 System.Void SerenityGarden.HelperMethods::RotateObjTowardsTarget(UnityEngine.Transform,UnityEngine.Vector3,System.Boolean,System.Single)
 extern void HelperMethods_RotateObjTowardsTarget_mA38308CD5E20B9BFAF14EDB1B3D861BA5EE08E47 (void);
-// 0x000001E5 System.Void SerenityGarden.HelperMethods::MoveTowards(UnityEngine.Transform,UnityEngine.Vector3,System.Single,System.Boolean)
+// 0x000001E7 System.Void SerenityGarden.HelperMethods::MoveTowards(UnityEngine.Transform,UnityEngine.Vector3,System.Single,System.Boolean)
 extern void HelperMethods_MoveTowards_m2A32681229CDF45DB5A82B3C72B2BA15BB41B843 (void);
-// 0x000001E6 System.Void SerenityGarden.HelperMethods::Shuffle(System.Collections.Generic.IList`1<T>)
-// 0x000001E7 UnityEngine.GameObject SerenityGarden.HelperMethods::FindChildWithName(UnityEngine.Transform,System.String)
+// 0x000001E8 System.Void SerenityGarden.HelperMethods::Shuffle(System.Collections.Generic.IList`1<T>)
+// 0x000001E9 UnityEngine.GameObject SerenityGarden.HelperMethods::FindChildWithName(UnityEngine.Transform,System.String)
 extern void HelperMethods_FindChildWithName_m28BBCEADC1D32A0C0BBB2EDFD46E87FF672D5DCC (void);
-// 0x000001E8 System.Boolean SerenityGarden.HelperMethods::FindBounds(UnityEngine.GameObject,UnityEngine.Bounds&)
+// 0x000001EA System.Boolean SerenityGarden.HelperMethods::FindBounds(UnityEngine.GameObject,UnityEngine.Bounds&)
 extern void HelperMethods_FindBounds_mCC45DA2DA2BADF5AA12C9E77B5A60FAF10B476B8 (void);
-// 0x000001E9 System.Void SerenityGarden.HelperMethods::AddAllChildrenRecursively(System.Collections.Generic.List`1<UnityEngine.MeshRenderer>,UnityEngine.Transform)
+// 0x000001EB System.Void SerenityGarden.HelperMethods::AddAllChildrenRecursively(System.Collections.Generic.List`1<UnityEngine.MeshRenderer>,UnityEngine.Transform)
 extern void HelperMethods_AddAllChildrenRecursively_mC6B6049063B4BCBB50BF1E39A04C59443C708EB6 (void);
-// 0x000001EA System.Void SerenityGarden.HelperMethods::.cctor()
+// 0x000001EC System.Void SerenityGarden.HelperMethods::.cctor()
 extern void HelperMethods__cctor_m099E9CED67E7EB627626E98C9163B5FD298441CF (void);
-// 0x000001EB System.Void SerenityGarden.InputManager::Awake()
+// 0x000001ED System.Void SerenityGarden.InputManager::Awake()
 extern void InputManager_Awake_m54A28F8D122C1DDE0703FDC589C7652B3EB35674 (void);
-// 0x000001EC System.Void SerenityGarden.InputManager::AddNonUIOnPressEvent(SerenityGarden.InputManager_InputEventOnPress)
+// 0x000001EE System.Void SerenityGarden.InputManager::AddNonUIOnPressEvent(SerenityGarden.InputManager/InputEventOnPress)
 extern void InputManager_AddNonUIOnPressEvent_m17FB0F43E88D6CC73EE924D54A091012C31A5C56 (void);
-// 0x000001ED System.Void SerenityGarden.InputManager::RemoveNonUIOnPressEvent(SerenityGarden.InputManager_InputEventOnPress)
+// 0x000001EF System.Void SerenityGarden.InputManager::RemoveNonUIOnPressEvent(SerenityGarden.InputManager/InputEventOnPress)
 extern void InputManager_RemoveNonUIOnPressEvent_m3CE962EADDDF759A45564DB47623FA421B40EA05 (void);
-// 0x000001EE System.Void SerenityGarden.InputManager::AddOnPressEvent(SerenityGarden.InputManager_InputEventOnPress)
+// 0x000001F0 System.Void SerenityGarden.InputManager::AddOnPressEvent(SerenityGarden.InputManager/InputEventOnPress)
 extern void InputManager_AddOnPressEvent_m6A41E6D37E31644AE957A923A200D422EA3B7702 (void);
-// 0x000001EF System.Void SerenityGarden.InputManager::RemoveOnPressEvent(SerenityGarden.InputManager_InputEventOnPress)
+// 0x000001F1 System.Void SerenityGarden.InputManager::RemoveOnPressEvent(SerenityGarden.InputManager/InputEventOnPress)
 extern void InputManager_RemoveOnPressEvent_m1FE72E54371EA71180AF8063928816BCA6394977 (void);
-// 0x000001F0 System.Void SerenityGarden.InputManager::AddNonUIOnReleaseEvent(SerenityGarden.InputManager_InputEventOnRelease)
+// 0x000001F2 System.Void SerenityGarden.InputManager::AddNonUIOnReleaseEvent(SerenityGarden.InputManager/InputEventOnRelease)
 extern void InputManager_AddNonUIOnReleaseEvent_m72E0D5407A88A53E074E7FBB6B1B5BC25E37F44B (void);
-// 0x000001F1 System.Void SerenityGarden.InputManager::RemoveNonUIOnReleaseEvent(SerenityGarden.InputManager_InputEventOnRelease)
+// 0x000001F3 System.Void SerenityGarden.InputManager::RemoveNonUIOnReleaseEvent(SerenityGarden.InputManager/InputEventOnRelease)
 extern void InputManager_RemoveNonUIOnReleaseEvent_mC73C191D4E1ED49A2A3CA88F748F92B353498FBF (void);
-// 0x000001F2 System.Void SerenityGarden.InputManager::AddOnReleaseEvent(SerenityGarden.InputManager_InputEventOnRelease)
+// 0x000001F4 System.Void SerenityGarden.InputManager::AddOnReleaseEvent(SerenityGarden.InputManager/InputEventOnRelease)
 extern void InputManager_AddOnReleaseEvent_mF28911C7F869B73DEA605211151928AA5C1E6AA1 (void);
-// 0x000001F3 System.Void SerenityGarden.InputManager::RemoveOnReleaseEvent(SerenityGarden.InputManager_InputEventOnRelease)
+// 0x000001F5 System.Void SerenityGarden.InputManager::RemoveOnReleaseEvent(SerenityGarden.InputManager/InputEventOnRelease)
 extern void InputManager_RemoveOnReleaseEvent_m9FC26B2D2C1F6C22B9A5A7339AF3923AB4199128 (void);
-// 0x000001F4 System.Void SerenityGarden.InputManager::AddNonUIOnDragEvent(SerenityGarden.InputManager_InputEventOnDrag)
+// 0x000001F6 System.Void SerenityGarden.InputManager::AddNonUIOnDragEvent(SerenityGarden.InputManager/InputEventOnDrag)
 extern void InputManager_AddNonUIOnDragEvent_m44538D16204180AFA21A09D3EC8C37DAADFA8844 (void);
-// 0x000001F5 System.Void SerenityGarden.InputManager::RemoveNonUIOnDragEvent(SerenityGarden.InputManager_InputEventOnDrag)
+// 0x000001F7 System.Void SerenityGarden.InputManager::RemoveNonUIOnDragEvent(SerenityGarden.InputManager/InputEventOnDrag)
 extern void InputManager_RemoveNonUIOnDragEvent_m385B1F400A194B9467FF0A5D14AFF4FC7F6776EA (void);
-// 0x000001F6 System.Void SerenityGarden.InputManager::AddOnDragEvent(SerenityGarden.InputManager_InputEventOnDrag)
+// 0x000001F8 System.Void SerenityGarden.InputManager::AddOnDragEvent(SerenityGarden.InputManager/InputEventOnDrag)
 extern void InputManager_AddOnDragEvent_mDDFB8DD734FB1241D59868AE3BCE7C754D8A0B25 (void);
-// 0x000001F7 System.Void SerenityGarden.InputManager::RemoveOnDragEvent(SerenityGarden.InputManager_InputEventOnDrag)
+// 0x000001F9 System.Void SerenityGarden.InputManager::RemoveOnDragEvent(SerenityGarden.InputManager/InputEventOnDrag)
 extern void InputManager_RemoveOnDragEvent_m5A9E81319763CD65A99F412D29FFD88A25394BD3 (void);
-// 0x000001F8 System.Void SerenityGarden.InputManager::Update()
+// 0x000001FA System.Void SerenityGarden.InputManager::Update()
 extern void InputManager_Update_m6C15900EBFDFCA3231E4EBF48C36ED0077033E45 (void);
-// 0x000001F9 System.Void SerenityGarden.InputManager::GetHitObjects()
+// 0x000001FB System.Void SerenityGarden.InputManager::GetHitObjects()
 extern void InputManager_GetHitObjects_m07110788AE00DBA888BA8A7E76E5F825B2A48DA4 (void);
-// 0x000001FA System.Void SerenityGarden.InputManager::.ctor()
+// 0x000001FC System.Void SerenityGarden.InputManager::.ctor()
 extern void InputManager__ctor_m8E68D4E85B6CF5DA996375C21B6B7E35960E99E6 (void);
-// 0x000001FB System.Void SerenityGarden.InstantiationManager::Awake()
+// 0x000001FD System.Void SerenityGarden.InstantiationManager::Awake()
 extern void InstantiationManager_Awake_m8D50B02418E048A3970506577A389867AB2438D4 (void);
-// 0x000001FC UnityEngine.GameObject SerenityGarden.InstantiationManager::InstantiateWithCheck(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,SerenityGarden.PhotonObj,System.Object[])
+// 0x000001FE UnityEngine.GameObject SerenityGarden.InstantiationManager::InstantiateWithCheck(UnityEngine.GameObject,UnityEngine.Vector3,UnityEngine.Quaternion,SerenityGarden.PhotonObj,System.Object[])
 extern void InstantiationManager_InstantiateWithCheck_mDE2A12B9A41A47A3EFD58C01BE8477F4E7AFC426 (void);
-// 0x000001FD System.String SerenityGarden.InstantiationManager::GetObjPath(SerenityGarden.PhotonObj)
+// 0x000001FF System.String SerenityGarden.InstantiationManager::GetObjPath(SerenityGarden.PhotonObj)
 extern void InstantiationManager_GetObjPath_m2D9FFFB7449394013AA58BB87B3B4A2AEDCD9EC8 (void);
-// 0x000001FE System.Void SerenityGarden.InstantiationManager::.ctor()
+// 0x00000200 System.Void SerenityGarden.InstantiationManager::.ctor()
 extern void InstantiationManager__ctor_m85AB002EF0FAD87F085E8799834CF551EA0B718D (void);
-// 0x000001FF System.Void SerenityGarden.PlayerDataSaver::Awake()
+// 0x00000201 System.Void SerenityGarden.PlayerDataSaver::Awake()
 extern void PlayerDataSaver_Awake_mC05A8F5C80E6ABA80C531946250575A8D549FC6E (void);
-// 0x00000200 System.Void SerenityGarden.PlayerDataSaver::SetStages(SerenityGarden.StageScriptable[])
+// 0x00000202 System.Void SerenityGarden.PlayerDataSaver::SetStages(SerenityGarden.StageScriptable[])
 extern void PlayerDataSaver_SetStages_m3A93559CF5AD9213CFB4AD6B00E6A661D43B5729 (void);
-// 0x00000201 System.Void SerenityGarden.PlayerDataSaver::Start()
+// 0x00000203 System.Void SerenityGarden.PlayerDataSaver::Start()
 extern void PlayerDataSaver_Start_mE16834E122BFEDBFF5A2E110B41906F871EDB9F5 (void);
-// 0x00000202 System.Void SerenityGarden.PlayerDataSaver::Init()
+// 0x00000204 System.Void SerenityGarden.PlayerDataSaver::Init()
 extern void PlayerDataSaver_Init_mCEF5309107E182B6F508A7072D74B3875BC470D6 (void);
-// 0x00000203 System.Boolean SerenityGarden.PlayerDataSaver::HasAllDependencies()
+// 0x00000205 System.Boolean SerenityGarden.PlayerDataSaver::HasAllDependencies()
 extern void PlayerDataSaver_HasAllDependencies_m1745342DA7FAAA86E706F95596FDF7EC45C2F699 (void);
-// 0x00000204 System.Void SerenityGarden.PlayerDataSaver::UpdatePlayerData(SerenityGarden.StageScriptable,System.Int32,System.Int32)
+// 0x00000206 System.Void SerenityGarden.PlayerDataSaver::UpdatePlayerData(SerenityGarden.StageScriptable,System.Int32,System.Int32)
 extern void PlayerDataSaver_UpdatePlayerData_mE97879EAA297289B5EF9355600D4E7DEA4773A83 (void);
-// 0x00000205 System.Void SerenityGarden.PlayerDataSaver::SaveData()
+// 0x00000207 System.Void SerenityGarden.PlayerDataSaver::SaveData()
 extern void PlayerDataSaver_SaveData_mFD9DF271383391419BC12966DB4F55C6C4514310 (void);
-// 0x00000206 System.Void SerenityGarden.PlayerDataSaver::LoadData()
+// 0x00000208 System.Void SerenityGarden.PlayerDataSaver::LoadData()
 extern void PlayerDataSaver_LoadData_m984CC4611154AE45DE73E15C7A7EC837FCC6D145 (void);
-// 0x00000207 System.Void SerenityGarden.PlayerDataSaver::ClearSavedData()
+// 0x00000209 System.Void SerenityGarden.PlayerDataSaver::ClearSavedData()
 extern void PlayerDataSaver_ClearSavedData_m37CCD06158B3367731B7A5C56EC6ECB92A731324 (void);
-// 0x00000208 System.Void SerenityGarden.PlayerDataSaver::.ctor()
+// 0x0000020A System.Void SerenityGarden.PlayerDataSaver::.ctor()
 extern void PlayerDataSaver__ctor_mF7951C2C2A67870729CAEF7E01F85DE6CF913243 (void);
-// 0x00000209 System.Void SerenityGarden.ProcessInitializationManager::Awake()
+// 0x0000020B System.Void SerenityGarden.ProcessInitializationManager::Awake()
 extern void ProcessInitializationManager_Awake_mF7637114A45793768E13DF2BA016CEEEF8558C70 (void);
-// 0x0000020A System.Void SerenityGarden.ProcessInitializationManager::Start()
+// 0x0000020C System.Void SerenityGarden.ProcessInitializationManager::Start()
 extern void ProcessInitializationManager_Start_mA5BCA4215CAC9A00F4892E24B890168F81AA89E5 (void);
-// 0x0000020B System.Void SerenityGarden.ProcessInitializationManager::Update()
+// 0x0000020D System.Void SerenityGarden.ProcessInitializationManager::Update()
 extern void ProcessInitializationManager_Update_m8211A1CF606906704B94A1084AA5381EE06366BE (void);
-// 0x0000020C System.Void SerenityGarden.ProcessInitializationManager::PrepareToInitialize(SerenityGarden.LogicProcessBase)
+// 0x0000020E System.Void SerenityGarden.ProcessInitializationManager::PrepareToInitialize(SerenityGarden.LogicProcessBase)
 extern void ProcessInitializationManager_PrepareToInitialize_m1A232F82AF1C7186B61DE880DCA71DEFE07A4E89 (void);
-// 0x0000020D System.Void SerenityGarden.ProcessInitializationManager::ExecuteInitialization()
+// 0x0000020F System.Void SerenityGarden.ProcessInitializationManager::ExecuteInitialization()
 extern void ProcessInitializationManager_ExecuteInitialization_m981CA087EE1A92EE2C74F5718A296B27003C0DA0 (void);
-// 0x0000020E System.Void SerenityGarden.ProcessInitializationManager::.ctor()
+// 0x00000210 System.Void SerenityGarden.ProcessInitializationManager::.ctor()
 extern void ProcessInitializationManager__ctor_mE61A6FC9AD2254E541BA8520B21777AC073B46D9 (void);
-// 0x0000020F System.Void SerenityGarden.SceneDataRetainer::Awake()
+// 0x00000211 System.Void SerenityGarden.SceneDataRetainer::Awake()
 extern void SceneDataRetainer_Awake_m1F8C6DD17C28F9316ECBBB06E1DAC3F4CB8CA440 (void);
-// 0x00000210 System.Void SerenityGarden.SceneDataRetainer::SelectStage(SerenityGarden.StageScriptable)
+// 0x00000212 System.Void SerenityGarden.SceneDataRetainer::SelectStage(SerenityGarden.StageScriptable)
 extern void SceneDataRetainer_SelectStage_m33650AFC48EF3B0F6D648FF0D02201DD72CD951D (void);
-// 0x00000211 SerenityGarden.StageScriptable SerenityGarden.SceneDataRetainer::GetStage()
+// 0x00000213 SerenityGarden.StageScriptable SerenityGarden.SceneDataRetainer::GetStage()
 extern void SceneDataRetainer_GetStage_mCAF4598A6F617211C5C2A798C8BCFD48605C6FDA (void);
-// 0x00000212 System.Void SerenityGarden.SceneDataRetainer::SetPermanentUpgrades(SerenityGarden.TurretPermanentUpgrades[])
+// 0x00000214 System.Void SerenityGarden.SceneDataRetainer::SetPermanentUpgrades(SerenityGarden.TurretPermanentUpgrades[])
 extern void SceneDataRetainer_SetPermanentUpgrades_m874DBCA60039586030010B6135C25C0805D9D2ED (void);
-// 0x00000213 System.Int32 SerenityGarden.SceneDataRetainer::GetPermanentUpgradesCount()
+// 0x00000215 System.Int32 SerenityGarden.SceneDataRetainer::GetPermanentUpgradesCount()
 extern void SceneDataRetainer_GetPermanentUpgradesCount_m981FE79F0B8DAEBB5BB2776C69414C62CF576DB9 (void);
-// 0x00000214 SerenityGarden.TurretPermanentUpgrades[] SerenityGarden.SceneDataRetainer::GetPermanentUpgrades()
+// 0x00000216 SerenityGarden.TurretPermanentUpgrades[] SerenityGarden.SceneDataRetainer::GetPermanentUpgrades()
 extern void SceneDataRetainer_GetPermanentUpgrades_mBE8554E67776092C2B5BBB4324E4CB8D8CA9A068 (void);
-// 0x00000215 SerenityGarden.TurretType SerenityGarden.SceneDataRetainer::GetPermanentUpgradeTurretType(System.Int32)
+// 0x00000217 SerenityGarden.TurretType SerenityGarden.SceneDataRetainer::GetPermanentUpgradeTurretType(System.Int32)
 extern void SceneDataRetainer_GetPermanentUpgradeTurretType_m65050AA5444665D4E4F0A20AC674E1ABDB6839DD (void);
-// 0x00000216 SerenityGarden.TurretPermanentUpgrades SerenityGarden.SceneDataRetainer::GetMultipliers(SerenityGarden.TurretType)
+// 0x00000218 SerenityGarden.TurretPermanentUpgrades SerenityGarden.SceneDataRetainer::GetMultipliers(SerenityGarden.TurretType)
 extern void SceneDataRetainer_GetMultipliers_m42DC08FA19C2E87846B0DA4207C49EFA86CE6A12 (void);
-// 0x00000217 SerenityGarden.TurretPermanentUpgrades SerenityGarden.SceneDataRetainer::GetMultipliers(System.Int32)
+// 0x00000219 SerenityGarden.TurretPermanentUpgrades SerenityGarden.SceneDataRetainer::GetMultipliers(System.Int32)
 extern void SceneDataRetainer_GetMultipliers_mA0161380A88C9D19161D28337DF7E7F2E5A642EF (void);
-// 0x00000218 System.Void SerenityGarden.SceneDataRetainer::SetMultiplier(SerenityGarden.TurretType,SerenityGarden.UpgradeType,System.Single)
+// 0x0000021A System.Void SerenityGarden.SceneDataRetainer::SetMultiplier(SerenityGarden.TurretType,SerenityGarden.UpgradeType,System.Single)
 extern void SceneDataRetainer_SetMultiplier_mAFCC959E757A7C8D657EC3AB979F84EC631998FB (void);
-// 0x00000219 System.Void SerenityGarden.SceneDataRetainer::.ctor()
+// 0x0000021B System.Void SerenityGarden.SceneDataRetainer::.ctor()
 extern void SceneDataRetainer__ctor_m1DC751A24FAA281F21F4D1C78BED0C168E047F30 (void);
-// 0x0000021A System.Void SerenityGarden.SceneIndependentScriptsSpawner::Start()
+// 0x0000021C System.Void SerenityGarden.SceneIndependentScriptsSpawner::Start()
 extern void SceneIndependentScriptsSpawner_Start_mA1B86B9804832077B31A907E7E7E857E3C699507 (void);
-// 0x0000021B System.Void SerenityGarden.SceneIndependentScriptsSpawner::.ctor()
+// 0x0000021D System.Void SerenityGarden.SceneIndependentScriptsSpawner::.ctor()
 extern void SceneIndependentScriptsSpawner__ctor_m95C9D5D3D01CD89E8425B1DC22286A751016F4F5 (void);
-// 0x0000021C System.Void SerenityGarden.PermanentUpgrade::.ctor()
+// 0x0000021E System.Void SerenityGarden.PermanentUpgrade::.ctor()
 extern void PermanentUpgrade__ctor_m76B3B4FC6F9890E31AC9E1B87BC3975C8A8E36CE (void);
-// 0x0000021D System.Void SerenityGarden.ShopManager::Awake()
+// 0x0000021F System.Void SerenityGarden.ShopManager::Awake()
 extern void ShopManager_Awake_m16486D1C182C7FF2483E74EC17452F412C01DCE6 (void);
-// 0x0000021E System.Void SerenityGarden.ShopManager::Start()
+// 0x00000220 System.Void SerenityGarden.ShopManager::Start()
 extern void ShopManager_Start_m80E065655E1FB51E3FF2B1E1944CA3C52BF139D5 (void);
-// 0x0000021F System.Void SerenityGarden.ShopManager::Init()
+// 0x00000221 System.Void SerenityGarden.ShopManager::Init()
 extern void ShopManager_Init_mBF67E1EB0CF800CCB5DD274CFD818F84D011DA44 (void);
-// 0x00000220 System.Boolean SerenityGarden.ShopManager::HasAllDependencies()
+// 0x00000222 System.Boolean SerenityGarden.ShopManager::HasAllDependencies()
 extern void ShopManager_HasAllDependencies_mAE6A0FBBBBEE187D2DA040C24141A4AF2D99D933 (void);
-// 0x00000221 System.Void SerenityGarden.ShopManager::SpawnHeaders()
+// 0x00000223 System.Void SerenityGarden.ShopManager::SpawnHeaders()
 extern void ShopManager_SpawnHeaders_mD92FD15547630C0DFB1DCBA157E557CCDFC10CE9 (void);
-// 0x00000222 System.Void SerenityGarden.ShopManager::UpdateUI()
+// 0x00000224 System.Void SerenityGarden.ShopManager::UpdateUI()
 extern void ShopManager_UpdateUI_mDE9B6824575D13DEADAD5A10C5E0F434723E2FDB (void);
-// 0x00000223 System.Boolean SerenityGarden.ShopManager::CheckUpgradeCost(System.Int32)
+// 0x00000225 System.Boolean SerenityGarden.ShopManager::CheckUpgradeCost(System.Int32)
 extern void ShopManager_CheckUpgradeCost_m452E0E0ADD9D323FCAD6C21A9F3DDFC883F0622E (void);
-// 0x00000224 System.Void SerenityGarden.ShopManager::UpgradeProperty(System.Int32)
+// 0x00000226 System.Void SerenityGarden.ShopManager::UpgradeProperty(System.Int32)
 extern void ShopManager_UpgradeProperty_m464C07C8B74D5CC6710BEED8114091597E62D36A (void);
-// 0x00000225 System.Void SerenityGarden.ShopManager::OnClick_SelectTurretHeader(System.Int32)
+// 0x00000227 System.Void SerenityGarden.ShopManager::OnClick_SelectTurretHeader(System.Int32)
 extern void ShopManager_OnClick_SelectTurretHeader_mDD49664656BA6C8C12129B61F79EA54689F5047E (void);
-// 0x00000226 System.Void SerenityGarden.ShopManager::OnClick_Back()
+// 0x00000228 System.Void SerenityGarden.ShopManager::OnClick_Back()
 extern void ShopManager_OnClick_Back_mC0F6F27487AE087CE8FCD3F243CEF9B96AB91B7F (void);
-// 0x00000227 System.Void SerenityGarden.ShopManager::.ctor()
+// 0x00000229 System.Void SerenityGarden.ShopManager::.ctor()
 extern void ShopManager__ctor_m3EF67FBB3350B9011CE8A7D90754B3B7636C9CCA (void);
-// 0x00000228 System.Single SerenityGarden.TurretPermanentUpgrades::GetMultiplier(SerenityGarden.UpgradeType)
+// 0x0000022A System.Single SerenityGarden.TurretPermanentUpgrades::GetMultiplier(SerenityGarden.UpgradeType)
 extern void TurretPermanentUpgrades_GetMultiplier_mCFADEEFB82542B1197F1617B039AA96C2767D3F9 (void);
-// 0x00000229 System.Void SerenityGarden.TurretPermanentUpgrades::.ctor()
+// 0x0000022B System.Void SerenityGarden.TurretPermanentUpgrades::.ctor()
 extern void TurretPermanentUpgrades__ctor_mE7B34767BE850429765E2982B96D25D501DD55C6 (void);
-// 0x0000022A System.Void SerenityGarden.UIUpgradeRow::Start()
+// 0x0000022C System.Void SerenityGarden.UIUpgradeRow::Start()
 extern void UIUpgradeRow_Start_mB020C8D7C7F53B9DC86A5ACDEF07D7ED1C919C55 (void);
-// 0x0000022B System.Void SerenityGarden.UIUpgradeRow::Init(SerenityGarden.PermanentUpgrade)
+// 0x0000022D System.Void SerenityGarden.UIUpgradeRow::Init(SerenityGarden.PermanentUpgrade)
 extern void UIUpgradeRow_Init_m85A188046E2D1D1255C68F33B9558C99480E4BCA (void);
-// 0x0000022C System.Void SerenityGarden.UIUpgradeRow::CalculateCost()
+// 0x0000022E System.Void SerenityGarden.UIUpgradeRow::CalculateCost()
 extern void UIUpgradeRow_CalculateCost_m1127E6158750E1C92DC5C3316B2389A686B22572 (void);
-// 0x0000022D System.Void SerenityGarden.UIUpgradeRow::UpdateUIImages(System.Boolean)
+// 0x0000022F System.Void SerenityGarden.UIUpgradeRow::UpdateUIImages(System.Boolean)
 extern void UIUpgradeRow_UpdateUIImages_mF81519094C8D4E8ADA2B48FADBBE0190630C64A7 (void);
-// 0x0000022E System.Void SerenityGarden.UIUpgradeRow::ColorCostText()
+// 0x00000230 System.Void SerenityGarden.UIUpgradeRow::ColorCostText()
 extern void UIUpgradeRow_ColorCostText_mFFFE64CEDDB962FE4FC0F680EE4F6B51E2566296 (void);
-// 0x0000022F System.Void SerenityGarden.UIUpgradeRow::OnClick_Upgrade()
+// 0x00000231 System.Void SerenityGarden.UIUpgradeRow::OnClick_Upgrade()
 extern void UIUpgradeRow_OnClick_Upgrade_m44C565CBFE94B0DF621569616EB0FDBA91DE4D0C (void);
-// 0x00000230 System.Void SerenityGarden.UIUpgradeRow::.ctor()
+// 0x00000232 System.Void SerenityGarden.UIUpgradeRow::.ctor()
 extern void UIUpgradeRow__ctor_m6261C763FF23C07317BA7542490D78EA66E9C9CC (void);
-// 0x00000231 System.Void SerenityGarden.StageSelectionManagement::Awake()
+// 0x00000233 System.Void SerenityGarden.StageSelectionManagement::Awake()
 extern void StageSelectionManagement_Awake_mF3769DD598B3C36EC12485368F7A9A53C00FDD68 (void);
-// 0x00000232 System.Void SerenityGarden.StageSelectionManagement::Start()
+// 0x00000234 System.Void SerenityGarden.StageSelectionManagement::Start()
 extern void StageSelectionManagement_Start_m3AAA9F10846B1076F1753F73DFFD15A639B6BF62 (void);
-// 0x00000233 System.Void SerenityGarden.StageSelectionManagement::Init()
+// 0x00000235 System.Void SerenityGarden.StageSelectionManagement::Init()
 extern void StageSelectionManagement_Init_m5E5C5C589295C18F48C244F1B22F3A304AAD56B6 (void);
-// 0x00000234 System.Boolean SerenityGarden.StageSelectionManagement::HasAllDependencies()
+// 0x00000236 System.Boolean SerenityGarden.StageSelectionManagement::HasAllDependencies()
 extern void StageSelectionManagement_HasAllDependencies_m9A8D2E0E5649BAB68C3FDC6B4E519C599DCC9C58 (void);
-// 0x00000235 System.Void SerenityGarden.StageSelectionManagement::SelectStage(SerenityGarden.StageUIBlock)
+// 0x00000237 System.Void SerenityGarden.StageSelectionManagement::SelectStage(SerenityGarden.StageUIBlock)
 extern void StageSelectionManagement_SelectStage_mF072B5516928EF2412B00A995D42A59E5C4DDDC4 (void);
-// 0x00000236 System.Void SerenityGarden.StageSelectionManagement::_StartStage()
+// 0x00000238 System.Void SerenityGarden.StageSelectionManagement::_StartStage()
 extern void StageSelectionManagement__StartStage_mE63EA8ADAE7E506D9644E3CBBD7BD2DD4202EDE5 (void);
-// 0x00000237 System.Void SerenityGarden.StageSelectionManagement::_BackButtonClick()
+// 0x00000239 System.Void SerenityGarden.StageSelectionManagement::_BackButtonClick()
 extern void StageSelectionManagement__BackButtonClick_mF2D6202D32A81F23CE5B941E2F1766DEDFD2FDD3 (void);
-// 0x00000238 System.Void SerenityGarden.StageSelectionManagement::_ShopButtonClick()
+// 0x0000023A System.Void SerenityGarden.StageSelectionManagement::_ShopButtonClick()
 extern void StageSelectionManagement__ShopButtonClick_m8C3AD8AB3C4AE1A4D128D49335E5E01B8850A9C5 (void);
-// 0x00000239 System.Void SerenityGarden.StageSelectionManagement::.ctor()
+// 0x0000023B System.Void SerenityGarden.StageSelectionManagement::.ctor()
 extern void StageSelectionManagement__ctor_m546A4CCCE275ABECC191AF10EF9CAD2A61DD340C (void);
-// 0x0000023A System.Void SerenityGarden.StageUIBlock::Awake()
+// 0x0000023C System.Void SerenityGarden.StageUIBlock::Awake()
 extern void StageUIBlock_Awake_m23D4BC1A2829958FAE780FCA34FC27A7092E2105 (void);
-// 0x0000023B System.Void SerenityGarden.StageUIBlock::InitializeBlock(SerenityGarden.StageScriptable)
+// 0x0000023D System.Void SerenityGarden.StageUIBlock::InitializeBlock(SerenityGarden.StageScriptable)
 extern void StageUIBlock_InitializeBlock_mD3A1276C7BF45E9F480A11356BDDCDDDAD3E7884 (void);
-// 0x0000023C System.Void SerenityGarden.StageUIBlock::_SelectThisStage()
+// 0x0000023E System.Void SerenityGarden.StageUIBlock::_SelectThisStage()
 extern void StageUIBlock__SelectThisStage_mBF1EB4D694EC6A176CCF5F6374FBA87017039540 (void);
-// 0x0000023D System.Void SerenityGarden.StageUIBlock::.ctor()
+// 0x0000023F System.Void SerenityGarden.StageUIBlock::.ctor()
 extern void StageUIBlock__ctor_mDF053EFC1165B6049AC97F7B5DC2139B60565FAA (void);
-// 0x0000023E System.Void SerenityGarden.StageUISpawner::Awake()
+// 0x00000240 System.Void SerenityGarden.StageUISpawner::Awake()
 extern void StageUISpawner_Awake_m183799299BD9C3598A241DE09A9B7EE4EA0F5B57 (void);
-// 0x0000023F System.Void SerenityGarden.StageUISpawner::Start()
+// 0x00000241 System.Void SerenityGarden.StageUISpawner::Start()
 extern void StageUISpawner_Start_m5EE64034CD0399A05B3E96782C7655F2A9999E1C (void);
-// 0x00000240 System.Void SerenityGarden.StageUISpawner::Update()
+// 0x00000242 System.Void SerenityGarden.StageUISpawner::Update()
 extern void StageUISpawner_Update_m3ADBF579CB5607276B59948A50004B5AB07A7D95 (void);
-// 0x00000241 System.Boolean SerenityGarden.StageUISpawner::HasAllDependencies()
+// 0x00000243 System.Boolean SerenityGarden.StageUISpawner::HasAllDependencies()
 extern void StageUISpawner_HasAllDependencies_mAB56F15E562F855AE0A0586F068037A000D007D2 (void);
-// 0x00000242 System.Void SerenityGarden.StageUISpawner::Init()
+// 0x00000244 System.Void SerenityGarden.StageUISpawner::Init()
 extern void StageUISpawner_Init_m283F8D9620F5B17BDE5F153B2556C1627FCF617F (void);
-// 0x00000243 System.Void SerenityGarden.StageUISpawner::.ctor()
+// 0x00000245 System.Void SerenityGarden.StageUISpawner::.ctor()
 extern void StageUISpawner__ctor_m2E771FD9DEFA66CB859D90E73DCB353B36DD9F20 (void);
-// 0x00000244 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Start()
+// 0x00000246 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Start()
 extern void ConnectAndJoinRandomLb_Start_mC1B526A630B8F8E905020BD3A89781A22C80D00F (void);
-// 0x00000245 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Update()
+// 0x00000247 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::Update()
 extern void ConnectAndJoinRandomLb_Update_mE51649FDE6E924B2FF01FE52C417959E357D122E (void);
-// 0x00000246 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnected()
+// 0x00000248 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnected()
 extern void ConnectAndJoinRandomLb_OnConnected_m67AB069B00D2826B9E47FB7AA31DC7E1594A1A4E (void);
-// 0x00000247 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnectedToMaster()
+// 0x00000249 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnConnectedToMaster()
 extern void ConnectAndJoinRandomLb_OnConnectedToMaster_mFD6847B18CB410CD67C03EC024CCB6642879501B (void);
-// 0x00000248 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnDisconnected(Photon.Realtime.DisconnectCause)
+// 0x0000024A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnDisconnected(Photon.Realtime.DisconnectCause)
 extern void ConnectAndJoinRandomLb_OnDisconnected_m5D4320092A3E567CE0F95315816141B1ED160DA4 (void);
-// 0x00000249 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+// 0x0000024B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationResponse(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 extern void ConnectAndJoinRandomLb_OnCustomAuthenticationResponse_m5EAA0C376141FADCEAF50910B4E612996550B94A (void);
-// 0x0000024A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationFailed(System.String)
+// 0x0000024C System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCustomAuthenticationFailed(System.String)
 extern void ConnectAndJoinRandomLb_OnCustomAuthenticationFailed_mCD61DC01A2D2A9D9E4D4B8B5A830BDDB449A83A2 (void);
-// 0x0000024B System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionListReceived(Photon.Realtime.RegionHandler)
+// 0x0000024D System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionListReceived(Photon.Realtime.RegionHandler)
 extern void ConnectAndJoinRandomLb_OnRegionListReceived_mFD94F91F64D0E37FA51EF26E4FE133EEAC281D69 (void);
-// 0x0000024C System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
+// 0x0000024E System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRoomListUpdate(System.Collections.Generic.List`1<Photon.Realtime.RoomInfo>)
 extern void ConnectAndJoinRandomLb_OnRoomListUpdate_m4DA82485E114A0D92A352E7FC1C1AEE7D2B8AD36 (void);
-// 0x0000024D System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
+// 0x0000024F System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLobbyStatisticsUpdate(System.Collections.Generic.List`1<Photon.Realtime.TypedLobbyInfo>)
 extern void ConnectAndJoinRandomLb_OnLobbyStatisticsUpdate_mE413DF5F171397E18D6544E51A80387C74259218 (void);
-// 0x0000024E System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedLobby()
+// 0x00000250 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedLobby()
 extern void ConnectAndJoinRandomLb_OnJoinedLobby_m502FBFC94CF9F586704D618E5EED6AEBFAD5FC13 (void);
-// 0x0000024F System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftLobby()
+// 0x00000251 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftLobby()
 extern void ConnectAndJoinRandomLb_OnLeftLobby_m94B3879644426AC6473D52B9D076E30FAA34CE07 (void);
-// 0x00000250 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
+// 0x00000252 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnFriendListUpdate(System.Collections.Generic.List`1<Photon.Realtime.FriendInfo>)
 extern void ConnectAndJoinRandomLb_OnFriendListUpdate_m02DA9363DDB58901046844152E8205A0D006ED3B (void);
-// 0x00000251 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreatedRoom()
+// 0x00000253 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreatedRoom()
 extern void ConnectAndJoinRandomLb_OnCreatedRoom_mD35351A0F34BA50CA89DB7C453A3FC10431A2E90 (void);
-// 0x00000252 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreateRoomFailed(System.Int16,System.String)
+// 0x00000254 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnCreateRoomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnCreateRoomFailed_m632EBBF45A9420C029CDB97057C29CB7FA7A6101 (void);
-// 0x00000253 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedRoom()
+// 0x00000255 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinedRoom()
 extern void ConnectAndJoinRandomLb_OnJoinedRoom_m20447393863F7E7C211A1162AE46964600742DEB (void);
-// 0x00000254 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRoomFailed(System.Int16,System.String)
+// 0x00000256 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRoomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnJoinRoomFailed_mAE025171DCED9AE6965DD61FE498AE19C4BA042F (void);
-// 0x00000255 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRandomFailed(System.Int16,System.String)
+// 0x00000257 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnJoinRandomFailed(System.Int16,System.String)
 extern void ConnectAndJoinRandomLb_OnJoinRandomFailed_m3CA8A34C4DAA0B495F86E6FF3FE7235E1C481D27 (void);
-// 0x00000256 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftRoom()
+// 0x00000258 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnLeftRoom()
 extern void ConnectAndJoinRandomLb_OnLeftRoom_m469D8BACCE6E068BA26D658FF3F7262E46942910 (void);
-// 0x00000257 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionPingCompleted(Photon.Realtime.RegionHandler)
+// 0x00000259 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::OnRegionPingCompleted(Photon.Realtime.RegionHandler)
 extern void ConnectAndJoinRandomLb_OnRegionPingCompleted_m9D6D7E9E33EF1B3AEDEB0C7B9F1BD3A8A147C4B6 (void);
-// 0x00000258 System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::.ctor()
+// 0x0000025A System.Void Photon.Realtime.Demo.ConnectAndJoinRandomLb::.ctor()
 extern void ConnectAndJoinRandomLb__ctor_mA2C7AC7CFCE8C75247D814AC4FC00E7147BE9338 (void);
-// 0x00000259 System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::Start()
+// 0x0000025B System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::Start()
 extern void EventSystemSpawner_Start_mC0159B1608CE230431CE6E57942697BDA7E86058 (void);
-// 0x0000025A System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::.ctor()
+// 0x0000025C System.Void Photon.Chat.UtilityScripts.EventSystemSpawner::.ctor()
 extern void EventSystemSpawner__ctor_m30A05F9A28B40C737DED09A0568F5C8DBEC2A884 (void);
-// 0x0000025B System.Void Photon.Chat.UtilityScripts.OnStartDelete::Start()
+// 0x0000025D System.Void Photon.Chat.UtilityScripts.OnStartDelete::Start()
 extern void OnStartDelete_Start_m8B374329777AEBB7817224B1CE204C467410FCB4 (void);
-// 0x0000025C System.Void Photon.Chat.UtilityScripts.OnStartDelete::.ctor()
+// 0x0000025E System.Void Photon.Chat.UtilityScripts.OnStartDelete::.ctor()
 extern void OnStartDelete__ctor_mB27E9F07EB0548A659B0B9018AE84F72295E181A (void);
-// 0x0000025D System.Void Photon.Chat.UtilityScripts.TextButtonTransition::Awake()
+// 0x0000025F System.Void Photon.Chat.UtilityScripts.TextButtonTransition::Awake()
 extern void TextButtonTransition_Awake_m63B0A899DD4CC64D84AFCCA563FF881D4CBE90F4 (void);
-// 0x0000025E System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnEnable()
+// 0x00000260 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnEnable()
 extern void TextButtonTransition_OnEnable_m09E4BAF6822C47BC8193E4D46AC05DCDB1322EFC (void);
-// 0x0000025F System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnDisable()
+// 0x00000261 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnDisable()
 extern void TextButtonTransition_OnDisable_m7B8FEF0CE10D18B41B6585D6343FF2ED4F6424FE (void);
-// 0x00000260 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+// 0x00000262 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
 extern void TextButtonTransition_OnPointerEnter_mC0AD8DAF6BBF3562D7C2BEEBDE73857A7893599D (void);
-// 0x00000261 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+// 0x00000263 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
 extern void TextButtonTransition_OnPointerExit_m30AAD5FD5D40E03121E5518C141CE75711BC6350 (void);
-// 0x00000262 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::.ctor()
+// 0x00000264 System.Void Photon.Chat.UtilityScripts.TextButtonTransition::.ctor()
 extern void TextButtonTransition__ctor_m52DC83C85CF76AC6B7565448CBD1985ED59B24CB (void);
-// 0x00000263 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnEnable()
+// 0x00000265 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnEnable()
 extern void TextToggleIsOnTransition_OnEnable_mE64A3775C98726801505EF2FB7570872CB7A9C14 (void);
-// 0x00000264 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnDisable()
+// 0x00000266 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnDisable()
 extern void TextToggleIsOnTransition_OnDisable_mFF7258B1F487B04A94DBEA372C6B93E18FB44D51 (void);
-// 0x00000265 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnValueChanged(System.Boolean)
+// 0x00000267 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnValueChanged(System.Boolean)
 extern void TextToggleIsOnTransition_OnValueChanged_m5E21C09A751BF0A12568F92CB9D24A2F48E56C79 (void);
-// 0x00000266 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
+// 0x00000268 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerEnter(UnityEngine.EventSystems.PointerEventData)
 extern void TextToggleIsOnTransition_OnPointerEnter_m24D757CF4F34F1906A88990C83AF5F438F73A6A2 (void);
-// 0x00000267 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+// 0x00000269 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::OnPointerExit(UnityEngine.EventSystems.PointerEventData)
 extern void TextToggleIsOnTransition_OnPointerExit_m1F22B0EAB2D11AFCBCD61053B309D9BCE63CA659 (void);
-// 0x00000268 System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::.ctor()
+// 0x0000026A System.Void Photon.Chat.UtilityScripts.TextToggleIsOnTransition::.ctor()
 extern void TextToggleIsOnTransition__ctor_m2E1359DF320C6AA925DD35EC851A6E2EE50EF6A3 (void);
-// 0x00000269 System.Void SerenityGarden.GamePauseManager_UnpauseGameEvent::.ctor(System.Object,System.IntPtr)
+// 0x0000026B System.Void SerenityGarden.GamePauseManager/UnpauseGameEvent::.ctor(System.Object,System.IntPtr)
 extern void UnpauseGameEvent__ctor_m87A66FA7E32793777798F25B20F1F6E32166CA1E (void);
-// 0x0000026A System.Void SerenityGarden.GamePauseManager_UnpauseGameEvent::Invoke()
+// 0x0000026C System.Void SerenityGarden.GamePauseManager/UnpauseGameEvent::Invoke()
 extern void UnpauseGameEvent_Invoke_m060F27FB0490E579342026A20EEBD5BE6A06E5DB (void);
-// 0x0000026B System.IAsyncResult SerenityGarden.GamePauseManager_UnpauseGameEvent::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x0000026D System.IAsyncResult SerenityGarden.GamePauseManager/UnpauseGameEvent::BeginInvoke(System.AsyncCallback,System.Object)
 extern void UnpauseGameEvent_BeginInvoke_m112A7AFFDAB73245F49044EE8FB7FB8A24D4D0C1 (void);
-// 0x0000026C System.Void SerenityGarden.GamePauseManager_UnpauseGameEvent::EndInvoke(System.IAsyncResult)
+// 0x0000026E System.Void SerenityGarden.GamePauseManager/UnpauseGameEvent::EndInvoke(System.IAsyncResult)
 extern void UnpauseGameEvent_EndInvoke_m808E94601F5D8C5CD14510F9C6D4FCEEEAC62784 (void);
-// 0x0000026D System.Void SerenityGarden.WaveManager_<WaveSpawner>d__21::.ctor(System.Int32)
+// 0x0000026F System.Void SerenityGarden.WaveManager/<WaveSpawner>d__21::.ctor(System.Int32)
 extern void U3CWaveSpawnerU3Ed__21__ctor_mB0737FC49189F9C6B569A4927C114038AE1D5542 (void);
-// 0x0000026E System.Void SerenityGarden.WaveManager_<WaveSpawner>d__21::System.IDisposable.Dispose()
+// 0x00000270 System.Void SerenityGarden.WaveManager/<WaveSpawner>d__21::System.IDisposable.Dispose()
 extern void U3CWaveSpawnerU3Ed__21_System_IDisposable_Dispose_m097E8DB6FCB6201AAE35D578678F4AC1CA8C8B36 (void);
-// 0x0000026F System.Boolean SerenityGarden.WaveManager_<WaveSpawner>d__21::MoveNext()
+// 0x00000271 System.Boolean SerenityGarden.WaveManager/<WaveSpawner>d__21::MoveNext()
 extern void U3CWaveSpawnerU3Ed__21_MoveNext_mE06FDE8C7A82234D71F7A6DAB36653EDF7374E24 (void);
-// 0x00000270 System.Object SerenityGarden.WaveManager_<WaveSpawner>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000272 System.Object SerenityGarden.WaveManager/<WaveSpawner>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CWaveSpawnerU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m6B931F11FD3507CCD8B15F6735CA1F33DF67109D (void);
-// 0x00000271 System.Void SerenityGarden.WaveManager_<WaveSpawner>d__21::System.Collections.IEnumerator.Reset()
+// 0x00000273 System.Void SerenityGarden.WaveManager/<WaveSpawner>d__21::System.Collections.IEnumerator.Reset()
 extern void U3CWaveSpawnerU3Ed__21_System_Collections_IEnumerator_Reset_m07514378B7FF493863D653BC51D8E75CDFE3246B (void);
-// 0x00000272 System.Object SerenityGarden.WaveManager_<WaveSpawner>d__21::System.Collections.IEnumerator.get_Current()
+// 0x00000274 System.Object SerenityGarden.WaveManager/<WaveSpawner>d__21::System.Collections.IEnumerator.get_Current()
 extern void U3CWaveSpawnerU3Ed__21_System_Collections_IEnumerator_get_Current_m83DB0E0DA019F418C22153851F50A6CB3A0E4026 (void);
-// 0x00000273 System.Void SerenityGarden.InputManager_InputEventOnPress::.ctor(System.Object,System.IntPtr)
+// 0x00000275 System.Void SerenityGarden.InputManager/InputEventOnPress::.ctor(System.Object,System.IntPtr)
 extern void InputEventOnPress__ctor_mB1A30D2F2C8E9F0CA939A7A3DE8E180511D4D1BA (void);
-// 0x00000274 System.Void SerenityGarden.InputManager_InputEventOnPress::Invoke()
+// 0x00000276 System.Void SerenityGarden.InputManager/InputEventOnPress::Invoke()
 extern void InputEventOnPress_Invoke_m00FFA971FF2DB9F2A853E5661C51FB3252ED603E (void);
-// 0x00000275 System.IAsyncResult SerenityGarden.InputManager_InputEventOnPress::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x00000277 System.IAsyncResult SerenityGarden.InputManager/InputEventOnPress::BeginInvoke(System.AsyncCallback,System.Object)
 extern void InputEventOnPress_BeginInvoke_m7425CAF89B08E032F249CD3C856C4550FCAC9FFA (void);
-// 0x00000276 System.Void SerenityGarden.InputManager_InputEventOnPress::EndInvoke(System.IAsyncResult)
+// 0x00000278 System.Void SerenityGarden.InputManager/InputEventOnPress::EndInvoke(System.IAsyncResult)
 extern void InputEventOnPress_EndInvoke_m3254D55219FBED72A2B7B57B11C6F7563D72EA72 (void);
-// 0x00000277 System.Void SerenityGarden.InputManager_InputEventOnRelease::.ctor(System.Object,System.IntPtr)
+// 0x00000279 System.Void SerenityGarden.InputManager/InputEventOnRelease::.ctor(System.Object,System.IntPtr)
 extern void InputEventOnRelease__ctor_m24FBB6A110E826B77FE4AA4A04DB9F051D4DE142 (void);
-// 0x00000278 System.Void SerenityGarden.InputManager_InputEventOnRelease::Invoke()
+// 0x0000027A System.Void SerenityGarden.InputManager/InputEventOnRelease::Invoke()
 extern void InputEventOnRelease_Invoke_m10562BCDB5D895C0FD2688E8F537D5EF83B3DD95 (void);
-// 0x00000279 System.IAsyncResult SerenityGarden.InputManager_InputEventOnRelease::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x0000027B System.IAsyncResult SerenityGarden.InputManager/InputEventOnRelease::BeginInvoke(System.AsyncCallback,System.Object)
 extern void InputEventOnRelease_BeginInvoke_m28F80A8F9D237C13D8EF533A4C47ACDA7DA689CE (void);
-// 0x0000027A System.Void SerenityGarden.InputManager_InputEventOnRelease::EndInvoke(System.IAsyncResult)
+// 0x0000027C System.Void SerenityGarden.InputManager/InputEventOnRelease::EndInvoke(System.IAsyncResult)
 extern void InputEventOnRelease_EndInvoke_m97FEB35463992159BDC600C7E269F4876BEB4761 (void);
-// 0x0000027B System.Void SerenityGarden.InputManager_InputEventOnDrag::.ctor(System.Object,System.IntPtr)
+// 0x0000027D System.Void SerenityGarden.InputManager/InputEventOnDrag::.ctor(System.Object,System.IntPtr)
 extern void InputEventOnDrag__ctor_m06D5EAA9C5E9629F0A8326A5143B0C16BE8AA87F (void);
-// 0x0000027C System.Void SerenityGarden.InputManager_InputEventOnDrag::Invoke()
+// 0x0000027E System.Void SerenityGarden.InputManager/InputEventOnDrag::Invoke()
 extern void InputEventOnDrag_Invoke_m1EF85E7F12293B753A901E50AB34574EADDD2AEE (void);
-// 0x0000027D System.IAsyncResult SerenityGarden.InputManager_InputEventOnDrag::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x0000027F System.IAsyncResult SerenityGarden.InputManager/InputEventOnDrag::BeginInvoke(System.AsyncCallback,System.Object)
 extern void InputEventOnDrag_BeginInvoke_mE3B97549AC0A7C62C15C0B43EE1EB6D3D40DF1E6 (void);
-// 0x0000027E System.Void SerenityGarden.InputManager_InputEventOnDrag::EndInvoke(System.IAsyncResult)
+// 0x00000280 System.Void SerenityGarden.InputManager/InputEventOnDrag::EndInvoke(System.IAsyncResult)
 extern void InputEventOnDrag_EndInvoke_mC7DB36B0236F62C06280510146DFA1D3704E5F5F (void);
-// 0x0000027F System.Void SerenityGarden.ShopManager_<>c__DisplayClass11_0::.ctor()
+// 0x00000281 System.Void SerenityGarden.ShopManager/<>c__DisplayClass11_0::.ctor()
 extern void U3CU3Ec__DisplayClass11_0__ctor_m111AFC7708292600DC8590681760D767983CB1C6 (void);
-// 0x00000280 System.Void SerenityGarden.ShopManager_<>c__DisplayClass11_0::<SpawnHeaders>b__0()
+// 0x00000282 System.Void SerenityGarden.ShopManager/<>c__DisplayClass11_0::<SpawnHeaders>b__0()
 extern void U3CU3Ec__DisplayClass11_0_U3CSpawnHeadersU3Eb__0_m328C0A7BDE5057E54CD2251DA658AFD6D7B4A74E (void);
-static Il2CppMethodPointer s_methodPointers[640] = 
+static Il2CppMethodPointer s_methodPointers[642] = 
 {
 	NULL,
 	FileParser_SaveFileContent_m103E4C1B9CA1F941ED6368A1F859DC5EEF76D8A0,
@@ -1557,6 +1561,7 @@ static Il2CppMethodPointer s_methodPointers[640] =
 	LockOnManager_Start_mEFD832FD4C12B21A1262FF9A1E45A3D68A42D440,
 	LockOnManager_SelectEnemy_m40AF524AE16E5A44F412A0E9F49FF4C8DA5C1F07,
 	LockOnManager__ctor_m0F57CCE93E380A29DD04117A5CD93D2B284C2C49,
+	SceneClickManager_Awake_mEED19085E5D064ED1B794B533074266B72D05849,
 	SceneClickManager_Start_mA2ED68DBDCD563A804A3EDC690115D2638015599,
 	SceneClickManager_OnPressHandler_mFC96EE0A615E58BBFEA573C8F14181DDBC867360,
 	SceneClickManager_DisablePreviousStates_mE7DEBB224C96D0F7A051BA7FBD97C36DA2FB6889,
@@ -1723,6 +1728,7 @@ static Il2CppMethodPointer s_methodPointers[640] =
 	RaidStageSelection_Awake_m75451FC92D3E211DA391B259C805D144B12F4C80,
 	RaidStageSelection_Start_m398A6D24D7F785FCFC275B613B3C651067AD4AEC,
 	RaidStageSelection_Update_m0D3F87445020EFFD666E83341588FC3ABBB1BAFD,
+	RaidStageSelection_OnClick_Back_m16F85C2BFCCC8E6F771C5E6E91528AF085FDEEAE,
 	RaidStageSelection_HasAllDependencies_m5855D8F4DFA6C04B480D248DF497080F8F9462D1,
 	RaidStageSelection_Init_mE10F072D016F4D143775241DB5B9C5CA0A392916,
 	RaidStageSelection__ctor_m30FFE97D27AF69416B91A2E303FF975DFCE7E9CB,
@@ -1892,7 +1898,7 @@ static Il2CppMethodPointer s_methodPointers[640] =
 	U3CU3Ec__DisplayClass11_0__ctor_m111AFC7708292600DC8590681760D767983CB1C6,
 	U3CU3Ec__DisplayClass11_0_U3CSpawnHeadersU3Eb__0_m328C0A7BDE5057E54CD2251DA658AFD6D7B4A74E,
 };
-static const int32_t s_InvokerIndices[640] = 
+static const int32_t s_InvokerIndices[642] = 
 {
 	-1,
 	627,
@@ -1925,7 +1931,7 @@ static const int32_t s_InvokerIndices[640] =
 	26,
 	212,
 	212,
-	2242,
+	2238,
 	27,
 	27,
 	212,
@@ -1941,7 +1947,7 @@ static const int32_t s_InvokerIndices[640] =
 	23,
 	649,
 	23,
-	2156,
+	2152,
 	23,
 	23,
 	23,
@@ -1991,8 +1997,8 @@ static const int32_t s_InvokerIndices[640] =
 	89,
 	23,
 	23,
-	2333,
-	2332,
+	2329,
+	2328,
 	23,
 	23,
 	23,
@@ -2073,7 +2079,7 @@ static const int32_t s_InvokerIndices[640] =
 	23,
 	23,
 	10,
-	2779,
+	2776,
 	23,
 	32,
 	23,
@@ -2094,7 +2100,7 @@ static const int32_t s_InvokerIndices[640] =
 	10,
 	32,
 	23,
-	2360,
+	2356,
 	23,
 	23,
 	23,
@@ -2114,7 +2120,7 @@ static const int32_t s_InvokerIndices[640] =
 	26,
 	14,
 	26,
-	2780,
+	2777,
 	23,
 	23,
 	23,
@@ -2207,6 +2213,7 @@ static const int32_t s_InvokerIndices[640] =
 	23,
 	23,
 	23,
+	23,
 	10,
 	32,
 	23,
@@ -2237,9 +2244,9 @@ static const int32_t s_InvokerIndices[640] =
 	10,
 	9,
 	23,
-	2333,
+	2329,
 	23,
-	2332,
+	2328,
 	23,
 	740,
 	740,
@@ -2280,7 +2287,7 @@ static const int32_t s_InvokerIndices[640] =
 	23,
 	23,
 	23,
-	2332,
+	2328,
 	23,
 	23,
 	23,
@@ -2348,20 +2355,21 @@ static const int32_t s_InvokerIndices[640] =
 	23,
 	23,
 	23,
-	1123,
+	1121,
 	32,
 	23,
-	1123,
+	1121,
 	23,
 	23,
-	1123,
+	1121,
 	26,
 	23,
 	26,
 	23,
 	23,
 	27,
-	2332,
+	2328,
+	23,
 	23,
 	23,
 	23,
@@ -2373,12 +2381,12 @@ static const int32_t s_InvokerIndices[640] =
 	32,
 	23,
 	137,
+	2778,
+	2779,
+	1567,
+	2780,
 	2781,
 	2782,
-	1569,
-	2783,
-	2784,
-	2785,
 	-1,
 	1,
 	230,
@@ -2401,7 +2409,7 @@ static const int32_t s_InvokerIndices[640] =
 	23,
 	23,
 	23,
-	2786,
+	2783,
 	34,
 	23,
 	23,
@@ -2429,7 +2437,7 @@ static const int32_t s_InvokerIndices[640] =
 	37,
 	34,
 	34,
-	1559,
+	1557,
 	23,
 	23,
 	23,
@@ -2445,7 +2453,7 @@ static const int32_t s_InvokerIndices[640] =
 	32,
 	23,
 	23,
-	1487,
+	1485,
 	23,
 	23,
 	26,
@@ -2487,10 +2495,10 @@ static const int32_t s_InvokerIndices[640] =
 	23,
 	26,
 	23,
-	1123,
+	1121,
 	23,
-	1123,
-	1123,
+	1121,
+	1121,
 	23,
 	26,
 	23,
@@ -2538,21 +2546,23 @@ static const int32_t s_InvokerIndices[640] =
 static const Il2CppTokenRangePair s_rgctxIndices[2] = 
 {
 	{ 0x06000001, { 0, 2 } },
-	{ 0x060001E6, { 2, 2 } },
+	{ 0x060001E8, { 2, 2 } },
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[4] = 
 {
-	{ (Il2CppRGCTXDataType)1, 32198 },
-	{ (Il2CppRGCTXDataType)2, 32198 },
-	{ (Il2CppRGCTXDataType)2, 32885 },
-	{ (Il2CppRGCTXDataType)2, 32364 },
+	{ (Il2CppRGCTXDataType)1, 31947 },
+	{ (Il2CppRGCTXDataType)2, 31947 },
+	{ (Il2CppRGCTXDataType)2, 32629 },
+	{ (Il2CppRGCTXDataType)2, 32114 },
 };
 extern const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	640,
+	642,
 	s_methodPointers,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

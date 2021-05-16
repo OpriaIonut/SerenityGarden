@@ -111,11 +111,11 @@ extern void Event_set_mousePosition_Injected_mA402D90BDCB538F3730BDCCDA5D6C48DD3
 // 0x0000002D System.Void UnityEngine.Event::get_delta_Injected(UnityEngine.Vector2&)
 extern void Event_get_delta_Injected_m73B3D73424F90847093AC32053796FABEFB849AD (void);
 // 0x0000002E System.Boolean UnityEngine.EventInterests::get_wantsMouseMove()
-extern void EventInterests_get_wantsMouseMove_mCE4BC71FE4B4D61887B24C3EC03EC55C64D220E7_AdjustorThunk (void);
+extern void EventInterests_get_wantsMouseMove_mCE4BC71FE4B4D61887B24C3EC03EC55C64D220E7 (void);
 // 0x0000002F System.Boolean UnityEngine.EventInterests::get_wantsMouseEnterLeaveWindow()
-extern void EventInterests_get_wantsMouseEnterLeaveWindow_m2A0B5FF7BD7BDF4C1CA15DE41E00E12F1F1D746C_AdjustorThunk (void);
+extern void EventInterests_get_wantsMouseEnterLeaveWindow_m2A0B5FF7BD7BDF4C1CA15DE41E00E12F1F1D746C (void);
 // 0x00000030 System.Boolean UnityEngine.EventInterests::WantsEvent(UnityEngine.EventType)
-extern void EventInterests_WantsEvent_mDDA5070D484AE4717D96D3A5B7B2ED00051DA94A_AdjustorThunk (void);
+extern void EventInterests_WantsEvent_mDDA5070D484AE4717D96D3A5B7B2ED00051DA94A (void);
 // 0x00000031 UnityEngine.Color UnityEngine.GUI::get_color()
 extern void GUI_get_color_m23965300A30C348742E8421AEE1396B3D5361B41 (void);
 // 0x00000032 System.Void UnityEngine.GUI::set_color(UnityEngine.Color)
@@ -154,7 +154,7 @@ extern void GUI_HasMouseControl_m66CD5558529BEFFD84D4CAB8B1BC6349F12DF4B1 (void)
 extern void GUI_ReleaseMouseControl_m4F0C7D33663DEC8BC1D8C04C2417899C8AB4462B (void);
 // 0x00000043 System.Void UnityEngine.GUI::InternalRepaintEditorWindow()
 extern void GUI_InternalRepaintEditorWindow_m11DA79EA660DA1F0CA73EB0A48CC510E5179F1AF (void);
-// 0x00000044 UnityEngine.Rect UnityEngine.GUI::Internal_DoWindow(System.Int32,System.Int32,UnityEngine.Rect,UnityEngine.GUI_WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,System.Object,System.Boolean)
+// 0x00000044 UnityEngine.Rect UnityEngine.GUI::Internal_DoWindow(System.Int32,System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,System.Object,System.Boolean)
 extern void GUI_Internal_DoWindow_m0491913E9E8699A977CBB0C61997B664AA16D353 (void);
 // 0x00000045 System.Void UnityEngine.GUI::DragWindow(UnityEngine.Rect)
 extern void GUI_DragWindow_mBD8E6FDFE56F183F95E66CB35C8C3D189559F552 (void);
@@ -230,11 +230,11 @@ extern void GUI_BeginGroup_m98D571242A601E5986E9FD2A6AC5A1B732B7F340 (void);
 extern void GUI_EndGroup_mE2BBE5DEF219F9EAE72366962E833BDBFE8BD619 (void);
 // 0x00000069 UnityEngineInternal.GenericStack UnityEngine.GUI::get_scrollViewStates()
 extern void GUI_get_scrollViewStates_m2FAC333F84B90E4F1E1ED5FC8651DC8C4C30B7AF (void);
-// 0x0000006A UnityEngine.Rect UnityEngine.GUI::Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI_WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle)
+// 0x0000006A UnityEngine.Rect UnityEngine.GUI::Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle)
 extern void GUI_Window_m8DFBB0BC63CDF1BBCC00500A8B0F838408C2269D (void);
-// 0x0000006B UnityEngine.Rect UnityEngine.GUI::DoWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI_WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUISkin,System.Boolean)
+// 0x0000006B UnityEngine.Rect UnityEngine.GUI::DoWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUISkin,System.Boolean)
 extern void GUI_DoWindow_m1D9A50ADA16097D5DAA5D6327B61BE2B62CF5A77 (void);
-// 0x0000006C System.Void UnityEngine.GUI::CallWindowDelegate(UnityEngine.GUI_WindowFunction,System.Int32,System.Int32,UnityEngine.GUISkin,System.Int32,System.Single,System.Single,UnityEngine.GUIStyle)
+// 0x0000006C System.Void UnityEngine.GUI::CallWindowDelegate(UnityEngine.GUI/WindowFunction,System.Int32,System.Int32,UnityEngine.GUISkin,System.Int32,System.Single,System.Single,UnityEngine.GUIStyle)
 extern void GUI_CallWindowDelegate_m49D5A2E2DAEF525772FAAAA9A840244137BB9175 (void);
 // 0x0000006D System.Void UnityEngine.GUI::DragWindow()
 extern void GUI_DragWindow_mDC99880F131DDEC8F6CA2AA346926ED0EEA0E927 (void);
@@ -250,17 +250,17 @@ extern void GUI_set_backgroundColor_Injected_m23A04198EAC3407DE010E9AD7EEE393E3A
 extern void GUI_get_contentColor_Injected_m107FC541BBB82078137FC167718939D2DE8D98A5 (void);
 // 0x00000073 System.Void UnityEngine.GUI::set_contentColor_Injected(UnityEngine.Color&)
 extern void GUI_set_contentColor_Injected_m01829150812C3FC6131E1E584BD6BD8D136E6FAE (void);
-// 0x00000074 System.Void UnityEngine.GUI::Internal_DoWindow_Injected(System.Int32,System.Int32,UnityEngine.Rect&,UnityEngine.GUI_WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,System.Object,System.Boolean,UnityEngine.Rect&)
+// 0x00000074 System.Void UnityEngine.GUI::Internal_DoWindow_Injected(System.Int32,System.Int32,UnityEngine.Rect&,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,System.Object,System.Boolean,UnityEngine.Rect&)
 extern void GUI_Internal_DoWindow_Injected_mEA9D79FEB9DE39D98F052354778804D873B5CED9 (void);
 // 0x00000075 System.Void UnityEngine.GUI::DragWindow_Injected(UnityEngine.Rect&)
 extern void GUI_DragWindow_Injected_m09BBEE6EC7D126CE8DE1ACC16395157B614E6275 (void);
-// 0x00000076 System.Void UnityEngine.GUI_WindowFunction::.ctor(System.Object,System.IntPtr)
+// 0x00000076 System.Void UnityEngine.GUI/WindowFunction::.ctor(System.Object,System.IntPtr)
 extern void WindowFunction__ctor_m216C357C45DF9A8ABE74056B8BDB1B7F94EE2D81 (void);
-// 0x00000077 System.Void UnityEngine.GUI_WindowFunction::Invoke(System.Int32)
+// 0x00000077 System.Void UnityEngine.GUI/WindowFunction::Invoke(System.Int32)
 extern void WindowFunction_Invoke_m08350FBFB60BC55246725A4840931AED2CAFF9AD (void);
-// 0x00000078 System.IAsyncResult UnityEngine.GUI_WindowFunction::BeginInvoke(System.Int32,System.AsyncCallback,System.Object)
+// 0x00000078 System.IAsyncResult UnityEngine.GUI/WindowFunction::BeginInvoke(System.Int32,System.AsyncCallback,System.Object)
 extern void WindowFunction_BeginInvoke_m522A6C91248FC9E44284AAB8909F83E5DB2960A2 (void);
-// 0x00000079 System.Void UnityEngine.GUI_WindowFunction::EndInvoke(System.IAsyncResult)
+// 0x00000079 System.Void UnityEngine.GUI/WindowFunction::EndInvoke(System.IAsyncResult)
 extern void WindowFunction_EndInvoke_m66738B73219CEB120C356497204151BCB432B2A2 (void);
 // 0x0000007A UnityEngine.Rect UnityEngine.GUIClip::get_visibleRect()
 extern void GUIClip_get_visibleRect_m08BF045699465EB363ADFC1FBF0BB14D9539193C (void);
@@ -290,10 +290,10 @@ extern void GUIClip_GetMatrix_Injected_m10DBE812BACDD4883B7FB68D9EC95A61B00FC6F9
 extern void GUIClip_SetMatrix_Injected_mCFA0B2F4EEF9CE6127DE84534573E2CC7EAA9AC1 (void);
 // 0x00000087 System.Void UnityEngine.GUIClip::Internal_PushParentClip_Injected(UnityEngine.Matrix4x4&,UnityEngine.Rect&)
 extern void GUIClip_Internal_PushParentClip_Injected_mB91B3B467828418206AE0C774FE87D6AAB92AB6C (void);
-// 0x00000088 System.Void UnityEngine.GUIClip_ParentClipScope::.ctor(UnityEngine.Matrix4x4,UnityEngine.Rect)
-extern void ParentClipScope__ctor_m5543BF70D43839805E8B967E49D5C1FBDC6F95B0_AdjustorThunk (void);
-// 0x00000089 System.Void UnityEngine.GUIClip_ParentClipScope::Dispose()
-extern void ParentClipScope_Dispose_m76BB2115977B3771AE24893D3686228E1EA1B7ED_AdjustorThunk (void);
+// 0x00000088 System.Void UnityEngine.GUIClip/ParentClipScope::.ctor(UnityEngine.Matrix4x4,UnityEngine.Rect)
+extern void ParentClipScope__ctor_m5543BF70D43839805E8B967E49D5C1FBDC6F95B0 (void);
+// 0x00000089 System.Void UnityEngine.GUIClip/ParentClipScope::Dispose()
+extern void ParentClipScope_Dispose_m76BB2115977B3771AE24893D3686228E1EA1B7ED (void);
 // 0x0000008A System.String UnityEngine.GUIContent::get_text()
 extern void GUIContent_get_text_mAAFFFB0278FCB4F7A7661BE595BA42CD093E38C5 (void);
 // 0x0000008B System.Void UnityEngine.GUIContent::set_text(System.String)
@@ -350,29 +350,29 @@ extern void GUILayout_BeginArea_mE329140CF26780AF025A41979D054854DD7587B8 (void)
 extern void GUILayout_BeginArea_mD44DAE48FBA586B5226F76E133505F698E729C2B (void);
 // 0x000000A5 System.Void UnityEngine.GUILayout::EndArea()
 extern void GUILayout_EndArea_mCBC21D52BCF9CAF29EEFC0A9F986BECE2F1CA754 (void);
-// 0x000000A6 UnityEngine.Rect UnityEngine.GUILayout::Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI_WindowFunction,System.String,UnityEngine.GUILayoutOption[])
+// 0x000000A6 UnityEngine.Rect UnityEngine.GUILayout::Window(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,System.String,UnityEngine.GUILayoutOption[])
 extern void GUILayout_Window_m25EBB2AE5252AE09E50F1E3DB3B1073A4CEA3205 (void);
-// 0x000000A7 UnityEngine.Rect UnityEngine.GUILayout::DoWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI_WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])
+// 0x000000A7 UnityEngine.Rect UnityEngine.GUILayout::DoWindow(System.Int32,UnityEngine.Rect,UnityEngine.GUI/WindowFunction,UnityEngine.GUIContent,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])
 extern void GUILayout_DoWindow_m4E28C44E56441AF36409760509781B24DDFCD5C8 (void);
 // 0x000000A8 UnityEngine.GUILayoutOption UnityEngine.GUILayout::Width(System.Single)
 extern void GUILayout_Width_mDA8F26D92E788474E09AECA1541E8C920C72DA10 (void);
 // 0x000000A9 UnityEngine.GUILayoutOption UnityEngine.GUILayout::Height(System.Single)
 extern void GUILayout_Height_mA5A24D5490022AC6449BBAED9C5A1647184B4026 (void);
-// 0x000000AA System.Void UnityEngine.GUILayout_LayoutedWindow::.ctor(UnityEngine.GUI_WindowFunction,UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUILayoutOption[],UnityEngine.GUIStyle)
+// 0x000000AA System.Void UnityEngine.GUILayout/LayoutedWindow::.ctor(UnityEngine.GUI/WindowFunction,UnityEngine.Rect,UnityEngine.GUIContent,UnityEngine.GUILayoutOption[],UnityEngine.GUIStyle)
 extern void LayoutedWindow__ctor_m861CBB0AC1E964B934ECEDA1293E40F43BDB01DA (void);
-// 0x000000AB System.Void UnityEngine.GUILayout_LayoutedWindow::DoWindow(System.Int32)
+// 0x000000AB System.Void UnityEngine.GUILayout/LayoutedWindow::DoWindow(System.Int32)
 extern void LayoutedWindow_DoWindow_mB53D6FA194DC693E358D8C26CA7F86ECD7760959 (void);
-// 0x000000AC System.Void UnityEngine.GUILayoutOption::.ctor(UnityEngine.GUILayoutOption_Type,System.Object)
+// 0x000000AC System.Void UnityEngine.GUILayoutOption::.ctor(UnityEngine.GUILayoutOption/Type,System.Object)
 extern void GUILayoutOption__ctor_m965FDA1345FD7146596EFA90F03D0C645FB3FD5D (void);
 // 0x000000AD UnityEngine.Rect UnityEngine.GUILayoutUtility::Internal_GetWindowRect(System.Int32)
 extern void GUILayoutUtility_Internal_GetWindowRect_mE35BED0433EE8BD928CD52681620519E647A1DA9 (void);
 // 0x000000AE System.Void UnityEngine.GUILayoutUtility::Internal_MoveWindow(System.Int32,UnityEngine.Rect)
 extern void GUILayoutUtility_Internal_MoveWindow_mFCB2DFE399B833D263138CF0A57626AFF52CB037 (void);
-// 0x000000AF UnityEngine.GUILayoutUtility_LayoutCache UnityEngine.GUILayoutUtility::SelectIDList(System.Int32,System.Boolean)
+// 0x000000AF UnityEngine.GUILayoutUtility/LayoutCache UnityEngine.GUILayoutUtility::SelectIDList(System.Int32,System.Boolean)
 extern void GUILayoutUtility_SelectIDList_m230ED9206897C92C5B090B3BBFC9B408603E56FD (void);
 // 0x000000B0 System.Void UnityEngine.GUILayoutUtility::Begin(System.Int32)
 extern void GUILayoutUtility_Begin_m6876A33199599688408A4AD364069090E833B237 (void);
-// 0x000000B1 System.Void UnityEngine.GUILayoutUtility::BeginContainer(UnityEngine.GUILayoutUtility_LayoutCache)
+// 0x000000B1 System.Void UnityEngine.GUILayoutUtility::BeginContainer(UnityEngine.GUILayoutUtility/LayoutCache)
 extern void GUILayoutUtility_BeginContainer_m7ED54498945D4EC6643928410586F68F78EEF77A (void);
 // 0x000000B2 System.Void UnityEngine.GUILayoutUtility::BeginWindow(System.Int32,UnityEngine.GUIStyle,UnityEngine.GUILayoutOption[])
 extern void GUILayoutUtility_BeginWindow_mB3475D9BE89CF26AB0E6F0D46B1930F1874EB132 (void);
@@ -404,7 +404,7 @@ extern void GUILayoutUtility__cctor_m6C436C771D62B8982AE0E47DD5D41C607988395F (v
 extern void GUILayoutUtility_Internal_GetWindowRect_Injected_mE78DA4F8B25471CEFFCB6F43E37C7966FE436EEE (void);
 // 0x000000C0 System.Void UnityEngine.GUILayoutUtility::Internal_MoveWindow_Injected(System.Int32,UnityEngine.Rect&)
 extern void GUILayoutUtility_Internal_MoveWindow_Injected_mD80D56182A5684AC3BDA2B50AC8191974A064ABE (void);
-// 0x000000C1 System.Void UnityEngine.GUILayoutUtility_LayoutCache::.ctor()
+// 0x000000C1 System.Void UnityEngine.GUILayoutUtility/LayoutCache::.ctor()
 extern void LayoutCache__ctor_mF66D53540321BFD98CA89285D2E8FFDA5014A9CE (void);
 // 0x000000C2 System.Void UnityEngine.GUISettings::.ctor()
 extern void GUISettings__ctor_m6D2D6608CE04A741235BF0C8E134195B196F116D (void);
@@ -526,13 +526,13 @@ extern void GUISkin_FindStyle_m977BAAD9DE35AC43C9FA2DB52C6C0BDF83EE4706 (void);
 extern void GUISkin_MakeCurrent_m42FAF8090F6B57648678704D86A6451DB917CF2D (void);
 // 0x000000FD System.Collections.IEnumerator UnityEngine.GUISkin::GetEnumerator()
 extern void GUISkin_GetEnumerator_m3F6D91C1C038E5DC24C38F6D23C95DEE03173987 (void);
-// 0x000000FE System.Void UnityEngine.GUISkin_SkinChangedDelegate::.ctor(System.Object,System.IntPtr)
+// 0x000000FE System.Void UnityEngine.GUISkin/SkinChangedDelegate::.ctor(System.Object,System.IntPtr)
 extern void SkinChangedDelegate__ctor_m106EBB63DA6B078DD50D230BAC7535923307F2FA (void);
-// 0x000000FF System.Void UnityEngine.GUISkin_SkinChangedDelegate::Invoke()
+// 0x000000FF System.Void UnityEngine.GUISkin/SkinChangedDelegate::Invoke()
 extern void SkinChangedDelegate_Invoke_mE18CA4219F24151D8FC8A8A8B261F3FD860B007F (void);
-// 0x00000100 System.IAsyncResult UnityEngine.GUISkin_SkinChangedDelegate::BeginInvoke(System.AsyncCallback,System.Object)
+// 0x00000100 System.IAsyncResult UnityEngine.GUISkin/SkinChangedDelegate::BeginInvoke(System.AsyncCallback,System.Object)
 extern void SkinChangedDelegate_BeginInvoke_mB7F9F676B52F8A8108956D2DA04E8C0ECD5C3824 (void);
-// 0x00000101 System.Void UnityEngine.GUISkin_SkinChangedDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000101 System.Void UnityEngine.GUISkin/SkinChangedDelegate::EndInvoke(System.IAsyncResult)
 extern void SkinChangedDelegate_EndInvoke_mFB33D8790DB1DAA2CC1B927ADAE992FF3C89B149 (void);
 // 0x00000102 System.Object UnityEngine.GUIStateObjects::GetStateObject(System.Type,System.Int32)
 extern void GUIStateObjects_GetStateObject_m90A400F2D7196F386201EF3C87B1B6E80AD3D342 (void);
@@ -843,61 +843,61 @@ extern void ScrollViewState__ctor_mBD3229B13A482BEE165EE9CACA85F716122F3BD4 (voi
 // 0x0000019B System.Void UnityEngine.SliderState::.ctor()
 extern void SliderState__ctor_m8CBFEE8D20C2D8EB0B68B1B171D9396DE84B605E (void);
 // 0x0000019C System.Void UnityEngine.SliderHandler::.ctor(UnityEngine.Rect,System.Single,System.Single,System.Single,System.Single,UnityEngine.GUIStyle,UnityEngine.GUIStyle,System.Boolean,System.Int32,UnityEngine.GUIStyle)
-extern void SliderHandler__ctor_mF527E1A734DFDB1892BAAADDC016D6704A65B830_AdjustorThunk (void);
+extern void SliderHandler__ctor_mF527E1A734DFDB1892BAAADDC016D6704A65B830 (void);
 // 0x0000019D System.Single UnityEngine.SliderHandler::Handle()
-extern void SliderHandler_Handle_mC77D88A47BFE68073128915A06FEC7FF10A977EA_AdjustorThunk (void);
+extern void SliderHandler_Handle_mC77D88A47BFE68073128915A06FEC7FF10A977EA (void);
 // 0x0000019E System.Single UnityEngine.SliderHandler::OnMouseDown()
-extern void SliderHandler_OnMouseDown_mF8658C649BDDACA846ACBF1AFB691FB4D3443CB9_AdjustorThunk (void);
+extern void SliderHandler_OnMouseDown_mF8658C649BDDACA846ACBF1AFB691FB4D3443CB9 (void);
 // 0x0000019F System.Single UnityEngine.SliderHandler::OnMouseDrag()
-extern void SliderHandler_OnMouseDrag_mD769A22C854F05E03DB0885DDC8C4C78AE0DB5F4_AdjustorThunk (void);
+extern void SliderHandler_OnMouseDrag_mD769A22C854F05E03DB0885DDC8C4C78AE0DB5F4 (void);
 // 0x000001A0 System.Single UnityEngine.SliderHandler::OnMouseUp()
-extern void SliderHandler_OnMouseUp_mFB2BBB5A94A45F055B78120C0D86D902FE51B787_AdjustorThunk (void);
+extern void SliderHandler_OnMouseUp_mFB2BBB5A94A45F055B78120C0D86D902FE51B787 (void);
 // 0x000001A1 System.Single UnityEngine.SliderHandler::OnRepaint()
-extern void SliderHandler_OnRepaint_m768491070DB69CB0B2702F34414F144E1D28FA18_AdjustorThunk (void);
+extern void SliderHandler_OnRepaint_m768491070DB69CB0B2702F34414F144E1D28FA18 (void);
 // 0x000001A2 UnityEngine.EventType UnityEngine.SliderHandler::CurrentEventType()
-extern void SliderHandler_CurrentEventType_m1271EB28BE4AA83D33A2A1AE080BAFBAB1F74324_AdjustorThunk (void);
+extern void SliderHandler_CurrentEventType_m1271EB28BE4AA83D33A2A1AE080BAFBAB1F74324 (void);
 // 0x000001A3 System.Int32 UnityEngine.SliderHandler::CurrentScrollTroughSide()
-extern void SliderHandler_CurrentScrollTroughSide_m8F6980C17AF121BB0E5D093AE5CB48929D98DCB9_AdjustorThunk (void);
+extern void SliderHandler_CurrentScrollTroughSide_m8F6980C17AF121BB0E5D093AE5CB48929D98DCB9 (void);
 // 0x000001A4 System.Boolean UnityEngine.SliderHandler::IsEmptySlider()
-extern void SliderHandler_IsEmptySlider_mEF9ADA08B24BE0E9A5BF0C9F978D908D4C72A2F2_AdjustorThunk (void);
+extern void SliderHandler_IsEmptySlider_mEF9ADA08B24BE0E9A5BF0C9F978D908D4C72A2F2 (void);
 // 0x000001A5 System.Boolean UnityEngine.SliderHandler::SupportsPageMovements()
-extern void SliderHandler_SupportsPageMovements_m14524E4AB1BE981F7B5331D95DC056EF04544F19_AdjustorThunk (void);
+extern void SliderHandler_SupportsPageMovements_m14524E4AB1BE981F7B5331D95DC056EF04544F19 (void);
 // 0x000001A6 System.Single UnityEngine.SliderHandler::PageMovementValue()
-extern void SliderHandler_PageMovementValue_m0CE7B67D0F4ACEF771FED799D6BAB0898C5BB7BF_AdjustorThunk (void);
+extern void SliderHandler_PageMovementValue_m0CE7B67D0F4ACEF771FED799D6BAB0898C5BB7BF (void);
 // 0x000001A7 System.Single UnityEngine.SliderHandler::PageUpMovementBound()
-extern void SliderHandler_PageUpMovementBound_m446F73ADFD9B9AD7555D59BDEAA4FB2820262B09_AdjustorThunk (void);
+extern void SliderHandler_PageUpMovementBound_m446F73ADFD9B9AD7555D59BDEAA4FB2820262B09 (void);
 // 0x000001A8 UnityEngine.Event UnityEngine.SliderHandler::CurrentEvent()
-extern void SliderHandler_CurrentEvent_m06FA956F6E88FCB733103F5C46E74293CCC678EC_AdjustorThunk (void);
+extern void SliderHandler_CurrentEvent_m06FA956F6E88FCB733103F5C46E74293CCC678EC (void);
 // 0x000001A9 System.Single UnityEngine.SliderHandler::ValueForCurrentMousePosition()
-extern void SliderHandler_ValueForCurrentMousePosition_mBC3910446254C6660232383D5DD918404557224E_AdjustorThunk (void);
+extern void SliderHandler_ValueForCurrentMousePosition_mBC3910446254C6660232383D5DD918404557224E (void);
 // 0x000001AA System.Single UnityEngine.SliderHandler::Clamp(System.Single)
-extern void SliderHandler_Clamp_mF1F37A78EEFB09F6D74AD278AA184538922DAF5D_AdjustorThunk (void);
+extern void SliderHandler_Clamp_mF1F37A78EEFB09F6D74AD278AA184538922DAF5D (void);
 // 0x000001AB UnityEngine.Rect UnityEngine.SliderHandler::ThumbSelectionRect()
-extern void SliderHandler_ThumbSelectionRect_m40C770E0AC47780760324C144478597F1F4B2D3B_AdjustorThunk (void);
+extern void SliderHandler_ThumbSelectionRect_m40C770E0AC47780760324C144478597F1F4B2D3B (void);
 // 0x000001AC System.Void UnityEngine.SliderHandler::StartDraggingWithValue(System.Single)
-extern void SliderHandler_StartDraggingWithValue_m3BE586B742F4BE563F689EA3637512711464EC4B_AdjustorThunk (void);
+extern void SliderHandler_StartDraggingWithValue_m3BE586B742F4BE563F689EA3637512711464EC4B (void);
 // 0x000001AD UnityEngine.SliderState UnityEngine.SliderHandler::SliderState()
-extern void SliderHandler_SliderState_mB9390BCED9F56288E35F32773C0A29D15224264E_AdjustorThunk (void);
+extern void SliderHandler_SliderState_mB9390BCED9F56288E35F32773C0A29D15224264E (void);
 // 0x000001AE UnityEngine.Rect UnityEngine.SliderHandler::ThumbExtRect()
-extern void SliderHandler_ThumbExtRect_mCD30D6E4DA080CD8B98C537D243A3111A436B612_AdjustorThunk (void);
+extern void SliderHandler_ThumbExtRect_mCD30D6E4DA080CD8B98C537D243A3111A436B612 (void);
 // 0x000001AF UnityEngine.Rect UnityEngine.SliderHandler::ThumbRect()
-extern void SliderHandler_ThumbRect_m199134159F78E56B5F0252DAACF8DF800249973A_AdjustorThunk (void);
+extern void SliderHandler_ThumbRect_m199134159F78E56B5F0252DAACF8DF800249973A (void);
 // 0x000001B0 UnityEngine.Rect UnityEngine.SliderHandler::VerticalThumbRect()
-extern void SliderHandler_VerticalThumbRect_m2983BDC60F68CC9CA4C715926788339C10213F38_AdjustorThunk (void);
+extern void SliderHandler_VerticalThumbRect_m2983BDC60F68CC9CA4C715926788339C10213F38 (void);
 // 0x000001B1 UnityEngine.Rect UnityEngine.SliderHandler::HorizontalThumbRect()
-extern void SliderHandler_HorizontalThumbRect_mD82E6177492482247F8ECC2B2B8C9B67E0E857F5_AdjustorThunk (void);
+extern void SliderHandler_HorizontalThumbRect_mD82E6177492482247F8ECC2B2B8C9B67E0E857F5 (void);
 // 0x000001B2 System.Single UnityEngine.SliderHandler::ClampedCurrentValue()
-extern void SliderHandler_ClampedCurrentValue_mAB164479C161E9CE11068ACDBB2B1CE5AC4D7BF8_AdjustorThunk (void);
+extern void SliderHandler_ClampedCurrentValue_mAB164479C161E9CE11068ACDBB2B1CE5AC4D7BF8 (void);
 // 0x000001B3 System.Single UnityEngine.SliderHandler::MousePosition()
-extern void SliderHandler_MousePosition_mAD7D593CA4E1796D3FF28E242E8088D9A0ACBA16_AdjustorThunk (void);
+extern void SliderHandler_MousePosition_mAD7D593CA4E1796D3FF28E242E8088D9A0ACBA16 (void);
 // 0x000001B4 System.Single UnityEngine.SliderHandler::ValuesPerPixel()
-extern void SliderHandler_ValuesPerPixel_m5C52C84D6B71454D0EC41C0298C4129E3936EAA0_AdjustorThunk (void);
+extern void SliderHandler_ValuesPerPixel_m5C52C84D6B71454D0EC41C0298C4129E3936EAA0 (void);
 // 0x000001B5 System.Single UnityEngine.SliderHandler::ThumbSize()
-extern void SliderHandler_ThumbSize_m19D5589E54AFF7C70F1FFC931C1D5E73544D041D_AdjustorThunk (void);
+extern void SliderHandler_ThumbSize_m19D5589E54AFF7C70F1FFC931C1D5E73544D041D (void);
 // 0x000001B6 System.Single UnityEngine.SliderHandler::MaxValue()
-extern void SliderHandler_MaxValue_m2D87D9297B3A85C9AC8CB0E1E4DF2EFBE472667E_AdjustorThunk (void);
+extern void SliderHandler_MaxValue_m2D87D9297B3A85C9AC8CB0E1E4DF2EFBE472667E (void);
 // 0x000001B7 System.Single UnityEngine.SliderHandler::MinValue()
-extern void SliderHandler_MinValue_mDFA2765BEE1264C47C72FC2371F0A9400683C5E6_AdjustorThunk (void);
+extern void SliderHandler_MinValue_mDFA2765BEE1264C47C72FC2371F0A9400683C5E6 (void);
 // 0x000001B8 System.Void UnityEngine.TextEditor::.ctor()
 extern void TextEditor__ctor_m279158A237B393882E3CC2834C1F7CA7679F79CC (void);
 static Il2CppMethodPointer s_methodPointers[440] = 
@@ -947,9 +947,9 @@ static Il2CppMethodPointer s_methodPointers[440] =
 	Event_get_mousePosition_Injected_mE71FE88F6E27190A534BD5862941E5887D6BE632,
 	Event_set_mousePosition_Injected_mA402D90BDCB538F3730BDCCDA5D6C48DD3BD7F2E,
 	Event_get_delta_Injected_m73B3D73424F90847093AC32053796FABEFB849AD,
-	EventInterests_get_wantsMouseMove_mCE4BC71FE4B4D61887B24C3EC03EC55C64D220E7_AdjustorThunk,
-	EventInterests_get_wantsMouseEnterLeaveWindow_m2A0B5FF7BD7BDF4C1CA15DE41E00E12F1F1D746C_AdjustorThunk,
-	EventInterests_WantsEvent_mDDA5070D484AE4717D96D3A5B7B2ED00051DA94A_AdjustorThunk,
+	EventInterests_get_wantsMouseMove_mCE4BC71FE4B4D61887B24C3EC03EC55C64D220E7,
+	EventInterests_get_wantsMouseEnterLeaveWindow_m2A0B5FF7BD7BDF4C1CA15DE41E00E12F1F1D746C,
+	EventInterests_WantsEvent_mDDA5070D484AE4717D96D3A5B7B2ED00051DA94A,
 	GUI_get_color_m23965300A30C348742E8421AEE1396B3D5361B41,
 	GUI_set_color_mDB63437059F35CAC23B01D03CF1CE3A66EBB9643,
 	GUI_get_backgroundColor_mCDF3D053A4778944E6FC8E977426F6B09B3111A2,
@@ -1037,8 +1037,8 @@ static Il2CppMethodPointer s_methodPointers[440] =
 	GUIClip_GetMatrix_Injected_m10DBE812BACDD4883B7FB68D9EC95A61B00FC6F9,
 	GUIClip_SetMatrix_Injected_mCFA0B2F4EEF9CE6127DE84534573E2CC7EAA9AC1,
 	GUIClip_Internal_PushParentClip_Injected_mB91B3B467828418206AE0C774FE87D6AAB92AB6C,
-	ParentClipScope__ctor_m5543BF70D43839805E8B967E49D5C1FBDC6F95B0_AdjustorThunk,
-	ParentClipScope_Dispose_m76BB2115977B3771AE24893D3686228E1EA1B7ED_AdjustorThunk,
+	ParentClipScope__ctor_m5543BF70D43839805E8B967E49D5C1FBDC6F95B0,
+	ParentClipScope_Dispose_m76BB2115977B3771AE24893D3686228E1EA1B7ED,
 	GUIContent_get_text_mAAFFFB0278FCB4F7A7661BE595BA42CD093E38C5,
 	GUIContent_set_text_m866E0C5690119816D87D83124C81BDC0A0ED4316,
 	GUIContent_set_image_m85ABAF5AE045BDD9C09EA75243094D16222DB38C,
@@ -1313,42 +1313,111 @@ static Il2CppMethodPointer s_methodPointers[440] =
 	ObjectGUIState_Internal_Destroy_m4FE9B4FB0B26FFA8D1FE7EED564A69535EF6204C,
 	ScrollViewState__ctor_mBD3229B13A482BEE165EE9CACA85F716122F3BD4,
 	SliderState__ctor_m8CBFEE8D20C2D8EB0B68B1B171D9396DE84B605E,
-	SliderHandler__ctor_mF527E1A734DFDB1892BAAADDC016D6704A65B830_AdjustorThunk,
-	SliderHandler_Handle_mC77D88A47BFE68073128915A06FEC7FF10A977EA_AdjustorThunk,
-	SliderHandler_OnMouseDown_mF8658C649BDDACA846ACBF1AFB691FB4D3443CB9_AdjustorThunk,
-	SliderHandler_OnMouseDrag_mD769A22C854F05E03DB0885DDC8C4C78AE0DB5F4_AdjustorThunk,
-	SliderHandler_OnMouseUp_mFB2BBB5A94A45F055B78120C0D86D902FE51B787_AdjustorThunk,
-	SliderHandler_OnRepaint_m768491070DB69CB0B2702F34414F144E1D28FA18_AdjustorThunk,
-	SliderHandler_CurrentEventType_m1271EB28BE4AA83D33A2A1AE080BAFBAB1F74324_AdjustorThunk,
-	SliderHandler_CurrentScrollTroughSide_m8F6980C17AF121BB0E5D093AE5CB48929D98DCB9_AdjustorThunk,
-	SliderHandler_IsEmptySlider_mEF9ADA08B24BE0E9A5BF0C9F978D908D4C72A2F2_AdjustorThunk,
-	SliderHandler_SupportsPageMovements_m14524E4AB1BE981F7B5331D95DC056EF04544F19_AdjustorThunk,
-	SliderHandler_PageMovementValue_m0CE7B67D0F4ACEF771FED799D6BAB0898C5BB7BF_AdjustorThunk,
-	SliderHandler_PageUpMovementBound_m446F73ADFD9B9AD7555D59BDEAA4FB2820262B09_AdjustorThunk,
-	SliderHandler_CurrentEvent_m06FA956F6E88FCB733103F5C46E74293CCC678EC_AdjustorThunk,
-	SliderHandler_ValueForCurrentMousePosition_mBC3910446254C6660232383D5DD918404557224E_AdjustorThunk,
-	SliderHandler_Clamp_mF1F37A78EEFB09F6D74AD278AA184538922DAF5D_AdjustorThunk,
-	SliderHandler_ThumbSelectionRect_m40C770E0AC47780760324C144478597F1F4B2D3B_AdjustorThunk,
-	SliderHandler_StartDraggingWithValue_m3BE586B742F4BE563F689EA3637512711464EC4B_AdjustorThunk,
-	SliderHandler_SliderState_mB9390BCED9F56288E35F32773C0A29D15224264E_AdjustorThunk,
-	SliderHandler_ThumbExtRect_mCD30D6E4DA080CD8B98C537D243A3111A436B612_AdjustorThunk,
-	SliderHandler_ThumbRect_m199134159F78E56B5F0252DAACF8DF800249973A_AdjustorThunk,
-	SliderHandler_VerticalThumbRect_m2983BDC60F68CC9CA4C715926788339C10213F38_AdjustorThunk,
-	SliderHandler_HorizontalThumbRect_mD82E6177492482247F8ECC2B2B8C9B67E0E857F5_AdjustorThunk,
-	SliderHandler_ClampedCurrentValue_mAB164479C161E9CE11068ACDBB2B1CE5AC4D7BF8_AdjustorThunk,
-	SliderHandler_MousePosition_mAD7D593CA4E1796D3FF28E242E8088D9A0ACBA16_AdjustorThunk,
-	SliderHandler_ValuesPerPixel_m5C52C84D6B71454D0EC41C0298C4129E3936EAA0_AdjustorThunk,
-	SliderHandler_ThumbSize_m19D5589E54AFF7C70F1FFC931C1D5E73544D041D_AdjustorThunk,
-	SliderHandler_MaxValue_m2D87D9297B3A85C9AC8CB0E1E4DF2EFBE472667E_AdjustorThunk,
-	SliderHandler_MinValue_mDFA2765BEE1264C47C72FC2371F0A9400683C5E6_AdjustorThunk,
+	SliderHandler__ctor_mF527E1A734DFDB1892BAAADDC016D6704A65B830,
+	SliderHandler_Handle_mC77D88A47BFE68073128915A06FEC7FF10A977EA,
+	SliderHandler_OnMouseDown_mF8658C649BDDACA846ACBF1AFB691FB4D3443CB9,
+	SliderHandler_OnMouseDrag_mD769A22C854F05E03DB0885DDC8C4C78AE0DB5F4,
+	SliderHandler_OnMouseUp_mFB2BBB5A94A45F055B78120C0D86D902FE51B787,
+	SliderHandler_OnRepaint_m768491070DB69CB0B2702F34414F144E1D28FA18,
+	SliderHandler_CurrentEventType_m1271EB28BE4AA83D33A2A1AE080BAFBAB1F74324,
+	SliderHandler_CurrentScrollTroughSide_m8F6980C17AF121BB0E5D093AE5CB48929D98DCB9,
+	SliderHandler_IsEmptySlider_mEF9ADA08B24BE0E9A5BF0C9F978D908D4C72A2F2,
+	SliderHandler_SupportsPageMovements_m14524E4AB1BE981F7B5331D95DC056EF04544F19,
+	SliderHandler_PageMovementValue_m0CE7B67D0F4ACEF771FED799D6BAB0898C5BB7BF,
+	SliderHandler_PageUpMovementBound_m446F73ADFD9B9AD7555D59BDEAA4FB2820262B09,
+	SliderHandler_CurrentEvent_m06FA956F6E88FCB733103F5C46E74293CCC678EC,
+	SliderHandler_ValueForCurrentMousePosition_mBC3910446254C6660232383D5DD918404557224E,
+	SliderHandler_Clamp_mF1F37A78EEFB09F6D74AD278AA184538922DAF5D,
+	SliderHandler_ThumbSelectionRect_m40C770E0AC47780760324C144478597F1F4B2D3B,
+	SliderHandler_StartDraggingWithValue_m3BE586B742F4BE563F689EA3637512711464EC4B,
+	SliderHandler_SliderState_mB9390BCED9F56288E35F32773C0A29D15224264E,
+	SliderHandler_ThumbExtRect_mCD30D6E4DA080CD8B98C537D243A3111A436B612,
+	SliderHandler_ThumbRect_m199134159F78E56B5F0252DAACF8DF800249973A,
+	SliderHandler_VerticalThumbRect_m2983BDC60F68CC9CA4C715926788339C10213F38,
+	SliderHandler_HorizontalThumbRect_mD82E6177492482247F8ECC2B2B8C9B67E0E857F5,
+	SliderHandler_ClampedCurrentValue_mAB164479C161E9CE11068ACDBB2B1CE5AC4D7BF8,
+	SliderHandler_MousePosition_mAD7D593CA4E1796D3FF28E242E8088D9A0ACBA16,
+	SliderHandler_ValuesPerPixel_m5C52C84D6B71454D0EC41C0298C4129E3936EAA0,
+	SliderHandler_ThumbSize_m19D5589E54AFF7C70F1FFC931C1D5E73544D041D,
+	SliderHandler_MaxValue_m2D87D9297B3A85C9AC8CB0E1E4DF2EFBE472667E,
+	SliderHandler_MinValue_mDFA2765BEE1264C47C72FC2371F0A9400683C5E6,
 	TextEditor__ctor_m279158A237B393882E3CC2834C1F7CA7679F79CC,
+};
+extern void EventInterests_get_wantsMouseMove_mCE4BC71FE4B4D61887B24C3EC03EC55C64D220E7_AdjustorThunk (void);
+extern void EventInterests_get_wantsMouseEnterLeaveWindow_m2A0B5FF7BD7BDF4C1CA15DE41E00E12F1F1D746C_AdjustorThunk (void);
+extern void EventInterests_WantsEvent_mDDA5070D484AE4717D96D3A5B7B2ED00051DA94A_AdjustorThunk (void);
+extern void ParentClipScope__ctor_m5543BF70D43839805E8B967E49D5C1FBDC6F95B0_AdjustorThunk (void);
+extern void ParentClipScope_Dispose_m76BB2115977B3771AE24893D3686228E1EA1B7ED_AdjustorThunk (void);
+extern void SliderHandler__ctor_mF527E1A734DFDB1892BAAADDC016D6704A65B830_AdjustorThunk (void);
+extern void SliderHandler_Handle_mC77D88A47BFE68073128915A06FEC7FF10A977EA_AdjustorThunk (void);
+extern void SliderHandler_OnMouseDown_mF8658C649BDDACA846ACBF1AFB691FB4D3443CB9_AdjustorThunk (void);
+extern void SliderHandler_OnMouseDrag_mD769A22C854F05E03DB0885DDC8C4C78AE0DB5F4_AdjustorThunk (void);
+extern void SliderHandler_OnMouseUp_mFB2BBB5A94A45F055B78120C0D86D902FE51B787_AdjustorThunk (void);
+extern void SliderHandler_OnRepaint_m768491070DB69CB0B2702F34414F144E1D28FA18_AdjustorThunk (void);
+extern void SliderHandler_CurrentEventType_m1271EB28BE4AA83D33A2A1AE080BAFBAB1F74324_AdjustorThunk (void);
+extern void SliderHandler_CurrentScrollTroughSide_m8F6980C17AF121BB0E5D093AE5CB48929D98DCB9_AdjustorThunk (void);
+extern void SliderHandler_IsEmptySlider_mEF9ADA08B24BE0E9A5BF0C9F978D908D4C72A2F2_AdjustorThunk (void);
+extern void SliderHandler_SupportsPageMovements_m14524E4AB1BE981F7B5331D95DC056EF04544F19_AdjustorThunk (void);
+extern void SliderHandler_PageMovementValue_m0CE7B67D0F4ACEF771FED799D6BAB0898C5BB7BF_AdjustorThunk (void);
+extern void SliderHandler_PageUpMovementBound_m446F73ADFD9B9AD7555D59BDEAA4FB2820262B09_AdjustorThunk (void);
+extern void SliderHandler_CurrentEvent_m06FA956F6E88FCB733103F5C46E74293CCC678EC_AdjustorThunk (void);
+extern void SliderHandler_ValueForCurrentMousePosition_mBC3910446254C6660232383D5DD918404557224E_AdjustorThunk (void);
+extern void SliderHandler_Clamp_mF1F37A78EEFB09F6D74AD278AA184538922DAF5D_AdjustorThunk (void);
+extern void SliderHandler_ThumbSelectionRect_m40C770E0AC47780760324C144478597F1F4B2D3B_AdjustorThunk (void);
+extern void SliderHandler_StartDraggingWithValue_m3BE586B742F4BE563F689EA3637512711464EC4B_AdjustorThunk (void);
+extern void SliderHandler_SliderState_mB9390BCED9F56288E35F32773C0A29D15224264E_AdjustorThunk (void);
+extern void SliderHandler_ThumbExtRect_mCD30D6E4DA080CD8B98C537D243A3111A436B612_AdjustorThunk (void);
+extern void SliderHandler_ThumbRect_m199134159F78E56B5F0252DAACF8DF800249973A_AdjustorThunk (void);
+extern void SliderHandler_VerticalThumbRect_m2983BDC60F68CC9CA4C715926788339C10213F38_AdjustorThunk (void);
+extern void SliderHandler_HorizontalThumbRect_mD82E6177492482247F8ECC2B2B8C9B67E0E857F5_AdjustorThunk (void);
+extern void SliderHandler_ClampedCurrentValue_mAB164479C161E9CE11068ACDBB2B1CE5AC4D7BF8_AdjustorThunk (void);
+extern void SliderHandler_MousePosition_mAD7D593CA4E1796D3FF28E242E8088D9A0ACBA16_AdjustorThunk (void);
+extern void SliderHandler_ValuesPerPixel_m5C52C84D6B71454D0EC41C0298C4129E3936EAA0_AdjustorThunk (void);
+extern void SliderHandler_ThumbSize_m19D5589E54AFF7C70F1FFC931C1D5E73544D041D_AdjustorThunk (void);
+extern void SliderHandler_MaxValue_m2D87D9297B3A85C9AC8CB0E1E4DF2EFBE472667E_AdjustorThunk (void);
+extern void SliderHandler_MinValue_mDFA2765BEE1264C47C72FC2371F0A9400683C5E6_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[33] = 
+{
+	{ 0x0600002E, EventInterests_get_wantsMouseMove_mCE4BC71FE4B4D61887B24C3EC03EC55C64D220E7_AdjustorThunk },
+	{ 0x0600002F, EventInterests_get_wantsMouseEnterLeaveWindow_m2A0B5FF7BD7BDF4C1CA15DE41E00E12F1F1D746C_AdjustorThunk },
+	{ 0x06000030, EventInterests_WantsEvent_mDDA5070D484AE4717D96D3A5B7B2ED00051DA94A_AdjustorThunk },
+	{ 0x06000088, ParentClipScope__ctor_m5543BF70D43839805E8B967E49D5C1FBDC6F95B0_AdjustorThunk },
+	{ 0x06000089, ParentClipScope_Dispose_m76BB2115977B3771AE24893D3686228E1EA1B7ED_AdjustorThunk },
+	{ 0x0600019C, SliderHandler__ctor_mF527E1A734DFDB1892BAAADDC016D6704A65B830_AdjustorThunk },
+	{ 0x0600019D, SliderHandler_Handle_mC77D88A47BFE68073128915A06FEC7FF10A977EA_AdjustorThunk },
+	{ 0x0600019E, SliderHandler_OnMouseDown_mF8658C649BDDACA846ACBF1AFB691FB4D3443CB9_AdjustorThunk },
+	{ 0x0600019F, SliderHandler_OnMouseDrag_mD769A22C854F05E03DB0885DDC8C4C78AE0DB5F4_AdjustorThunk },
+	{ 0x060001A0, SliderHandler_OnMouseUp_mFB2BBB5A94A45F055B78120C0D86D902FE51B787_AdjustorThunk },
+	{ 0x060001A1, SliderHandler_OnRepaint_m768491070DB69CB0B2702F34414F144E1D28FA18_AdjustorThunk },
+	{ 0x060001A2, SliderHandler_CurrentEventType_m1271EB28BE4AA83D33A2A1AE080BAFBAB1F74324_AdjustorThunk },
+	{ 0x060001A3, SliderHandler_CurrentScrollTroughSide_m8F6980C17AF121BB0E5D093AE5CB48929D98DCB9_AdjustorThunk },
+	{ 0x060001A4, SliderHandler_IsEmptySlider_mEF9ADA08B24BE0E9A5BF0C9F978D908D4C72A2F2_AdjustorThunk },
+	{ 0x060001A5, SliderHandler_SupportsPageMovements_m14524E4AB1BE981F7B5331D95DC056EF04544F19_AdjustorThunk },
+	{ 0x060001A6, SliderHandler_PageMovementValue_m0CE7B67D0F4ACEF771FED799D6BAB0898C5BB7BF_AdjustorThunk },
+	{ 0x060001A7, SliderHandler_PageUpMovementBound_m446F73ADFD9B9AD7555D59BDEAA4FB2820262B09_AdjustorThunk },
+	{ 0x060001A8, SliderHandler_CurrentEvent_m06FA956F6E88FCB733103F5C46E74293CCC678EC_AdjustorThunk },
+	{ 0x060001A9, SliderHandler_ValueForCurrentMousePosition_mBC3910446254C6660232383D5DD918404557224E_AdjustorThunk },
+	{ 0x060001AA, SliderHandler_Clamp_mF1F37A78EEFB09F6D74AD278AA184538922DAF5D_AdjustorThunk },
+	{ 0x060001AB, SliderHandler_ThumbSelectionRect_m40C770E0AC47780760324C144478597F1F4B2D3B_AdjustorThunk },
+	{ 0x060001AC, SliderHandler_StartDraggingWithValue_m3BE586B742F4BE563F689EA3637512711464EC4B_AdjustorThunk },
+	{ 0x060001AD, SliderHandler_SliderState_mB9390BCED9F56288E35F32773C0A29D15224264E_AdjustorThunk },
+	{ 0x060001AE, SliderHandler_ThumbExtRect_mCD30D6E4DA080CD8B98C537D243A3111A436B612_AdjustorThunk },
+	{ 0x060001AF, SliderHandler_ThumbRect_m199134159F78E56B5F0252DAACF8DF800249973A_AdjustorThunk },
+	{ 0x060001B0, SliderHandler_VerticalThumbRect_m2983BDC60F68CC9CA4C715926788339C10213F38_AdjustorThunk },
+	{ 0x060001B1, SliderHandler_HorizontalThumbRect_mD82E6177492482247F8ECC2B2B8C9B67E0E857F5_AdjustorThunk },
+	{ 0x060001B2, SliderHandler_ClampedCurrentValue_mAB164479C161E9CE11068ACDBB2B1CE5AC4D7BF8_AdjustorThunk },
+	{ 0x060001B3, SliderHandler_MousePosition_mAD7D593CA4E1796D3FF28E242E8088D9A0ACBA16_AdjustorThunk },
+	{ 0x060001B4, SliderHandler_ValuesPerPixel_m5C52C84D6B71454D0EC41C0298C4129E3936EAA0_AdjustorThunk },
+	{ 0x060001B5, SliderHandler_ThumbSize_m19D5589E54AFF7C70F1FFC931C1D5E73544D041D_AdjustorThunk },
+	{ 0x060001B6, SliderHandler_MaxValue_m2D87D9297B3A85C9AC8CB0E1E4DF2EFBE472667E_AdjustorThunk },
+	{ 0x060001B7, SliderHandler_MinValue_mDFA2765BEE1264C47C72FC2371F0A9400683C5E6_AdjustorThunk },
 };
 static const int32_t s_InvokerIndices[440] = 
 {
 	10,
-	1450,
-	1451,
-	1450,
+	1448,
+	1449,
+	1448,
 	10,
 	10,
 	10,
@@ -1393,16 +1462,16 @@ static const int32_t s_InvokerIndices[440] =
 	89,
 	89,
 	30,
-	1481,
-	1916,
-	1481,
-	1916,
-	1481,
-	1916,
+	1479,
+	1914,
+	1479,
+	1914,
+	1479,
+	1914,
 	49,
-	871,
+	869,
 	49,
-	871,
+	869,
 	49,
 	4,
 	4,
@@ -1412,19 +1481,21 @@ static const int32_t s_InvokerIndices[440] =
 	46,
 	3,
 	3,
-	1917,
-	1918,
+	1915,
+	1916,
 	3,
 	106,
 	178,
 	326,
-	1919,
+	1917,
 	168,
 	4,
 	168,
-	1563,
-	1464,
-	1920,
+	1561,
+	1462,
+	1918,
+	1918,
+	1919,
 	1920,
 	1921,
 	1922,
@@ -1434,25 +1505,23 @@ static const int32_t s_InvokerIndices[440] =
 	1926,
 	1927,
 	1928,
+	1918,
 	1929,
 	1930,
-	1920,
 	1931,
 	1932,
+	1918,
 	1933,
+	1930,
 	1934,
-	1920,
 	1935,
-	1932,
+	1918,
 	1936,
-	1937,
-	1920,
-	1938,
 	3,
 	4,
+	1937,
+	1938,
 	1939,
-	1940,
-	1941,
 	3,
 	17,
 	17,
@@ -1460,27 +1529,27 @@ static const int32_t s_InvokerIndices[440] =
 	17,
 	17,
 	17,
-	1942,
+	1940,
 	17,
 	131,
 	32,
 	606,
 	26,
-	1448,
-	1943,
+	1446,
+	1941,
 	3,
 	106,
-	1563,
-	1464,
-	1944,
+	1561,
+	1462,
+	1942,
 	3,
-	1943,
+	1941,
 	17,
-	1945,
+	1943,
 	17,
 	17,
 	361,
-	1946,
+	1944,
 	23,
 	14,
 	26,
@@ -1500,43 +1569,43 @@ static const int32_t s_InvokerIndices[440] =
 	201,
 	121,
 	370,
+	1945,
+	1946,
 	1947,
 	1948,
-	1949,
-	1950,
 	168,
 	201,
 	3,
+	1916,
 	1918,
-	1920,
 	3,
-	1939,
-	1951,
+	1937,
+	1949,
 	97,
 	97,
-	1952,
+	1950,
 	32,
 	62,
-	1953,
-	1954,
+	1951,
+	1952,
 	818,
 	178,
 	168,
-	1052,
+	1050,
 	3,
 	3,
-	1477,
+	1475,
 	168,
 	168,
 	0,
 	2,
 	3,
 	1,
-	1955,
-	1955,
+	1953,
+	1953,
 	3,
-	952,
-	952,
+	950,
+	950,
 	23,
 	23,
 	23,
@@ -1604,12 +1673,12 @@ static const int32_t s_InvokerIndices[440] =
 	26,
 	115,
 	3,
-	1486,
+	1484,
 	780,
 	23,
 	23,
 	131,
-	1956,
+	1954,
 	23,
 	6,
 	14,
@@ -1627,12 +1696,12 @@ static const int32_t s_InvokerIndices[440] =
 	25,
 	16,
 	16,
+	1955,
+	1956,
 	1957,
 	1958,
 	1959,
 	1960,
-	1961,
-	1962,
 	168,
 	23,
 	23,
@@ -1641,29 +1710,29 @@ static const int32_t s_InvokerIndices[440] =
 	14,
 	14,
 	14,
-	1957,
+	1955,
+	1961,
+	1962,
 	1963,
-	1964,
-	1965,
 	4,
-	1959,
-	1960,
+	1957,
+	1958,
 	89,
-	863,
+	861,
 	14,
 	3,
 	719,
-	1966,
-	863,
+	1964,
+	861,
 	646,
 	406,
 	143,
-	1473,
+	1471,
 	106,
-	871,
+	869,
 	4,
 	168,
-	1967,
+	1965,
 	168,
 	168,
 	3,
@@ -1681,7 +1750,7 @@ static const int32_t s_InvokerIndices[440] =
 	3,
 	182,
 	115,
-	871,
+	869,
 	106,
 	178,
 	3,
@@ -1691,9 +1760,9 @@ static const int32_t s_InvokerIndices[440] =
 	46,
 	3,
 	4,
-	1968,
+	1966,
 	3,
-	898,
+	896,
 	178,
 	116,
 	116,
@@ -1701,10 +1770,10 @@ static const int32_t s_InvokerIndices[440] =
 	116,
 	116,
 	3,
+	1967,
+	1968,
 	1969,
 	1970,
-	1971,
-	1972,
 	23,
 	26,
 	14,
@@ -1715,12 +1784,12 @@ static const int32_t s_InvokerIndices[440] =
 	10,
 	10,
 	10,
-	1973,
-	1974,
+	1971,
+	1972,
 	23,
 	23,
-	1567,
-	1567,
+	1565,
+	1565,
 	26,
 	26,
 	14,
@@ -1739,15 +1808,15 @@ static const int32_t s_InvokerIndices[440] =
 	14,
 	26,
 	23,
-	1567,
+	1565,
 	23,
-	1567,
+	1565,
 	14,
 	23,
 	23,
-	1567,
+	1565,
 	23,
-	1567,
+	1565,
 	23,
 	23,
 	23,
@@ -1756,7 +1825,7 @@ static const int32_t s_InvokerIndices[440] =
 	25,
 	23,
 	23,
-	1975,
+	1973,
 	740,
 	740,
 	740,
@@ -1770,14 +1839,14 @@ static const int32_t s_InvokerIndices[440] =
 	740,
 	14,
 	740,
-	1414,
-	1422,
+	1412,
+	1420,
 	349,
 	14,
-	1422,
-	1422,
-	1422,
-	1422,
+	1420,
+	1420,
+	1420,
+	1420,
 	740,
 	740,
 	740,
@@ -1792,6 +1861,8 @@ const Il2CppCodeGenModule g_UnityEngine_IMGUIModuleCodeGenModule =
 	"UnityEngine.IMGUIModule.dll",
 	440,
 	s_methodPointers,
+	33,
+	s_adjustorThunks,
 	s_InvokerIndices,
 	0,
 	NULL,

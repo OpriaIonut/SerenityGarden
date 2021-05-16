@@ -48,6 +48,8 @@ const Il2CppCodeGenModule g_UnityEngine_UnityWebRequestModuleCodeGenModule =
 	"UnityEngine.UnityWebRequestModule.dll",
 	4,
 	s_methodPointers,
+	0,
+	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

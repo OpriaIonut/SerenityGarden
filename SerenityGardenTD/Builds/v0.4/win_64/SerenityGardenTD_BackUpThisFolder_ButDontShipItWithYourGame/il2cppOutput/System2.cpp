@@ -1753,7 +1753,7 @@ public:
 };
 
 
-// System.Collections.Generic.List`1<System.ComponentModel.MaskedTextProvider_CharDescriptor>
+// System.Collections.Generic.List`1<System.ComponentModel.MaskedTextProvider/CharDescriptor>
 struct  List_1_t534EACBABA93D935E71506BB9B9529485F1E0966  : public RuntimeObject
 {
 public:
@@ -2106,7 +2106,7 @@ struct  AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE  : public 
 public:
 	// System.Attribute[] System.ComponentModel.AttributeCollection::_attributes
 	AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ____attributes_2;
-	// System.ComponentModel.AttributeCollection_AttributeEntry[] System.ComponentModel.AttributeCollection::_foundAttributeTypes
+	// System.ComponentModel.AttributeCollection/AttributeEntry[] System.ComponentModel.AttributeCollection::_foundAttributeTypes
 	AttributeEntryU5BU5D_t82EF07E3984B106E346A6B35336772424C0FCB5A* ____foundAttributeTypes_5;
 	// System.Int32 System.ComponentModel.AttributeCollection::_index
 	int32_t ____index_6;
@@ -2402,7 +2402,7 @@ public:
 struct  EventHandlerList_tFE9EF79E85419EBB2C206CF475E29A9960699BE4  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.EventHandlerList_ListEntry System.ComponentModel.EventHandlerList::head
+	// System.ComponentModel.EventHandlerList/ListEntry System.ComponentModel.EventHandlerList::head
 	ListEntry_t32989B38CAC0D49C6A5AC5BA1622A62088BA6E6D * ___head_0;
 	// System.ComponentModel.Component System.ComponentModel.EventHandlerList::parent
 	Component_t7AEFE153F6778CF52E1981BC3E811A9604B29473 * ___parent_1;
@@ -2428,15 +2428,15 @@ public:
 };
 
 
-// System.ComponentModel.EventHandlerList_ListEntry
+// System.ComponentModel.EventHandlerList/ListEntry
 struct  ListEntry_t32989B38CAC0D49C6A5AC5BA1622A62088BA6E6D  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.EventHandlerList_ListEntry System.ComponentModel.EventHandlerList_ListEntry::next
+	// System.ComponentModel.EventHandlerList/ListEntry System.ComponentModel.EventHandlerList/ListEntry::next
 	ListEntry_t32989B38CAC0D49C6A5AC5BA1622A62088BA6E6D * ___next_0;
-	// System.Object System.ComponentModel.EventHandlerList_ListEntry::key
+	// System.Object System.ComponentModel.EventHandlerList/ListEntry::key
 	RuntimeObject * ___key_1;
-	// System.Delegate System.ComponentModel.EventHandlerList_ListEntry::handler
+	// System.Delegate System.ComponentModel.EventHandlerList/ListEntry::handler
 	Delegate_t * ___handler_2;
 
 public:
@@ -2586,15 +2586,15 @@ public:
 };
 
 
-// System.ComponentModel.LicenseManager_LicenseInteropHelper
+// System.ComponentModel.LicenseManager/LicenseInteropHelper
 struct  LicenseInteropHelper_t528682251600D62797521A8A3CCAD83BD1A47C0E  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.Design.DesigntimeLicenseContext System.ComponentModel.LicenseManager_LicenseInteropHelper::helperContext
+	// System.ComponentModel.Design.DesigntimeLicenseContext System.ComponentModel.LicenseManager/LicenseInteropHelper::helperContext
 	DesigntimeLicenseContext_tFBEF4E72A1E0E7F03A01D35ADFEE86A23F848AA1 * ___helperContext_4;
-	// System.ComponentModel.LicenseContext System.ComponentModel.LicenseManager_LicenseInteropHelper::savedLicenseContext
+	// System.ComponentModel.LicenseContext System.ComponentModel.LicenseManager/LicenseInteropHelper::savedLicenseContext
 	LicenseContext_tE7068766A5D105EA910974E3F08D0AF7534A806A * ___savedLicenseContext_5;
-	// System.Type System.ComponentModel.LicenseManager_LicenseInteropHelper::savedType
+	// System.Type System.ComponentModel.LicenseManager/LicenseInteropHelper::savedType
 	Type_t * ___savedType_6;
 
 public:
@@ -2838,15 +2838,15 @@ public:
 };
 
 
-// System.ComponentModel.NestedContainer_Site
+// System.ComponentModel.NestedContainer/Site
 struct  Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.IComponent System.ComponentModel.NestedContainer_Site::component
+	// System.ComponentModel.IComponent System.ComponentModel.NestedContainer/Site::component
 	RuntimeObject* ___component_0;
-	// System.ComponentModel.NestedContainer System.ComponentModel.NestedContainer_Site::container
+	// System.ComponentModel.NestedContainer System.ComponentModel.NestedContainer/Site::container
 	NestedContainer_t08F11932945A6F531D1338CC5A05BAD8D99F8AE9 * ___container_1;
-	// System.String System.ComponentModel.NestedContainer_Site::name
+	// System.String System.ComponentModel.NestedContainer/Site::name
 	String_t* ___name_2;
 
 public:
@@ -2998,13 +2998,13 @@ public:
 };
 
 
-// System.ComponentModel.PropertyDescriptorCollection_PropertyDescriptorEnumerator
+// System.ComponentModel.PropertyDescriptorCollection/PropertyDescriptorEnumerator
 struct  PropertyDescriptorEnumerator_t8DE08E0C89BAD17FE8FD71FD3159C80833CE2D9D  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.PropertyDescriptorCollection_PropertyDescriptorEnumerator::owner
+	// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.PropertyDescriptorCollection/PropertyDescriptorEnumerator::owner
 	PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * ___owner_0;
-	// System.Int32 System.ComponentModel.PropertyDescriptorCollection_PropertyDescriptorEnumerator::index
+	// System.Int32 System.ComponentModel.PropertyDescriptorCollection/PropertyDescriptorEnumerator::index
 	int32_t ___index_1;
 
 public:
@@ -3027,13 +3027,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeConverter_StandardValuesCollection
+// System.ComponentModel.TypeConverter/StandardValuesCollection
 struct  StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3  : public RuntimeObject
 {
 public:
-	// System.Collections.ICollection System.ComponentModel.TypeConverter_StandardValuesCollection::values
+	// System.Collections.ICollection System.ComponentModel.TypeConverter/StandardValuesCollection::values
 	RuntimeObject* ___values_0;
-	// System.Array System.ComponentModel.TypeConverter_StandardValuesCollection::valueArray
+	// System.Array System.ComponentModel.TypeConverter/StandardValuesCollection::valueArray
 	RuntimeArray * ___valueArray_1;
 
 public:
@@ -3063,7 +3063,7 @@ struct  TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591  : pub
 public:
 	// System.ComponentModel.TypeDescriptionProvider System.ComponentModel.TypeDescriptionProvider::_parent
 	TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591 * ____parent_0;
-	// System.ComponentModel.TypeDescriptionProvider_EmptyCustomTypeDescriptor System.ComponentModel.TypeDescriptionProvider::_emptyDescriptor
+	// System.ComponentModel.TypeDescriptionProvider/EmptyCustomTypeDescriptor System.ComponentModel.TypeDescriptionProvider::_emptyDescriptor
 	EmptyCustomTypeDescriptor_tDDCC5072613D7D0405BCCF3D49F3EF7B4E1E7DB8 * ____emptyDescriptor_1;
 
 public:
@@ -4303,17 +4303,17 @@ public:
 };
 
 
-// System.Collections.Generic.List`1_Enumerator<System.ComponentModel.MaskedTextProvider_CharDescriptor>
+// System.Collections.Generic.List`1/Enumerator<System.ComponentModel.MaskedTextProvider/CharDescriptor>
 struct  Enumerator_tB1ACA39EC6FB8CAF2F033D767916CAEED114E37C 
 {
 public:
-	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1_Enumerator::list
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::list
 	List_1_t534EACBABA93D935E71506BB9B9529485F1E0966 * ___list_0;
-	// System.Int32 System.Collections.Generic.List`1_Enumerator::index
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.List`1_Enumerator::version
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::version
 	int32_t ___version_2;
-	// T System.Collections.Generic.List`1_Enumerator::current
+	// T System.Collections.Generic.List`1/Enumerator::current
 	CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D * ___current_3;
 
 public:
@@ -4353,17 +4353,17 @@ public:
 };
 
 
-// System.Collections.Generic.List`1_Enumerator<System.Object>
+// System.Collections.Generic.List`1/Enumerator<System.Object>
 struct  Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD 
 {
 public:
-	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1_Enumerator::list
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::list
 	List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * ___list_0;
-	// System.Int32 System.Collections.Generic.List`1_Enumerator::index
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.List`1_Enumerator::version
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::version
 	int32_t ___version_2;
-	// T System.Collections.Generic.List`1_Enumerator::current
+	// T System.Collections.Generic.List`1/Enumerator::current
 	RuntimeObject * ___current_3;
 
 public:
@@ -5377,11 +5377,11 @@ public:
 };
 
 
-// System.ComponentModel.LicFileLicenseProvider_LicFileLicense
+// System.ComponentModel.LicFileLicenseProvider/LicFileLicense
 struct  LicFileLicense_t5AF4C870B7DF7EE91D6C0FA5DA1354763EF9E5FF  : public License_t9011453B97942387364692C7DFAD2DEDB2160F8C
 {
 public:
-	// System.String System.ComponentModel.LicFileLicenseProvider_LicFileLicense::key
+	// System.String System.ComponentModel.LicFileLicenseProvider/LicFileLicense::key
 	String_t* ___key_0;
 
 public:
@@ -6331,7 +6331,7 @@ public:
 struct  Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7  : public MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF
 {
 public:
-	// System.IO.Stream_ReadWriteTask System.IO.Stream::_activeReadWriteTask
+	// System.IO.Stream/ReadWriteTask System.IO.Stream::_activeReadWriteTask
 	ReadWriteTask_tFA17EEE8BC5C4C83EAEFCC3662A30DE351ABAA80 * ____activeReadWriteTask_2;
 	// System.Threading.SemaphoreSlim System.IO.Stream::_asyncActiveSemaphore
 	SemaphoreSlim_t2E2888D1C0C8FAB80823C76F1602E4434B8FA048 * ____asyncActiveSemaphore_3;
@@ -6953,7 +6953,7 @@ struct AppDomain_t1B59572328F60585904DF52A59FE47CF5B5FFFF8_marshaled_com : publi
 struct  Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9  : public RuntimeObject
 {
 public:
-	// System.Collections.Hashtable_bucket[] System.Collections.Hashtable::buckets
+	// System.Collections.Hashtable/bucket[] System.Collections.Hashtable::buckets
 	bucketU5BU5D_t6FF2C2C4B21F2206885CD19A78F68B874C8DC84A* ___buckets_10;
 	// System.Int32 System.Collections.Hashtable::count
 	int32_t ___count_11;
@@ -7282,7 +7282,7 @@ public:
 	Il2CppChar ___passwordChar_26;
 	// System.Char System.ComponentModel.MaskedTextProvider::promptChar
 	Il2CppChar ___promptChar_27;
-	// System.Collections.Generic.List`1<System.ComponentModel.MaskedTextProvider_CharDescriptor> System.ComponentModel.MaskedTextProvider::stringDescriptor
+	// System.Collections.Generic.List`1<System.ComponentModel.MaskedTextProvider/CharDescriptor> System.ComponentModel.MaskedTextProvider::stringDescriptor
 	List_1_t534EACBABA93D935E71506BB9B9529485F1E0966 * ___stringDescriptor_28;
 
 public:
@@ -7467,11 +7467,11 @@ public:
 };
 
 
-// System.ComponentModel.MaskedTextProvider_CaseConversion
+// System.ComponentModel.MaskedTextProvider/CaseConversion
 struct  CaseConversion_t193D8AE57418D335B7AD2FEE554BB2230D2F6491 
 {
 public:
-	// System.Int32 System.ComponentModel.MaskedTextProvider_CaseConversion::value__
+	// System.Int32 System.ComponentModel.MaskedTextProvider/CaseConversion::value__
 	int32_t ___value___2;
 
 public:
@@ -7485,11 +7485,11 @@ public:
 };
 
 
-// System.ComponentModel.MaskedTextProvider_CharType
+// System.ComponentModel.MaskedTextProvider/CharType
 struct  CharType_tC58073D5F1CD7F2BF4709E8CEBF07D1D6680159A 
 {
 public:
-	// System.Int32 System.ComponentModel.MaskedTextProvider_CharType::value__
+	// System.Int32 System.ComponentModel.MaskedTextProvider/CharType::value__
 	int32_t ___value___2;
 
 public:
@@ -8768,7 +8768,7 @@ public:
 	int64_t ___m_ContentLength_12;
 	// System.Boolean System.Net.WebClient::m_Cancelled
 	bool ___m_Cancelled_13;
-	// System.Net.WebClient_ProgressData System.Net.WebClient::m_Progress
+	// System.Net.WebClient/ProgressData System.Net.WebClient::m_Progress
 	ProgressData_tE1BDFEEC6B492E4A260BBEF1107683C28BB8AC20 * ___m_Progress_14;
 	// System.Net.IWebProxy System.Net.WebClient::m_Proxy
 	RuntimeObject* ___m_Proxy_15;
@@ -8919,7 +8919,7 @@ struct  Assembly_t  : public RuntimeObject
 public:
 	// System.IntPtr System.Reflection.Assembly::_mono_assembly
 	intptr_t ____mono_assembly_0;
-	// System.Reflection.Assembly_ResolveEventHolder System.Reflection.Assembly::resolve_event_holder
+	// System.Reflection.Assembly/ResolveEventHolder System.Reflection.Assembly::resolve_event_holder
 	ResolveEventHolder_t5267893EB7CB9C12F7B9B463FD4C221BEA03326E * ___resolve_event_holder_1;
 	// System.Object System.Reflection.Assembly::_evidence
 	RuntimeObject * ____evidence_2;
@@ -9301,11 +9301,11 @@ public:
 };
 
 
-// System.Uri_Flags
+// System.Uri/Flags
 struct  Flags_tEBE7CABEBD13F16920D6950B384EB8F988250A2A 
 {
 public:
-	// System.UInt64 System.Uri_Flags::value__
+	// System.UInt64 System.Uri/Flags::value__
 	uint64_t ___value___2;
 
 public:
@@ -9445,7 +9445,7 @@ public:
 struct  EnumConverter_t5DA4CB27C27A8C37C31B2A4DE0C4C37820638E12  : public TypeConverter_t8306AE03734853B551DDF089C1F17836A7764DBB
 {
 public:
-	// System.ComponentModel.TypeConverter_StandardValuesCollection System.ComponentModel.EnumConverter::values
+	// System.ComponentModel.TypeConverter/StandardValuesCollection System.ComponentModel.EnumConverter::values
 	StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3 * ___values_2;
 	// System.Type System.ComponentModel.EnumConverter::type
 	Type_t * ___type_3;
@@ -9557,15 +9557,15 @@ public:
 };
 
 
-// System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext
+// System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext
 struct  CLRLicenseContext_t16B4876D030AD05B4AEA1B65FDC49BC8E4BF64DC  : public LicenseContext_tE7068766A5D105EA910974E3F08D0AF7534A806A
 {
 public:
-	// System.ComponentModel.LicenseUsageMode System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext::usageMode
+	// System.ComponentModel.LicenseUsageMode System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext::usageMode
 	int32_t ___usageMode_0;
-	// System.Type System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext::type
+	// System.Type System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext::type
 	Type_t * ___type_1;
-	// System.String System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext::key
+	// System.String System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext::key
 	String_t* ___key_2;
 
 public:
@@ -9675,17 +9675,17 @@ public:
 };
 
 
-// System.ComponentModel.MaskedTextProvider_CharDescriptor
+// System.ComponentModel.MaskedTextProvider/CharDescriptor
 struct  CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D  : public RuntimeObject
 {
 public:
-	// System.Int32 System.ComponentModel.MaskedTextProvider_CharDescriptor::MaskPosition
+	// System.Int32 System.ComponentModel.MaskedTextProvider/CharDescriptor::MaskPosition
 	int32_t ___MaskPosition_0;
-	// System.ComponentModel.MaskedTextProvider_CaseConversion System.ComponentModel.MaskedTextProvider_CharDescriptor::CaseConversion
+	// System.ComponentModel.MaskedTextProvider/CaseConversion System.ComponentModel.MaskedTextProvider/CharDescriptor::CaseConversion
 	int32_t ___CaseConversion_1;
-	// System.ComponentModel.MaskedTextProvider_CharType System.ComponentModel.MaskedTextProvider_CharDescriptor::CharType
+	// System.ComponentModel.MaskedTextProvider/CharType System.ComponentModel.MaskedTextProvider/CharDescriptor::CharType
 	int32_t ___CharType_2;
-	// System.Boolean System.ComponentModel.MaskedTextProvider_CharDescriptor::IsAssigned
+	// System.Boolean System.ComponentModel.MaskedTextProvider/CharDescriptor::IsAssigned
 	bool ___IsAssigned_3;
 
 public:
@@ -11765,9 +11765,9 @@ public:
 	UriParser_t07C77D673CCE8D2DA253B8A7ACCB010147F1A4AC * ___m_Syntax_15;
 	// System.String System.Uri::m_DnsSafeHost
 	String_t* ___m_DnsSafeHost_16;
-	// System.Uri_Flags System.Uri::m_Flags
+	// System.Uri/Flags System.Uri::m_Flags
 	uint64_t ___m_Flags_17;
-	// System.Uri_UriInfo System.Uri::m_Info
+	// System.Uri/UriInfo System.Uri::m_Info
 	UriInfo_t9FCC6BD4EC1EA14D75209E6A35417057BF6EDC5E * ___m_Info_18;
 	// System.Boolean System.Uri::m_iriParsing
 	bool ___m_iriParsing_19;
@@ -13568,7 +13568,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TypeConverter_ConvertToString_m2CBE
 // System.Void System.ComponentModel.InheritanceAttribute::.ctor(System.ComponentModel.InheritanceLevel)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InheritanceAttribute__ctor_mCA254DAC0CC24E08736F8034929EE421975F29C4 (InheritanceAttribute_tBB0E10C86B9ECC652035969169FC556F1C6C8AC4 * __this, int32_t ___inheritanceLevel0, const RuntimeMethod* method);
 // System.Type System.Type::GetType(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * Type_GetType_mCF0A3B28889C9FFB9987C8D30C23DF0912E7C00C (String_t* ___typeName0);
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * Type_GetType_mCF0A3B28889C9FFB9987C8D30C23DF0912E7C00C (String_t* ___typeName0, const RuntimeMethod* method);
 // System.Int16 System.Convert::ToInt16(System.String,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int16_t Convert_ToInt16_mE45C6C06FA6664B29F1C763C08CF4846A06B27D5 (String_t* ___value0, int32_t ___fromBase1, const RuntimeMethod* method);
 // System.Int16 System.Int16::Parse(System.String,System.IFormatProvider)
@@ -14494,7 +14494,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DesigntimeLicenseContext_SetSavedLicense
 		String_t* L_2 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_AssemblyQualifiedName() */, L_1);
 		String_t* L_3 = ___key1;
 		NullCheck(L_0);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_0, L_2, L_3);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_0, L_2, L_3);
 		return;
 	}
 }
@@ -14660,7 +14660,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* RuntimeLicenseContext_GetSavedLicen
 		NullCheck(L_2);
 		String_t* L_3 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_AssemblyQualifiedName() */, L_2);
 		NullCheck(L_1);
-		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_3);
+		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_3);
 		if (L_4)
 		{
 			goto IL_026a;
@@ -15065,7 +15065,7 @@ IL_026a:
 		NullCheck(L_129);
 		String_t* L_130 = VirtFuncInvoker0< String_t* >::Invoke(27 /* System.String System.Type::get_AssemblyQualifiedName() */, L_129);
 		NullCheck(L_128);
-		RuntimeObject * L_131 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_128, L_130);
+		RuntimeObject * L_131 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_128, L_130);
 		return ((String_t*)CastclassSealed((RuntimeObject*)L_131, String_t_il2cpp_TypeInfo_var));
 	}
 }
@@ -17333,7 +17333,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * EnumConverter_get_EnumType_mE3637521
 		return L_0;
 	}
 }
-// System.ComponentModel.TypeConverter_StandardValuesCollection System.ComponentModel.EnumConverter::get_Values()
+// System.ComponentModel.TypeConverter/StandardValuesCollection System.ComponentModel.EnumConverter::get_Values()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3 * EnumConverter_get_Values_m83899F439FCAF72024528B8F04C9B7B1CC81C8FB (EnumConverter_t5DA4CB27C27A8C37C31B2A4DE0C4C37820638E12 * __this, const RuntimeMethod* method)
 {
 	{
@@ -17341,7 +17341,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StandardValuesCollection_t929677712574EF02F5C
 		return L_0;
 	}
 }
-// System.Void System.ComponentModel.EnumConverter::set_Values(System.ComponentModel.TypeConverter_StandardValuesCollection)
+// System.Void System.ComponentModel.EnumConverter::set_Values(System.ComponentModel.TypeConverter/StandardValuesCollection)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumConverter_set_Values_m3769DFEE063A44FC1CBE85754639A0717F3BCFC1 (EnumConverter_t5DA4CB27C27A8C37C31B2A4DE0C4C37820638E12 * __this, StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3 * ___value0, const RuntimeMethod* method)
 {
 	{
@@ -18176,7 +18176,7 @@ IL_02eb:
 		return L_152;
 	}
 }
-// System.ComponentModel.TypeConverter_StandardValuesCollection System.ComponentModel.EnumConverter::GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
+// System.ComponentModel.TypeConverter/StandardValuesCollection System.ComponentModel.EnumConverter::GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3 * EnumConverter_GetStandardValues_m30FF1BC7361719D9A5EE7205F4F63B5CB1E95E15 (EnumConverter_t5DA4CB27C27A8C37C31B2A4DE0C4C37820638E12 * __this, RuntimeObject* ___context0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19953,7 +19953,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventHandlerList_Dispose_m7AE615B1F92C70
 		return;
 	}
 }
-// System.ComponentModel.EventHandlerList_ListEntry System.ComponentModel.EventHandlerList::Find(System.Object)
+// System.ComponentModel.EventHandlerList/ListEntry System.ComponentModel.EventHandlerList::Find(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ListEntry_t32989B38CAC0D49C6A5AC5BA1622A62088BA6E6D * EventHandlerList_Find_m0D64F77486BF4EABD934BF04CE38EF6DB0450B42 (EventHandlerList_tFE9EF79E85419EBB2C206CF475E29A9960699BE4 * __this, RuntimeObject * ___key0, const RuntimeMethod* method)
 {
 	ListEntry_t32989B38CAC0D49C6A5AC5BA1622A62088BA6E6D * V_0 = NULL;
@@ -20034,7 +20034,7 @@ IL_001d:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.EventHandlerList_ListEntry::.ctor(System.Object,System.Delegate,System.ComponentModel.EventHandlerList_ListEntry)
+// System.Void System.ComponentModel.EventHandlerList/ListEntry::.ctor(System.Object,System.Delegate,System.ComponentModel.EventHandlerList/ListEntry)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ListEntry__ctor_m8FB0789AFD94BD817A59EB14EF2064A2F4270220 (ListEntry_t32989B38CAC0D49C6A5AC5BA1622A62088BA6E6D * __this, RuntimeObject * ___key0, Delegate_t * ___handler1, ListEntry_t32989B38CAC0D49C6A5AC5BA1622A62088BA6E6D * ___next2, const RuntimeMethod* method)
 {
 	{
@@ -22125,7 +22125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicFileLicenseProvider__ctor_m2E69041E5E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.LicFileLicenseProvider_LicFileLicense::.ctor(System.ComponentModel.LicFileLicenseProvider,System.String)
+// System.Void System.ComponentModel.LicFileLicenseProvider/LicFileLicense::.ctor(System.ComponentModel.LicFileLicenseProvider,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicFileLicense__ctor_mA3DCCF9DAAA00809C8F889B59AF1DEF77269C04B (LicFileLicense_t5AF4C870B7DF7EE91D6C0FA5DA1354763EF9E5FF * __this, LicFileLicenseProvider_t458B091F8501C2890FD617BB025AB49DC494076F * ___owner0, String_t* ___key1, const RuntimeMethod* method)
 {
 	{
@@ -22135,7 +22135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicFileLicense__ctor_mA3DCCF9DAAA00809C8
 		return;
 	}
 }
-// System.String System.ComponentModel.LicFileLicenseProvider_LicFileLicense::get_LicenseKey()
+// System.String System.ComponentModel.LicFileLicenseProvider/LicFileLicense::get_LicenseKey()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LicFileLicense_get_LicenseKey_m9ACA268958A84E7DC96D55D801043D9B404DD7F5 (LicFileLicense_t5AF4C870B7DF7EE91D6C0FA5DA1354763EF9E5FF * __this, const RuntimeMethod* method)
 {
 	{
@@ -22143,7 +22143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* LicFileLicense_get_LicenseKey_m9ACA
 		return L_0;
 	}
 }
-// System.Void System.ComponentModel.LicFileLicenseProvider_LicFileLicense::Dispose()
+// System.Void System.ComponentModel.LicFileLicenseProvider/LicFileLicense::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicFileLicense_Dispose_m91439D03DDE491C8C3F21E45A07843277DDF3A90 (LicFileLicense_t5AF4C870B7DF7EE91D6C0FA5DA1354763EF9E5FF * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22667,7 +22667,7 @@ IL_0015:
 		Type_t * L_3 = ___type0;
 		LicenseProvider_t586048163F4CCA6D8C6592E696379137A18B0596 * L_4 = ___provider1;
 		NullCheck(L_2);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_2, L_3, L_4);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_2, L_3, L_4);
 		LicenseProvider_t586048163F4CCA6D8C6592E696379137A18B0596 * L_5 = ___provider1;
 		if (!L_5)
 		{
@@ -22701,7 +22701,7 @@ IL_003b:
 		Type_t * L_10 = Object_GetType_m2E0B62414ECCAA3094B703790CE88CBB2F83EA60(L_9, /*hidden argument*/NULL);
 		LicenseProvider_t586048163F4CCA6D8C6592E696379137A18B0596 * L_11 = ___provider1;
 		NullCheck(L_8);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_8, L_10, L_11);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_8, L_10, L_11);
 	}
 
 IL_004e:
@@ -22918,7 +22918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LicenseProvider_t586048163F4CCA6D8C6592E69637
 		il2cpp_codegen_memory_barrier();
 		Type_t * L_2 = ___type0;
 		NullCheck(L_1);
-		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
+		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
 		return ((LicenseProvider_t586048163F4CCA6D8C6592E696379137A18B0596 *)CastclassClass((RuntimeObject*)L_3, LicenseProvider_t586048163F4CCA6D8C6592E696379137A18B0596_il2cpp_TypeInfo_var));
 	}
 
@@ -22951,7 +22951,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LicenseProvider_t586048163F4CCA6D8C6592E69637
 		il2cpp_codegen_memory_barrier();
 		Type_t * L_2 = ___providerType0;
 		NullCheck(L_1);
-		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
+		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
 		return ((LicenseProvider_t586048163F4CCA6D8C6592E696379137A18B0596 *)CastclassClass((RuntimeObject*)L_3, LicenseProvider_t586048163F4CCA6D8C6592E696379137A18B0596_il2cpp_TypeInfo_var));
 	}
 
@@ -23606,7 +23606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicenseManager__cctor_mFA5AEDEDE5B54596D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Object System.ComponentModel.LicenseManager_LicenseInteropHelper::AllocateAndValidateLicense(System.RuntimeTypeHandle,System.IntPtr,System.Int32)
+// System.Object System.ComponentModel.LicenseManager/LicenseInteropHelper::AllocateAndValidateLicense(System.RuntimeTypeHandle,System.IntPtr,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * LicenseInteropHelper_AllocateAndValidateLicense_m4AA45D14D8587FD39C8B21F5F1E7F7A777E00692 (RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  ___rth0, intptr_t ___bstrKey1, int32_t ___fDesignTime2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23715,7 +23715,7 @@ IL_004e:
 		return L_18;
 	}
 }
-// System.Int32 System.ComponentModel.LicenseManager_LicenseInteropHelper::RequestLicKey(System.RuntimeTypeHandle,System.IntPtr&)
+// System.Int32 System.ComponentModel.LicenseManager/LicenseInteropHelper::RequestLicKey(System.RuntimeTypeHandle,System.IntPtr&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LicenseInteropHelper_RequestLicKey_m08C663B945E03A79BF3C785C2BF0293F5CE36EC9 (RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  ___rth0, intptr_t* ___pbstrKey1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23782,7 +23782,7 @@ IL_003c:
 		return 0;
 	}
 }
-// System.Void System.ComponentModel.LicenseManager_LicenseInteropHelper::GetLicInfo(System.RuntimeTypeHandle,System.Int32&,System.Int32&)
+// System.Void System.ComponentModel.LicenseManager/LicenseInteropHelper::GetLicInfo(System.RuntimeTypeHandle,System.Int32&,System.Int32&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicenseInteropHelper_GetLicInfo_mED813B812774441E6F66D514D1A2088C00616903 (LicenseInteropHelper_t528682251600D62797521A8A3CCAD83BD1A47C0E * __this, RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  ___rth0, int32_t* ___pRuntimeKeyAvail1, int32_t* ___pLicVerified2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23877,7 +23877,7 @@ IL_006f:
 		return;
 	}
 }
-// System.Void System.ComponentModel.LicenseManager_LicenseInteropHelper::GetCurrentContextInfo(System.Int32&,System.IntPtr&,System.RuntimeTypeHandle)
+// System.Void System.ComponentModel.LicenseManager/LicenseInteropHelper::GetCurrentContextInfo(System.Int32&,System.IntPtr&,System.RuntimeTypeHandle)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicenseInteropHelper_GetCurrentContextInfo_m3CD1E60533E0488EE769B83D257E18959068CEE1 (LicenseInteropHelper_t528682251600D62797521A8A3CCAD83BD1A47C0E * __this, int32_t* ___fDesignTime0, intptr_t* ___bstrKey1, RuntimeTypeHandle_t7B542280A22F0EC4EAC2061C29178845847A8B2D  ___rth2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23929,7 +23929,7 @@ IL_0031:
 		return;
 	}
 }
-// System.Void System.ComponentModel.LicenseManager_LicenseInteropHelper::SaveKeyInCurrentContext(System.IntPtr)
+// System.Void System.ComponentModel.LicenseManager/LicenseInteropHelper::SaveKeyInCurrentContext(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicenseInteropHelper_SaveKeyInCurrentContext_mFC9918F441A05CB1D8FF05C8CE3B47562E98E70A (LicenseInteropHelper_t528682251600D62797521A8A3CCAD83BD1A47C0E * __this, intptr_t ___bstrKey0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23962,7 +23962,7 @@ IL_0025:
 		return;
 	}
 }
-// System.Void System.ComponentModel.LicenseManager_LicenseInteropHelper::.ctor()
+// System.Void System.ComponentModel.LicenseManager/LicenseInteropHelper::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicenseInteropHelper__ctor_mF904867D56E74E6D4B82C61F1CD9A54C345C3129 (LicenseInteropHelper_t528682251600D62797521A8A3CCAD83BD1A47C0E * __this, const RuntimeMethod* method)
 {
 	{
@@ -23978,7 +23978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LicenseInteropHelper__ctor_mF904867D56E7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext::.ctor(System.ComponentModel.LicenseUsageMode,System.Type)
+// System.Void System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext::.ctor(System.ComponentModel.LicenseUsageMode,System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CLRLicenseContext__ctor_mDD7E6CA9FE763FC4ECAC93AD03E00A55B8BC251D (CLRLicenseContext_t16B4876D030AD05B4AEA1B65FDC49BC8E4BF64DC * __this, int32_t ___usageMode0, Type_t * ___type1, const RuntimeMethod* method)
 {
 	{
@@ -23990,7 +23990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CLRLicenseContext__ctor_mDD7E6CA9FE763FC
 		return;
 	}
 }
-// System.ComponentModel.LicenseUsageMode System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext::get_UsageMode()
+// System.ComponentModel.LicenseUsageMode System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext::get_UsageMode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLRLicenseContext_get_UsageMode_mCD2243594CEB3EA0BE8256A9FB76AC0534A9CC5A (CLRLicenseContext_t16B4876D030AD05B4AEA1B65FDC49BC8E4BF64DC * __this, const RuntimeMethod* method)
 {
 	{
@@ -23998,7 +23998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLRLicenseContext_get_UsageMode_mCD22
 		return L_0;
 	}
 }
-// System.String System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext::GetSavedLicenseKey(System.Type,System.Reflection.Assembly)
+// System.String System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext::GetSavedLicenseKey(System.Type,System.Reflection.Assembly)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLRLicenseContext_GetSavedLicenseKey_mEFCE56DE7AAA765B34DE325258F207BEC178B38D (CLRLicenseContext_t16B4876D030AD05B4AEA1B65FDC49BC8E4BF64DC * __this, Type_t * ___type0, Assembly_t * ___resourceAssembly1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24027,7 +24027,7 @@ IL_0010:
 		return L_3;
 	}
 }
-// System.Void System.ComponentModel.LicenseManager_LicenseInteropHelper_CLRLicenseContext::SetSavedLicenseKey(System.Type,System.String)
+// System.Void System.ComponentModel.LicenseManager/LicenseInteropHelper/CLRLicenseContext::SetSavedLicenseKey(System.Type,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CLRLicenseContext_SetSavedLicenseKey_m18B78B15A9F65BA2C88852E34F9036040AF40C1A (CLRLicenseContext_t16B4876D030AD05B4AEA1B65FDC49BC8E4BF64DC * __this, Type_t * ___type0, String_t* ___key1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -27877,7 +27877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MaskedTextProvider_FindNonEditPositio
 		return L_4;
 	}
 }
-// System.Int32 System.ComponentModel.MaskedTextProvider::FindPositionInRange(System.Int32,System.Int32,System.Boolean,System.ComponentModel.MaskedTextProvider_CharType)
+// System.Int32 System.ComponentModel.MaskedTextProvider::FindPositionInRange(System.Int32,System.Int32,System.Boolean,System.ComponentModel.MaskedTextProvider/CharType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MaskedTextProvider_FindPositionInRange_m1DF8097A69310EE8E18809DF4A0A8F92D0494FDF (MaskedTextProvider_t63841E659F7586B73FFADC5F0315F78E4D32B197 * __this, int32_t ___startPosition0, int32_t ___endPosition1, bool ___direction2, int32_t ___charTypeFlags3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28750,7 +28750,7 @@ IL_0014:
 		return L_7;
 	}
 }
-// System.Boolean System.ComponentModel.MaskedTextProvider::IsEditPosition(System.ComponentModel.MaskedTextProvider_CharDescriptor)
+// System.Boolean System.ComponentModel.MaskedTextProvider::IsEditPosition(System.ComponentModel.MaskedTextProvider/CharDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MaskedTextProvider_IsEditPosition_m8614884878C3CE2E788A9E90FF6B2BFA296730DE (CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D * ___charDescriptor0, const RuntimeMethod* method)
 {
 	{
@@ -28774,7 +28774,7 @@ IL_0013:
 		return (bool)1;
 	}
 }
-// System.Boolean System.ComponentModel.MaskedTextProvider::IsLiteralPosition(System.ComponentModel.MaskedTextProvider_CharDescriptor)
+// System.Boolean System.ComponentModel.MaskedTextProvider::IsLiteralPosition(System.ComponentModel.MaskedTextProvider/CharDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MaskedTextProvider_IsLiteralPosition_m1B0D1B7B71CFC518C041DE789076534D1F08ED82 (CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D * ___charDescriptor0, const RuntimeMethod* method)
 {
 	{
@@ -30134,7 +30134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaskedTextProvider_SetChar_m73B70F371470
 		return;
 	}
 }
-// System.Void System.ComponentModel.MaskedTextProvider::SetChar(System.Char,System.Int32,System.ComponentModel.MaskedTextProvider_CharDescriptor)
+// System.Void System.ComponentModel.MaskedTextProvider::SetChar(System.Char,System.Int32,System.ComponentModel.MaskedTextProvider/CharDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaskedTextProvider_SetChar_mE6C13D1ABEF1568CD78927D157788B6D3025F218 (MaskedTextProvider_t63841E659F7586B73FFADC5F0315F78E4D32B197 * __this, Il2CppChar ___input0, int32_t ___position1, CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D * ___charDescriptor2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -30972,7 +30972,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MaskedTextProvider_TestEscapeChar_mC839F
 		return L_6;
 	}
 }
-// System.Boolean System.ComponentModel.MaskedTextProvider::TestEscapeChar(System.Char,System.Int32,System.ComponentModel.MaskedTextProvider_CharDescriptor)
+// System.Boolean System.ComponentModel.MaskedTextProvider::TestEscapeChar(System.Char,System.Int32,System.ComponentModel.MaskedTextProvider/CharDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MaskedTextProvider_TestEscapeChar_mE807731E4B72B215DBD3B6276D819B606924071C (MaskedTextProvider_t63841E659F7586B73FFADC5F0315F78E4D32B197 * __this, Il2CppChar ___input0, int32_t ___position1, CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D * ___charDex2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -32009,7 +32009,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MaskedTextProvider__cctor_mE62664DE9040F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.MaskedTextProvider_CharDescriptor::.ctor(System.Int32,System.ComponentModel.MaskedTextProvider_CharType)
+// System.Void System.ComponentModel.MaskedTextProvider/CharDescriptor::.ctor(System.Int32,System.ComponentModel.MaskedTextProvider/CharType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharDescriptor__ctor_m19AB18A65157129B4CFB273E1BC5FCF7D8C6E93B (CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D * __this, int32_t ___maskPos0, int32_t ___charType1, const RuntimeMethod* method)
 {
 	{
@@ -32021,7 +32021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CharDescriptor__ctor_m19AB18A65157129B4C
 		return;
 	}
 }
-// System.String System.ComponentModel.MaskedTextProvider_CharDescriptor::ToString()
+// System.String System.ComponentModel.MaskedTextProvider/CharDescriptor::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CharDescriptor_ToString_m77BF47D26BBCA29730EBD50AA74D8FB45C3AFCAC (CharDescriptor_t8FA4F99310872A548406BE90FD1A7E1484C6ED5D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -33293,7 +33293,7 @@ IL_0049:
 			RuntimeObject * L_15 = VirtFuncInvoker0< RuntimeObject * >::Invoke(4 /* System.Object System.Attribute::get_TypeId() */, L_14);
 			Attribute_tF048C13FB3C8CFCC53F82290E4A3F621089F9A74 * L_16 = V_4;
 			NullCheck(L_13);
-			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_13, L_15, L_16);
+			VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_13, L_15, L_16);
 		}
 
 IL_0065:
@@ -33352,14 +33352,14 @@ IL_0083:
 	{
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_22 = V_1;
 		NullCheck(L_22);
-		RuntimeObject* L_23 = VirtFuncInvoker0< RuntimeObject* >::Invoke(39 /* System.Collections.ICollection System.Collections.Hashtable::get_Values() */, L_22);
+		RuntimeObject* L_23 = VirtFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Values() */, L_22);
 		NullCheck(L_23);
 		int32_t L_24 = InterfaceFuncInvoker0< int32_t >::Invoke(1 /* System.Int32 System.Collections.ICollection::get_Count() */, ICollection_tA3BAB2482E28132A7CA9E0E21393027353C28B54_il2cpp_TypeInfo_var, L_23);
 		AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* L_25 = (AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17*)(AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17*)SZArrayNew(AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17_il2cpp_TypeInfo_var, (uint32_t)L_24);
 		V_2 = L_25;
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_26 = V_1;
 		NullCheck(L_26);
-		RuntimeObject* L_27 = VirtFuncInvoker0< RuntimeObject* >::Invoke(39 /* System.Collections.ICollection System.Collections.Hashtable::get_Values() */, L_26);
+		RuntimeObject* L_27 = VirtFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Values() */, L_26);
 		AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* L_28 = V_2;
 		NullCheck(L_27);
 		InterfaceActionInvoker2< RuntimeArray *, int32_t >::Invoke(0 /* System.Void System.Collections.ICollection::CopyTo(System.Array,System.Int32) */, ICollection_tA3BAB2482E28132A7CA9E0E21393027353C28B54_il2cpp_TypeInfo_var, L_27, (RuntimeArray *)(RuntimeArray *)L_28, 0);
@@ -34058,7 +34058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NestedContainer_OnOwnerDisposed_mB5AF0D4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.NestedContainer_Site::.ctor(System.ComponentModel.IComponent,System.ComponentModel.NestedContainer,System.String)
+// System.Void System.ComponentModel.NestedContainer/Site::.ctor(System.ComponentModel.IComponent,System.ComponentModel.NestedContainer,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Site__ctor_mDAA679D31EE0B838B5FF36F75BFCA767CB96DC15 (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, RuntimeObject* ___component0, NestedContainer_t08F11932945A6F531D1338CC5A05BAD8D99F8AE9 * ___container1, String_t* ___name2, const RuntimeMethod* method)
 {
 	{
@@ -34072,7 +34072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Site__ctor_mDAA679D31EE0B838B5FF36F75BFC
 		return;
 	}
 }
-// System.ComponentModel.IComponent System.ComponentModel.NestedContainer_Site::get_Component()
+// System.ComponentModel.IComponent System.ComponentModel.NestedContainer/Site::get_Component()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Site_get_Component_m7FE711FDC0DB5198F8D20C04AC663BC76901FA37 (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, const RuntimeMethod* method)
 {
 	{
@@ -34080,7 +34080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Site_get_Component_m7FE711FDC0
 		return L_0;
 	}
 }
-// System.ComponentModel.IContainer System.ComponentModel.NestedContainer_Site::get_Container()
+// System.ComponentModel.IContainer System.ComponentModel.NestedContainer/Site::get_Container()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Site_get_Container_m63EFCB12735BBB444C337E01A4D04FC3B3FAD042 (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, const RuntimeMethod* method)
 {
 	{
@@ -34088,7 +34088,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Site_get_Container_m63EFCB1273
 		return L_0;
 	}
 }
-// System.Object System.ComponentModel.NestedContainer_Site::GetService(System.Type)
+// System.Object System.ComponentModel.NestedContainer/Site::GetService(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * Site_GetService_mDFE2374B8394CEA41428F491712439BB1E3D0E4B (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, Type_t * ___service0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -34121,7 +34121,7 @@ IL_001f:
 		return __this;
 	}
 }
-// System.Boolean System.ComponentModel.NestedContainer_Site::get_DesignMode()
+// System.Boolean System.ComponentModel.NestedContainer/Site::get_DesignMode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Site_get_DesignMode_m289AFF7B5EB56D725AF45E42184974D373ADBF56 (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -34165,7 +34165,7 @@ IL_0023:
 		return (bool)0;
 	}
 }
-// System.String System.ComponentModel.NestedContainer_Site::get_FullName()
+// System.String System.ComponentModel.NestedContainer/Site::get_FullName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Site_get_FullName_m13D39B257CDEBC4519F72636E311E8E6439DBC6E (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -34217,7 +34217,7 @@ IL_0032:
 		return L_10;
 	}
 }
-// System.String System.ComponentModel.NestedContainer_Site::get_Name()
+// System.String System.ComponentModel.NestedContainer/Site::get_Name()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Site_get_Name_m7A5F45D4E71D381A9E5113AB20B5E11C39799F67 (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, const RuntimeMethod* method)
 {
 	{
@@ -34225,7 +34225,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Site_get_Name_m7A5F45D4E71D381A9E51
 		return L_0;
 	}
 }
-// System.Void System.ComponentModel.NestedContainer_Site::set_Name(System.String)
+// System.Void System.ComponentModel.NestedContainer/Site::set_Name(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Site_set_Name_m52981A9AFBFFA38A2A81C1A5DF69703F5CC00E67 (Site_t416D1B752B924BEC6C03A474D7DC852F255B3E5A * __this, String_t* ___value0, const RuntimeMethod* method)
 {
 	{
@@ -34876,7 +34876,7 @@ IL_0015:
 		return L_5;
 	}
 }
-// System.ComponentModel.TypeConverter_StandardValuesCollection System.ComponentModel.NullableConverter::GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
+// System.ComponentModel.TypeConverter/StandardValuesCollection System.ComponentModel.NullableConverter::GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3 * NullableConverter_GetStandardValues_mE04D07ED245061BA6DF9A639DBB37B2ABBDA0E99 (NullableConverter_t46A6256BAFD4B0C501724527189C888B36E48E71 * __this, RuntimeObject* ___context0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -36141,7 +36141,7 @@ IL_002f:
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_6 = __this->get_valueChangedHandlers_13();
 		RuntimeObject * L_7 = ___component0;
 		NullCheck(L_6);
-		RuntimeObject * L_8 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_6, L_7);
+		RuntimeObject * L_8 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_6, L_7);
 		V_0 = ((EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C *)CastclassSealed((RuntimeObject*)L_8, EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C_il2cpp_TypeInfo_var));
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_9 = __this->get_valueChangedHandlers_13();
 		RuntimeObject * L_10 = ___component0;
@@ -36149,7 +36149,7 @@ IL_002f:
 		EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C * L_12 = ___handler1;
 		Delegate_t * L_13 = Delegate_Combine_mC25D2F7DECAFBA6D9A2F9EBA8A77063F0658ECF1(L_11, L_12, /*hidden argument*/NULL);
 		NullCheck(L_9);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_9, L_10, L_13);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_9, L_10, L_13);
 		return;
 	}
 }
@@ -36867,7 +36867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PropertyDescriptor_OnValueChanged_m78CAD
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_2 = __this->get_valueChangedHandlers_13();
 		RuntimeObject * L_3 = ___component0;
 		NullCheck(L_2);
-		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_3);
+		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_3);
 		V_0 = ((EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C *)CastclassSealed((RuntimeObject*)L_4, EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C_il2cpp_TypeInfo_var));
 		EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C * L_5 = V_0;
 		if (!L_5)
@@ -36937,7 +36937,7 @@ IL_001c:
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_5 = __this->get_valueChangedHandlers_13();
 		RuntimeObject * L_6 = ___component0;
 		NullCheck(L_5);
-		RuntimeObject * L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_5, L_6);
+		RuntimeObject * L_7 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_5, L_6);
 		V_0 = ((EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C *)CastclassSealed((RuntimeObject*)L_7, EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C_il2cpp_TypeInfo_var));
 		EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C * L_8 = V_0;
 		EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C * L_9 = ___handler1;
@@ -36954,7 +36954,7 @@ IL_001c:
 		RuntimeObject * L_13 = ___component0;
 		EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C * L_14 = V_0;
 		NullCheck(L_12);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_12, L_13, L_14);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_12, L_13, L_14);
 		return;
 	}
 
@@ -36963,7 +36963,7 @@ IL_0054:
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_15 = __this->get_valueChangedHandlers_13();
 		RuntimeObject * L_16 = ___component0;
 		NullCheck(L_15);
-		VirtActionInvoker1< RuntimeObject * >::Invoke(40 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, L_15, L_16);
+		VirtActionInvoker1< RuntimeObject * >::Invoke(39 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, L_15, L_16);
 	}
 
 IL_0060:
@@ -36998,7 +36998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventHandler_t2B84E745E28BA26C49C4E99A387FC3B
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_2 = __this->get_valueChangedHandlers_13();
 		RuntimeObject * L_3 = ___component0;
 		NullCheck(L_2);
-		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_3);
+		RuntimeObject * L_4 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_2, L_3);
 		return ((EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C *)CastclassSealed((RuntimeObject*)L_4, EventHandler_t2B84E745E28BA26C49C4E99A387FC3B534D1110C_il2cpp_TypeInfo_var));
 	}
 
@@ -39147,13 +39147,13 @@ IL_000e:
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)__this->get__items_1();
 		int32_t L_3 = ___index0;
 		RuntimeObject * L_4 = IL2CPP_ARRAY_UNSAFE_LOAD((ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_2, (int32_t)L_3);
-		return L_4;
+		return (RuntimeObject *)L_4;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current_mD7829C7E8CFBEDD463B15A951CDE9B90A12CC55C_gshared_inline (Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD * __this, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = (RuntimeObject *)__this->get_current_3();
-		return L_0;
+		return (RuntimeObject *)L_0;
 	}
 }

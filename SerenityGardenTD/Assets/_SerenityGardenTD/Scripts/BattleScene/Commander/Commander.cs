@@ -155,6 +155,10 @@ namespace SerenityGarden
 
         public void UnpowerupTurret(BuildableTurret selectedTurret)
         {
+            //In coop mode the commander will be set to move somewhere becfore the turret he is occupying is sold, so in that case don't try to find a new destination because he'll pick a wrong one.
+            if (PhotonNetwork.IsConnected && !ReachedDestination)
+                return;
+
             //Find the place to position the commander;
             HexagonalBlock closestPos = null;
             for (float range = 0.1f; true; range += 0.1f)
@@ -175,7 +179,7 @@ namespace SerenityGarden
             CurrentBlock = closestPos;
             EndBlock = closestPos;
             ReachedDestination = false;
-            netSendEndBlock = true;
+            //netSendEndBlock = true;
             FindNextBlock();
         }
 
@@ -326,7 +330,6 @@ namespace SerenityGarden
                 {
                     netReceivedEndBlock = true;
                     string objName = receivedObj.ToString();
-                    Debug.Log(objName);
                     if (objName != null)
                     {
                         GameObject objToFind = GameObject.Find(objName);

@@ -189,11 +189,11 @@ struct SendMouseEvents_tC8FB7F3FCFF87BDF2E56E1E0D209B81943D8F666_StaticFields
 public:
 	// System.Boolean UnityEngine.SendMouseEvents::s_MouseUsed
 	bool ___s_MouseUsed_0;
-	// UnityEngine.SendMouseEvents_HitInfo[] UnityEngine.SendMouseEvents::m_LastHit
+	// UnityEngine.SendMouseEvents/HitInfo[] UnityEngine.SendMouseEvents::m_LastHit
 	HitInfoU5BU5D_t1C4C1506E0E7D22806B4ED84887D7298C8EC44A1* ___m_LastHit_1;
-	// UnityEngine.SendMouseEvents_HitInfo[] UnityEngine.SendMouseEvents::m_MouseDownHit
+	// UnityEngine.SendMouseEvents/HitInfo[] UnityEngine.SendMouseEvents::m_MouseDownHit
 	HitInfoU5BU5D_t1C4C1506E0E7D22806B4ED84887D7298C8EC44A1* ___m_MouseDownHit_2;
-	// UnityEngine.SendMouseEvents_HitInfo[] UnityEngine.SendMouseEvents::m_CurrentHit
+	// UnityEngine.SendMouseEvents/HitInfo[] UnityEngine.SendMouseEvents::m_CurrentHit
 	HitInfoU5BU5D_t1C4C1506E0E7D22806B4ED84887D7298C8EC44A1* ___m_CurrentHit_3;
 	// UnityEngine.Camera[] UnityEngine.SendMouseEvents::m_Cameras
 	CameraU5BU5D_t2A1957E88FB79357C12B87941970D776D30E90F9* ___m_Cameras_4;
@@ -459,13 +459,13 @@ public:
 };
 
 
-// UnityEngine.SendMouseEvents_HitInfo
+// UnityEngine.SendMouseEvents/HitInfo
 struct  HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746 
 {
 public:
-	// UnityEngine.GameObject UnityEngine.SendMouseEvents_HitInfo::target
+	// UnityEngine.GameObject UnityEngine.SendMouseEvents/HitInfo::target
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___target_0;
-	// UnityEngine.Camera UnityEngine.SendMouseEvents_HitInfo::camera
+	// UnityEngine.Camera UnityEngine.SendMouseEvents/HitInfo::camera
 	Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * ___camera_1;
 
 public:
@@ -801,7 +801,7 @@ public:
 	DisplayU5BU5D_tB2AB0FDB3B2E9FD784D5100C18EB0ED489A2CCC9* ___displays_1;
 	// UnityEngine.Display UnityEngine.Display::_mainDisplay
 	Display_t38AD3008E8C72693533E4FE9CFFF6E01B56E9D57 * ____mainDisplay_2;
-	// UnityEngine.Display_DisplaysUpdatedDelegate UnityEngine.Display::onDisplaysUpdated
+	// UnityEngine.Display/DisplaysUpdatedDelegate UnityEngine.Display::onDisplaysUpdated
 	DisplaysUpdatedDelegate_t2FAF995B47D691BD7C5BBC17D533DD8B19BE9A90 * ___onDisplaysUpdated_3;
 
 public:
@@ -1216,11 +1216,11 @@ public:
 struct Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34_StaticFields
 {
 public:
-	// UnityEngine.Camera_CameraCallback UnityEngine.Camera::onPreCull
+	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreCull
 	CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0 * ___onPreCull_4;
-	// UnityEngine.Camera_CameraCallback UnityEngine.Camera::onPreRender
+	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreRender
 	CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0 * ___onPreRender_5;
-	// UnityEngine.Camera_CameraCallback UnityEngine.Camera::onPostRender
+	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPostRender
 	CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0 * ___onPostRender_6;
 
 public:
@@ -1292,7 +1292,7 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
-// UnityEngine.SendMouseEvents_HitInfo[]
+// UnityEngine.SendMouseEvents/HitInfo[]
 struct HitInfoU5BU5D_t1C4C1506E0E7D22806B4ED84887D7298C8EC44A1  : public RuntimeArray
 {
 public:
@@ -2546,7 +2546,7 @@ IL_0389:
 		return;
 	}
 }
-// System.Void UnityEngine.SendMouseEvents::SendEvents(System.Int32,UnityEngine.SendMouseEvents_HitInfo)
+// System.Void UnityEngine.SendMouseEvents::SendEvents(System.Int32,UnityEngine.SendMouseEvents/HitInfo)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SendMouseEvents_SendEvents_m2E266CFBE23F89BA8563312C8488DF1E9A7C25F0 (int32_t ___i0, HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746  ___hit1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2848,7 +2848,7 @@ IL2CPP_EXTERN_C void HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746_marshal_c
 IL2CPP_EXTERN_C void HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746_marshal_com_cleanup(HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746_marshaled_com& marshaled)
 {
 }
-// System.Void UnityEngine.SendMouseEvents_HitInfo::SendMessage(System.String)
+// System.Void UnityEngine.SendMouseEvents/HitInfo::SendMessage(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434 (HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746 * __this, String_t* ___name0, const RuntimeMethod* method)
 {
 	{
@@ -2865,7 +2865,7 @@ IL2CPP_EXTERN_C  void HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6
 	HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746 * _thisAdjusted = reinterpret_cast<HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746 *>(__this + _offset);
 	HitInfo_SendMessage_m03D1D4402F97AA2D7E4A1D8A8C18A313B5DE6434(_thisAdjusted, ___name0, method);
 }
-// System.Boolean UnityEngine.SendMouseEvents_HitInfo::op_Implicit(UnityEngine.SendMouseEvents_HitInfo)
+// System.Boolean UnityEngine.SendMouseEvents/HitInfo::op_Implicit(UnityEngine.SendMouseEvents/HitInfo)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HitInfo_op_Implicit_mBB6DB77D68B22445EC255E34E7EE7667FD584322 (HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746  ___exists0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2912,7 +2912,7 @@ IL_0021:
 		return L_6;
 	}
 }
-// System.Boolean UnityEngine.SendMouseEvents_HitInfo::Compare(UnityEngine.SendMouseEvents_HitInfo,UnityEngine.SendMouseEvents_HitInfo)
+// System.Boolean UnityEngine.SendMouseEvents/HitInfo::Compare(UnityEngine.SendMouseEvents/HitInfo,UnityEngine.SendMouseEvents/HitInfo)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HitInfo_Compare_m5643F7A11E2F60B86286330548DF614BD9691582 (HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746  ___lhs0, HitInfo_t2B010E637D28B522E704FDA56FAE6DA9979D8746  ___rhs1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;

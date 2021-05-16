@@ -112,7 +112,7 @@ namespace SerenityGarden
         /// </summary>
         public void _UnpowerupTurret()
         {
-            if(clickManager.selectedTurret != null)
+            if (clickManager.selectedTurret != null)
             {
                 BuildableTurret buildable = clickManager.selectedTurret.gameObject.GetComponent<BuildableTurret>();
                 if(buildable != null)
@@ -148,7 +148,6 @@ namespace SerenityGarden
                         }
                     }
 
-                    Debug.Log(commanderToUse.name);
                     commanderToUse.gameObject.SetActive(true);
                     commanderToUse.UnpowerupTurret(buildable);
 

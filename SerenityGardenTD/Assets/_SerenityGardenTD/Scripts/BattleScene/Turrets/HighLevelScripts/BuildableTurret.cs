@@ -269,6 +269,7 @@ namespace SerenityGarden
                 }
                 if(eventType == "Sell")
                 {
+                    Debug.Log("Buildable sell");
                     netReceivedEventData = true;
                     SceneClickManager.instance.selectedTurret = this;
                     TurretBuildManager.instance._SellTurret();
