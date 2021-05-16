@@ -361,19 +361,19 @@ public:
 };
 
 
-// UnityEngine.Rendering.Universal.ShaderInput/LightData
+// UnityEngine.Rendering.Universal.ShaderInput_LightData
 struct  LightData_t773677FBDE7024B6D8122EE78BEB3C6FD245EEDF 
 {
 public:
-	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput/LightData::position
+	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput_LightData::position
 	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___position_0;
-	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput/LightData::color
+	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput_LightData::color
 	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___color_1;
-	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput/LightData::attenuation
+	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput_LightData::attenuation
 	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___attenuation_2;
-	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput/LightData::spotDirection
+	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput_LightData::spotDirection
 	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___spotDirection_3;
-	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput/LightData::occlusionProbeChannels
+	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput_LightData::occlusionProbeChannels
 	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___occlusionProbeChannels_4;
 
 public:
@@ -419,13 +419,13 @@ public:
 };
 
 
-// UnityEngine.Rendering.Universal.ShaderInput/ShadowData
+// UnityEngine.Rendering.Universal.ShaderInput_ShadowData
 struct  ShadowData_t7BEFADB532343B15D6E360E1D85CF0C3EC0D1571 
 {
 public:
-	// UnityEngine.Matrix4x4 UnityEngine.Rendering.Universal.ShaderInput/ShadowData::worldToShadowMatrix
+	// UnityEngine.Matrix4x4 UnityEngine.Rendering.Universal.ShaderInput_ShadowData::worldToShadowMatrix
 	Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA  ___worldToShadowMatrix_0;
-	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput/ShadowData::shadowParams
+	// UnityEngine.Vector4 UnityEngine.Rendering.Universal.ShaderInput_ShadowData::shadowParams
 	Vector4_tD148D6428C3F8FF6CD998F82090113C2B490B76E  ___shadowParams_1;
 
 public:

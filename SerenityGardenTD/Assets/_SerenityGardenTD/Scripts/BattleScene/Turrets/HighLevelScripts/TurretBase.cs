@@ -28,6 +28,7 @@ namespace SerenityGarden
 
         public GameObject partToRotate;
         public GameObject firePoint;
+        public TMPro.TextMeshProUGUI networkNameText;
         private GameObject levelGfx;
 
         //A delay time for searching for a target, because it may be an expensive process to do every frame
@@ -110,6 +111,12 @@ namespace SerenityGarden
             view = GetComponent<PhotonView>();
             base.BaseStartCalls();
             GamePauseManager.instance.AddUnpauseEvent(OnResumeGame);
+
+
+            if (PhotonNetwork.IsConnected)
+                networkNameText.text = view.Owner.NickName;
+            else
+                networkNameText.transform.parent.parent.gameObject.SetActive(false);
         }
 
         /// <summary>

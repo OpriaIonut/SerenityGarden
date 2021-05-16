@@ -100,7 +100,7 @@ extern void WebRpcImplementationExample_OnEnable_m3D5E9A3ABEDFB4B65430E52F817B7D
 extern void WebRpcImplementationExample_OnDisable_m2A7FC270527A86DD978D2A0398A197566E28846F (void);
 // 0x00000028 System.Void Photon.Pun.Demo.WebRpcImplementationExample::.ctor()
 extern void WebRpcImplementationExample__ctor_m0201D4173FA71ABA84C949BEE3DE6FF02707B5D7 (void);
-// 0x00000029 System.String Photon.Pun.Demo.Shared.DocLinks::GetLink(Photon.Pun.Demo.Shared.DocLinks/DocTypes,System.String)
+// 0x00000029 System.String Photon.Pun.Demo.Shared.DocLinks::GetLink(Photon.Pun.Demo.Shared.DocLinks_DocTypes,System.String)
 extern void DocLinks_GetLink_m906C703967915D9A9C5DD7BD12F4DC1E46A08E0F (void);
 // 0x0000002A System.String Photon.Pun.Demo.Shared.DocLinks::GetApiLink(System.String)
 extern void DocLinks_GetApiLink_m09255C210FAE0EAF18E4B03CCB1BE20C0755CD08 (void);
@@ -418,7 +418,7 @@ extern void PlayerDetailsController__ctor_m469E1452044099A9900445367679B0725C852
 extern void InfosPanelPlaceholder_OnEnable_m4120FE27AA4B876DF61845DC80FB380FF996357C (void);
 // 0x000000C7 System.Void Photon.Pun.Demo.Cockpit.InfosPanelPlaceholder::.ctor()
 extern void InfosPanelPlaceholder__ctor_m5516595A636FFE6664EC7050A7DD50E4B72A0A11 (void);
-// 0x000000C8 System.Void Photon.Pun.Demo.Cockpit.FriendListCell::RefreshInfo(Photon.Pun.Demo.Cockpit.FriendListView/FriendDetail)
+// 0x000000C8 System.Void Photon.Pun.Demo.Cockpit.FriendListCell::RefreshInfo(Photon.Pun.Demo.Cockpit.FriendListView_FriendDetail)
 extern void FriendListCell_RefreshInfo_m273CD21AB534449964478D04F2042647EBFFA55D (void);
 // 0x000000C9 System.Void Photon.Pun.Demo.Cockpit.FriendListCell::RefreshInfo(Photon.Realtime.FriendInfo)
 extern void FriendListCell_RefreshInfo_m7E205F0E6663C01FC86F90BC30A13CAFA760DF30 (void);
@@ -432,7 +432,7 @@ extern void FriendListCell__ctor_m9F70C2FFAD24AC677A6FAE81467C095788D6AD12 (void
 extern void FriendListView_Awake_mF03037A86E1953A298F9926D3028EB8B75B6E0B5 (void);
 // 0x000000CE System.Void Photon.Pun.Demo.Cockpit.FriendListView::OnEnable()
 extern void FriendListView_OnEnable_mEAFE2F94CB70AA489A5C5DA29E034D6C99CAC025 (void);
-// 0x000000CF System.Void Photon.Pun.Demo.Cockpit.FriendListView::SetFriendDetails(Photon.Pun.Demo.Cockpit.FriendListView/FriendDetail[])
+// 0x000000CF System.Void Photon.Pun.Demo.Cockpit.FriendListView::SetFriendDetails(Photon.Pun.Demo.Cockpit.FriendListView_FriendDetail[])
 extern void FriendListView_SetFriendDetails_m1485455CFBF5F906C349AEA7A77E58ADB9CC1763 (void);
 // 0x000000D0 System.Void Photon.Pun.Demo.Cockpit.FriendListView::FindFriends()
 extern void FriendListView_FindFriends_m5433BC30DB96D9363BED562D829F40EB6574DBB1 (void);
@@ -1222,305 +1222,305 @@ extern void RoomListEntry_Initialize_mFC2014D8B475AACF94CD66CEC35C6DD880EF6457 (
 extern void RoomListEntry__ctor_m7E64AC61071B0FAAAB7EA7D1107F8F742A068508 (void);
 // 0x00000259 System.Void Photon.Pun.Demo.Asteroids.RoomListEntry::<Start>b__4_0()
 extern void RoomListEntry_U3CStartU3Eb__4_0_m8497A1C576287729E99826EA9C394A1CA85F2079 (void);
-// 0x0000025A System.Void Photon.Pun.Demo.Cockpit.PunCockpit/<>c::.cctor()
+// 0x0000025A System.Void Photon.Pun.Demo.Cockpit.PunCockpit_<>c::.cctor()
 extern void U3CU3Ec__cctor_mB15BB30EBA6A54D91EDA63AF6245B56F111422F3 (void);
-// 0x0000025B System.Void Photon.Pun.Demo.Cockpit.PunCockpit/<>c::.ctor()
+// 0x0000025B System.Void Photon.Pun.Demo.Cockpit.PunCockpit_<>c::.ctor()
 extern void U3CU3Ec__ctor_mE5E2F309B0D5B698D945329D07F299CC57DFF3BE (void);
-// 0x0000025C System.String Photon.Pun.Demo.Cockpit.PunCockpit/<>c::<Start>b__54_0(Photon.Pun.Demo.Cockpit.FriendListView/FriendDetail)
+// 0x0000025C System.String Photon.Pun.Demo.Cockpit.PunCockpit_<>c::<Start>b__54_0(Photon.Pun.Demo.Cockpit.FriendListView_FriendDetail)
 extern void U3CU3Ec_U3CStartU3Eb__54_0_mF5A5B1F9CF8880BC6EE56302AE4C03C470C38F04 (void);
-// 0x0000025D System.Int32 Photon.Pun.Demo.Cockpit.PunCockpit/<>c::<OnRegionsPinged>b__79_0(Photon.Realtime.Region)
+// 0x0000025D System.Int32 Photon.Pun.Demo.Cockpit.PunCockpit_<>c::<OnRegionsPinged>b__79_0(Photon.Realtime.Region)
 extern void U3CU3Ec_U3COnRegionsPingedU3Eb__79_0_m3365EF56A3C88BE84FA7B215588163D9E32B5465 (void);
-// 0x0000025E System.Void Photon.Pun.Demo.Cockpit.PunCockpit/<OnDropdownConnectAs_CB>d__99::.ctor(System.Int32)
+// 0x0000025E System.Void Photon.Pun.Demo.Cockpit.PunCockpit_<OnDropdownConnectAs_CB>d__99::.ctor(System.Int32)
 extern void U3COnDropdownConnectAs_CBU3Ed__99__ctor_mA3A32696DB301C295F3D0EB4AEC6F552676D91D1 (void);
-// 0x0000025F System.Void Photon.Pun.Demo.Cockpit.PunCockpit/<OnDropdownConnectAs_CB>d__99::System.IDisposable.Dispose()
+// 0x0000025F System.Void Photon.Pun.Demo.Cockpit.PunCockpit_<OnDropdownConnectAs_CB>d__99::System.IDisposable.Dispose()
 extern void U3COnDropdownConnectAs_CBU3Ed__99_System_IDisposable_Dispose_m8A7866ACF2A1D3F54266393DE7F64A4C46528700 (void);
-// 0x00000260 System.Boolean Photon.Pun.Demo.Cockpit.PunCockpit/<OnDropdownConnectAs_CB>d__99::MoveNext()
+// 0x00000260 System.Boolean Photon.Pun.Demo.Cockpit.PunCockpit_<OnDropdownConnectAs_CB>d__99::MoveNext()
 extern void U3COnDropdownConnectAs_CBU3Ed__99_MoveNext_m1F662C34D13E281F137FEC84255FD03F6F6432B5 (void);
-// 0x00000261 System.Object Photon.Pun.Demo.Cockpit.PunCockpit/<OnDropdownConnectAs_CB>d__99::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000261 System.Object Photon.Pun.Demo.Cockpit.PunCockpit_<OnDropdownConnectAs_CB>d__99::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3COnDropdownConnectAs_CBU3Ed__99_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m16742BC013E39B0883137A4E694E14203062A02F (void);
-// 0x00000262 System.Void Photon.Pun.Demo.Cockpit.PunCockpit/<OnDropdownConnectAs_CB>d__99::System.Collections.IEnumerator.Reset()
+// 0x00000262 System.Void Photon.Pun.Demo.Cockpit.PunCockpit_<OnDropdownConnectAs_CB>d__99::System.Collections.IEnumerator.Reset()
 extern void U3COnDropdownConnectAs_CBU3Ed__99_System_Collections_IEnumerator_Reset_m00F8BD2B83245D735C7977D7B257B61F6E389F92 (void);
-// 0x00000263 System.Object Photon.Pun.Demo.Cockpit.PunCockpit/<OnDropdownConnectAs_CB>d__99::System.Collections.IEnumerator.get_Current()
+// 0x00000263 System.Object Photon.Pun.Demo.Cockpit.PunCockpit_<OnDropdownConnectAs_CB>d__99::System.Collections.IEnumerator.get_Current()
 extern void U3COnDropdownConnectAs_CBU3Ed__99_System_Collections_IEnumerator_get_Current_m2FD136BF4527845DB2CCF12A34643F343EC0E71E (void);
-// 0x00000264 System.Void Photon.Pun.Demo.Cockpit.BoolInputField/OnSubmitEvent::.ctor()
+// 0x00000264 System.Void Photon.Pun.Demo.Cockpit.BoolInputField_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_m297D2E48C458707C0126A7DB68255357E08E9863 (void);
-// 0x00000265 System.Void Photon.Pun.Demo.Cockpit.IntInputField/OnSubmitEvent::.ctor()
+// 0x00000265 System.Void Photon.Pun.Demo.Cockpit.IntInputField_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_m731104BFFA73833DC11496F4004261EFDAF6386B (void);
-// 0x00000266 System.Void Photon.Pun.Demo.Cockpit.StringInputField/OnSubmitEvent::.ctor()
+// 0x00000266 System.Void Photon.Pun.Demo.Cockpit.StringInputField_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_m7C34CAD7D65DECA4A8C223CCE1601B03765966A7 (void);
-// 0x00000267 System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController/<UpdateUIPing>d__24::.ctor(System.Int32)
+// 0x00000267 System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController_<UpdateUIPing>d__24::.ctor(System.Int32)
 extern void U3CUpdateUIPingU3Ed__24__ctor_mF1A8C019D977CCB3FC5888BED4CFA379C04B39A1 (void);
-// 0x00000268 System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController/<UpdateUIPing>d__24::System.IDisposable.Dispose()
+// 0x00000268 System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController_<UpdateUIPing>d__24::System.IDisposable.Dispose()
 extern void U3CUpdateUIPingU3Ed__24_System_IDisposable_Dispose_mD934F91E8425A809931D051CD15CE94A3C16220D (void);
-// 0x00000269 System.Boolean Photon.Pun.Demo.Cockpit.PlayerDetailsController/<UpdateUIPing>d__24::MoveNext()
+// 0x00000269 System.Boolean Photon.Pun.Demo.Cockpit.PlayerDetailsController_<UpdateUIPing>d__24::MoveNext()
 extern void U3CUpdateUIPingU3Ed__24_MoveNext_m953B65D814830A0D4F6A2E626491AA3C624053AE (void);
-// 0x0000026A System.Object Photon.Pun.Demo.Cockpit.PlayerDetailsController/<UpdateUIPing>d__24::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000026A System.Object Photon.Pun.Demo.Cockpit.PlayerDetailsController_<UpdateUIPing>d__24::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CUpdateUIPingU3Ed__24_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m759E0945456DDED3609A06401E085E252D41B37E (void);
-// 0x0000026B System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController/<UpdateUIPing>d__24::System.Collections.IEnumerator.Reset()
+// 0x0000026B System.Void Photon.Pun.Demo.Cockpit.PlayerDetailsController_<UpdateUIPing>d__24::System.Collections.IEnumerator.Reset()
 extern void U3CUpdateUIPingU3Ed__24_System_Collections_IEnumerator_Reset_mBEC3A6F5DD92D8F0D8BFE45A456E6B77EE3DF8ED (void);
-// 0x0000026C System.Object Photon.Pun.Demo.Cockpit.PlayerDetailsController/<UpdateUIPing>d__24::System.Collections.IEnumerator.get_Current()
+// 0x0000026C System.Object Photon.Pun.Demo.Cockpit.PlayerDetailsController_<UpdateUIPing>d__24::System.Collections.IEnumerator.get_Current()
 extern void U3CUpdateUIPingU3Ed__24_System_Collections_IEnumerator_get_Current_mB7E45A9DF8C8D1E64E3F3F9677D29DC76E2FB1CA (void);
-// 0x0000026D System.Void Photon.Pun.Demo.Cockpit.FriendListView/FriendDetail::.ctor(System.String,System.String)
+// 0x0000026D System.Void Photon.Pun.Demo.Cockpit.FriendListView_FriendDetail::.ctor(System.String,System.String)
 extern void FriendDetail__ctor_m8468B393FB52437B403316AFA0A011F0121C3186 (void);
-// 0x0000026E System.Void Photon.Pun.Demo.Cockpit.FriendListView/OnJoinRoomEvent::.ctor()
+// 0x0000026E System.Void Photon.Pun.Demo.Cockpit.FriendListView_OnJoinRoomEvent::.ctor()
 extern void OnJoinRoomEvent__ctor_mC903388AE97C8C32848E7CB9A739FC4691B363AD (void);
-// 0x0000026F System.Void Photon.Pun.Demo.Cockpit.FriendListView/<UpdateUIPing>d__15::.ctor(System.Int32)
+// 0x0000026F System.Void Photon.Pun.Demo.Cockpit.FriendListView_<UpdateUIPing>d__15::.ctor(System.Int32)
 extern void U3CUpdateUIPingU3Ed__15__ctor_m95645D3B712B1C247E49C4BB0873EFE64A3D6CE9 (void);
-// 0x00000270 System.Void Photon.Pun.Demo.Cockpit.FriendListView/<UpdateUIPing>d__15::System.IDisposable.Dispose()
+// 0x00000270 System.Void Photon.Pun.Demo.Cockpit.FriendListView_<UpdateUIPing>d__15::System.IDisposable.Dispose()
 extern void U3CUpdateUIPingU3Ed__15_System_IDisposable_Dispose_m027A231E40225011DE88308ADA477E200EE6EEBA (void);
-// 0x00000271 System.Boolean Photon.Pun.Demo.Cockpit.FriendListView/<UpdateUIPing>d__15::MoveNext()
+// 0x00000271 System.Boolean Photon.Pun.Demo.Cockpit.FriendListView_<UpdateUIPing>d__15::MoveNext()
 extern void U3CUpdateUIPingU3Ed__15_MoveNext_m71205457A7EBFA057C0A81D7921B7A5851036ABC (void);
-// 0x00000272 System.Object Photon.Pun.Demo.Cockpit.FriendListView/<UpdateUIPing>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000272 System.Object Photon.Pun.Demo.Cockpit.FriendListView_<UpdateUIPing>d__15::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CUpdateUIPingU3Ed__15_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m3E6BCE2E916113BAB2C3E1CA7057C85E603ED879 (void);
-// 0x00000273 System.Void Photon.Pun.Demo.Cockpit.FriendListView/<UpdateUIPing>d__15::System.Collections.IEnumerator.Reset()
+// 0x00000273 System.Void Photon.Pun.Demo.Cockpit.FriendListView_<UpdateUIPing>d__15::System.Collections.IEnumerator.Reset()
 extern void U3CUpdateUIPingU3Ed__15_System_Collections_IEnumerator_Reset_mBED77723F1EC0C182BD1DEE8FCA95D754B56699B (void);
-// 0x00000274 System.Object Photon.Pun.Demo.Cockpit.FriendListView/<UpdateUIPing>d__15::System.Collections.IEnumerator.get_Current()
+// 0x00000274 System.Object Photon.Pun.Demo.Cockpit.FriendListView_<UpdateUIPing>d__15::System.Collections.IEnumerator.get_Current()
 extern void U3CUpdateUIPingU3Ed__15_System_Collections_IEnumerator_get_Current_m639D1DA3805027D3E08E6F9B5DF48AC334E8C9F4 (void);
-// 0x00000275 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell/<Add>d__16::.ctor(System.Int32)
+// 0x00000275 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell_<Add>d__16::.ctor(System.Int32)
 extern void U3CAddU3Ed__16__ctor_mE02FF7C526117CFBD1CE4C866B3D20293BC1B447 (void);
-// 0x00000276 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell/<Add>d__16::System.IDisposable.Dispose()
+// 0x00000276 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell_<Add>d__16::System.IDisposable.Dispose()
 extern void U3CAddU3Ed__16_System_IDisposable_Dispose_mE0FA76CE472483281176E145B15FEF5B11901534 (void);
-// 0x00000277 System.Boolean Photon.Pun.Demo.Cockpit.PlayerListCell/<Add>d__16::MoveNext()
+// 0x00000277 System.Boolean Photon.Pun.Demo.Cockpit.PlayerListCell_<Add>d__16::MoveNext()
 extern void U3CAddU3Ed__16_MoveNext_m523ECCAD7F168333FD0B143661B259C58138559A (void);
-// 0x00000278 System.Object Photon.Pun.Demo.Cockpit.PlayerListCell/<Add>d__16::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000278 System.Object Photon.Pun.Demo.Cockpit.PlayerListCell_<Add>d__16::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CAddU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m916AA87CB835ACE951187033459EF4B38AF76BB1 (void);
-// 0x00000279 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell/<Add>d__16::System.Collections.IEnumerator.Reset()
+// 0x00000279 System.Void Photon.Pun.Demo.Cockpit.PlayerListCell_<Add>d__16::System.Collections.IEnumerator.Reset()
 extern void U3CAddU3Ed__16_System_Collections_IEnumerator_Reset_m1B86E34BD8234A2F0A4AC72B26938434FF40C819 (void);
-// 0x0000027A System.Object Photon.Pun.Demo.Cockpit.PlayerListCell/<Add>d__16::System.Collections.IEnumerator.get_Current()
+// 0x0000027A System.Object Photon.Pun.Demo.Cockpit.PlayerListCell_<Add>d__16::System.Collections.IEnumerator.get_Current()
 extern void U3CAddU3Ed__16_System_Collections_IEnumerator_get_Current_m343F0C8A1142322869A9B6F284ED493BCE2FEDA9 (void);
-// 0x0000027B System.Void Photon.Pun.Demo.Cockpit.PlayerListCell/<Remove>d__17::.ctor(System.Int32)
+// 0x0000027B System.Void Photon.Pun.Demo.Cockpit.PlayerListCell_<Remove>d__17::.ctor(System.Int32)
 extern void U3CRemoveU3Ed__17__ctor_m4F63DDAF7DC5F829332A92575F662D22E55FFE78 (void);
-// 0x0000027C System.Void Photon.Pun.Demo.Cockpit.PlayerListCell/<Remove>d__17::System.IDisposable.Dispose()
+// 0x0000027C System.Void Photon.Pun.Demo.Cockpit.PlayerListCell_<Remove>d__17::System.IDisposable.Dispose()
 extern void U3CRemoveU3Ed__17_System_IDisposable_Dispose_m58FB77B7DF0CD5177F15CC7887567ECEB7FAB88F (void);
-// 0x0000027D System.Boolean Photon.Pun.Demo.Cockpit.PlayerListCell/<Remove>d__17::MoveNext()
+// 0x0000027D System.Boolean Photon.Pun.Demo.Cockpit.PlayerListCell_<Remove>d__17::MoveNext()
 extern void U3CRemoveU3Ed__17_MoveNext_m80D97DA882E8E4A4316C04AC9E121192DD305C3E (void);
-// 0x0000027E System.Object Photon.Pun.Demo.Cockpit.PlayerListCell/<Remove>d__17::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000027E System.Object Photon.Pun.Demo.Cockpit.PlayerListCell_<Remove>d__17::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRemoveU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD1C900AF733A62A50849DF313CC66DB966E98856 (void);
-// 0x0000027F System.Void Photon.Pun.Demo.Cockpit.PlayerListCell/<Remove>d__17::System.Collections.IEnumerator.Reset()
+// 0x0000027F System.Void Photon.Pun.Demo.Cockpit.PlayerListCell_<Remove>d__17::System.Collections.IEnumerator.Reset()
 extern void U3CRemoveU3Ed__17_System_Collections_IEnumerator_Reset_m59D1AC35DD4A84C0020C47F64CBA9353E73151D1 (void);
-// 0x00000280 System.Object Photon.Pun.Demo.Cockpit.PlayerListCell/<Remove>d__17::System.Collections.IEnumerator.get_Current()
+// 0x00000280 System.Object Photon.Pun.Demo.Cockpit.PlayerListCell_<Remove>d__17::System.Collections.IEnumerator.get_Current()
 extern void U3CRemoveU3Ed__17_System_Collections_IEnumerator_get_Current_m7432A38F0807D788B0EC0D1B8D271C664EC0D554 (void);
-// 0x00000281 System.Void Photon.Pun.Demo.Cockpit.PlayerListView/<UpdateUIPing>d__13::.ctor(System.Int32)
+// 0x00000281 System.Void Photon.Pun.Demo.Cockpit.PlayerListView_<UpdateUIPing>d__13::.ctor(System.Int32)
 extern void U3CUpdateUIPingU3Ed__13__ctor_mECAEE95A3B1B9B87507F4A4D271929E9F182A661 (void);
-// 0x00000282 System.Void Photon.Pun.Demo.Cockpit.PlayerListView/<UpdateUIPing>d__13::System.IDisposable.Dispose()
+// 0x00000282 System.Void Photon.Pun.Demo.Cockpit.PlayerListView_<UpdateUIPing>d__13::System.IDisposable.Dispose()
 extern void U3CUpdateUIPingU3Ed__13_System_IDisposable_Dispose_mF8346FC777039878120A53E85DD543AA3AAA0934 (void);
-// 0x00000283 System.Boolean Photon.Pun.Demo.Cockpit.PlayerListView/<UpdateUIPing>d__13::MoveNext()
+// 0x00000283 System.Boolean Photon.Pun.Demo.Cockpit.PlayerListView_<UpdateUIPing>d__13::MoveNext()
 extern void U3CUpdateUIPingU3Ed__13_MoveNext_m1C71186CA60C18FAAA61F976F672CA202848980C (void);
-// 0x00000284 System.Object Photon.Pun.Demo.Cockpit.PlayerListView/<UpdateUIPing>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000284 System.Object Photon.Pun.Demo.Cockpit.PlayerListView_<UpdateUIPing>d__13::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CUpdateUIPingU3Ed__13_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m1BC93D7E60AD906C0DE43D10035107ACBFC5840D (void);
-// 0x00000285 System.Void Photon.Pun.Demo.Cockpit.PlayerListView/<UpdateUIPing>d__13::System.Collections.IEnumerator.Reset()
+// 0x00000285 System.Void Photon.Pun.Demo.Cockpit.PlayerListView_<UpdateUIPing>d__13::System.Collections.IEnumerator.Reset()
 extern void U3CUpdateUIPingU3Ed__13_System_Collections_IEnumerator_Reset_m501EBD50CF9A81BC4A58FCCB9285C784513D868E (void);
-// 0x00000286 System.Object Photon.Pun.Demo.Cockpit.PlayerListView/<UpdateUIPing>d__13::System.Collections.IEnumerator.get_Current()
+// 0x00000286 System.Object Photon.Pun.Demo.Cockpit.PlayerListView_<UpdateUIPing>d__13::System.Collections.IEnumerator.get_Current()
 extern void U3CUpdateUIPingU3Ed__13_System_Collections_IEnumerator_get_Current_m9B6189B2557A6FEE683CD8320CC8CC7A08FA6674 (void);
-// 0x00000287 System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<UpdateUIPing>d__7::.ctor(System.Int32)
+// 0x00000287 System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<UpdateUIPing>d__7::.ctor(System.Int32)
 extern void U3CUpdateUIPingU3Ed__7__ctor_m7A949663B037224762F364DE7FA2151E80566C0C (void);
-// 0x00000288 System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<UpdateUIPing>d__7::System.IDisposable.Dispose()
+// 0x00000288 System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<UpdateUIPing>d__7::System.IDisposable.Dispose()
 extern void U3CUpdateUIPingU3Ed__7_System_IDisposable_Dispose_mD94FC29CC995B526D4C9298BD5D123564C2139A4 (void);
-// 0x00000289 System.Boolean Photon.Pun.Demo.Cockpit.PropertyCell/<UpdateUIPing>d__7::MoveNext()
+// 0x00000289 System.Boolean Photon.Pun.Demo.Cockpit.PropertyCell_<UpdateUIPing>d__7::MoveNext()
 extern void U3CUpdateUIPingU3Ed__7_MoveNext_m22043F5037F0E18FE783AB168A01C447160078CE (void);
-// 0x0000028A System.Object Photon.Pun.Demo.Cockpit.PropertyCell/<UpdateUIPing>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000028A System.Object Photon.Pun.Demo.Cockpit.PropertyCell_<UpdateUIPing>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CUpdateUIPingU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF1E792047639AEFFBC06C7B181D7A50428FE77B9 (void);
-// 0x0000028B System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<UpdateUIPing>d__7::System.Collections.IEnumerator.Reset()
+// 0x0000028B System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<UpdateUIPing>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CUpdateUIPingU3Ed__7_System_Collections_IEnumerator_Reset_m80A95B45EF1D8A62027E4E02D30C8D92DACBD6FD (void);
-// 0x0000028C System.Object Photon.Pun.Demo.Cockpit.PropertyCell/<UpdateUIPing>d__7::System.Collections.IEnumerator.get_Current()
+// 0x0000028C System.Object Photon.Pun.Demo.Cockpit.PropertyCell_<UpdateUIPing>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CUpdateUIPingU3Ed__7_System_Collections_IEnumerator_get_Current_mAC4519B1D88AE3EC115E84022A9E2B615D50D2AD (void);
-// 0x0000028D System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<Add>d__8::.ctor(System.Int32)
+// 0x0000028D System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<Add>d__8::.ctor(System.Int32)
 extern void U3CAddU3Ed__8__ctor_m2B54FCBDA068C8F6EC72FFDE579AD3AC3D9840A6 (void);
-// 0x0000028E System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<Add>d__8::System.IDisposable.Dispose()
+// 0x0000028E System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<Add>d__8::System.IDisposable.Dispose()
 extern void U3CAddU3Ed__8_System_IDisposable_Dispose_m49F6E1243D063BF9F4D5902F531FAC4FC319031E (void);
-// 0x0000028F System.Boolean Photon.Pun.Demo.Cockpit.PropertyCell/<Add>d__8::MoveNext()
+// 0x0000028F System.Boolean Photon.Pun.Demo.Cockpit.PropertyCell_<Add>d__8::MoveNext()
 extern void U3CAddU3Ed__8_MoveNext_mC22814B3F1CC0005E32C07FA1A56F0FD0B688FCF (void);
-// 0x00000290 System.Object Photon.Pun.Demo.Cockpit.PropertyCell/<Add>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000290 System.Object Photon.Pun.Demo.Cockpit.PropertyCell_<Add>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CAddU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB3AF09E3683408FF788F457B51D74B976C3C60A0 (void);
-// 0x00000291 System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<Add>d__8::System.Collections.IEnumerator.Reset()
+// 0x00000291 System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<Add>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CAddU3Ed__8_System_Collections_IEnumerator_Reset_mB76FFFEA2CB4409FF3D62D5591CB12819D5CE885 (void);
-// 0x00000292 System.Object Photon.Pun.Demo.Cockpit.PropertyCell/<Add>d__8::System.Collections.IEnumerator.get_Current()
+// 0x00000292 System.Object Photon.Pun.Demo.Cockpit.PropertyCell_<Add>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CAddU3Ed__8_System_Collections_IEnumerator_get_Current_m2AA74CD8F27AC2CFC52D0E22DDE69B8FEE471D5D (void);
-// 0x00000293 System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<Remove>d__9::.ctor(System.Int32)
+// 0x00000293 System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<Remove>d__9::.ctor(System.Int32)
 extern void U3CRemoveU3Ed__9__ctor_m07EB9CE9F57CF4F5C468A340801F0458136A9D1E (void);
-// 0x00000294 System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<Remove>d__9::System.IDisposable.Dispose()
+// 0x00000294 System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<Remove>d__9::System.IDisposable.Dispose()
 extern void U3CRemoveU3Ed__9_System_IDisposable_Dispose_m9AD1BDCFDA914CCAB0742DCAFE1D7FFD8ABBFCD4 (void);
-// 0x00000295 System.Boolean Photon.Pun.Demo.Cockpit.PropertyCell/<Remove>d__9::MoveNext()
+// 0x00000295 System.Boolean Photon.Pun.Demo.Cockpit.PropertyCell_<Remove>d__9::MoveNext()
 extern void U3CRemoveU3Ed__9_MoveNext_m1EFE9993EC21E057D0F603BC72F88C2B348745C6 (void);
-// 0x00000296 System.Object Photon.Pun.Demo.Cockpit.PropertyCell/<Remove>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000296 System.Object Photon.Pun.Demo.Cockpit.PropertyCell_<Remove>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CRemoveU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m2BB9CDF1F51D9A4855D99D0CB7BB438FBD57E7D8 (void);
-// 0x00000297 System.Void Photon.Pun.Demo.Cockpit.PropertyCell/<Remove>d__9::System.Collections.IEnumerator.Reset()
+// 0x00000297 System.Void Photon.Pun.Demo.Cockpit.PropertyCell_<Remove>d__9::System.Collections.IEnumerator.Reset()
 extern void U3CRemoveU3Ed__9_System_Collections_IEnumerator_Reset_m893C2A3D999BBB24C78F6DAEAB23B1B8EE501C78 (void);
-// 0x00000298 System.Object Photon.Pun.Demo.Cockpit.PropertyCell/<Remove>d__9::System.Collections.IEnumerator.get_Current()
+// 0x00000298 System.Object Photon.Pun.Demo.Cockpit.PropertyCell_<Remove>d__9::System.Collections.IEnumerator.get_Current()
 extern void U3CRemoveU3Ed__9_System_Collections_IEnumerator_get_Current_m4D1B36C937EC4F2669C9FC2F30F0C09C86062972 (void);
-// 0x00000299 System.Void Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateAddition>d__10::.ctor(System.Int32)
+// 0x00000299 System.Void Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateAddition>d__10::.ctor(System.Int32)
 extern void U3CAnimateAdditionU3Ed__10__ctor_mB0F73FE9094E9DDDBA38B6FC2446759A60022E08 (void);
-// 0x0000029A System.Void Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateAddition>d__10::System.IDisposable.Dispose()
+// 0x0000029A System.Void Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateAddition>d__10::System.IDisposable.Dispose()
 extern void U3CAnimateAdditionU3Ed__10_System_IDisposable_Dispose_mAC6068C8CA366FC6F89C334D1B633A4CADE37C62 (void);
-// 0x0000029B System.Boolean Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateAddition>d__10::MoveNext()
+// 0x0000029B System.Boolean Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateAddition>d__10::MoveNext()
 extern void U3CAnimateAdditionU3Ed__10_MoveNext_m619203E7DE3D0541FB0A1ED87BE354EC4CA8C8C9 (void);
-// 0x0000029C System.Object Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateAddition>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000029C System.Object Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateAddition>d__10::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CAnimateAdditionU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA176222A26C9937A79558CAC151C511857AB2B72 (void);
-// 0x0000029D System.Void Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateAddition>d__10::System.Collections.IEnumerator.Reset()
+// 0x0000029D System.Void Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateAddition>d__10::System.Collections.IEnumerator.Reset()
 extern void U3CAnimateAdditionU3Ed__10_System_Collections_IEnumerator_Reset_m5F887CDA29F55AD42031C5553D4DF50DEFECC2A1 (void);
-// 0x0000029E System.Object Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateAddition>d__10::System.Collections.IEnumerator.get_Current()
+// 0x0000029E System.Object Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateAddition>d__10::System.Collections.IEnumerator.get_Current()
 extern void U3CAnimateAdditionU3Ed__10_System_Collections_IEnumerator_get_Current_mC07B0BDB0805304BDB95B0402FF57C2AA1E39E5A (void);
-// 0x0000029F System.Void Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateRemove>d__11::.ctor(System.Int32)
+// 0x0000029F System.Void Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateRemove>d__11::.ctor(System.Int32)
 extern void U3CAnimateRemoveU3Ed__11__ctor_m7E90F9BBE36E2B4F1E16EC6F5247AD1633D757BB (void);
-// 0x000002A0 System.Void Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateRemove>d__11::System.IDisposable.Dispose()
+// 0x000002A0 System.Void Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateRemove>d__11::System.IDisposable.Dispose()
 extern void U3CAnimateRemoveU3Ed__11_System_IDisposable_Dispose_mE88C64E0A76768D6A1E37EAA80300BFD36F735D4 (void);
-// 0x000002A1 System.Boolean Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateRemove>d__11::MoveNext()
+// 0x000002A1 System.Boolean Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateRemove>d__11::MoveNext()
 extern void U3CAnimateRemoveU3Ed__11_MoveNext_m28665D16A415AEC80F72ACC32D3B02DAC2C74564 (void);
-// 0x000002A2 System.Object Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateRemove>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002A2 System.Object Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateRemove>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CAnimateRemoveU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCCDF095CC777D20B848D614C884FF82EE5DFC704 (void);
-// 0x000002A3 System.Void Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateRemove>d__11::System.Collections.IEnumerator.Reset()
+// 0x000002A3 System.Void Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateRemove>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CAnimateRemoveU3Ed__11_System_Collections_IEnumerator_Reset_m2D4E6A88EBFAB0DFF97989751E623D8E7EEBBA93 (void);
-// 0x000002A4 System.Object Photon.Pun.Demo.Cockpit.RegionListCell/<AnimateRemove>d__11::System.Collections.IEnumerator.get_Current()
+// 0x000002A4 System.Object Photon.Pun.Demo.Cockpit.RegionListCell_<AnimateRemove>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CAnimateRemoveU3Ed__11_System_Collections_IEnumerator_get_Current_mFFDC8667360F5B0779822F9B3136D8F931BA4E20 (void);
-// 0x000002A5 System.Void Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateAddition>d__11::.ctor(System.Int32)
+// 0x000002A5 System.Void Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateAddition>d__11::.ctor(System.Int32)
 extern void U3CAnimateAdditionU3Ed__11__ctor_mC388A2B272F28752B0E50E1849885A14C92F5BE7 (void);
-// 0x000002A6 System.Void Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateAddition>d__11::System.IDisposable.Dispose()
+// 0x000002A6 System.Void Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateAddition>d__11::System.IDisposable.Dispose()
 extern void U3CAnimateAdditionU3Ed__11_System_IDisposable_Dispose_mDA8CB0D5B5D8B4E14171DC71179C93BF0042866A (void);
-// 0x000002A7 System.Boolean Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateAddition>d__11::MoveNext()
+// 0x000002A7 System.Boolean Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateAddition>d__11::MoveNext()
 extern void U3CAnimateAdditionU3Ed__11_MoveNext_m178E9A87CBC4D801F931F8495ABAE237D0E9E47F (void);
-// 0x000002A8 System.Object Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateAddition>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002A8 System.Object Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateAddition>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CAnimateAdditionU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m880C21384215FD56DDEF45DFF1D725F1BD76C0C8 (void);
-// 0x000002A9 System.Void Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateAddition>d__11::System.Collections.IEnumerator.Reset()
+// 0x000002A9 System.Void Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateAddition>d__11::System.Collections.IEnumerator.Reset()
 extern void U3CAnimateAdditionU3Ed__11_System_Collections_IEnumerator_Reset_mB5A7A280AA12F9FE2364AACE8919A8CA5D1B6158 (void);
-// 0x000002AA System.Object Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateAddition>d__11::System.Collections.IEnumerator.get_Current()
+// 0x000002AA System.Object Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateAddition>d__11::System.Collections.IEnumerator.get_Current()
 extern void U3CAnimateAdditionU3Ed__11_System_Collections_IEnumerator_get_Current_m4918522F67BD6952BEE78EDBB7143387EF3FA245 (void);
-// 0x000002AB System.Void Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateRemove>d__12::.ctor(System.Int32)
+// 0x000002AB System.Void Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateRemove>d__12::.ctor(System.Int32)
 extern void U3CAnimateRemoveU3Ed__12__ctor_m6E5B8DBD5C8F8A50B37DE634578E61129CF3ED95 (void);
-// 0x000002AC System.Void Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateRemove>d__12::System.IDisposable.Dispose()
+// 0x000002AC System.Void Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateRemove>d__12::System.IDisposable.Dispose()
 extern void U3CAnimateRemoveU3Ed__12_System_IDisposable_Dispose_mC9B89050A2978206D713FC6B7BFEA8D2FB1CDF3A (void);
-// 0x000002AD System.Boolean Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateRemove>d__12::MoveNext()
+// 0x000002AD System.Boolean Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateRemove>d__12::MoveNext()
 extern void U3CAnimateRemoveU3Ed__12_MoveNext_mC0C2726CED5ECCD2EFFF86A4E40D495DEEB6D0DF (void);
-// 0x000002AE System.Object Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateRemove>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002AE System.Object Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateRemove>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CAnimateRemoveU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC3D36DCC70223D92548F000635BCD866EF659B0E (void);
-// 0x000002AF System.Void Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateRemove>d__12::System.Collections.IEnumerator.Reset()
+// 0x000002AF System.Void Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateRemove>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CAnimateRemoveU3Ed__12_System_Collections_IEnumerator_Reset_mFE5462B919CD5A26B76F6D9730C882C077AF0D17 (void);
-// 0x000002B0 System.Object Photon.Pun.Demo.Cockpit.RoomListCell/<AnimateRemove>d__12::System.Collections.IEnumerator.get_Current()
+// 0x000002B0 System.Object Photon.Pun.Demo.Cockpit.RoomListCell_<AnimateRemove>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CAnimateRemoveU3Ed__12_System_Collections_IEnumerator_get_Current_mAC8A276A6380EF4D7E34F762A1DA71BCE385AD19 (void);
-// 0x000002B1 System.Void Photon.Pun.Demo.Cockpit.RoomListView/OnJoinRoomEvent::.ctor()
+// 0x000002B1 System.Void Photon.Pun.Demo.Cockpit.RoomListView_OnJoinRoomEvent::.ctor()
 extern void OnJoinRoomEvent__ctor_m5EBBFD52D417D1F4804A93B4B6F8D778C2499377 (void);
-// 0x000002B2 System.Void Photon.Pun.Demo.Cockpit.RoomListView/<clearStatus>d__12::.ctor(System.Int32)
+// 0x000002B2 System.Void Photon.Pun.Demo.Cockpit.RoomListView_<clearStatus>d__12::.ctor(System.Int32)
 extern void U3CclearStatusU3Ed__12__ctor_m4F7218FAD3A252790B571D0B830AF4B20D7F3825 (void);
-// 0x000002B3 System.Void Photon.Pun.Demo.Cockpit.RoomListView/<clearStatus>d__12::System.IDisposable.Dispose()
+// 0x000002B3 System.Void Photon.Pun.Demo.Cockpit.RoomListView_<clearStatus>d__12::System.IDisposable.Dispose()
 extern void U3CclearStatusU3Ed__12_System_IDisposable_Dispose_mA1FFA4934F7948042A71319C6377FDA7391286F8 (void);
-// 0x000002B4 System.Boolean Photon.Pun.Demo.Cockpit.RoomListView/<clearStatus>d__12::MoveNext()
+// 0x000002B4 System.Boolean Photon.Pun.Demo.Cockpit.RoomListView_<clearStatus>d__12::MoveNext()
 extern void U3CclearStatusU3Ed__12_MoveNext_mC48D7681CD17B39B64DAE425D95D8D5A33FC95EC (void);
-// 0x000002B5 System.Object Photon.Pun.Demo.Cockpit.RoomListView/<clearStatus>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002B5 System.Object Photon.Pun.Demo.Cockpit.RoomListView_<clearStatus>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CclearStatusU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m39351F8F871C95C705C19C3D4B362B2F8B551E25 (void);
-// 0x000002B6 System.Void Photon.Pun.Demo.Cockpit.RoomListView/<clearStatus>d__12::System.Collections.IEnumerator.Reset()
+// 0x000002B6 System.Void Photon.Pun.Demo.Cockpit.RoomListView_<clearStatus>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CclearStatusU3Ed__12_System_Collections_IEnumerator_Reset_m9B1DCA0DA91247E2FB71B1571E0E8E7BA7CDBD77 (void);
-// 0x000002B7 System.Object Photon.Pun.Demo.Cockpit.RoomListView/<clearStatus>d__12::System.Collections.IEnumerator.get_Current()
+// 0x000002B7 System.Object Photon.Pun.Demo.Cockpit.RoomListView_<clearStatus>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CclearStatusU3Ed__12_System_Collections_IEnumerator_get_Current_mB6FA88467569D389B4FB6F0E50CDF1202F903B66 (void);
-// 0x000002B8 System.Void Photon.Pun.Demo.Cockpit.PropertyListenerBase/<FadeOut>d__4::.ctor(System.Int32)
+// 0x000002B8 System.Void Photon.Pun.Demo.Cockpit.PropertyListenerBase_<FadeOut>d__4::.ctor(System.Int32)
 extern void U3CFadeOutU3Ed__4__ctor_mEA8BD7B610AC9ED06EF6BDC79460342BEA5A1166 (void);
-// 0x000002B9 System.Void Photon.Pun.Demo.Cockpit.PropertyListenerBase/<FadeOut>d__4::System.IDisposable.Dispose()
+// 0x000002B9 System.Void Photon.Pun.Demo.Cockpit.PropertyListenerBase_<FadeOut>d__4::System.IDisposable.Dispose()
 extern void U3CFadeOutU3Ed__4_System_IDisposable_Dispose_mEF409328F539CFCB15AE59A3A3B91BF4C4F49BA9 (void);
-// 0x000002BA System.Boolean Photon.Pun.Demo.Cockpit.PropertyListenerBase/<FadeOut>d__4::MoveNext()
+// 0x000002BA System.Boolean Photon.Pun.Demo.Cockpit.PropertyListenerBase_<FadeOut>d__4::MoveNext()
 extern void U3CFadeOutU3Ed__4_MoveNext_m252724DC422C65E9339D2AD6BCD640460C408287 (void);
-// 0x000002BB System.Object Photon.Pun.Demo.Cockpit.PropertyListenerBase/<FadeOut>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002BB System.Object Photon.Pun.Demo.Cockpit.PropertyListenerBase_<FadeOut>d__4::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CFadeOutU3Ed__4_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mC59B5E7106A98A26B16AC98C55FEA97902D33564 (void);
-// 0x000002BC System.Void Photon.Pun.Demo.Cockpit.PropertyListenerBase/<FadeOut>d__4::System.Collections.IEnumerator.Reset()
+// 0x000002BC System.Void Photon.Pun.Demo.Cockpit.PropertyListenerBase_<FadeOut>d__4::System.Collections.IEnumerator.Reset()
 extern void U3CFadeOutU3Ed__4_System_Collections_IEnumerator_Reset_mBFE48820C3EB976FE83023C2E0777ECE9FCD65CA (void);
-// 0x000002BD System.Object Photon.Pun.Demo.Cockpit.PropertyListenerBase/<FadeOut>d__4::System.Collections.IEnumerator.get_Current()
+// 0x000002BD System.Object Photon.Pun.Demo.Cockpit.PropertyListenerBase_<FadeOut>d__4::System.Collections.IEnumerator.get_Current()
 extern void U3CFadeOutU3Ed__4_System_Collections_IEnumerator_get_Current_mEDFC1225857231AF67E627D4DD441EBE08614DF6 (void);
-// 0x000002BE System.Void Photon.Pun.Demo.Cockpit.PunCockpitEmbed/<Start>d__6::.ctor(System.Int32)
+// 0x000002BE System.Void Photon.Pun.Demo.Cockpit.PunCockpitEmbed_<Start>d__6::.ctor(System.Int32)
 extern void U3CStartU3Ed__6__ctor_m97F6A74791FE0174B6CD4648FBA575A914AADA70 (void);
-// 0x000002BF System.Void Photon.Pun.Demo.Cockpit.PunCockpitEmbed/<Start>d__6::System.IDisposable.Dispose()
+// 0x000002BF System.Void Photon.Pun.Demo.Cockpit.PunCockpitEmbed_<Start>d__6::System.IDisposable.Dispose()
 extern void U3CStartU3Ed__6_System_IDisposable_Dispose_m4A8BBADF5A2B67603B15519153D65A1AD6102A0D (void);
-// 0x000002C0 System.Boolean Photon.Pun.Demo.Cockpit.PunCockpitEmbed/<Start>d__6::MoveNext()
+// 0x000002C0 System.Boolean Photon.Pun.Demo.Cockpit.PunCockpitEmbed_<Start>d__6::MoveNext()
 extern void U3CStartU3Ed__6_MoveNext_m60443A7375E62CAABA2C5CC188331CB382DBDF49 (void);
-// 0x000002C1 System.Object Photon.Pun.Demo.Cockpit.PunCockpitEmbed/<Start>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002C1 System.Object Photon.Pun.Demo.Cockpit.PunCockpitEmbed_<Start>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CStartU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE80DAD85537034597334BE94120F7AA3C42AD19A (void);
-// 0x000002C2 System.Void Photon.Pun.Demo.Cockpit.PunCockpitEmbed/<Start>d__6::System.Collections.IEnumerator.Reset()
+// 0x000002C2 System.Void Photon.Pun.Demo.Cockpit.PunCockpitEmbed_<Start>d__6::System.Collections.IEnumerator.Reset()
 extern void U3CStartU3Ed__6_System_Collections_IEnumerator_Reset_mEC8433E6E73601A4E7C3E50C062A38A29B0B656D (void);
-// 0x000002C3 System.Object Photon.Pun.Demo.Cockpit.PunCockpitEmbed/<Start>d__6::System.Collections.IEnumerator.get_Current()
+// 0x000002C3 System.Object Photon.Pun.Demo.Cockpit.PunCockpitEmbed_<Start>d__6::System.Collections.IEnumerator.get_Current()
 extern void U3CStartU3Ed__6_System_Collections_IEnumerator_get_Current_mAE3C5A98D7748DB3D6CF647755C3E4EA4ED2254A (void);
-// 0x000002C4 System.Void Photon.Pun.Demo.Cockpit.Forms.ConnectToRegionUIForm/OnSubmitEvent::.ctor()
+// 0x000002C4 System.Void Photon.Pun.Demo.Cockpit.Forms.ConnectToRegionUIForm_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_mF053632886F7D23D2DDC34CC40F624FD3B9BD3E3 (void);
-// 0x000002C5 System.Void Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm/OnSubmitEvent::.ctor()
+// 0x000002C5 System.Void Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_m81E2075FFD4E8AB79ADE0D5C142CF7E25E2C62A7 (void);
-// 0x000002C6 System.Void Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm/<>c::.cctor()
+// 0x000002C6 System.Void Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm_<>c::.cctor()
 extern void U3CU3Ec__cctor_mECBAE964C00E80E2629FF2FFD7B9C00B35819500 (void);
-// 0x000002C7 System.Void Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm/<>c::.ctor()
+// 0x000002C7 System.Void Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm_<>c::.ctor()
 extern void U3CU3Ec__ctor_mA5461E702A6AF52B6DBB4BB510952004CAD7F9B8 (void);
-// 0x000002C8 System.String Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm/<>c::<SubmitForm>b__8_0(System.String)
+// 0x000002C8 System.String Photon.Pun.Demo.Cockpit.Forms.CreateRoomUiForm_<>c::<SubmitForm>b__8_0(System.String)
 extern void U3CU3Ec_U3CSubmitFormU3Eb__8_0_mA7AEA948080E00E41F7129F8F39494EA93A894C0 (void);
-// 0x000002C9 System.Void Photon.Pun.Demo.Cockpit.Forms.LoadLevelUIForm/OnSubmitEvent::.ctor()
+// 0x000002C9 System.Void Photon.Pun.Demo.Cockpit.Forms.LoadLevelUIForm_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_m5040CDB39CFD7A8A5120AB0C290BBE574F461FBE (void);
-// 0x000002CA System.Void Photon.Pun.Demo.Cockpit.Forms.SetRoomCustomPropertyUIForm/OnSubmitEvent::.ctor()
+// 0x000002CA System.Void Photon.Pun.Demo.Cockpit.Forms.SetRoomCustomPropertyUIForm_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_m01646D1C9A48634D2E3572DF9C4FBCBB6DB57B06 (void);
-// 0x000002CB System.Void Photon.Pun.Demo.Cockpit.Forms.UserIdUiForm/OnSubmitEvent::.ctor()
+// 0x000002CB System.Void Photon.Pun.Demo.Cockpit.Forms.UserIdUiForm_OnSubmitEvent::.ctor()
 extern void OnSubmitEvent__ctor_m57F21131CE7053B6D37925FD691A1F2456B638AE (void);
-// 0x000002CC System.Void Photon.Pun.Demo.SlotRacer.PlayerControl/<Start>d__12::.ctor(System.Int32)
+// 0x000002CC System.Void Photon.Pun.Demo.SlotRacer.PlayerControl_<Start>d__12::.ctor(System.Int32)
 extern void U3CStartU3Ed__12__ctor_m19B2C236B4F2602EA667B5930323B9AD93A576F5 (void);
-// 0x000002CD System.Void Photon.Pun.Demo.SlotRacer.PlayerControl/<Start>d__12::System.IDisposable.Dispose()
+// 0x000002CD System.Void Photon.Pun.Demo.SlotRacer.PlayerControl_<Start>d__12::System.IDisposable.Dispose()
 extern void U3CStartU3Ed__12_System_IDisposable_Dispose_mDB32E5DDE8BC710AF97FB607D671ACB4B8985821 (void);
-// 0x000002CE System.Boolean Photon.Pun.Demo.SlotRacer.PlayerControl/<Start>d__12::MoveNext()
+// 0x000002CE System.Boolean Photon.Pun.Demo.SlotRacer.PlayerControl_<Start>d__12::MoveNext()
 extern void U3CStartU3Ed__12_MoveNext_m34FFE7F7660FC6504DD278F73A289DA354BD4AF1 (void);
-// 0x000002CF System.Object Photon.Pun.Demo.SlotRacer.PlayerControl/<Start>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002CF System.Object Photon.Pun.Demo.SlotRacer.PlayerControl_<Start>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CStartU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4193AE4B5FBFCD8B45DFB802C6196FB54E3309E2 (void);
-// 0x000002D0 System.Void Photon.Pun.Demo.SlotRacer.PlayerControl/<Start>d__12::System.Collections.IEnumerator.Reset()
+// 0x000002D0 System.Void Photon.Pun.Demo.SlotRacer.PlayerControl_<Start>d__12::System.Collections.IEnumerator.Reset()
 extern void U3CStartU3Ed__12_System_Collections_IEnumerator_Reset_mF9806DFD69C5B5FF0BA8E995C34E9CCD04D1A280 (void);
-// 0x000002D1 System.Object Photon.Pun.Demo.SlotRacer.PlayerControl/<Start>d__12::System.Collections.IEnumerator.get_Current()
+// 0x000002D1 System.Object Photon.Pun.Demo.SlotRacer.PlayerControl_<Start>d__12::System.Collections.IEnumerator.get_Current()
 extern void U3CStartU3Ed__12_System_Collections_IEnumerator_get_Current_mC89A3B289120D4656AD6BAE68528349656890F78 (void);
-// 0x000002D2 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel/<>c::.cctor()
+// 0x000002D2 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel_<>c::.cctor()
 extern void U3CU3Ec__cctor_m253C47FB64416BA2B882C84528138564F02043B9 (void);
-// 0x000002D3 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel/<>c::.ctor()
+// 0x000002D3 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel_<>c::.ctor()
 extern void U3CU3Ec__ctor_m4DDE364FC7971433202F5A501E7716BC76F66AB3 (void);
-// 0x000002D4 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel/<>c::<Awake>b__6_1(System.Int32)
+// 0x000002D4 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel_<>c::<Awake>b__6_1(System.Int32)
 extern void U3CU3Ec_U3CAwakeU3Eb__6_1_m6B43C62B316BF21865B592904D00B0A4C5719D4A (void);
-// 0x000002D5 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel/<>c::<Awake>b__6_2(System.Int32)
+// 0x000002D5 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel_<>c::<Awake>b__6_2(System.Int32)
 extern void U3CU3Ec_U3CAwakeU3Eb__6_2_m1926CC1154A0B76F27D7234DB0C7F7C645A0133D (void);
-// 0x000002D6 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel/<>c::<Awake>b__6_3(System.Int32)
+// 0x000002D6 System.Void Photon.Pun.Demo.Procedural.IngameControlPanel_<>c::<Awake>b__6_3(System.Int32)
 extern void U3CU3Ec_U3CAwakeU3Eb__6_3_mE26D6504ABCCC649DA32C567E417A0AC0C32FB75 (void);
-// 0x000002D7 System.Void Photon.Pun.Demo.Procedural.WorldGenerator/<GenerateWorld>d__31::.ctor(System.Int32)
+// 0x000002D7 System.Void Photon.Pun.Demo.Procedural.WorldGenerator_<GenerateWorld>d__31::.ctor(System.Int32)
 extern void U3CGenerateWorldU3Ed__31__ctor_mA4BC74E5AFF69C615BC64BE84270111FAD745898 (void);
-// 0x000002D8 System.Void Photon.Pun.Demo.Procedural.WorldGenerator/<GenerateWorld>d__31::System.IDisposable.Dispose()
+// 0x000002D8 System.Void Photon.Pun.Demo.Procedural.WorldGenerator_<GenerateWorld>d__31::System.IDisposable.Dispose()
 extern void U3CGenerateWorldU3Ed__31_System_IDisposable_Dispose_mC4303CB2228C77F065BA4E3BFBA338C96BA8BD5B (void);
-// 0x000002D9 System.Boolean Photon.Pun.Demo.Procedural.WorldGenerator/<GenerateWorld>d__31::MoveNext()
+// 0x000002D9 System.Boolean Photon.Pun.Demo.Procedural.WorldGenerator_<GenerateWorld>d__31::MoveNext()
 extern void U3CGenerateWorldU3Ed__31_MoveNext_m8594C9BE2A12B06A098483279C4B4653BC237CA0 (void);
-// 0x000002DA System.Void Photon.Pun.Demo.Procedural.WorldGenerator/<GenerateWorld>d__31::<>m__Finally1()
+// 0x000002DA System.Void Photon.Pun.Demo.Procedural.WorldGenerator_<GenerateWorld>d__31::<>m__Finally1()
 extern void U3CGenerateWorldU3Ed__31_U3CU3Em__Finally1_m909F93922E4852D94589F7DE92FD44BBCA2C7F59 (void);
-// 0x000002DB System.Object Photon.Pun.Demo.Procedural.WorldGenerator/<GenerateWorld>d__31::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002DB System.Object Photon.Pun.Demo.Procedural.WorldGenerator_<GenerateWorld>d__31::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CGenerateWorldU3Ed__31_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m92A85BE50D7244F0B695C538B35DD2427BD6E5F9 (void);
-// 0x000002DC System.Void Photon.Pun.Demo.Procedural.WorldGenerator/<GenerateWorld>d__31::System.Collections.IEnumerator.Reset()
+// 0x000002DC System.Void Photon.Pun.Demo.Procedural.WorldGenerator_<GenerateWorld>d__31::System.Collections.IEnumerator.Reset()
 extern void U3CGenerateWorldU3Ed__31_System_Collections_IEnumerator_Reset_m270CBC3F96F9BF1C3EFD48CB5C8C884DD628BBB8 (void);
-// 0x000002DD System.Object Photon.Pun.Demo.Procedural.WorldGenerator/<GenerateWorld>d__31::System.Collections.IEnumerator.get_Current()
+// 0x000002DD System.Object Photon.Pun.Demo.Procedural.WorldGenerator_<GenerateWorld>d__31::System.Collections.IEnumerator.get_Current()
 extern void U3CGenerateWorldU3Ed__31_System_Collections_IEnumerator_get_Current_m77A60281BEC4C23FA5803F4A83BF6E2E4740E517 (void);
-// 0x000002DE System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<SpawnAsteroid>d__7::.ctor(System.Int32)
+// 0x000002DE System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<SpawnAsteroid>d__7::.ctor(System.Int32)
 extern void U3CSpawnAsteroidU3Ed__7__ctor_m5ACA8D9B9D3F711C282D80F7DD6075541022BB6D (void);
-// 0x000002DF System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<SpawnAsteroid>d__7::System.IDisposable.Dispose()
+// 0x000002DF System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<SpawnAsteroid>d__7::System.IDisposable.Dispose()
 extern void U3CSpawnAsteroidU3Ed__7_System_IDisposable_Dispose_m31D869CBAB75C4F8F0CD3D162F835ABB3FFA16AC (void);
-// 0x000002E0 System.Boolean Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<SpawnAsteroid>d__7::MoveNext()
+// 0x000002E0 System.Boolean Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<SpawnAsteroid>d__7::MoveNext()
 extern void U3CSpawnAsteroidU3Ed__7_MoveNext_m2A5491EF47990230462D78A428D5D7F1E4667BF6 (void);
-// 0x000002E1 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<SpawnAsteroid>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002E1 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<SpawnAsteroid>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CSpawnAsteroidU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mA2EE2B5A5C76DD905D1682D7DB42000AEA7295F4 (void);
-// 0x000002E2 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<SpawnAsteroid>d__7::System.Collections.IEnumerator.Reset()
+// 0x000002E2 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<SpawnAsteroid>d__7::System.Collections.IEnumerator.Reset()
 extern void U3CSpawnAsteroidU3Ed__7_System_Collections_IEnumerator_Reset_m09DB033B25CB06A9F962CA425C4C8A1867C18963 (void);
-// 0x000002E3 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<SpawnAsteroid>d__7::System.Collections.IEnumerator.get_Current()
+// 0x000002E3 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<SpawnAsteroid>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CSpawnAsteroidU3Ed__7_System_Collections_IEnumerator_get_Current_mDF368F9D2DED8C643460CA0B14CBBFAA21A00045 (void);
-// 0x000002E4 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<EndOfGame>d__8::.ctor(System.Int32)
+// 0x000002E4 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<EndOfGame>d__8::.ctor(System.Int32)
 extern void U3CEndOfGameU3Ed__8__ctor_mC093FF791EFE1AEA314E891D9F98C4A3D9C6258D (void);
-// 0x000002E5 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<EndOfGame>d__8::System.IDisposable.Dispose()
+// 0x000002E5 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<EndOfGame>d__8::System.IDisposable.Dispose()
 extern void U3CEndOfGameU3Ed__8_System_IDisposable_Dispose_m7306EB819831A8FEF80EAF8AAA5E8A48EB112740 (void);
-// 0x000002E6 System.Boolean Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<EndOfGame>d__8::MoveNext()
+// 0x000002E6 System.Boolean Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<EndOfGame>d__8::MoveNext()
 extern void U3CEndOfGameU3Ed__8_MoveNext_mE8549932A05D6B4D9CF52663CA7916E103140446 (void);
-// 0x000002E7 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<EndOfGame>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002E7 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<EndOfGame>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CEndOfGameU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m52AA2EAFE74428227F6796F722F759DB81700E21 (void);
-// 0x000002E8 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<EndOfGame>d__8::System.Collections.IEnumerator.Reset()
+// 0x000002E8 System.Void Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<EndOfGame>d__8::System.Collections.IEnumerator.Reset()
 extern void U3CEndOfGameU3Ed__8_System_Collections_IEnumerator_Reset_m6E69A0AB3EEEA6F91601CD7411203815F9565FC2 (void);
-// 0x000002E9 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager/<EndOfGame>d__8::System.Collections.IEnumerator.get_Current()
+// 0x000002E9 System.Object Photon.Pun.Demo.Asteroids.AsteroidsGameManager_<EndOfGame>d__8::System.Collections.IEnumerator.get_Current()
 extern void U3CEndOfGameU3Ed__8_System_Collections_IEnumerator_get_Current_m2F8A3DD277E748CB5F02119E97767DD8D0961CEA (void);
-// 0x000002EA System.Void Photon.Pun.Demo.Asteroids.Spaceship/<WaitForRespawn>d__18::.ctor(System.Int32)
+// 0x000002EA System.Void Photon.Pun.Demo.Asteroids.Spaceship_<WaitForRespawn>d__18::.ctor(System.Int32)
 extern void U3CWaitForRespawnU3Ed__18__ctor_m974E27457BE50BE6FE71EC97B6D1C6A6843A7C8B (void);
-// 0x000002EB System.Void Photon.Pun.Demo.Asteroids.Spaceship/<WaitForRespawn>d__18::System.IDisposable.Dispose()
+// 0x000002EB System.Void Photon.Pun.Demo.Asteroids.Spaceship_<WaitForRespawn>d__18::System.IDisposable.Dispose()
 extern void U3CWaitForRespawnU3Ed__18_System_IDisposable_Dispose_m077B8F21DF0E4F00F8D51F637BCA195419A7CEFE (void);
-// 0x000002EC System.Boolean Photon.Pun.Demo.Asteroids.Spaceship/<WaitForRespawn>d__18::MoveNext()
+// 0x000002EC System.Boolean Photon.Pun.Demo.Asteroids.Spaceship_<WaitForRespawn>d__18::MoveNext()
 extern void U3CWaitForRespawnU3Ed__18_MoveNext_mE70AD3B35B4CC34C1D1457BC723E11DC0047663F (void);
-// 0x000002ED System.Object Photon.Pun.Demo.Asteroids.Spaceship/<WaitForRespawn>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x000002ED System.Object Photon.Pun.Demo.Asteroids.Spaceship_<WaitForRespawn>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CWaitForRespawnU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m32A9942E3CE6CA88F354ECFDDDCF2DCE82F34825 (void);
-// 0x000002EE System.Void Photon.Pun.Demo.Asteroids.Spaceship/<WaitForRespawn>d__18::System.Collections.IEnumerator.Reset()
+// 0x000002EE System.Void Photon.Pun.Demo.Asteroids.Spaceship_<WaitForRespawn>d__18::System.Collections.IEnumerator.Reset()
 extern void U3CWaitForRespawnU3Ed__18_System_Collections_IEnumerator_Reset_m2BCA9CA899BDCD3B2AAF4B4EC796BE4608B8129C (void);
-// 0x000002EF System.Object Photon.Pun.Demo.Asteroids.Spaceship/<WaitForRespawn>d__18::System.Collections.IEnumerator.get_Current()
+// 0x000002EF System.Object Photon.Pun.Demo.Asteroids.Spaceship_<WaitForRespawn>d__18::System.Collections.IEnumerator.get_Current()
 extern void U3CWaitForRespawnU3Ed__18_System_Collections_IEnumerator_get_Current_m5F21CEAB26669F0897D3CA8F400C77F37A339F20 (void);
 static Il2CppMethodPointer s_methodPointers[751] = 
 {
@@ -2279,10 +2279,10 @@ static Il2CppMethodPointer s_methodPointers[751] =
 static const int32_t s_InvokerIndices[751] = 
 {
 	23,
-	2660,
+	2663,
 	31,
 	23,
-	1441,
+	1443,
 	23,
 	42,
 	23,
@@ -2293,24 +2293,24 @@ static const int32_t s_InvokerIndices[751] =
 	23,
 	23,
 	23,
-	2661,
-	2662,
-	2663,
 	2664,
 	2665,
 	2666,
+	2667,
+	2668,
+	2669,
 	3,
 	106,
 	178,
 	452,
 	453,
-	1586,
+	1588,
 	267,
 	182,
-	2664,
 	2667,
-	2668,
-	2669,
+	2670,
+	2671,
+	2672,
 	23,
 	26,
 	23,
@@ -2352,7 +2352,7 @@ static const int32_t s_InvokerIndices[751] =
 	26,
 	26,
 	23,
-	2352,
+	2356,
 	23,
 	23,
 	23,
@@ -2375,10 +2375,10 @@ static const int32_t s_InvokerIndices[751] =
 	23,
 	26,
 	23,
-	1121,
-	1121,
+	1123,
+	1123,
 	23,
-	1121,
+	1123,
 	23,
 	14,
 	23,
@@ -2651,7 +2651,7 @@ static const int32_t s_InvokerIndices[751] =
 	23,
 	26,
 	23,
-	1121,
+	1123,
 	32,
 	23,
 	23,
@@ -2670,19 +2670,19 @@ static const int32_t s_InvokerIndices[751] =
 	26,
 	26,
 	32,
-	2331,
+	2335,
 	23,
-	2328,
-	23,
-	23,
-	26,
-	23,
-	23,
+	2332,
 	23,
 	23,
 	26,
 	23,
-	2328,
+	23,
+	23,
+	23,
+	26,
+	23,
+	2332,
 	32,
 	23,
 	14,
@@ -2695,32 +2695,32 @@ static const int32_t s_InvokerIndices[751] =
 	23,
 	23,
 	23,
-	2670,
-	2670,
-	2671,
-	2671,
-	1444,
-	1444,
-	1444,
+	2673,
+	2673,
+	2674,
+	2674,
+	1446,
+	1446,
+	1446,
 	23,
 	23,
 	89,
 	31,
 	10,
 	23,
-	2525,
-	2672,
+	2529,
+	2675,
 	37,
 	136,
 	32,
 	10,
-	1444,
-	1444,
-	1444,
+	1446,
+	1446,
+	1446,
 	23,
 	23,
 	23,
-	2673,
+	2676,
 	23,
 	23,
 	349,
@@ -2746,9 +2746,9 @@ static const int32_t s_InvokerIndices[751] =
 	23,
 	32,
 	32,
-	1045,
-	1045,
-	1045,
+	1047,
+	1047,
+	1047,
 	23,
 	26,
 	23,
@@ -2792,7 +2792,7 @@ static const int32_t s_InvokerIndices[751] =
 	23,
 	23,
 	23,
-	2453,
+	2457,
 	23,
 	23,
 	23,
@@ -2821,7 +2821,7 @@ static const int32_t s_InvokerIndices[751] =
 	26,
 	23,
 	26,
-	2674,
+	2677,
 	23,
 	23,
 	26,
@@ -2833,7 +2833,7 @@ static const int32_t s_InvokerIndices[751] =
 	23,
 	14,
 	23,
-	2675,
+	2678,
 	23,
 	23,
 	23,
@@ -2842,9 +2842,9 @@ static const int32_t s_InvokerIndices[751] =
 	26,
 	23,
 	23,
-	1121,
-	1121,
-	1121,
+	1123,
+	1123,
+	1123,
 	23,
 	23,
 	26,
@@ -3036,8 +3036,6 @@ const Il2CppCodeGenModule g_PhotonUnityNetworking_DemosCodeGenModule =
 	"PhotonUnityNetworking.Demos.dll",
 	751,
 	s_methodPointers,
-	0,
-	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

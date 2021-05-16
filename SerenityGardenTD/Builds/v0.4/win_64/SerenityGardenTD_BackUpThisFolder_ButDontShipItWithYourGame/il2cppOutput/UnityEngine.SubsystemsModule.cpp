@@ -654,17 +654,17 @@ public:
 };
 
 
-// System.Collections.Generic.List`1/Enumerator<System.Object>
+// System.Collections.Generic.List`1_Enumerator<System.Object>
 struct  Enumerator_tE0C99528D3DCE5863566CE37BD94162A4C0431CD 
 {
 public:
-	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::list
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1_Enumerator::list
 	List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * ___list_0;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::index
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::version
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::version
 	int32_t ___version_2;
-	// T System.Collections.Generic.List`1/Enumerator::current
+	// T System.Collections.Generic.List`1_Enumerator::current
 	RuntimeObject * ___current_3;
 
 public:
@@ -704,17 +704,17 @@ public:
 };
 
 
-// System.Collections.Generic.List`1/Enumerator<UnityEngine.ISubsystem>
+// System.Collections.Generic.List`1_Enumerator<UnityEngine.ISubsystem>
 struct  Enumerator_t18200D78D3D89664D84BDEBB12EACEF8D1BD291C 
 {
 public:
-	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::list
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1_Enumerator::list
 	List_1_t0BCF732A4510C6CF37DC1C9E7BCE50D093837B66 * ___list_0;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::index
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::version
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::version
 	int32_t ___version_2;
-	// T System.Collections.Generic.List`1/Enumerator::current
+	// T System.Collections.Generic.List`1_Enumerator::current
 	RuntimeObject* ___current_3;
 
 public:
@@ -754,17 +754,17 @@ public:
 };
 
 
-// System.Collections.Generic.List`1/Enumerator<UnityEngine.ISubsystemDescriptor>
+// System.Collections.Generic.List`1_Enumerator<UnityEngine.ISubsystemDescriptor>
 struct  Enumerator_tFF98525350CB1D21301BA80F40D0002AAC274316 
 {
 public:
-	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::list
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1_Enumerator::list
 	List_1_t1136C132305AD6CF978826E53BB81D357B390AF2 * ___list_0;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::index
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::version
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::version
 	int32_t ___version_2;
-	// T System.Collections.Generic.List`1/Enumerator::current
+	// T System.Collections.Generic.List`1_Enumerator::current
 	RuntimeObject* ___current_3;
 
 public:
@@ -804,17 +804,17 @@ public:
 };
 
 
-// System.Collections.Generic.List`1/Enumerator<UnityEngine.ISubsystemDescriptorImpl>
+// System.Collections.Generic.List`1_Enumerator<UnityEngine.ISubsystemDescriptorImpl>
 struct  Enumerator_tC449E47E52B4257B408CBCDDD270D35AF53E16B7 
 {
 public:
-	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::list
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1_Enumerator::list
 	List_1_tB4FC233D5B96A4ACE98546AAB789029E8BCB5CB2 * ___list_0;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::index
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::version
+	// System.Int32 System.Collections.Generic.List`1_Enumerator::version
 	int32_t ___version_2;
-	// T System.Collections.Generic.List`1/Enumerator::current
+	// T System.Collections.Generic.List`1_Enumerator::current
 	RuntimeObject* ___current_3;
 
 public:
@@ -2193,14 +2193,14 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * Enumerator_get_Current
 {
 	{
 		RuntimeObject * L_0 = (RuntimeObject *)__this->get_current_3();
-		return (RuntimeObject *)L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m507C9149FF7F83AAC72C29091E745D557DA47D22_gshared_inline (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = (int32_t)__this->get__size_2();
-		return (int32_t)L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * List_1_get_Item_mFDB8AD680C600072736579BBF5F38F7416396588_gshared_inline (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t ___index0, const RuntimeMethod* method)
@@ -2222,6 +2222,6 @@ IL_000e:
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)__this->get__items_1();
 		int32_t L_3 = ___index0;
 		RuntimeObject * L_4 = IL2CPP_ARRAY_UNSAFE_LOAD((ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_2, (int32_t)L_3);
-		return (RuntimeObject *)L_4;
+		return L_4;
 	}
 }

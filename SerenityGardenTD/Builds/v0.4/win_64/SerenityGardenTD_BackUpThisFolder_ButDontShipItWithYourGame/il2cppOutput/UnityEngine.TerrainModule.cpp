@@ -414,11 +414,11 @@ struct Il2CppArrayBounds;
 // System.Array
 
 
-// System.Collections.Generic.Dictionary`2/KeyCollection<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,UnityEngine.Terrain>
+// System.Collections.Generic.Dictionary`2_KeyCollection<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,UnityEngine.Terrain>
 struct  KeyCollection_tE38E8CA5A5DAD8EDFE46CBE8440DE1FB77D92EAB  : public RuntimeObject
 {
 public:
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection::dictionary
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2_KeyCollection::dictionary
 	Dictionary_2_tEB34CAE1B4D0E725777A5B9D419AF51BE918C30C * ___dictionary_0;
 
 public:
@@ -433,13 +433,13 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap>
+// System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap>
 struct  Dictionary_2_t651CE851D569289A981D44DC5543BEA956206753  : public RuntimeObject
 {
 public:
 	// System.Int32[] System.Collections.Generic.Dictionary`2::buckets
 	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ___buckets_0;
-	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
+	// System.Collections.Generic.Dictionary`2_Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
 	EntryU5BU5D_t60C83E552A9B7713913AA260DDAA0AFF0A75765F* ___entries_1;
 	// System.Int32 System.Collections.Generic.Dictionary`2::count
 	int32_t ___count_2;
@@ -451,9 +451,9 @@ public:
 	int32_t ___freeCount_5;
 	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::comparer
 	RuntimeObject* ___comparer_6;
-	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
+	// System.Collections.Generic.Dictionary`2_KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
 	KeyCollection_t542DBD0562DA7AC8F172BD71C05844EFAD576100 * ___keys_7;
-	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
+	// System.Collections.Generic.Dictionary`2_ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
 	ValueCollection_t60741DBA4647D7259ECB16D50D6AC4FEE46A5B88 * ___values_8;
 	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
 	RuntimeObject * ____syncRoot_9;
@@ -547,13 +547,13 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,UnityEngine.Terrain>
+// System.Collections.Generic.Dictionary`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,UnityEngine.Terrain>
 struct  Dictionary_2_tEB34CAE1B4D0E725777A5B9D419AF51BE918C30C  : public RuntimeObject
 {
 public:
 	// System.Int32[] System.Collections.Generic.Dictionary`2::buckets
 	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ___buckets_0;
-	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
+	// System.Collections.Generic.Dictionary`2_Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
 	EntryU5BU5D_t7E283CE6C88BF1DF0DBCB399F07FA5BAFC6FF36A* ___entries_1;
 	// System.Int32 System.Collections.Generic.Dictionary`2::count
 	int32_t ___count_2;
@@ -565,9 +565,9 @@ public:
 	int32_t ___freeCount_5;
 	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::comparer
 	RuntimeObject* ___comparer_6;
-	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
+	// System.Collections.Generic.Dictionary`2_KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
 	KeyCollection_tE38E8CA5A5DAD8EDFE46CBE8440DE1FB77D92EAB * ___keys_7;
-	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
+	// System.Collections.Generic.Dictionary`2_ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
 	ValueCollection_t4570917EBE5D4FD65BC458FAECE220E22C1A632A * ___values_8;
 	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
 	RuntimeObject * ____syncRoot_9;
@@ -734,9 +734,9 @@ public:
 struct TerrainCallbacks_t5D6C605DD5B2D840575AD8A477DCEDF764BC9AB5_StaticFields
 {
 public:
-	// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/HeightmapChangedCallback UnityEngine.Experimental.TerrainAPI.TerrainCallbacks::heightmapChanged
+	// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_HeightmapChangedCallback UnityEngine.Experimental.TerrainAPI.TerrainCallbacks::heightmapChanged
 	HeightmapChangedCallback_t632AB8CCEEA7F63E16056E63E998974C878D1F5D * ___heightmapChanged_0;
-	// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/TextureChangedCallback UnityEngine.Experimental.TerrainAPI.TerrainCallbacks::textureChanged
+	// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_TextureChangedCallback UnityEngine.Experimental.TerrainAPI.TerrainCallbacks::textureChanged
 	TextureChangedCallback_tC699198D2EACFE62AE42E8D2F4A7FD8B533A602E * ___textureChanged_1;
 
 public:
@@ -769,11 +769,11 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_0
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_0
 struct  U3CU3Ec__DisplayClass4_0_t79B6EBFB785C0608F276376E6D35800FA6574B4A  : public RuntimeObject
 {
 public:
-	// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_0::onlyAutoConnectedTerrains
+	// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_0::onlyAutoConnectedTerrains
 	bool ___onlyAutoConnectedTerrains_0;
 
 public:
@@ -787,13 +787,13 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_1
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_1
 struct  U3CU3Ec__DisplayClass4_1_tC63A89C846069E68CAA87EA14D0149555C357407  : public RuntimeObject
 {
 public:
-	// UnityEngine.Terrain UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_1::t
+	// UnityEngine.Terrain UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_1::t
 	Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___t_0;
-	// UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_0 UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_1::CS$<>8__locals1
+	// UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_0 UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_1::CSU24<>8__locals1
 	U3CU3Ec__DisplayClass4_0_t79B6EBFB785C0608F276376E6D35800FA6574B4A * ___CSU24U3CU3E8__locals1_1;
 
 public:
@@ -817,11 +817,11 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/<>c__DisplayClass4_0
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_<>c__DisplayClass4_0
 struct  U3CU3Ec__DisplayClass4_0_t0F8BF12DC466A9414D9AF02F686C301DBAFED002  : public RuntimeObject
 {
 public:
-	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/<>c__DisplayClass4_0::groupID
+	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_<>c__DisplayClass4_0::groupID
 	int32_t ___groupID_0;
 
 public:
@@ -910,7 +910,7 @@ public:
 };
 
 
-// System.Collections.Generic.KeyValuePair`2<System.Int32,UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap>
+// System.Collections.Generic.KeyValuePair`2<System.Int32,UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap>
 struct  KeyValuePair_2_t66F6496942DCFC8D590F8DA04910990C5DA39574 
 {
 public:
@@ -1059,7 +1059,7 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainGroups
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainGroups
 struct  TerrainGroups_t88B87E7C8DA6A97E904D74167C43D631796ECBC5  : public Dictionary_2_t651CE851D569289A981D44DC5543BEA956206753
 {
 public:
@@ -1068,13 +1068,13 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord
 struct  TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA 
 {
 public:
-	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord::tileX
+	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord::tileX
 	int32_t ___tileX_0;
-	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord::tileZ
+	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord::tileZ
 	int32_t ___tileZ_1;
 
 public:
@@ -1402,19 +1402,19 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2/Enumerator<System.Int32,System.Object>
+// System.Collections.Generic.Dictionary`2_Enumerator<System.Int32,System.Object>
 struct  Enumerator_tC0410598D958D8FA61F7F1A803A0B7F242CEF1C6 
 {
 public:
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::dictionary
 	Dictionary_2_t03608389BB57475AA3F4B2B79D176A27807BC884 * ___dictionary_0;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::version
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::version
 	int32_t ___version_1;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::index
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::index
 	int32_t ___index_2;
-	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::current
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::current
 	KeyValuePair_2_tC1FD9633618D9B27E2552BBAD347EC14A6C07C2C  ___current_3;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::getEnumeratorRetType
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::getEnumeratorRetType
 	int32_t ___getEnumeratorRetType_4;
 
 public:
@@ -1462,19 +1462,19 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2/Enumerator<System.Int32,UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap>
+// System.Collections.Generic.Dictionary`2_Enumerator<System.Int32,UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap>
 struct  Enumerator_t5CAB4B85782B849B0F05E35FFAED39CF4A78598B 
 {
 public:
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::dictionary
 	Dictionary_2_t651CE851D569289A981D44DC5543BEA956206753 * ___dictionary_0;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::version
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::version
 	int32_t ___version_1;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::index
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::index
 	int32_t ___index_2;
-	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::current
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::current
 	KeyValuePair_2_t66F6496942DCFC8D590F8DA04910990C5DA39574  ___current_3;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::getEnumeratorRetType
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::getEnumeratorRetType
 	int32_t ___getEnumeratorRetType_4;
 
 public:
@@ -1522,17 +1522,17 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,System.Object>
+// System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,System.Object>
 struct  Enumerator_tEC4F5C6184F5E671D53C872D88266C1500841E16 
 {
 public:
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::dictionary
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::dictionary
 	Dictionary_2_t283EECF1507E23DEAA390A103471739BF608C018 * ___dictionary_0;
-	// System.Int32 System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::index
+	// System.Int32 System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::version
+	// System.Int32 System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::version
 	int32_t ___version_2;
-	// TKey System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::currentKey
+	// TKey System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::currentKey
 	TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA  ___currentKey_3;
 
 public:
@@ -1571,17 +1571,17 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,UnityEngine.Terrain>
+// System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,UnityEngine.Terrain>
 struct  Enumerator_tC227AD4879B6DF12FD67520BE6891D0106F2A639 
 {
 public:
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::dictionary
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::dictionary
 	Dictionary_2_tEB34CAE1B4D0E725777A5B9D419AF51BE918C30C * ___dictionary_0;
-	// System.Int32 System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::index
+	// System.Int32 System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::index
 	int32_t ___index_1;
-	// System.Int32 System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::version
+	// System.Int32 System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::version
 	int32_t ___version_2;
-	// TKey System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator::currentKey
+	// TKey System.Collections.Generic.Dictionary`2_KeyCollection_Enumerator::currentKey
 	TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA  ___currentKey_3;
 
 public:
@@ -1620,7 +1620,7 @@ public:
 };
 
 
-// System.Collections.Generic.KeyValuePair`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,System.Object>
+// System.Collections.Generic.KeyValuePair`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,System.Object>
 struct  KeyValuePair_2_t198F3EF99C5CB706B8E678896CA900035FACF342 
 {
 public:
@@ -1649,7 +1649,7 @@ public:
 };
 
 
-// System.Collections.Generic.KeyValuePair`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,UnityEngine.Terrain>
+// System.Collections.Generic.KeyValuePair`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,UnityEngine.Terrain>
 struct  KeyValuePair_2_t1042B27C0272463F95B4736D997596598DFACDF2 
 {
 public:
@@ -1830,11 +1830,11 @@ struct Delegate_t_marshaled_com
 	int32_t ___method_is_virtual_10;
 };
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/ErrorCode
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_ErrorCode
 struct  ErrorCode_tCC2BF2B1CF6C6645A76C1DEE65D4AA4A527FEC7A 
 {
 public:
-	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/ErrorCode::value__
+	// System.Int32 UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_ErrorCode::value__
 	int32_t ___value___2;
 
 public:
@@ -1892,11 +1892,11 @@ struct Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshaled_com
 	intptr_t ___m_CachedPtr_0;
 };
 
-// UnityEngine.TerrainData/BoundaryValueType
+// UnityEngine.TerrainData_BoundaryValueType
 struct  BoundaryValueType_tAD21AC67F7D3AC4FF445A0D6002E7914F07000EA 
 {
 public:
-	// System.Int32 UnityEngine.TerrainData/BoundaryValueType::value__
+	// System.Int32 UnityEngine.TerrainData_BoundaryValueType::value__
 	int32_t ___value___2;
 
 public:
@@ -1910,19 +1910,19 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2/Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,System.Object>
+// System.Collections.Generic.Dictionary`2_Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,System.Object>
 struct  Enumerator_t71B93BE98D0EF45AF866DB4944B21CC1D0957B69 
 {
 public:
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::dictionary
 	Dictionary_2_t283EECF1507E23DEAA390A103471739BF608C018 * ___dictionary_0;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::version
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::version
 	int32_t ___version_1;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::index
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::index
 	int32_t ___index_2;
-	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::current
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::current
 	KeyValuePair_2_t198F3EF99C5CB706B8E678896CA900035FACF342  ___current_3;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::getEnumeratorRetType
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::getEnumeratorRetType
 	int32_t ___getEnumeratorRetType_4;
 
 public:
@@ -1970,19 +1970,19 @@ public:
 };
 
 
-// System.Collections.Generic.Dictionary`2/Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,UnityEngine.Terrain>
+// System.Collections.Generic.Dictionary`2_Enumerator<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,UnityEngine.Terrain>
 struct  Enumerator_t29B808F8AC6D4B77DE3720AC4C08C0A71E500BB8 
 {
 public:
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::dictionary
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::dictionary
 	Dictionary_2_tEB34CAE1B4D0E725777A5B9D419AF51BE918C30C * ___dictionary_0;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::version
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::version
 	int32_t ___version_1;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::index
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::index
 	int32_t ___index_2;
-	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::current
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2_Enumerator::current
 	KeyValuePair_2_t1042B27C0272463F95B4736D997596598DFACDF2  ___current_3;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::getEnumeratorRetType
+	// System.Int32 System.Collections.Generic.Dictionary`2_Enumerator::getEnumeratorRetType
 	int32_t ___getEnumeratorRetType_4;
 
 public:
@@ -2068,15 +2068,15 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap
 struct  TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C  : public RuntimeObject
 {
 public:
-	// UnityEngine.Vector3 UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::m_patchSize
+	// UnityEngine.Vector3 UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::m_patchSize
 	Vector3_tDCF05E21F632FE2BA260C06E0D10CA81513E6720  ___m_patchSize_0;
-	// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/ErrorCode UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::m_errorCode
+	// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_ErrorCode UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::m_errorCode
 	int32_t ___m_errorCode_1;
-	// System.Collections.Generic.Dictionary`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord,UnityEngine.Terrain> UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::m_terrainTiles
+	// System.Collections.Generic.Dictionary`2<UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord,UnityEngine.Terrain> UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::m_terrainTiles
 	Dictionary_2_tEB34CAE1B4D0E725777A5B9D419AF51BE918C30C * ___m_terrainTiles_2;
 
 public:
@@ -2230,7 +2230,7 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/HeightmapChangedCallback
+// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_HeightmapChangedCallback
 struct  HeightmapChangedCallback_t632AB8CCEEA7F63E16056E63E998974C878D1F5D  : public MulticastDelegate_t
 {
 public:
@@ -2239,7 +2239,7 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/TextureChangedCallback
+// UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_TextureChangedCallback
 struct  TextureChangedCallback_tC699198D2EACFE62AE42E8D2F4A7FD8B533A602E  : public MulticastDelegate_t
 {
 public:
@@ -2248,7 +2248,7 @@ public:
 };
 
 
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TerrainFilter
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TerrainFilter
 struct  TerrainFilter_t02BF9FBD8E61763D1D8484B34936B36B1046C66B  : public MulticastDelegate_t
 {
 public:
@@ -2762,14 +2762,14 @@ IL_0038:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/HeightmapChangedCallback::.ctor(System.Object,System.IntPtr)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_HeightmapChangedCallback::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeightmapChangedCallback__ctor_mD8C4C7A562D2D9F1F2F156D7A069AA4ED6DFB60F (HeightmapChangedCallback_t632AB8CCEEA7F63E16056E63E998974C878D1F5D * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/HeightmapChangedCallback::Invoke(UnityEngine.Terrain,UnityEngine.RectInt,System.Boolean)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_HeightmapChangedCallback::Invoke(UnityEngine.Terrain,UnityEngine.RectInt,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeightmapChangedCallback_Invoke_mE74C19A53A5B04D3C1C21270BBA570B0B4E427C6 (HeightmapChangedCallback_t632AB8CCEEA7F63E16056E63E998974C878D1F5D * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain0, RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A  ___heightRegion1, bool ___synched2, const RuntimeMethod* method)
 {
 	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
@@ -2885,7 +2885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeightmapChangedCallback_Invoke_mE74C19A
 		}
 	}
 }
-// System.IAsyncResult UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/HeightmapChangedCallback::BeginInvoke(UnityEngine.Terrain,UnityEngine.RectInt,System.Boolean,System.AsyncCallback,System.Object)
+// System.IAsyncResult UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_HeightmapChangedCallback::BeginInvoke(UnityEngine.Terrain,UnityEngine.RectInt,System.Boolean,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HeightmapChangedCallback_BeginInvoke_m34DB0DA5BF64D5F303A24804C84B3C582BDEFD5D (HeightmapChangedCallback_t632AB8CCEEA7F63E16056E63E998974C878D1F5D * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain0, RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A  ___heightRegion1, bool ___synched2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2900,7 +2900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HeightmapChangedCallback_Begin
 	__d_args[2] = Box(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var, &___synched2);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
 }
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/HeightmapChangedCallback::EndInvoke(System.IAsyncResult)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_HeightmapChangedCallback::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeightmapChangedCallback_EndInvoke_m144223021166831E422245E7C5AB3E2AE3E49CBA (HeightmapChangedCallback_t632AB8CCEEA7F63E16056E63E998974C878D1F5D * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -2913,14 +2913,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HeightmapChangedCallback_EndInvoke_m1442
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/TextureChangedCallback::.ctor(System.Object,System.IntPtr)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_TextureChangedCallback::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureChangedCallback__ctor_m11F1CEC86B40E26B1E59AFC40458F609632B0926 (TextureChangedCallback_tC699198D2EACFE62AE42E8D2F4A7FD8B533A602E * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/TextureChangedCallback::Invoke(UnityEngine.Terrain,System.String,UnityEngine.RectInt,System.Boolean)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_TextureChangedCallback::Invoke(UnityEngine.Terrain,System.String,UnityEngine.RectInt,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureChangedCallback_Invoke_mD18A617FB8779E1C66D1167D018B3F2EF585EC66 (TextureChangedCallback_tC699198D2EACFE62AE42E8D2F4A7FD8B533A602E * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain0, String_t* ___textureName1, RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A  ___texelRegion2, bool ___synched3, const RuntimeMethod* method)
 {
 	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
@@ -3036,7 +3036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureChangedCallback_Invoke_mD18A617FB
 		}
 	}
 }
-// System.IAsyncResult UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/TextureChangedCallback::BeginInvoke(UnityEngine.Terrain,System.String,UnityEngine.RectInt,System.Boolean,System.AsyncCallback,System.Object)
+// System.IAsyncResult UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_TextureChangedCallback::BeginInvoke(UnityEngine.Terrain,System.String,UnityEngine.RectInt,System.Boolean,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextureChangedCallback_BeginInvoke_mBEC316023C6EEA14D6EC02E363B3027A3F0151DC (TextureChangedCallback_tC699198D2EACFE62AE42E8D2F4A7FD8B533A602E * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain0, String_t* ___textureName1, RectInt_t595A63F7EE2BC91A4D2DE5403C5FE94D3C3A6F7A  ___texelRegion2, bool ___synched3, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback4, RuntimeObject * ___object5, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3052,7 +3052,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TextureChangedCallback_BeginIn
 	__d_args[3] = Box(Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var, &___synched3);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback4, (RuntimeObject*)___object5);
 }
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks/TextureChangedCallback::EndInvoke(System.IAsyncResult)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainCallbacks_TextureChangedCallback::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureChangedCallback_EndInvoke_m0AB06E4885E25D5A7D8BBA38ECFA263FBB577DE2 (TextureChangedCallback_tC699198D2EACFE62AE42E8D2F4A7FD8B533A602E * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -3143,7 +3143,7 @@ IL_001f:
 		return;
 	}
 }
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainGroups UnityEngine.Experimental.TerrainAPI.TerrainUtility::CollectTerrains(System.Boolean)
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainGroups UnityEngine.Experimental.TerrainAPI.TerrainUtility::CollectTerrains(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TerrainGroups_t88B87E7C8DA6A97E904D74167C43D631796ECBC5 * TerrainUtility_CollectTerrains_m1980638C0C744F59EF15670092FFA1CA9BDA9467 (bool ___onlyAutoConnectedTerrains0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3592,7 +3592,7 @@ IL_0143:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_0::.ctor()
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_mD2B394ACE1FD321151050D44AABFA010B5351509 (U3CU3Ec__DisplayClass4_0_t79B6EBFB785C0608F276376E6D35800FA6574B4A * __this, const RuntimeMethod* method)
 {
 	{
@@ -3608,7 +3608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_mD2B394AC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_1::.ctor()
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_1::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_1__ctor_mABF012661ABB1E98C9DA2A3237B45E15D793723F (U3CU3Ec__DisplayClass4_1_tC63A89C846069E68CAA87EA14D0149555C357407 * __this, const RuntimeMethod* method)
 {
 	{
@@ -3616,7 +3616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_1__ctor_mABF01266
 		return;
 	}
 }
-// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility/<>c__DisplayClass4_1::<CollectTerrains>b__0(UnityEngine.Terrain)
+// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility_<>c__DisplayClass4_1::<CollectTerrains>b__0(UnityEngine.Terrain)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_1_U3CCollectTerrainsU3Eb__0_mC50AC0DBF7CB0E1D89FE0F9DA973B406782C0B25 (U3CU3Ec__DisplayClass4_1_tC63A89C846069E68CAA87EA14D0149555C357407 * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___x0, const RuntimeMethod* method)
 {
 	int32_t G_B4_0 = 0;
@@ -3679,7 +3679,7 @@ IL_002c:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainGroups::.ctor()
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainGroups::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainGroups__ctor_mCC684EF011C9EBA10D335C5BBC2A7B742CB1D940 (TerrainGroups_t88B87E7C8DA6A97E904D74167C43D631796ECBC5 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3701,7 +3701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainGroups__ctor_mCC684EF011C9EBA10D3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// UnityEngine.Terrain UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::GetTerrain(System.Int32,System.Int32)
+// UnityEngine.Terrain UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::GetTerrain(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * TerrainMap_GetTerrain_m2580E4949922965E6B2F1EF0AF7669D3EEE5E635 (TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * __this, int32_t ___tileX0, int32_t ___tileZ1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3733,7 +3733,7 @@ IL_001c:
 		return L_5;
 	}
 }
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::CreateFromPlacement(UnityEngine.Terrain,UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TerrainFilter,System.Boolean)
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::CreateFromPlacement(UnityEngine.Terrain,UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TerrainFilter,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * TerrainMap_CreateFromPlacement_mB23A40ABF3A46620F82C489D749EABEA1EDF27B2 (Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___originTerrain0, TerrainFilter_t02BF9FBD8E61763D1D8484B34936B36B1046C66B * ___filter1, bool ___fullValidation2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3892,7 +3892,7 @@ IL_00cb:
 		return L_42;
 	}
 }
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::CreateFromPlacement(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TerrainFilter,System.Boolean)
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::CreateFromPlacement(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TerrainFilter,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * TerrainMap_CreateFromPlacement_m2CFB7C0DD0890EBA733486F6CFF67B15471A6B57 (Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___gridOrigin0, Vector2_tA85D2DD88578276CA8A8796756458277E72D073D  ___gridSize1, TerrainFilter_t02BF9FBD8E61763D1D8484B34936B36B1046C66B * ___filter2, bool ___fullValidation3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4124,7 +4124,7 @@ IL_0102:
 		return L_51;
 	}
 }
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::.ctor()
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainMap__ctor_m7BC19CC1FA417F6D152B8E290AAD9990DB81E81A (TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4142,7 +4142,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainMap__ctor_m7BC19CC1FA417F6D152B8E
 		return;
 	}
 }
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::AddTerrainInternal(System.Int32,System.Int32,UnityEngine.Terrain)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::AddTerrainInternal(System.Int32,System.Int32,UnityEngine.Terrain)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainMap_AddTerrainInternal_m2E4B99FEC2C6D4BCC6CFF0E58F0D1E70E254B4C2 (TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * __this, int32_t ___x0, int32_t ___z1, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4214,7 +4214,7 @@ IL_0052:
 		return;
 	}
 }
-// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::TryToAddTerrain(System.Int32,System.Int32,UnityEngine.Terrain)
+// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::TryToAddTerrain(System.Int32,System.Int32,UnityEngine.Terrain)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TerrainMap_TryToAddTerrain_m7F845FD1237F4342EAA377F5B8B078C93F0B2862 (TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * __this, int32_t ___tileX0, int32_t ___tileZ1, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4304,7 +4304,7 @@ IL_0058:
 		return L_18;
 	}
 }
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::ValidateTerrain(System.Int32,System.Int32)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::ValidateTerrain(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainMap_ValidateTerrain_m7B0154421B22B18D420FF7AB3179887AFCB320AB (TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * __this, int32_t ___tileX0, int32_t ___tileZ1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4690,7 +4690,7 @@ IL_026d:
 		return;
 	}
 }
-// UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/ErrorCode UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap::Validate()
+// UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_ErrorCode UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap::Validate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TerrainMap_Validate_m31FE625EC81CDED0369413935CD78F355677237A (TerrainMap_t8D09DC412F632DAB9EA8FB7A11A34EB7464D547C * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4790,7 +4790,7 @@ IL_0055:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/<>c__DisplayClass4_0::.ctor()
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_<>c__DisplayClass4_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m933028B07653F2470BD281F03CCA0AB74231B0A8 (U3CU3Ec__DisplayClass4_0_t0F8BF12DC466A9414D9AF02F686C301DBAFED002 * __this, const RuntimeMethod* method)
 {
 	{
@@ -4798,7 +4798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass4_0__ctor_m933028B0
 		return;
 	}
 }
-// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/<>c__DisplayClass4_0::<CreateFromPlacement>b__0(UnityEngine.Terrain)
+// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_<>c__DisplayClass4_0::<CreateFromPlacement>b__0(UnityEngine.Terrain)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CCreateFromPlacementU3Eb__0_m51A58F8F2A072A87B2E6C84818FEE0DEC2DD6FB0 (U3CU3Ec__DisplayClass4_0_t0F8BF12DC466A9414D9AF02F686C301DBAFED002 * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___x0, const RuntimeMethod* method)
 {
 	{
@@ -4825,14 +4825,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass4_0_U3CCreateFromPl
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TerrainFilter::.ctor(System.Object,System.IntPtr)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TerrainFilter::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TerrainFilter__ctor_m60B330ACE5AE8B4833AFB8D9BB095D6783DB2F1E (TerrainFilter_t02BF9FBD8E61763D1D8484B34936B36B1046C66B * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TerrainFilter::Invoke(UnityEngine.Terrain)
+// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TerrainFilter::Invoke(UnityEngine.Terrain)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TerrainFilter_Invoke_mB9F861A5CB34474898F150197A7F7CB90AFB1AF9 (TerrainFilter_t02BF9FBD8E61763D1D8484B34936B36B1046C66B * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain0, const RuntimeMethod* method)
 {
 	bool result = false;
@@ -4945,14 +4945,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TerrainFilter_Invoke_mB9F861A5CB34474898
 	}
 	return result;
 }
-// System.IAsyncResult UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TerrainFilter::BeginInvoke(UnityEngine.Terrain,System.AsyncCallback,System.Object)
+// System.IAsyncResult UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TerrainFilter::BeginInvoke(UnityEngine.Terrain,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TerrainFilter_BeginInvoke_mB6B8129534FBBB946AAAF055E7DFC909127E5021 (TerrainFilter_t02BF9FBD8E61763D1D8484B34936B36B1046C66B * __this, Terrain_t0BF7371FA90643325F50A87C7894D7BEBBE08943 * ___terrain0, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	void *__d_args[2] = {0};
 	__d_args[0] = ___terrain0;
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
 }
-// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TerrainFilter::EndInvoke(System.IAsyncResult)
+// System.Boolean UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TerrainFilter::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TerrainFilter_EndInvoke_m8200A6CAF424216D8AE088356ED10A055A83D2EA (TerrainFilter_t02BF9FBD8E61763D1D8484B34936B36B1046C66B * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -4966,7 +4966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TerrainFilter_EndInvoke_m8200A6CAF424216
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility/TerrainMap/TileCoord::.ctor(System.Int32,System.Int32)
+// System.Void UnityEngine.Experimental.TerrainAPI.TerrainUtility_TerrainMap_TileCoord::.ctor(System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileCoord__ctor_mAA64B48F381F5DCBB58B7EA137AD4073076177ED (TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA * __this, int32_t ___tileX0, int32_t ___tileZ1, const RuntimeMethod* method)
 {
 	{
@@ -5056,7 +5056,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Terrain__ctor_m1D3167E91CFC5220CF861F7CD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Int32 UnityEngine.TerrainData::GetBoundaryValue(UnityEngine.TerrainData/BoundaryValueType)
+// System.Int32 UnityEngine.TerrainData::GetBoundaryValue(UnityEngine.TerrainData_BoundaryValueType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TerrainData_GetBoundaryValue_m3E5DD81838828B30372AC5E200CE86B607C729AB (int32_t ___type0, const RuntimeMethod* method)
 {
 	typedef int32_t (*TerrainData_GetBoundaryValue_m3E5DD81838828B30372AC5E200CE86B607C729AB_ftn) (int32_t);
@@ -5178,41 +5178,41 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR KeyValuePair_2_tC1FD9633618D9B27E2552B
 {
 	{
 		KeyValuePair_2_tC1FD9633618D9B27E2552BBAD347EC14A6C07C2C  L_0 = (KeyValuePair_2_tC1FD9633618D9B27E2552BBAD347EC14A6C07C2C )__this->get_current_3();
-		return (KeyValuePair_2_tC1FD9633618D9B27E2552BBAD347EC14A6C07C2C )L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t KeyValuePair_2_get_Key_m89B687D373FBE3D230647CA0C536235E12AD829C_gshared_inline (KeyValuePair_2_tC1FD9633618D9B27E2552BBAD347EC14A6C07C2C * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = (int32_t)__this->get_key_0();
-		return (int32_t)L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * KeyValuePair_2_get_Value_mAD6801F3BC9BA1E99D4E0F72B2B420182D0494FC_gshared_inline (KeyValuePair_2_tC1FD9633618D9B27E2552BBAD347EC14A6C07C2C * __this, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = (RuntimeObject *)__this->get_value_1();
-		return (RuntimeObject *)L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR KeyValuePair_2_t198F3EF99C5CB706B8E678896CA900035FACF342  Enumerator_get_Current_m752CB433D17F421B29602443499F2A739C474AEF_gshared_inline (Enumerator_t71B93BE98D0EF45AF866DB4944B21CC1D0957B69 * __this, const RuntimeMethod* method)
 {
 	{
 		KeyValuePair_2_t198F3EF99C5CB706B8E678896CA900035FACF342  L_0 = (KeyValuePair_2_t198F3EF99C5CB706B8E678896CA900035FACF342 )__this->get_current_3();
-		return (KeyValuePair_2_t198F3EF99C5CB706B8E678896CA900035FACF342 )L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA  KeyValuePair_2_get_Key_m33312D77486DAFBE08CA5AC179C8E82D027B1E12_gshared_inline (KeyValuePair_2_t198F3EF99C5CB706B8E678896CA900035FACF342 * __this, const RuntimeMethod* method)
 {
 	{
 		TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA  L_0 = (TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA )__this->get_key_0();
-		return (TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA )L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA  Enumerator_get_Current_mD5C37459762167496A915F0F05399DFDAC6B001D_gshared_inline (Enumerator_tEC4F5C6184F5E671D53C872D88266C1500841E16 * __this, const RuntimeMethod* method)
 {
 	{
 		TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA  L_0 = (TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA )__this->get_currentKey_3();
-		return (TileCoord_t51EDF1EA1A3A7F9C1D85C186E7A7954535C225BA )L_0;
+		return L_0;
 	}
 }

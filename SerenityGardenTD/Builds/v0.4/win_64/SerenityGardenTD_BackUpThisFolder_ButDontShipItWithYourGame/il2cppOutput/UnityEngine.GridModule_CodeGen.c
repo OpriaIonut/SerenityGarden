@@ -36,8 +36,6 @@ const Il2CppCodeGenModule g_UnityEngine_GridModuleCodeGenModule =
 	"UnityEngine.GridModule.dll",
 	1,
 	s_methodPointers,
-	0,
-	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

@@ -710,20 +710,6 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "Cubemap",
-            "fullManagedTypeName": "UnityEngine.Cubemap",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
-                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
-                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
-                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
-                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
-                "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "RenderSettings",
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
@@ -782,6 +768,17 @@
             "moduleName": "Physics",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Cubemap",
+            "fullManagedTypeName": "UnityEngine.Cubemap",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },

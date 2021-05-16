@@ -155,6 +155,7 @@ namespace Photon.Pun.Demo.Asteroids
 
         public override void OnPlayerEnteredRoom(Player newPlayer)
         {
+            Debug.Log("Player entered room");
             GameObject entry = Instantiate(PlayerListEntryPrefab);
             entry.transform.SetParent(InsideRoomPanel.transform);
             entry.transform.localScale = Vector3.one;

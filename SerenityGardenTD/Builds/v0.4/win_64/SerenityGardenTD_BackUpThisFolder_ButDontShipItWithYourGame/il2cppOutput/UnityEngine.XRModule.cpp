@@ -1908,11 +1908,11 @@ public:
 };
 
 
-// UnityEngine.XR.InputTracking/TrackingStateEventType
+// UnityEngine.XR.InputTracking_TrackingStateEventType
 struct  TrackingStateEventType_tD5ADDFEA62593966E5D258C959431DB50354B9C9 
 {
 public:
-	// System.Int32 UnityEngine.XR.InputTracking/TrackingStateEventType::value__
+	// System.Int32 UnityEngine.XR.InputTracking_TrackingStateEventType::value__
 	int32_t ___value___2;
 
 public:
@@ -1962,17 +1962,17 @@ public:
 };
 
 
-// UnityEngine.XR.XRDisplaySubsystem/XRMirrorViewBlitDesc
+// UnityEngine.XR.XRDisplaySubsystem_XRMirrorViewBlitDesc
 struct  XRMirrorViewBlitDesc_tBEE7F3C8555A3AFBFF990774C3CBEB8F6DD0BD5F 
 {
 public:
-	// System.IntPtr UnityEngine.XR.XRDisplaySubsystem/XRMirrorViewBlitDesc::displaySubsystemInstance
+	// System.IntPtr UnityEngine.XR.XRDisplaySubsystem_XRMirrorViewBlitDesc::displaySubsystemInstance
 	intptr_t ___displaySubsystemInstance_0;
-	// System.Boolean UnityEngine.XR.XRDisplaySubsystem/XRMirrorViewBlitDesc::nativeBlitAvailable
+	// System.Boolean UnityEngine.XR.XRDisplaySubsystem_XRMirrorViewBlitDesc::nativeBlitAvailable
 	bool ___nativeBlitAvailable_1;
-	// System.Boolean UnityEngine.XR.XRDisplaySubsystem/XRMirrorViewBlitDesc::nativeBlitInvalidStates
+	// System.Boolean UnityEngine.XR.XRDisplaySubsystem_XRMirrorViewBlitDesc::nativeBlitInvalidStates
 	bool ___nativeBlitInvalidStates_2;
-	// System.Int32 UnityEngine.XR.XRDisplaySubsystem/XRMirrorViewBlitDesc::blitParamsCount
+	// System.Int32 UnityEngine.XR.XRDisplaySubsystem_XRMirrorViewBlitDesc::blitParamsCount
 	int32_t ___blitParamsCount_3;
 
 public:
@@ -2026,19 +2026,19 @@ struct XRMirrorViewBlitDesc_tBEE7F3C8555A3AFBFF990774C3CBEB8F6DD0BD5F_marshaled_
 	int32_t ___blitParamsCount_3;
 };
 
-// UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter
+// UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter
 struct  XRRenderParameter_t190F5A28D45C76827A4CD68E13EBC9875F7CF9AE 
 {
 public:
-	// UnityEngine.Matrix4x4 UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter::view
+	// UnityEngine.Matrix4x4 UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter::view
 	Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA  ___view_0;
-	// UnityEngine.Matrix4x4 UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter::projection
+	// UnityEngine.Matrix4x4 UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter::projection
 	Matrix4x4_t6BF60F70C9169DF14C9D2577672A44224B236ECA  ___projection_1;
-	// UnityEngine.Rect UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter::viewport
+	// UnityEngine.Rect UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter::viewport
 	Rect_t35B976DE901B5423C11705E156938EA27AB402CE  ___viewport_2;
-	// UnityEngine.Mesh UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter::occlusionMesh
+	// UnityEngine.Mesh UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter::occlusionMesh
 	Mesh_t6106B8D8E4C691321581AB0445552EC78B947B8C * ___occlusionMesh_3;
-	// System.Int32 UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter::textureArraySlice
+	// System.Int32 UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter::textureArraySlice
 	int32_t ___textureArraySlice_4;
 
 public:
@@ -2850,21 +2850,21 @@ public:
 };
 
 
-// UnityEngine.XR.XRDisplaySubsystem/XRRenderPass
+// UnityEngine.XR.XRDisplaySubsystem_XRRenderPass
 struct  XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 
 {
 public:
-	// System.IntPtr UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::displaySubsystemInstance
+	// System.IntPtr UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::displaySubsystemInstance
 	intptr_t ___displaySubsystemInstance_0;
-	// System.Int32 UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::renderPassIndex
+	// System.Int32 UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::renderPassIndex
 	int32_t ___renderPassIndex_1;
-	// UnityEngine.Rendering.RenderTargetIdentifier UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::renderTarget
+	// UnityEngine.Rendering.RenderTargetIdentifier UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::renderTarget
 	RenderTargetIdentifier_tB7480EE944FC70E0AB7D499DB17D119EB65B0F5B  ___renderTarget_2;
-	// UnityEngine.RenderTextureDescriptor UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::renderTargetDesc
+	// UnityEngine.RenderTextureDescriptor UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::renderTargetDesc
 	RenderTextureDescriptor_t74FEC57A54F89E11748E1865F7DCA3565BFAF58E  ___renderTargetDesc_3;
-	// System.Boolean UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::shouldFillOutDepth
+	// System.Boolean UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::shouldFillOutDepth
 	bool ___shouldFillOutDepth_4;
-	// System.Int32 UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::cullingPassIndex
+	// System.Int32 UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::cullingPassIndex
 	int32_t ___cullingPassIndex_5;
 
 public:
@@ -3015,11 +3015,11 @@ public:
 struct Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34_StaticFields
 {
 public:
-	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreCull
+	// UnityEngine.Camera_CameraCallback UnityEngine.Camera::onPreCull
 	CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0 * ___onPreCull_4;
-	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreRender
+	// UnityEngine.Camera_CameraCallback UnityEngine.Camera::onPreRender
 	CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0 * ___onPreRender_5;
-	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPostRender
+	// UnityEngine.Camera_CameraCallback UnityEngine.Camera::onPostRender
 	CameraCallback_t8BBB42AA08D7498DFC11F4128117055BC7F0B9D0 * ___onPostRender_6;
 
 public:
@@ -4366,7 +4366,7 @@ IL2CPP_EXTERN_C  int32_t InputFeatureUsage_GetHashCode_m083565A56980BD5DF6563142
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void UnityEngine.XR.InputTracking::InvokeTrackingEvent(UnityEngine.XR.InputTracking/TrackingStateEventType,UnityEngine.XR.XRNode,System.Int64,System.Boolean)
+// System.Void UnityEngine.XR.InputTracking::InvokeTrackingEvent(UnityEngine.XR.InputTracking_TrackingStateEventType,UnityEngine.XR.XRNode,System.Int64,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputTracking_InvokeTrackingEvent_mDB5808D84A18FFE3EF4F4707F0291768B59CC111 (int32_t ___eventType0, int32_t ___nodeType1, int64_t ___uniqueID2, bool ___tracked3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5037,7 +5037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRDisplaySubsystem_GetRenderPassCount
 	int32_t retVal = _il2cpp_icall_func(__this);
 	return retVal;
 }
-// System.Void UnityEngine.XR.XRDisplaySubsystem::GetRenderPass(System.Int32,UnityEngine.XR.XRDisplaySubsystem/XRRenderPass&)
+// System.Void UnityEngine.XR.XRDisplaySubsystem::GetRenderPass(System.Int32,UnityEngine.XR.XRDisplaySubsystem_XRRenderPass&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDisplaySubsystem_GetRenderPass_mB9CD3E7EF824C3F16F0467FCF871D89AF2F1415C (XRDisplaySubsystem_t2E090C1B6925B11C9296DBBAF57F9364AADA13E0 * __this, int32_t ___renderPassIndex0, XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * ___renderPass1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5069,7 +5069,7 @@ IL_001c:
 		return;
 	}
 }
-// System.Boolean UnityEngine.XR.XRDisplaySubsystem::Internal_TryGetRenderPass(System.Int32,UnityEngine.XR.XRDisplaySubsystem/XRRenderPass&)
+// System.Boolean UnityEngine.XR.XRDisplaySubsystem::Internal_TryGetRenderPass(System.Int32,UnityEngine.XR.XRDisplaySubsystem_XRRenderPass&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRDisplaySubsystem_Internal_TryGetRenderPass_mB920472C7DD95E5D0EE6C4361435E29DBC3171AC (XRDisplaySubsystem_t2E090C1B6925B11C9296DBBAF57F9364AADA13E0 * __this, int32_t ___renderPassIndex0, XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * ___renderPass1, const RuntimeMethod* method)
 {
 	typedef bool (*XRDisplaySubsystem_Internal_TryGetRenderPass_mB920472C7DD95E5D0EE6C4361435E29DBC3171AC_ftn) (XRDisplaySubsystem_t2E090C1B6925B11C9296DBBAF57F9364AADA13E0 *, int32_t, XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 *);
@@ -5279,7 +5279,7 @@ IL2CPP_EXTERN_C void XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13_mars
 IL2CPP_EXTERN_C void XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13_marshal_com_cleanup(XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13_marshaled_com& marshaled)
 {
 }
-// System.Void UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::GetRenderParameter(UnityEngine.Camera,System.Int32,UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter&)
+// System.Void UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::GetRenderParameter(UnityEngine.Camera,System.Int32,UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRRenderPass_GetRenderParameter_mA7A01F2DA183C8DAFB0247B6B26F6D84EB5AB14F (XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * __this, Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * ___camera0, int32_t ___renderParameterIndex1, XRRenderParameter_t190F5A28D45C76827A4CD68E13EBC9875F7CF9AE * ___renderParameter2, const RuntimeMethod* method)
 {
 	{
@@ -5296,7 +5296,7 @@ IL2CPP_EXTERN_C  void XRRenderPass_GetRenderParameter_mA7A01F2DA183C8DAFB0247B6B
 	XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * _thisAdjusted = reinterpret_cast<XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 *>(__this + _offset);
 	XRRenderPass_GetRenderParameter_mA7A01F2DA183C8DAFB0247B6B26F6D84EB5AB14F(_thisAdjusted, ___camera0, ___renderParameterIndex1, ___renderParameter2, method);
 }
-// System.Int32 UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::GetRenderParameterCount()
+// System.Int32 UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::GetRenderParameterCount()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRRenderPass_GetRenderParameterCount_mCD558F9A732B797AD33278580F22374A8BF9AA46 (XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * __this, const RuntimeMethod* method)
 {
 	{
@@ -5310,7 +5310,7 @@ IL2CPP_EXTERN_C  int32_t XRRenderPass_GetRenderParameterCount_mCD558F9A732B797AD
 	XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * _thisAdjusted = reinterpret_cast<XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 *>(__this + _offset);
 	return XRRenderPass_GetRenderParameterCount_mCD558F9A732B797AD33278580F22374A8BF9AA46(_thisAdjusted, method);
 }
-// System.Void UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::GetRenderParameter_Injected(UnityEngine.XR.XRDisplaySubsystem/XRRenderPass&,UnityEngine.Camera,System.Int32,UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter&)
+// System.Void UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::GetRenderParameter_Injected(UnityEngine.XR.XRDisplaySubsystem_XRRenderPass&,UnityEngine.Camera,System.Int32,UnityEngine.XR.XRDisplaySubsystem_XRRenderParameter&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRRenderPass_GetRenderParameter_Injected_m7737A1FB90936D793DC2CE9FD7939319AF4A173C (XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * ____unity_self0, Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 * ___camera1, int32_t ___renderParameterIndex2, XRRenderParameter_t190F5A28D45C76827A4CD68E13EBC9875F7CF9AE * ___renderParameter3, const RuntimeMethod* method)
 {
 	typedef void (*XRRenderPass_GetRenderParameter_Injected_m7737A1FB90936D793DC2CE9FD7939319AF4A173C_ftn) (XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 *, Camera_t48B2B9ECB3CE6108A98BF949A1CECF0FE3421F34 *, int32_t, XRRenderParameter_t190F5A28D45C76827A4CD68E13EBC9875F7CF9AE *);
@@ -5319,7 +5319,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRRenderPass_GetRenderParameter_Injected
 	_il2cpp_icall_func = (XRRenderPass_GetRenderParameter_Injected_m7737A1FB90936D793DC2CE9FD7939319AF4A173C_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::GetRenderParameter_Injected(UnityEngine.XR.XRDisplaySubsystem/XRRenderPass&,UnityEngine.Camera,System.Int32,UnityEngine.XR.XRDisplaySubsystem/XRRenderParameter&)");
 	_il2cpp_icall_func(____unity_self0, ___camera1, ___renderParameterIndex2, ___renderParameter3);
 }
-// System.Int32 UnityEngine.XR.XRDisplaySubsystem/XRRenderPass::GetRenderParameterCount_Injected(UnityEngine.XR.XRDisplaySubsystem/XRRenderPass&)
+// System.Int32 UnityEngine.XR.XRDisplaySubsystem_XRRenderPass::GetRenderParameterCount_Injected(UnityEngine.XR.XRDisplaySubsystem_XRRenderPass&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRRenderPass_GetRenderParameterCount_Injected_m70DC873FED36AF51764D099A9D549BD9BEAD3C75 (XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 * ____unity_self0, const RuntimeMethod* method)
 {
 	typedef int32_t (*XRRenderPass_GetRenderParameterCount_Injected_m70DC873FED36AF51764D099A9D549BD9BEAD3C75_ftn) (XRRenderPass_tD19A615ECA4DED12BF47250E6F2D52D9E7527F13 *);

@@ -1008,7 +1008,7 @@ public:
 struct  ConcurrentDictionary_2_t8BC749B04F30FD2EE553C74F214C704F65E8E10A  : public RuntimeObject
 {
 public:
-	// System.Collections.Concurrent.ConcurrentDictionary`2/Tables<TKey,TValue> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Concurrent.ConcurrentDictionary`2::_tables
+	// System.Collections.Concurrent.ConcurrentDictionary`2_Tables<TKey,TValue> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Concurrent.ConcurrentDictionary`2::_tables
 	Tables_tBE0CD530F6EA9BA8128EB1ADBDFBF89B69FD45DE * ____tables_0;
 	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Concurrent.ConcurrentDictionary`2::_comparer
 	RuntimeObject* ____comparer_1;
@@ -1076,7 +1076,7 @@ struct  Dictionary_2_tDF0B764EEAE1242A344103EC40130E5D891C6934  : public Runtime
 public:
 	// System.Int32[] System.Collections.Generic.Dictionary`2::buckets
 	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ___buckets_0;
-	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
+	// System.Collections.Generic.Dictionary`2_Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
 	EntryU5BU5D_tEB4EC0F7B83276A226E0EAF9EE0D2FA2815BF2CF* ___entries_1;
 	// System.Int32 System.Collections.Generic.Dictionary`2::count
 	int32_t ___count_2;
@@ -1088,9 +1088,9 @@ public:
 	int32_t ___freeCount_5;
 	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::comparer
 	RuntimeObject* ___comparer_6;
-	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
+	// System.Collections.Generic.Dictionary`2_KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
 	KeyCollection_t168BC5D95F394B147D1046A2DABC6D11E9057444 * ___keys_7;
-	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
+	// System.Collections.Generic.Dictionary`2_ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
 	ValueCollection_t31843DDF121614EEE113E55DA3D59BD09C317ACC * ___values_8;
 	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
 	RuntimeObject * ____syncRoot_9;
@@ -3245,11 +3245,11 @@ public:
 };
 
 
-// System.Runtime.Serialization.Formatters.Binary.ObjectReader/TopLevelAssemblyTypeResolver
+// System.Runtime.Serialization.Formatters.Binary.ObjectReader_TopLevelAssemblyTypeResolver
 struct  TopLevelAssemblyTypeResolver_t04636F94B55405B0EE48DD9BCA570DAA810DA4C8  : public RuntimeObject
 {
 public:
-	// System.Reflection.Assembly System.Runtime.Serialization.Formatters.Binary.ObjectReader/TopLevelAssemblyTypeResolver::m_topLevelAssembly
+	// System.Reflection.Assembly System.Runtime.Serialization.Formatters.Binary.ObjectReader_TopLevelAssemblyTypeResolver::m_topLevelAssembly
 	Assembly_t * ___m_topLevelAssembly_0;
 
 public:
@@ -3264,13 +3264,13 @@ public:
 };
 
 
-// System.Runtime.Serialization.Formatters.Binary.ObjectReader/TypeNAssembly
+// System.Runtime.Serialization.Formatters.Binary.ObjectReader_TypeNAssembly
 struct  TypeNAssembly_tC7486A43B108786A3E5305EBA7DF4F5EBF9F6933  : public RuntimeObject
 {
 public:
-	// System.Type System.Runtime.Serialization.Formatters.Binary.ObjectReader/TypeNAssembly::type
+	// System.Type System.Runtime.Serialization.Formatters.Binary.ObjectReader_TypeNAssembly::type
 	Type_t * ___type_0;
-	// System.String System.Runtime.Serialization.Formatters.Binary.ObjectReader/TypeNAssembly::assemblyName
+	// System.String System.Runtime.Serialization.Formatters.Binary.ObjectReader_TypeNAssembly::assemblyName
 	String_t* ___assemblyName_1;
 
 public:
@@ -4725,7 +4725,7 @@ struct Enum_t2AF27C02B8653AE29442467390005ABC74D8F521_marshaled_com
 struct  Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7  : public MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF
 {
 public:
-	// System.IO.Stream/ReadWriteTask System.IO.Stream::_activeReadWriteTask
+	// System.IO.Stream_ReadWriteTask System.IO.Stream::_activeReadWriteTask
 	ReadWriteTask_tFA17EEE8BC5C4C83EAEFCC3662A30DE351ABAA80 * ____activeReadWriteTask_2;
 	// System.Threading.SemaphoreSlim System.IO.Stream::_asyncActiveSemaphore
 	SemaphoreSlim_t2E2888D1C0C8FAB80823C76F1602E4434B8FA048 * ____asyncActiveSemaphore_3;
@@ -5012,7 +5012,7 @@ public:
 struct  Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9  : public RuntimeObject
 {
 public:
-	// System.Collections.Hashtable/bucket[] System.Collections.Hashtable::buckets
+	// System.Collections.Hashtable_bucket[] System.Collections.Hashtable::buckets
 	bucketU5BU5D_t6FF2C2C4B21F2206885CD19A78F68B874C8DC84A* ___buckets_10;
 	// System.Int32 System.Collections.Hashtable::count
 	int32_t ___count_11;
@@ -5551,7 +5551,7 @@ struct  Assembly_t  : public RuntimeObject
 public:
 	// System.IntPtr System.Reflection.Assembly::_mono_assembly
 	intptr_t ____mono_assembly_0;
-	// System.Reflection.Assembly/ResolveEventHolder System.Reflection.Assembly::resolve_event_holder
+	// System.Reflection.Assembly_ResolveEventHolder System.Reflection.Assembly::resolve_event_holder
 	ResolveEventHolder_t5267893EB7CB9C12F7B9B463FD4C221BEA03326E * ___resolve_event_holder_1;
 	// System.Object System.Reflection.Assembly::_evidence
 	RuntimeObject * ____evidence_2;
@@ -21010,7 +21010,7 @@ IL_0030:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Runtime.Serialization.Formatters.Binary.ObjectReader/TopLevelAssemblyTypeResolver::.ctor(System.Reflection.Assembly)
+// System.Void System.Runtime.Serialization.Formatters.Binary.ObjectReader_TopLevelAssemblyTypeResolver::.ctor(System.Reflection.Assembly)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TopLevelAssemblyTypeResolver__ctor_m7C6E27645E0D348C218E00F50E987A7411FAA67B (TopLevelAssemblyTypeResolver_t04636F94B55405B0EE48DD9BCA570DAA810DA4C8 * __this, Assembly_t * ___topLevelAssembly0, const RuntimeMethod* method)
 {
 	{
@@ -21020,7 +21020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TopLevelAssemblyTypeResolver__ctor_m7C6E
 		return;
 	}
 }
-// System.Type System.Runtime.Serialization.Formatters.Binary.ObjectReader/TopLevelAssemblyTypeResolver::ResolveType(System.Reflection.Assembly,System.String,System.Boolean)
+// System.Type System.Runtime.Serialization.Formatters.Binary.ObjectReader_TopLevelAssemblyTypeResolver::ResolveType(System.Reflection.Assembly,System.String,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * TopLevelAssemblyTypeResolver_ResolveType_mA664A44054ED5F33AAAB03A7375FC2D33896C952 (TopLevelAssemblyTypeResolver_t04636F94B55405B0EE48DD9BCA570DAA810DA4C8 * __this, Assembly_t * ___assembly0, String_t* ___simpleTypeName1, bool ___ignoreCase2, const RuntimeMethod* method)
 {
 	{
@@ -21054,7 +21054,7 @@ IL_0011:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.Runtime.Serialization.Formatters.Binary.ObjectReader/TypeNAssembly::.ctor()
+// System.Void System.Runtime.Serialization.Formatters.Binary.ObjectReader_TypeNAssembly::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeNAssembly__ctor_m2AF5FA6D71618FE6EFAF14B2CEF99429C22C3EFC (TypeNAssembly_tC7486A43B108786A3E5305EBA7DF4F5EBF9F6933 * __this, const RuntimeMethod* method)
 {
 	{
@@ -24383,7 +24383,7 @@ IL_0041:
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_13 = __this->get_assemblyToIdTable_19();
 		String_t* L_14 = V_2;
 		NullCheck(L_13);
-		RuntimeObject * L_15 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_13, L_14);
+		RuntimeObject * L_15 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_13, L_14);
 		V_0 = ((*(int64_t*)((int64_t*)UnBox(L_15, Int64_t7A386C2FF7B0280A0F516992401DDFCF0FF7B436_il2cpp_TypeInfo_var))));
 		V_1 = (bool)0;
 		goto IL_008d;
@@ -24401,7 +24401,7 @@ IL_0065:
 		int64_t L_22 = L_21;
 		RuntimeObject * L_23 = Box(Int64_t7A386C2FF7B0280A0F516992401DDFCF0FF7B436_il2cpp_TypeInfo_var, &L_22);
 		NullCheck(L_19);
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_19, L_20, L_23);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_19, L_20, L_23);
 	}
 
 IL_008d:
@@ -28030,7 +28030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteObjectInfo_InitNoMembers_m4DD038A9E
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_1 = L_0->get_seenBeforeTable_0();
 		Type_t * L_2 = __this->get_objectType_2();
 		NullCheck(L_1);
-		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
+		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
 		__this->set_cache_8(((SerObjectInfoCache_t32BC33838021C390DC94B45E12F87B2E6BC38B62 *)CastclassSealed((RuntimeObject*)L_3, SerObjectInfoCache_t32BC33838021C390DC94B45E12F87B2E6BC38B62_il2cpp_TypeInfo_var)));
 		SerObjectInfoCache_t32BC33838021C390DC94B45E12F87B2E6BC38B62 * L_4 = __this->get_cache_8();
 		if (L_4)
@@ -28074,7 +28074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteObjectInfo_InitMemberInfo_mCCDDD10A
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_1 = L_0->get_seenBeforeTable_0();
 		Type_t * L_2 = __this->get_objectType_2();
 		NullCheck(L_1);
-		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
+		RuntimeObject * L_3 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_1, L_2);
 		__this->set_cache_8(((SerObjectInfoCache_t32BC33838021C390DC94B45E12F87B2E6BC38B62 *)CastclassSealed((RuntimeObject*)L_3, SerObjectInfoCache_t32BC33838021C390DC94B45E12F87B2E6BC38B62_il2cpp_TypeInfo_var)));
 		SerObjectInfoCache_t32BC33838021C390DC94B45E12F87B2E6BC38B62 * L_4 = __this->get_cache_8();
 		if (L_4)
@@ -33033,7 +33033,7 @@ IL_003b:
 		Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9 * L_10 = __this->get_objectMapTable_2();
 		String_t* L_11 = V_2;
 		NullCheck(L_10);
-		RuntimeObject * L_12 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(29 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_10, L_11);
+		RuntimeObject * L_12 = VirtFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_10, L_11);
 		V_3 = ((ObjectMapInfo_t84FE00AB11C96611DDE801C57CB9415F77B0ABF8 *)CastclassSealed((RuntimeObject*)L_12, ObjectMapInfo_t84FE00AB11C96611DDE801C57CB9415F77B0ABF8_il2cpp_TypeInfo_var));
 		ObjectMapInfo_t84FE00AB11C96611DDE801C57CB9415F77B0ABF8 * L_13 = V_3;
 		if (!L_13)
@@ -35986,6 +35986,6 @@ IL_000e:
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)__this->get__items_1();
 		int32_t L_3 = ___index0;
 		RuntimeObject * L_4 = IL2CPP_ARRAY_UNSAFE_LOAD((ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_2, (int32_t)L_3);
-		return (RuntimeObject *)L_4;
+		return L_4;
 	}
 }

@@ -2009,7 +2009,7 @@ struct  Dictionary_2_t4EFE6A1D6502662B911688316C6920444A18CF0C  : public Runtime
 public:
 	// System.Int32[] System.Collections.Generic.Dictionary`2::buckets
 	Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83* ___buckets_0;
-	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
+	// System.Collections.Generic.Dictionary`2_Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::entries
 	EntryU5BU5D_t69CCD9E4E7050700879917C9CB7E5E88F89235B1* ___entries_1;
 	// System.Int32 System.Collections.Generic.Dictionary`2::count
 	int32_t ___count_2;
@@ -2021,9 +2021,9 @@ public:
 	int32_t ___freeCount_5;
 	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::comparer
 	RuntimeObject* ___comparer_6;
-	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
+	// System.Collections.Generic.Dictionary`2_KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::keys
 	KeyCollection_t2F25BAF319A40DA5241F076B74BB90B72F16822F * ___keys_7;
-	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
+	// System.Collections.Generic.Dictionary`2_ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::values
 	ValueCollection_tEDEE983AB5C1AD1832785DBAED94462C85312A6F * ___values_8;
 	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
 	RuntimeObject * ____syncRoot_9;
@@ -2257,7 +2257,7 @@ struct  AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE  : public 
 public:
 	// System.Attribute[] System.ComponentModel.AttributeCollection::_attributes
 	AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ____attributes_2;
-	// System.ComponentModel.AttributeCollection/AttributeEntry[] System.ComponentModel.AttributeCollection::_foundAttributeTypes
+	// System.ComponentModel.AttributeCollection_AttributeEntry[] System.ComponentModel.AttributeCollection::_foundAttributeTypes
 	AttributeEntryU5BU5D_t82EF07E3984B106E346A6B35336772424C0FCB5A* ____foundAttributeTypes_5;
 	// System.Int32 System.ComponentModel.AttributeCollection::_index
 	int32_t ____index_6;
@@ -2742,13 +2742,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeConverter/StandardValuesCollection
+// System.ComponentModel.TypeConverter_StandardValuesCollection
 struct  StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3  : public RuntimeObject
 {
 public:
-	// System.Collections.ICollection System.ComponentModel.TypeConverter/StandardValuesCollection::values
+	// System.Collections.ICollection System.ComponentModel.TypeConverter_StandardValuesCollection::values
 	RuntimeObject* ___values_0;
-	// System.Array System.ComponentModel.TypeConverter/StandardValuesCollection::valueArray
+	// System.Array System.ComponentModel.TypeConverter_StandardValuesCollection::valueArray
 	RuntimeArray * ___valueArray_1;
 
 public:
@@ -2778,7 +2778,7 @@ struct  TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591  : pub
 public:
 	// System.ComponentModel.TypeDescriptionProvider System.ComponentModel.TypeDescriptionProvider::_parent
 	TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591 * ____parent_0;
-	// System.ComponentModel.TypeDescriptionProvider/EmptyCustomTypeDescriptor System.ComponentModel.TypeDescriptionProvider::_emptyDescriptor
+	// System.ComponentModel.TypeDescriptionProvider_EmptyCustomTypeDescriptor System.ComponentModel.TypeDescriptionProvider::_emptyDescriptor
 	EmptyCustomTypeDescriptor_tDDCC5072613D7D0405BCCF3D49F3EF7B4E1E7DB8 * ____emptyDescriptor_1;
 
 public:
@@ -2802,13 +2802,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/AttributeFilterCacheItem
+// System.ComponentModel.TypeDescriptor_AttributeFilterCacheItem
 struct  AttributeFilterCacheItem_t8E137227F1585B34CFC9BEC30C7D155203FA0D01  : public RuntimeObject
 {
 public:
-	// System.Attribute[] System.ComponentModel.TypeDescriptor/AttributeFilterCacheItem::_filter
+	// System.Attribute[] System.ComponentModel.TypeDescriptor_AttributeFilterCacheItem::_filter
 	AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ____filter_0;
-	// System.Collections.ICollection System.ComponentModel.TypeDescriptor/AttributeFilterCacheItem::FilteredMembers
+	// System.Collections.ICollection System.ComponentModel.TypeDescriptor_AttributeFilterCacheItem::FilteredMembers
 	RuntimeObject* ___FilteredMembers_1;
 
 public:
@@ -2832,13 +2832,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor
+// System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor
 struct  ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.IComNativeDescriptorHandler System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::_handler
+	// System.ComponentModel.IComNativeDescriptorHandler System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::_handler
 	RuntimeObject* ____handler_0;
-	// System.Object System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::_instance
+	// System.Object System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::_instance
 	RuntimeObject * ____instance_1;
 
 public:
@@ -2862,13 +2862,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/FilterCacheItem
+// System.ComponentModel.TypeDescriptor_FilterCacheItem
 struct  FilterCacheItem_tDA029760025F0503AD352DE639152D69CA138DA4  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.Design.ITypeDescriptorFilterService System.ComponentModel.TypeDescriptor/FilterCacheItem::_filterService
+	// System.ComponentModel.Design.ITypeDescriptorFilterService System.ComponentModel.TypeDescriptor_FilterCacheItem::_filterService
 	RuntimeObject* ____filterService_0;
-	// System.Collections.ICollection System.ComponentModel.TypeDescriptor/FilterCacheItem::FilteredMembers
+	// System.Collections.ICollection System.ComponentModel.TypeDescriptor_FilterCacheItem::FilteredMembers
 	RuntimeObject* ___FilteredMembers_1;
 
 public:
@@ -2892,7 +2892,7 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/MemberDescriptorComparer
+// System.ComponentModel.TypeDescriptor_MemberDescriptorComparer
 struct  MemberDescriptorComparer_t08208596E93DE2FB4472AB31B0316F98B288506D  : public RuntimeObject
 {
 public:
@@ -2903,7 +2903,7 @@ public:
 struct MemberDescriptorComparer_t08208596E93DE2FB4472AB31B0316F98B288506D_StaticFields
 {
 public:
-	// System.ComponentModel.TypeDescriptor/MemberDescriptorComparer System.ComponentModel.TypeDescriptor/MemberDescriptorComparer::Instance
+	// System.ComponentModel.TypeDescriptor_MemberDescriptorComparer System.ComponentModel.TypeDescriptor_MemberDescriptorComparer::Instance
 	MemberDescriptorComparer_t08208596E93DE2FB4472AB31B0316F98B288506D * ___Instance_0;
 
 public:
@@ -2918,13 +2918,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/MergedTypeDescriptor
+// System.ComponentModel.TypeDescriptor_MergedTypeDescriptor
 struct  MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B  : public RuntimeObject
 {
 public:
-	// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::_primary
+	// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::_primary
 	RuntimeObject* ____primary_0;
-	// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::_secondary
+	// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::_secondary
 	RuntimeObject* ____secondary_1;
 
 public:
@@ -2948,7 +2948,7 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/TypeDescriptorComObject
+// System.ComponentModel.TypeDescriptor_TypeDescriptorComObject
 struct  TypeDescriptorComObject_t531EE8D60EE83A09B6539D079E837E68DC289B76  : public RuntimeObject
 {
 public:
@@ -2957,7 +2957,7 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/TypeDescriptorInterface
+// System.ComponentModel.TypeDescriptor_TypeDescriptorInterface
 struct  TypeDescriptorInterface_t872F528EF86C66103396D4D796A932A0FF88C4D7  : public RuntimeObject
 {
 public:
@@ -2966,7 +2966,7 @@ public:
 };
 
 
-// System.ComponentModel.WeakHashtable/WeakKeyComparer
+// System.ComponentModel.WeakHashtable_WeakKeyComparer
 struct  WeakKeyComparer_tFF7B45BE010723C01B3F3205FEBCC915543996B3  : public RuntimeObject
 {
 public:
@@ -3034,7 +3034,7 @@ public:
 	Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4 * ___outputEncoding_4;
 	// System.ConsoleCancelEventHandler System.Console::cancel_event
 	ConsoleCancelEventHandler_t6F3B5D9C55C25FF6B53EFEDA9150EFE807311EB4 * ___cancel_event_5;
-	// System.Console/InternalCancelHandler System.Console::cancel_handler
+	// System.Console_InternalCancelHandler System.Console::cancel_handler
 	InternalCancelHandler_t2DD134D8150B67E2F9FAD1BC2E6BE92EED57968A * ___cancel_handler_6;
 
 public:
@@ -5093,7 +5093,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D10
 struct  __StaticArrayInitTypeSizeU3D10_tE6F7FB38485D609454F9A89335B38F479C5B6086 
 {
 public:
@@ -5112,7 +5112,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D12
 struct  __StaticArrayInitTypeSizeU3D12_t6EBCA221EDFF79F50821238316CFA0302EE70E48 
 {
 public:
@@ -5131,7 +5131,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=128
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D128
 struct  __StaticArrayInitTypeSizeU3D128_t4A42759E6E25B0C61E6036A661F4344DE92C2905 
 {
 public:
@@ -5150,7 +5150,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D14
 struct  __StaticArrayInitTypeSizeU3D14_tC5D421D768E79910C98FB4504BA3B07E43FA77F0 
 {
 public:
@@ -5169,7 +5169,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=256
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D256
 struct  __StaticArrayInitTypeSizeU3D256_t548520FAA2CCFC11107E283BF9E43588FAE5F6C7 
 {
 public:
@@ -5188,7 +5188,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=3
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D3
 struct  __StaticArrayInitTypeSizeU3D3_t4D597C014C0C24F294DC84275F0264DCFCD4C575 
 {
 public:
@@ -5207,7 +5207,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D32
 struct  __StaticArrayInitTypeSizeU3D32_t5300E5FCBD58716E8A4EBB9470E4FAE1A0A964FA 
 {
 public:
@@ -5226,7 +5226,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=44
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D44
 struct  __StaticArrayInitTypeSizeU3D44_tE99A9434272A367C976B32D1235A23DA85CC9671 
 {
 public:
@@ -5245,7 +5245,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D6
 struct  __StaticArrayInitTypeSizeU3D6_tB024AE1C3AEB5C43235E76FFA23E64CD5EC3D87F 
 {
 public:
@@ -5264,7 +5264,7 @@ public:
 };
 
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=9
+// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D9
 struct  __StaticArrayInitTypeSizeU3D9_tAB3C7ADC1E437C21F21AAF2C925676D0F9801BCB 
 {
 public:
@@ -5481,11 +5481,11 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/AttributeProvider
+// System.ComponentModel.TypeDescriptor_AttributeProvider
 struct  AttributeProvider_t67BCE87062C434FBC0E369F34CCB196661DABFDF  : public TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591
 {
 public:
-	// System.Attribute[] System.ComponentModel.TypeDescriptor/AttributeProvider::_attrs
+	// System.Attribute[] System.ComponentModel.TypeDescriptor_AttributeProvider::_attrs
 	AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ____attrs_2;
 
 public:
@@ -5500,11 +5500,11 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/AttributeProvider/AttributeTypeDescriptor
+// System.ComponentModel.TypeDescriptor_AttributeProvider_AttributeTypeDescriptor
 struct  AttributeTypeDescriptor_t4D6F2E9913F8B001ADF799DA77361BAEF574A6DE  : public CustomTypeDescriptor_tF8665CD45DFFA622F7EB328A2F77067DD2147689
 {
 public:
-	// System.Attribute[] System.ComponentModel.TypeDescriptor/AttributeProvider/AttributeTypeDescriptor::_attributeArray
+	// System.Attribute[] System.ComponentModel.TypeDescriptor_AttributeProvider_AttributeTypeDescriptor::_attributeArray
 	AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ____attributeArray_1;
 
 public:
@@ -5519,11 +5519,11 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider
+// System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider
 struct  ComNativeDescriptionProvider_tC63084A6A9080BAA8FB16E20E2847C18E5E3907D  : public TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591
 {
 public:
-	// System.ComponentModel.IComNativeDescriptorHandler System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider::_handler
+	// System.ComponentModel.IComNativeDescriptorHandler System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider::_handler
 	RuntimeObject* ____handler_2;
 
 public:
@@ -5538,13 +5538,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/TypeDescriptionNode
+// System.ComponentModel.TypeDescriptor_TypeDescriptionNode
 struct  TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1  : public TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591
 {
 public:
-	// System.ComponentModel.TypeDescriptor/TypeDescriptionNode System.ComponentModel.TypeDescriptor/TypeDescriptionNode::Next
+	// System.ComponentModel.TypeDescriptor_TypeDescriptionNode System.ComponentModel.TypeDescriptor_TypeDescriptionNode::Next
 	TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * ___Next_2;
-	// System.ComponentModel.TypeDescriptionProvider System.ComponentModel.TypeDescriptor/TypeDescriptionNode::Provider
+	// System.ComponentModel.TypeDescriptionProvider System.ComponentModel.TypeDescriptor_TypeDescriptionNode::Provider
 	TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591 * ___Provider_3;
 
 public:
@@ -5568,13 +5568,13 @@ public:
 };
 
 
-// System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor
+// System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor
 struct  DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE 
 {
 public:
-	// System.ComponentModel.TypeDescriptor/TypeDescriptionNode System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::_node
+	// System.ComponentModel.TypeDescriptor_TypeDescriptionNode System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::_node
 	TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * ____node_0;
-	// System.Object System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::_instance
+	// System.Object System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::_instance
 	RuntimeObject * ____instance_1;
 
 public:
@@ -5610,15 +5610,15 @@ struct DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE_m
 	Il2CppIUnknown* ____instance_1;
 };
 
-// System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor
+// System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor
 struct  DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 
 {
 public:
-	// System.ComponentModel.TypeDescriptor/TypeDescriptionNode System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::_node
+	// System.ComponentModel.TypeDescriptor_TypeDescriptionNode System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::_node
 	TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * ____node_0;
-	// System.Type System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::_objectType
+	// System.Type System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::_objectType
 	Type_t * ____objectType_1;
-	// System.Object System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::_instance
+	// System.Object System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::_instance
 	RuntimeObject * ____instance_2;
 
 public:
@@ -6083,7 +6083,7 @@ public:
 struct  Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7  : public MarshalByRefObject_tC4577953D0A44D0AB8597CFA868E01C858B1C9AF
 {
 public:
-	// System.IO.Stream/ReadWriteTask System.IO.Stream::_activeReadWriteTask
+	// System.IO.Stream_ReadWriteTask System.IO.Stream::_activeReadWriteTask
 	ReadWriteTask_tFA17EEE8BC5C4C83EAEFCC3662A30DE351ABAA80 * ____activeReadWriteTask_2;
 	// System.Threading.SemaphoreSlim System.IO.Stream::_asyncActiveSemaphore
 	SemaphoreSlim_t2E2888D1C0C8FAB80823C76F1602E4434B8FA048 * ____asyncActiveSemaphore_3;
@@ -6713,39 +6713,39 @@ public:
 struct U3CPrivateImplementationDetailsU3E_tD3F45A95FC1F3A32916F221D83F290D182AD6291_StaticFields
 {
 public:
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14 <PrivateImplementationDetails>::0283A6AF88802AB45989B29549915BEA0F6CD515
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D14 <PrivateImplementationDetails>::0283A6AF88802AB45989B29549915BEA0F6CD515
 	__StaticArrayInitTypeSizeU3D14_tC5D421D768E79910C98FB4504BA3B07E43FA77F0  ___0283A6AF88802AB45989B29549915BEA0F6CD515_0;
 	// System.Int64 <PrivateImplementationDetails>::03F4297FCC30D0FD5E420E5D26E7FA711167C7EF
 	int64_t ___03F4297FCC30D0FD5E420E5D26E7FA711167C7EF_1;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=9 <PrivateImplementationDetails>::1A39764B112685485A5BA7B2880D878B858C1A7A
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D9 <PrivateImplementationDetails>::1A39764B112685485A5BA7B2880D878B858C1A7A
 	__StaticArrayInitTypeSizeU3D9_tAB3C7ADC1E437C21F21AAF2C925676D0F9801BCB  ___1A39764B112685485A5BA7B2880D878B858C1A7A_2;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=3 <PrivateImplementationDetails>::1A84029C80CB5518379F199F53FF08A7B764F8FD
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D3 <PrivateImplementationDetails>::1A84029C80CB5518379F199F53FF08A7B764F8FD
 	__StaticArrayInitTypeSizeU3D3_t4D597C014C0C24F294DC84275F0264DCFCD4C575  ___1A84029C80CB5518379F199F53FF08A7B764F8FD_3;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12 <PrivateImplementationDetails>::3BE77BF818331C2D8400FFFFF9FADD3F16AD89AC
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D12 <PrivateImplementationDetails>::3BE77BF818331C2D8400FFFFF9FADD3F16AD89AC
 	__StaticArrayInitTypeSizeU3D12_t6EBCA221EDFF79F50821238316CFA0302EE70E48  ___3BE77BF818331C2D8400FFFFF9FADD3F16AD89AC_4;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10 <PrivateImplementationDetails>::53437C3B2572EDB9B8640C3195DF3BC2729C5EA1
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D10 <PrivateImplementationDetails>::53437C3B2572EDB9B8640C3195DF3BC2729C5EA1
 	__StaticArrayInitTypeSizeU3D10_tE6F7FB38485D609454F9A89335B38F479C5B6086  ___53437C3B2572EDB9B8640C3195DF3BC2729C5EA1_5;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32 <PrivateImplementationDetails>::59F5BD34B6C013DEACC784F69C67E95150033A84
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D32 <PrivateImplementationDetails>::59F5BD34B6C013DEACC784F69C67E95150033A84
 	__StaticArrayInitTypeSizeU3D32_t5300E5FCBD58716E8A4EBB9470E4FAE1A0A964FA  ___59F5BD34B6C013DEACC784F69C67E95150033A84_6;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6 <PrivateImplementationDetails>::5BC3486B05BA8CF4689C7BDB198B3F477BB4E20C
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D6 <PrivateImplementationDetails>::5BC3486B05BA8CF4689C7BDB198B3F477BB4E20C
 	__StaticArrayInitTypeSizeU3D6_tB024AE1C3AEB5C43235E76FFA23E64CD5EC3D87F  ___5BC3486B05BA8CF4689C7BDB198B3F477BB4E20C_7;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=9 <PrivateImplementationDetails>::6D49C9D487D7AD3491ECE08732D68A593CC2038D
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D9 <PrivateImplementationDetails>::6D49C9D487D7AD3491ECE08732D68A593CC2038D
 	__StaticArrayInitTypeSizeU3D9_tAB3C7ADC1E437C21F21AAF2C925676D0F9801BCB  ___6D49C9D487D7AD3491ECE08732D68A593CC2038D_8;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=128 <PrivateImplementationDetails>::6F3AD3DC3AF8047587C4C9D696EB68A01FEF796E
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D128 <PrivateImplementationDetails>::6F3AD3DC3AF8047587C4C9D696EB68A01FEF796E
 	__StaticArrayInitTypeSizeU3D128_t4A42759E6E25B0C61E6036A661F4344DE92C2905  ___6F3AD3DC3AF8047587C4C9D696EB68A01FEF796E_9;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=44 <PrivateImplementationDetails>::8E0EF3D67A3EB1863224EE3CACB424BC2F8CFBA3
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D44 <PrivateImplementationDetails>::8E0EF3D67A3EB1863224EE3CACB424BC2F8CFBA3
 	__StaticArrayInitTypeSizeU3D44_tE99A9434272A367C976B32D1235A23DA85CC9671  ___8E0EF3D67A3EB1863224EE3CACB424BC2F8CFBA3_10;
 	// System.Int64 <PrivateImplementationDetails>::98A44A6F8606AE6F23FE230286C1D6FBCC407226
 	int64_t ___98A44A6F8606AE6F23FE230286C1D6FBCC407226_11;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32 <PrivateImplementationDetails>::C02C28AFEBE998F767E4AF43E3BE8F5E9FA11536
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D32 <PrivateImplementationDetails>::C02C28AFEBE998F767E4AF43E3BE8F5E9FA11536
 	__StaticArrayInitTypeSizeU3D32_t5300E5FCBD58716E8A4EBB9470E4FAE1A0A964FA  ___C02C28AFEBE998F767E4AF43E3BE8F5E9FA11536_12;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=128 <PrivateImplementationDetails>::CCEEADA43268372341F81AE0C9208C6856441C04
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D128 <PrivateImplementationDetails>::CCEEADA43268372341F81AE0C9208C6856441C04
 	__StaticArrayInitTypeSizeU3D128_t4A42759E6E25B0C61E6036A661F4344DE92C2905  ___CCEEADA43268372341F81AE0C9208C6856441C04_13;
 	// System.Int64 <PrivateImplementationDetails>::E5BC1BAFADE1862DD6E0B9FB632BFAA6C3873A78
 	int64_t ___E5BC1BAFADE1862DD6E0B9FB632BFAA6C3873A78_14;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32 <PrivateImplementationDetails>::EC5842B3154E1AF94500B57220EB9F684BCCC42A
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D32 <PrivateImplementationDetails>::EC5842B3154E1AF94500B57220EB9F684BCCC42A
 	__StaticArrayInitTypeSizeU3D32_t5300E5FCBD58716E8A4EBB9470E4FAE1A0A964FA  ___EC5842B3154E1AF94500B57220EB9F684BCCC42A_15;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=256 <PrivateImplementationDetails>::EEAFE8C6E1AB017237567305EE925C976CDB6458
+	// <PrivateImplementationDetails>___StaticArrayInitTypeSizeU3D256 <PrivateImplementationDetails>::EEAFE8C6E1AB017237567305EE925C976CDB6458
 	__StaticArrayInitTypeSizeU3D256_t548520FAA2CCFC11107E283BF9E43588FAE5F6C7  ___EEAFE8C6E1AB017237567305EE925C976CDB6458_16;
 
 public:
@@ -6891,7 +6891,7 @@ public:
 struct  Hashtable_t978F65B8006C8F5504B286526AEC6608FF983FC9  : public RuntimeObject
 {
 public:
-	// System.Collections.Hashtable/bucket[] System.Collections.Hashtable::buckets
+	// System.Collections.Hashtable_bucket[] System.Collections.Hashtable::buckets
 	bucketU5BU5D_t6FF2C2C4B21F2206885CD19A78F68B874C8DC84A* ___buckets_10;
 	// System.Int32 System.Collections.Hashtable::count
 	int32_t ___count_11;
@@ -7827,11 +7827,11 @@ public:
 struct  DeflateStreamNative_t7370A3BA77DBD70CCF3355B3862D101135D0F1DB  : public RuntimeObject
 {
 public:
-	// System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite System.IO.Compression.DeflateStreamNative::feeder
+	// System.IO.Compression.DeflateStreamNative_UnmanagedReadOrWrite System.IO.Compression.DeflateStreamNative::feeder
 	UnmanagedReadOrWrite_tE27F26A26800EB8FA74A54956323F29F04E055B0 * ___feeder_0;
 	// System.IO.Stream System.IO.Compression.DeflateStreamNative::base_stream
 	Stream_tFC50657DD5AAB87770987F9179D934A51D99D5E7 * ___base_stream_1;
-	// System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle System.IO.Compression.DeflateStreamNative::z_stream
+	// System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle System.IO.Compression.DeflateStreamNative::z_stream
 	SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * ___z_stream_2;
 	// System.Runtime.InteropServices.GCHandle System.IO.Compression.DeflateStreamNative::data
 	GCHandle_t39FAEE3EA592432C93B574A31DD83B87F1847DE3  ___data_3;
@@ -8228,11 +8228,11 @@ public:
 };
 
 
-// System.Net.Configuration.ProxyElement/AutoDetectValues
+// System.Net.Configuration.ProxyElement_AutoDetectValues
 struct  AutoDetectValues_t5FBC7CB20B71835CA991AD2467E1E855EDC2B3AB 
 {
 public:
-	// System.Int32 System.Net.Configuration.ProxyElement/AutoDetectValues::value__
+	// System.Int32 System.Net.Configuration.ProxyElement_AutoDetectValues::value__
 	int32_t ___value___2;
 
 public:
@@ -8246,11 +8246,11 @@ public:
 };
 
 
-// System.Net.Configuration.ProxyElement/BypassOnLocalValues
+// System.Net.Configuration.ProxyElement_BypassOnLocalValues
 struct  BypassOnLocalValues_t42DDF7A85427F95302AEFDD4E70F5A4069622025 
 {
 public:
-	// System.Int32 System.Net.Configuration.ProxyElement/BypassOnLocalValues::value__
+	// System.Int32 System.Net.Configuration.ProxyElement_BypassOnLocalValues::value__
 	int32_t ___value___2;
 
 public:
@@ -8264,11 +8264,11 @@ public:
 };
 
 
-// System.Net.Configuration.ProxyElement/UseSystemDefaultValues
+// System.Net.Configuration.ProxyElement_UseSystemDefaultValues
 struct  UseSystemDefaultValues_tAE0283B8FBFE533D3F8F9ED4E9BD937878A86A55 
 {
 public:
-	// System.Int32 System.Net.Configuration.ProxyElement/UseSystemDefaultValues::value__
+	// System.Int32 System.Net.Configuration.ProxyElement_UseSystemDefaultValues::value__
 	int32_t ___value___2;
 
 public:
@@ -8354,11 +8354,11 @@ public:
 };
 
 
-// System.Net.HttpWebRequest/NtlmAuthState
+// System.Net.HttpWebRequest_NtlmAuthState
 struct  NtlmAuthState_tF501EE09345DFAE6FD7B4D8EBBE77292514DFA83 
 {
 public:
-	// System.Int32 System.Net.HttpWebRequest/NtlmAuthState::value__
+	// System.Int32 System.Net.HttpWebRequest_NtlmAuthState::value__
 	int32_t ___value___2;
 
 public:
@@ -8818,7 +8818,7 @@ public:
 	int32_t ___m_stateFlags_9;
 	// System.Object modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_continuationObject
 	RuntimeObject * ___m_continuationObject_10;
-	// System.Threading.Tasks.Task/ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_contingentProperties
+	// System.Threading.Tasks.Task_ContingentProperties modreq(System.Runtime.CompilerServices.IsVolatile) System.Threading.Tasks.Task::m_contingentProperties
 	ContingentProperties_t7149A27D01507C74E8BDAAA3848B45D2644FDF08 * ___m_contingentProperties_15;
 
 public:
@@ -8910,7 +8910,7 @@ public:
 	RuntimeObject * ___s_activeTasksLock_14;
 	// System.Action`1<System.Object> System.Threading.Tasks.Task::s_taskCancelCallback
 	Action_1_t551A279CEADCF6EEAE8FA2B1E1E757D0D15290D0 * ___s_taskCancelCallback_16;
-	// System.Func`1<System.Threading.Tasks.Task/ContingentProperties> System.Threading.Tasks.Task::s_createContingentProperties
+	// System.Func`1<System.Threading.Tasks.Task_ContingentProperties> System.Threading.Tasks.Task::s_createContingentProperties
 	Func_1_t48C2978A48CE3F2F6EB5B6DE269D00746483BB1F * ___s_createContingentProperties_17;
 	// System.Threading.Tasks.Task System.Threading.Tasks.Task::s_completedTask
 	Task_t1F48C203E163126EBC69ACCA679D1A462DEE9EB2 * ___s_completedTask_18;
@@ -9201,11 +9201,11 @@ public:
 };
 
 
-// System.Uri/Flags
+// System.Uri_Flags
 struct  Flags_tEBE7CABEBD13F16920D6950B384EB8F988250A2A 
 {
 public:
-	// System.UInt64 System.Uri/Flags::value__
+	// System.UInt64 System.Uri_Flags::value__
 	uint64_t ___value___2;
 
 public:
@@ -9298,7 +9298,7 @@ struct  TypeListConverter_tD02D4A8E7829B15240C8A2C2F54D5672513B05C0  : public Ty
 public:
 	// System.Type[] System.ComponentModel.TypeListConverter::types
 	TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* ___types_2;
-	// System.ComponentModel.TypeConverter/StandardValuesCollection System.ComponentModel.TypeListConverter::values
+	// System.ComponentModel.TypeConverter_StandardValuesCollection System.ComponentModel.TypeListConverter::values
 	StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3 * ___values_3;
 
 public:
@@ -9367,11 +9367,11 @@ public:
 };
 
 
-// System.ComponentModel.WeakHashtable/EqualityWeakReference
+// System.ComponentModel.WeakHashtable_EqualityWeakReference
 struct  EqualityWeakReference_t1A132A1151E232922D8016D93B3C6484D7792B54  : public WeakReference_t0495CC81CD6403E662B7700B802443F6F730E39D
 {
 public:
-	// System.Int32 System.ComponentModel.WeakHashtable/EqualityWeakReference::_hashCode
+	// System.Int32 System.ComponentModel.WeakHashtable_EqualityWeakReference::_hashCode
 	int32_t ____hashCode_2;
 
 public:
@@ -9938,7 +9938,7 @@ public:
 };
 
 
-// System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle
+// System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle
 struct  SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959  : public SafeHandle_t1E326D75E23FD5BB6D40BA322298FDC6526CC383
 {
 public:
@@ -10383,17 +10383,17 @@ public:
 };
 
 
-// System.Net.HttpWebRequest/AuthorizationState
+// System.Net.HttpWebRequest_AuthorizationState
 struct  AuthorizationState_t5C342070F47B5DBAE0089B8B6A391FDEB6914AAB 
 {
 public:
-	// System.Net.HttpWebRequest System.Net.HttpWebRequest/AuthorizationState::request
+	// System.Net.HttpWebRequest System.Net.HttpWebRequest_AuthorizationState::request
 	HttpWebRequest_t5B5BFA163B5AD6134620F315940CE3631D7FAAE0 * ___request_0;
-	// System.Boolean System.Net.HttpWebRequest/AuthorizationState::isProxy
+	// System.Boolean System.Net.HttpWebRequest_AuthorizationState::isProxy
 	bool ___isProxy_1;
-	// System.Boolean System.Net.HttpWebRequest/AuthorizationState::isCompleted
+	// System.Boolean System.Net.HttpWebRequest_AuthorizationState::isCompleted
 	bool ___isCompleted_2;
-	// System.Net.HttpWebRequest/NtlmAuthState System.Net.HttpWebRequest/AuthorizationState::ntlm_auth_state
+	// System.Net.HttpWebRequest_NtlmAuthState System.Net.HttpWebRequest_AuthorizationState::ntlm_auth_state
 	int32_t ___ntlm_auth_state_3;
 
 public:
@@ -10515,9 +10515,9 @@ public:
 	ArrayList_t4131E0C29C7E1B9BC9DFE37BEC41A5EB1481ADF4 * ___s_PrefixList_1;
 	// System.Object System.Net.WebRequest::s_InternalSyncObject
 	RuntimeObject * ___s_InternalSyncObject_2;
-	// System.Net.TimerThread/Queue System.Net.WebRequest::s_DefaultTimerQueue
+	// System.Net.TimerThread_Queue System.Net.WebRequest::s_DefaultTimerQueue
 	Queue_tCCFF6A2FCF584216AEDA04A483FB808E2D493643 * ___s_DefaultTimerQueue_3;
-	// System.Net.WebRequest/DesignerWebRequestCreate System.Net.WebRequest::webRequestCreate
+	// System.Net.WebRequest_DesignerWebRequestCreate System.Net.WebRequest::webRequestCreate
 	DesignerWebRequestCreate_t613DD91D4F07703DC65E847B367F4DCD5710E2A3 * ___webRequestCreate_9;
 	// System.Net.IWebProxy modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.WebRequest::s_DefaultWebProxy
 	RuntimeObject* ___s_DefaultWebProxy_10;
@@ -11033,9 +11033,9 @@ public:
 	UriParser_t07C77D673CCE8D2DA253B8A7ACCB010147F1A4AC * ___m_Syntax_15;
 	// System.String System.Uri::m_DnsSafeHost
 	String_t* ___m_DnsSafeHost_16;
-	// System.Uri/Flags System.Uri::m_Flags
+	// System.Uri_Flags System.Uri::m_Flags
 	uint64_t ___m_Flags_17;
-	// System.Uri/UriInfo System.Uri::m_Info
+	// System.Uri_UriInfo System.Uri::m_Info
 	UriInfo_t9FCC6BD4EC1EA14D75209E6A35417057BF6EDC5E * ___m_Info_18;
 	// System.Boolean System.Uri::m_iriParsing
 	bool ___m_iriParsing_19;
@@ -11440,7 +11440,7 @@ public:
 };
 
 
-// System.IO.Compression.DeflateStream/ReadMethod
+// System.IO.Compression.DeflateStream_ReadMethod
 struct  ReadMethod_t6D92A091070756743232D28A30A05FFCFB7928C4  : public MulticastDelegate_t
 {
 public:
@@ -11449,7 +11449,7 @@ public:
 };
 
 
-// System.IO.Compression.DeflateStream/WriteMethod
+// System.IO.Compression.DeflateStream_WriteMethod
 struct  WriteMethod_tA5073EA0B599530C5CB5FF202832E16DD4C48397  : public MulticastDelegate_t
 {
 public:
@@ -11458,7 +11458,7 @@ public:
 };
 
 
-// System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite
+// System.IO.Compression.DeflateStreamNative_UnmanagedReadOrWrite
 struct  UnmanagedReadOrWrite_tE27F26A26800EB8FA74A54956323F29F04E055B0  : public MulticastDelegate_t
 {
 public:
@@ -11682,9 +11682,9 @@ public:
 	MonoTlsSettings_t5905C7532C92A87F88C8F3440165DF8AA49A1BBF * ___tlsSettings_63;
 	// System.Net.ServerCertValidationCallback System.Net.HttpWebRequest::certValidationCallback
 	ServerCertValidationCallback_t431E949AECAE20901007813737F5B26311F5F9FB * ___certValidationCallback_64;
-	// System.Net.HttpWebRequest/AuthorizationState System.Net.HttpWebRequest::auth_state
+	// System.Net.HttpWebRequest_AuthorizationState System.Net.HttpWebRequest::auth_state
 	AuthorizationState_t5C342070F47B5DBAE0089B8B6A391FDEB6914AAB  ___auth_state_65;
-	// System.Net.HttpWebRequest/AuthorizationState System.Net.HttpWebRequest::proxy_auth_state
+	// System.Net.HttpWebRequest_AuthorizationState System.Net.HttpWebRequest::proxy_auth_state
 	AuthorizationState_t5C342070F47B5DBAE0089B8B6A391FDEB6914AAB  ___proxy_auth_state_66;
 	// System.String System.Net.HttpWebRequest::host
 	String_t* ___host_67;
@@ -13534,7 +13534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ThrowHelper_ThrowArgumentOutOfRangeExcep
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/AttributeFilterCacheItem::.ctor(System.Attribute[],System.Collections.ICollection)
+// System.Void System.ComponentModel.TypeDescriptor_AttributeFilterCacheItem::.ctor(System.Attribute[],System.Collections.ICollection)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttributeFilterCacheItem__ctor_m8319ED63E0DDDB46F62ED8DBC04CCD530C477AAF (AttributeFilterCacheItem_t8E137227F1585B34CFC9BEC30C7D155203FA0D01 * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___filter0, RuntimeObject* ___filteredMembers1, const RuntimeMethod* method)
 {
 	{
@@ -13546,7 +13546,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttributeFilterCacheItem__ctor_m8319ED63
 		return;
 	}
 }
-// System.Boolean System.ComponentModel.TypeDescriptor/AttributeFilterCacheItem::IsValid(System.Attribute[])
+// System.Boolean System.ComponentModel.TypeDescriptor_AttributeFilterCacheItem::IsValid(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AttributeFilterCacheItem_IsValid_m0218A992CF2B98E84CD36A2C037F948A5DDB6BF9 (AttributeFilterCacheItem_t8E137227F1585B34CFC9BEC30C7D155203FA0D01 * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___filter0, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -13619,7 +13619,7 @@ IL_0026:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/AttributeProvider::.ctor(System.ComponentModel.TypeDescriptionProvider,System.Attribute[])
+// System.Void System.ComponentModel.TypeDescriptor_AttributeProvider::.ctor(System.ComponentModel.TypeDescriptionProvider,System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttributeProvider__ctor_mC68C27A36CD20DF71F5F1FD7A4EF3DC2C0D3BD0A (AttributeProvider_t67BCE87062C434FBC0E369F34CCB196661DABFDF * __this, TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591 * ___existingProvider0, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attrs1, const RuntimeMethod* method)
 {
 	{
@@ -13630,7 +13630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttributeProvider__ctor_mC68C27A36CD20DF
 		return;
 	}
 }
-// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor/AttributeProvider::GetTypeDescriptor(System.Type,System.Object)
+// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor_AttributeProvider::GetTypeDescriptor(System.Type,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AttributeProvider_GetTypeDescriptor_m3695E1AA4427F2DCD40176B776A9921D79A69BEC (AttributeProvider_t67BCE87062C434FBC0E369F34CCB196661DABFDF * __this, Type_t * ___objectType0, RuntimeObject * ___instance1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13657,7 +13657,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AttributeProvider_GetTypeDescr
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/AttributeProvider/AttributeTypeDescriptor::.ctor(System.Attribute[],System.ComponentModel.ICustomTypeDescriptor)
+// System.Void System.ComponentModel.TypeDescriptor_AttributeProvider_AttributeTypeDescriptor::.ctor(System.Attribute[],System.ComponentModel.ICustomTypeDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttributeTypeDescriptor__ctor_mC117F3DDB0D2E79EE6732BE5D8950F246665DCC5 (AttributeTypeDescriptor_t4D6F2E9913F8B001ADF799DA77361BAEF574A6DE * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attrs0, RuntimeObject* ___parent1, const RuntimeMethod* method)
 {
 	{
@@ -13668,7 +13668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AttributeTypeDescriptor__ctor_mC117F3DDB
 		return;
 	}
 }
-// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor/AttributeProvider/AttributeTypeDescriptor::GetAttributes()
+// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor_AttributeProvider_AttributeTypeDescriptor::GetAttributes()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE * AttributeTypeDescriptor_GetAttributes_m0011703867B0FBD2C7C6A927B005BAA78742999C (AttributeTypeDescriptor_t4D6F2E9913F8B001ADF799DA77361BAEF574A6DE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13854,7 +13854,7 @@ IL_00af:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider::.ctor(System.ComponentModel.IComNativeDescriptorHandler)
+// System.Void System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider::.ctor(System.ComponentModel.IComNativeDescriptorHandler)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComNativeDescriptionProvider__ctor_mCB532BF72BDE7FBEFD35AEEBF76C6A4B9CE8684C (ComNativeDescriptionProvider_tC63084A6A9080BAA8FB16E20E2847C18E5E3907D * __this, RuntimeObject* ___handler0, const RuntimeMethod* method)
 {
 	{
@@ -13864,7 +13864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComNativeDescriptionProvider__ctor_mCB53
 		return;
 	}
 }
-// System.ComponentModel.IComNativeDescriptorHandler System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider::get_Handler()
+// System.ComponentModel.IComNativeDescriptorHandler System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider::get_Handler()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComNativeDescriptionProvider_get_Handler_mFDAA26D067DE2DE3A878E18B6E305D122366C6F9 (ComNativeDescriptionProvider_tC63084A6A9080BAA8FB16E20E2847C18E5E3907D * __this, const RuntimeMethod* method)
 {
 	{
@@ -13872,7 +13872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComNativeDescriptionProvider_g
 		return L_0;
 	}
 }
-// System.Void System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider::set_Handler(System.ComponentModel.IComNativeDescriptorHandler)
+// System.Void System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider::set_Handler(System.ComponentModel.IComNativeDescriptorHandler)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComNativeDescriptionProvider_set_Handler_m413D6825B451C480C8311EEB516FDE590D405542 (ComNativeDescriptionProvider_tC63084A6A9080BAA8FB16E20E2847C18E5E3907D * __this, RuntimeObject* ___value0, const RuntimeMethod* method)
 {
 	{
@@ -13881,7 +13881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComNativeDescriptionProvider_set_Handler
 		return;
 	}
 }
-// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider::GetTypeDescriptor(System.Type,System.Object)
+// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider::GetTypeDescriptor(System.Type,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ComNativeDescriptionProvider_GetTypeDescriptor_mF1301F5B79E73CABBEC1CF991639E67D4B898E46 (ComNativeDescriptionProvider_tC63084A6A9080BAA8FB16E20E2847C18E5E3907D * __this, Type_t * ___objectType0, RuntimeObject * ___instance1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13951,7 +13951,7 @@ IL_002d:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::.ctor(System.ComponentModel.IComNativeDescriptorHandler,System.Object)
+// System.Void System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::.ctor(System.ComponentModel.IComNativeDescriptorHandler,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComNativeTypeDescriptor__ctor_mC0FB87726953E70F7A8BEA40A225B01B2DDA00F4 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, RuntimeObject* ___handler0, RuntimeObject * ___instance1, const RuntimeMethod* method)
 {
 	{
@@ -13963,7 +13963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ComNativeTypeDescriptor__ctor_mC0FB87726
 		return;
 	}
 }
-// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
+// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetAttributes_mE5FC3BDFBD29CF0B37067EFD5E3A88549BA931B1 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13980,7 +13980,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttributeCollection_tBE6941BB802EDE34B7F986C1
 		return L_2;
 	}
 }
-// System.String System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
+// System.String System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetClassName_mF087F6356C4E89AB22F3AF8201823F1543E0F926 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13997,14 +13997,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ComNativeTypeDescriptor_System_Comp
 		return L_2;
 	}
 }
-// System.String System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
+// System.String System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetComponentName_m0D26F35DFD1F64A1A33D05931FA2547DE8A6F630 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	{
 		return (String_t*)NULL;
 	}
 }
-// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
+// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeConverter_t8306AE03734853B551DDF089C1F17836A7764DBB * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetConverter_m8787FD30060421E1EA2045F9B47A1DE58BA5E509 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14021,7 +14021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeConverter_t8306AE03734853B551DDF089C1F178
 		return L_2;
 	}
 }
-// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
+// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptor_tAB488D66C0409A1889EE56355848CDA43ED95222 * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent_m46CC31F740F1DBF6BAAAFE3A36A3505F16692901 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14038,7 +14038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptor_tAB488D66C0409A1889EE56355848
 		return L_2;
 	}
 }
-// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
+// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty_mE365AD557ED315421D7FAD8EFF205C1264D4B2A6 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14055,7 +14055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptor_tBF646D9949C932A92EEBD17E2
 		return L_2;
 	}
 }
-// System.Object System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
+// System.Object System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEditor_m28A94D6F0B9E814DC284868B0C8250FCD222A51D (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, Type_t * ___editorBaseType0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14073,7 +14073,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * ComNativeTypeDescriptor_Syste
 		return L_3;
 	}
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m949BAC05B43FF792C78B20B1896B7D51BB6B122F (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14090,7 +14090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B
 		return L_2;
 	}
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_mEEF28C5E15301769BE1D8DE448BE039936AF59E8 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14108,7 +14108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B
 		return L_3;
 	}
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_mFCF13A62E6A2C0AC32C4CCDC51F493DD38E26A79 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14125,7 +14125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609
 		return L_2;
 	}
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_mA29FC50606B6E3BA0BC975CD4524CF95F5F77263 (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14143,7 +14143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609
 		return L_3;
 	}
 }
-// System.Object System.ComponentModel.TypeDescriptor/ComNativeDescriptionProvider/ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+// System.Object System.ComponentModel.TypeDescriptor_ComNativeDescriptionProvider_ComNativeTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * ComNativeTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetPropertyOwner_m3FC79722589299BDB79C2C6798109A3FC3847B2A (ComNativeTypeDescriptor_t44C4B23471F1F0C1174FD5E9EB670AD77A974A9D * __this, PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * ___pd0, const RuntimeMethod* method)
 {
 	{
@@ -14159,7 +14159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * ComNativeTypeDescriptor_Syste
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/FilterCacheItem::.ctor(System.ComponentModel.Design.ITypeDescriptorFilterService,System.Collections.ICollection)
+// System.Void System.ComponentModel.TypeDescriptor_FilterCacheItem::.ctor(System.ComponentModel.Design.ITypeDescriptorFilterService,System.Collections.ICollection)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FilterCacheItem__ctor_m9398DF7D02FBE4926AFB8D768F6F0936E0929181 (FilterCacheItem_tDA029760025F0503AD352DE639152D69CA138DA4 * __this, RuntimeObject* ___filterService0, RuntimeObject* ___filteredMembers1, const RuntimeMethod* method)
 {
 	{
@@ -14171,7 +14171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FilterCacheItem__ctor_m9398DF7D02FBE4926
 		return;
 	}
 }
-// System.Boolean System.ComponentModel.TypeDescriptor/FilterCacheItem::IsValid(System.ComponentModel.Design.ITypeDescriptorFilterService)
+// System.Boolean System.ComponentModel.TypeDescriptor_FilterCacheItem::IsValid(System.ComponentModel.Design.ITypeDescriptorFilterService)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FilterCacheItem_IsValid_m91C02B95AF49F2BD09314CF2EB67F6090052B8B4 (FilterCacheItem_tDA029760025F0503AD352DE639152D69CA138DA4 * __this, RuntimeObject* ___filterService0, const RuntimeMethod* method)
 {
 	{
@@ -14199,7 +14199,7 @@ IL_000b:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Int32 System.ComponentModel.TypeDescriptor/MemberDescriptorComparer::Compare(System.Object,System.Object)
+// System.Int32 System.ComponentModel.TypeDescriptor_MemberDescriptorComparer::Compare(System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MemberDescriptorComparer_Compare_m9C56C6E64A892DB13EEB4B1F551B6F161B4C237E (MemberDescriptorComparer_t08208596E93DE2FB4472AB31B0316F98B288506D * __this, RuntimeObject * ___left0, RuntimeObject * ___right1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14221,7 +14221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MemberDescriptorComparer_Compare_m9C5
 		return L_5;
 	}
 }
-// System.Void System.ComponentModel.TypeDescriptor/MemberDescriptorComparer::.ctor()
+// System.Void System.ComponentModel.TypeDescriptor_MemberDescriptorComparer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MemberDescriptorComparer__ctor_mE0D379E9AA3712B69614E48771226910DE517618 (MemberDescriptorComparer_t08208596E93DE2FB4472AB31B0316F98B288506D * __this, const RuntimeMethod* method)
 {
 	{
@@ -14229,7 +14229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MemberDescriptorComparer__ctor_mE0D379E9
 		return;
 	}
 }
-// System.Void System.ComponentModel.TypeDescriptor/MemberDescriptorComparer::.cctor()
+// System.Void System.ComponentModel.TypeDescriptor_MemberDescriptorComparer::.cctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MemberDescriptorComparer__cctor_m9E4FF9CCCC93BEE24671FD459069CB7793ED97C6 (const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14253,7 +14253,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MemberDescriptorComparer__cctor_m9E4FF9C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::.ctor(System.ComponentModel.ICustomTypeDescriptor,System.ComponentModel.ICustomTypeDescriptor)
+// System.Void System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::.ctor(System.ComponentModel.ICustomTypeDescriptor,System.ComponentModel.ICustomTypeDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MergedTypeDescriptor__ctor_m07BED02593A42C075C4F95B23D208CF1222C12A0 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, RuntimeObject* ___primary0, RuntimeObject* ___secondary1, const RuntimeMethod* method)
 {
 	{
@@ -14265,7 +14265,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MergedTypeDescriptor__ctor_m07BED02593A4
 		return;
 	}
 }
-// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
+// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetAttributes_m2DD60D9C133AE18F38D7A27189168A2FBF3729FD (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14299,7 +14299,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.String System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
+// System.String System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetClassName_m51465B550440AD0C8661563316256112BAB0C537 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14333,7 +14333,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.String System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
+// System.String System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetComponentName_mFF777A710653F0BD5AE3E0B5AF10254D319E8420 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14367,7 +14367,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
+// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeConverter_t8306AE03734853B551DDF089C1F17836A7764DBB * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetConverter_mFC2AC7E8BEF7680E424A34D335EB4FCC9A6BACB6 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14401,7 +14401,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
+// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptor_tAB488D66C0409A1889EE56355848CDA43ED95222 * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent_m2B996229BED2945485F72901952DB3C78EDBD077 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14435,7 +14435,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
+// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty_mB703584702A85757837F23B27A715723681B2162 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14469,7 +14469,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.Object System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
+// System.Object System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEditor_m675181A242011A51DEA804FEFF957B160C165D6C (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, Type_t * ___editorBaseType0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14521,7 +14521,7 @@ IL_0031:
 		return L_10;
 	}
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m59E8A40CD7A5B6DFE3AF323CEA4FFED38574DAD8 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14555,7 +14555,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m25103AFA79F66B26E782085D798D8D5467CCE0A8 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14591,7 +14591,7 @@ IL_001d:
 		return L_7;
 	}
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_m5C461A51153A91C829F3F75CC2E2D7AD2933BC69 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14625,7 +14625,7 @@ IL_001b:
 		return L_5;
 	}
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_m9C59F8E3A2F518EBBE770B6ABE66B82796B18F63 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14661,7 +14661,7 @@ IL_001d:
 		return L_7;
 	}
 }
-// System.Object System.ComponentModel.TypeDescriptor/MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+// System.Object System.ComponentModel.TypeDescriptor_MergedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * MergedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetPropertyOwner_mB34132962484E99CF6CBA0CDFB462B2F0F243C13 (MergedTypeDescriptor_t9395D9B4F23C94B7997A9ED698CBEF7995EB162B * __this, PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * ___pd0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14705,7 +14705,7 @@ IL_001d:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/TypeDescriptionNode::.ctor(System.ComponentModel.TypeDescriptionProvider)
+// System.Void System.ComponentModel.TypeDescriptor_TypeDescriptionNode::.ctor(System.ComponentModel.TypeDescriptionProvider)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeDescriptionNode__ctor_m18D16A33443D7C6C32D09203AE94E5A5DA65BDFF (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, TypeDescriptionProvider_tE390829A953C44525366CA2A733E92642B97B591 * ___provider0, const RuntimeMethod* method)
 {
 	{
@@ -14715,7 +14715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeDescriptionNode__ctor_m18D16A33443D7
 		return;
 	}
 }
-// System.Object System.ComponentModel.TypeDescriptor/TypeDescriptionNode::CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])
+// System.Object System.ComponentModel.TypeDescriptor_TypeDescriptionNode::CreateInstance(System.IServiceProvider,System.Type,System.Type[],System.Object[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * TypeDescriptionNode_CreateInstance_m8DE4377C62A0EF6738F487193FC20302733BE49B (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, RuntimeObject* ___provider0, Type_t * ___objectType1, TypeU5BU5D_t7FE623A666B49176DE123306221193E888A12F5F* ___argTypes2, ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* ___args3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14790,7 +14790,7 @@ IL_003f:
 		return L_15;
 	}
 }
-// System.Collections.IDictionary System.ComponentModel.TypeDescriptor/TypeDescriptionNode::GetCache(System.Object)
+// System.Collections.IDictionary System.ComponentModel.TypeDescriptor_TypeDescriptionNode::GetCache(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TypeDescriptionNode_GetCache_m275E9B8AA100455DA54B9CBD3581B9556C5DE825 (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, RuntimeObject * ___instance0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14821,7 +14821,7 @@ IL_000e:
 		return L_4;
 	}
 }
-// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor/TypeDescriptionNode::GetExtendedTypeDescriptor(System.Object)
+// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor_TypeDescriptionNode::GetExtendedTypeDescriptor(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TypeDescriptionNode_GetExtendedTypeDescriptor_m014DF481F410A49BBB0B087DD65EA4DBD51E9AF2 (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, RuntimeObject * ___instance0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14854,7 +14854,7 @@ IL_000e:
 		return (RuntimeObject*)L_5;
 	}
 }
-// System.ComponentModel.IExtenderProvider[] System.ComponentModel.TypeDescriptor/TypeDescriptionNode::GetExtenderProviders(System.Object)
+// System.ComponentModel.IExtenderProvider[] System.ComponentModel.TypeDescriptor_TypeDescriptionNode::GetExtenderProviders(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IExtenderProviderU5BU5D_t98121652302DA48EF1CB12054524D95ED4B63031* TypeDescriptionNode_GetExtenderProviders_mA26764DE3C998BCD030B9E111462EB622BB127BE (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, RuntimeObject * ___instance0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14885,7 +14885,7 @@ IL_000e:
 		return L_4;
 	}
 }
-// System.String System.ComponentModel.TypeDescriptor/TypeDescriptionNode::GetFullComponentName(System.Object)
+// System.String System.ComponentModel.TypeDescriptor_TypeDescriptionNode::GetFullComponentName(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TypeDescriptionNode_GetFullComponentName_m2A7751892ED983AAFFFF84BD961C6839D809AB07 (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, RuntimeObject * ___component0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14916,7 +14916,7 @@ IL_000e:
 		return L_4;
 	}
 }
-// System.Type System.ComponentModel.TypeDescriptor/TypeDescriptionNode::GetReflectionType(System.Type,System.Object)
+// System.Type System.ComponentModel.TypeDescriptor_TypeDescriptionNode::GetReflectionType(System.Type,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * TypeDescriptionNode_GetReflectionType_m4C80319088CB3DFFEF76A5DB4C862FCDD98BDC92 (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, Type_t * ___objectType0, RuntimeObject * ___instance1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14950,7 +14950,7 @@ IL_0014:
 		return L_6;
 	}
 }
-// System.Type System.ComponentModel.TypeDescriptor/TypeDescriptionNode::GetRuntimeType(System.Type)
+// System.Type System.ComponentModel.TypeDescriptor_TypeDescriptionNode::GetRuntimeType(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t * TypeDescriptionNode_GetRuntimeType_m628C321FDB6C9718D142459A34BA726DDFFA8E8C (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, Type_t * ___objectType0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -14983,7 +14983,7 @@ IL_0014:
 		return L_5;
 	}
 }
-// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor/TypeDescriptionNode::GetTypeDescriptor(System.Type,System.Object)
+// System.ComponentModel.ICustomTypeDescriptor System.ComponentModel.TypeDescriptor_TypeDescriptionNode::GetTypeDescriptor(System.Type,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TypeDescriptionNode_GetTypeDescriptor_m55BB50B1A0B0542BD4736FE3F7A14A7ABEC94903 (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, Type_t * ___objectType0, RuntimeObject * ___instance1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15043,7 +15043,7 @@ IL_002b:
 		return (RuntimeObject*)L_12;
 	}
 }
-// System.Boolean System.ComponentModel.TypeDescriptor/TypeDescriptionNode::IsSupportedType(System.Type)
+// System.Boolean System.ComponentModel.TypeDescriptor_TypeDescriptionNode::IsSupportedType(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TypeDescriptionNode_IsSupportedType_mEBB9DAD80FFEF24046762B4FBB323D91119A828F (TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * __this, Type_t * ___type0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15114,7 +15114,7 @@ IL2CPP_EXTERN_C void DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878
 IL2CPP_EXTERN_C void DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE_marshal_com_cleanup(DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE_marshaled_com& marshaled)
 {
 }
-// System.Void System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::.ctor(System.ComponentModel.TypeDescriptor/TypeDescriptionNode,System.Object)
+// System.Void System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::.ctor(System.ComponentModel.TypeDescriptor_TypeDescriptionNode,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultExtendedTypeDescriptor__ctor_mD297D84C0AEF8C2AF0867391BD0FD037D8E6AB86 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * ___node0, RuntimeObject * ___instance1, const RuntimeMethod* method)
 {
 	{
@@ -15131,7 +15131,7 @@ IL2CPP_EXTERN_C  void DefaultExtendedTypeDescriptor__ctor_mD297D84C0AEF8C2AF0867
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	DefaultExtendedTypeDescriptor__ctor_mD297D84C0AEF8C2AF0867391BD0FD037D8E6AB86(_thisAdjusted, ___node0, ___instance1, method);
 }
-// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
+// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetAttributes_mF4C670B634C8C86057E939F3DD5EAA4173DAB1A8 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15248,7 +15248,7 @@ IL2CPP_EXTERN_C  AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE *
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetAttributes_mF4C670B634C8C86057E939F3DD5EAA4173DAB1A8(_thisAdjusted, method);
 }
-// System.String System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
+// System.String System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetClassName_m5D43CCB75E8BBD373FFEFDA99B6B37FA300AD884 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15351,7 +15351,7 @@ IL2CPP_EXTERN_C  String_t* DefaultExtendedTypeDescriptor_System_ComponentModel_I
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetClassName_m5D43CCB75E8BBD373FFEFDA99B6B37FA300AD884(_thisAdjusted, method);
 }
-// System.String System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
+// System.String System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetComponentName_m91CEE12D87F75538C0B99BA82D7C0AFE8B670D55 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15434,7 +15434,7 @@ IL2CPP_EXTERN_C  String_t* DefaultExtendedTypeDescriptor_System_ComponentModel_I
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetComponentName_m91CEE12D87F75538C0B99BA82D7C0AFE8B670D55(_thisAdjusted, method);
 }
-// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
+// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeConverter_t8306AE03734853B551DDF089C1F17836A7764DBB * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetConverter_mE26BB774C31A0760EC238B30A3BDE0EE202EF1A6 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15551,7 +15551,7 @@ IL2CPP_EXTERN_C  TypeConverter_t8306AE03734853B551DDF089C1F17836A7764DBB * Defau
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetConverter_mE26BB774C31A0760EC238B30A3BDE0EE202EF1A6(_thisAdjusted, method);
 }
-// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
+// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptor_tAB488D66C0409A1889EE56355848CDA43ED95222 * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent_m64A8A46A22725FD8BC8DE809966CB860B17D1143 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15634,7 +15634,7 @@ IL2CPP_EXTERN_C  EventDescriptor_tAB488D66C0409A1889EE56355848CDA43ED95222 * Def
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent_m64A8A46A22725FD8BC8DE809966CB860B17D1143(_thisAdjusted, method);
 }
-// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
+// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty_mF6A776BFECC0FC3642D5557E136B8D79EAD7F37A (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15717,7 +15717,7 @@ IL2CPP_EXTERN_C  PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * 
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty_mF6A776BFECC0FC3642D5557E136B8D79EAD7F37A(_thisAdjusted, method);
 }
-// System.Object System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
+// System.Object System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEditor_mE808899AE1F543555DD1463F2DD417986A7A5DBA (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, Type_t * ___editorBaseType0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15818,7 +15818,7 @@ IL2CPP_EXTERN_C  RuntimeObject * DefaultExtendedTypeDescriptor_System_ComponentM
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEditor_mE808899AE1F543555DD1463F2DD417986A7A5DBA(_thisAdjusted, ___editorBaseType0, method);
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m9540E53C7641A9CEC8CBE91843B77E0C513DC2A2 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15935,7 +15935,7 @@ IL2CPP_EXTERN_C  EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m9540E53C7641A9CEC8CBE91843B77E0C513DC2A2(_thisAdjusted, method);
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m11104BC84FB6A513D07BA11516697FEF495D87D6 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16053,7 +16053,7 @@ IL2CPP_EXTERN_C  EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m11104BC84FB6A513D07BA11516697FEF495D87D6(_thisAdjusted, ___attributes0, method);
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_mCD9AF5CF5F30A8A6F9125272F6AB969039A96DA7 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16170,7 +16170,7 @@ IL2CPP_EXTERN_C  PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_mCD9AF5CF5F30A8A6F9125272F6AB969039A96DA7(_thisAdjusted, method);
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_m46AE37DFC7FBE5AE7641AD20F09C09109313E2AC (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16288,7 +16288,7 @@ IL2CPP_EXTERN_C  PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A
 	DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * _thisAdjusted = reinterpret_cast<DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE *>(__this + _offset);
 	return DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_m46AE37DFC7FBE5AE7641AD20F09C09109313E2AC(_thisAdjusted, ___attributes0, method);
 }
-// System.Object System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+// System.Object System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultExtendedTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DefaultExtendedTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetPropertyOwner_mAEAB33B88BA45952CD04F3C3B2901997A7C17035 (DefaultExtendedTypeDescriptor_t89890252F6A685D141ECBB0C2878C6E913883ECE * __this, PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * ___pd0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16427,7 +16427,7 @@ IL2CPP_EXTERN_C void DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E7469
 IL2CPP_EXTERN_C void DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4_marshal_com_cleanup(DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4_marshaled_com& marshaled)
 {
 }
-// System.Void System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::.ctor(System.ComponentModel.TypeDescriptor/TypeDescriptionNode,System.Type,System.Object)
+// System.Void System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::.ctor(System.ComponentModel.TypeDescriptor_TypeDescriptionNode,System.Type,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DefaultTypeDescriptor__ctor_m8542D50B70E1A86255B2C64908C9397B971BBC90 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, TypeDescriptionNode_t8C5D3A02DB612FFE1DE12251E49EC265DE6B81E1 * ___node0, Type_t * ___objectType1, RuntimeObject * ___instance2, const RuntimeMethod* method)
 {
 	{
@@ -16446,7 +16446,7 @@ IL2CPP_EXTERN_C  void DefaultTypeDescriptor__ctor_m8542D50B70E1A86255B2C64908C93
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	DefaultTypeDescriptor__ctor_m8542D50B70E1A86255B2C64908C9397B971BBC90(_thisAdjusted, ___node0, ___objectType1, ___instance2, method);
 }
-// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
+// System.ComponentModel.AttributeCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetAttributes()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetAttributes_m6EEBB8DB4E72761D9CB03978D149295CFE2B39EC (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16565,7 +16565,7 @@ IL2CPP_EXTERN_C  AttributeCollection_tBE6941BB802EDE34B7F986C14A7D7E3A4E135EBE *
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetAttributes_m6EEBB8DB4E72761D9CB03978D149295CFE2B39EC(_thisAdjusted, method);
 }
-// System.String System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
+// System.String System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetClassName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetClassName_m046387DF4AF6D4272E79CCBFA30F12CD98B68475 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16668,7 +16668,7 @@ IL2CPP_EXTERN_C  String_t* DefaultTypeDescriptor_System_ComponentModel_ICustomTy
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetClassName_m046387DF4AF6D4272E79CCBFA30F12CD98B68475(_thisAdjusted, method);
 }
-// System.String System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
+// System.String System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetComponentName()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetComponentName_m0EC92A5859516DD6DF83776057C9058F5AA8BAB7 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16761,7 +16761,7 @@ IL2CPP_EXTERN_C  String_t* DefaultTypeDescriptor_System_ComponentModel_ICustomTy
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetComponentName_m0EC92A5859516DD6DF83776057C9058F5AA8BAB7(_thisAdjusted, method);
 }
-// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
+// System.ComponentModel.TypeConverter System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetConverter()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TypeConverter_t8306AE03734853B551DDF089C1F17836A7764DBB * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetConverter_mA5D26F3E5D42548F740BD72B1AA9AE1CE89EC6E7 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16881,7 +16881,7 @@ IL2CPP_EXTERN_C  TypeConverter_t8306AE03734853B551DDF089C1F17836A7764DBB * Defau
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetConverter_mA5D26F3E5D42548F740BD72B1AA9AE1CE89EC6E7(_thisAdjusted, method);
 }
-// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
+// System.ComponentModel.EventDescriptor System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptor_tAB488D66C0409A1889EE56355848CDA43ED95222 * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent_m3E1B70BE228C493EFE28B4113386B6E458711885 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16974,7 +16974,7 @@ IL2CPP_EXTERN_C  EventDescriptor_tAB488D66C0409A1889EE56355848CDA43ED95222 * Def
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultEvent_m3E1B70BE228C493EFE28B4113386B6E458711885(_thisAdjusted, method);
 }
-// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
+// System.ComponentModel.PropertyDescriptor System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty_mBBB5F91194AD6416D9304680E2FADE81A0E45003 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17067,7 +17067,7 @@ IL2CPP_EXTERN_C  PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * 
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetDefaultProperty_mBBB5F91194AD6416D9304680E2FADE81A0E45003(_thisAdjusted, method);
 }
-// System.Object System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
+// System.Object System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEditor_m6EA05D046F2D53D0CFEB626BA904EE3C3803E280 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, Type_t * ___editorBaseType0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17178,7 +17178,7 @@ IL2CPP_EXTERN_C  RuntimeObject * DefaultTypeDescriptor_System_ComponentModel_ICu
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEditor_m6EA05D046F2D53D0CFEB626BA904EE3C3803E280(_thisAdjusted, ___editorBaseType0, method);
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_mC1BE8372C6CD943C9C9E6476902D394A710B2E26 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17297,7 +17297,7 @@ IL2CPP_EXTERN_C  EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_mC1BE8372C6CD943C9C9E6476902D394A710B2E26(_thisAdjusted, method);
 }
-// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
+// System.ComponentModel.EventDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1FF37 * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m25A1DB4DA858C18CF8717BFF4FC771283F60D035 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17417,7 +17417,7 @@ IL2CPP_EXTERN_C  EventDescriptorCollection_tB9FC461177F5D7FE0B79268C77569B36F4E1
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetEvents_m25A1DB4DA858C18CF8717BFF4FC771283F60D035(_thisAdjusted, ___attributes0, method);
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_mE25AA0FCA6D4DAD1D1C671F258B3C9B23A9D3354 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17536,7 +17536,7 @@ IL2CPP_EXTERN_C  PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_mE25AA0FCA6D4DAD1D1C671F258B3C9B23A9D3354(_thisAdjusted, method);
 }
-// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
+// System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetProperties(System.Attribute[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A04B41A2 * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_m45476E33EA6039C732EF799D4E95FAE74AD67B36 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, AttributeU5BU5D_t777BEFAB7857CFA5F0EE6C3EB1F8F7FF61F00A17* ___attributes0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17656,7 +17656,7 @@ IL2CPP_EXTERN_C  PropertyDescriptorCollection_t19FEFDD6CEF7609BB10282A4B52C3C09A
 	DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * _thisAdjusted = reinterpret_cast<DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 *>(__this + _offset);
 	return DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetProperties_m45476E33EA6039C732EF799D4E95FAE74AD67B36(_thisAdjusted, ___attributes0, method);
 }
-// System.Object System.ComponentModel.TypeDescriptor/TypeDescriptionNode/DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
+// System.Object System.ComponentModel.TypeDescriptor_TypeDescriptionNode_DefaultTypeDescriptor::System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * DefaultTypeDescriptor_System_ComponentModel_ICustomTypeDescriptor_GetPropertyOwner_mD52D6FEDD198A4C2E7E2EA5B3FA7F9312D48C612 (DefaultTypeDescriptor_t45C7CF272F02817B0F1C69470B4E786E746996F4 * __this, PropertyDescriptor_tBF646D9949C932A92EEBD17E2EB6AD07D18B7C9D * ___pd0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17768,7 +17768,7 @@ IL2CPP_EXTERN_C  RuntimeObject * DefaultTypeDescriptor_System_ComponentModel_ICu
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/TypeDescriptorComObject::.ctor()
+// System.Void System.ComponentModel.TypeDescriptor_TypeDescriptorComObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeDescriptorComObject__ctor_mF8F4F25FBC2087C47914CEB063D272CDD1969795 (TypeDescriptorComObject_t531EE8D60EE83A09B6539D079E837E68DC289B76 * __this, const RuntimeMethod* method)
 {
 	{
@@ -17784,7 +17784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeDescriptorComObject__ctor_mF8F4F25FB
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.TypeDescriptor/TypeDescriptorInterface::.ctor()
+// System.Void System.ComponentModel.TypeDescriptor_TypeDescriptorInterface::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeDescriptorInterface__ctor_mF30410D47F5161CB50BB5FADFC15BDF9BB643F96 (TypeDescriptorInterface_t872F528EF86C66103396D4D796A932A0FF88C4D7 * __this, const RuntimeMethod* method)
 {
 	{
@@ -18079,7 +18079,7 @@ IL_00a9:
 		return L_35;
 	}
 }
-// System.ComponentModel.TypeConverter/StandardValuesCollection System.ComponentModel.TypeListConverter::GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
+// System.ComponentModel.TypeConverter_StandardValuesCollection System.ComponentModel.TypeListConverter::GetStandardValues(System.ComponentModel.ITypeDescriptorContext)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StandardValuesCollection_t929677712574EF02F5C4CF4C38E070841C20BDA3 * TypeListConverter_GetStandardValues_m2E28BC36E53206804B1C7133766285C21A34B733 (TypeListConverter_tD02D4A8E7829B15240C8A2C2F54D5672513B05C0 * __this, RuntimeObject* ___context0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18661,7 +18661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeakHashtable_SetWeak_m3DA0C3EB8F3903CBE
 		EqualityWeakReference_t1A132A1151E232922D8016D93B3C6484D7792B54 * L_1 = (EqualityWeakReference_t1A132A1151E232922D8016D93B3C6484D7792B54 *)il2cpp_codegen_object_new(EqualityWeakReference_t1A132A1151E232922D8016D93B3C6484D7792B54_il2cpp_TypeInfo_var);
 		EqualityWeakReference__ctor_mCE187B675C7795222F1E6F6A6FA6BA04A77BBF93(L_1, L_0, /*hidden argument*/NULL);
 		RuntimeObject * L_2 = ___value1;
-		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(30 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, __this, L_1, L_2);
+		VirtActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(31 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, __this, L_1, L_2);
 		return;
 	}
 }
@@ -18690,7 +18690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeakHashtable_ScavengeKeys_m4DFF0FB9AE11
 	il2cpp::utils::LeaveTargetStack __leave_targets(__leave_targets_storage);
 	NO_UNUSED_WARNING (__leave_targets);
 	{
-		int32_t L_0 = VirtFuncInvoker0< int32_t >::Invoke(41 /* System.Int32 System.Collections.Hashtable::get_Count() */, __this);
+		int32_t L_0 = VirtFuncInvoker0< int32_t >::Invoke(42 /* System.Int32 System.Collections.Hashtable::get_Count() */, __this);
 		V_0 = L_0;
 		int32_t L_1 = V_0;
 		if (L_1)
@@ -18756,7 +18756,7 @@ IL_0032:
 	}
 	{
 		V_3 = (ArrayList_t4131E0C29C7E1B9BC9DFE37BEC41A5EB1481ADF4 *)NULL;
-		RuntimeObject* L_14 = VirtFuncInvoker0< RuntimeObject* >::Invoke(37 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, __this);
+		RuntimeObject* L_14 = VirtFuncInvoker0< RuntimeObject* >::Invoke(38 /* System.Collections.ICollection System.Collections.Hashtable::get_Keys() */, __this);
 		NullCheck(L_14);
 		RuntimeObject* L_15 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.IEnumerator System.Collections.IEnumerable::GetEnumerator() */, IEnumerable_tD74549CEA1AA48E768382B94FEACBB07E2E3FA2C_il2cpp_TypeInfo_var, L_14);
 		V_4 = L_15;
@@ -18898,7 +18898,7 @@ IL_00d5:
 			RuntimeObject * L_34 = InterfaceFuncInvoker0< RuntimeObject * >::Invoke(1 /* System.Object System.Collections.IEnumerator::get_Current() */, IEnumerator_t8789118187258CC88B77AFAC6315B5AF87D3E18A_il2cpp_TypeInfo_var, L_33);
 			V_7 = L_34;
 			RuntimeObject * L_35 = V_7;
-			VirtActionInvoker1< RuntimeObject * >::Invoke(39 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, __this, L_35);
+			VirtActionInvoker1< RuntimeObject * >::Invoke(40 /* System.Void System.Collections.Hashtable::Remove(System.Object) */, __this, L_35);
 		}
 
 IL_00e6:
@@ -18986,7 +18986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeakHashtable__cctor_m7EECB04C288887CC89
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void System.ComponentModel.WeakHashtable/EqualityWeakReference::.ctor(System.Object)
+// System.Void System.ComponentModel.WeakHashtable_EqualityWeakReference::.ctor(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EqualityWeakReference__ctor_mCE187B675C7795222F1E6F6A6FA6BA04A77BBF93 (EqualityWeakReference_t1A132A1151E232922D8016D93B3C6484D7792B54 * __this, RuntimeObject * ___o0, const RuntimeMethod* method)
 {
 	{
@@ -18999,7 +18999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EqualityWeakReference__ctor_mCE187B675C7
 		return;
 	}
 }
-// System.Boolean System.ComponentModel.WeakHashtable/EqualityWeakReference::Equals(System.Object)
+// System.Boolean System.ComponentModel.WeakHashtable_EqualityWeakReference::Equals(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EqualityWeakReference_Equals_mE28851C868E3A6BE45E5A8FBC9A798B2C88124EF (EqualityWeakReference_t1A132A1151E232922D8016D93B3C6484D7792B54 * __this, RuntimeObject * ___o0, const RuntimeMethod* method)
 {
 	{
@@ -19062,7 +19062,7 @@ IL_002c:
 		return (bool)0;
 	}
 }
-// System.Int32 System.ComponentModel.WeakHashtable/EqualityWeakReference::GetHashCode()
+// System.Int32 System.ComponentModel.WeakHashtable_EqualityWeakReference::GetHashCode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EqualityWeakReference_GetHashCode_mB8A598D608B12E15EF3451E5AC44D983A8C119D9 (EqualityWeakReference_t1A132A1151E232922D8016D93B3C6484D7792B54 * __this, const RuntimeMethod* method)
 {
 	{
@@ -19078,7 +19078,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EqualityWeakReference_GetHashCode_mB8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean System.ComponentModel.WeakHashtable/WeakKeyComparer::System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
+// System.Boolean System.ComponentModel.WeakHashtable_WeakKeyComparer::System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WeakKeyComparer_System_Collections_IEqualityComparer_Equals_mC3D733EAC828C7C1C1B8F0890B0CD86F67F3668C (WeakKeyComparer_tFF7B45BE010723C01B3F3205FEBCC915543996B3 * __this, RuntimeObject * ___x0, RuntimeObject * ___y1, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -19194,7 +19194,7 @@ IL_0056:
 		return (bool)0;
 	}
 }
-// System.Int32 System.ComponentModel.WeakHashtable/WeakKeyComparer::System.Collections.IEqualityComparer.GetHashCode(System.Object)
+// System.Int32 System.ComponentModel.WeakHashtable_WeakKeyComparer::System.Collections.IEqualityComparer.GetHashCode(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WeakKeyComparer_System_Collections_IEqualityComparer_GetHashCode_m8A2DBF9E2E7D75717DF22C7CF88550E0502E2F98 (WeakKeyComparer_tFF7B45BE010723C01B3F3205FEBCC915543996B3 * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
 {
 	{
@@ -19204,7 +19204,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WeakKeyComparer_System_Collections_IE
 		return L_1;
 	}
 }
-// System.Void System.ComponentModel.WeakHashtable/WeakKeyComparer::.ctor()
+// System.Void System.ComponentModel.WeakHashtable_WeakKeyComparer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WeakKeyComparer__ctor_m084512BBA20EA3050E018C920AF05AA43F1EC704 (WeakKeyComparer_tFF7B45BE010723C01B3F3205FEBCC915543996B3 * __this, const RuntimeMethod* method)
 {
 	{
@@ -25436,14 +25436,14 @@ IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper_ReadMethod_t6D92A091070756743232
 
 	return returnValue;
 }
-// System.Void System.IO.Compression.DeflateStream/ReadMethod::.ctor(System.Object,System.IntPtr)
+// System.Void System.IO.Compression.DeflateStream_ReadMethod::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadMethod__ctor_mE53B3E39C00317DB30A832EBD379AACF17BFD3BD (ReadMethod_t6D92A091070756743232D28A30A05FFCFB7928C4 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// System.Int32 System.IO.Compression.DeflateStream/ReadMethod::Invoke(System.Byte[],System.Int32,System.Int32)
+// System.Int32 System.IO.Compression.DeflateStream_ReadMethod::Invoke(System.Byte[],System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReadMethod_Invoke_mDCA2E9597327B1D35024F87A14D9051699DF92BD (ReadMethod_t6D92A091070756743232D28A30A05FFCFB7928C4 * __this, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___array0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method)
 {
 	int32_t result = 0;
@@ -25561,7 +25561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReadMethod_Invoke_mDCA2E9597327B1D350
 	}
 	return result;
 }
-// System.IAsyncResult System.IO.Compression.DeflateStream/ReadMethod::BeginInvoke(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.IO.Compression.DeflateStream_ReadMethod::BeginInvoke(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReadMethod_BeginInvoke_m2871C6371F597633A3A9F73AB1F13955AEFD7832 (ReadMethod_t6D92A091070756743232D28A30A05FFCFB7928C4 * __this, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___array0, int32_t ___offset1, int32_t ___count2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25576,7 +25576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReadMethod_BeginInvoke_m2871C6
 	__d_args[2] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &___count2);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
 }
-// System.Int32 System.IO.Compression.DeflateStream/ReadMethod::EndInvoke(System.IAsyncResult)
+// System.Int32 System.IO.Compression.DeflateStream_ReadMethod::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReadMethod_EndInvoke_m725BE3F6220C2C6A798B76E84DC3D6AE7E0BC332 (ReadMethod_t6D92A091070756743232D28A30A05FFCFB7928C4 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -25606,14 +25606,14 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_WriteMethod_tA5073EA0B599530C5CB5FF
 	il2cppPInvokeFunc(____array0_marshaled, ___offset1, ___count2);
 
 }
-// System.Void System.IO.Compression.DeflateStream/WriteMethod::.ctor(System.Object,System.IntPtr)
+// System.Void System.IO.Compression.DeflateStream_WriteMethod::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteMethod__ctor_m2162D4C44E1AE1F1EDD4ED3216E75FFF517073F4 (WriteMethod_tA5073EA0B599530C5CB5FF202832E16DD4C48397 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// System.Void System.IO.Compression.DeflateStream/WriteMethod::Invoke(System.Byte[],System.Int32,System.Int32)
+// System.Void System.IO.Compression.DeflateStream_WriteMethod::Invoke(System.Byte[],System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteMethod_Invoke_m28514135CBD6D4D6E7491E5AA147E8B8B6F61735 (WriteMethod_tA5073EA0B599530C5CB5FF202832E16DD4C48397 * __this, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___array0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method)
 {
 	DelegateU5BU5D_tDFCDEE2A6322F96C0FE49AF47E9ADB8C4B294E86* delegateArrayToInvoke = __this->get_delegates_11();
@@ -25729,7 +25729,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteMethod_Invoke_m28514135CBD6D4D6E749
 		}
 	}
 }
-// System.IAsyncResult System.IO.Compression.DeflateStream/WriteMethod::BeginInvoke(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.IO.Compression.DeflateStream_WriteMethod::BeginInvoke(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WriteMethod_BeginInvoke_mA6949F5AA7E254D211E7B2BAF2162CB18E1BCA8C (WriteMethod_tA5073EA0B599530C5CB5FF202832E16DD4C48397 * __this, ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* ___array0, int32_t ___offset1, int32_t ___count2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25744,7 +25744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WriteMethod_BeginInvoke_mA6949
 	__d_args[2] = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &___count2);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
 }
-// System.Void System.IO.Compression.DeflateStream/WriteMethod::EndInvoke(System.IAsyncResult)
+// System.Void System.IO.Compression.DeflateStream_WriteMethod::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WriteMethod_EndInvoke_mAEB6B014D042798F0ECA5A2049FD05AB7CCE5777 (WriteMethod_tA5073EA0B599530C5CB5FF202832E16DD4C48397 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -26365,7 +26365,7 @@ IL_0082:
 #if !FORCE_PINVOKE_INTERNAL
 IL2CPP_EXTERN_C void* CDECL CreateZStream(int32_t, int32_t, Il2CppMethodPointer, intptr_t);
 #endif
-// System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle System.IO.Compression.DeflateStreamNative::CreateZStream(System.IO.Compression.CompressionMode,System.Boolean,System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite,System.IntPtr)
+// System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle System.IO.Compression.DeflateStreamNative::CreateZStream(System.IO.Compression.CompressionMode,System.Boolean,System.IO.Compression.DeflateStreamNative_UnmanagedReadOrWrite,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * DeflateStreamNative_CreateZStream_m10DC0AE9F06A2071E406883281FD4EF620298AB1 (int32_t ___compress0, bool ___gzip1, UnmanagedReadOrWrite_tE27F26A26800EB8FA74A54956323F29F04E055B0 * ___feeder2, intptr_t ___data3, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26408,7 +26408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_CloseZStream_m78C
 #if !FORCE_PINVOKE_INTERNAL
 IL2CPP_EXTERN_C int32_t CDECL Flush(void*);
 #endif
-// System.Int32 System.IO.Compression.DeflateStreamNative::Flush(System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle)
+// System.Int32 System.IO.Compression.DeflateStreamNative::Flush(System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_Flush_m5C49CB75BC4C3C11E5E5AC87A3BD5F7F75213A41 (SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * ___stream0, const RuntimeMethod* method)
 {
 	typedef int32_t (CDECL *PInvokeFunc) (void*);
@@ -26434,7 +26434,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_Flush_m5C49CB75BC
 #if !FORCE_PINVOKE_INTERNAL
 IL2CPP_EXTERN_C int32_t CDECL ReadZStream(void*, intptr_t, int32_t);
 #endif
-// System.Int32 System.IO.Compression.DeflateStreamNative::ReadZStream(System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle,System.IntPtr,System.Int32)
+// System.Int32 System.IO.Compression.DeflateStreamNative::ReadZStream(System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle,System.IntPtr,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_ReadZStream_m46708AF36538E1AD3F5A34CD2E6F949881053180 (SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * ___stream0, intptr_t ___buffer1, int32_t ___length2, const RuntimeMethod* method)
 {
 	typedef int32_t (CDECL *PInvokeFunc) (void*, intptr_t, int32_t);
@@ -26460,7 +26460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_ReadZStream_m4670
 #if !FORCE_PINVOKE_INTERNAL
 IL2CPP_EXTERN_C int32_t CDECL WriteZStream(void*, intptr_t, int32_t);
 #endif
-// System.Int32 System.IO.Compression.DeflateStreamNative::WriteZStream(System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle,System.IntPtr,System.Int32)
+// System.Int32 System.IO.Compression.DeflateStreamNative::WriteZStream(System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle,System.IntPtr,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_WriteZStream_m84D7A3BFC82F4227A0871D9A49EBD47B6E355DB5 (SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * ___stream0, intptr_t ___buffer1, int32_t ___length2, const RuntimeMethod* method)
 {
 	typedef int32_t (CDECL *PInvokeFunc) (void*, intptr_t, int32_t);
@@ -26491,7 +26491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DeflateStreamNative_WriteZStream_m84D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Boolean System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle::get_IsInvalid()
+// System.Boolean System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle::get_IsInvalid()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SafeDeflateStreamHandle_get_IsInvalid_mC280A71E9A5849EE9A2C20A495195A9E424529F8 (SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26506,7 +26506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SafeDeflateStreamHandle_get_IsInvalid_mC
 		return L_1;
 	}
 }
-// System.Void System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle::.ctor()
+// System.Void System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeDeflateStreamHandle__ctor_m4508BBB1230B239CC64A39FFB2971AB784B5415C (SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26520,7 +26520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeDeflateStreamHandle__ctor_m4508BBB12
 		return;
 	}
 }
-// System.Boolean System.IO.Compression.DeflateStreamNative/SafeDeflateStreamHandle::ReleaseHandle()
+// System.Boolean System.IO.Compression.DeflateStreamNative_SafeDeflateStreamHandle::ReleaseHandle()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SafeDeflateStreamHandle_ReleaseHandle_m2C78D7C47B12A72DAA4F404D81198CC6B4135D00 (SafeDeflateStreamHandle_tE4BC64B6A6597FD38FC9B774F01C4D1EC7464959 * __this, const RuntimeMethod* method)
 {
 	{
@@ -26547,14 +26547,14 @@ IL2CPP_EXTERN_C  int32_t DelegatePInvokeWrapper_UnmanagedReadOrWrite_tE27F26A268
 
 	return returnValue;
 }
-// System.Void System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite::.ctor(System.Object,System.IntPtr)
+// System.Void System.IO.Compression.DeflateStreamNative_UnmanagedReadOrWrite::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnmanagedReadOrWrite__ctor_mE5BB5534A1F54ABB84F96AEA88AD4ACEA7782E4F (UnmanagedReadOrWrite_tE27F26A26800EB8FA74A54956323F29F04E055B0 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
-// System.Int32 System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite::Invoke(System.IntPtr,System.Int32,System.IntPtr)
+// System.Int32 System.IO.Compression.DeflateStreamNative_UnmanagedReadOrWrite::Invoke(System.IntPtr,System.Int32,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnmanagedReadOrWrite_Invoke_m93B39DAB47C0E3ACA9A96F7C1FE94920BA1F6159 (UnmanagedReadOrWrite_tE27F26A26800EB8FA74A54956323F29F04E055B0 * __this, intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2, const RuntimeMethod* method)
 {
 	int32_t result = 0;
@@ -26633,7 +26633,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnmanagedReadOrWrite_Invoke_m93B39DAB
 	}
 	return result;
 }
-// System.IAsyncResult System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite::BeginInvoke(System.IntPtr,System.Int32,System.IntPtr,System.AsyncCallback,System.Object)
+// System.IAsyncResult System.IO.Compression.DeflateStreamNative_UnmanagedReadOrWrite::BeginInvoke(System.IntPtr,System.Int32,System.IntPtr,System.AsyncCallback,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UnmanagedReadOrWrite_BeginInvoke_mBD3A8C89B1537B538B8C9560653E868F7BC00A8A (UnmanagedReadOrWrite_tE27F26A26800EB8FA74A54956323F29F04E055B0 * __this, intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2, AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4 * ___callback3, RuntimeObject * ___object4, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26648,7 +26648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UnmanagedReadOrWrite_BeginInvo
 	__d_args[2] = Box(IntPtr_t_il2cpp_TypeInfo_var, &___data2);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
 }
-// System.Int32 System.IO.Compression.DeflateStreamNative/UnmanagedReadOrWrite::EndInvoke(System.IAsyncResult)
+// System.Int32 System.IO.Compression.DeflateStreamNative_UnmanagedReadOrWrite::EndInvoke(System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UnmanagedReadOrWrite_EndInvoke_m85287673FC7C1F1ADEB4C9933E1E2BCCC685195E (UnmanagedReadOrWrite_tE27F26A26800EB8FA74A54956323F29F04E055B0 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
@@ -36096,7 +36096,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProxyElement__ctor_mAFD852231DF0231726E4
 		return;
 	}
 }
-// System.Net.Configuration.ProxyElement/AutoDetectValues System.Net.Configuration.ProxyElement::get_AutoDetect()
+// System.Net.Configuration.ProxyElement_AutoDetectValues System.Net.Configuration.ProxyElement::get_AutoDetect()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ProxyElement_get_AutoDetect_m62226A24A615BDEEB6814EA59C515B3A6F7F6F9F (ProxyElement_tBD5D75620576BA5BB5521C11D09E0A6E996F9449 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -36113,7 +36113,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ProxyElement_get_AutoDetect_m62226A24
 		return L_0;
 	}
 }
-// System.Void System.Net.Configuration.ProxyElement::set_AutoDetect(System.Net.Configuration.ProxyElement/AutoDetectValues)
+// System.Void System.Net.Configuration.ProxyElement::set_AutoDetect(System.Net.Configuration.ProxyElement_AutoDetectValues)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProxyElement_set_AutoDetect_m0B392599BA75FF6C7E25C6D43D3D2E62AE43403E (ProxyElement_tBD5D75620576BA5BB5521C11D09E0A6E996F9449 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -36127,7 +36127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProxyElement_set_AutoDetect_m0B392599BA7
 		return;
 	}
 }
-// System.Net.Configuration.ProxyElement/BypassOnLocalValues System.Net.Configuration.ProxyElement::get_BypassOnLocal()
+// System.Net.Configuration.ProxyElement_BypassOnLocalValues System.Net.Configuration.ProxyElement::get_BypassOnLocal()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ProxyElement_get_BypassOnLocal_m7FE544F0B99E14207606D666C47B82959610459D (ProxyElement_tBD5D75620576BA5BB5521C11D09E0A6E996F9449 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -36144,7 +36144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ProxyElement_get_BypassOnLocal_m7FE54
 		return L_0;
 	}
 }
-// System.Void System.Net.Configuration.ProxyElement::set_BypassOnLocal(System.Net.Configuration.ProxyElement/BypassOnLocalValues)
+// System.Void System.Net.Configuration.ProxyElement::set_BypassOnLocal(System.Net.Configuration.ProxyElement_BypassOnLocalValues)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProxyElement_set_BypassOnLocal_mD6A873612C4AD5E288C493BB5086ABC35AB52A06 (ProxyElement_tBD5D75620576BA5BB5521C11D09E0A6E996F9449 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -36228,7 +36228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProxyElement_set_ScriptLocation_m2D862F6
 		return;
 	}
 }
-// System.Net.Configuration.ProxyElement/UseSystemDefaultValues System.Net.Configuration.ProxyElement::get_UseSystemDefault()
+// System.Net.Configuration.ProxyElement_UseSystemDefaultValues System.Net.Configuration.ProxyElement::get_UseSystemDefault()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ProxyElement_get_UseSystemDefault_m0E7A3C740104C5076D1D79B936434F9B98272E35 (ProxyElement_tBD5D75620576BA5BB5521C11D09E0A6E996F9449 * __this, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -36245,7 +36245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ProxyElement_get_UseSystemDefault_m0E
 		return L_0;
 	}
 }
-// System.Void System.Net.Configuration.ProxyElement::set_UseSystemDefault(System.Net.Configuration.ProxyElement/UseSystemDefaultValues)
+// System.Void System.Net.Configuration.ProxyElement::set_UseSystemDefault(System.Net.Configuration.ProxyElement_UseSystemDefaultValues)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProxyElement_set_UseSystemDefault_mB9E8591A04730B0278FE00C06B2F96A3666DF745 (ProxyElement_tBD5D75620576BA5BB5521C11D09E0A6E996F9449 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
@@ -36649,7 +36649,7 @@ IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m507C9149FF7F
 {
 	{
 		int32_t L_0 = (int32_t)__this->get__size_2();
-		return (int32_t)L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR RuntimeObject * List_1_get_Item_mFDB8AD680C600072736579BBF5F38F7416396588_gshared_inline (List_1_t05CC3C859AB5E6024394EF9A42E3E696628CA02D * __this, int32_t ___index0, const RuntimeMethod* method)
@@ -36671,20 +36671,20 @@ IL_000e:
 		ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A* L_2 = (ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)__this->get__items_1();
 		int32_t L_3 = ___index0;
 		RuntimeObject * L_4 = IL2CPP_ARRAY_UNSAFE_LOAD((ObjectU5BU5D_t3C9242B5C88A48B2A5BD9FDA6CD0024E792AF08A*)L_2, (int32_t)L_3);
-		return (RuntimeObject *)L_4;
+		return L_4;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t KeyValuePair_2_get_Key_mB735BC2D7232A3B45D667D28C17BA51AAAFFB4A1_gshared_inline (KeyValuePair_2_tA9AFBC865B07606ED8F020A8E3AF8E27491AF809 * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = (int32_t)__this->get_key_0();
-		return (int32_t)L_0;
+		return L_0;
 	}
 }
 IL2CPP_EXTERN_C inline IL2CPP_METHOD_ATTR int32_t KeyValuePair_2_get_Value_mF7293AF44DA0B8EB7B455A6227F7C36EEE9CF508_gshared_inline (KeyValuePair_2_tA9AFBC865B07606ED8F020A8E3AF8E27491AF809 * __this, const RuntimeMethod* method)
 {
 	{
 		int32_t L_0 = (int32_t)__this->get_value_1();
-		return (int32_t)L_0;
+		return L_0;
 	}
 }

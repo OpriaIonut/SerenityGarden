@@ -26,8 +26,6 @@ const Il2CppCodeGenModule g_UnityEngine_AssetBundleModuleCodeGenModule =
 	"UnityEngine.AssetBundleModule.dll",
 	0,
 	NULL,
-	0,
-	NULL,
 	NULL,
 	0,
 	NULL,

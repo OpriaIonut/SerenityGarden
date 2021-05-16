@@ -44,8 +44,6 @@ const Il2CppCodeGenModule g_UnityEngine_DirectorModuleCodeGenModule =
 	"UnityEngine.DirectorModule.dll",
 	3,
 	s_methodPointers,
-	0,
-	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

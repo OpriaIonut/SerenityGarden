@@ -58,11 +58,11 @@ struct ValueType_t4D0C27076F7C36E76190FB3328E232BCB1CD1FFF_marshaled_com
 {
 };
 
-// Mono.Unity.UnityTls/unitytls_x509list_ref
+// Mono.Unity.UnityTls_unitytls_x509list_ref
 struct  unitytls_x509list_ref_tF01A6BF5ADA9C454E6B975D2669AF22D27555BF6 
 {
 public:
-	// System.UInt64 Mono.Unity.UnityTls/unitytls_x509list_ref::handle
+	// System.UInt64 Mono.Unity.UnityTls_unitytls_x509list_ref::handle
 	uint64_t ___handle_0;
 
 public:
@@ -160,11 +160,11 @@ public:
 };
 
 
-// Mono.Unity.UnityTls/unitytls_x509verify_result
+// Mono.Unity.UnityTls_unitytls_x509verify_result
 struct  unitytls_x509verify_result_t835FEA0265EFD70F0762B220C663474E03402278 
 {
 public:
-	// System.UInt32 Mono.Unity.UnityTls/unitytls_x509verify_result::value__
+	// System.UInt32 Mono.Unity.UnityTls_unitytls_x509verify_result::value__
 	uint32_t ___value___2;
 
 public:

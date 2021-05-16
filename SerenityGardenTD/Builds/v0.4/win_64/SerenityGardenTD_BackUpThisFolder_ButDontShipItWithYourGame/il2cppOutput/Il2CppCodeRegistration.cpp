@@ -30,7 +30,6 @@ IL2CPP_EXTERN_C_END
 
 extern const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[];
 extern const Il2CppMethodPointer g_Il2CppGenericMethodPointers[];
-extern const Il2CppMethodPointer g_Il2CppGenericAdjustorThunks[];
 extern const InvokerMethod g_Il2CppInvokerPointers[];
 extern const CustomAttributesCacheGenerator g_AttributeGenerators[];
 extern const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
@@ -140,16 +139,15 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	10,
 	g_ReversePInvokeWrapperPointers,
-	19448,
+	19553,
 	g_Il2CppGenericMethodPointers,
-	g_Il2CppGenericAdjustorThunks,
-	4451,
+	4474,
 	g_Il2CppInvokerPointers,
-	7708,
+	7760,
 	g_AttributeGenerators,
 	766,
 	g_UnresolvedVirtualMethodPointers,
-	346,
+	350,
 	g_Il2CppInteropData,
 	0,
 	NULL,
@@ -160,7 +158,6 @@ IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
 static const Il2CppCodeGenOptions s_Il2CppCodeGenOptions = 
 {
 	true,
-	7,
 };
 void s_Il2CppCodegenRegistration()
 {

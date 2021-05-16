@@ -5,12 +5,13 @@ using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public class Commander : LogicProcessBase, IMovable, IAttacker<EnemyBase>, IPunObservable
+    public class Commander : LogicProcessBase, IMovable, IAttacker<EnemyBase>, IPunObservable, IPunInstantiateMagicCallback
     {
         public CommanderScriptable status;  //Scriptable object that specified the status of the commander.
         public Transform firePoint;
         public GameObject bulletPrefab;
         public GameObject rangePrefab;  //Range prefab shown when we click on the commander.
+        public TMPro.TextMeshProUGUI networkNameText;
 
         private GameObject rangeObj;
         private HexagonalGrid hexagonalGrid;
@@ -24,8 +25,6 @@ namespace SerenityGarden
 
         //Will retain the type of the block that the commander moves towards, so that we can reset it when he leaves the block
         private HexagonType previousEndBlockType = HexagonType.Walkable;
-
-        private PhotonView view;
 
         #region Inherited Properties
         public HexagonalBlock CurrentBlock { get; set; }
@@ -71,6 +70,9 @@ namespace SerenityGarden
         private bool netSendPowerupTarget = false;
         private bool netReceivedPowerup = false;
 
+        private bool netSendUnpowerup = false;
+        private bool netReceivedUnpowerup = false;
+
         #endregion
 
         private void Awake()
@@ -82,9 +84,13 @@ namespace SerenityGarden
 
         private void Start()
         {
-            view = GetComponent<PhotonView>();
             commanderUI = FindObjectOfType<CommanderUI>();
             base.BaseStartCalls();
+
+            if (PhotonNetwork.IsConnected)
+                networkNameText.text = photonView.Owner.NickName;
+            else
+                networkNameText.transform.parent.parent.gameObject.SetActive(false);
         }
 
         private void Update()
@@ -151,7 +157,7 @@ namespace SerenityGarden
         {
             //Find the place to position the commander;
             HexagonalBlock closestPos = null;
-            for (float range = 1; true; range += 1)
+            for (float range = 0.1f; true; range += 0.1f)
             {
                 Collider[] hits = Physics.OverlapSphere(selectedTurret.transform.position, range);
                 foreach (Collider item in hits)
@@ -169,6 +175,7 @@ namespace SerenityGarden
             CurrentBlock = closestPos;
             EndBlock = closestPos;
             ReachedDestination = false;
+            netSendEndBlock = true;
             FindNextBlock();
         }
 
@@ -279,6 +286,19 @@ namespace SerenityGarden
             HelperMethods.MoveTowards(transform, NextBlock.transform.position, Speed * Time.deltaTime, true);
         }
 
+        public void OnPhotonInstantiate(PhotonMessageInfo info)
+        {
+            commanderUI = FindObjectOfType<CommanderUI>();
+            Commander[] commanders = FindObjectsOfType<Commander>();
+            foreach (Commander chief in commanders)
+            {
+                if (chief.photonView.IsMine)
+                    commanderUI.commander = chief;
+                else
+                    commanderUI.otherPlayerCommander = chief;
+            }
+        }
+
         public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
         {
             if (stream.IsWriting)
@@ -306,6 +326,7 @@ namespace SerenityGarden
                 {
                     netReceivedEndBlock = true;
                     string objName = receivedObj.ToString();
+                    Debug.Log(objName);
                     if (objName != null)
                     {
                         GameObject objToFind = GameObject.Find(objName);

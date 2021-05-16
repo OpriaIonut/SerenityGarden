@@ -85,8 +85,6 @@ const Il2CppCodeGenModule g_UnityEngine_VFXModuleCodeGenModule =
 	"UnityEngine.VFXModule.dll",
 	14,
 	s_methodPointers,
-	0,
-	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

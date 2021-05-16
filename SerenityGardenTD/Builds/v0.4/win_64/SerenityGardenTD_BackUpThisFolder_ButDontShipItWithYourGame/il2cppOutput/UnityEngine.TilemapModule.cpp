@@ -900,11 +900,11 @@ struct Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_marshaled_com
 	intptr_t ___m_CachedPtr_0;
 };
 
-// UnityEngine.Tilemaps.Tile/ColliderType
+// UnityEngine.Tilemaps.Tile_ColliderType
 struct  ColliderType_tCF48B308BF04CE1D262A726D500126E8C8859F2B 
 {
 public:
-	// System.Int32 UnityEngine.Tilemaps.Tile/ColliderType::value__
+	// System.Int32 UnityEngine.Tilemaps.Tile_ColliderType::value__
 	int32_t ___value___2;
 
 public:
@@ -1023,7 +1023,7 @@ public:
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___m_GameObject_3;
 	// UnityEngine.Tilemaps.TileFlags UnityEngine.Tilemaps.TileData::m_Flags
 	int32_t ___m_Flags_4;
-	// UnityEngine.Tilemaps.Tile/ColliderType UnityEngine.Tilemaps.TileData::m_ColliderType
+	// UnityEngine.Tilemaps.Tile_ColliderType UnityEngine.Tilemaps.TileData::m_ColliderType
 	int32_t ___m_ColliderType_5;
 
 public:
@@ -1167,7 +1167,7 @@ public:
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___m_InstancedGameObject_7;
 	// UnityEngine.Tilemaps.TileFlags UnityEngine.Tilemaps.Tile::m_Flags
 	int32_t ___m_Flags_8;
-	// UnityEngine.Tilemaps.Tile/ColliderType UnityEngine.Tilemaps.Tile::m_ColliderType
+	// UnityEngine.Tilemaps.Tile_ColliderType UnityEngine.Tilemaps.Tile::m_ColliderType
 	int32_t ___m_ColliderType_9;
 
 public:
@@ -1516,7 +1516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tile_set_flags_mAD725C9CD9928F20D5C86BC1
 		return;
 	}
 }
-// UnityEngine.Tilemaps.Tile/ColliderType UnityEngine.Tilemaps.Tile::get_colliderType()
+// UnityEngine.Tilemaps.Tile_ColliderType UnityEngine.Tilemaps.Tile::get_colliderType()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Tile_get_colliderType_m77DF59033D6AA8045E6BFBEDC420FA49DA369531 (Tile_t275C7CE9C854F2912C851F345CCC00C45EDDE7AE * __this, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
@@ -1532,7 +1532,7 @@ IL_000a:
 		return L_1;
 	}
 }
-// System.Void UnityEngine.Tilemaps.Tile::set_colliderType(UnityEngine.Tilemaps.Tile/ColliderType)
+// System.Void UnityEngine.Tilemaps.Tile::set_colliderType(UnityEngine.Tilemaps.Tile_ColliderType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tile_set_colliderType_mEE9420C62F7500856CB48EA6717072C85326B852 (Tile_t275C7CE9C854F2912C851F345CCC00C45EDDE7AE * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	{
@@ -1856,7 +1856,7 @@ IL2CPP_EXTERN_C  void TileData_set_flags_m7817AC2D2183D25550281C3F868DAD2D4BCDB4
 	TileData_t8A50A35CAFD87C12E27D7E596D968C9114A4CBB5 * _thisAdjusted = reinterpret_cast<TileData_t8A50A35CAFD87C12E27D7E596D968C9114A4CBB5 *>(__this + _offset);
 	TileData_set_flags_m7817AC2D2183D25550281C3F868DAD2D4BCDB425(_thisAdjusted, ___value0, method);
 }
-// System.Void UnityEngine.Tilemaps.TileData::set_colliderType(UnityEngine.Tilemaps.Tile/ColliderType)
+// System.Void UnityEngine.Tilemaps.TileData::set_colliderType(UnityEngine.Tilemaps.Tile_ColliderType)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TileData_set_colliderType_mC23D9C79557D9C0D41F507D4F8B427B843E5C11B (TileData_t8A50A35CAFD87C12E27D7E596D968C9114A4CBB5 * __this, int32_t ___value0, const RuntimeMethod* method)
 {
 	{

@@ -198,12 +198,13 @@ namespace SerenityGarden
             else
                 hexagonBlock.Type = HexagonType.TurretBuildable;
 
-            if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
-                Destroy(gameObject);
-            else
+            if (netReceivedEventData)
             {
-                PhotonNetwork.Destroy(gameObject);
+                netReceivedEventData = false;
+                Destroy(gameObject);
             }
+            else
+                netSendTurretSell = true;
             DrawRange(false);
         }
 
@@ -242,6 +243,12 @@ namespace SerenityGarden
                     eventType = "Repair";
                     netSendTurretRepair = false;
                 }
+                if(netSendTurretSell)
+                {
+                    eventType = "Sell";
+                    netSendTurretSell = false;
+                    Destroy(gameObject);
+                }
                 stream.SendNext(eventType);
                 stream.SendNext(Health);
             }
@@ -259,6 +266,12 @@ namespace SerenityGarden
                 {
                     netReceivedEventData = true;
                     StartRecovery(TurretBuildManager.instance.recoveryMaterial);
+                }
+                if(eventType == "Sell")
+                {
+                    netReceivedEventData = true;
+                    SceneClickManager.instance.selectedTurret = this;
+                    TurretBuildManager.instance._SellTurret();
                 }
             }
         }

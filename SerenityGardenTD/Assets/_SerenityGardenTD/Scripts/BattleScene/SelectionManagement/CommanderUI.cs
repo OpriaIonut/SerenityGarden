@@ -28,6 +28,8 @@ namespace SerenityGarden
             powerupPreviousMaterials = new List<Material>();
             clickManager = FindObjectOfType<SceneClickManager>();
             base.BaseStartCalls();
+
+            //StartCoroutine("SetCommanderReference");
         }
 
         private void Update()
@@ -140,12 +142,13 @@ namespace SerenityGarden
                         {
                             if (player.view.IsMine)
                             {
-                                player.SendNetworkEvent("UnpowerupTurret", clickManager.selectedTurret.name);
+                                player.SendNetworkEvent("UnpowerupTurret", clickManager.selectedTurret.photonView.ViewID.ToString());
                                 break;
                             }
                         }
                     }
 
+                    Debug.Log(commanderToUse.name);
                     commanderToUse.gameObject.SetActive(true);
                     commanderToUse.UnpowerupTurret(buildable);
 
@@ -155,6 +158,20 @@ namespace SerenityGarden
                 }
             }
         }
+
+        //private IEnumerator SetCommanderReference()
+        //{
+        //    yield return new WaitForSeconds(1.0f);
+
+        //    Commander[] commanders = FindObjectsOfType<Commander>();
+        //    foreach (Commander chief in commanders)
+        //    {
+        //        if (chief.photonView.IsMine)
+        //            commander = chief;
+        //        else
+        //            otherPlayerCommander = chief;
+        //    }
+        //}
 
         public override void Init()
         {

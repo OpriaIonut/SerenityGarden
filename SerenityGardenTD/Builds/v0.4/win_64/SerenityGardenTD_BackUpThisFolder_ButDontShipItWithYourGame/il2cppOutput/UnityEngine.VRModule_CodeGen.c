@@ -44,7 +44,7 @@ extern void XRSettings_get_renderViewportScaleInternal_m68CF4633C56407C080DD0930
 extern void XRSettings_get_loadedDeviceName_m952D46346306FD9477B13992E5797A85CCD3C98C (void);
 // 0x0000000C System.String[] UnityEngine.XR.XRSettings::get_supportedDevices()
 extern void XRSettings_get_supportedDevices_m6FD437B8469BA7EFCEA26D254C049BCDC9766374 (void);
-// 0x0000000D UnityEngine.XR.XRSettings/StereoRenderingMode UnityEngine.XR.XRSettings::get_stereoRenderingMode()
+// 0x0000000D UnityEngine.XR.XRSettings_StereoRenderingMode UnityEngine.XR.XRSettings::get_stereoRenderingMode()
 extern void XRSettings_get_stereoRenderingMode_mCCC5ED4A6AED856B344334D5860C9CA1C4ECD5C5 (void);
 // 0x0000000E System.Void UnityEngine.XR.XRSettings::get_eyeTextureDesc_Injected(UnityEngine.RenderTextureDescriptor&)
 extern void XRSettings_get_eyeTextureDesc_Injected_m2E5464BF666C27FB20CD0D0CCA703F40ED382597 (void);
@@ -56,13 +56,13 @@ extern void XRDevice_InvokeDeviceLoaded_mD5D5577A4E03D0474FAFBB2596B698B6A8B5FD1
 extern void XRDevice__cctor_m4FE111291FBDF43A481045CBABECF9AEC70B5EC9 (void);
 // 0x00000012 System.Void UnityEngine.XR.WSA.WorldAnchor::Internal_TriggerEventOnTrackingLost(UnityEngine.XR.WSA.WorldAnchor,System.Boolean)
 extern void WorldAnchor_Internal_TriggerEventOnTrackingLost_m30225CE01803079AAA7C81877ABE5A4150960B3A (void);
-// 0x00000013 System.Void UnityEngine.XR.WSA.WorldAnchor/OnTrackingChangedDelegate::.ctor(System.Object,System.IntPtr)
+// 0x00000013 System.Void UnityEngine.XR.WSA.WorldAnchor_OnTrackingChangedDelegate::.ctor(System.Object,System.IntPtr)
 extern void OnTrackingChangedDelegate__ctor_m9CAD493361EE71D73CB61E7BFD889E88B5649497 (void);
-// 0x00000014 System.Void UnityEngine.XR.WSA.WorldAnchor/OnTrackingChangedDelegate::Invoke(UnityEngine.XR.WSA.WorldAnchor,System.Boolean)
+// 0x00000014 System.Void UnityEngine.XR.WSA.WorldAnchor_OnTrackingChangedDelegate::Invoke(UnityEngine.XR.WSA.WorldAnchor,System.Boolean)
 extern void OnTrackingChangedDelegate_Invoke_mC3AAC3FBDB589E9DEE9D83664191AED37F03A23C (void);
-// 0x00000015 System.IAsyncResult UnityEngine.XR.WSA.WorldAnchor/OnTrackingChangedDelegate::BeginInvoke(UnityEngine.XR.WSA.WorldAnchor,System.Boolean,System.AsyncCallback,System.Object)
+// 0x00000015 System.IAsyncResult UnityEngine.XR.WSA.WorldAnchor_OnTrackingChangedDelegate::BeginInvoke(UnityEngine.XR.WSA.WorldAnchor,System.Boolean,System.AsyncCallback,System.Object)
 extern void OnTrackingChangedDelegate_BeginInvoke_mF0EFF2F8F200DEEEF063BB19BA44ACFF920D5D8C (void);
-// 0x00000016 System.Void UnityEngine.XR.WSA.WorldAnchor/OnTrackingChangedDelegate::EndInvoke(System.IAsyncResult)
+// 0x00000016 System.Void UnityEngine.XR.WSA.WorldAnchor_OnTrackingChangedDelegate::EndInvoke(System.IAsyncResult)
 extern void OnTrackingChangedDelegate_EndInvoke_m00461C6664BBAAF38549748E6F2BEEBBA5F3EDD7 (void);
 static Il2CppMethodPointer s_methodPointers[22] = 
 {
@@ -93,14 +93,14 @@ static const int32_t s_InvokerIndices[22] =
 {
 	49,
 	49,
-	1471,
-	1654,
+	1473,
+	1656,
 	106,
 	106,
-	2171,
+	2175,
 	106,
-	1471,
-	1471,
+	1473,
+	1473,
 	4,
 	4,
 	106,
@@ -111,7 +111,7 @@ static const int32_t s_InvokerIndices[22] =
 	627,
 	131,
 	467,
-	860,
+	862,
 	26,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_VRModuleCodeGenModule;
@@ -120,8 +120,6 @@ const Il2CppCodeGenModule g_UnityEngine_VRModuleCodeGenModule =
 	"UnityEngine.VRModule.dll",
 	22,
 	s_methodPointers,
-	0,
-	NULL,
 	s_InvokerIndices,
 	0,
 	NULL,

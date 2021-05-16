@@ -8,6 +8,20 @@ namespace SerenityGarden
 {
     public class SceneClickManager : MonoBehaviour
     {
+        #region Singleton
+        public static SceneClickManager instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Warning! There are multiple instances of SceneClickManager in the scene. Deleting from: " + gameObject.name);
+                Destroy(this.gameObject);
+            }
+            else
+                instance = this;
+        }
+        #endregion
+
         [Header("Debug")]
         //Objects that we click last
         public TurretBase selectedTurret;

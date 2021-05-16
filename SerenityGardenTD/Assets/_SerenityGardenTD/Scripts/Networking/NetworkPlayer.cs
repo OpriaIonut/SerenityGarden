@@ -55,47 +55,20 @@ namespace SerenityGarden
                 }
                 else if (receivedEvents == "UnpowerupTurret")
                 {
-                    GameObject objToFind = GameObject.Find(receivedEventParam); //Name of the turret to unpowerup
-                    if (objToFind != null)
+                    int viewId = int.Parse(receivedEventParam);
+                    PhotonView[] views = FindObjectsOfType<PhotonView>();
+                    foreach(PhotonView item in views)
                     {
-                        clickManager.selectedTurret = objToFind.GetComponent<TurretBase>();
-                        commanderUI.netReceivedUnpowerupEvent = true;
-                        commanderUI._UnpowerupTurret();
+                        if (item.ViewID == viewId)
+                        {
+                            clickManager.selectedTurret = item.gameObject.GetComponent<TurretBase>();
+                            commanderUI.netReceivedUnpowerupEvent = true;
+                            commanderUI._UnpowerupTurret();
+                            break;
+                        }
                     }
                 }
             }
-        }
-
-        private IEnumerator SetCommanderReference()
-        {
-            yield return new WaitForSeconds(1.0f);
-
-            Commander[] commanders = FindObjectsOfType<Commander>();
-            Debug.Log(commanders.Length);
-            foreach (Commander chief in commanders)
-            {
-                if (chief.photonView.IsMine)
-                    commanderUI.commander = chief;
-                else
-                    commanderUI.otherPlayerCommander = chief;
-            }
-        }
-
-        public override void OnPlayerEnteredRoom(Player newPlayer)
-        {
-            base.OnPlayerEnteredRoom(newPlayer);
-            StartCoroutine("SetCommanderReference");
-        }
-
-        public override void OnJoinedRoom()
-        {
-            base.OnJoinedRoom();
-            StartCoroutine("SetCommanderReference");
-        }
-
-        public override void OnPlayerLeftRoom(Player otherPlayer)
-        {
-            base.OnPlayerLeftRoom(otherPlayer);
         }
     }
 }
