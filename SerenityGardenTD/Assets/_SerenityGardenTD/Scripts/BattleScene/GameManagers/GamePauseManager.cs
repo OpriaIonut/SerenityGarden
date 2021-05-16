@@ -99,11 +99,21 @@ namespace SerenityGarden
         private bool quit = false;
         public void OnClick_PopupConfirm()
         {
-            if (exitLevel)
-                quit = false;
+            if (PhotonNetwork.IsConnected)
+            {
+                if (exitLevel)
+                    quit = false;
+                else
+                    quit = true;
+                PhotonNetwork.Disconnect();
+            }
             else
-                quit = true;
-            PhotonNetwork.Disconnect();
+            {
+                if (exitLevel)
+                    SceneManager.LoadScene("StageSelection");
+                else
+                    Application.Quit();
+            }
         }
 
         public override void OnDisconnected(DisconnectCause cause)

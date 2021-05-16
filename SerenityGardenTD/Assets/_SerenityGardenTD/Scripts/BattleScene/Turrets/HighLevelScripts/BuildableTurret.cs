@@ -198,13 +198,20 @@ namespace SerenityGarden
             else
                 hexagonBlock.Type = HexagonType.TurretBuildable;
 
-            if (netReceivedEventData)
+            if (PhotonNetwork.IsConnected)
             {
-                netReceivedEventData = false;
-                Destroy(gameObject);
+                if (netReceivedEventData)
+                {
+                    netReceivedEventData = false;
+                    Destroy(gameObject);
+                }
+                else
+                    netSendTurretSell = true;
             }
             else
-                netSendTurretSell = true;
+            {
+                Destroy(gameObject);
+            }
             DrawRange(false);
         }
 
@@ -269,7 +276,6 @@ namespace SerenityGarden
                 }
                 if(eventType == "Sell")
                 {
-                    Debug.Log("Buildable sell");
                     netReceivedEventData = true;
                     SceneClickManager.instance.selectedTurret = this;
                     TurretBuildManager.instance._SellTurret();

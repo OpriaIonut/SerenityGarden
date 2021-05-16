@@ -118,7 +118,7 @@ namespace SerenityGarden
             if (Time.time - LastAttackTime > AttackCooldown && Target != null)
                 Attack();
 
-            if (!PhotonNetwork.IsMasterClient)
+            if (PhotonNetwork.IsConnected && !PhotonNetwork.IsMasterClient)
                 return;
 
             if (NextBlock == null)

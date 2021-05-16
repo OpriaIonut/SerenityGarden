@@ -58,7 +58,7 @@ namespace SerenityGarden
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
-            if(!PhotonNetwork.IsMasterClient)
+            if(PhotonNetwork.IsConnected && !PhotonNetwork.IsMasterClient)
                 stageStartButton.SetActive(false);
 
             //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem
@@ -160,7 +160,7 @@ namespace SerenityGarden
             if(currentWaveIndex != selectedStage.waves.Length - 1)
             {
                 waveSkipButton.SetActive(true);
-                if (!PhotonNetwork.IsMasterClient)
+                if (PhotonNetwork.IsConnected && !PhotonNetwork.IsMasterClient)
                     waveSkipButton.GetComponent<Button>().interactable = false;
             }
             else
@@ -200,7 +200,7 @@ namespace SerenityGarden
         /// <param name="spawnBlock"></param>
         private void SpawnEnemy(GameObject enemyPrefab, HexagonalBlock spawnBlock)
         {
-            if (NetworkManager.instance != null && !PhotonNetwork.IsMasterClient)
+            if (PhotonNetwork.IsConnected && !PhotonNetwork.IsMasterClient)
                 return;
 
             PhotonObj photonObj = PhotonObj.Bullet;

@@ -36,6 +36,7 @@ namespace SerenityGarden
 
         private InputManager inputManager;
         private bool spawnedAllEnemies = false;
+        private bool gameOver = false;
 
         [HideInInspector] public bool netReceivedEvent = false;
 
@@ -68,10 +69,13 @@ namespace SerenityGarden
 
         public void GameOver()
         {
+            gameOver = true;
+            GamePauseManager.instance._PauseGame();
+            GamePauseManager.instance.pauseMenu.SetActive(false);
+
             inputManager.AddOnPressEvent(EndLevel);
             gameOverCanvas.SetActive(true);
             starsPanel.SetActive(true);
-            //pauseManager._PauseGame();
 
             int moneyWon = GetMoneyWon(false, 0);
             moneyWonText.text = "Money won: $" + moneyWon;
@@ -81,10 +85,12 @@ namespace SerenityGarden
 
         public void GameWon()
         {
+            GamePauseManager.instance._PauseGame();
+            GamePauseManager.instance.pauseMenu.SetActive(false);
+
             inputManager.AddOnPressEvent(EndLevel);
             gameWonCanvas.SetActive(true);
             starsPanel.SetActive(true);
-            //pauseManager._PauseGame();
 
             int starsWon = GetStarsWon();
             int moneyWon = GetMoneyWon(true, starsWon);
@@ -117,6 +123,9 @@ namespace SerenityGarden
 
         public void ActivatePlayerDisconnectedPanel()
         {
+            if (gameOver)
+                return;
+
             playerDisconnectedPanel.SetActive(true);
             GamePauseManager.instance._PauseGame();
             GamePauseManager.instance.pauseMenu.SetActive(false);
