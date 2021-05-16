@@ -29,6 +29,7 @@ namespace SerenityGarden
 
         public GameObject gameWonCanvas;
         public GameObject gameOverCanvas;
+        public GameObject playerDisconnectedPanel;
         public GameObject starsPanel;
         public GameObject[] starsUI;
         public TextMeshProUGUI moneyWonText;
@@ -67,7 +68,7 @@ namespace SerenityGarden
 
         public void GameOver()
         {
-            inputManager.AddOnPressEvent(ReloadScene);
+            inputManager.AddOnPressEvent(EndLevel);
             gameOverCanvas.SetActive(true);
             starsPanel.SetActive(true);
             //pauseManager._PauseGame();
@@ -80,7 +81,7 @@ namespace SerenityGarden
 
         public void GameWon()
         {
-            inputManager.AddOnPressEvent(ReloadScene);
+            inputManager.AddOnPressEvent(EndLevel);
             gameWonCanvas.SetActive(true);
             starsPanel.SetActive(true);
             //pauseManager._PauseGame();
@@ -112,6 +113,18 @@ namespace SerenityGarden
                     }
                 }
             }
+        }
+
+        public void ActivatePlayerDisconnectedPanel()
+        {
+            playerDisconnectedPanel.SetActive(true);
+            GamePauseManager.instance._PauseGame();
+            GamePauseManager.instance.pauseMenu.SetActive(false);
+        }
+
+        public void OnClick_GiveUp()
+        {
+            EndLevel();
         }
 
         private int GetStarsWon()
@@ -150,7 +163,7 @@ namespace SerenityGarden
             return rewardMoney;
         }
 
-        private void ReloadScene()
+        private void EndLevel()
         {
             if (PhotonNetwork.IsConnected)
                 PhotonNetwork.Disconnect();
@@ -160,7 +173,7 @@ namespace SerenityGarden
 
         public override void OnDisconnected(DisconnectCause cause)
         {
-            SceneManager.LoadScene("CoopLobby");
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }
