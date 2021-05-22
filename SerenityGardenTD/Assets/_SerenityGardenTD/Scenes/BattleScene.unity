@@ -3055,11 +3055,11 @@ MonoBehaviour:
   diameter: 0.15
   offset: -0.025
   mapScaleOffset: 1
-  mapPresetFile: Stage 1-3.json
+  mapPresetFile: Stages/Stage 1-1.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
   scaleFact: 0
-  walkableArea: {fileID: 266624684}
+  walkableArea: {fileID: 931180055}
 --- !u!4 &696150181
 Transform:
   m_ObjectHideFlags: 0
@@ -6955,17 +6955,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.6831615
+      value: 3.842381
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.6831615
+      value: 3.842381
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.6831615
+      value: 3.842381
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
@@ -8676,6 +8676,7 @@ GameObject:
   - component: {fileID: 2028780453}
   - component: {fileID: 2028780452}
   - component: {fileID: 2028780456}
+  - component: {fileID: 2028780457}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -8748,7 +8749,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 3.5
   m_Depth: 0
   m_CullingMask:
@@ -8772,13 +8773,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028780451}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalRotation: {x: 0.5735764, y: 0, z: 0, w: 0.8191521}
+  m_LocalPosition: {x: 0, y: 5, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 70, y: 0, z: 0}
 --- !u!114 &2028780456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8839,6 +8840,26 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &2028780457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028780451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f2a4bdaaafdae4189e79617eb8bd6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomSpeed: 50
+  panSpeed: 5
+  androidZoomSpeed: 0.1
+  androidPanSpeed: 25
+  zoomInLimit: 4
+  zoomOutLimit: -2
+  horizontalPanLimit: 3
+  verticalPanLimit: 3
 --- !u!1 &2071550453
 GameObject:
   m_ObjectHideFlags: 0
