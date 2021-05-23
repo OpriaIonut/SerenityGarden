@@ -23,6 +23,7 @@ namespace SerenityGarden
         public GameObject rangePrefab;
         [HideInInspector] public TurretType turretType;
         public Image healthbarUI;
+        public Gradient healthGradient;
 
         public TurretStatusScriptable turretUpgradePattern;
 
@@ -60,8 +61,11 @@ namespace SerenityGarden
                 if (maxHealth == 0)
                     maxHealth = value;
 
-                if(maxHealth != 0)
-                    healthbarUI.rectTransform.localScale = new Vector3(health / (float)maxHealth, 1.0f, 1.0f);
+                if (maxHealth != 0)
+                {
+                    healthbarUI.fillAmount = health / (float)maxHealth;
+                    healthbarUI.color = healthGradient.Evaluate(healthbarUI.fillAmount);
+                }
                 if (value < 0)
                     Die();
             }
