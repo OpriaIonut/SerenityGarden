@@ -168,8 +168,6 @@ namespace SerenityGarden
                 IsRecovering = true;
                 recoveryAmmount = maxHealth - Health;
 
-                TurretBuildManager.instance.debugText.text = string.Format("MaxHealth: {0};\nHealth: {1};\nRecovery: {2}", maxHealth, Health, recoveryAmmount);
-
                 beforeRecoveryMaterial.Clear();
                 MeshRenderer[] renderers = gameObject.GetComponentsInChildren<MeshRenderer>();
                 foreach (MeshRenderer rend in renderers)

@@ -6,7 +6,12 @@ namespace SerenityGarden
 {
     public class TurretRailgun : BuildableTurret
     {
-        public GameObject bulletPrefab;
+        public GameObject laserPrefab;
+        public GameObject enemyHitParticle;
+        public Color[] laserColors;
+
+        private LineRenderer laserLine;
+        private ParticleSystem particleInstance;
 
         private void Awake()
         {
@@ -18,22 +23,79 @@ namespace SerenityGarden
             BaseStartCalls();
         }
 
+        private void OnDestroy()
+        {
+            if (particleInstance != null)
+                Destroy(particleInstance);
+        }
+
         private void Update()
         {
             if (!GamePauseManager.instance.GamePaused)
                 BaseUpdateCalls();
+
+            if (Target == null)
+            {
+                if (particleInstance != null)
+                    Destroy(particleInstance.gameObject);
+                laserLine.gameObject.SetActive(false);
+            }
+        }
+
+        public override void SetLevelProp(int level)
+        {
+            base.SetLevelProp(level);
+
+            laserLine = Instantiate(laserPrefab, firePoint.transform).GetComponent<LineRenderer>();
+            laserLine.startColor = laserColors[level];
+            laserLine.endColor = laserColors[level];
+
+            if(particleInstance != null)
+            {
+                var trails = particleInstance.trails;
+                trails.colorOverLifetime = laserLine.startColor;
+
+                var mainModule = particleInstance.main;
+                mainModule.startColor = laserLine.startColor;
+            }
         }
 
         public override void Attack()
         {
             if (Target != null)
             {
+                laserLine.gameObject.SetActive(true);
+                laserLine.SetPosition(0, firePoint.transform.position);
+
+                Vector3 endPos = Target.transform.position;
+                Vector3 dir = Target.transform.position - firePoint.transform.position;
+                RaycastHit[] hits = Physics.RaycastAll(firePoint.transform.position, dir);
+                foreach(RaycastHit hit in hits)
+                {
+                    if(hit.collider.transform.root.gameObject == Target.gameObject)
+                    {
+                        endPos = hit.point;
+                        break;
+                    }
+                }
+
+                if (particleInstance == null)
+                {
+                    particleInstance = Instantiate(enemyHitParticle).GetComponent<ParticleSystem>();
+                    var trails = particleInstance.trails;
+                    trails.colorOverLifetime = laserLine.startColor;
+
+                    var mainModule = particleInstance.main;
+                    mainModule.startColor = laserLine.startColor;
+                }
+
+                laserLine.SetPosition(1, endPos);
+                particleInstance.transform.position = endPos;
+
                 HelperMethods.RotateObjTowardsTarget(partToRotate.transform, Target.transform.position, true);
 
-                //Shoot a bullet towards it
-                BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
-                bulletScript.damage = Damage;
-                bulletScript.SetTarget(Target.gameObject);
+                Target.Health -= damage * Time.deltaTime;
+
                 LastAttackTime = Time.time;
             }
         }
@@ -42,43 +104,40 @@ namespace SerenityGarden
         {
             //It will search once for ranged enemies, but if it doesn't find any, it will search for melee enemies.
             Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
-            EnemyBase _target = null;
+            EnemyBase rangedTarget = null;
+            EnemyBase meleeTarget = null;
+
             EnemyBase aux;
-            float minDist = float.MaxValue;
+            float minDistRanged = float.MaxValue;
+            float minDistMelee = float.MaxValue;
             foreach (Collider item in hits)
             {
                 aux = item.transform.root.gameObject.GetComponent<EnemyBase>();
-                if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
+                if (aux != null)
                 {
-                    if (aux.EnemyType == EnemyType.Ranged)
+                    float distance = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
+                    if (aux.EnemyType == EnemyType.Ranged && distance < minDistRanged)
                     {
-                        _target = aux;
-                        minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
+                        rangedTarget = aux;
+                        minDistRanged = distance;
+                    }
+                    else if (aux.EnemyType == EnemyType.Melee && distance < minDistMelee)
+                    {
+                        meleeTarget = aux;
+                        minDistMelee = distance;
                     }
 
-                    if (aux == LockOnManager.SelectedEnemy)
+                    if (LockOnManager.SelectedEnemy != null && (rangedTarget == LockOnManager.SelectedEnemy || meleeTarget == LockOnManager.SelectedEnemy))
+                    {
+                        rangedTarget = LockOnManager.SelectedEnemy;
                         break;
-                }
-            }
-            if (_target == null)
-            {
-                foreach (Collider item in hits)
-                {
-                    aux = item.gameObject.GetComponent<EnemyBase>();
-                    if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
-                    {
-                        if (aux.EnemyType == EnemyType.Melee)
-                        {
-                            _target = aux;
-                            minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
-                        }
-
-                        if (aux == LockOnManager.SelectedEnemy)
-                            break;
                     }
                 }
             }
-            foundTarget = _target;
+            if (rangedTarget != null)
+                foundTarget = rangedTarget;
+            else
+                foundTarget = meleeTarget;
             lastSearchTargetTime = Time.time;
         }
     }

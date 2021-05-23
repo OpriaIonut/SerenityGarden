@@ -42,43 +42,40 @@ namespace SerenityGarden
         {
             //It will search once only for melee enemies, but if itit doesn't find any, it will search again for ranged enemies.
             Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
-            EnemyBase _target = null;
+            EnemyBase rangedTarget = null;
+            EnemyBase meleeTarget = null;
+
             EnemyBase aux;
-            float minDist = float.MaxValue;
+            float minDistRanged = float.MaxValue;
+            float minDistMelee = float.MaxValue;
             foreach (Collider item in hits)
             {
                 aux = item.transform.root.gameObject.GetComponent<EnemyBase>();
-                if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
+                if (aux != null)
                 {
-                    if (aux.EnemyType == EnemyType.Melee)
+                    float distance = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
+                    if (distance < minDistMelee && aux.EnemyType == EnemyType.Melee)
                     {
-                        _target = aux;
-                        minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
+                        meleeTarget = aux;
+                        minDistMelee = distance;
+                    }
+                    if (distance < minDistRanged && aux.EnemyType == EnemyType.Ranged)
+                    {
+                        rangedTarget = aux;
+                        minDistRanged = distance;
                     }
 
-                    if (aux == LockOnManager.SelectedEnemy)
+                    if (rangedTarget == LockOnManager.SelectedEnemy || meleeTarget == LockOnManager.SelectedEnemy)
+                    {
+                        meleeTarget = LockOnManager.SelectedEnemy;
                         break;
-                }
-            }
-            if(_target == null)
-            {
-                foreach (Collider item in hits)
-                {
-                    aux = item.gameObject.GetComponent<EnemyBase>();
-                    if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
-                    {
-                        if (aux.EnemyType == EnemyType.Ranged)
-                        {
-                            _target = aux;
-                            minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
-                        }
-
-                        if (aux == LockOnManager.SelectedEnemy)
-                            break;
                     }
                 }
             }
-            foundTarget = _target;
+            if (meleeTarget != null)
+                foundTarget = meleeTarget;
+            else
+                foundTarget = rangedTarget;
             lastSearchTargetTime = Time.time;
         }
     }

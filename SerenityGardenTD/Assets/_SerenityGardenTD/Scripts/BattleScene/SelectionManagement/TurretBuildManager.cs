@@ -49,9 +49,6 @@ namespace SerenityGarden
         public TextMeshProUGUI repairText;
         public TextMeshProUGUI upgradeText;
 
-        //Delete this
-        public TextMeshProUGUI debugText;
-
         [Tooltip("Be careful to put them in the right order (the order from the next field.")]
         public TextMeshProUGUI[] turretBuildCostText;
 

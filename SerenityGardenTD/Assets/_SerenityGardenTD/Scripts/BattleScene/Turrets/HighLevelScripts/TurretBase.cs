@@ -123,7 +123,7 @@ namespace SerenityGarden
         /// Will set the turret to be at the give level
         /// </summary>
         /// <param name="level">starts at 0</param>
-        public void SetLevelProp(int level)
+        public virtual void SetLevelProp(int level)
         {
             if (level < 0 || level >= turretUpgradePattern.levelProp.Length)
             {
