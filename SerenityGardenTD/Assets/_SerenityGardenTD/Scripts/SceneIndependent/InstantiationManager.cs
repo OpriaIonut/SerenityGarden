@@ -15,7 +15,7 @@ namespace SerenityGarden
         TurretExcavator,
         TurretMachineCannon,
         TurretMachineGun,
-        TurretRailgun,
+        TurretLaser,
         TurretVulkan,
         EnemyAmbusher,
         EnemyFlying,
@@ -80,8 +80,8 @@ namespace SerenityGarden
                     return "PhotonPrefabs/PhotonMachineCannon";
                 case PhotonObj.TurretMachineGun:
                     return "PhotonPrefabs/PhotonMachineGun";
-                case PhotonObj.TurretRailgun:
-                    return "PhotonPrefabs/PhotonRailgun";
+                case PhotonObj.TurretLaser:
+                    return "PhotonPrefabs/PhotonLaser";
                 case PhotonObj.TurretVulkan:
                     return "PhotonPrefabs/PhotonVulkan";
                 case PhotonObj.EnemyAmbusher:

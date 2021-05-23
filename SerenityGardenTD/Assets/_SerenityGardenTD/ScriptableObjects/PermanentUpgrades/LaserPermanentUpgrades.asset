@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a7d586711c38cd4882660779327523d, type: 3}
-  m_Name: RailgunPermanentUpgrades
+  m_Name: LaserPermanentUpgrades
   m_EditorClassIdentifier: 
   turretType: 5
   upgrades:
@@ -19,14 +19,14 @@ MonoBehaviour:
     maxMultiplier: 2
     startCost: 10
     costMultiplierPerLevel: 1.7
-    currentLevel: 10
+    currentLevel: 0
     maxLevel: 10
   - type: 1
     minMultiplier: 1
     maxMultiplier: 2
     startCost: 10
     costMultiplierPerLevel: 1.7
-    currentLevel: 10
+    currentLevel: 0
     maxLevel: 10
   - type: 2
     minMultiplier: 1

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 507031177503746694}
   - component: {fileID: 1831874729815739023}
   m_Layer: 0
-  m_Name: Railgun
+  m_Name: Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2461872282195137907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23660862ff2b16846bf4a28c016f3fb3, type: 3}
+  m_Script: {fileID: 11500000, guid: e91b66aac7961f54c8fade8e6c1da5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isInitialized: 0
@@ -62,8 +62,8 @@ MonoBehaviour:
   enemyHitParticle: {fileID: 8724574042433743797, guid: 9da0a51a355f5a64a94b3cb135a33dc0,
     type: 3}
   laserColors:
-  - {r: 0.07863116, g: 0.8773585, b: 0.8693752, a: 1}
-  - {r: 0.25048384, g: 0.8301887, b: 0.05090782, a: 1}
+  - {r: 0, g: 0.9700117, b: 1, a: 1}
+  - {r: 0.07035947, g: 1, b: 0, a: 1}
   - {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &3560627678892365538
 GameObject:

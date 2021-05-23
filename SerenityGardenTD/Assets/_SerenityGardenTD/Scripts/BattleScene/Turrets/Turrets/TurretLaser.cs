@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
-    public class TurretRailgun : BuildableTurret
+    public class TurretLaser : BuildableTurret
     {
         public GameObject laserPrefab;
         public GameObject enemyHitParticle;

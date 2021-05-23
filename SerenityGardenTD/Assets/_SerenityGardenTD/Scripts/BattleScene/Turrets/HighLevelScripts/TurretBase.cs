@@ -13,7 +13,7 @@ namespace SerenityGarden
         ElectricFence,
         Vulkan,
         MachineCannon,
-        Railgun,
+        Laser,
         Excavator
     }
 

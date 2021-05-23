@@ -186,9 +186,9 @@ namespace SerenityGarden
             if (turretBase != null)
                 photonObj = PhotonObj.TurretMachineCannon;
 
-            turretBase = turretPrefabs[index].GetComponent<TurretRailgun>();
+            turretBase = turretPrefabs[index].GetComponent<TurretLaser>();
             if (turretBase != null)
-                photonObj = PhotonObj.TurretRailgun;
+                photonObj = PhotonObj.TurretLaser;
 
             turretBase = turretPrefabs[index].GetComponent<TurretExcavator>();
             if (turretBase != null)
