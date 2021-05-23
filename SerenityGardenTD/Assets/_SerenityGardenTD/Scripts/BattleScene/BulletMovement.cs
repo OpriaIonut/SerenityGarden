@@ -11,6 +11,10 @@ namespace SerenityGarden
         public float speed = 10.0f;
         private Rigidbody rb;
 
+        public GameObject hitVfx;
+        public float vfxDeathTime;
+        public float vfxMaxParticleSize;
+
         private GameObject target;
 
         private float initTime;
@@ -55,10 +59,18 @@ namespace SerenityGarden
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if (turret != null)
                 {
+                    if (hitVfx)
+                    {
+                        GameObject explosion = Instantiate(hitVfx);
+                        explosion.transform.position = transform.position;
+                        Destroy(explosion, vfxDeathTime);
+                        explosion.GetComponent<ParticleSystemRenderer>().maxParticleSize = vfxMaxParticleSize;
+                    }
+
                     //If we hit a turret, then damage it and destroy the bullet.
                     turret.Health -= damage;
-                    Destroy(this.gameObject);
                     hitTarget = true;
+                    Destroy(this.gameObject);
                 }
                 else
                 {
@@ -66,9 +78,17 @@ namespace SerenityGarden
                     EnemyBase enemy = other.transform.root.gameObject.GetComponent<EnemyBase>();
                     if (enemy != null)
                     {
+                        if (hitVfx)
+                        {
+                            GameObject explosion = Instantiate(hitVfx);
+                            explosion.transform.position = transform.position;
+                            Destroy(explosion, vfxDeathTime);
+                            explosion.GetComponent<ParticleSystemRenderer>().maxParticleSize = vfxMaxParticleSize;
+                        }
+
                         enemy.Health -= damage;
-                        Destroy(this.gameObject);
                         hitTarget = true;
+                        Destroy(this.gameObject);
                     }
                 }
             }

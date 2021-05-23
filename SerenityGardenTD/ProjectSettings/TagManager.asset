@@ -15,7 +15,7 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
+  - VFX
   - 
   - 
   - 
@@ -41,4 +41,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: VFX
+    uniqueID: 3341603239
     locked: 0

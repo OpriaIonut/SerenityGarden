@@ -7,6 +7,7 @@ namespace SerenityGarden
     public class TurretVulkan : BuildableTurret
     {
         public GameObject bulletPrefab;
+        public GameObject explosionVfx;
 
         private void Awake()
         {
@@ -35,6 +36,10 @@ namespace SerenityGarden
                 bulletScript.damage = Damage;
                 bulletScript.SetTarget(Target.gameObject);
                 LastAttackTime = Time.time;
+
+                bulletScript.hitVfx = explosionVfx;
+                bulletScript.vfxDeathTime = 1.0f;
+                bulletScript.vfxMaxParticleSize = CurrentLevel * 0.05f + 0.1f;
             }
         }
 
