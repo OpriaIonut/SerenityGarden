@@ -6,7 +6,9 @@ namespace SerenityGarden
 {
     public class TurretExcavator : BuildableTurret
     {
-        public TurretBuildManager turretBuildManager;
+        public GameObject rippleEffect;
+
+        private TurretBuildManager turretBuildManager;
         private WaveManager waveManager;
 
         private void Awake()
@@ -31,6 +33,10 @@ namespace SerenityGarden
         {
             turretBuildManager.Money += (int)Damage;
             LastAttackTime = Time.time;
+
+            Transform clone = Instantiate(rippleEffect).transform;
+            clone.position = new Vector3(transform.position.x, 0.05f, transform.position.z);
+            Destroy(clone.gameObject, 3.0f);
         }
 
         public override void FindTarget()
