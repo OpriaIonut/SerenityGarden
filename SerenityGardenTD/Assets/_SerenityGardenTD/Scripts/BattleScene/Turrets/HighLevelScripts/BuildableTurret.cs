@@ -43,16 +43,16 @@ namespace SerenityGarden
                 if (hasCommander == false && value == true)
                 {
                     //If the commander entered the turret now, then power up the turret
-                    Range *= 2;
-                    AttackCooldown /= 2;
-                    Damage *= 2;
+                    Range *= 1.5f;
+                    AttackCooldown /= 1.5f;
+                    Damage *= 1.5f;
                 }
                 else if (hasCommander == true && value == false)
                 {
                     //If the commander leaves the turret, then reset the properties
-                    Range /= 2;
-                    AttackCooldown *= 2;
-                    Damage /= 2;
+                    Range /= 1.5f;
+                    AttackCooldown *= 1.5f;
+                    Damage /= 1.5f;
                 }
                 hasCommander = value;
                 if (rangeObj != null)

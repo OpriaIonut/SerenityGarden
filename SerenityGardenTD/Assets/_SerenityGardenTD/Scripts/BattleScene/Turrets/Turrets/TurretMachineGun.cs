@@ -6,6 +6,7 @@ namespace SerenityGarden
 {
     public class TurretMachineGun : BuildableTurret
     {
+        public float spawnRadius = 0.1f;
         public GameObject bulletPrefab;
 
         private void Awake()
@@ -30,8 +31,11 @@ namespace SerenityGarden
             {
                 HelperMethods.RotateObjTowardsTarget(partToRotate.transform, Target.transform.position, true);
 
+                Vector3 defaultPos = firePoint.transform.position;
+                Vector3 spawnPos = new Vector3(Random.Range(defaultPos.x - spawnRadius, defaultPos.x + spawnRadius), Random.Range(defaultPos.y - spawnRadius, defaultPos.y + spawnRadius), defaultPos.z);
+
                 //Shoot a bullet towards it
-                BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
+                BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, spawnPos, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
                 bulletScript.SetTarget(Target.gameObject);
                 LastAttackTime = Time.time;

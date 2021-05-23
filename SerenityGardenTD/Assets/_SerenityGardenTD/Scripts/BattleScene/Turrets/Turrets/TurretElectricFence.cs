@@ -6,6 +6,8 @@ namespace SerenityGarden
 {
     public class TurretElectricFence : BuildableTurret
     {
+        public GameObject sparkEffect;
+
         private void Awake()
         {
             BaseAwakeCalls();
@@ -27,6 +29,12 @@ namespace SerenityGarden
             if(Target != null)
             {
                 HelperMethods.RotateObjTowardsTarget(partToRotate.transform, Target.transform.position, true);
+
+                GameObject spark = Instantiate(sparkEffect);
+                spark.transform.position = firePoint.transform.position;
+                //HelperMethods.RotateObjTowardsTarget(spark.transform, Target.transform.position, true);
+                spark.transform.LookAt(Target.transform.position);
+                Destroy(spark, 1.0f);
 
                 Target.Health -= Damage;
                 LastAttackTime = Time.time;

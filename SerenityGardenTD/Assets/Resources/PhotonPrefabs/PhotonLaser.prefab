@@ -115,7 +115,7 @@ PrefabInstance:
     - target: {fileID: 2461872282195137907, guid: d69d75de14bba814c887365aa8bd3774,
         type: 3}
       propertyPath: m_Name
-      value: PhotonRailgun
+      value: PhotonLaser
       objectReference: {fileID: 0}
     - target: {fileID: 8363764918513435436, guid: d69d75de14bba814c887365aa8bd3774,
         type: 3}
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3625167561657144921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23660862ff2b16846bf4a28c016f3fb3, type: 3}
+  m_Script: {fileID: 11500000, guid: e91b66aac7961f54c8fade8e6c1da5ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3261657826203849573 stripped
