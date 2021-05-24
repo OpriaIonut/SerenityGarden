@@ -225,7 +225,8 @@ namespace SerenityGarden
             //Draw/destroy the range
             if(draw && rangeObj == null)
             {
-                rangeObj = Instantiate(rangePrefab, transform.position, transform.rotation);
+                rangeObj = Instantiate(rangePrefab);
+                rangeObj.transform.position = transform.position;
                 rangeObj.transform.localScale = Vector3.one * range;
             }
             if (!draw && rangeObj != null)
