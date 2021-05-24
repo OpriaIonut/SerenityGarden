@@ -164,7 +164,6 @@ namespace SerenityGarden
             float widthDiff = screenBoundsMax.x - screenBoundsMin.x;
             float heightDiff = screenBoundsMax.y - screenBoundsMin.y;
 
-            Debug.Log("Screen: " + Screen.width + " " + Screen.height);
             //Find the factor the map needs to be scaled by to fill the entire screen
             float xScale = (Screen.width * walkableArea.transform.localScale.x) / widthDiff;
             float yScale = (Screen.height * walkableArea.transform.localScale.x) / heightDiff;

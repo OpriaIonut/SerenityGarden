@@ -1,12 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 namespace SerenityGarden
 {
-    public class TurretMachineCannon : BuildableTurret
+    public class TurretFlamethrower : BuildableTurret
     {
-        public GameObject bulletPrefab;
+        public GameObject vfxPrefab;
+
+        [GradientUsage(true)]
+        public Gradient[] flameGradients;
+
+        public Vector2[] reachProp;
+        public Vector3[] boxColSize;
+        public Vector3[] boxColCenter;
+
+        private VisualEffect vfxInstance;
+        private FlameEffect effectScript;
 
         private void Awake()
         {
@@ -18,10 +29,32 @@ namespace SerenityGarden
             BaseStartCalls();
         }
 
+        public override void SetLevelProp(int level)
+        {
+            base.SetLevelProp(level);
+
+            GameObject effect = Instantiate(vfxPrefab, firePoint.transform);
+
+            vfxInstance = effect.GetComponent<VisualEffect>();
+            vfxInstance.SetGradient("ColorGradient", flameGradients[level]);
+            vfxInstance.SetVector2("Reach", reachProp[level]);
+
+            effectScript = effect.GetComponent<FlameEffect>();
+            effectScript.damageOverTime = Damage;
+            effectScript.hitEnemies = true;
+            effectScript.SetColliderSize(boxColSize[level], boxColCenter[level]);
+        }
+
         private void Update()
         {
             if (!GamePauseManager.instance.GamePaused)
                 BaseUpdateCalls();
+
+            if (Target == null)
+            {
+                vfxInstance.Stop();
+                effectScript.Activate(false);
+            }
         }
 
         public override void Attack()
@@ -29,12 +62,10 @@ namespace SerenityGarden
             if (Target != null)
             {
                 HelperMethods.RotateObjTowardsTarget(partToRotate.transform, Target.transform.position, true);
-
-                //Shoot a bullet towards it
-                BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
-                bulletScript.damage = Damage;
-                bulletScript.SetTarget(Target.gameObject);
                 LastAttackTime = Time.time;
+
+                vfxInstance.Play();
+                effectScript.Activate(true);
             }
         }
 
@@ -54,18 +85,18 @@ namespace SerenityGarden
                 if (aux != null)
                 {
                     float distance = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
-                    if (distance < minDistMelee && aux.EnemyType == EnemyType.Melee)
+                    if (aux.EnemyType == EnemyType.Melee && distance < minDistMelee)
                     {
                         meleeTarget = aux;
                         minDistMelee = distance;
                     }
-                    if (distance < minDistRanged && aux.EnemyType == EnemyType.Ranged)
+                    if (aux.EnemyType == EnemyType.Ranged && distance < minDistRanged)
                     {
                         rangedTarget = aux;
                         minDistRanged = distance;
                     }
 
-                    if (rangedTarget == LockOnManager.SelectedEnemy || meleeTarget == LockOnManager.SelectedEnemy)
+                    if (LockOnManager.SelectedEnemy != null && rangedTarget == LockOnManager.SelectedEnemy || meleeTarget == LockOnManager.SelectedEnemy)
                     {
                         meleeTarget = LockOnManager.SelectedEnemy;
                         break;

@@ -53,6 +53,10 @@ namespace SerenityGarden
             float minDist = float.MaxValue;
             foreach (Collider item in hits)
             {
+                //Ignore vfx collisions
+                if (item.transform.gameObject.layer == 9)
+                    continue;
+
                 aux = item.transform.root.gameObject.GetComponent<PlayerBase>();
                 if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
                 {

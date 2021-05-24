@@ -23,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity
     guid: 6f3c0503e87b3d3459c1859bf49fda60
-  - enabled: 0
-    path: Assets/_SerenityGardenTD/Scenes/CameraTestScene.unity
-    guid: 627c758c84eba8e408ffe27f012a541f
   m_configObjects: {}

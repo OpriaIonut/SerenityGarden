@@ -53,6 +53,10 @@ namespace SerenityGarden
         public float damage;
         private void OnTriggerEnter(Collider other)
         {
+            //Ignore vfx collisions
+            if (other.transform.gameObject.layer == 9)
+                return;
+
             if (Time.time - initTime > 0.1f && hitTarget == false)
             {
                 //If it is a bullet that was shot by an enemy, then check if it collided with a turret
