@@ -180,7 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9534bf53d17c4364fb975b13d76bbfa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 15
+  hitVfx: {fileID: 0}
+  vfxDeathTime: 0
+  vfxMaxParticleSize: 0
   damage: 0
 --- !u!1 &6760037019308745949
 GameObject:
