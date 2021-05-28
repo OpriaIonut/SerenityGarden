@@ -1220,17 +1220,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.2313251
+      value: 3.4542656
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.2313251
+      value: 3.4542656
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.2313251
+      value: 3.4542656
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
@@ -3058,8 +3058,8 @@ MonoBehaviour:
   mapPresetFile: Stages/Stage 1-1.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
-  scaleFact: 0
-  walkableArea: {fileID: 931180055}
+  scaleFact: 3.4542656
+  walkableArea: {fileID: 266624684}
 --- !u!4 &696150181
 Transform:
   m_ObjectHideFlags: 0
