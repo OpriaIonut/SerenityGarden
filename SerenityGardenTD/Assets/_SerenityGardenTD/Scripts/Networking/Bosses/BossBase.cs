@@ -7,13 +7,16 @@ namespace SerenityGarden
 {
     public class BossBase : MonoBehaviour
     {
+        [Header("Inherited")]
         public float maxHealth;
+        public float timeBetweenDecisions;
 
         public Gradient healthGradient;
         public Animator anim;
         public Image healthbar;
 
         protected float health;
+        protected float nextDecisionTime;
 
         protected bool isDead;
 
@@ -41,9 +44,16 @@ namespace SerenityGarden
         {
             if (!isDead)
             {
-                anim.SetTrigger("Die");
                 isDead = true;
+                StartCoroutine("EndBossBattle");
             }
+        }
+
+        protected virtual IEnumerator EndBossBattle()
+        {
+            anim.SetTrigger("Die");
+            yield return new WaitForSeconds(3.0f);
+            BattleStageStateManager.instance.GameWon();
         }
     }
 }
