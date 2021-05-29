@@ -20,26 +20,10 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 2758391320315542988}
-  - {fileID: 1785162930829735980}
+  - {fileID: 0}
   sceneViewId: 4
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &1785162930829735980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3027623387401625730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 0
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!1001 &5750714187462712836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110,7 +94,7 @@ PrefabInstance:
     - target: {fileID: 5891002980599910017, guid: 3336d480eb14f5d4dbcb08b4420f1d89,
         type: 3}
       propertyPath: m_Name
-      value: PhotonMachineCannon
+      value: PhotonFlamethrower
       objectReference: {fileID: 0}
     - target: {fileID: 6863762029592853824, guid: 3336d480eb14f5d4dbcb08b4420f1d89,
         type: 3}
@@ -137,9 +121,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ecd95e8dba46a141bd17baf669d64a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &3027623387401625730 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7334925063688208006, guid: 3336d480eb14f5d4dbcb08b4420f1d89,
-    type: 3}
-  m_PrefabInstance: {fileID: 5750714187462712836}
-  m_PrefabAsset: {fileID: 0}

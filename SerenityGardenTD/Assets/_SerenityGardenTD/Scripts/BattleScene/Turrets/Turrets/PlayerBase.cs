@@ -82,6 +82,15 @@ namespace SerenityGarden
             }
         }
 
+        public override void AttackBoss()
+        {
+            //Shoot a bullet towards it
+            BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
+            bulletScript.damage = Damage;
+            bulletScript.SetTarget(boss.gameObject);
+            LastAttackTime = Time.time;
+        }
+
         public override void Die()
         {
             BattleStageStateManager.instance.GameOver();

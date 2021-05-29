@@ -69,11 +69,15 @@ namespace SerenityGarden
 
         private bool netReceivedEventData = false;
 
+
         public override void BaseStartCalls()
         {
             base.BaseStartCalls();
             SetLevelProp(0);
             beforeRecoveryMaterial = new List<Material>();
+
+            if (SceneDataRetainer.instance.GetStage().isBossStage)
+                boss = FindObjectOfType<BossBase>();
         }
 
         public override void BaseUpdateCalls()
@@ -107,11 +111,19 @@ namespace SerenityGarden
             }
             else
             {
-                //Search for a target at certain intervals
-                if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
-                    FindTarget();
-                if (Time.time - LastAttackTime > AttackCooldown)
-                    Attack();
+                if (boss == null)
+                {
+                    //Search for a target at certain intervals
+                    if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
+                        FindTarget();
+                    if (Time.time - LastAttackTime > AttackCooldown)
+                        Attack();
+                }
+                else
+                {
+                    if (Time.time - LastAttackTime > AttackCooldown)
+                        AttackBoss();
+                }
             }
         }
 
@@ -196,7 +208,7 @@ namespace SerenityGarden
             else
                 hexagonBlock.Type = HexagonType.TurretBuildable;
 
-            if (PhotonNetwork.IsConnected)
+            if (PhotonNetwork.IsConnected && PhotonNetwork.CurrentRoom.PlayerCount > 1)
             {
                 if (netReceivedEventData)
                 {

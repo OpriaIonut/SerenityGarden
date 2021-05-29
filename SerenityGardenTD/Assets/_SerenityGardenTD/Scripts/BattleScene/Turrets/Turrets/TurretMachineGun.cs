@@ -9,6 +9,7 @@ namespace SerenityGarden
         public float spawnRadius = 0.1f;
         public GameObject bulletPrefab;
 
+
         private void Awake()
         {
             BaseAwakeCalls();
@@ -40,6 +41,20 @@ namespace SerenityGarden
                 bulletScript.SetTarget(Target.gameObject);
                 LastAttackTime = Time.time;
             }
+        }
+
+        public override void AttackBoss()
+        {
+            HelperMethods.RotateObjTowardsTarget(partToRotate.transform, boss.transform.position, true);
+
+            Vector3 defaultPos = firePoint.transform.position;
+            Vector3 spawnPos = new Vector3(Random.Range(defaultPos.x - spawnRadius, defaultPos.x + spawnRadius), Random.Range(defaultPos.y - spawnRadius, defaultPos.y + spawnRadius), defaultPos.z);
+
+            //Shoot a bullet towards it
+            BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, spawnPos, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
+            bulletScript.damage = Damage;
+            bulletScript.SetTarget(boss.gameObject);
+            LastAttackTime = Time.time;
         }
 
         public override void FindTarget()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273174, g: 0.13414761, b: 0.12107885, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -954,7 +954,6 @@ MonoBehaviour:
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
-  m_ShouldActivateOnSelect: 1
 --- !u!114 &328590479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4114,7 +4113,6 @@ MonoBehaviour:
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0
-  m_ShouldActivateOnSelect: 1
 --- !u!114 &1541721129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5283,7 +5281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInitialized: 0
-  stage: {fileID: 11400000, guid: 06ff6a2a0c369004d868505e23a1e87e, type: 2}
+  stage: {fileID: 11400000, guid: 4a2cb216a6730ed4a8cda92e2905c45c, type: 2}
 --- !u!4 &1986320567
 Transform:
   m_ObjectHideFlags: 0

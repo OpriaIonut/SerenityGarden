@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - WalkableArea
+  - BossHitCollider
+  - BossAttackCollider
   layers:
   - Default
   - TransparentFX

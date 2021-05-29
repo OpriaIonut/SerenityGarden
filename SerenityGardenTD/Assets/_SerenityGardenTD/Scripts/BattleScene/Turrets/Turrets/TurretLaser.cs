@@ -34,7 +34,7 @@ namespace SerenityGarden
             if (!GamePauseManager.instance.GamePaused)
                 BaseUpdateCalls();
 
-            if (Target == null)
+            if (Target == null && boss == null)
             {
                 if (particleInstance != null)
                     Destroy(particleInstance.gameObject);
@@ -98,6 +98,46 @@ namespace SerenityGarden
 
                 LastAttackTime = Time.time;
             }
+        }
+
+        public override void AttackBoss()
+        {
+            laserLine.gameObject.SetActive(true);
+            laserLine.SetPosition(0, firePoint.transform.position);
+
+            Vector3 endPos = boss.transform.position;
+            Vector3 dir = boss.transform.position - firePoint.transform.position;
+            RaycastHit[] hits = Physics.RaycastAll(firePoint.transform.position, dir);
+            foreach (RaycastHit hit in hits)
+            {
+                if (hit.collider.gameObject.tag != "BossHitCollider")
+                    continue;
+
+                if (hit.collider.transform.root.gameObject == boss.gameObject)
+                {
+                    endPos = hit.point;
+                    break;
+                }
+            }
+
+            if (particleInstance == null)
+            {
+                particleInstance = Instantiate(enemyHitParticle).GetComponent<ParticleSystem>();
+                var trails = particleInstance.trails;
+                trails.colorOverLifetime = laserLine.startColor;
+
+                var mainModule = particleInstance.main;
+                mainModule.startColor = laserLine.startColor;
+            }
+
+            laserLine.SetPosition(1, endPos);
+            particleInstance.transform.position = endPos;
+
+            HelperMethods.RotateObjTowardsTarget(partToRotate.transform, boss.transform.position, true);
+
+            boss.TakeDamage(damage * Time.deltaTime);
+
+            LastAttackTime = Time.time;
         }
 
         public override void FindTarget()

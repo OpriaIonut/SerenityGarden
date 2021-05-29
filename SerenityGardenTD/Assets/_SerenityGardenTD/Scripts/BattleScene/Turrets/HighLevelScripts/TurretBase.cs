@@ -110,6 +110,8 @@ namespace SerenityGarden
         }
         #endregion
 
+        protected BossBase boss;
+
         public override void BaseStartCalls()
         {
             view = GetComponent<PhotonView>();
@@ -242,6 +244,7 @@ namespace SerenityGarden
         }
 
         public abstract void Attack();
+        public abstract void AttackBoss();
         public virtual void Die()
         {
             Destroy(this.gameObject);

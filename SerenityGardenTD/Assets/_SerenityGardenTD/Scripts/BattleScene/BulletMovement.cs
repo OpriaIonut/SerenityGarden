@@ -94,6 +94,27 @@ namespace SerenityGarden
                         hitTarget = true;
                         Destroy(this.gameObject);
                     }
+                    else
+                    {
+                        if (other.gameObject.tag != "BossHitCollider")
+                            return;
+
+                        BossBase boss = other.transform.root.gameObject.GetComponent<BossBase>();
+                        if (boss != null)
+                        {
+                            if (hitVfx)
+                            {
+                                GameObject explosion = Instantiate(hitVfx);
+                                explosion.transform.position = transform.position;
+                                Destroy(explosion, vfxDeathTime);
+                                explosion.GetComponent<ParticleSystemRenderer>().maxParticleSize = vfxMaxParticleSize;
+                            }
+
+                            boss.TakeDamage(damage);
+                            hitTarget = true;
+                            Destroy(this.gameObject);
+                        }
+                    }
                 }
             }
         }

@@ -173,6 +173,8 @@ namespace SerenityGarden
             scaleFact += mapScaleOffset;
             walkableArea.transform.localScale = new Vector3(scaleFact, scaleFact, scaleFact);
 
+            //Debug.Log(string.Format("w: {0}, h: {1}, bm: {5}, bM: {6}, wD: {2}, wH: {3}, fact: {4}", Screen.width, Screen.height, widthDiff, heightDiff, scaleFact, bounds.min, bounds.max));
+
             //Apply physics so that we can raycast to it
             Physics.SyncTransforms();
         }

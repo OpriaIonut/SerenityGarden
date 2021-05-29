@@ -12,11 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b2ee4aa6f7a69b419023cbb83e0040f, type: 3}
   m_Name: BossStage1
   m_EditorClassIdentifier: 
-  stageName: Map1
+  stageName: FireBoss
   stageFilePath: Raid
   mapObj: {fileID: 919132149155446097, guid: d92eef9e0d1791240a827502c55e00d2, type: 3}
-  waves:
-  - {fileID: 11400000, guid: 827cddcec3b5e00409aa4fe85ca16173, type: 2}
+  waves: []
   isBossStage: 1
   baseReward: 200
   starRanking: 0

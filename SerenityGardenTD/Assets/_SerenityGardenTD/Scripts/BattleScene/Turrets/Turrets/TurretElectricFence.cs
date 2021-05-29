@@ -41,6 +41,13 @@ namespace SerenityGarden
             }
         }
 
+        public override void AttackBoss()
+        {
+            //Intentionally left like this
+            HelperMethods.RotateObjTowardsTarget(partToRotate.transform, boss.transform.position, true);
+            LastAttackTime = Time.time;
+        }
+
         public override void FindTarget()
         {
             //It can find melee enemies, but who knows, maybe a ranged enemy will be close enough so that it can hit it. It is unlikely, but worth checking for.

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3058,8 +3058,8 @@ MonoBehaviour:
   mapPresetFile: Stages/Stage 1-1.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
-  scaleFact: 3.4542656
-  walkableArea: {fileID: 266624684}
+  scaleFact: 0
+  walkableArea: {fileID: 931180055}
 --- !u!4 &696150181
 Transform:
   m_ObjectHideFlags: 0
@@ -6955,17 +6955,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.348101
+      value: 5.771279
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.348101
+      value: 5.771279
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.348101
+      value: 5.771279
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
@@ -9355,7 +9355,7 @@ PrefabInstance:
     - target: {fileID: 9207237407314256191, guid: a886a2e75564a8e4589c1052664dac59,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.5
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 9207237407314256191, guid: a886a2e75564a8e4589c1052664dac59,
         type: 3}

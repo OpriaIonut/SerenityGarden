@@ -4,10 +4,17 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    public enum HitObjectType
+    {
+        Turret,
+        Enemy,
+        Boss
+    }
+       
     public class FlameEffect : MonoBehaviour
     {
         public float damageOverTime = 1.0f;
-        public bool hitEnemies = true;
+        public HitObjectType objTohit;
 
         private BoxCollider boxCol;
 
@@ -29,13 +36,13 @@ namespace SerenityGarden
 
         private void OnTriggerStay(Collider other)
         {
-            if (hitEnemies)
+            if (objTohit == HitObjectType.Enemy)
             {
                 EnemyBase enemy = other.transform.root.gameObject.GetComponent<EnemyBase>();
                 if (enemy != null)
                     enemy.Health -= damageOverTime * Time.deltaTime;
             }
-            else
+            else if (objTohit == HitObjectType.Turret)
             {
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if (turret != null)

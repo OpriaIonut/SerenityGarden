@@ -25,11 +25,21 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if (!GamePauseManager.instance.GamePaused && waveManager.spawnWaves == true)
+            if (!GamePauseManager.instance.GamePaused && (boss != null || waveManager.spawnWaves == true))
                 BaseUpdateCalls();
         }
 
         public override void Attack()
+        {
+            turretBuildManager.Money += (int)Damage;
+            LastAttackTime = Time.time;
+
+            Transform clone = Instantiate(rippleEffect).transform;
+            clone.position = new Vector3(transform.position.x, 0.05f, transform.position.z);
+            Destroy(clone.gameObject, 3.0f);
+        }
+
+        public override void AttackBoss()
         {
             turretBuildManager.Money += (int)Damage;
             LastAttackTime = Time.time;

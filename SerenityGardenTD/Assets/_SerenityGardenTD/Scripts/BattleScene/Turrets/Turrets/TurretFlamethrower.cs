@@ -41,7 +41,10 @@ namespace SerenityGarden
 
             effectScript = effect.GetComponent<FlameEffect>();
             effectScript.damageOverTime = Damage;
-            effectScript.hitEnemies = true;
+            if (boss == null)
+                effectScript.objTohit = HitObjectType.Enemy;
+            else
+                effectScript.objTohit = HitObjectType.Boss;
             effectScript.SetColliderSize(boxColSize[level], boxColCenter[level]);
         }
 
@@ -50,7 +53,7 @@ namespace SerenityGarden
             if (!GamePauseManager.instance.GamePaused)
                 BaseUpdateCalls();
 
-            if (Target == null)
+            if (Target == null && boss == null)
             {
                 vfxInstance.Stop();
                 effectScript.Activate(false);
@@ -67,6 +70,17 @@ namespace SerenityGarden
                 vfxInstance.Play();
                 effectScript.Activate(true);
             }
+        }
+
+        public override void AttackBoss()
+        {
+            HelperMethods.RotateObjTowardsTarget(partToRotate.transform, boss.transform.position, true);
+            LastAttackTime = Time.time;
+
+            boss.TakeDamage(Damage * Time.deltaTime);
+
+            vfxInstance.Play();
+            effectScript.Activate(true);
         }
 
         public override void FindTarget()
