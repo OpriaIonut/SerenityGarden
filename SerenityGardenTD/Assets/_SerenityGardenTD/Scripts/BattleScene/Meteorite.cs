@@ -7,8 +7,10 @@ namespace SerenityGarden
     public class Meteorite : MonoBehaviour
     {
         public float speed = 10.0f;
+        public GameObject explosionVFX;
 
         private float damage;
+        private bool aoe;
 
         private TurretBase target;
         private Rigidbody rb;
@@ -27,18 +29,42 @@ namespace SerenityGarden
             }
         }
 
-        public void SetTarget(TurretBase _target, float _damage)
+        public void SetTarget(TurretBase _target, float _damage, bool _aoe)
         {
             target = _target;
             damage = _damage;
+            aoe = _aoe;
         }
+
+        private bool calledDestroy = false;
 
         private void OnTriggerEnter(Collider other)
         {
-            if(target != null && other.transform.root.gameObject == target.gameObject)
+            if (!aoe)
             {
-                target.Health -= damage;
-                Destroy(gameObject);
+                if (target != null && other.transform.root.gameObject == target.gameObject)
+                {
+                    target.Health -= damage;
+                    Destroy(gameObject);
+                }
+            }
+            else
+            {
+                TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
+                if(turret != null)
+                {
+                    turret.Health -= damage;
+                    if(!calledDestroy)
+                    {
+                        Destroy(gameObject, 0.5f);
+                        calledDestroy = true;
+
+                        GameObject explosion = Instantiate(explosionVFX);
+                        explosion.transform.position = transform.position;
+                        Destroy(explosion, 1.0f);
+                        explosionVFX.GetComponent<ParticleSystemRenderer>().maxParticleSize = 1.0f;
+                    }
+                }
             }
         }
     }

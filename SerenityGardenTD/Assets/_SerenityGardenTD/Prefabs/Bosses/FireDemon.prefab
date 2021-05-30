@@ -77,8 +77,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadbd2c5f84fc944288450772b28e6bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5000
-  timeBetweenDecisions: 10
+  maxHealth: 10000
+  timeBetweenDecisions: 7
   healthGradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}
@@ -112,17 +112,20 @@ MonoBehaviour:
   healthbar: {fileID: 0}
   moneyPerHp: 1
   maxDamageMultiplier: 1.5
+  rotationSpeed: 1
+  scaleIncreaseSpeed: 0.0025
+  sweepDamage: 25
+  decisionBarriers:
+  - 0.3
+  - 0.7
   turretDestroyerCount: 5
   turretDestroyerMaxScale: 0.25
-  timeBasedAttackMaxScale: 1
-  scaleIncreaseSpeed: 0.0025
-  turretDestroyerDamage: 25
-  sweepDamage: 25
+  turretDestroyerDamage: 15
+  timeBasedAttackMaxScale: 1.9
+  timeBasedAttackDuration: 30
+  timeBasedAttackInterruptAmount: 0.2
   timeBasedAttackDamage: 100
-  decisionBarriers:
-  - 40
-  - 35
-  - 20
+  stunTime: 10
   meteoriteSpawn: {fileID: 3379119341425660573}
   meteoritePrefab: {fileID: 5736915526143699279, guid: 65fecee5c98eb55479f01b04ccbf0290,
     type: 3}
