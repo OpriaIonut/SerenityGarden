@@ -17,7 +17,7 @@ namespace SerenityGarden
         TimeBasedAttack
     }
 
-    public class FireDemon : BossBase
+    public class FireDemon : BossBase, IPunObservable
     {
         [Header("Own properties")]
         public float moneyPerHp = 1.0f;
@@ -48,6 +48,11 @@ namespace SerenityGarden
         public Transform meteoriteSpawn;
         public GameObject meteoritePrefab;
         public Transform sweepRaycastOrigin;
+        public RectTransform stunBar;
+        public GameObject timerParent;
+        public Image timerBar;
+        public TextMeshProUGUI timerText;
+        //public ParticleSystem passiveEffect;
 
         private float currentDamageMultiplier;
         private int lastHpDiffCheck = 0;
@@ -57,6 +62,7 @@ namespace SerenityGarden
         //If this is set it the next decision will be this one, otherwise, it will pick it randomly
         private FireDemonActions forceNextDecision;
         private FireDemonActions currentAction;
+        public FireDemonActions CurrentAction { get { return currentAction; } }
 
         private Quaternion defaultRotation;
         private PlayerBase timeBasedAttackTarget;
@@ -64,11 +70,20 @@ namespace SerenityGarden
 
         private bool resetRotation;
 
-        private List<TurretBase> sweepHitNames = new List<TurretBase>();
+        private List<TurretBase> sweepHitObj = new List<TurretBase>();
 
         private float rotationAmount;
         private int forcedAttackIndex;  //based on this we will do the time based attack whenever the boss drops to a certain ammount of health
         private bool rotateTowardsTarget = false;
+
+        private bool netSendEvent;
+
+        //When instantiating through network, the owner will instantiate the meteor so he will have it's reference.
+        //And on the client, when the meteor gets instantiated, he will receive this reference so that we can shoot it when needed.
+        private Meteorite netMeteorInstance;    
+        public Meteorite NetMeteorInstance { get { return netMeteorInstance; } set { netMeteorInstance = value; } }
+        private TurretBase netMeteorTarget;
+        public TurretBase NetMeteorTarget { get { return netMeteorTarget; } set { netMeteorTarget = value; } }
 
         private void Start()
         {
@@ -85,6 +100,9 @@ namespace SerenityGarden
 
         private void Update()
         {
+            if (isDead || !photonView.IsMine)
+                return;
+
             if (Time.time > nextDecisionTime)
                 MakeDecision();
 
@@ -119,7 +137,12 @@ namespace SerenityGarden
                 lastHpDiffCheck = hpDiff;
             }
 
-            if(forcedAttackIndex == 0 && health < maxHealth * 2 / 3)
+            //var mainModule = passiveEffect.main;
+            //mainModule.startLifetime = 1.0f * (maxHealth - health) / maxHealth;
+            //var emissionModule = passiveEffect.emission;
+            //emissionModule.rateOverTime = 300.0f * (maxHealth - health) / maxHealth;
+
+            if (forcedAttackIndex == 0 && health < maxHealth * 2 / 3)
             {
                 forceNextDecision = FireDemonActions.TimeBasedAttack;
                 forcedAttackIndex++;
@@ -153,6 +176,7 @@ namespace SerenityGarden
                     currentAction = FireDemonActions.Sweep;
             }
             StartAction();
+            netSendEvent = true;
         }
 
         private void StartAction()
@@ -162,13 +186,13 @@ namespace SerenityGarden
                 case FireDemonActions.None:
                     break;
                 case FireDemonActions.IdleStretch:
-                    Action_IdleStretch();
+                    StartCoroutine("Action_IdleStretch");
                     break;
                 case FireDemonActions.TurretDestroyer:
                     StartCoroutine(Action_TurretDestroyer());
                     break;
                 case FireDemonActions.Sweep:
-                    Action_SweepAttack();
+                    StartCoroutine("Action_SweepAttack");
                     break;
                 case FireDemonActions.TimeBasedAttack:
                     StartCoroutine("Action_TimeBasedAttack");
@@ -176,17 +200,23 @@ namespace SerenityGarden
             }
         }
 
-        private void Action_IdleStretch()
+        private IEnumerator Action_IdleStretch()
         {
             anim.SetTrigger("IdleStretch");
-            nextDecisionTime += anim.GetCurrentAnimatorClipInfo(0).Length;
+            nextDecisionTime += 3.5f;
+            yield return new WaitForSeconds(3.5f);
+            currentAction = FireDemonActions.None;
+            nextDecisionTime = Time.time + timeBetweenDecisions;
         }
 
-        private void Action_SweepAttack()
+        private IEnumerator Action_SweepAttack()
         {
             anim.SetTrigger("Sweep");
-            nextDecisionTime += anim.GetCurrentAnimatorClipInfo(0).Length;
-            sweepHitNames.Clear();
+            sweepHitObj.Clear();
+            nextDecisionTime += 6.5f;
+            yield return new WaitForSeconds(6.5f);
+            currentAction = FireDemonActions.None;
+            nextDecisionTime = Time.time + timeBetweenDecisions;
         }
 
         private IEnumerator Action_TurretDestroyer()
@@ -205,17 +235,8 @@ namespace SerenityGarden
 
             for(int index = 0; index < turretDestroyerCount; index++)
             {
-                Transform meteorite = Instantiate(meteoritePrefab).transform;
-                meteorite.position = meteoriteSpawn.position;
-
-                while(meteorite.localScale.x < turretDestroyerMaxScale)
-                {
-                    meteorite.localScale += Vector3.one * scaleIncreaseSpeed;
-                    yield return new WaitForSeconds(0.01f);
-                }
-
                 TurretBase target = null;
-                while(target == null)
+                while (target == null)
                 {
                     int turretIndex = Random.Range(0, turretList.Count);
                     TurretBase aux = turretList[turretIndex];
@@ -227,11 +248,35 @@ namespace SerenityGarden
                         target = aux;
                 }
 
-                Meteorite script = meteorite.GetComponent<Meteorite>();
-                script.SetTarget(target, turretDestroyerDamage * currentDamageMultiplier, false);
+                Transform meteorite = null;
+                float localScale = 0.01f;
+                if (photonView.IsMine)
+                {
+                    object[] meteorInitData = new object[1];
+                    meteorInitData[0] = target.photonView.ViewID;
+
+                    meteorite = InstantiationManager.instance.InstantiateWithCheck(meteoritePrefab, meteoriteSpawn.position, Quaternion.identity, PhotonObj.Meteorite, meteorInitData).transform;
+                }
+
+                while (localScale < turretDestroyerMaxScale)
+                {
+                    localScale += scaleIncreaseSpeed;
+                    if (photonView.IsMine)
+                        meteorite.localScale = Vector3.one * localScale;
+                    yield return new WaitForSeconds(0.01f);
+                }
+
+                if (photonView.IsMine)
+                {
+                    Meteorite script = meteorite.GetComponent<Meteorite>();
+                    script.SetTarget(target, turretDestroyerDamage * currentDamageMultiplier, false);
+                }
+                else
+                    NetMeteorInstance.SetTarget(netMeteorTarget, turretDestroyerDamage * currentDamageMultiplier, false);
             }
 
             anim.SetTrigger("TurretDestroyerEnd");
+            nextDecisionTime = Time.time + timeBetweenDecisions;
         }
 
 
@@ -250,25 +295,47 @@ namespace SerenityGarden
             yield return new WaitForSeconds(1.0f);
             anim.SetTrigger("TimeBasedAttackStart");
 
-            Meteorite meteor = Instantiate(meteoritePrefab).GetComponent<Meteorite>();
-            meteor.transform.position = meteoriteSpawn.position;
-            meteor.speed *= 0.1f;
-            float scaleFact = (timeBasedAttackMaxScale - meteor.transform.localScale.x) / timeBasedAttackDuration * 0.1f;
+            Meteorite meteor = null;
+            if (photonView.IsMine)
+            {
+                object[] meteorInitData = new object[1];
+                meteorInitData[0] = timeBasedAttackTarget.photonView.ViewID;
+
+
+                meteor = InstantiationManager.instance.InstantiateWithCheck(meteoritePrefab, meteoriteSpawn.position, Quaternion.identity, PhotonObj.Meteorite, meteorInitData).GetComponent<Meteorite>();
+                meteor.speed *= 0.1f;
+            }
+            float scaleFact = (timeBasedAttackMaxScale - 0.01f) / timeBasedAttackDuration * 0.05f;
 
             nextDecisionTime += timeBasedAttackDuration;
             float endTime = Time.time + timeBasedAttackDuration;
-            float stunHpLimit = health - health * timeBasedAttackInterruptAmount;
+            float stunHpLimit = health - maxHealth * timeBasedAttackInterruptAmount;
+
+            stunBar.gameObject.SetActive(true);
+            stunBar.anchoredPosition = new Vector2((stunHpLimit / maxHealth) * healthbar.rectTransform.rect.width, 0.0f);
+
+            timerParent.SetActive(true);
+            timerBar.fillAmount = 1.0f;
+            timerText.text = ((int)timeBasedAttackDuration).ToString();
+
             bool cond = false;
             while(Time.time < endTime)
             {
-                yield return new WaitForSeconds(0.1f);
-                meteor.transform.localScale += Vector3.one * scaleFact;
+                yield return new WaitForSeconds(0.05f);
+                timerBar.fillAmount = (endTime - Time.time) - Mathf.Floor(endTime - Time.time);
+                timerText.text = ((int)(endTime - Time.time)).ToString();
+
+                if (photonView.IsMine)
+                    meteor.transform.localScale += Vector3.one * scaleFact;
                 if(health <= stunHpLimit)
                 {
                     anim.SetBool("Stun", true);
                     cond = true;
+                    stunBar.gameObject.SetActive(false);
+                    timerParent.SetActive(false);
 
-                    Destroy(meteor.gameObject);
+                    if (photonView.IsMine)
+                        PhotonNetwork.Destroy(meteor.gameObject);
                     currentAction = FireDemonActions.None;
 
                     nextDecisionTime = Time.time + timeBetweenDecisions + stunTime;
@@ -282,10 +349,15 @@ namespace SerenityGarden
                 nextDecisionTime = Time.time + timeBetweenDecisions * 2;
                 currentAction = FireDemonActions.None;
                 anim.SetTrigger("TimeBasedAttackEnd");
+                stunBar.gameObject.SetActive(false);
+                timerParent.SetActive(false);
 
                 float animTime = 5.0f;
                 yield return new WaitForSeconds(animTime / 4);
-                meteor.SetTarget(timeBasedAttackTarget, timeBasedAttackDamage, true);
+                if (photonView.IsMine)
+                    meteor.SetTarget(timeBasedAttackTarget, timeBasedAttackDamage * currentDamageMultiplier, true);
+                else
+                    NetMeteorInstance.SetTarget(netMeteorTarget, timeBasedAttackDamage * currentDamageMultiplier, true);
                 yield return new WaitForSeconds(animTime * 2 / 3);
             }
             resetRotation = true;
@@ -299,15 +371,13 @@ namespace SerenityGarden
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if(turret != null)
                 {
-                    if (sweepHitNames.Contains(turret))
+                    if (sweepHitObj.Contains(turret))
                         return;
-                    sweepHitNames.Add(turret);
+                    sweepHitObj.Add(turret);
 
                     float damage = sweepDamage * currentDamageMultiplier;
                     Vector3 dir = (turret.transform.position + Vector3.up * 0.2f) - sweepRaycastOrigin.position;
                     RaycastHit[] hits = Physics.SphereCastAll(sweepRaycastOrigin.position, 0.25f, dir);
-
-                    Debug.DrawLine(sweepRaycastOrigin.position, dir, Color.green);
 
                     foreach (RaycastHit hit in hits)
                     {
@@ -321,6 +391,51 @@ namespace SerenityGarden
 
                     turret.Health -= damage;
                 }
+            }
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            if(stream.IsWriting)
+            {
+                string message = "";
+                if(netSendEvent)
+                {
+                    switch (currentAction)
+                    {
+                        case FireDemonActions.None:
+                            break;
+                        case FireDemonActions.IdleStretch:
+                            message = "IdleStretch";
+                            break;
+                        case FireDemonActions.TurretDestroyer:
+                            message = "TurretDestroyer";
+                            break;
+                        case FireDemonActions.Sweep:
+                            message = "Sweep";
+                            break;
+                        case FireDemonActions.TimeBasedAttack:
+                            message = "TimeBasedAttack";
+                            break;
+                    }
+                    netSendEvent = false;
+                }
+                stream.SendNext(message);
+            }
+            if (stream.IsReading)
+            {
+                string receivedMsg = stream.ReceiveNext() as string;
+                if (receivedMsg == "IdleStretch")
+                    currentAction = FireDemonActions.IdleStretch;
+                else if (receivedMsg == "TurretDestroyer")
+                    currentAction = FireDemonActions.TurretDestroyer;
+                else if (receivedMsg == "Sweep")
+                    currentAction = FireDemonActions.Sweep;
+                else if (receivedMsg == "TimeBasedAttack")
+                    currentAction = FireDemonActions.TimeBasedAttack;
+                else
+                    currentAction = FireDemonActions.None;
+                StartAction();
             }
         }
     }

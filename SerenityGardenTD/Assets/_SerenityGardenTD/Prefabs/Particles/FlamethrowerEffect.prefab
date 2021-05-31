@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6226546594549462322}
   - component: {fileID: 5520885019458447921}
   - component: {fileID: 1075296473288836323}
-  m_Layer: 9
+  m_Layer: 2
   m_Name: FlamethrowerEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageOverTime: 1
-  hitEnemies: 1
+  objTohit: 0
 --- !u!54 &1075296473288836323
 Rigidbody:
   m_ObjectHideFlags: 0

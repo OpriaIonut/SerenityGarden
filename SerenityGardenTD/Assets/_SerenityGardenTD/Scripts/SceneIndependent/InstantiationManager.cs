@@ -20,7 +20,8 @@ namespace SerenityGarden
         EnemyAmbusher,
         EnemyFlying,
         EnemyMelee,
-        EnemyRanged
+        EnemyRanged,
+        Meteorite
     }
 
     public class InstantiationManager : MonoBehaviour
@@ -92,6 +93,9 @@ namespace SerenityGarden
                     return "PhotonPrefabs/PhotonEnemyMelee";
                 case PhotonObj.EnemyRanged:
                     return "PhotonPrefabs/PhotonEnemyRanged";
+                case PhotonObj.Meteorite:
+                    return "PhotonPrefabs/PhotonMeteorite";
+                    break;
                 default:
                     return "";
             }

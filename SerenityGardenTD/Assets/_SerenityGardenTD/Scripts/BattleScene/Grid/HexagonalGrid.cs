@@ -207,6 +207,7 @@ namespace SerenityGarden
                 //Set the properties for each grid cell
                 List<Transform> playerSpawn = new List<Transform>();
 
+                Quaternion playerBaseRot = Quaternion.identity;
                 enemyGoal = new List<HexagonalBlock>();
                 HexagonalBlock commanderSpawnBlock = null;
                 for (int index = 0; index < gridCells.Count; index++)
@@ -233,6 +234,7 @@ namespace SerenityGarden
                         }
                         else
                         {
+                            playerBaseRot.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
                             if (gridCells[index].Type == HexagonType.PlayerBase2 && !playerSpawn.Contains(gridCells[index].transform))
                             {
                                 playerSpawn.Add(gridCells[index].transform);
@@ -276,7 +278,7 @@ namespace SerenityGarden
                     zMean /= playerSpawn.Count;
                     Vector3 spawnPos = new Vector3(xMean, playerSpawn[0].position.y, zMean);
 
-                    InstantiationManager.instance.InstantiateWithCheck(playerBasePrefab, spawnPos, Quaternion.identity, PhotonObj.PlayerBase);
+                    InstantiationManager.instance.InstantiateWithCheck(playerBasePrefab, spawnPos, playerBaseRot, PhotonObj.PlayerBase);
                     Physics.SyncTransforms();
                 }
             }

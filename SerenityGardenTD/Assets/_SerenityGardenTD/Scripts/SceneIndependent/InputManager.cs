@@ -23,6 +23,8 @@ namespace SerenityGarden
 
         #endregion
 
+        public LayerMask ignoreRaycast;
+
         [Header("Debug")]
         //In case we hit a child object, we will also retain the top-most parent of the object
         public GameObject clickedParent;
@@ -200,7 +202,7 @@ namespace SerenityGarden
         {
             Ray cameraRay = Camera.main.ScreenPointToRay(pressPosition);
             RaycastHit hit;
-            if(Physics.Raycast(cameraRay, out hit))
+            if(Physics.Raycast(cameraRay, out hit, Mathf.Infinity, ~ignoreRaycast))
             {
                 //We should get the uppermost parent, because we may have hit a sub-component of an object, which will mess up certain things
                 clickedObject = hit.collider.gameObject;

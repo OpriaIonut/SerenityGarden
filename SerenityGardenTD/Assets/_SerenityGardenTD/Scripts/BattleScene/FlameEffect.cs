@@ -44,6 +44,7 @@ namespace SerenityGarden
             }
             else if (objTohit == HitObjectType.Turret)
             {
+                Debug.Log("Hit: " + other.transform.root.name);
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if (turret != null)
                     turret.Health -= damageOverTime * Time.deltaTime;

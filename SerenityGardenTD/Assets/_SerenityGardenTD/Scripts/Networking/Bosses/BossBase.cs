@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public class BossBase : MonoBehaviour
+    public class BossBase : MonoBehaviourPun
     {
         [Header("Inherited")]
         public float maxHealth;

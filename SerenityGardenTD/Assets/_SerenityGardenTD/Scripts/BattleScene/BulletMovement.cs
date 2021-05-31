@@ -61,7 +61,7 @@ namespace SerenityGarden
             {
                 //If it is a bullet that was shot by an enemy, then check if it collided with a turret
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
-                if (turret != null)
+                if (turret != null && turret.gameObject == target)
                 {
                     if (hitVfx)
                     {
@@ -80,7 +80,7 @@ namespace SerenityGarden
                 {
                     //If it is a bullet that was shot by a turret, then check if it collided with an enemy
                     EnemyBase enemy = other.transform.root.gameObject.GetComponent<EnemyBase>();
-                    if (enemy != null)
+                    if (enemy != null && enemy.gameObject == target)
                     {
                         if (hitVfx)
                         {
@@ -100,7 +100,7 @@ namespace SerenityGarden
                             return;
 
                         BossBase boss = other.transform.root.gameObject.GetComponent<BossBase>();
-                        if (boss != null)
+                        if (boss != null && boss.gameObject == target)
                         {
                             if (hitVfx)
                             {
