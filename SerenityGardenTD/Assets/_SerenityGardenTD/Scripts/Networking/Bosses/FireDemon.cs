@@ -52,6 +52,7 @@ namespace SerenityGarden
         public GameObject timerParent;
         public Image timerBar;
         public TextMeshProUGUI timerText;
+        public GameObject stunEffect;
         //public ParticleSystem passiveEffect;
 
         private float currentDamageMultiplier;
@@ -331,6 +332,7 @@ namespace SerenityGarden
                 {
                     anim.SetBool("Stun", true);
                     cond = true;
+                    stunEffect.SetActive(true);
                     stunBar.gameObject.SetActive(false);
                     timerParent.SetActive(false);
 
@@ -341,6 +343,7 @@ namespace SerenityGarden
                     nextDecisionTime = Time.time + timeBetweenDecisions + stunTime;
                     yield return new WaitForSeconds(stunTime);
                     anim.SetBool("Stun", false);
+                    stunEffect.SetActive(false);
                     break;
                 }
             }
