@@ -17,18 +17,51 @@
 \usepackage{colortbl}
 \usepackage{wrapfig}
 \usepackage{tikz}
-\usetikzlibrary{positioning}
+\usepackage{subfig}
+\usepackage[hyphens]{url}
+\usepackage{setspace}
 
+
+\usetikzlibrary{positioning}
 \graphicspath{ {./images/} }
 
-\newtheorem{definitie}{Definitia}
-\newtheorem{propozitie}{Propozitia}
 
-\title{\bf Serenity Garden TD}
-\author{Opria Ion-Bogdan}
+\title{%
+	\includegraphics[height=0.3\textwidth]{UNITBV2.png}~ 
+	\\[1cm]
+	\vspace{20mm}
+	
+	\bf 	LUCRARE DE LICENȚĂ
+	\noindent\rule{14cm}{1pt}
+	\bf Serenity Garden TD
+}
+
+\onehalfspacing
+
+\date{}
 
 \begin{document}
+	
+	
+	
 	\maketitle
+	\vspace{10mm} %5mm vertical space
+	\begin{flushleft}
+		\bf 	Conducător Stiintific:
+		\bf     \\Lector Universitar Deaconu Adrian
+	\end{flushleft}
+	
+	\begin{flushright}
+		\bf Absolvent:
+		\bf \\Opria Ion-Bogdan
+	\end{flushright}
+	
+	\vspace{6mm} %5mm vertical space
+	
+	\begin{center}
+		\bf Brașov, 2021 
+	\end{center}
+	
 	
 	\tableofcontents
 	\pagebreak
@@ -37,17 +70,17 @@
 	
 	\subsection{Descrierea proiectului}
 	
-	Jocurile video au inceput sa acapareze din ce in ce mai mult vietile noastre datorita usurintei de accesibilitate si a experientei pe care o ofera. Odata cu evolutia hardware-ului, jocurile video au devenit din ce in ce mai realiste si prin urmare ofera experiente care nu poat fi gasite in niciun alt mediu existent, deoarece in nici un alt mediu nu putem controla si traii experientele unor caractere atat de indetaliat. Industria jocurilor video este o industrie care este in continua crestere si prin urmare este o ramura care merita explorata din perspectiva unui programator si nu nu mai. 
+	Jocurile video au inceput sa acapareze din ce in ce mai mult vietile noastre datorita usurintei de accesare si a experientei pe care o ofera. Odata cu evolutia hardware-ului, jocurile video au devenit din ce in ce mai realiste si prin urmare ofera experiente care nu poat fi gasite in niciun alt mediu existent, deoarece in nici un alt mediu nu putem controla si traii experientele unor caractere atat de indetaliat. Industria jocurilor video este o industrie care este in continua crestere si prin urmare este o ramura care merita explorata din perspectiva unui programator si nu nu mai. 
 	
 	"Games are great to work on because they are as much about art as they are science." \cite{gameProgrammingComplete}
 	
-	Din aceste motive, am ales drept proiect pentru licenta sa fac un joc video. Jocul se numeste "Serenity Garden" si este un tower defense 3D. Experienta jocului are loc pe niste nivele special definite, in care utilizatorul trebuie sa isi proiejeze baza. Exista multe tipuri diferite de inamici care vor sa distruga baza player-ului, iar acesta, pentru a o proteja, trebuie sa construiasca un sistem defensiv pentru a ii tine la distanta. Player-ul poate sa construiasca turnuri defensive care au diferite efecte asupra inamicilor. Inamicii ataca tot ce gasesc in cale, iar daca reusesc sa distruga baza, player-ul pierde nivelul curent.
+	Din aceste motive, am ales drept proiect pentru licenta sa fac un joc video. Jocul se numeste "Serenity Garden" si este un tower defense 3D. Experienta jocului are loc in cateva nivele special definite, in care utilizatorul trebuie sa isi protejeze baza de operatii. Exista multe tipuri diferite de inamici care vor sa distruga baza jucatorului, iar acesta, pentru a o proteja, trebuie sa construiasca un sistem defensiv. Jucatorul poate sa construiasca turnuri defensive care au diferite efecte asupra inamicilor. Inamicii ataca sistemul defensiv, sau in cazul in care lipseste, ataca direct baza jucatorului. Daca reusesc sa distruga baza, jucatorului, acesta pierde nivelul curent.
 	
-	Player-ul nu poate sa construiasca turnuri oriunde, ci are locuri predefinite unde poate sa le construiasca, locuri specificate de blocuri hexagonale pe mapa. Odata plasata o tureta, aceasta nu poate fi mutata, dar player-ul are si un caracter invulnerabil pe care il poate muta oriunde doreste pe mapa. Acest caracter va ataca inamicii automat cand nu se afla in miscare, si poate intra in turete pentru a le creste puterea/eficienta.
+	Jucatorul nu poate sa construiasca turnuri oriunde, ci are locuri predefinite unde poate sa le construiasca, locuri specificate de hexagoane colorate pe harta de joc. Odata plasat un turn, aceasta nu poate fi mutat, dar jucatorul are si un caracter invulnerabil pe care il poate muta oriunde doreste pe harta. Acest caracter va ataca inamicii automat cand nu se afla in miscare, si poate intra in turnuri pentru a le creste puterea/eficienta.
 	
-	Modul care va diferentia acest joc de celelalte jocuri pe acest stil este modul de co-op. 2 jucatori se vor putea conecta prin retea si vor juca un nivel dificil care necesita cooperare si o planificare buna intre ei.
+	Modul care va diferentia acest joc de celelalte jocuri pe acest stil este modul de co-op. Doi jucatori se vor putea conecta prin retea si vor juca un nivel dificil care necesita cooperare si o planificare buna intre ei.
 	
-	\subsection{Introducere in Game Development}
+	\subsection{Introducere in dezvoltarea jocurilor video}
 	
 	\subsubsection{Scurta istorie}
 	
@@ -74,7 +107,9 @@
 	
 	\subsubsection{Shader Graph}
 	
+	\subsubsection{VFX Graph}
 	
+	\subsubsection{Photon Engine}
 	
 	
 	
@@ -89,7 +124,7 @@
 	
 	Din acest motiv, inca de la inceputul proiectului am incercat sa imi planific cat mai indetaliat continutul acestuia si modul in care il voi implementa.
 	
-	In prima faza, mi-am scris un design document care continea descrierea si elementele jocului, privite din multe perspective.
+	In prima faza, mi-am scris un document de proiectare care continea descrierea si elementele jocului, privite din multe perspective.
 	
 	Introducerea proiectului a fost realizata la inceputul acestui document si nu va fi reluata aici.
 	
@@ -97,9 +132,9 @@
 	
 	\subsection{Tematica Jocului}
 	
-	Jocul are loc in viitorul departat. Planeta ta este supra-populata si nivelul de poluare a ajuns la un nivel critic. Umanitatea a trecut de mult de punctul in care mai pot salva aceasta planeta. Intreaga planeta va muri in cateva decenii, iar oamenii daca nu isi gasesc o alta casa intre timp, vor muri si ei cu ea. In acest scop, o armata speciala a fost formata, care are ca scop explorarea altor planete si gasirea unei planete care poate suporta rasa umana.
+	Jocul are loc in viitorul departat. Planeta ta este supra-populata, iar nivelul de poluare a ajuns la un nivel critic. Umanitatea a trecut de mult de punctul in care mai pot salva aceasta planeta. Intreaga planeta va deceda in cateva decenii, iar oamenii daca nu isi gasesc o alta locuinta intre timp, vor muri si ei impreuna cu ea. In acest scop, o armata speciala a fost formata, care are ca scop explorarea altor planete si gasirea uneia care poate suporta rasa umana.
 	
-	Universul este totusi foarte periculos. Unele planete au viata extraterestra foarte agresiva, iar altele au fost distruse de experimente cibernetice esuate. Player-ul este comandantul suprem al acestei armate care are ca scop protejarea oamenilor de stiinta care vor analiza aceste planete.
+	Universul este totusi foarte periculos. Unele planete au viata extraterestra foarte agresiva, iar altele au fost distruse de experimente cibernetice esuate. Jucatorul este comandantul suprem al acestei armate care are ca scop protejarea oamenilor de stiinta care vor analiza aceste planete.
 	
 	Prima faza a proiectului va contine o singura planeta care poate fi populata dar care contine multi inamici periculosi.
 	
@@ -109,21 +144,19 @@
 	
 	\subsection{Caracterele Jocului}
 	
-	\textbf{Comandantul} este protagonistul jocului. El este caracterul din a carui perspectiva vom juca jocul. A fost cobaiul unui experiment menit sa creeze super-soldati, iar in urma acestui experiment a primit o putere speciala. Poate sa isi ascunda complet prezenta fata de alti oameni/alte creaturi. Din acest motiv, el este caracterul invulnerabil pe care il putem misca pe mapa in lupta.
-	
-	\textbf{Locotenentul} este este ajutorul tau numarul 1. El/ea iti va prezenta tutorialele, iti va da sfaturi si va juca un rol vital in poveste, in caz ca proiectul ajunge in acest punct.
+	\textbf{Comandantul} este protagonistul jocului. El este caracterul a carei perspective o vom traii pe tot parcursul jocului. In trecut a fost cobai pentru un experiment menit sa creeze super-soldati, iar in urma acestui experiment a primit o putere speciala. Poate sa isi ascunda complet prezenta fata de alti oameni sau alte creaturi. Din acest motiv, el este caracterul invulnerabil pe care il putem misca pe harta in timpul luptei.
 	
 	
 	
 	\subsubsection{Inamicii}
 	\begin{itemize}
-		\item \textbf{Melee} este un tip de inamic care poate ataca turetele doar cand sta fix in fata lor. Are viata mai multa decat inamicii "ranged".
-		\item \textbf{Ranged} este un tip de inamic care poate ataca turetele de la distanta. Are viata putina, dar pot ataca repede.
-		\item \textbf{Flying} este un inamic care poate fi lovit doar de un numar limitat de turete.
-		\item \textbf{Ambusher} este un tip de inamic care ignora turnurile din cale. Acesta se misca pe cel mai scurt drum catre baza player-ului, iar daca ajunge deasupra acesteia, va lansa bombe care ii vor scadea drastic viata, dupa care vor pleca de pe mapa. Este un tip de inamic zburator care poate fi lovit doar de un numar limitat de turnuri.
+		\item \textbf{Inamicul de lupta apropiata} este un tip de inamic care poate ataca turnurile doar cand sta fix in fata lor. Are viata mai multa decat inamicii de lupta de la distanta.
+		\item \textbf{Inamicul de lupta de la distanta} este un tip de inamic care poate ataca turnurile de la distanta. Are viata putina, dar pot ataca repede.
+		\item \textbf{Inamicul zburator} este un inamic care poate fi lovit doar de un numar limitat de turnuri.
+		\item \textbf{Inamicul bombardieri} este un tip de inamic care ignora turnurile intalnite in cale. Acesta se misca pe cel mai scurt drum catre baza jucatorului, iar daca ajunge deasupra acesteia, va lansa bombe care ii vor scadea drastic viata, dupa care vor pleca de pe mapa. Este un tip de inamic zburator care poate fi lovit doar de un numar limitat de turnuri.
 	\end{itemize}
 
-	Acesti inamici (cu exceptia ambusher-ului) se vor misca pe mapa calculand cel mai scurt drum catre baza player-ului. Daca acestia intalnesc in cale un turn, se vor opri si vor ataca acel turn. Cand turnul este distrus, ei isi vor relua drumul.
+	Acesti inamici (cu exceptia bombardierului) se vor misca pe harta calculand cel mai scurt drum catre baza jucatorului. Daca acestia intalnesc in cale un turn, se vor opri si vor ataca acel turn. Cand turnul este distrus, acestia isi vor relua drumul.
 	
 	Pentru fiecare inamic vor fi 3 tipuri de variatii, fiecare mai puternic decat cel precedent.
 	
@@ -132,27 +165,27 @@
 	\subsubsection{Turnuri defensive}
 	In continuare voi scrie o descriere scurta pentru fiecare turn din joc. Toate proprietatile despre care urmeaza sa vorbesc sunt in comparatie cu celelalte turnuri defensive.
 	\begin{itemize}
-		\item \textbf{Serenity} este baza playerilor. Are viata foarte multa daca este distrusa player-ul pierde jocul si poate ataca inamicii care se apropie de ea. Are raza de atac medie, putere de atac medie, poate ataca orice tip de inamic si rata de reincarcare intre atacuri este mica (dureaza mult timp sa se reincarce)
-		\item \textbf{Machine Gun} (fig: \ref{fig: machineGun}) este turnul pe care il primim la inceputul jocului. Are viata mica, poate ataca orice tip de inamic, are raza medie, damage mic si rata de atac este mare (araca foarte des)
-		\item \textbf{Electric Fence} (fig: \ref{fig: electricFence}) este turnul de protectie. Are viata foarte mare, poate ataca doar inamicii "melee", damage-ul este mediu si rata de reincarcare este mica. Scopul acestui turn este sa stea in calea inamicilor pentru a fi atacat de inamici, iar in timpul acela, celelalte turete pot distruge inamicii.
-		\item \textbf{Vulkan} (fig: \ref{fig: vulkan}) Este tureta speciala impotriva inamicilor zburatori. Are damage mult dar poate ataca doar inamici zburatori, viata putina si raza de atac mare.
-		\item \textbf{Machine Cannon} (fig: \ref{fig: machineCannon}) este un turn care este foarte puternic impotriva inamicilor "melee". Are damage mare, rata de atac mica, viata medie, raza mica si prioritizeaza inamicii melee pe cat posibil.
-		\item \textbf{Railgun} (fig: \ref{fig: railgun}) este un turn care este foarte puternic impotriva inamicilor "ranged". Are damage mare, rata de atac mica, viata medie, raza mica si prioritizeaza inamicii ranged pe cat posibil.
-		\item \textbf{Excavator} (fig: \ref{fig: excavator}) este un tip special de turn deoarece nu poate ataca inamicii. Acesta aduna resurse in timpul luptei, resurse care pot fi convertite in bani de joc. Are viata multa, si pentru ca nu poate ataca, trebuie aparat de inamici.
+		\item \textbf{Serenity} este baza jucatorului. Are viata foarte multa daca este distrusa jucatorul pierde nivelul curent. Aceasta poate ataca inamicii care se apropie de ea. Are raza de atac medie, putere de atac mediu, poate ataca orice tip de inamic, iar rata de reincarcare intre atacuri este mica (dureaza mult timp intre atacuri)
+		\item \textbf{Mitraliera automata} (fig: \ref{fig: machineGun}) Are viata mica, poate ataca orice tip de inamic, are raza medie, putere de atac mica si rata de atac este mare (ataca foarte des)
+		\item \textbf{Gardul electric} (fig: \ref{fig: electricFence}) este turnul de protectie. Are viata foarte mare, poate ataca doar inamicii de lupta apropiata, puterea de atac este medie, iar rata de reincarcare este mica. Scopul acestui turn este sa stea in calea inamicilor pentru a fi atacat de acestia, permitand celorlalte turnuri sa atace inamicii blocati.
+		\item \textbf{Vulkan} (fig: \ref{fig: vulkan}) Este turnul special construit pentru a lupta impotriva inamicilor zburatori. Are viata putina, raza de atac mare si putere de atac mare dar poate ataca doar inamicii zburatori.
+		\item \textbf{Aruncatorul de flacari} (fig: \ref{fig: machineCannon}). Cand inamicii intra in raza acestui turn, el va imprastia flacari catre inamici. Toti inamicii care intra in aceste flacari primesc damage in fiecare clipa in care stau in flacari. Are viata medie, ataca instant si puterea de atac este mica dar distribuita in fiecare clipa in care inamicii stau in flacarile acestui turn.
+		\item \textbf{Laser} (fig: \ref{fig: railgun}). Este un turn similar cu aruncatorul de flacari in sensul in care ataca in fiecare clipa in care un inamic este in raza acestuia. Ataca cu un laser puternic care scade treptat viata inamicilor. Are viata medie, ataca instant si puterea de atac este mica.
+		\item \textbf{Excavator} (fig: \ref{fig: excavator}) este un tip special de turn deoarece nu poate ataca inamicii. Acesta aduna resurse in timpul luptei, resurse care pot fi convertite in bani de joc. Are viata multa, si pentru ca nu poate ataca, trebuie sa fie aparat de inamici.
 	\end{itemize}
 	
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{machineGun.png}
-		\caption{Machine Gun}
+		\caption{Mitraliera automata}
 		\label{fig: machineGun}
 	\end{figure}
 
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{electricFence.png}
-		\caption{Electric Fence}
+		\caption{Gardul electric}
 		\label{fig: electricFence}
 	\end{figure}
 
@@ -166,14 +199,14 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{machineCannon.png}
-		\caption{Machine Cannon}
+		\caption{Aruncatorul de flacari}
 		\label{fig: machineCannon}
 	\end{figure}
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{railgun.png}
-		\caption{Railgun}
+		\caption{Laser}
 		\label{fig: railgun}
 	\end{figure}
 
@@ -185,27 +218,26 @@
 	\end{figure}
 	
 	
-	
 	\subsection{Sistemele Jocului}
 	
-	\subsubsection{Mapa}
+	\subsubsection{Harta de joc}
 	
-	Pe mapa jocului vor fi generate automat obiecte hexagonale. Aceste obiecte pot fi de mai multe tipuri:
+	Pe hara jocului vor fi generate automat obiecte hexagonale. Aceste obiecte pot fi de mai multe tipuri:
 	\begin{itemize}
 		\item Hexagoane goale (cele gri din (fig: \ref{fig: gridSystem})).
 		\item Hexagoane pe care putem construii turnuri de atac. (cele albastre din (fig: \ref{fig: gridSystem}))
 		\item Hexagoane pe care putem construii turnul de extragere de resurse. (cele verzi din (fig: \ref{fig: gridSystem}))
-		\item Hexagonul pe care va incepe si se va afla comandantul. Cand acesta se misca, locul in care se misca va deveni si el un astfel de hexagon. (cel roz din (fig: \ref{fig: gridSystem}))
+		\item Hexagonul pe care va incepe si se va afla comandantul. (cel roz din (fig: \ref{fig: gridSystem}))
 		\item Hexagoanele bazei. Baza va ocupa 3 hexagoane de acest tip. (cele galbene din (fig: \ref{fig: gridSystem}))
-		\item Hexagonul ocupat. Fiecare hexagon care este ocupat de o anumita structura devine un astfel de hexagon. (va avea culoarea rosie)
+		\item Hexagonul ocupat. Fiecare hexagon care este ocupat de o anumita structura devine un astfel de hexagon. (are culoarea rosie)
 	\end{itemize}
 
-	Inamicii isi vor calcula drumul pe care merg in functie de toate aceste tipuri de hexagoane. Din acest motiv este nevoie si de cel gol.
+	Inamicii vor calcula drumul pe care merg in functie de toate aceste tipuri de hexagoane. Din acest motiv este nevoie si de cel gol.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{grid.png}
-		\caption{Hexagonal Grid}
+		\caption{Harta de joc}
 		\label{fig: gridSystem}
 	\end{figure}
 
@@ -213,86 +245,95 @@
 	
 	\subsubsection{Sistemul Turnurilor}
 	
-	Turnurile pot fi plasate doar pe hexagoanele de constructie. Odata plasate, acestea nu pot fi mutate. Singurele metode de a goli acel hexagon este sa fie distrus de un inamic sau sa vindem tureta. Daca vindem o tureta, vom primi inapoi o parte din banii investiti. Acestea pot fi upgradate, dar acest sistem va fi deblocat la anumite stagii din joc. Toate turnurile au urmatoarele proprietati:
+	Turnurile pot fi plasate doar pe hexagoanele de constructie. Odata plasate, acestea nu pot fi mutate. Singurele metode de a goli acel hexagon sunt sa fie distrus de un inamic sau sa vindem tureta respectiva. Daca vindem o tureta, vom primii inapoi o parte din banii investiti, bani cu care putem sa imbunatatim turnurile. Toate turnurile au urmatoarele proprietati:
 	\begin{itemize}
-		\item Attack Speed
-		\item Damage
-		\item Health
-		\item Range
-		\item Attack type (specifica ce tip de inamici putem sa atacam)
+		\item Viteza de atac
+		\item Putere de atac
+		\item Viata
+		\item Raza de atac
+		\item Inamicii pe care pot sa ii atace
 	\end{itemize}
 
-	Daca viata turetei ajunge la 0, va fi distrusa automat. Atata timp cat o tureta nu este distrusa, o putem repara, dar reparatiile vor fi executate intr-un anumit timp, iar in acest timp, tureta nu va putea sa atace.
+	Daca viata turetei ajunge la 0, va fi distrusa automat. Atata timp cat o tureta nu este distrusa, o putem repara, dar reparatiile vor fi executate intr-un anumit timp, iar in acest timp, tureta nu va putea sa atace dar poate sa fie atacata in continuare.
 	
 	\subsubsection{Comandantul}
 	
-	Comandantul poate fi mutat pe orice hexagon care nu este deja ocupat. Dupa ce ai ales un hexagon, acesta va incepe sa se miste catre acesta. Cat timp este in miscare, nu poate ataca inamicii. Destinatia poate fi schimbata doar dupa ce a ajuns la destinatie. Are raza medie, rata de atac medie, damage mediu si poate ataca orice tip de inamic.
+	Comandantul poate fi mutat pe orice hexagon care nu este deja ocupat. Dupa ce ai ales un hexagon, acesta va incepe sa se miste catre acesta. Cat timp este in miscare, nu poate ataca inamicii. Destinatia poate fi schimbata doar dupa ce a ajuns la destinatie. Are raza medie, rata de atac medie, putere de atac mediu si poate ataca orice tip de inamic.
 	
-	Acesta poate intra si in turete, imbunatatindu-le status-urile.
+	Acesta poate intra si in turete, imbunatatindu-le exponential.
 	
-	\subsubsection{Tura de lupta (enemy wave)}
+	\subsubsection{Valul de inamici}
 	
-	Jocul va avea mai multe nivele, care pot fi selectate dintr-un meniu. Nivelele vor fi cat mai diferite posibil. Inamicii au mai multe puncte din care pot sa vina in functie de nivelul ales. Acestia vin in grupuri de inamici. Intre fiecare grup exista o perioada de repaus in care player-ul isi poate repara turnurile. In caz ca nu are nevoie de reparari, poate selecta sa sara peste perioada de repaus, astfel primind bani extra.
+	Jocul va avea mai multe nivele, care pot fi selectate dintr-un meniu, acestea fiind cat mai diversificate posibil. Inamicii au mai multe puncte din care pot sa vina in functie de nivelul ales. Acestia vin in grupuri de inamici. Intre fiecare grup exista o perioada de repaus in care jucatorul isi poate repara turnurile. In caz ca nu are nevoie de reparatii, poate selecta sa sara peste perioada de repaus, astfel primind bani extra.
 	
 	
 	
 	\subsubsection{Nivelele jocului}
 	
-	Nivelul este terminat cand toti inamicii au fost omorati. Fiecare nivel va avea un scor de maxim 3 stele, care specifica cat de bine ne-am descurcat la acest nivel. Scorul este calculat in functie de mai multe proprietati, precum, viata ramasa a bazei la final, numarul de inamici omorati, numarul de turete ramase in viata (daca construim 12 si pierdem 2, acest scor nu va fi maxim). Fiecare stea castigata va da bani extra, bani care pot fi folositi in magazinul de upgrade-uri permanente, despre care vom discuta in scurt timp.
+	Nivelul este terminat cand toti inamicii au fost omorati. Fiecare nivel va avea un scor de maxim 3 stele, care specifica cat de bine s-a descurcat la acest nivel. Scorul este calculat in functie de viata ramasa a bazei la finalul nivelului. Fiecare stea castigata va da bani extra, bani care pot fi folositi in magazinul de imbunatatiri permanente, despre care vom discuta in scurt timp.
 	
-	Playerul poate sa joace din nou nivelele, dar nu va mai primii atat de multi bani ca prima data. Acesta va castiga bani extra de pe stelele castigate doar daca a primit mai multe stele decat turele anterioare.
+	Jucatorul poate sa joace din nou nivelele, dar nu va mai primii atat de multi bani ca prima data. Acesta va castiga bani extra de pe stelele castigate doar daca a primit mai multe stele decat turele anterioare.
 	
 	
 	
 	\subsubsection{Lock-on}
 	
-	Jucatorul poate sa apese pe inamici, astfel setand acel inamic drept o prioritate. Fiecare turn care poate ataca acest tip de inamic il va prioritiza fata de alti inamici. De indata ce este omorat, se pierde aceastra prioritate.
+	Jucatorul poate sa apese pe inamici, astfel setand acel inamic drept o prioritate. Fiecare turn care poate ataca acest tip de inamic il va prioritiza fata de alti inamici. De indata ce este omorat, se pierde aceasta prioritate.
 	
 	
 	
 	\subsubsection{Magazinul de upgrade-uri permanente}
 	
-	Intre nivele putem sa cumparat piese de schimb pentru turnurile noastre pentru a le face mai puternice. Aceste piese se pot cumpara doar cu banii castigati de pe urma nivelelor. Upgrade-urile in functie de turn sunt urmatoarele:
+	Intre nivele putem sa cumparat piese de schimb pentru turnurile noastre pentru a le face mai puternice. Aceste piese se pot cumpara doar cu banii castigati de pe urma nivelelor. Imbunatatirile pt fiecare tureta in parte sunt urmatoarele:
 	
 	\begin{itemize}
-		\item Machine gun: atac mai puternic, range mai mare, costuri mai mici.
-		\item Electric fence: mai multa viata, atac mai puternic, costuri mai mici.
+		\item Mitraliera automata: atac mai puternic, raza de atac mai mare, costuri mai mici.
+		\item Gardul electric: mai multa viata, atac mai puternic, costuri mai mici.
 		\item Vulkan: atac mai puternic, range mai mare, atac mai rapid
-		\item Machine cannon: atac mai puternic, range mai mare, atac mai rapid
-		\item Railgun: atac mai puternic, range mai mare, atac mai rapid
-		\item Excavator: da bani mai multi, timpul intre livrarile de bani mai scurt, cumpara upgrade-uri.
+		\item Aruncatorul de flacari: atac mai puternic, range mai mare
+		\item Laser: atac mai puternic, range mai mare
+		\item Excavator: da bani mai multi, timpul intre livrarile de bani mai scurt
 	\end{itemize}
 	
-	Fiecare upgrade va avea mai multe nivele, fiecare costand din ce in ce mai multi bani, dar vor avea un nivel maxim la care putem duce upgrade-urile.
+	Fiecare imbunatatire va avea mai multe nivele, fiecare costand din ce in ce mai multi bani, dar vor avea un nivel maxim la care putem duce aceste imbunatatiri.
 	
 	
 	
 	\subsubsection{Raid system}
 	
-	Cand un jucator alege acest mod, va putea sa aleaga din o serie de mape. Fiecare mapa are un monstru foarte puternic pe care trebuie sa il bata impreuna cu un alt jucator. Dupa ce a selectat mapa, va fi trimis la un ecran de asteptare, in care va sta pana cand se va gasi un alt jucator care a selectat acea mapa. Dupa ce a fost gasit un coechipier, vor incepe jocul. Undeva pe mapa se va afla un monstru imens si ei trebuie sa isi protejeze baza de acest monstru. Momentan tipurile de monstrii la care m-am gandit sunt urmatoarele:
+	Cand un jucator alege acest mod, este dus la o pagina de login in care trebuie sa isi specifice numele sau sa il lase pe cel generat automat. Dupa ce intra in cont, trebuie sa intre intr-un lobby. Ca sa intre intr-unlobby poate sa creeze el un lobby, sa aleaga un lobby dintr-o lista cu toate lobby-urile existente sau sa intre automat intr-un lobby existent. In cazul ultimei optiuni, in caz ca nu exista nici un lobby, acesta se creeaza automat. La aceasta pagina poate sa selecteze dificultatea nivelului si daca coechipierul este pregatit. De indata ce amandoi jucatorii sunt gata, pot sa inceapta nivelul.
+	
+	In centrul mapei se afla un monstru imens de foc. Scopul nivelului este sa invingi monstrul impreuna cu coechipierul tau, inainte ca monstrul sa distruga baza vreunuia dintre jucatori.
+
+	Fiecare jucator poate plasa turnuri oriunde, putand sa imbunatateasca, repare sau vinde doar turnurile construite de ei. Amandoi playerii au caracterele lor comandant, dar acestia nu pot intra in aceeasi tureta in acelasi timp. Pentru sistemul de lock-on, doar turnurile jucatorului care a setat lock-on-ul va ataca inamicul prioritizat.
+	
+	\subsubsection{Atacurile monstrului de foc}
+	
+	Monstrul de foc are o serie de atacuri predefinite care devin mai puternice in dificultatile avansate.
 	
 	\begin{itemize}
-		\item \textbf{Fire Demon} este un monstru din lava care din cand in cand loveste turetele si baza, provocand o tona de daune. Monstrul trebuie omorat cat de repede posibil ca sa nu distruga baza inainte.
-		\item \textbf{Necromancer} este un monstru care cheama alti monstrii pe mapa. Puterea lui sta in spatele intregii armate ale lui. Daca playerii sunt complesiti de aceasta armata vor pierde nivelul. Trebuie sa aiba un echilibru bun intre defensiva si ofensiva.
-		\item \textbf{Armadillo} este un care ataca periodic baza. Da mai putin damage decat "Fire Demon", dar are si un tip de atac in care se face ghem si incepe sa se roteasca. Daca playerii nu ii dau suficient de mult damage in timpul ala sau nu fac anumite actiuni specifice (ex: sa mute comandantul intr-un anumit loc sau sa construiasca o tona de turete in calea lui), el va ataca baza, dand foarte mult damage.
+		\item Abilitate automata: creste puterea de atac pe masura ce pierde din viata
+		\item Ploaia de meteoriti: ridica o mana sus si genereaza meteoriti unul dupa altul. Fiecare meteorit cand este construit complet alege un turn si porneste catre directia acestuia. Cand se izbeste de turn explodeaza si scade din viata turnului in functie de dificultatea selectata.
+		\item Gheara invartitoare: se invarte 360 grade si loveste toate turnurile de pe harta cu mana lui dreapta.
+		\item Meteoritul suprem: cand ajunge la un anumit procentaj de viata incepe acest atac. Alege una dintre bazele jucatorilor (in caz ca sunt mai multi), se roteste spre ea si incepe sa incarce un meteorit imens. Incarcarea acestuia dureaza 30 de secunde. Daca in acest timp jucatorul reuseste sa ii scada suficient de mult viata monstrului, atacul este intrerupt si el devine confuz timp de 10 secunde, timp in care poate fi atacat neintrerupt. Daca jucatorii nu reusesc sa ii scada suficient de mult viata, va lovii puternic cu meteoritul baza selectata si turetele de prin jur.
 	\end{itemize}
 
-	Fiecare player poate plasa turete oriunde. Playerii pot plasa turete unul peste tureta celuilalt, astfel activand un efect special. Acestia pot sa isi upgradeze doar turetele construite de ei. Amandoi playerii au caracterele lor comandant, dar acestia nu pot intra in aceeasi tureta in acelasi timp. Pentru sistemul de lock-on, doar turetele player-ului care a setat lock-on-ul va ataca inamicul prioritizat.
+	Toate interactiunile acestui nivel sunt sincronizate in retea prin utilizarea Photon Engine-ului.
 	
 	
 	\subsection{Analiza proiectului din punctul de vedere al consumatorilor}
 	
 	\subsubsection{Dificultatea jocului}
 	
-	Jocul va fi relativ dificil. Trebuie sa te gandesti unde sa construiesti anumite turete pentru a folosi resursele cat mai bine. La inceput jocul va fi usor, dar pe urma va trebui sa te gandesti foarte bine unde sa plasezi anumite turete, altfel vei pierde nivelul. Trebuie sa se gandesti si daca poti rezista sa sari peste perioada de repaus intre grupurile de inamici.
+	Jocul va fi relativ dificil. Jucatorul trebuie sa se gandesca unde sa construiesca anumite turnuri pentru a folosi resursele cat mai bine. La inceput jocul va fi usor, dar pe masura ce progreseaza, nivelele vor devenii din ce in ce mai dificile. Trebuie sa se gandesca si daca poate rezista sa sara peste perioada de repaus intre grupurile de inamici.
 	
-	Sistemul de raid are un nivel de dificultate cu mult mai ridicat, pentru ca trebuie sa te si coordonezi cu un alt jucator.
+	Raid system-ul are un nivel de dificultate cu mult mai ridicat, pentru ca trebuie sa se gandeasca cum sa se coordoneze cat mai bine cu coechipierul.
 	
 	
 	
 	\subsubsection{Elemente de dependenta}
 	
-	In caz ca nu putem depasii un anumit nivel, putem juca nivelele anterioare si sa ne asiguram ca luam 3 stele la fiecare nivel. Aceasta metoda de a obtine 3 stele la fiecare nivel poate fi unul din motivele care ii determina pe jucatori sa continue sa joace jocul. Un alt factor ar putea fi sistemul de upgrade-uri permanente.
+	In caz ca nu putem depasii un anumit nivel, putem juca nivelele anterioare si sa ne asiguram ca luam 3 stele la fiecare nivel. Aceasta metoda de a obtine 3 stele la fiecare nivel poate fi unul din motivele care ii determina pe jucatori sa continue sa joace jocul. Un alt factor ar putea fi sistemul de imbunatatiri permanente.
 	
 	
 	
@@ -308,17 +349,17 @@
 	
 	\subsubsection{Initializarea scripturilor}
 	
-	In unity scripturile au cateva metode care ajuta la initializare.
+	In Unity scripturile au cateva metode care ajuta la initializare.
 	
 	\textbf{Awake} este metoda care este apelata la inceputul programului si inainte de restul metodelor.
 	
-	\textbf{Start} este metoda care este apelata dupa ce s-au apelat metodele Awake de la toate scripturile.
+	\textbf{Start} este metoda care este apelata dupa ce au fost apelate metodele "Awake" de la toate scripturile.
 	
-	\textbf{Update} este apelat la fiecare frame al jocului, aici intervine o mare parte din logica jocurilor. Apelarea update-ului incepe dupa ce toate metodele "Start" au fost apelate.
+	\textbf{Update} este apelat la fiecare cadru al jocului, aici intervenind o mare parte din logica jocurilor. Apelarea update-ului incepe dupa ce toate metodele "Start" au fost apelate.
 	
-	Pentru "Start" si "Awake", unity decide automat in ce ordine sa le apeleze, fara ca noi sa putem controla acest lucru. In multe proiecte mai complexe se ajunge in momentul cand pentru initializatea anumitor sisteme este necesar ca alte sisteme sa fie deja initializate. Cum nu putem controla ordinea de initializare, se ajunge in punctul in care putem primi erori random din cauza initializarii haotice.
+	Pentru "Start" si "Awake", unity decide automat in ce ordine sa le apeleze, fara ca noi sa putem controla acest lucru. In multe proiecte mai complexe se ajunge in momentul in care, pentru initializatea anumitor sisteme este necesar ca alte sisteme sa fie deja initializate. Cum nu putem controla ordinea de initializare, se ajunge in punctul in care putem primi erori aleatorii din cauza initializarii haotice.
 	
-	Pentru a combate asta, m-am gandit la un sistem care va permite controlarea initializarii tuturor procese cu usurinta.
+	Pentru a combate acest lucru, m-am gandit la un sistem care va permite controlarea initializarii tuturor acestor procese cu usurinta.
 	
 	\begin{figure}[H]
 		\centering
@@ -327,7 +368,7 @@
 		\label{fig: logicProcessCoggle}
 	\end{figure}
 	
-	Am creat clasa LogicProcessBase, pe care, toate scripturile care au nevoie de o initializare mai organizata, trebuie sa o mosteneasca si care contine:
+	Am creat clasa LogicProcessBase care ajuta in acest proces. Fiecare script care necesita o initializare mai organizata trebuie sa o mosteneasca. Aceasta contine:
 	\begin{itemize}
 		\item \textbf{isInitialized} care specifica daca scriptul curent a fost initializat sau nu inca
 		\item \textbf{Init()}. In aceasta metoda trebuie sa scriem tot codul de initializare a clasei care mosteneste.
@@ -340,7 +381,7 @@
 	
 	\textbf{PrepareToInitialize()} este apelata de fiecare proces in metoda lor de awake, iar aceasta metoda va adauga procesul intr-o coada.
 	
-	\textbf{ExecuteInitialization()} parcurge toate procesele din coada si verifica daca acestea pot fi initializate, apeland "HasAllDependencies()". Daca procesul curent poate fi initializat, atunci ii apeleaza metoda "Init()" si seteaza "isInitialized = true". Daca nu il poate initializa, il adauga la finalul cozii pentru a fi initializat la final. Acest proces se repeta pana cand coada este goala sau s-a parcurs o data coada cap-coada si nu s-a initializat nici un proces. In acest caz inseamna ca aveau dependinte circulare si oprim procesul de initializare, afisand un mesaj de eroare. Aceasta metoda trebuie apelata in Awake, Start si Update, deoarece, pe parcurs pot aparea noi procese care trebuie initializate, iar programul trebuie sa poata sa detecteze astfel de cazuri.
+	\textbf{ExecuteInitialization()} parcurge toate procesele din coada si verifica daca acestea pot fi initializate, apeland "HasAllDependencies()". Daca procesul curent poate fi initializat, atunci apeleaza metoda "Init()" si seteaza "isInitialized = true". Daca nu il poate initializa, il adauga la finalul cozii pentru a fi initializat la final. Acest proces se repeta pana cand coada este goala sau s-a parcurs o data coada cap-coada si nu s-a initializat nici un proces. In acest caz inseamna ca aveau dependinte circulare si oprim procesul de initializare, afisand un mesaj de eroare. Aceasta metoda trebuie apelata in Awake, Start si Update, deoarece, pe parcurs pot aparea noi procese care trebuie initializate, iar programul trebuie sa poata sa detecteze astfel de cazuri.
 	
 	\subsubsection{Procesarea comenzilor venite de la utilizator}
 	
@@ -348,7 +389,7 @@
 	
 	\subsubsection{Sistemul de navigare}
 	
-	Caracterele jocului trebuie sa stie pe unde pot sa mearga ca sa ajunga la o anumita destinatie. In acest scop a trebuit sa aleg un algoritm care sa imi gaseasca cel mai scurt drum posibil. Dupa o investigare amanuntita am ales sa folosesc algoritmul Floyd-Warshall.
+	Caracterele jocului trebuie sa stie pe unde pot sa mearga ca sa ajunga la o anumita destinatie. In acest scop a trebuit sa aleg un algoritm care sa gaseasca cel mai scurt drum posibil. Dupa o investigare amanuntita am ales sa folosesc algoritmul Floyd-Warshall.
 	
 	"Consideram reteaua orientata $G = (N, A, b)$ reprezentata prin matricea valoare adiacenta $B = (b_{ij}), i, j \in N$ cu
 	
@@ -411,7 +452,7 @@
 	$d(y) = min\{d'(y), min\{d'(x) + b(x, y) | x \in V^-(y)\}\}$.
 	\\
 	
-	In cele din urma am ales Floyd-Warshall, deoarece, chiar daca are complexitatea mai mare, va fi rulat o singura data in tot programul, iar reconstruirea drumului se intampla aproape instantaneu. Mapa nu se va schimba pe parcursul jocului, iar din acest motiv am considerat ca e o optiune mai buna decat alti algoritmi precum Dijkstra sau A*.
+	In cele din urma am ales Floyd-Warshall, deoarece, chiar daca are complexitatea mai mare, va fi rulat o singura data in tot programul, iar reconstruirea drumului se intampla aproape instantaneu. Harta nu se va schimba pe parcursul jocului, iar din acest motiv am considerat ca e o optiune mai buna decat alti algoritmi precum Dijkstra sau A*.
 	
 	\subsubsection{Ierarhia inamicilor}
 	
