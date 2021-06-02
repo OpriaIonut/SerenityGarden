@@ -1,48 +1,66 @@
-\contentsline {section}{\numberline {1}Introducere}{4}{}%
-\contentsline {subsection}{\numberline {1.1}Descrierea proiectului}{4}{}%
-\contentsline {subsection}{\numberline {1.2}Introducere in dezvoltarea jocurilor video}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Scurta istorie}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Industria curenta}{5}{}%
-\contentsline {section}{\numberline {2}Introducere in Unity}{5}{}%
-\contentsline {subsection}{\numberline {2.1}Prezentare generala}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}GameObject si Mesh}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Collider}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Transform si Rigidbody}{5}{}%
-\contentsline {subsubsection}{\numberline {2.1.4}API-ul de scriptare}{5}{}%
-\contentsline {subsection}{\numberline {2.2}Motivul alegerii pentru proiectul de licenta}{5}{}%
-\contentsline {subsection}{\numberline {2.3}Elemente specifice folosite}{5}{}%
-\contentsline {subsubsection}{\numberline {2.3.1}Shader Graph}{5}{}%
-\contentsline {subsubsection}{\numberline {2.3.2}VFX Graph}{5}{}%
-\contentsline {subsubsection}{\numberline {2.3.3}Photon Engine}{5}{}%
-\contentsline {section}{\numberline {3}Planificare Proiect}{5}{}%
-\contentsline {subsection}{\numberline {3.1}Faza de Proiectare}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Tematica Jocului}{6}{}%
-\contentsline {subsection}{\numberline {3.3}Caracterele Jocului}{6}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Inamicii}{7}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Turnuri defensive}{7}{}%
-\contentsline {subsection}{\numberline {3.4}Sistemele Jocului}{11}{}%
-\contentsline {subsubsection}{\numberline {3.4.1}Harta de joc}{11}{}%
-\contentsline {subsubsection}{\numberline {3.4.2}Sistemul Turnurilor}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.3}Comandantul}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.4}Valul de inamici}{13}{}%
-\contentsline {subsubsection}{\numberline {3.4.5}Nivelele jocului}{14}{}%
-\contentsline {subsubsection}{\numberline {3.4.6}Lock-on}{14}{}%
-\contentsline {subsubsection}{\numberline {3.4.7}Magazinul de upgrade-uri permanente}{14}{}%
-\contentsline {subsubsection}{\numberline {3.4.8}Raid system}{15}{}%
-\contentsline {subsubsection}{\numberline {3.4.9}Atacurile monstrului de foc}{15}{}%
-\contentsline {subsection}{\numberline {3.5}Analiza proiectului din punctul de vedere al consumatorilor}{16}{}%
-\contentsline {subsubsection}{\numberline {3.5.1}Dificultatea jocului}{16}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Elemente de dependenta}{17}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}Grupele de varsta vizate}{17}{}%
-\contentsline {section}{\numberline {4}Implementare proiect}{17}{}%
-\contentsline {subsection}{\numberline {4.1}Scena de lupta}{17}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Initializarea scripturilor}{17}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Procesarea comenzilor venite de la utilizator}{19}{}%
-\contentsline {subsubsection}{\numberline {4.1.3}Grid system}{19}{}%
-\contentsline {subsubsection}{\numberline {4.1.4}Sistemul de navigare}{19}{}%
-\contentsline {subsubsection}{\numberline {4.1.5}Ierarhia inamicilor}{21}{}%
-\contentsline {subsubsection}{\numberline {4.1.6}Ierarhia turnurilor defensive}{21}{}%
-\contentsline {subsection}{\numberline {4.2}Selectarea nivelelor}{21}{}%
-\contentsline {subsection}{\numberline {4.3}Magazinul de upgrade-uri permanente}{21}{}%
-\contentsline {subsection}{\numberline {4.4}Sistemul co-op}{21}{}%
-\contentsline {section}{\numberline {5}Concluzii}{21}{}%
+\contentsline {section}{\numberline {1}Introducere}{5}{}%
+\contentsline {subsection}{\numberline {1.1}Descrierea proiectului}{5}{}%
+\contentsline {subsection}{\numberline {1.2}Introducere in dezvoltarea jocurilor video}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Scurta istorie}{6}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Industria curenta}{6}{}%
+\contentsline {section}{\numberline {2}Introducere in Unity}{6}{}%
+\contentsline {subsection}{\numberline {2.1}Prezentare generala}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.1}GameObject si Mesh}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.2}Collider}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Transform si Rigidbody}{6}{}%
+\contentsline {subsubsection}{\numberline {2.1.4}API-ul de scriptare}{6}{}%
+\contentsline {subsection}{\numberline {2.2}Motivul alegerii pentru proiectul de licenta}{6}{}%
+\contentsline {subsection}{\numberline {2.3}Elemente specifice folosite}{6}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Shader Graph}{6}{}%
+\contentsline {subsubsection}{\numberline {2.3.2}VFX Graph}{6}{}%
+\contentsline {subsubsection}{\numberline {2.3.3}Photon Engine}{6}{}%
+\contentsline {section}{\numberline {3}Planificare Proiect}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Faza de Proiectare}{6}{}%
+\contentsline {subsection}{\numberline {3.2}Tematica Jocului}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Caracterele Jocului}{7}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}Inamicii}{8}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}Turnuri defensive}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Sistemele Jocului}{12}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}Harta de joc}{12}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}Sistemul Turnurilor}{14}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Comandantul}{14}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Valul de inamici}{14}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}Nivelele jocului}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.6}Lock-on}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.7}Magazinul de upgrade-uri permanente}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.8}Raid system}{16}{}%
+\contentsline {subsubsection}{\numberline {3.4.9}Atacurile monstrului de foc}{16}{}%
+\contentsline {subsection}{\numberline {3.5}Analiza proiectului din punctul de vedere al consumatorilor}{17}{}%
+\contentsline {subsubsection}{\numberline {3.5.1}Dificultatea jocului}{17}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Elemente de dependenta}{18}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}Grupele de varsta vizate}{18}{}%
+\contentsline {section}{\numberline {4}Implementare proiect}{18}{}%
+\contentsline {subsection}{\numberline {4.1}Scena de lupta}{18}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Initializarea scripturilor}{18}{}%
+\contentsline {subsubsection}{\numberline {4.1.2}Procesarea comenzilor venite de la utilizator}{20}{}%
+\contentsline {subsubsection}{\numberline {4.1.3}Grid system}{22}{}%
+\contentsline {subsubsection}{\numberline {4.1.4}Sistemul de navigare}{22}{}%
+\contentsline {subsubsection}{\numberline {4.1.5}Interfete folosite}{23}{}%
+\contentsline {subsubsection}{\numberline {4.1.6}Ierarhia inamicilor}{26}{}%
+\contentsline {subsubsection}{\numberline {4.1.7}Ierarhia turnurilor defensive}{26}{}%
+\contentsline {subsubsection}{\numberline {4.1.8}Comandantul}{26}{}%
+\contentsline {subsubsection}{\numberline {4.1.9}Controlul turelor si starilor de joc}{26}{}%
+\contentsline {subsection}{\numberline {4.2}Selectarea nivelelor}{26}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Structura meniului}{26}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Generarea dinamica a meniului}{26}{}%
+\contentsline {subsection}{\numberline {4.3}Salvarea datelor}{26}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Salvarea automata}{26}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Criptarea si decriptarea datelor}{26}{}%
+\contentsline {subsection}{\numberline {4.4}Magazinul de upgrade-uri permanente}{26}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Structura meniului}{26}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Generarea dinamica a meniului}{26}{}%
+\contentsline {subsection}{\numberline {4.5}Sistemul co-op}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.1}Modul de lucru cu Photon Engine}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.2}Inregistrare si camera de asteptare}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.3}Sincronizarea datelor}{26}{}%
+\contentsline {subsubsection}{\numberline {4.5.4}Monstrul de foc}{26}{}%
+\contentsline {subsection}{\numberline {4.6}Metode de imbunatatire a proiectului}{26}{}%
+\contentsline {subsubsection}{\numberline {4.6.1}Arta imbunatatita}{26}{}%
+\contentsline {subsubsection}{\numberline {4.6.2}O poveste pentru joc}{26}{}%
+\contentsline {subsubsection}{\numberline {4.6.3}Monstrii multipli pentru modul co-op}{26}{}%
+\contentsline {section}{\numberline {5}Concluzii}{26}{}%

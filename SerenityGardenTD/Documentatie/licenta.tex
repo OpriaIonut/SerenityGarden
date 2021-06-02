@@ -385,11 +385,31 @@
 	
 	\subsubsection{Procesarea comenzilor venite de la utilizator}
 	
+	O alta problema des intampinata in proiectele mari este procesarea comenzilor venite de la utilizator. In cazul in care procesam comenzile in mai multe script-uri, cand vrem sa schimbam modul in care functioneaza comenzile sau sa schimbam platforma pe care ruleaza jocul, va trebuii sa schimbam toate scripturile in care procesam comenzile utilizatorului. In proiectele mari, acest lucru duce la mult timp pierdut si din acest motiv m-am gandit la o metoda cum sa imi organizez mai bine acest sistem.
+	
+	Ideea propusa de mine este sa pastram toata procesarea de comenzi ale utilizatorului intr-un singur script. Acest script are definite evenimente/delegate pentru toate tipurile de input specifice. Alte scripturi se pot abona la aceste evenimente, iar cand utilizatorul apasa tasta respectiva, toate metodele abonate la evenimentul respectiv vor fi apelate.
+	
+	Pe langa asta, este necesar sa stim si anumite informatii legate de comanda primita la utilizator. Informatiile aditionale de care am avut nevoie sunt:
+	
+	\begin{itemize}
+		\item Pozitia pe ecran la care a fost apasat mouse-ul/ecranul (in cazul rularii pe android)
+		\item Pozitia pe ecran la care a fost ridicata apasarea mouse-ului/ecranului (in cazul rularii pe android)
+		\item Daca in clipa curenta este sau nu apasat mouse-ul/ecranul
+		\item Timpul la care a fost apasat mouse-ul/ecranul
+		\item Timpul la care a fost ridicata apasarea mouse-ului/ecranului
+		\item Obiectul pe care utilizatorul a dat click in scena. In momentul cand apasam click, se creeaza un Raycast care are ca origine pozitia mouse-ului pe ecran si care se indreapta catre scena in perspectiva in care se afla camera la clipa curenta. Acest Raycast detecteaza daca a fost lovit un obiect, si daca da, retinem care obiect a fost lovit pt ca alte scripturi sa se poata folosi de aceasta informatie.
+		\item Elementul cel mai de sus din ierarhia obiectului lovit. Datorita faptului ca anumite modele au o structura complexa, uneori nu ne este deloc util sa stim in mod direct ce obiect a fost lovit. De exemplu in caz ca apasam peste un turn si Raycast-ul loveste pusca turnului, nu ne va ajuta deloc in cazul in care ne intereseaza sa aflam ce tip de turn am lovit. Din acest motiv, in clipa in care gasim obiectul pe care am dat click, retinem si parintele cel mai de sus din ierarhie.
+	\end{itemize}
+
+	Aceasta organizare a procesarii comenzilor ne permite sa schimab tastele folosite cu usurinta si sa adaugam suport pentru dispozitive noi foarte usor. In cazul dispozitivelor noi, putem folosi directive de unity pentru a separa codul specific pentru calculator de cel specific pentru android sau orice alt dispozitiv. Procesarea comenzilor in cele 2 cazuri vor fi diferite, dar datorita faptului ca se invoca evenimentele deja devinite, alte script-uri nu trebuie modificate absolut deloc.
+	
 	\subsubsection{Grid system}
 	
 	\subsubsection{Sistemul de navigare}
 	
-	Caracterele jocului trebuie sa stie pe unde pot sa mearga ca sa ajunga la o anumita destinatie. In acest scop a trebuit sa aleg un algoritm care sa gaseasca cel mai scurt drum posibil. Dupa o investigare amanuntita am ales sa folosesc algoritmul Floyd-Warshall.
+	Caracterele jocului trebuie sa stie pe unde pot sa mearga ca sa ajunga la o anumita destinatie. In acest scop a trebuit sa aleg un algoritm care sa gaseasca cel mai scurt drum posibil. Am avut de ales intre mai multi algoritmi specifici, precum: Dijkstra, A*, Floyd-Warshall, etc.
+	
+	In cele din urma am ales sa folosesc Floyd-Wharshall. Acest algoritm are complexitatea $O(n^3)$ si presupune construirea celor mai scurte drumuri posibile pornind de la oricare nod catre oricare alt nod din retea. Deoarece construirea drumului se realizeaza doar la inceputul jocului si reconstruirea acestui drum se realizeaza aproape instantaneu, am ales sa folosesc acest algoritm.
 	
 	"Consideram reteaua orientata $G = (N, A, b)$ reprezentata prin matricea valoare adiacenta $B = (b_{ij}), i, j \in N$ cu
 	
@@ -442,35 +462,114 @@
 
 	Drumul minim este $D_{ijp} = (x_k, x_{k+1}, \dots, x_{n-1}, x_n) = (i, x_{k+1}, \dots, x_{n-1}, j)$
 	
-	O alternativa pe care am considerat-o pentru algoritmul de navigare a fost algoritmul lui Dijkstra. Acesta este de asemenea un algoritm care gaseste cel mai scurt drum intre 2 noduri si se bazeaza pe relatiile urmatoare:
-	\\
+	\subsubsection{Interfete folosite}
 	
-	$d(s, x_h) = \sum_{i=1}^{h} b(x_{i-1}, x_i)$.
+	Pentru ca o serie de obiecte din joc trebuie sa urmeze aceleasi concepte, am decis sa ma folosesc de interfete pentru a le definii modul in care trebuie sa functioneze. 
+	\newline
 	
-	$d(x_{j+1}) \leq d(x_j) + b(x_j, x_{j+1}) = d(s, x_j) + b(x_j, x_{j+1}) = d(s, x_{j+1}) \leq d(s, z)$.
+	\textbf{IMovable}
 	
-	$d(y) = min\{d'(y), min\{d'(x) + b(x, y) | x \in V^-(y)\}\}$.
-	\\
+	Deoarece inamicii si comandantul se pot misca pe mapa, am definit aceasta interfata pentru a defini aceleasi concepte pentru toate caracterele care au nevoie de a se misca pe mapa. Interfata se foloseste de sistemul de navigare definit anterior si contine urmatoarele:
 	
-	In cele din urma am ales Floyd-Warshall, deoarece, chiar daca are complexitatea mai mare, va fi rulat o singura data in tot programul, iar reconstruirea drumului se intampla aproape instantaneu. Harta nu se va schimba pe parcursul jocului, iar din acest motiv am considerat ca e o optiune mai buna decat alti algoritmi precum Dijkstra sau A*.
+	\begin{itemize}
+		\item Nodul curent la care se afla
+		\item Nodul destinatie
+		\item Nodul urmator la care trebuie sa se mute ca sa se apropie de destinatie
+		\item Viteza de deplasare
+		\item Distanta fata de urmatorul nod pt care consideram ca am ajuns la acesta. Deoarece lucram cu obiecte in spatiu 3D, este nevoide de o asemenea valoare.
+		\item Un boolean care defineste daca am ajuns sau nu la destinatie
+		\item O metoda care seteaza nodul urmator la care trebuie sa ajungem ca sa ne apropiem de destinatie. Acesta face apel la matricea construita de sistemul de navigare.
+		\item O metoda care misca propriuzis obiectul catre urmatorul nod
+		\item O functie care verifica daca am ajuns sau nu la destinatie.
+	\end{itemize}
+	\bigskip
+
+
+	\textbf{IAttacker}
+	
+	 Este o interfata pe care toate obiectele/caracterele care vor sa atace alte obiecte trebuie sa o mostendeasca. Aceasta contine urmatoarele:
+	 
+	 \begin{itemize}
+	 	\item Obiectul pe care trebuie sa il atace. Tipul este definit la mostenirea clasei datorita sablonului definit pentru interfata.
+	 	\item Puterea de atac
+	 	\item Raza de atac
+	 	\item Durata intre atacuri
+	 	\item Timpul la care s-a executat ultimul atac
+	 	\item Intervalul de timp intre care se cauta un nou inamic
+	 	\item Metoda care afisaza/ascunde raza obiectelor din scena. Raza acestora a fost defnita intr-un shader special creat in Shader Graph
+	 	\item O metoda care cauta cel mai apropiat inamic daca exista in raza
+	 	\item Metoda de atac pe care fiecare obiect o implementeaza diferit.
+	\end{itemize}
+ 	\bigskip
+ 	
+ 	\textbf{IDestroyable}
+ 	
+ 	Fiecare obiect care are o viata anume si care poate fi distrus trebuie sa mosteneasca aceasta interfata. Aceasta contine urmatoarele:
+ 	
+ 	\begin{itemize}
+ 		\item Viata obiectului.
+ 		\item Banii primiti cand obiectul este distrus
+ 		\item O metoda care distruge obiectul respectiv cand viata lui a ajuns la 0
+ 	\end{itemize}
+ 	\bigskip
+ 	
+ 	\textbf{IRecoverable}
+ 	
+ 	Turnurile pot sa isi refaca viata, iar ca un concept pentru viitor, ar putea sa existe si anumiti inamici care refac viata altor inamici. Interfata contine urmatoarele:
+ 	
+ 	\begin{itemize}
+ 		\item Cata viata se reface in fiecare secunda cand efectul este aplicat.
+ 		\item Costul refacerii in cazul in care este de dorit un cost.
+ 		\item Un boolean care verifica daca se reface sau nu in clipa curenta.
+ 		\item O metoda care porneste procesul de refacere
+ 	\end{itemize}
 	
 	\subsubsection{Ierarhia inamicilor}
 	
 	\subsubsection{Ierarhia turnurilor defensive}
 	
+	\subsubsection{Comandantul}
+	
+	\subsubsection{Controlul turelor si starilor de joc}
 	
 	\subsection{Selectarea nivelelor}
 	
+	\subsubsection{Structura meniului}
+	
+	\subsubsection{Generarea dinamica a meniului}
+	
+	
+	\subsection{Salvarea datelor}
+	
+	\subsubsection{Salvarea automata}
+	
+	\subsubsection{Criptarea si decriptarea datelor}
 	
 	
 	\subsection{Magazinul de upgrade-uri permanente}
 	
+	\subsubsection{Structura meniului}
+	
+	\subsubsection{Generarea dinamica a meniului}
 	
 	
 	\subsection{Sistemul co-op}
 	
+	\subsubsection{Modul de lucru cu Photon Engine}
 	
+	\subsubsection{Inregistrare si camera de asteptare}
 	
+	\subsubsection{Sincronizarea datelor}
+	
+	\subsubsection{Monstrul de foc}
+	
+	\subsection{Metode de imbunatatire a proiectului}
+	
+	\subsubsection{Arta imbunatatita}
+	
+	\subsubsection{O poveste pentru joc}
+	
+	\subsubsection{Monstrii multipli pentru modul co-op}
 	
 	\section{Concluzii}
 	
