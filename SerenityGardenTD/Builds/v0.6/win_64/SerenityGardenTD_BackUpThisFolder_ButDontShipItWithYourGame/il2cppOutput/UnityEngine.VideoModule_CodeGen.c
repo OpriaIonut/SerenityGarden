@@ -110,8 +110,8 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[2] =
 };
 static const int32_t s_InvokerIndices[26] = 
 {
-	1838,
-	2209,
+	1839,
+	2210,
 	168,
 	166,
 	168,
@@ -119,7 +119,7 @@ static const int32_t s_InvokerIndices[26] =
 	168,
 	142,
 	168,
-	2210,
+	2211,
 	131,
 	26,
 	218,
@@ -130,11 +130,11 @@ static const int32_t s_InvokerIndices[26] =
 	26,
 	131,
 	186,
-	2211,
+	2212,
 	26,
 	131,
-	2212,
 	2213,
+	2214,
 	26,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_VideoModuleCodeGenModule;

@@ -9,8 +9,7 @@ namespace SerenityGarden
     public class BossBase : MonoBehaviourPun
     {
         [Header("Inherited")]
-        public float maxHealth;
-        public float timeBetweenDecisions;
+        public BossScriptableObject bossStatus;
 
         public Gradient healthGradient;
         public Animator anim;
@@ -34,7 +33,7 @@ namespace SerenityGarden
         public virtual void TakeDamage(float ammount)
         {
             health -= ammount;
-            SetHealthbar(Mathf.Clamp(health / maxHealth, 0.0f, 1.0f));
+            SetHealthbar(Mathf.Clamp(health / bossStatus.maxHealth, 0.0f, 1.0f));
             if (health <= 0)
             {
                 Die();

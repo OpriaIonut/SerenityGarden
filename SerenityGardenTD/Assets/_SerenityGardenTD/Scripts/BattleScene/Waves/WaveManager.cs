@@ -58,7 +58,7 @@ namespace SerenityGarden
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
-            if(PhotonNetwork.IsConnected && !PhotonNetwork.IsMasterClient)
+            if(PhotonNetwork.IsConnected)
                 stageStartButton.SetActive(false);
 
             //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem

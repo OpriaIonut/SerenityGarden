@@ -71,6 +71,7 @@
 	</assembly>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="SerenityGarden.BattleStageStateManager" preserve="nothing"/>
+		<type fullname="SerenityGarden.BossScriptableObject" preserve="nothing"/>
 		<type fullname="SerenityGarden.BossSwipeTrailChecker" preserve="nothing"/>
 		<type fullname="SerenityGarden.BulletMovement" preserve="nothing"/>
 		<type fullname="SerenityGarden.CameraMovement" preserve="nothing"/>
@@ -89,6 +90,7 @@
 		<type fullname="SerenityGarden.HexagonalGrid" preserve="nothing"/>
 		<type fullname="SerenityGarden.InputManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.InstantiationManager" preserve="nothing"/>
+		<type fullname="SerenityGarden.LobbyPannelManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.LockOnManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.MainMenuClickEvents" preserve="nothing"/>
 		<type fullname="SerenityGarden.Meteorite" preserve="nothing"/>
@@ -100,6 +102,7 @@
 		<type fullname="SerenityGarden.PlayerBase" preserve="nothing"/>
 		<type fullname="SerenityGarden.ProcessInitializationManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.RaidStageSelection" preserve="nothing"/>
+		<type fullname="SerenityGarden.RoomPlayerListEntry" preserve="nothing"/>
 		<type fullname="SerenityGarden.SceneClickManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.SceneIndependentScriptsSpawner" preserve="nothing"/>
 		<type fullname="SerenityGarden.ShopManager" preserve="nothing"/>
@@ -123,9 +126,7 @@
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.Bullet" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.LobbyMainPanel" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.LobbyTopPanel" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.PlayerListEntry" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.RoomListEntry" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.Spaceship" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.PunBasics.CameraWork" preserve="nothing"/>
@@ -215,6 +216,7 @@
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Dropdown" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>

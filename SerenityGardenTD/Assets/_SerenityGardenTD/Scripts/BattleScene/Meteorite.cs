@@ -5,7 +5,7 @@ using Photon.Pun;
 
 namespace SerenityGarden
 {
-    public class Meteorite : MonoBehaviourPun, IPunInstantiateMagicCallback
+    public class Meteorite : MonoBehaviourPun
     {
         public float speed = 10.0f;
         public GameObject explosionVFX;
@@ -19,6 +19,9 @@ namespace SerenityGarden
         private void Start()
         {
             rb = GetComponent<Rigidbody>();
+
+            if (!photonView.IsMine)
+                FindObjectOfType<FireDemon>().NetMeteorInstance = this;
         }
 
         private void FixedUpdate()
@@ -78,30 +81,30 @@ namespace SerenityGarden
             }
         }
 
-        public void OnPhotonInstantiate(PhotonMessageInfo info)
-        {
-            object[] initData = info.photonView.InstantiationData;
+        //public void OnPhotonInstantiate(PhotonMessageInfo info)
+        //{
+        //    object[] initData = info.photonView.InstantiationData;
 
-            if (initData != null)
-            {
-                int targetId = (int)initData[0];
-                TurretBase meteorTarget = null;
-                PhotonView[] views = FindObjectsOfType<PhotonView>();
-                foreach (PhotonView view in views)
-                {
-                    if (view.ViewID == targetId)
-                    {
-                        meteorTarget = view.gameObject.GetComponent<TurretBase>();
-                        break;
-                    }
-                }
-                FireDemon boss = FindObjectOfType<FireDemon>();
-                if (boss != null)
-                {
-                    boss.NetMeteorInstance = this;
-                    boss.NetMeteorTarget = meteorTarget;
-                }
-            }
-        }
+        //    if (initData != null)
+        //    {
+        //        int targetId = (int)initData[0];
+        //        TurretBase meteorTarget = null;
+        //        PhotonView[] views = FindObjectsOfType<PhotonView>();
+        //        foreach (PhotonView view in views)
+        //        {
+        //            if (view.ViewID == targetId)
+        //            {
+        //                meteorTarget = view.gameObject.GetComponent<TurretBase>();
+        //                break;
+        //            }
+        //        }
+        //        FireDemon boss = FindObjectOfType<FireDemon>();
+        //        if (boss != null)
+        //        {
+        //            boss.NetMeteorInstance = this;
+        //            boss.NetMeteorTarget = meteorTarget;
+        //        }
+        //    }
+        //}
     }
 }

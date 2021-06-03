@@ -250,7 +250,7 @@ namespace SerenityGarden
             foreach (Collider item in hits)
             {
                 //Ignore vfx collisions
-                if (item.transform.gameObject.layer == 9)
+                if (item.transform.gameObject.layer == 9 || item.transform.gameObject.layer == 2)
                     continue;
 
                 aux = item.transform.root.gameObject.GetComponent<TurretBase>();

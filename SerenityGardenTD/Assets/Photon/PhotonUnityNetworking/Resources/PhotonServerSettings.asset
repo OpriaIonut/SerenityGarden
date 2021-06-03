@@ -20,7 +20,7 @@ MonoBehaviour:
     UseNameServer: 1
     FixedRegion: 
     Server: 
-    Port: 8096
+    Port: 0
     ProxyServer: 
     Protocol: 0
     EnableProtocolFallback: 1

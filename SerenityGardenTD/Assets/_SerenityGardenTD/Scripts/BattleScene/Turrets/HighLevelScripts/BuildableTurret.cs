@@ -234,6 +234,18 @@ namespace SerenityGarden
                 string hexagonName = initData[0].ToString();
                 hexagonBlock = GameObject.Find(hexagonName).GetComponent<HexagonalBlock>();
                 hexagonBlock.Type = HexagonType.Occupied;
+
+                //Scale the object based so that it fits the scale of the map.
+                Bounds bounds;
+                Bounds hexagonBounds;
+                if (HelperMethods.FindBounds(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
+                {
+                    float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x);
+                    float currentDist = HelperMethods.SquaredDistance(bounds.min, bounds.max);
+                    float targetScale = (diameter * transform.localScale.x) / currentDist;
+                    transform.localScale = Vector3.one * targetScale;
+                    transform.position = hexagonBlock.transform.position;
+                }
             }
         }
 

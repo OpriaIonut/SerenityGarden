@@ -120,7 +120,15 @@ namespace SerenityGarden
 
 
             if (PhotonNetwork.IsConnected)
+            {
+                if (gameObject.GetComponent<PlayerBase>() && transform.rotation.y == 1)
+                {
+                    Transform canvasTransf = networkNameText.transform.parent.parent;
+                    canvasTransf.Rotate(Vector3.up, 180.0f, Space.World);
+                    canvasTransf.localPosition = new Vector3(canvasTransf.localPosition.x, canvasTransf.localPosition.y, -canvasTransf.localPosition.z);
+                }
                 networkNameText.text = view.Owner.NickName;
+            }
             else
                 networkNameText.transform.parent.parent.gameObject.SetActive(false);
         }
@@ -252,16 +260,19 @@ namespace SerenityGarden
 
         public override void Init()
         {
-            //Scale the object based so that it fits the scale of the map.
-            Bounds bounds;
-            Bounds hexagonBounds;
-            if (HelperMethods.FindBounds(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
+            if (photonView == null)
             {
-                float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x);
-                float currentDist = HelperMethods.SquaredDistance(bounds.min, bounds.max);
+                //Scale the object based so that it fits the scale of the map.
+                Bounds bounds;
+                Bounds hexagonBounds;
+                if (HelperMethods.FindBounds(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
+                {
+                    float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x);
+                    float currentDist = HelperMethods.SquaredDistance(bounds.min, bounds.max);
 
-                float targetScale = (diameter * transform.localScale.x) / currentDist;
-                transform.localScale = Vector3.one * targetScale;
+                    float targetScale = (diameter * transform.localScale.x) / currentDist;
+                    transform.localScale = Vector3.one * targetScale;
+                }
             }
         }
 

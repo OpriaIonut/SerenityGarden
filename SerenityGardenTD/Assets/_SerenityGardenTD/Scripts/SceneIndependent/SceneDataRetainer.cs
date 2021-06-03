@@ -26,6 +26,7 @@ namespace SerenityGarden
         #endregion
 
         private StageScriptable selectedStage;
+        private BossScriptableObject selectedBossDifficulty;
         private TurretPermanentUpgrades[] permanentUpgrades;
 
         public void SelectStage(StageScriptable stage)
@@ -37,6 +38,8 @@ namespace SerenityGarden
         {
             return selectedStage;
         }
+
+        public BossScriptableObject SelectedBossDifficulty { get { return selectedBossDifficulty; } set { selectedBossDifficulty = value; } }
 
         public void SetPermanentUpgrades(TurretPermanentUpgrades[] _permanentUpgrades)
         {

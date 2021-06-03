@@ -902,6 +902,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "SerenityGarden.BossScriptableObject",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "SerenityGarden.BossSwipeTrailChecker",
             "moduleName": "",
             "usedInScenes": []
@@ -1028,6 +1035,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "SerenityGarden.LobbyPannelManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "SerenityGarden.LockOnManager",
             "moduleName": "",
             "usedInScenes": []
@@ -1099,6 +1113,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "SerenityGarden.RaidStageSelection",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "SerenityGarden.RoomPlayerListEntry",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1252,21 +1273,7 @@
         {
             "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.LobbyMainPanel",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.LobbyTopPanel",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.PlayerListEntry",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1792,6 +1799,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.ContentSizeFitter",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Dropdown",
             "moduleName": "",
             "usedInScenes": []
         },

@@ -699,6 +699,8 @@ struct Renderer_t0556D67DD582620D1F495627EDE30D03284151F4;
 struct RendererU5BU5D_t711BACBBBFC0E06179ADB8932DBA208665108C93;
 // UnityEngine.Rigidbody
 struct Rigidbody_tE0A58EE5A1F7DC908EFFB4F0D795AC9552A750A5;
+// UnityEngine.ScriptableObject[]
+struct ScriptableObjectU5BU5D_t741850250F9CBD2D71480094B194D61DEC247739;
 // UnityEngine.Sprite
 struct Sprite_tCA09498D612D08DE668653AF1E9C12BF53434198;
 // UnityEngine.TextGenerator
@@ -15210,16 +15212,20 @@ public:
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___RoomListEntryPrefab_13;
 	// UnityEngine.GameObject Photon.Pun.Demo.Asteroids.LobbyMainPanel::InsideRoomPanel
 	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___InsideRoomPanel_14;
+	// UnityEngine.UI.Dropdown Photon.Pun.Demo.Asteroids.LobbyMainPanel::bossDifficultyDropdown
+	Dropdown_tF6331401084B1213CAB10587A6EC81461501930F * ___bossDifficultyDropdown_15;
+	// UnityEngine.ScriptableObject[] Photon.Pun.Demo.Asteroids.LobbyMainPanel::bossDifficulties
+	ScriptableObjectU5BU5D_t741850250F9CBD2D71480094B194D61DEC247739* ___bossDifficulties_16;
 	// UnityEngine.UI.Button Photon.Pun.Demo.Asteroids.LobbyMainPanel::StartGameButton
-	Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * ___StartGameButton_15;
+	Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * ___StartGameButton_17;
 	// UnityEngine.GameObject Photon.Pun.Demo.Asteroids.LobbyMainPanel::PlayerListEntryPrefab
-	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___PlayerListEntryPrefab_16;
+	GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * ___PlayerListEntryPrefab_18;
 	// System.Collections.Generic.Dictionary`2<System.String,Photon.Realtime.RoomInfo> Photon.Pun.Demo.Asteroids.LobbyMainPanel::cachedRoomList
-	Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * ___cachedRoomList_17;
+	Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * ___cachedRoomList_19;
 	// System.Collections.Generic.Dictionary`2<System.String,UnityEngine.GameObject> Photon.Pun.Demo.Asteroids.LobbyMainPanel::roomListEntries
-	Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * ___roomListEntries_18;
+	Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * ___roomListEntries_20;
 	// System.Collections.Generic.Dictionary`2<System.Int32,UnityEngine.GameObject> Photon.Pun.Demo.Asteroids.LobbyMainPanel::playerListEntries
-	Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * ___playerListEntries_19;
+	Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * ___playerListEntries_21;
 
 public:
 	inline static int32_t get_offset_of_LoginPanel_5() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___LoginPanel_5)); }
@@ -15312,49 +15318,67 @@ public:
 		Il2CppCodeGenWriteBarrier((void**)(&___InsideRoomPanel_14), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_StartGameButton_15() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___StartGameButton_15)); }
-	inline Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * get_StartGameButton_15() const { return ___StartGameButton_15; }
-	inline Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B ** get_address_of_StartGameButton_15() { return &___StartGameButton_15; }
-	inline void set_StartGameButton_15(Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * value)
+	inline static int32_t get_offset_of_bossDifficultyDropdown_15() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___bossDifficultyDropdown_15)); }
+	inline Dropdown_tF6331401084B1213CAB10587A6EC81461501930F * get_bossDifficultyDropdown_15() const { return ___bossDifficultyDropdown_15; }
+	inline Dropdown_tF6331401084B1213CAB10587A6EC81461501930F ** get_address_of_bossDifficultyDropdown_15() { return &___bossDifficultyDropdown_15; }
+	inline void set_bossDifficultyDropdown_15(Dropdown_tF6331401084B1213CAB10587A6EC81461501930F * value)
 	{
-		___StartGameButton_15 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___StartGameButton_15), (void*)value);
+		___bossDifficultyDropdown_15 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___bossDifficultyDropdown_15), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_PlayerListEntryPrefab_16() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___PlayerListEntryPrefab_16)); }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_PlayerListEntryPrefab_16() const { return ___PlayerListEntryPrefab_16; }
-	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_PlayerListEntryPrefab_16() { return &___PlayerListEntryPrefab_16; }
-	inline void set_PlayerListEntryPrefab_16(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
+	inline static int32_t get_offset_of_bossDifficulties_16() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___bossDifficulties_16)); }
+	inline ScriptableObjectU5BU5D_t741850250F9CBD2D71480094B194D61DEC247739* get_bossDifficulties_16() const { return ___bossDifficulties_16; }
+	inline ScriptableObjectU5BU5D_t741850250F9CBD2D71480094B194D61DEC247739** get_address_of_bossDifficulties_16() { return &___bossDifficulties_16; }
+	inline void set_bossDifficulties_16(ScriptableObjectU5BU5D_t741850250F9CBD2D71480094B194D61DEC247739* value)
 	{
-		___PlayerListEntryPrefab_16 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___PlayerListEntryPrefab_16), (void*)value);
+		___bossDifficulties_16 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___bossDifficulties_16), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_cachedRoomList_17() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___cachedRoomList_17)); }
-	inline Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * get_cachedRoomList_17() const { return ___cachedRoomList_17; }
-	inline Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 ** get_address_of_cachedRoomList_17() { return &___cachedRoomList_17; }
-	inline void set_cachedRoomList_17(Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * value)
+	inline static int32_t get_offset_of_StartGameButton_17() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___StartGameButton_17)); }
+	inline Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * get_StartGameButton_17() const { return ___StartGameButton_17; }
+	inline Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B ** get_address_of_StartGameButton_17() { return &___StartGameButton_17; }
+	inline void set_StartGameButton_17(Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * value)
 	{
-		___cachedRoomList_17 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___cachedRoomList_17), (void*)value);
+		___StartGameButton_17 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___StartGameButton_17), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_roomListEntries_18() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___roomListEntries_18)); }
-	inline Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * get_roomListEntries_18() const { return ___roomListEntries_18; }
-	inline Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A ** get_address_of_roomListEntries_18() { return &___roomListEntries_18; }
-	inline void set_roomListEntries_18(Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * value)
+	inline static int32_t get_offset_of_PlayerListEntryPrefab_18() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___PlayerListEntryPrefab_18)); }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * get_PlayerListEntryPrefab_18() const { return ___PlayerListEntryPrefab_18; }
+	inline GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F ** get_address_of_PlayerListEntryPrefab_18() { return &___PlayerListEntryPrefab_18; }
+	inline void set_PlayerListEntryPrefab_18(GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * value)
 	{
-		___roomListEntries_18 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___roomListEntries_18), (void*)value);
+		___PlayerListEntryPrefab_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___PlayerListEntryPrefab_18), (void*)value);
 	}
 
-	inline static int32_t get_offset_of_playerListEntries_19() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___playerListEntries_19)); }
-	inline Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * get_playerListEntries_19() const { return ___playerListEntries_19; }
-	inline Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D ** get_address_of_playerListEntries_19() { return &___playerListEntries_19; }
-	inline void set_playerListEntries_19(Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * value)
+	inline static int32_t get_offset_of_cachedRoomList_19() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___cachedRoomList_19)); }
+	inline Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * get_cachedRoomList_19() const { return ___cachedRoomList_19; }
+	inline Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 ** get_address_of_cachedRoomList_19() { return &___cachedRoomList_19; }
+	inline void set_cachedRoomList_19(Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * value)
 	{
-		___playerListEntries_19 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___playerListEntries_19), (void*)value);
+		___cachedRoomList_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___cachedRoomList_19), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_roomListEntries_20() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___roomListEntries_20)); }
+	inline Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * get_roomListEntries_20() const { return ___roomListEntries_20; }
+	inline Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A ** get_address_of_roomListEntries_20() { return &___roomListEntries_20; }
+	inline void set_roomListEntries_20(Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * value)
+	{
+		___roomListEntries_20 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___roomListEntries_20), (void*)value);
+	}
+
+	inline static int32_t get_offset_of_playerListEntries_21() { return static_cast<int32_t>(offsetof(LobbyMainPanel_t25A10F7DD94A8144FB482DBA0000E8B468785B28, ___playerListEntries_21)); }
+	inline Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * get_playerListEntries_21() const { return ___playerListEntries_21; }
+	inline Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D ** get_address_of_playerListEntries_21() { return &___playerListEntries_21; }
+	inline void set_playerListEntries_21(Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * value)
+	{
+		___playerListEntries_21 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___playerListEntries_21), (void*)value);
 	}
 };
 
@@ -21614,11 +21638,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_Awake_m4A2770D6D2A7FE2E22
 		// cachedRoomList = new Dictionary<string, RoomInfo>();
 		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = (Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 *)il2cpp_codegen_object_new(Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m23177198E7A4642A98A4DDA1A1DB16D89820F9DA(L_0, /*hidden argument*/Dictionary_2__ctor_m23177198E7A4642A98A4DDA1A1DB16D89820F9DA_RuntimeMethod_var);
-		__this->set_cachedRoomList_17(L_0);
+		__this->set_cachedRoomList_19(L_0);
 		// roomListEntries = new Dictionary<string, GameObject>();
 		Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * L_1 = (Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A *)il2cpp_codegen_object_new(Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m4A073D160010DC24563A23008954E42A9AEB9234(L_1, /*hidden argument*/Dictionary_2__ctor_m4A073D160010DC24563A23008954E42A9AEB9234_RuntimeMethod_var);
-		__this->set_roomListEntries_18(L_1);
+		__this->set_roomListEntries_20(L_1);
 		// PlayerNameInput.text = "Player " + Random.Range(1000, 10000);
 		InputField_t533609195B110760BCFF00B746C87D81969CB005 * L_2 = __this->get_PlayerNameInput_6();
 		int32_t L_3 = Random_Range_mD0C8F37FF3CAB1D87AAA6C45130BD59626BD6780(((int32_t)1000), ((int32_t)10000), /*hidden argument*/NULL);
@@ -21670,7 +21694,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnJoinedLobby_m796B8ED2E8
 	}
 	{
 		// cachedRoomList.Clear();
-		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_17();
+		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_19();
 		NullCheck(L_0);
 		Dictionary_2_Clear_m2CC27992151EB06B04F07B134A82A991E2260E9C(L_0, /*hidden argument*/Dictionary_2_Clear_m2CC27992151EB06B04F07B134A82A991E2260E9C_RuntimeMethod_var);
 		// ClearRoomListView();
@@ -21690,7 +21714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnLeftLobby_m832EC995B1F6
 	}
 	{
 		// cachedRoomList.Clear();
-		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_17();
+		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_19();
 		NullCheck(L_0);
 		Dictionary_2_Clear_m2CC27992151EB06B04F07B134A82A991E2260E9C(L_0, /*hidden argument*/Dictionary_2_Clear_m2CC27992151EB06B04F07B134A82A991E2260E9C_RuntimeMethod_var);
 		// ClearRoomListView();
@@ -21743,12 +21767,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnJoinRandomFailed_m9D656
 		RuntimeObject * L_2 = Box(Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var, &L_1);
 		String_t* L_3 = String_Concat_mBB19C73816BDD1C3519F248E1ADC8E11A6FDB495(_stringLiteralFC50C662C39933A1EAEEEE7E7E1F0B42EEA3D964, L_2, /*hidden argument*/NULL);
 		V_0 = L_3;
-		// RoomOptions options = new RoomOptions {MaxPlayers = 8};
+		// RoomOptions options = new RoomOptions {MaxPlayers = 2};
 		RoomOptions_tB70C9ADC92617E81078838E1D6241D03BB5BA906 * L_4 = (RoomOptions_tB70C9ADC92617E81078838E1D6241D03BB5BA906 *)il2cpp_codegen_object_new(RoomOptions_tB70C9ADC92617E81078838E1D6241D03BB5BA906_il2cpp_TypeInfo_var);
 		RoomOptions__ctor_m8FC01E8D41F044F50A44FD39E05A97CCB2560402(L_4, /*hidden argument*/NULL);
 		RoomOptions_tB70C9ADC92617E81078838E1D6241D03BB5BA906 * L_5 = L_4;
 		NullCheck(L_5);
-		L_5->set_MaxPlayers_2((uint8_t)8);
+		L_5->set_MaxPlayers_2((uint8_t)2);
 		V_1 = L_5;
 		// PhotonNetwork.CreateRoom(roomName, options, null);
 		String_t* L_6 = V_0;
@@ -21778,7 +21802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnJoinedRoom_m0123F09AFD1
 	bool V_7 = false;
 	{
 		// cachedRoomList.Clear();
-		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_17();
+		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_19();
 		NullCheck(L_0);
 		Dictionary_2_Clear_m2CC27992151EB06B04F07B134A82A991E2260E9C(L_0, /*hidden argument*/Dictionary_2_Clear_m2CC27992151EB06B04F07B134A82A991E2260E9C_RuntimeMethod_var);
 		// SetActivePanel(InsideRoomPanel.name);
@@ -21787,7 +21811,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnJoinedRoom_m0123F09AFD1
 		String_t* L_2 = Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE(L_1, /*hidden argument*/NULL);
 		LobbyMainPanel_SetActivePanel_mDAC9F860B00FCC2E6AE1E81D5EF5F82438FB9A08(__this, L_2, /*hidden argument*/NULL);
 		// if (playerListEntries == null)
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_3 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_3 = __this->get_playerListEntries_21();
 		V_1 = (bool)((((RuntimeObject*)(Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D *)L_3) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
 		bool L_4 = V_1;
 		if (!L_4)
@@ -21799,7 +21823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnJoinedRoom_m0123F09AFD1
 		// playerListEntries = new Dictionary<int, GameObject>();
 		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_5 = (Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D *)il2cpp_codegen_object_new(Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_mE9FC7CA0D5D3F752673F01A3BE4CB7633C59B05F(L_5, /*hidden argument*/Dictionary_2__ctor_mE9FC7CA0D5D3F752673F01A3BE4CB7633C59B05F_RuntimeMethod_var);
-		__this->set_playerListEntries_19(L_5);
+		__this->set_playerListEntries_21(L_5);
 	}
 
 IL_0039:
@@ -21822,7 +21846,7 @@ IL_0047:
 		Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
 		V_4 = L_10;
 		// GameObject entry = Instantiate(PlayerListEntryPrefab);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_11 = __this->get_PlayerListEntryPrefab_16();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_11 = __this->get_PlayerListEntryPrefab_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_12 = Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90(L_11, /*hidden argument*/Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90_RuntimeMethod_var);
 		V_5 = L_12;
@@ -21881,7 +21905,7 @@ IL_0047:
 IL_00ce:
 	{
 		// playerListEntries.Add(p.ActorNumber, entry);
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_33 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_33 = __this->get_playerListEntries_21();
 		Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * L_34 = V_4;
 		NullCheck(L_34);
 		int32_t L_35 = Player_get_ActorNumber_mFD24A7946A353B391259A2AFC62EFF355C14B1EC(L_34, /*hidden argument*/NULL);
@@ -21905,7 +21929,7 @@ IL_00e8:
 	}
 	{
 		// StartGameButton.gameObject.SetActive(CheckPlayersReady());
-		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_40 = __this->get_StartGameButton_15();
+		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_40 = __this->get_StartGameButton_17();
 		NullCheck(L_40);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_41 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_40, /*hidden argument*/NULL);
 		bool L_42 = LobbyMainPanel_CheckPlayersReady_m3A2E8761106D5169ABCE48E7F1FEDDBACD75D81F(__this, /*hidden argument*/NULL);
@@ -21959,7 +21983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnLeftRoom_m1822DEC4D5EEA
 		String_t* L_1 = Object_get_name_mA2D400141CB3C991C87A2556429781DE961A83CE(L_0, /*hidden argument*/NULL);
 		LobbyMainPanel_SetActivePanel_mDAC9F860B00FCC2E6AE1E81D5EF5F82438FB9A08(__this, L_1, /*hidden argument*/NULL);
 		// foreach (GameObject entry in playerListEntries.Values)
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_2 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_2 = __this->get_playerListEntries_21();
 		NullCheck(L_2);
 		ValueCollection_tE423B9948F3D2F966246120B45C36E0E68982EB3 * L_3 = Dictionary_2_get_Values_mA45C8E2AFFF1E29FE0394C0F8A71014BF053B547(L_2, /*hidden argument*/Dictionary_2_get_Values_mA45C8E2AFFF1E29FE0394C0F8A71014BF053B547_RuntimeMethod_var);
 		NullCheck(L_3);
@@ -22022,11 +22046,11 @@ FINALLY_0048:
 IL_0057:
 	{
 		// playerListEntries.Clear();
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_9 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_9 = __this->get_playerListEntries_21();
 		NullCheck(L_9);
 		Dictionary_2_Clear_m6BE560B0FE51BF0BFCAD71F7056ABD11B4812E19(L_9, /*hidden argument*/Dictionary_2_Clear_m6BE560B0FE51BF0BFCAD71F7056ABD11B4812E19_RuntimeMethod_var);
 		// playerListEntries = null;
-		__this->set_playerListEntries_19((Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D *)NULL);
+		__this->set_playerListEntries_21((Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D *)NULL);
 		// }
 		return;
 	}
@@ -22046,7 +22070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnPlayerEnteredRoom_mF3E4
 		IL2CPP_RUNTIME_CLASS_INIT(Debug_t7B5FCB117E2FD63B6838BC52821B252E2BFB61C4_il2cpp_TypeInfo_var);
 		Debug_Log_m4B7C70BAFD477C6BDB59C88A0934F0B018D03708(_stringLiteral8FFCFC50D915166DDED0A682B680A7F5D8CFDAA9, /*hidden argument*/NULL);
 		// GameObject entry = Instantiate(PlayerListEntryPrefab);
-		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_PlayerListEntryPrefab_16();
+		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_0 = __this->get_PlayerListEntryPrefab_18();
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90(L_0, /*hidden argument*/Object_Instantiate_TisGameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F_mC4AB712D7F18E0991E1542CE53F11385E21E7B90_RuntimeMethod_var);
 		V_0 = L_1;
@@ -22080,7 +22104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnPlayerEnteredRoom_mF3E4
 		NullCheck(L_10);
 		PlayerListEntry_Initialize_m3BDB3C11A9DD96B7C564BBCF95BE04D55B9ED5C7(L_10, L_12, L_14, /*hidden argument*/NULL);
 		// playerListEntries.Add(newPlayer.ActorNumber, entry);
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_15 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_15 = __this->get_playerListEntries_21();
 		Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * L_16 = ___newPlayer0;
 		NullCheck(L_16);
 		int32_t L_17 = Player_get_ActorNumber_mFD24A7946A353B391259A2AFC62EFF355C14B1EC(L_16, /*hidden argument*/NULL);
@@ -22088,7 +22112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnPlayerEnteredRoom_mF3E4
 		NullCheck(L_15);
 		Dictionary_2_Add_m134EE1B298F5CBA3B69DA26A5B617EF930931D44(L_15, L_17, L_18, /*hidden argument*/Dictionary_2_Add_m134EE1B298F5CBA3B69DA26A5B617EF930931D44_RuntimeMethod_var);
 		// StartGameButton.gameObject.SetActive(CheckPlayersReady());
-		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_19 = __this->get_StartGameButton_15();
+		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_19 = __this->get_StartGameButton_17();
 		NullCheck(L_19);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_20 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_19, /*hidden argument*/NULL);
 		bool L_21 = LobbyMainPanel_CheckPlayersReady_m3A2E8761106D5169ABCE48E7F1FEDDBACD75D81F(__this, /*hidden argument*/NULL);
@@ -22109,7 +22133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnPlayerLeftRoom_mDBB4FF6
 	}
 	{
 		// Destroy(playerListEntries[otherPlayer.ActorNumber].gameObject);
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_0 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_0 = __this->get_playerListEntries_21();
 		Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * L_1 = ___otherPlayer0;
 		NullCheck(L_1);
 		int32_t L_2 = Player_get_ActorNumber_mFD24A7946A353B391259A2AFC62EFF355C14B1EC(L_1, /*hidden argument*/NULL);
@@ -22120,14 +22144,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnPlayerLeftRoom_mDBB4FF6
 		IL2CPP_RUNTIME_CLASS_INIT(Object_tAE11E5E46CD5C37C9F3E8950C00CD8B45666A2D0_il2cpp_TypeInfo_var);
 		Object_Destroy_m23B4562495BA35A74266D4372D45368F8C05109A(L_4, /*hidden argument*/NULL);
 		// playerListEntries.Remove(otherPlayer.ActorNumber);
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_5 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_5 = __this->get_playerListEntries_21();
 		Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * L_6 = ___otherPlayer0;
 		NullCheck(L_6);
 		int32_t L_7 = Player_get_ActorNumber_mFD24A7946A353B391259A2AFC62EFF355C14B1EC(L_6, /*hidden argument*/NULL);
 		NullCheck(L_5);
 		Dictionary_2_Remove_mFBEA90FE0757F4790534140DB58735CE9B857B4A(L_5, L_7, /*hidden argument*/Dictionary_2_Remove_mFBEA90FE0757F4790534140DB58735CE9B857B4A_RuntimeMethod_var);
 		// StartGameButton.gameObject.SetActive(CheckPlayersReady());
-		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_8 = __this->get_StartGameButton_15();
+		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_8 = __this->get_StartGameButton_17();
 		NullCheck(L_8);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_9 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_8, /*hidden argument*/NULL);
 		bool L_10 = LobbyMainPanel_CheckPlayersReady_m3A2E8761106D5169ABCE48E7F1FEDDBACD75D81F(__this, /*hidden argument*/NULL);
@@ -22165,7 +22189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnMasterClientSwitched_m8
 	}
 	{
 		// StartGameButton.gameObject.SetActive(CheckPlayersReady());
-		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_5 = __this->get_StartGameButton_15();
+		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_5 = __this->get_StartGameButton_17();
 		NullCheck(L_5);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_6 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_5, /*hidden argument*/NULL);
 		bool L_7 = LobbyMainPanel_CheckPlayersReady_m3A2E8761106D5169ABCE48E7F1FEDDBACD75D81F(__this, /*hidden argument*/NULL);
@@ -22195,7 +22219,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnPlayerPropertiesUpdate_
 	bool V_4 = false;
 	{
 		// if (playerListEntries == null)
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_0 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_0 = __this->get_playerListEntries_21();
 		V_1 = (bool)((((RuntimeObject*)(Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D *)L_0) == ((RuntimeObject*)(RuntimeObject *)NULL))? 1 : 0);
 		bool L_1 = V_1;
 		if (!L_1)
@@ -22207,13 +22231,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_OnPlayerPropertiesUpdate_
 		// playerListEntries = new Dictionary<int, GameObject>();
 		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_2 = (Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D *)il2cpp_codegen_object_new(Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_mE9FC7CA0D5D3F752673F01A3BE4CB7633C59B05F(L_2, /*hidden argument*/Dictionary_2__ctor_mE9FC7CA0D5D3F752673F01A3BE4CB7633C59B05F_RuntimeMethod_var);
-		__this->set_playerListEntries_19(L_2);
+		__this->set_playerListEntries_21(L_2);
 	}
 
 IL_001b:
 	{
 		// if (playerListEntries.TryGetValue(targetPlayer.ActorNumber, out entry))
-		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_3 = __this->get_playerListEntries_19();
+		Dictionary_2_t1DA4B446B1C6B709FEA5D9DAB5F606BE0CC4FD2D * L_3 = __this->get_playerListEntries_21();
 		Player_tFB06F12211DD89BEE90AD848E6C7BD9D889F1202 * L_4 = ___targetPlayer0;
 		NullCheck(L_4);
 		int32_t L_5 = Player_get_ActorNumber_mFD24A7946A353B391259A2AFC62EFF355C14B1EC(L_4, /*hidden argument*/NULL);
@@ -22255,7 +22279,7 @@ IL_005a:
 IL_005b:
 	{
 		// StartGameButton.gameObject.SetActive(CheckPlayersReady());
-		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_14 = __this->get_StartGameButton_15();
+		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_14 = __this->get_StartGameButton_17();
 		NullCheck(L_14);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_15 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_14, /*hidden argument*/NULL);
 		bool L_16 = LobbyMainPanel_CheckPlayersReady_m3A2E8761106D5169ABCE48E7F1FEDDBACD75D81F(__this, /*hidden argument*/NULL);
@@ -22668,7 +22692,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_ClearRoomListView_m7498F2
 	NO_UNUSED_WARNING (__leave_targets);
 	{
 		// foreach (GameObject entry in roomListEntries.Values)
-		Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * L_0 = __this->get_roomListEntries_18();
+		Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * L_0 = __this->get_roomListEntries_20();
 		NullCheck(L_0);
 		ValueCollection_tE7F65FE0B6BCEA9684165BE1D7000E1CFD452EF7 * L_1 = Dictionary_2_get_Values_mFAD0BDF9BC017B2A9488F3551E8E33EE60C1D821(L_0, /*hidden argument*/Dictionary_2_get_Values_mFAD0BDF9BC017B2A9488F3551E8E33EE60C1D821_RuntimeMethod_var);
 		NullCheck(L_1);
@@ -22731,7 +22755,7 @@ FINALLY_0036:
 IL_0045:
 	{
 		// roomListEntries.Clear();
-		Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * L_7 = __this->get_roomListEntries_18();
+		Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * L_7 = __this->get_roomListEntries_20();
 		NullCheck(L_7);
 		Dictionary_2_Clear_mCE71D0DC05F13286D108CBA08F3FE0332AE91B8C(L_7, /*hidden argument*/Dictionary_2_Clear_mCE71D0DC05F13286D108CBA08F3FE0332AE91B8C_RuntimeMethod_var);
 		// }
@@ -22743,7 +22767,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_LocalPlayerPropertiesUpda
 {
 	{
 		// StartGameButton.gameObject.SetActive(CheckPlayersReady());
-		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_0 = __this->get_StartGameButton_15();
+		Button_t1203820000D5513FDCCE3D4BFF9C1C9CC755CC2B * L_0 = __this->get_StartGameButton_17();
 		NullCheck(L_0);
 		GameObject_tBD1244AD56B4E59AAD76E5E7C9282EC5CE434F0F * L_1 = Component_get_gameObject_m0B0570BA8DDD3CD78A9DB568EA18D7317686603C(L_0, /*hidden argument*/NULL);
 		bool L_2 = LobbyMainPanel_CheckPlayersReady_m3A2E8761106D5169ABCE48E7F1FEDDBACD75D81F(__this, /*hidden argument*/NULL);
@@ -22912,7 +22936,7 @@ IL_0030:
 IL_0034:
 		{
 			// if (cachedRoomList.ContainsKey(info.Name))
-			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_10 = __this->get_cachedRoomList_17();
+			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_10 = __this->get_cachedRoomList_19();
 			RoomInfo_t2FA7C04D0FB706F0313E7C91AEA598D7B1BDEBE2 * L_11 = V_1;
 			NullCheck(L_11);
 			String_t* L_12 = RoomInfo_get_Name_mEC845FB613F51CC9978E328161A17366E5C3E7A1(L_11, /*hidden argument*/NULL);
@@ -22929,7 +22953,7 @@ IL_0034:
 IL_004a:
 		{
 			// cachedRoomList.Remove(info.Name);
-			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_15 = __this->get_cachedRoomList_17();
+			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_15 = __this->get_cachedRoomList_19();
 			RoomInfo_t2FA7C04D0FB706F0313E7C91AEA598D7B1BDEBE2 * L_16 = V_1;
 			NullCheck(L_16);
 			String_t* L_17 = RoomInfo_get_Name_mEC845FB613F51CC9978E328161A17366E5C3E7A1(L_16, /*hidden argument*/NULL);
@@ -22946,7 +22970,7 @@ IL_005e:
 IL_0060:
 		{
 			// if (cachedRoomList.ContainsKey(info.Name))
-			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_18 = __this->get_cachedRoomList_17();
+			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_18 = __this->get_cachedRoomList_19();
 			RoomInfo_t2FA7C04D0FB706F0313E7C91AEA598D7B1BDEBE2 * L_19 = V_1;
 			NullCheck(L_19);
 			String_t* L_20 = RoomInfo_get_Name_mEC845FB613F51CC9978E328161A17366E5C3E7A1(L_19, /*hidden argument*/NULL);
@@ -22963,7 +22987,7 @@ IL_0060:
 IL_0077:
 		{
 			// cachedRoomList[info.Name] = info;
-			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_23 = __this->get_cachedRoomList_17();
+			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_23 = __this->get_cachedRoomList_19();
 			RoomInfo_t2FA7C04D0FB706F0313E7C91AEA598D7B1BDEBE2 * L_24 = V_1;
 			NullCheck(L_24);
 			String_t* L_25 = RoomInfo_get_Name_mEC845FB613F51CC9978E328161A17366E5C3E7A1(L_24, /*hidden argument*/NULL);
@@ -22976,7 +23000,7 @@ IL_0077:
 IL_008e:
 		{
 			// cachedRoomList.Add(info.Name, info);
-			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_27 = __this->get_cachedRoomList_17();
+			Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_27 = __this->get_cachedRoomList_19();
 			RoomInfo_t2FA7C04D0FB706F0313E7C91AEA598D7B1BDEBE2 * L_28 = V_1;
 			NullCheck(L_28);
 			String_t* L_29 = RoomInfo_get_Name_mEC845FB613F51CC9978E328161A17366E5C3E7A1(L_28, /*hidden argument*/NULL);
@@ -23049,7 +23073,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LobbyMainPanel_UpdateRoomListView_m358F1
 	NO_UNUSED_WARNING (__leave_targets);
 	{
 		// foreach (RoomInfo info in cachedRoomList.Values)
-		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_17();
+		Dictionary_2_t0BBD705CBCCEAAF0E6E2FCD4B87CE5F38AE56B67 * L_0 = __this->get_cachedRoomList_19();
 		NullCheck(L_0);
 		ValueCollection_t04A51511B5202952F93CD6D91A88B16A3C506332 * L_1 = Dictionary_2_get_Values_m58C84C3CA47DF1EF21D50BFCF55DA31009668324(L_0, /*hidden argument*/Dictionary_2_get_Values_m58C84C3CA47DF1EF21D50BFCF55DA31009668324_RuntimeMethod_var);
 		NullCheck(L_1);
@@ -23107,7 +23131,7 @@ IL_0015:
 			NullCheck(L_14);
 			RoomListEntry_Initialize_mFC2014D8B475AACF94CD66CEC35C6DD880EF6457(L_14, L_16, (uint8_t)(((int32_t)((uint8_t)L_18))), L_20, /*hidden argument*/NULL);
 			// roomListEntries.Add(info.Name, entry);
-			Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * L_21 = __this->get_roomListEntries_18();
+			Dictionary_2_tB917211DA126597937FC7D5AF12A9E1B7A763F6A * L_21 = __this->get_roomListEntries_20();
 			RoomInfo_t2FA7C04D0FB706F0313E7C91AEA598D7B1BDEBE2 * L_22 = V_1;
 			NullCheck(L_22);
 			String_t* L_23 = RoomInfo_get_Name_mEC845FB613F51CC9978E328161A17366E5C3E7A1(L_22, /*hidden argument*/NULL);

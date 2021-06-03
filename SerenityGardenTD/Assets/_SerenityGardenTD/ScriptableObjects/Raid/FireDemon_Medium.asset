@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: febd53a00f81a284aad340fb112d9834, type: 3}
+  m_Name: FireDemon_Medium
+  m_EditorClassIdentifier: 
+  maxHealth: 10000
+  timeBetweenDecisions: 12.5
+  moneyPerHP: 0.75
+  sweepDamage: 25
+  turretDestroyerCount: 5
+  turretDestroyerDamage: 20
+  timeBasedAttackInterruptAmount: 0.15
+  timeBasedAttackDamage: 100

@@ -32,6 +32,8 @@ namespace Photon.Pun.Demo.Asteroids
 
         [Header("Inside Room Panel")]
         public GameObject InsideRoomPanel;
+        public Dropdown bossDifficultyDropdown;
+        public ScriptableObject[] bossDifficulties;
 
         public Button StartGameButton;
         public GameObject PlayerListEntryPrefab;

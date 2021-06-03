@@ -20,28 +20,22 @@ namespace SerenityGarden
     public class FireDemon : BossBase, IPunObservable
     {
         [Header("Own properties")]
-        public float moneyPerHp = 1.0f;
         public float maxDamageMultiplier = 1.5f;
         public float rotationSpeed = 1.0f;
 
 
         [Header("Attack properties")]
         public float scaleIncreaseSpeed = 0.01f;
-        public float sweepDamage = 25.0f;
         //It will pick a random value and check to see in what range the picked value is.
         //If it is between 0-elem0 it will choose state 1. If it is between elem0-elem1 it will choose state 2. etc.
         public float[] decisionBarriers;
 
         [Header("TurretDestroyer")]
-        public int turretDestroyerCount = 5;
         public float turretDestroyerMaxScale = 1.0f;
-        public float turretDestroyerDamage = 1000.0f;
 
         [Header("Time based attack")]
         public float timeBasedAttackMaxScale = 10.0f;
         public float timeBasedAttackDuration = 30.0f;
-        public float timeBasedAttackInterruptAmount = 0.1f; //How much health % need to be taken in order to stop the attack
-        public float timeBasedAttackDamage = 100.0f;
         public float stunTime = 10.0f;
 
         [Header("References")]
@@ -78,6 +72,7 @@ namespace SerenityGarden
         private bool rotateTowardsTarget = false;
 
         private bool netSendEvent;
+        private int netTargetId;
 
         //When instantiating through network, the owner will instantiate the meteor so he will have it's reference.
         //And on the client, when the meteor gets instantiated, he will receive this reference so that we can shoot it when needed.
@@ -88,33 +83,49 @@ namespace SerenityGarden
 
         private void Start()
         {
-            health = maxHealth;
+            bossStatus = SceneDataRetainer.instance.SelectedBossDifficulty;
+            health = bossStatus.maxHealth;
             SetHealthbar(1.0f);
             buildManager = TurretBuildManager.instance;
 
-            nextDecisionTime = Time.time + timeBetweenDecisions;
+            nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
             defaultRotation = transform.rotation;
 
             decisionBarrierTuretDestroyer = decisionBarriers[0];
             decisionBarrierSweep = decisionBarriers[1];
+
+            currentDamageMultiplier = 1.0f + (maxDamageMultiplier - 1.0f) * (bossStatus.maxHealth - health) / bossStatus.maxHealth;
         }
 
         private void Update()
         {
-            if (isDead || !photonView.IsMine)
+            if (isDead)
                 return;
 
-            if (Time.time > nextDecisionTime)
+            if (photonView.IsMine && Time.time > nextDecisionTime)
                 MakeDecision();
 
-            if(currentAction == FireDemonActions.TimeBasedAttack && timeBasedAttackTarget != null && rotateTowardsTarget)
+            if(currentAction == FireDemonActions.TimeBasedAttack && rotateTowardsTarget)
             {
-                float diff = transform.position.x - timeBasedAttackTarget.transform.position.x;
-                if ((diff > 0 && rotationAmount > 0) || (diff < 0 && rotationAmount < 0))
+                if (photonView.IsMine && timeBasedAttackTarget != null)
                 {
-                    float angle = rotationAmount * rotationSpeed * Time.deltaTime;
-                    rotationAmount -= angle;
-                    transform.RotateAround(transform.position, Vector3.up, angle);
+                    float diff = transform.position.x - timeBasedAttackTarget.transform.position.x;
+                    if ((diff > 0 && rotationAmount > 0) || (diff < 0 && rotationAmount < 0))
+                    {
+                        float angle = rotationAmount * rotationSpeed * Time.deltaTime;
+                        rotationAmount -= angle;
+                        transform.RotateAround(transform.position, Vector3.up, angle);
+                    }
+                }
+                if(!photonView.IsMine && NetMeteorTarget != null)
+                {
+                    float diff = transform.position.x - NetMeteorTarget.transform.position.x;
+                    if ((diff > 0 && rotationAmount > 0) || (diff < 0 && rotationAmount < 0))
+                    {
+                        float angle = rotationAmount * rotationSpeed * Time.deltaTime;
+                        rotationAmount -= angle;
+                        transform.RotateAround(transform.position, Vector3.up, angle);
+                    }
                 }
             }
             if(resetRotation)
@@ -129,8 +140,8 @@ namespace SerenityGarden
         {
             base.TakeDamage(ammount);
 
-            currentDamageMultiplier = 1.0f + (maxDamageMultiplier - 1.0f) * (maxHealth - health) / maxHealth;
-            int hpDiff = (int)(maxHealth - health);
+            currentDamageMultiplier = 1.0f + (maxDamageMultiplier - 1.0f) * (bossStatus.maxHealth - health) / bossStatus.maxHealth;
+            int hpDiff = (int)(bossStatus.maxHealth - health);
             if(hpDiff > lastHpDiffCheck)
             {
                 int aux = hpDiff - lastHpDiffCheck;
@@ -143,24 +154,24 @@ namespace SerenityGarden
             //var emissionModule = passiveEffect.emission;
             //emissionModule.rateOverTime = 300.0f * (maxHealth - health) / maxHealth;
 
-            if (forcedAttackIndex == 0 && health < maxHealth * 2 / 3)
+            if (forcedAttackIndex == 0 && health < bossStatus.maxHealth * 2 / 3)
             {
                 forceNextDecision = FireDemonActions.TimeBasedAttack;
                 forcedAttackIndex++;
             }
-            if(forcedAttackIndex == 1 && health < maxHealth / 3)
+            if(forcedAttackIndex == 1 && health < bossStatus.maxHealth / 3)
             {
                 forceNextDecision = FireDemonActions.TimeBasedAttack;
                 forcedAttackIndex++;
             }
 
-            decisionBarrierTuretDestroyer = 0.1f + (decisionBarriers[0] - 0.1f) * (1.0f - (maxHealth - health) / maxHealth);
-            decisionBarrierSweep = 0.6f + (decisionBarriers[1] - 0.6f) * (1.0f - (maxHealth - health) / maxHealth);
+            decisionBarrierTuretDestroyer = 0.1f + (decisionBarriers[0] - 0.1f) * (1.0f - (bossStatus.maxHealth - health) / bossStatus.maxHealth);
+            decisionBarrierSweep = 0.6f + (decisionBarriers[1] - 0.6f) * (1.0f - (bossStatus.maxHealth - health) / bossStatus.maxHealth);
         }
 
         private void MakeDecision()
         {
-            nextDecisionTime = Time.time + timeBetweenDecisions;
+            nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
             if (forceNextDecision != FireDemonActions.None)
             {
                 currentAction = forceNextDecision;
@@ -207,7 +218,7 @@ namespace SerenityGarden
             nextDecisionTime += 3.5f;
             yield return new WaitForSeconds(3.5f);
             currentAction = FireDemonActions.None;
-            nextDecisionTime = Time.time + timeBetweenDecisions;
+            nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
         }
 
         private IEnumerator Action_SweepAttack()
@@ -217,7 +228,7 @@ namespace SerenityGarden
             nextDecisionTime += 6.5f;
             yield return new WaitForSeconds(6.5f);
             currentAction = FireDemonActions.None;
-            nextDecisionTime = Time.time + timeBetweenDecisions;
+            nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
         }
 
         private IEnumerator Action_TurretDestroyer()
@@ -231,66 +242,95 @@ namespace SerenityGarden
             }
 
             anim.SetTrigger("TurretDestroyerBegin");
-            nextDecisionTime += 10.0f;
-            yield return new WaitForSeconds(anim.GetCurrentAnimatorClipInfo(0).Length);
+            nextDecisionTime += 50.0f;
+            yield return new WaitForSeconds(2.0f);
 
-            for(int index = 0; index < turretDestroyerCount; index++)
+            for(int index = 0; index < bossStatus.turretDestroyerCount; index++)
             {
-                TurretBase target = null;
-                while (target == null)
-                {
-                    int turretIndex = Random.Range(0, turretList.Count);
-                    TurretBase aux = turretList[turretIndex];
-                    if (aux == null)    //Turret was destroyed
-                        turretList.RemoveAt(turretIndex);
-                    else if (aux.turretType != TurretType.PlayerBase)   //Check to not pick the player base
-                        target = aux;
-                    else if (turretList.Count == PhotonNetwork.CurrentRoom.PlayerCount)   //Unless it's the only turret available
-                        target = aux;
-                }
-
                 Transform meteorite = null;
                 float localScale = 0.01f;
                 if (photonView.IsMine)
                 {
-                    object[] meteorInitData = new object[1];
-                    meteorInitData[0] = target.photonView.ViewID;
-
-                    meteorite = InstantiationManager.instance.InstantiateWithCheck(meteoritePrefab, meteoriteSpawn.position, Quaternion.identity, PhotonObj.Meteorite, meteorInitData).transform;
+                    meteorite = InstantiationManager.instance.InstantiateWithCheck(meteoritePrefab, meteoriteSpawn.position, Quaternion.identity, PhotonObj.Meteorite).transform;
                 }
 
-                while (localScale < turretDestroyerMaxScale)
+                TurretBase target = null;
+                if (photonView.IsMine)
                 {
-                    localScale += scaleIncreaseSpeed;
-                    if (photonView.IsMine)
-                        meteorite.localScale = Vector3.one * localScale;
-                    yield return new WaitForSeconds(0.01f);
+                    while (localScale < turretDestroyerMaxScale)
+                    {
+                        localScale += scaleIncreaseSpeed;
+                        if (photonView.IsMine)
+                            meteorite.localScale = Vector3.one * localScale;
+                        yield return new WaitForSeconds(0.01f);
+                    }
+
+                    while (target == null)
+                    {
+                        int turretIndex = Random.Range(0, turretList.Count);
+                        TurretBase aux = turretList[turretIndex];
+                        if (aux == null)    //Turret was destroyed
+                            turretList.RemoveAt(turretIndex);
+                        else if (aux.turretType != TurretType.PlayerBase)   //Check to not pick the player base
+                            target = aux;
+                        else if (turretList.Count == PhotonNetwork.CurrentRoom.PlayerCount)   //Unless it's the only turret available
+                            target = aux;
+                    }
+                    netTargetId = target.photonView.ViewID;
+                    yield return new WaitForSeconds(0.1f);
+                }
+                else
+                {
+                    while (netMeteorTarget == null)
+                        yield return null;
                 }
 
                 if (photonView.IsMine)
                 {
                     Meteorite script = meteorite.GetComponent<Meteorite>();
-                    script.SetTarget(target, turretDestroyerDamage * currentDamageMultiplier, false);
+                    script.SetTarget(target, bossStatus.turretDestroyerDamage * currentDamageMultiplier, false);
                 }
                 else
-                    NetMeteorInstance.SetTarget(netMeteorTarget, turretDestroyerDamage * currentDamageMultiplier, false);
+                {
+                    NetMeteorInstance.SetTarget(netMeteorTarget, bossStatus.turretDestroyerDamage * currentDamageMultiplier, false);
+                    netMeteorTarget = null;
+                }
             }
 
             anim.SetTrigger("TurretDestroyerEnd");
-            nextDecisionTime = Time.time + timeBetweenDecisions;
+            nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
         }
 
 
         private IEnumerator Action_TimeBasedAttack()
         {
-            PlayerBase[] players = FindObjectsOfType<PlayerBase>();
-            timeBasedAttackTarget = players[Random.Range(0, players.Length)];
+            if (photonView.IsMine)
+            {
+                PlayerBase[] players = FindObjectsOfType<PlayerBase>();
+                timeBasedAttackTarget = players[Random.Range(0, players.Length)];
+                netTargetId = timeBasedAttackTarget.photonView.ViewID;
 
-            rotationAmount = -90.0f;
-            float diff = transform.position.x - timeBasedAttackTarget.transform.position.x;
-            if (diff > 0)
-                rotationAmount = 90.0f;
-            rotateTowardsTarget = true;
+                yield return new WaitForSeconds(0.1f);
+
+                rotationAmount = -90.0f;
+                float diff = transform.position.x - timeBasedAttackTarget.transform.position.x;
+                if (diff > 0)
+                    rotationAmount = 90.0f;
+                rotateTowardsTarget = true;
+            }
+            else
+            {
+                while (NetMeteorTarget == null)
+                    yield return null;
+
+                rotationAmount = -90.0f;
+                float diff = transform.position.x - NetMeteorTarget.transform.position.x;
+                if (diff > 0)
+                    rotationAmount = 90.0f;
+                rotateTowardsTarget = true;
+            }
+
+            
 
             nextDecisionTime += 1.0f;
             yield return new WaitForSeconds(1.0f);
@@ -299,21 +339,17 @@ namespace SerenityGarden
             Meteorite meteor = null;
             if (photonView.IsMine)
             {
-                object[] meteorInitData = new object[1];
-                meteorInitData[0] = timeBasedAttackTarget.photonView.ViewID;
-
-
-                meteor = InstantiationManager.instance.InstantiateWithCheck(meteoritePrefab, meteoriteSpawn.position, Quaternion.identity, PhotonObj.Meteorite, meteorInitData).GetComponent<Meteorite>();
+                meteor = InstantiationManager.instance.InstantiateWithCheck(meteoritePrefab, meteoriteSpawn.position, Quaternion.identity, PhotonObj.Meteorite).GetComponent<Meteorite>();
                 meteor.speed *= 0.1f;
             }
             float scaleFact = (timeBasedAttackMaxScale - 0.01f) / timeBasedAttackDuration * 0.05f;
 
             nextDecisionTime += timeBasedAttackDuration;
             float endTime = Time.time + timeBasedAttackDuration;
-            float stunHpLimit = health - maxHealth * timeBasedAttackInterruptAmount;
+            float stunHpLimit = health - bossStatus.maxHealth * bossStatus.timeBasedAttackInterruptAmount;
 
             stunBar.gameObject.SetActive(true);
-            stunBar.anchoredPosition = new Vector2((stunHpLimit / maxHealth) * healthbar.rectTransform.rect.width, 0.0f);
+            stunBar.anchoredPosition = new Vector2((stunHpLimit / bossStatus.maxHealth) * healthbar.rectTransform.rect.width, 0.0f);
 
             timerParent.SetActive(true);
             timerBar.fillAmount = 1.0f;
@@ -340,7 +376,7 @@ namespace SerenityGarden
                         PhotonNetwork.Destroy(meteor.gameObject);
                     currentAction = FireDemonActions.None;
 
-                    nextDecisionTime = Time.time + timeBetweenDecisions + stunTime;
+                    nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions + stunTime;
                     yield return new WaitForSeconds(stunTime);
                     anim.SetBool("Stun", false);
                     stunEffect.SetActive(false);
@@ -349,7 +385,7 @@ namespace SerenityGarden
             }
             if (!cond)
             {
-                nextDecisionTime = Time.time + timeBetweenDecisions * 2;
+                nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions * 2;
                 currentAction = FireDemonActions.None;
                 anim.SetTrigger("TimeBasedAttackEnd");
                 stunBar.gameObject.SetActive(false);
@@ -358,9 +394,15 @@ namespace SerenityGarden
                 float animTime = 5.0f;
                 yield return new WaitForSeconds(animTime / 4);
                 if (photonView.IsMine)
-                    meteor.SetTarget(timeBasedAttackTarget, timeBasedAttackDamage * currentDamageMultiplier, true);
+                {
+                    meteor.SetTarget(timeBasedAttackTarget, bossStatus.timeBasedAttackDamage * currentDamageMultiplier, true);
+                    timeBasedAttackTarget = null;
+                }
                 else
-                    NetMeteorInstance.SetTarget(netMeteorTarget, timeBasedAttackDamage * currentDamageMultiplier, true);
+                {
+                    NetMeteorInstance.SetTarget(netMeteorTarget, bossStatus.timeBasedAttackDamage * currentDamageMultiplier, true);
+                    NetMeteorTarget = null;
+                }
                 yield return new WaitForSeconds(animTime * 2 / 3);
             }
             resetRotation = true;
@@ -378,7 +420,7 @@ namespace SerenityGarden
                         return;
                     sweepHitObj.Add(turret);
 
-                    float damage = sweepDamage * currentDamageMultiplier;
+                    float damage = bossStatus.sweepDamage * currentDamageMultiplier;
                     Vector3 dir = (turret.transform.position + Vector3.up * 0.2f) - sweepRaycastOrigin.position;
                     RaycastHit[] hits = Physics.SphereCastAll(sweepRaycastOrigin.position, 0.25f, dir);
 
@@ -402,6 +444,7 @@ namespace SerenityGarden
             if(stream.IsWriting)
             {
                 string message = "";
+                string message2 = "";
                 if(netSendEvent)
                 {
                     switch (currentAction)
@@ -423,22 +466,43 @@ namespace SerenityGarden
                     }
                     netSendEvent = false;
                 }
+                if (netTargetId != -1)
+                    message2 = "" + netTargetId;
+                netTargetId = -1;
                 stream.SendNext(message);
+                stream.SendNext(message2);
             }
             if (stream.IsReading)
             {
                 string receivedMsg = stream.ReceiveNext() as string;
-                if (receivedMsg == "IdleStretch")
-                    currentAction = FireDemonActions.IdleStretch;
-                else if (receivedMsg == "TurretDestroyer")
-                    currentAction = FireDemonActions.TurretDestroyer;
-                else if (receivedMsg == "Sweep")
-                    currentAction = FireDemonActions.Sweep;
-                else if (receivedMsg == "TimeBasedAttack")
-                    currentAction = FireDemonActions.TimeBasedAttack;
-                else
-                    currentAction = FireDemonActions.None;
-                StartAction();
+                string receivedMsg2 = stream.ReceiveNext() as string;
+                int intResult;
+                if (int.TryParse(receivedMsg2, out intResult))
+                {
+                    TurretBase[] turrets = FindObjectsOfType<TurretBase>();
+                    foreach(TurretBase item in turrets)
+                    {
+                        if(item.photonView.ViewID == intResult)
+                        {
+                            netMeteorTarget = item;
+                            break;
+                        }
+                    }
+                }
+                if (receivedMsg != "")
+                {
+                    if (receivedMsg == "IdleStretch")
+                        currentAction = FireDemonActions.IdleStretch;
+                    else if (receivedMsg == "TurretDestroyer")
+                        currentAction = FireDemonActions.TurretDestroyer;
+                    else if (receivedMsg == "Sweep")
+                        currentAction = FireDemonActions.Sweep;
+                    else if (receivedMsg == "TimeBasedAttack")
+                        currentAction = FireDemonActions.TimeBasedAttack;
+                    else
+                        currentAction = FireDemonActions.None;
+                    StartAction();
+                }
             }
         }
     }
