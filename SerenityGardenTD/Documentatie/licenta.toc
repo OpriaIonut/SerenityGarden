@@ -27,7 +27,7 @@
 \contentsline {subsubsection}{\numberline {3.4.4}Valul de inamici}{14}{}%
 \contentsline {subsubsection}{\numberline {3.4.5}Nivelele jocului}{15}{}%
 \contentsline {subsubsection}{\numberline {3.4.6}Lock-on}{15}{}%
-\contentsline {subsubsection}{\numberline {3.4.7}Magazinul de upgrade-uri permanente}{15}{}%
+\contentsline {subsubsection}{\numberline {3.4.7}Magazinul de imbunatatiri permanente}{15}{}%
 \contentsline {subsubsection}{\numberline {3.4.8}Raid system}{16}{}%
 \contentsline {subsubsection}{\numberline {3.4.9}Atacurile monstrului de foc}{16}{}%
 \contentsline {subsection}{\numberline {3.5}Analiza proiectului din punctul de vedere al consumatorilor}{17}{}%
@@ -42,25 +42,25 @@
 \contentsline {subsubsection}{\numberline {4.1.4}Sistemul de navigare}{22}{}%
 \contentsline {subsubsection}{\numberline {4.1.5}Interfete folosite}{23}{}%
 \contentsline {subsubsection}{\numberline {4.1.6}Ierarhia inamicilor}{26}{}%
-\contentsline {subsubsection}{\numberline {4.1.7}Ierarhia turnurilor defensive}{26}{}%
-\contentsline {subsubsection}{\numberline {4.1.8}Comandantul}{26}{}%
-\contentsline {subsubsection}{\numberline {4.1.9}Controlul turelor si starilor de joc}{26}{}%
-\contentsline {subsection}{\numberline {4.2}Selectarea nivelelor}{26}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Structura meniului}{26}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Generarea dinamica a meniului}{26}{}%
-\contentsline {subsection}{\numberline {4.3}Salvarea datelor}{26}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Salvarea automata}{26}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Criptarea si decriptarea datelor}{26}{}%
-\contentsline {subsection}{\numberline {4.4}Magazinul de upgrade-uri permanente}{26}{}%
-\contentsline {subsubsection}{\numberline {4.4.1}Structura meniului}{26}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Generarea dinamica a meniului}{26}{}%
-\contentsline {subsection}{\numberline {4.5}Sistemul co-op}{26}{}%
-\contentsline {subsubsection}{\numberline {4.5.1}Modul de lucru cu Photon Engine}{26}{}%
-\contentsline {subsubsection}{\numberline {4.5.2}Inregistrare si camera de asteptare}{26}{}%
-\contentsline {subsubsection}{\numberline {4.5.3}Sincronizarea datelor}{26}{}%
-\contentsline {subsubsection}{\numberline {4.5.4}Monstrul de foc}{26}{}%
-\contentsline {subsection}{\numberline {4.6}Metode de imbunatatire a proiectului}{26}{}%
-\contentsline {subsubsection}{\numberline {4.6.1}Arta imbunatatita}{26}{}%
-\contentsline {subsubsection}{\numberline {4.6.2}O poveste pentru joc}{26}{}%
-\contentsline {subsubsection}{\numberline {4.6.3}Monstrii multipli pentru modul co-op}{26}{}%
-\contentsline {section}{\numberline {5}Concluzii}{26}{}%
+\contentsline {subsubsection}{\numberline {4.1.7}Ierarhia turnurilor defensive}{27}{}%
+\contentsline {subsubsection}{\numberline {4.1.8}Comandantul}{30}{}%
+\contentsline {subsubsection}{\numberline {4.1.9}Controlul turnurilor si starilor de joc}{32}{}%
+\contentsline {subsection}{\numberline {4.2}Selectarea nivelelor}{32}{}%
+\contentsline {subsubsection}{\numberline {4.2.1}Structura meniului}{32}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Generarea dinamica a meniului}{32}{}%
+\contentsline {subsection}{\numberline {4.3}Salvarea datelor}{32}{}%
+\contentsline {subsubsection}{\numberline {4.3.1}Salvarea automata}{32}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}Criptarea si decriptarea datelor}{32}{}%
+\contentsline {subsection}{\numberline {4.4}Magazinul de imbunatatiri permanente}{32}{}%
+\contentsline {subsubsection}{\numberline {4.4.1}Structura meniului}{32}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Generarea dinamica a meniului}{32}{}%
+\contentsline {subsection}{\numberline {4.5}Sistemul co-op}{32}{}%
+\contentsline {subsubsection}{\numberline {4.5.1}Modul de lucru cu Photon Engine}{32}{}%
+\contentsline {subsubsection}{\numberline {4.5.2}Inregistrare si camera de asteptare}{32}{}%
+\contentsline {subsubsection}{\numberline {4.5.3}Sincronizarea datelor}{32}{}%
+\contentsline {subsubsection}{\numberline {4.5.4}Monstrul de foc}{32}{}%
+\contentsline {subsection}{\numberline {4.6}Metode de imbunatatire a proiectului}{32}{}%
+\contentsline {subsubsection}{\numberline {4.6.1}Arta imbunatatita}{32}{}%
+\contentsline {subsubsection}{\numberline {4.6.2}O poveste pentru joc}{32}{}%
+\contentsline {subsubsection}{\numberline {4.6.3}Monstrii multipli pentru modul co-op}{32}{}%
+\contentsline {section}{\numberline {5}Concluzii}{32}{}%

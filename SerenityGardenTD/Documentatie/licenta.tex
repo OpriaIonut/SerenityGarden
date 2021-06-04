@@ -153,7 +153,7 @@
 		\item \textbf{Inamicul de lupta apropiata} este un tip de inamic care poate ataca turnurile doar cand sta fix in fata lor. Are viata mai multa decat inamicii de lupta de la distanta.
 		\item \textbf{Inamicul de lupta de la distanta} este un tip de inamic care poate ataca turnurile de la distanta. Are viata putina, dar pot ataca repede.
 		\item \textbf{Inamicul zburator} este un inamic care poate fi lovit doar de un numar limitat de turnuri.
-		\item \textbf{Inamicul bombardieri} este un tip de inamic care ignora turnurile intalnite in cale. Acesta se misca pe cel mai scurt drum catre baza jucatorului, iar daca ajunge deasupra acesteia, va lansa bombe care ii vor scadea drastic viata, dupa care vor pleca de pe mapa. Este un tip de inamic zburator care poate fi lovit doar de un numar limitat de turnuri.
+		\item \textbf{Inamicul bombardier} este un tip de inamic care ignora turnurile intalnite in cale. Acesta se misca pe cel mai scurt drum catre baza jucatorului, iar daca ajunge deasupra acesteia, va lansa bombe care ii vor scadea drastic viata, dupa care vor pleca de pe mapa. Este un tip de inamic zburator care poate fi lovit doar de un numar limitat de turnuri.
 	\end{itemize}
 
 	Acesti inamici (cu exceptia bombardierului) se vor misca pe harta calculand cel mai scurt drum catre baza jucatorului. Daca acestia intalnesc in cale un turn, se vor opri si vor ataca acel turn. Cand turnul este distrus, acestia isi vor relua drumul.
@@ -282,7 +282,7 @@
 	
 	
 	
-	\subsubsection{Magazinul de upgrade-uri permanente}
+	\subsubsection{Magazinul de imbunatatiri permanente}
 	
 	Intre nivele putem sa cumparat piese de schimb pentru turnurile noastre pentru a le face mai puternice. Aceste piese se pot cumpara doar cu banii castigati de pe urma nivelelor. Imbunatatirile pt fiecare tureta in parte sunt urmatoarele:
 	
@@ -348,6 +348,7 @@
 	\subsection{Scena de lupta}
 	
 	\subsubsection{Initializarea scripturilor}
+	\label{section: initialization}
 	
 	In Unity scripturile au cateva metode care ajuta la initializare.
 	
@@ -526,11 +527,89 @@
 	
 	\subsubsection{Ierarhia inamicilor}
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{EnemyHierarchy.png}
+		\caption{Ierarhia inamicilor}
+		\label{fig: enemyHierarchy}
+	\end{figure}
+
+	In \ref{fig: enemyHierarchy} am definit intr-un mod simplu si colorat modul in care trebuie structurata ierarhia inamicilor din joc.
+	
+	Clasa EnemyBase este clasa parinte care defineste modul principal in care inamicii trebuie sa functioneze. Aceasta clasa implementeaza 3 interfete utile, si anume IMovable, IDestroyable si IAttacker<TurretBase>. Precum am explicat si anterior, interfata IAttacker defineste un sablon care specifica tipul de obiect pe care poate sa il atace, in cazul nostru, clasa TurretBase care va fi explicata in urmatoarea sectiune.
+	
+	Aceasta clasa face referire si la sistemul ne navigare si la sistemul hartii hexagonale, si din acest motiv este nevoie sa isi faca initializarea doar dupa ce aceste doua sisteme si-au terminat initializarea lor. In acest scop, putem sa mostenim clasa LogicProcessBase, care a fost descrisa in capitolul \ref{section: initialization}.
+	
+	Functiile implementate de aceasta clasa sunt in mare parte functiile mostenite dupa implementarile interfetelor descrie, cu cateva exceptii referitoare la alte sisteme din joc. Un astfel de sistem este cel de a pune pe pauza jocul. Can jocul este pus pe pauza, toate scripturile care se foloseau de timpul actual al jocului nu vor actiona in modul asteptat dupa ce reluam jocul. Din acest motiv este nevoie sa implementam functia OnResumeGame() care va fi apelata cand se reia jocul, iar in aceasta functie trebuie sa setam toti temporizatorii din script la valorile necesare.
+	
+	Aceasta clasa nu este suficienta pentru a definii toate tipurile de inamici, deoarece face dificila diferentierea intre inamici pentru anumite sisteme si anumiti inamici actioneaza diferit fata de standard. Din acest motiv este necesar sa definim o serie de clase pentru fiecare inamic in parte, care sa mosteneasca aceasta clasa de baza, si care sa isi adauge propia lor logica la standardul definit de EnemyBase.
+	
+	\textbf{EnemyAmbusher} nu se foloseste de sistemul de navigare. Este inamicul bombardier, care zboara prin aer direct catre baza jucatorului. Cand ajunge in contact cu aceasta, lanseaza bombe care provoaca multe pagube, dupa care isi continua drumul, parasind scena de lupa. Din acest motiv metodele Move() si FindTarget() trebuie sa fie suprascrise.
+	
+	\textbf{EnemyFlying} si \textbf{EnemyRanged} sunt inamici care urmeaza in totalitate logica definita de EnemyBase. Singura exceptie la aceste doua clase este ca anumite turnuri vor face diferentiere intre ele. O parte din turnuri pot sa atace doar inamicii de sol (EnemyRanged si EnemyMelee) iar alte turnuri pot sa atace doar inamicii zburatori (EnemyFlying si EnemyAmbusher).
+	
+	\textbf{EnemyMelee} este un inamic care sa atace alte turnuri doar cand a ajuns langa turnuri. Din acest motiv metoda lui de atac trebuie sa fie suprascrisa putin.
+	
 	\subsubsection{Ierarhia turnurilor defensive}
 	
-	\subsubsection{Comandantul}
+	Ierarhia turnurilor este putin mai complexa si va fi descrisa pe bucati.
 	
-	\subsubsection{Controlul turelor si starilor de joc}
+	\ \\
+	\textbf{TurretBase}
+	
+	Urmand aceeasi logica ca la inamici, am definit o clasa de baza pentru modul in care trebuie sa actioneze un turn defensiv. Acesta implementeaza doua interfete: IDestroyable si IAttacker<EnemyBase>. Sablonul de la IAttacker defineste faptul ca un turn defensiv poate sa atace obiecte de tipul EnemyBase, care este clasa din care mostenesc toti inamicii jocului.
+	
+	TurretBase are si ea nevoie de o initializare controlata si din acest motiv trebuie sa mosteneasca clasa LogicProcessBase. TurretBase defineste proprietatile turnurilor, cum ar fi viata, puterea de atac, etc. Pe langa asta, majoritatea turnurilor pot fi imbunatatine, proprietatile crescand exponential cand acest lucru se intampla. Din acest motiv a fost nevoie sa creez fisiere configurabile care definesc valori pt proprietatile turnurilor. Aceasta clasa detine o instanta a unui astfel de fisier, si defineste o functie "SetLevelProp(int level)" care citeste fisierul configurabil si seteaza toate proprietatile in functie de acesta. Pe langa asta, cand turnurile sunt imbunatatite, le schimba modelul 3D pentru a avea o schimbare vizuala.
+	
+	Clasa defineste si alte metode care au fost abordate in capitolele anterioare, precum: Die(), OnResumeGame(), Init(), etc. Functia DrawRange() afiseaza/ascunde raza de atac a turnului, raza care a fost construita intr-un shader special definit in Shader Graph.
+	
+	\ \\
+	\textbf{PlayerBase}
+	
+	PlayerBase este o clasa care mosteneste TurretBase, si reprezinta baza de operatii a jucatorului. Aceasta implementeaza o parte din actiunile definite in interfete, precum: Attack(), FindTarget(), etc.
+	
+	Pe langa asta, cand baza jucatorului ramane fara viata si este distrusa, jocul trebuie sa se termine. Acest lucru poate fi realizat foarte usor prin suprascrierea metodei Die(). Cand baza ramane fara viata, instiinteaza managerul jocului, iar pe urma acesta isi porneste procesul de incheiere al nivelului. Mai multe detalii vor fi discutate in capitolul \ref{section: gameState}
+	
+	\ \\
+	\textbf{BuildableTurret}
+	
+	BuildableTurret este clasa care mosteneste TurretBase si defineste functionalitatea pentru toate turnurile care pot fi construite pe harta de joc. Aceasta clasa implementeaza IRecoverable, care defineste modul in care turnurile pot sa isi refaca viata. De indata ce turnul a fost lovit de un inamic, se calculeaza un cost necesar pentru a readuce turnul la viata maxima. In caz ca jucatorul are suficienti bani si doreste sa refaca turnul, acesta va incepe procesul refacere. Pe parcursul catorva secunde, se va reface treptat pentru viata lipsa in momentul inceperii acestui proces. In acest timp turnul nu poate sa atace inamicii, dar poate sa fie lovit in continuare de acestia, deci nu este garantat ca va revenii la viata maxima dupa terminarea procesului.
+	
+	O alta functionalitate majora a turnurilor este optiunea de a inbunatatii turnurile. Cand utilizatorul selecteaza un turn, se cauta in fisierul configurabil costul necesar pentru a imbunatatii turnul la nivelul urmator, in caz ca nu a ajuns inca la nivelul maxim. In caz ca jucatorul are suficienti bani se apeleaza metoda Upgrade(), care verifica daca s-a ajuns la nivelul maxim si daca nu, dezactiveaza toate starile defavorabile ale turnului (cum ar fi raza turnului), creste nivelul si apeleaza metoda SetLevelProp() pentru a citi din nou fisierul de configuratie pentru nivelul nou.
+	
+	Turnul poate fi vantut de jucator in caz ca este in criza de bani sau vrea sa mute turnul in alta locatie. In acest caz se calculeaza banii pe care ii primeste jucatorul, se dezaciveaza toate starile si functionalitatile turnului si se distrug referintele specifice. Tote acestea se intampla in metoda SellTurret() implementata in aceasta clasa.
+	
+	Ultima functionalitate adaugata de aceasta clasa este cea de a permite turnului sa fie controlat de comandantul jocului. Aceasta functionalitate va fi descria in detaliu in sectiunea \ref{section: commander} 
+	
+	\ \\
+	\textbf{Turnurile specifice}
+	
+	Cel mai jos nivel din ierarhie presupune definirea claselor specifice pentru fiecare tip de turn in parte, fiecare dintre acestea mostenind clasa BuildableTurret si adaugand/modificand logica stabilita pana in acest punct in functie de caz.
+	
+	\begin{itemize}
+		\item \textbf{TurretElectricFence}. Este turnul care are viata foarte mare dar raza de atac foarte mica. Poate sa atace doar inamicii de lupta apropiata si actioneaza drept un zid care pazeste toate celelalte turnuri de atacurile inamicilor. Aceast turn modifica functionalitatea prin care se gaseste ce inamic trebuie sa atace si modul in care ataca inamicul.
+		\item \textbf{TurretExcavator}. Acest turn este cel mai diferit de norma, in sensul in care nu poate ataca deloc inamicii. Este un turn care la un anumit interval de timp farmeaza resurse, pe care le converteste la bani de joc. Din acest motiv a fost nevoie sa scape complet de cautarea inamicilor, iar metoda de atac a suprascris-o in functionalitatea de farmare de bani.
+		\item \textbf{TurretFlamethrower}. De indata ce un inamic intra in raza acestui turn, lanseaza flacari violente in directia inamicului, flacari care ranesc toti inamicii care stau in ele. Turnul prioritizeaza inamicii de atac de aproape, dar in cazul in care nu exista astfel de inamici, ataca inamicii cu raza de atac. Nu poate sa atace inamicii zburatori sau cei bombardieri.
+		\item \textbf{TurretMachineGun}. Este turnul universal care poate sa atace toti inamicii jocului. Acesta lanseaza gloante foarte rapid catre inamici, dar gloantele individual nu provoaca foarte multe daune. Fiecare nivel presupune o viteza de atac mai mare.
+		\item \textbf{TurretLaser}. Acest turn ataca inamicii cu un laser foarte puternic care distruge compozitia moleculara a inamicului in fiecare clipa in care acestia sunt in raza turnului. Poate ataca inimacii de atac apropiat si cei de la distanta, dar ii prioritizeaza pe cei de la distanta. Nu poate ataca inamicii zburatori sau pe cei bombardieri.
+		\item \textbf{TurretVulkan}. Este turnul special impotriva inamicilor zburatori si a celor bombardieri. Nu poate ataca inamicii de sol, dar in schimb lanseaza rachete catre cei zburatori, rachete care explodeaza cand ajung in contact cu acestia.
+	\end{itemize}
+	
+	\subsubsection{Comandantul}
+	\label{section: commander}
+	
+	Comandantul este un caracter special care poate fi miscat oriunde dorim pe harta si care ataca inamicii din raza lui de atac, cat timp nu se deplaseaza catre o noua locatie.
+	
+	In acest scop, clasa Commander implementeaza interfetele IMovable si IAttacker<EnemyBase>. Comandantul nu poate sa fie distrus si din acest motiv nu este nevoia implementarii interfetei IDestroyable.
+	
+	Comandantul are si el un fisier de configurare care specifica statusurile lui, cum ar fi viata, viteza de miscare, puterea de atac, etc. Pentru a se putea deplasa pe harta, are nevoie sa faca referire la sistemul de navigare si la cel al hartii de joc (grid system). Din acest motiv este necesar sa mosteneasca LogicProcessBase, ca sa isi execute initializarea doar dupa celelalte sisteme au reusit sa si-o termine pe a lor.
+	
+	Majoritatea functiilor sunt similare cu cele ale turnurilor (Attack, DrawRange, FindTarget, etc.) asa ca nu vor fi reluate aici. 
+	
+	Pe langa aceste functionalitati, comandantul poate sa intre in turnuri si sa le controleze, marindu-le astfel productivitatea. Cand acesta intra in turnuri, le mareste raza, viteza, puterea de atac si in cazul excavatorului de resurse, creste banii primiti la fiecare livrare de resurse. Ca sa poata intra in turnuri, trebuie sa se deplaseze la acel turn la comanda jucatorului, iar cand turnul este distrus/vandut, acesta iese din turn si se misca catre cel mai apropiat nod din graful hartii de joc care nu este deja ocupat. Comandantul poate sa iasa din turn si fara ca acesta sa fie dsitrus, dar acest lucru se intampla numai la comanda jucatorului.
+	
+	\subsubsection{Controlul turnurilor si starilor de joc}
+	\label{section: gameState}
 	
 	\subsection{Selectarea nivelelor}
 	
@@ -546,7 +625,7 @@
 	\subsubsection{Criptarea si decriptarea datelor}
 	
 	
-	\subsection{Magazinul de upgrade-uri permanente}
+	\subsection{Magazinul de imbunatatiri permanente}
 	
 	\subsubsection{Structura meniului}
 	
