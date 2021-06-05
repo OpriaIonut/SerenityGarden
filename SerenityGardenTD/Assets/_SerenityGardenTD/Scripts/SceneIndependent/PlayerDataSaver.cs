@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using System;
+using Newtonsoft.Json;
 
 namespace SerenityGarden
 {
@@ -68,110 +69,71 @@ namespace SerenityGarden
 
         public void SaveData()
         {
-            string fileData = "" + playerData.Money;
+            string playerFileData = JsonConvert.SerializeObject(playerData, Formatting.Indented);
+            string permanentUpgradesFileData = JsonConvert.SerializeObject(dataRetainer.GetPermanentUpgrades(), Formatting.Indented);
 
-            //Save stage progress for all stages
-            fileData += "\n" + playerData.stageData.Count;
-            foreach(StageSaveData data in playerData.stageData)
-            {
-                fileData += "\n" + data.stageName + " " + data.stageStars;
-            }
+            playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
+            permanentUpgradesFileData = DataEncryption.EncryptDecrypt(permanentUpgradesFileData);
 
-            TurretPermanentUpgrades[] upgrades = dataRetainer.GetPermanentUpgrades();
-
-            //Save permanent upgrades bought by the user
-            fileData += "\n" + upgrades.Length;
-            foreach (TurretPermanentUpgrades item in upgrades)
-            {
-                fileData += "\n" + item.turretType.ToString() + " " + item.upgrades[0].currentLevel + " " + item.upgrades[1].currentLevel + " " + item.upgrades[2].currentLevel;
-            }
-            FileManager.SetFileContents(false, fileData, "saveData.txt");
+            FileManager.SetFileContents(false, playerFileData, "PlayerSaveData.json");
+            FileManager.SetFileContents(false, permanentUpgradesFileData, "PermanentUpgradesSaveData.json");
         }
 
-        private void LoadData()
+        public void LoadData()
         {
-            string contents = FileManager.GetFileContents(false, "saveData.txt");
-
-            //If we have a save file
-            if (contents != null && contents != "")
+            try
             {
-                try
+                string playerFileData = FileManager.GetFileContents(false, "PlayerSaveData.json");
+                playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
+
+                playerData = JsonConvert.DeserializeObject<PlayerData>(playerFileData);
+                foreach (StageScriptable stage in stages)
                 {
-                    string[] rows = contents.Split('\n');
-
-                    //Load the data from it
-                    playerData = new PlayerData();
-                    playerData.Money = int.Parse(rows[0]);
-
-                    //Load the stage progress
-                    int stageCount = int.Parse(rows[1]);
-                    for (int rowIndex = 2; rowIndex < 2 + stageCount; rowIndex++)
+                    stage.starRanking = 0;
+                    for (int index = 0; index < playerData.stageData.Count; index++)
                     {
-                        string[] rowSplit = rows[rowIndex].Split(' ');
-                        playerData.stageData.Add(new StageSaveData(rowSplit[0], int.Parse(rowSplit[1])));
-                    }
-                    foreach (StageScriptable stage in stages)
-                    {
-                        for (int index = 0; index < playerData.stageData.Count; index++)
+                        if (playerData.stageData[index].stageName == stage.name)
                         {
-                            if (playerData.stageData[index].stageName == stage.name)
-                            {
-                                stage.starRanking = playerData.stageData[index].stageStars;
-                                break;
-                            }
+                            stage.starRanking = playerData.stageData[index].stageStars;
+                            break;
                         }
                     }
-
-                    //Reset all upgrades (some of them may not appear in the save file, so this is a precaution
-                    TurretPermanentUpgrades[] upgrades = dataRetainer.GetPermanentUpgrades();
-                    foreach (TurretPermanentUpgrades item in upgrades)
-                    {
-                        item.upgrades[0].currentLevel = 0;
-                        item.upgrades[1].currentLevel = 0;
-                        item.upgrades[2].currentLevel = 0;
-                    }
-
-                    //Load bought upgrades
-                    int permanentUpgradeCount = int.Parse(rows[2 + stageCount]) + 2 + stageCount;
-                    for(int index = 2 + stageCount; index < permanentUpgradeCount; index++)
-                    {
-                        string[] rowSplit = rows[index].Split(' ');
-                        foreach (TurretPermanentUpgrades item in upgrades)
-                        {
-                            if(rowSplit[0] == item.turretType.ToString())
-                            {
-                                item.upgrades[0].currentLevel = int.Parse(rowSplit[1]);
-                                item.upgrades[1].currentLevel = int.Parse(rowSplit[2]);
-                                item.upgrades[2].currentLevel = int.Parse(rowSplit[3]);
-                            }
-                        }
-                    }
-                }
-                catch (Exception)
-                {
-                    //If any error was encountered, it means the data was corrupted, so we will reset everything (like starting a new game)
-                    Debug.LogWarning("Save file was corrupted. Reseting data...");
-
-                    //If the file doesn't exist, initialize all data with default values
-                    playerData = new PlayerData();
-                    for (int index = 0; index < stages.Length; index++)
-                    {
-                        playerData.stageData.Add(new StageSaveData(stages[index].name, 0));
-                    }
-                    playerData.Money = 0;
-
-                    ClearSavedData();
                 }
             }
-            else
+            catch(FileNotFoundException)
             {
-                //If the file doesn't exist, initialize all data with default values
-                playerData = new PlayerData();
-                for(int index = 0; index < stages.Length; index++)
+                Debug.LogWarning("PlayerSaveData.json was not found");
+                ClearSavedData();
+            }
+            catch(Exception)
+            {
+                Debug.LogWarning("PlayerSaveData.json was corrupted");
+                ClearSavedData();
+            }
+
+            try
+            {
+                string permanentUpgradesFileData = FileManager.GetFileContents(false, "PermanentUpgradesSaveData.json");
+                permanentUpgradesFileData = DataEncryption.EncryptDecrypt(permanentUpgradesFileData);
+                TurretPermanentUpgrades[] loadedUpgrades = JsonConvert.DeserializeObject<TurretPermanentUpgrades[]>(permanentUpgradesFileData);
+
+                TurretPermanentUpgrades[] dataRetainerUpgrades = dataRetainer.GetPermanentUpgrades();
+                for (int index = 0; index < loadedUpgrades.Length; index++)
                 {
-                    playerData.stageData.Add(new StageSaveData(stages[index].name, 0));
+                    dataRetainerUpgrades[index].upgrades[0] = loadedUpgrades[index].upgrades[0];
+                    dataRetainerUpgrades[index].upgrades[1] = loadedUpgrades[index].upgrades[1];
+                    dataRetainerUpgrades[index].upgrades[2] = loadedUpgrades[index].upgrades[2];
                 }
-                playerData.Money = 0;
+            }
+            catch (FileNotFoundException)
+            {
+                Debug.LogWarning("PermanentUpgradesSaveData.json was not found!");
+                ClearSavedData();
+            }
+            catch (Exception)
+            {
+                Debug.LogWarning("PermanentUpgradesSaveData.json was corrupted");
+                ClearSavedData();
             }
         }
 
@@ -180,8 +142,12 @@ namespace SerenityGarden
             foreach (StageScriptable data in stages)
                 data.starRanking = 0;
 
-            foreach (StageSaveData data in playerData.stageData)
-                data.stageStars = 0;
+            playerData = new PlayerData();
+            for (int index = 0; index < stages.Length; index++)
+            {
+                playerData.stageData.Add(new StageSaveData(stages[index].name, 0));
+            }
+            playerData.Money = 0;
 
             TurretPermanentUpgrades[] upgrades = dataRetainer.GetPermanentUpgrades();
             foreach (TurretPermanentUpgrades item in upgrades)
@@ -191,7 +157,6 @@ namespace SerenityGarden
                 item.upgrades[2].currentLevel = 0;
             }
 
-            playerData.Money = 0;
             SaveData();
         }
     }

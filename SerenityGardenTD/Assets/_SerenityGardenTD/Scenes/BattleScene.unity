@@ -1220,17 +1220,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.4542656
+      value: 3.722591
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.4542656
+      value: 3.722591
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.4542656
+      value: 3.722591
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 47f8d40837d76a542a541b171221ca30,
         type: 3}
@@ -3055,7 +3055,7 @@ MonoBehaviour:
   diameter: 0.15
   offset: -0.025
   mapScaleOffset: 1
-  mapPresetFile: Stages/Stage 1-1.json
+  mapPresetFile: Stages/Stage 1-2.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
   scaleFact: 0
@@ -6907,17 +6907,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.771279
+      value: 4.3432474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.771279
+      value: 4.3432474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 5.771279
+      value: 4.3432474
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}

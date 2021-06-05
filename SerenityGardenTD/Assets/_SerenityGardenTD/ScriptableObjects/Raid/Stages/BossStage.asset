@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b2ee4aa6f7a69b419023cbb83e0040f, type: 3}
-  m_Name: TestStage
+  m_Name: BossStage
   m_EditorClassIdentifier: 
-  stageName: TestMap
+  stageName: FireBoss
   stageFilePath: Raid
-  mapObj: {fileID: 919132149155446097, guid: 8e84478f9823dfd4681a732dd82c981d, type: 3}
-  waves:
-  - {fileID: 11400000, guid: ffcee2daab0e00f4fa3f72a3eec67f6d, type: 2}
+  mapObj: {fileID: 919132149155446097, guid: d92eef9e0d1791240a827502c55e00d2, type: 3}
+  waves: []
   isBossStage: 1
-  baseReward: 20
+  baseReward: 200
   starRanking: 0
   rewardPerStar: 100

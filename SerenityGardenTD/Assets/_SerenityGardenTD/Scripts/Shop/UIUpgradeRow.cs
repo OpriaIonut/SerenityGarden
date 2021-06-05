@@ -31,7 +31,7 @@ namespace SerenityGarden
             upgradeText.text = _permanentUpgrade.type.ToString();
 
             CalculateCost();
-            UpdateUIImages(false);
+            StartCoroutine("UpdateUIWithDelay");
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace SerenityGarden
                 float cost = upgrade.startCost;
                 for (int index = 0; index < upgrade.currentLevel; index++)
                     cost *= upgrade.costMultiplierPerLevel;
-                upgradeCost = (int)cost;
+                upgradeCost = (int)cost; 
                 costText.text = "$ " + upgradeCost;
                 ColorCostText();
             }
@@ -77,6 +77,12 @@ namespace SerenityGarden
                     upgradeImages[index].gameObject.SetActive(false);
                 }
             }
+        }
+
+        private IEnumerator UpdateUIWithDelay()
+        {
+            yield return new WaitForSeconds(0.01f);
+            UpdateUIImages(false);
         }
 
         /// <summary>
