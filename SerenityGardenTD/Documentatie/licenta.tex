@@ -36,8 +36,6 @@
 	\bf Serenity Garden TD
 }
 
-\onehalfspacing
-
 \date{}
 
 \begin{document}
@@ -175,47 +173,47 @@
 	\end{itemize}
 	
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{machineGun.png}
-		\caption{Mitraliera automata}
-		\label{fig: machineGun}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{machineGun.png}
+	%	\caption{Mitraliera automata}
+	%	\label{fig: machineGun}
+	%\end{figure}
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{electricFence.png}
-		\caption{Gardul electric}
-		\label{fig: electricFence}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{electricFence.png}
+	%	\caption{Gardul electric}
+	%	\label{fig: electricFence}
+	%\end{figure}
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{vulkan.png}
-		\caption{Vulkan}
-		\label{fig: vulkan}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{vulkan.png}
+	%	\caption{Vulkan}
+	%	\label{fig: vulkan}
+	%\end{figure}
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{machineCannon.png}
-		\caption{Aruncatorul de flacari}
-		\label{fig: machineCannon}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{machineCannon.png}
+	%	\caption{Aruncatorul de flacari}
+	%	\label{fig: machineCannon}
+	%\end{figure}
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{railgun.png}
-		\caption{Laser}
-		\label{fig: railgun}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{railgun.png}
+	%	\caption{Laser}
+	%	\label{fig: railgun}
+	%\end{figure}
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{excavator.png}
-		\caption{Excavator}
-		\label{fig: excavator}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{excavator.png}
+	%	\caption{Excavator}
+	%	\label{fig: excavator}
+	%\end{figure}
 	
 	
 	\subsection{Sistemele Jocului}
@@ -234,12 +232,12 @@
 
 	Inamicii vor calcula drumul pe care merg in functie de toate aceste tipuri de hexagoane. Din acest motiv este nevoie si de cel gol.
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{grid.png}
-		\caption{Harta de joc}
-		\label{fig: gridSystem}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{grid.png}
+	%	\caption{Harta de joc}
+	%	\label{fig: gridSystem}
+	%\end{figure}
 
 
 	
@@ -362,12 +360,12 @@
 	
 	Pentru a combate acest lucru, m-am gandit la un sistem care va permite controlarea initializarii tuturor acestor procese cu usurinta.
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{logicProcessCoggle.png}
-		\caption{Initializarea scripturilor}
-		\label{fig: logicProcessCoggle}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{logicProcessCoggle.png}
+	%	\caption{Initializarea scripturilor}
+	%	\label{fig: logicProcessCoggle}
+	%\end{figure}
 	
 	Am creat clasa LogicProcessBase care ajuta in acest proces. Fiecare script care necesita o initializare mai organizata trebuie sa o mosteneasca. Aceasta contine:
 	\begin{itemize}
@@ -527,16 +525,16 @@
 	
 	\subsubsection{Ierarhia inamicilor}
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{EnemyHierarchy.png}
-		\caption{Ierarhia inamicilor}
-		\label{fig: enemyHierarchy}
-	\end{figure}
+	%\begin{figure}[H]
+	%	\centering
+	%	\includegraphics[width=1\textwidth]{EnemyHierarchy.png}
+	%	\caption{Ierarhia inamicilor}
+	%	\label{fig: enemyHierarchy}
+	%\end{figure}
 
 	In \ref{fig: enemyHierarchy} am definit intr-un mod simplu si colorat modul in care trebuie structurata ierarhia inamicilor din joc.
 	
-	Clasa EnemyBase este clasa parinte care defineste modul principal in care inamicii trebuie sa functioneze. Aceasta clasa implementeaza 3 interfete utile, si anume IMovable, IDestroyable si IAttacker<TurretBase>. Precum am explicat si anterior, interfata IAttacker defineste un sablon care specifica tipul de obiect pe care poate sa il atace, in cazul nostru, clasa TurretBase care va fi explicata in urmatoarea sectiune.
+	Clasa EnemyBase este clasa parinte care defineste modul principal in care inamicii trebuie sa functioneze. Aceasta clasa implementeaza 3 interfete utile, si anume IMovable, IDestroyable si IAttacker$\textless$TurretBase$\textgreater$. Precum am explicat si anterior, interfata IAttacker defineste un sablon care specifica tipul de obiect pe care poate sa il atace, in cazul nostru, clasa TurretBase care va fi explicata in urmatoarea sectiune.
 	
 	Aceasta clasa face referire si la sistemul ne navigare si la sistemul hartii hexagonale, si din acest motiv este nevoie sa isi faca initializarea doar dupa ce aceste doua sisteme si-au terminat initializarea lor. In acest scop, putem sa mostenim clasa LogicProcessBase, care a fost descrisa in capitolul \ref{section: initialization}.
 	
@@ -557,7 +555,7 @@
 	\ \\
 	\textbf{TurretBase}
 	
-	Urmand aceeasi logica ca la inamici, am definit o clasa de baza pentru modul in care trebuie sa actioneze un turn defensiv. Acesta implementeaza doua interfete: IDestroyable si IAttacker<EnemyBase>. Sablonul de la IAttacker defineste faptul ca un turn defensiv poate sa atace obiecte de tipul EnemyBase, care este clasa din care mostenesc toti inamicii jocului.
+	Urmand aceeasi logica ca la inamici, am definit o clasa de baza pentru modul in care trebuie sa actioneze un turn defensiv. Acesta implementeaza doua interfete: IDestroyable si IAttacker$\textless$EnemyBase$\textgreater$. Sablonul de la IAttacker defineste faptul ca un turn defensiv poate sa atace obiecte de tipul EnemyBase, care este clasa din care mostenesc toti inamicii jocului.
 	
 	TurretBase are si ea nevoie de o initializare controlata si din acest motiv trebuie sa mosteneasca clasa LogicProcessBase. TurretBase defineste proprietatile turnurilor, cum ar fi viata, puterea de atac, etc. Pe langa asta, majoritatea turnurilor pot fi imbunatatine, proprietatile crescand exponential cand acest lucru se intampla. Din acest motiv a fost nevoie sa creez fisiere configurabile care definesc valori pt proprietatile turnurilor. Aceasta clasa detine o instanta a unui astfel de fisier, si defineste o functie "SetLevelProp(int level)" care citeste fisierul configurabil si seteaza toate proprietatile in functie de acesta. Pe langa asta, cand turnurile sunt imbunatatite, le schimba modelul 3D pentru a avea o schimbare vizuala.
 	
@@ -600,7 +598,7 @@
 	
 	Comandantul este un caracter special care poate fi miscat oriunde dorim pe harta si care ataca inamicii din raza lui de atac, cat timp nu se deplaseaza catre o noua locatie.
 	
-	In acest scop, clasa Commander implementeaza interfetele IMovable si IAttacker<EnemyBase>. Comandantul nu poate sa fie distrus si din acest motiv nu este nevoia implementarii interfetei IDestroyable.
+	In acest scop, clasa Commander implementeaza interfetele IMovable si IAttacker$\textless$EnemyBase$\textgreater$. Comandantul nu poate sa fie distrus si din acest motiv nu este nevoia implementarii interfetei IDestroyable.
 	
 	Comandantul are si el un fisier de configurare care specifica statusurile lui, cum ar fi viata, viteza de miscare, puterea de atac, etc. Pentru a se putea deplasa pe harta, are nevoie sa faca referire la sistemul de navigare si la cel al hartii de joc (grid system). Din acest motiv este necesar sa mosteneasca LogicProcessBase, ca sa isi execute initializarea doar dupa celelalte sisteme au reusit sa si-o termine pe a lor.
 	
@@ -608,10 +606,61 @@
 	
 	Pe langa aceste functionalitati, comandantul poate sa intre in turnuri si sa le controleze, marindu-le astfel productivitatea. Cand acesta intra in turnuri, le mareste raza, viteza, puterea de atac si in cazul excavatorului de resurse, creste banii primiti la fiecare livrare de resurse. Ca sa poata intra in turnuri, trebuie sa se deplaseze la acel turn la comanda jucatorului, iar cand turnul este distrus/vandut, acesta iese din turn si se misca catre cel mai apropiat nod din graful hartii de joc care nu este deja ocupat. Comandantul poate sa iasa din turn si fara ca acesta sa fie dsitrus, dar acest lucru se intampla numai la comanda jucatorului.
 	
-	\subsubsection{Controlul turnurilor si starilor de joc}
+	\subsubsection{Punerea pe pauza a jocului}
+	
+	Jucatorul are la dispozitie optiunea de a pune pe pauza jocul. Unity pune la dispozitie mai multe moduri de a pune pe pauza jocul. Unul din aceste moduri este de a modifica o variabila din clasa globala Time, si anume Time.timeScale. Aceasta variabila are in mod normal valoarea 1, dar daca o modificam toate sistemele jocului vor rula la o alta viteza. Daca ii setam o valoare de 0.5, majoritatea sistemelor vor incetinii (animatii, sisteme de particule, rata de apelare a metodelor update, etc.). In caz ca setam aceasta variabila la 0, toate sistemele care sunt depentende te timp se vor opri din a functiona pana cand se schimba aceasta variabila. Este o metoda valida de a crea un sistem care sa puna pe pauza jocul, dar deoarece opreste toate functiile update din a mai fi apelate si deoarece nu putem controla ce sisteme sunt oprite nu este o metoda folosita foarte des. Un motiv principal pt care nu este de recomandat aceasta solutie este pentru ca va opri inclusiv sunetele din joc, fapt ce nu este de dorit in cele mai multe cazuri.
+	
+	O alta metoda de a implementa un sistem de pauza, este sa avem un script care tine referinte catre toate celelalte script-uri din scena si care, in momentul in care jucatorul pune pe pauza jocul, opreste scripturile dorite din a mai fi executate. Unity are o clasa speciala numita MonoBehaviour, care ne da toate functiile discutate anterior (Start, Update, Coroutine, OnTriggerEnter, etc.) si multe alte proprietati utile. Toate scripturile care mostenesc aceasta clasa pot fi puse pe obiecte 3D din scena, iar scripturile care nu implementeaza clasa MonoBehaviour nu pot fi puse pe obiecte din scena. Acestea din urma vor fi rulate numai cand cream obiecte de tipul acelor clase, sau in cazul claselor statice, cand apelam metode din ele. Clasele care mostenesc MonoBehaviour si care sunt puse pe obiecte 3D din scena au o bifa langa numele scriptului. In caz ca bifa este dezactivata, scriptul nu va rula, iar aceasta bifa poate fi setata si direct din cod, atata timp cat avem referinta la acest script. Revenind la ideea principala, script-ul care defineste sistemul de pauza ar avea referinte la toate scripturile din scena si decide pe care dintre acestea sa le dezactiveze si pe care sa le lase active in clipa in care jocul se pune pe pauza. Acest sistem nu presupune o implementare foarte frumoasa, deoarece in scene diferite putem avea scripturi diferite, iar acest lucru ne-ar determina sa scriem mai multe scripturi de sistem de pauza, cate unul pentru fiecare scena diferita in parte. Pe langa asta, obtinerea tuturor referintelor catre scripturile din scena este un proces greu de automatizat. Unity ofera cateva metode pentru gasirea scripturilor din scena (FindObjectByType$\textless$type$\textgreater$(), FindObjectsByType$\textless$type$\textgreater$(), FindObjectByName$\textless$type$\textgreater$()), dar acestea nu pot gasi scriturile care sunt dezactivate. Alternativa ar fi sa definim o lista sau variabile publice in care sa punem scripturile dorite, dar acest proces presupune o pierdere de timp pentru programator si poate produce erori foarte usor in caz ca acesta uita sa adauge scriptul in lista specifica.
+	
+	Varianta pe care am implementat-o in cele din urma este de a defini un script care pune pe pauza jocul si care are o serie de proprietati care pot fi accesate de alte scripturi. Celelalte scripturi din scena, in functie de aceste proprietati isi vor modifica starile/sistemele in clipa in care jocul este pus pe pauza sau se reia. Aceasta clasa am denumit-o GamePauseManager iar structura acesteia o vom explora in continuare.
+	
+	GamePauseManager defineste un Singleton, care este un concept de programare introdus in C\#. Singleton in Unity functioneaza pe principiul ca exista o singura instanta a clasei in scena, si din acest motiv, orice script poate face referire cu usurinta la aceasta clasa, fara sa mai fie nevoie sa definim variabile publice si sa dam tragem scriptul in acele variabile publice. Singleton este menit pentru sistemele majore ale jocurilor/aplicatiilor, sisteme care au o singura instanta in scena si care influenteaza o mare parte din scripturi. In Unity ca sa definim un Singleton, in clasa in care dorim sa specificam un singleton, definim o variabila statica care are drept timp clasa din care face parte (de cele mai multe ori variabila este numita instance). In metoda de Awake verificam daca acest instance este null, si daca este null atunci setam variabila instance sa fie egala cu pointer-ul this al clasei respective. Acest lucru seteaza variabila statica sa fie egala cu prima instanta a scriptului din scena, astfel putem accesa scriptul direct din tipul clasei, fara a fi necesara cautarea acestuia (FindObjectOfType$\textless$type$\textgreater$()) sau crearea unei noi instante. In caz ca nu extista o instanta a clasei in scena, GamePauseManager.instance va ramane null, ceea ce poate produce erori, motiv pentru care trebuie sa ne asiguram ca adaugam o instanta a clasei in fiecare scena. Tot in metoda Awake, trebuie sa verificam si daca instance este diferit de null, caz care se intampla cand avem mai mult de o singura instanta a scriptului in scena. Acest caz poate produce erori, motiv pentru care trebuie afisat un warning si distrusa instanta respectiva a scriptului (se sterg doar intantele scripturilor duplicate pana in punctul in care ramanem cu o singura instanta a scriptului in scena).
+	
+	Pe langa asta scriptul defineste cateva proprietati publice care pot fi accesate direct de alte scripturi datorita singletonului implementat. Aceste proprietati sunt urmatoarele:
+	
+	\begin{itemize}
+		\item GamePaused boolean privat care specifica daca in clipa curenta jocul este pus pe pauza sau nu, si care are implementat doar un getter ca sa nu poata fi modificat de alte scripturi.
+		\item PausedTime float privat care reprezinta cat timp a fost pus pe pauza jocul. Este util pentru reactualiza temporizatorii sistemelor. De asemenea, are doar un getter implementat pentru a nu permite altor scripturi sa modifice proprietatea.
+		\item PauseStartTime float privat care reprezinta timpul la care a fost pus pe pauza jocul. Este util pentru scripturile care se folosesc de Coroutine ca sa isi poata calcula corect timpul care trebuie asteptat.
+		\item EventOnPauseGame este un delegate definit special pentru a instiinta alte scripturi cand jocul este pus pe pauza. Toate scripturile care doresc, se pot abona la acest eveniment, iar in clipa in care este pus pe pauza jocul isi pot opri/modifica sistemele care ruleaza
+		\item EventOnResumeGame este de asemenea un delegate definit pentru a instiinta scripturile cand jocul se reia. Scripturile care doresc se pot abona la acest eveniment pentru a isi reactualiza starile si a repornii sistemele in clipa cand jocul revine la normal.
+	\end{itemize}
+
+	Clasa are si cateva metode definite pentru a procesa interactiunea utilizatorului cu UI-ul, deoarece UI-ul de pauza de joc ramane neschimbat intre scenele jocului. Cand jocul este pus pe pauza, pe ecran apare un mesaj care instiinteaza jucatorul, si mai apar 2 butoane: "Exit Level" si "Quit Game". In caz ca apasa pe vreunul din ele, este intrebat daca este sigur de alegerea dorita si in caz ca raspunde afirmativ, este scos din nivel/joc in functie de caz. Pentru a relua jocul, trebuie sa apese din nou pe butonul de pauza, meniul se va disparea si jocul se va relua.
+	
+	\subsubsection{Valul de inamici}
+	
+	Pe parcursul nivelului, inamicii vin in mai multe valuri. Un val de inamicii constituie o serie de inamicii diferiti sau identici care apar intr-o ordine prestabilita sau la intamplare. Metoda de implementare care mi s-a parut cea mai usoara a fost sa definesc fisiere de configurare care contin structura valurilor de inamici. Aceste fisiere configurabile le-am definit folosind un concept specific Unity, si anume ScriptableObject. Aceste obiecte sunt instante ale unei clase a carei structuri o putem defini. Obiectele sunt obiecte globale care pot fi modificate direct din editor si care permit valorilor din interiorul obiectului cu usurinta, de catre scripturile care au nevoie de aceasta informatie. Utilizand acest concept, am creat un Scriptable Object numit WaveScriptable, care contine urmatoarele:
+	
+	\begin{itemize}
+		\item SpawnRandomly este un boolean care specifica daca inamicii apar in ordinea prestabilita sau la intamplare
+		\item ID-ul punctului de pe harta din care vor aparea
+		\item O lista de perechi de cate doua valori. Prima valoare din pereche reprezinta inamicul care va aparea pe harta, iar a doua valoare reprezinta cati inamici de acest tip vor aparea unul dupa altul, in caz ca spawnRandomly este fals, sau aleatoriu in caz contrar.
+	\end{itemize}
+
+	Folosind aceasta structura putem crea o multitudine de valuri de inamicii, fiecare val continand inamici, numarul de inamici si ordinea acestora fiind diferita.
+	
+	\subsubsection{Stagiile jocului}
+	
+	Valurile de inamici nu reprezinta suficienta informatie pentru a acoperii un nivel, deoarece majoritatea nivelelor nu vor contine un singur val. In acest scop am creat o structura similara cu cea a valului de inamici, dar la un nivel mai inalt.
+	
+	StageScriptable este un Scriptable Object care defineste care wave-uri apar la stagiul curent, si multe alte propietati pentru a face nivelele cat mai variate.
+	
+	\begin{itemize}
+		\item StageName reprezinta numele pe care il definim noi pentru stagiul respeciv. Este folosit de multe sisteme, si anume: incarcarea configrarii hartii de joc pe baza cautarii unui fisier cu numele specificat de stageName, crearea UI-ul dinamic in scena in care selectam nivelul pe care dorim sa il jucam, lucru care va fi discutat in capitolul \ref{section: levelSelection}
+		\item O lista de tipul WaveScriptable, in care putem pune toate obiectele create pentru valurile de inamici. Astfel putem crea o serie de nivele variate. O parte din valurile de inamici se pot repeta intre stagii, dar stagiile trebuie sa fie unice.
+		\item IsBossStage este un boolean care ne ajuta sa identificam daca suntem in modul co-op sau nu. Mai multe detalii vor fi discutate in capitolul \ref{section: coop} 
+		\item Banii pe care ii primim daca reusim sa castigam nivelul. Banii sunt folositi pnetru sistemul de imbunatatiri permanente, discutat in capitolul \ref{section: permanentUpgrade}
+		\item Numarul de stele castigate pana acum la stagiul respectiv. Acest concept va fi discutat in capitolul urmator.
+	\end{itemize}
+	
+	\subsubsection{Controlul jocului}
 	\label{section: gameState}
 	
+	
+	
 	\subsection{Selectarea nivelelor}
+	\label{section: levelSelection}
 	
 	\subsubsection{Structura meniului}
 	
@@ -626,6 +675,7 @@
 	
 	
 	\subsection{Magazinul de imbunatatiri permanente}
+	\label{section: permanentUpgrade}
 	
 	\subsubsection{Structura meniului}
 	
@@ -633,6 +683,7 @@
 	
 	
 	\subsection{Sistemul co-op}
+	\label{section: coop}
 	
 	\subsubsection{Modul de lucru cu Photon Engine}
 	
