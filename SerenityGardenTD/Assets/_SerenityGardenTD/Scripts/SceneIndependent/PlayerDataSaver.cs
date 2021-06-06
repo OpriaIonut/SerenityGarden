@@ -72,6 +72,9 @@ namespace SerenityGarden
             string playerFileData = JsonConvert.SerializeObject(playerData, Formatting.Indented);
             string permanentUpgradesFileData = JsonConvert.SerializeObject(dataRetainer.GetPermanentUpgrades(), Formatting.Indented);
 
+            //string playerFileData = "dasdasdasfdafa";
+            //string permanentUpgradesFileData = "ashcf923yrf78ecjo wdlobiu[['dq[w;\'acmc81092e";
+
             playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
             permanentUpgradesFileData = DataEncryption.EncryptDecrypt(permanentUpgradesFileData);
 
@@ -83,6 +86,7 @@ namespace SerenityGarden
         {
             try
             {
+                ClearSavedData();
                 string playerFileData = FileManager.GetFileContents(false, "PlayerSaveData.json");
                 playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
 

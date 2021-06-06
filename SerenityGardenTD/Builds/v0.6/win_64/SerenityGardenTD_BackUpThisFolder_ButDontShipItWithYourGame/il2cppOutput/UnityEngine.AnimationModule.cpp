@@ -4402,6 +4402,16 @@ IL_0010:
 		return L_2;
 	}
 }
+// System.Single UnityEngine.Animator::get_speed()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Animator_get_speed_mCDF58C7C373B9B449A902B9F0974CF5D10806D08 (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, const RuntimeMethod* method)
+{
+	typedef float (*Animator_get_speed_mCDF58C7C373B9B449A902B9F0974CF5D10806D08_ftn) (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A *);
+	static Animator_get_speed_mCDF58C7C373B9B449A902B9F0974CF5D10806D08_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Animator_get_speed_mCDF58C7C373B9B449A902B9F0974CF5D10806D08_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::get_speed()");
+	float retVal = _il2cpp_icall_func(__this);
+	return retVal;
+}
 // System.Void UnityEngine.Animator::set_speed(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_set_speed_mEA558D196D84684744A642A56AFBF22F16448813 (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, float ___value0, const RuntimeMethod* method)
 {

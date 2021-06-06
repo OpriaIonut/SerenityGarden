@@ -11,6 +11,7 @@ namespace SerenityGarden
         PlayerBase,
         Commander,
         Bullet, 
+        VulkanBullet,
         TurretElectricFence,
         TurretExcavator,
         TurretFlamethrower,
@@ -21,7 +22,7 @@ namespace SerenityGarden
         EnemyFlying,
         EnemyMelee,
         EnemyRanged,
-        Meteorite
+        Meteorite,
     }
 
     public class InstantiationManager : MonoBehaviour
@@ -73,6 +74,8 @@ namespace SerenityGarden
                     return "PhotonPrefabs/PhotonCommander";
                 case PhotonObj.Bullet:
                     return "PhotonPrefabs/PhotonBullet";
+                case PhotonObj.VulkanBullet:
+                    return "PhotonPrefabs/PhotonVulkanBullet";
                 case PhotonObj.TurretElectricFence:
                     return "PhotonPrefabs/PhotonElectricFence";
                 case PhotonObj.TurretExcavator:

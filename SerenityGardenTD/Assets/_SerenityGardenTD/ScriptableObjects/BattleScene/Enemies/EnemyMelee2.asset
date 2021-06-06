@@ -16,7 +16,7 @@ MonoBehaviour:
   health: 75
   speed: 0.4
   damage: 2
-  range: 1
+  range: 1.5
   attackCooldown: 1
   killReward: 10
   initScaleMultiplier: 1.5

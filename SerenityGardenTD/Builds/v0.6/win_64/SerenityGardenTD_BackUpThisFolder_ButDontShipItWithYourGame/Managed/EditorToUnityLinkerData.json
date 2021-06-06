@@ -349,6 +349,10 @@
             "moduleName": "Animation",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
+                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -439,6 +443,10 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
+                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -491,7 +499,10 @@
             "moduleName": "ParticleSystem",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -502,7 +513,10 @@
             "moduleName": "ParticleSystem",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -642,6 +656,10 @@
             "moduleName": "Animation",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
+                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -652,6 +670,10 @@
             "moduleName": "Animation",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
+                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -662,6 +684,10 @@
             "moduleName": "Animation",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
+                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },
@@ -672,6 +698,10 @@
             "moduleName": "Animation",
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
+                "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
+                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
+                "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
+                "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
             ]
         },

@@ -16,9 +16,16 @@ namespace SerenityGarden
         private TurretBase target;
         private Rigidbody rb;
 
+        private GamePauseManager pauseManager;
+        private Vector3 previousVelocity;
+
         private void Start()
         {
             rb = GetComponent<Rigidbody>();
+            pauseManager = GamePauseManager.instance;
+
+            pauseManager.AddPauseEvent(OnPauseGame);
+            pauseManager.AddUnpauseEvent(OnResumeGame);
 
             if (!photonView.IsMine)
                 FindObjectOfType<FireDemon>().NetMeteorInstance = this;
@@ -26,11 +33,26 @@ namespace SerenityGarden
 
         private void FixedUpdate()
         {
-            if(target != null)
+            if(target != null && !GamePauseManager.instance.GamePaused)
             {
                 Vector3 direction = target.transform.position - transform.position; //Calculate the image that you need to shot towards
                 rb.velocity += direction.normalized * speed * Time.fixedDeltaTime;
             }
+        }
+
+        private void OnPauseGame()
+        {
+            if (rb != null)
+            {
+                previousVelocity = rb.velocity;
+                rb.velocity = Vector3.zero;
+            }
+        }
+
+        private void OnResumeGame()
+        {
+            if (rb != null)
+                rb.velocity = previousVelocity;
         }
 
         public void SetTarget(TurretBase _target, float _damage, bool _aoe)

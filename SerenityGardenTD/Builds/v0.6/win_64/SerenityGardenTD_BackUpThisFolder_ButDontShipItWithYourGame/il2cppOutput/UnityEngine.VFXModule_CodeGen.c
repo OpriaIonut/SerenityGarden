@@ -117,11 +117,11 @@ static const int32_t s_InvokerIndices[25] =
 	32,
 	23,
 	23,
-	2207,
+	2332,
 	62,
-	2208,
+	2333,
 	27,
-	845,
+	863,
 };
 extern const Il2CppCodeGenModule g_UnityEngine_VFXModuleCodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_VFXModuleCodeGenModule = 

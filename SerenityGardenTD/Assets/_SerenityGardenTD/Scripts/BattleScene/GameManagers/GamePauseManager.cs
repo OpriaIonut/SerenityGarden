@@ -37,12 +37,18 @@ namespace SerenityGarden
         private float pausedTime;
         public float PausedTime { get { return pausedTime; } }
 
+        public delegate void PauseGameEvent();
+        private PauseGameEvent Event_PauseGame;
+        public void AddPauseEvent(PauseGameEvent subscriber) { Event_PauseGame += subscriber; }
+        public void RemovePauseEvent(PauseGameEvent unsubscriber) { Event_PauseGame -= unsubscriber; }
+
         public delegate void UnpauseGameEvent();
         private UnpauseGameEvent Event_UnpauseGame;
         public void AddUnpauseEvent(UnpauseGameEvent subscriber) { Event_UnpauseGame += subscriber; }
         public void RemoveUnpauseEvent(UnpauseGameEvent unsubscriber) { Event_UnpauseGame -= unsubscriber; }
 
         private float pauseStartTime;
+        public float PauseStartTime { get { return pauseStartTime; } }
 
         [HideInInspector] public bool netReceivedEvent = false;
 
@@ -53,6 +59,8 @@ namespace SerenityGarden
             if(gamePaused == true)
             {
                 pauseStartTime = Time.time;
+                if (Event_PauseGame != null && Event_PauseGame.GetInvocationList().Length != 0)
+                    Event_PauseGame.Invoke();
             }
             else
             {

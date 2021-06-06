@@ -36,6 +36,9 @@ namespace SerenityGarden
 
         private void OnTriggerStay(Collider other)
         {
+            if (GamePauseManager.instance.GamePaused)
+                return;
+
             if (objTohit == HitObjectType.Enemy)
             {
                 EnemyBase enemy = other.transform.root.gameObject.GetComponent<EnemyBase>();

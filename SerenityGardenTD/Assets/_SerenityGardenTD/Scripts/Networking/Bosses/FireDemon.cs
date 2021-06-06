@@ -81,6 +81,9 @@ namespace SerenityGarden
         private TurretBase netMeteorTarget;
         public TurretBase NetMeteorTarget { get { return netMeteorTarget; } set { netMeteorTarget = value; } }
 
+        private GamePauseManager pauseManager;
+        private float previousAnimSpeed = 0;
+
         private void Start()
         {
             bossStatus = SceneDataRetainer.instance.SelectedBossDifficulty;
@@ -95,11 +98,15 @@ namespace SerenityGarden
             decisionBarrierSweep = decisionBarriers[1];
 
             currentDamageMultiplier = 1.0f + (maxDamageMultiplier - 1.0f) * (bossStatus.maxHealth - health) / bossStatus.maxHealth;
+
+            pauseManager = GamePauseManager.instance;
+            pauseManager.AddUnpauseEvent(OnResumeGame);
+            pauseManager.AddPauseEvent(OnPauseGame);
         }
 
         private void Update()
         {
-            if (isDead)
+            if (isDead || pauseManager.GamePaused)
                 return;
 
             if (photonView.IsMine && Time.time > nextDecisionTime)
@@ -134,6 +141,18 @@ namespace SerenityGarden
                 if (transform.rotation == defaultRotation)
                     resetRotation = false;
             }
+        }
+
+        private void OnPauseGame()
+        {
+            previousAnimSpeed = anim.speed;
+            anim.speed = 0;
+        }
+
+        private void OnResumeGame()
+        {
+            nextDecisionTime = Time.time + (nextDecisionTime - pauseManager.PauseStartTime);
+            anim.speed = previousAnimSpeed;
         }
 
         public override void TakeDamage(float ammount)
@@ -216,7 +235,16 @@ namespace SerenityGarden
         {
             anim.SetTrigger("IdleStretch");
             nextDecisionTime += 3.5f;
+            float yieldStartTime = Time.time;
             yield return new WaitForSeconds(3.5f);
+
+            while(pauseManager.GamePaused)
+            {
+                yield return null;
+            }
+            if (pauseManager.PauseStartTime - yieldStartTime > 0)
+                yield return new WaitForSeconds(3.5f - (pauseManager.PauseStartTime - yieldStartTime));
+
             currentAction = FireDemonActions.None;
             nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
         }
@@ -226,7 +254,16 @@ namespace SerenityGarden
             anim.SetTrigger("Sweep");
             sweepHitObj.Clear();
             nextDecisionTime += 6.5f;
+            float yieldStartTime = Time.time;
             yield return new WaitForSeconds(6.5f);
+
+            while (pauseManager.GamePaused)
+            {
+                yield return null;
+            }
+            if (pauseManager.PauseStartTime - yieldStartTime > 0)
+                yield return new WaitForSeconds(6.5f - (pauseManager.PauseStartTime - yieldStartTime));
+
             currentAction = FireDemonActions.None;
             nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
         }
@@ -243,9 +280,18 @@ namespace SerenityGarden
 
             anim.SetTrigger("TurretDestroyerBegin");
             nextDecisionTime += 50.0f;
+            float yieldStartTime = Time.time;
             yield return new WaitForSeconds(2.0f);
 
-            for(int index = 0; index < bossStatus.turretDestroyerCount; index++)
+            while (pauseManager.GamePaused)
+            {
+                yield return null;
+            }
+            if (pauseManager.PauseStartTime - yieldStartTime > 0)
+                yield return new WaitForSeconds(2.0f - (pauseManager.PauseStartTime - yieldStartTime));
+
+
+            for (int index = 0; index < bossStatus.turretDestroyerCount; index++)
             {
                 Transform meteorite = null;
                 float localScale = 0.01f;
@@ -263,6 +309,9 @@ namespace SerenityGarden
                         if (photonView.IsMine)
                             meteorite.localScale = Vector3.one * localScale;
                         yield return new WaitForSeconds(0.01f);
+
+                        while (pauseManager.GamePaused)
+                            yield return null;
                     }
 
                     while (target == null)
@@ -333,7 +382,16 @@ namespace SerenityGarden
             
 
             nextDecisionTime += 1.0f;
+            float yieldStartTime = Time.time;
             yield return new WaitForSeconds(1.0f);
+
+            while (pauseManager.GamePaused)
+            {
+                yield return null;
+            }
+            if (pauseManager.PauseStartTime - yieldStartTime > 0)
+                yield return new WaitForSeconds(1.0f - (pauseManager.PauseStartTime - yieldStartTime));
+
             anim.SetTrigger("TimeBasedAttackStart");
 
             Meteorite meteor = null;
@@ -359,6 +417,14 @@ namespace SerenityGarden
             while(Time.time < endTime)
             {
                 yield return new WaitForSeconds(0.05f);
+
+                if (pauseManager.GamePaused)
+                {
+                    while (pauseManager.GamePaused)
+                        yield return null;
+                    endTime = Time.time + (endTime - pauseManager.PauseStartTime);
+                }
+
                 timerBar.fillAmount = (endTime - Time.time) - Mathf.Floor(endTime - Time.time);
                 timerText.text = ((int)(endTime - Time.time)).ToString();
 
@@ -377,7 +443,16 @@ namespace SerenityGarden
                     currentAction = FireDemonActions.None;
 
                     nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions + stunTime;
+                    yieldStartTime = Time.time;
                     yield return new WaitForSeconds(stunTime);
+
+                    while (pauseManager.GamePaused)
+                    {
+                        yield return null;
+                    }
+                    if (pauseManager.PauseStartTime - yieldStartTime > 0)
+                        yield return new WaitForSeconds(stunTime - Mathf.Abs(pauseManager.PauseStartTime - yieldStartTime));
+
                     anim.SetBool("Stun", false);
                     stunEffect.SetActive(false);
                     break;
@@ -392,7 +467,16 @@ namespace SerenityGarden
                 timerParent.SetActive(false);
 
                 float animTime = 5.0f;
+                yieldStartTime = Time.time;
                 yield return new WaitForSeconds(animTime / 4);
+
+                while (pauseManager.GamePaused)
+                {
+                    yield return null;
+                }
+                if (pauseManager.PauseStartTime - yieldStartTime > 0)
+                    yield return new WaitForSeconds(animTime / 4 - (pauseManager.PauseStartTime - yieldStartTime));
+
                 if (photonView.IsMine)
                 {
                     meteor.SetTarget(timeBasedAttackTarget, bossStatus.timeBasedAttackDamage * currentDamageMultiplier, true);
@@ -403,7 +487,15 @@ namespace SerenityGarden
                     NetMeteorInstance.SetTarget(netMeteorTarget, bossStatus.timeBasedAttackDamage * currentDamageMultiplier, true);
                     NetMeteorTarget = null;
                 }
+                yieldStartTime = Time.time;
                 yield return new WaitForSeconds(animTime * 2 / 3);
+
+                while (pauseManager.GamePaused)
+                {
+                    yield return null;
+                }
+                if(pauseManager.PauseStartTime - yieldStartTime > 0)
+                    yield return new WaitForSeconds(animTime * 2 / 3 - (pauseManager.PauseStartTime - yieldStartTime));
             }
             resetRotation = true;
             rotateTowardsTarget = false;
@@ -426,6 +518,9 @@ namespace SerenityGarden
 
                     foreach (RaycastHit hit in hits)
                     {
+                        if (hit.transform.root.gameObject == turret.gameObject)
+                            continue;
+
                         TurretBase script = hit.transform.root.gameObject.GetComponent<TurretBase>();
                         if (script != null && script.turretType == TurretType.ElectricFence)
                         {

@@ -48,7 +48,7 @@ namespace SerenityGarden
             HelperMethods.RotateObjTowardsTarget(partToRotate.transform, boss.transform.position, true);
 
             //Shoot a bullet towards it
-            BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
+            BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.VulkanBullet).GetComponent<BulletMovement>();
             bulletScript.damage = Damage;
             bulletScript.SetTarget(boss.gameObject);
             LastAttackTime = Time.time;
