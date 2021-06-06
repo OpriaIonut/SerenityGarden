@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e481eb47742f663418da887c0f668f33, type: 3}
-  m_Name: EnemyAmbusherDemo
+  m_Name: EnemyAmbusher1
   m_EditorClassIdentifier: 
   enemyType: 3
   health: 100
-  speed: 0.5
+  speed: 0.1
   damage: 10
   range: 3
   attackCooldown: 25
   killReward: 5
+  initScaleMultiplier: 2

@@ -6,8 +6,10 @@ namespace SerenityGarden
 {
     public class EnemyAmbusher : EnemyBase
     {
-        public Transform firePoint;
-        public GameObject bulletPrefab;
+        public GameObject explosionVFX;
+
+        private Vector3 moveDirection;
+        private bool hitTarget = false;
 
         private void Awake()
         {
@@ -23,48 +25,48 @@ namespace SerenityGarden
         {
             if(!GamePauseManager.instance.GamePaused)
                 base.BaseUpdateCalls();
+
+            transform.Translate(moveDirection * Speed * Time.deltaTime, Space.World);
+            RaycastHit hit;
+            if(!hitTarget && Physics.Raycast(transform.position, Vector3.down, out hit))
+            {
+                if(hit.transform.root.gameObject.GetComponent<PlayerBase>())
+                {
+                    Target.Health -= Damage;
+                    GameObject explosion = Instantiate(explosionVFX);
+                    explosion.transform.position = Target.transform.position;
+                    Destroy(explosion, 1.0f);
+                    hitTarget = true;
+                }
+            }
+        }
+
+        public override void Init()
+        {
+            base.Init();
+
+            transform.position = new Vector3(transform.position.x, 1.5f, transform.position.z);
+            Target = FindObjectOfType<PlayerBase>();
+            HelperMethods.RotateObjTowardsTarget(transform, Target.transform.position, true, Speed * Time.deltaTime);
+            moveDirection = Target.transform.position - transform.position;
+            moveDirection.y = 0;
+            transform.localScale *= enemyScriptable.initScaleMultiplier;
+            Destroy(gameObject, 50.0f);
         }
 
         public override void Attack()
         {
-            //Rotate towards the target
-            HelperMethods.RotateObjTowardsTarget(transform, EndBlock.transform.position, true, Speed * Time.deltaTime);
-
-            //Shoot a bullet towards the target
-            BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
-            bulletScript.damage = Damage;
-            bulletScript.SetTarget(Target.gameObject);
-            LastAttackTime = Time.time;
+            //Intentionally left empty
         }
 
         public override void Move()
         {
-            //The movement of ambushers is different from the others, it doesn't use the grid system. It will go straight towards the end goal
-            HelperMethods.RotateObjTowardsTarget(transform, EndBlock.transform.position, true, Speed * Time.deltaTime);
-            HelperMethods.MoveTowards(transform, EndBlock.transform.position, Speed * Time.deltaTime, true);
+            //Intentionally left empty
         }
 
         public override void FindTarget()
         {
-            //Also, for target, it will only consider the base as a target
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
-            TurretBase _target = null;
-            TurretBase aux;
-            float minDist = float.MaxValue;
-            foreach (Collider item in hits)
-            {
-                //Ignore vfx collisions
-                if (item.transform.gameObject.layer == 9)
-                    continue;
-
-                aux = item.transform.root.gameObject.GetComponent<PlayerBase>();
-                if (aux != null && HelperMethods.SquaredDistance(transform.position, aux.transform.position) < minDist)
-                {
-                    _target = aux;
-                    minDist = HelperMethods.SquaredDistance(transform.position, aux.transform.position);
-                }
-            }
-            Target = _target;
+            //Intentionally left empty
             LastSearchTargetTime = Time.time;
         }
 

@@ -9,11 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb7ad9276a070d745b6d3cc273799326, type: 3}
-  m_Name: Wave4
+  m_Script: {fileID: 11500000, guid: e481eb47742f663418da887c0f668f33, type: 3}
+  m_Name: EnemyFlying3
   m_EditorClassIdentifier: 
-  waveEnemies:
-  - enemy: {fileID: 8721999105785206476, guid: fba25671a535c3d46b17eed344a4c308, type: 3}
-    count: 5
-  spawnPointsID: 4
-  spawnRandomly: 1
+  enemyType: 2
+  health: 125
+  speed: 0.3
+  damage: 3
+  range: 4
+  attackCooldown: 1
+  killReward: 15
+  initScaleMultiplier: 2

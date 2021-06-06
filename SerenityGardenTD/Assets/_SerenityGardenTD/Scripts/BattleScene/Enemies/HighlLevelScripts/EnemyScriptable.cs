@@ -14,5 +14,6 @@ namespace SerenityGarden
         public float range;
         public int attackCooldown;
         public int killReward;
+        public float initScaleMultiplier;
     }
 }

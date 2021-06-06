@@ -1,9 +1,19 @@
 fileFormatVersion: 2
-guid: a263b6982f53bf14fa3c2e9a5b2cff47
+guid: 5de4348805bb5f940a0133bbf3217627
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 05da1ea41fb4c604ab15ea6c175daa14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LevelColor
+    second: {fileID: 2100000, guid: b5ed0b78584f11549940988d64a237bf, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -213,12 +213,15 @@ namespace SerenityGarden
 
         public bool CheckReachedTarget()
         {
+            Vector3 transfPos2D = new Vector3(transform.position.x, 0.0f, transform.position.z);
+            Vector3 nextBlocktransfPos2D = new Vector3(NextBlock.transform.position.x, 0.0f, NextBlock.transform.position.z);
+
             if (NextBlock == null)
             {
                 Debug.LogWarning("Warning! Can't find navigation target");
                 return false;
             }
-            else if (HelperMethods.SquaredDistance(transform.position, NextBlock.transform.position) < ReachedThreshold)
+            else if (HelperMethods.SquaredDistance(transfPos2D, nextBlocktransfPos2D) < ReachedThreshold)
             {
                 //If we have reached the destination, then find a new one
                 FindNextBlock();
@@ -271,6 +274,11 @@ namespace SerenityGarden
         {
             TurretBuildManager.instance.Money += DestroyReward;
             Destroy(gameObject);
+        }
+
+        private void OnDrawGizmosSelected()
+        {
+            Gizmos.DrawWireSphere(transform.position, Range / 2);
         }
     }
 }
