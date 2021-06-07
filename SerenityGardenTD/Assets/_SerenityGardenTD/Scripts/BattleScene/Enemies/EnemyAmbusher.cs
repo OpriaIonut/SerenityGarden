@@ -51,7 +51,7 @@ namespace SerenityGarden
             moveDirection = Target.transform.position - transform.position;
             moveDirection.y = 0;
             transform.localScale *= enemyScriptable.initScaleMultiplier;
-            Destroy(gameObject, 50.0f);
+            Destroy(gameObject, 25.0f);
         }
 
         public override void Attack()

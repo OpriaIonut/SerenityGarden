@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turretType: 4
   upgrades:
-  - type: 0
+  - type: 3
     minMultiplier: 1
     maxMultiplier: 2
     startCost: 10
