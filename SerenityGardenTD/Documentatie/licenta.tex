@@ -139,8 +139,13 @@
 	
 	
 	
+	\subsubsection{Prefab}
 	
-	\subsubsection{API-ul de scriptare}
+	
+	
+	
+	
+	\subsubsection{Raycast si sistemul de fizica}
 	
 	
 	
@@ -153,6 +158,12 @@
 
 
 	\subsection{Elemente specifice folosite}	
+	
+	
+	
+	
+	
+	\subsubsection{Editoare personalizate}
 	
 	
 	
@@ -556,15 +567,104 @@
 	
 	
 	
-	\subsubsection{Grid system}
+	\subsubsection{Harta de joc}
+	
+	Actiunea jocului se petrece pe o harta care este formata din mai multe blocuri hexagonale. Aceasta harta este generata automat in functie de ce tip de harta alegem pentru nivelul respectiv. Inainte sa incepem sa investigam indetaliat sistemul hartii de joc, trebuie mai intai sa definim ce reprezinta un bloc hexagonal pe harta.
+	\newline
+	
+	
+	
+	
 	
 	\textbf{Blocul hexagonal}
 	
-	\textbf{Harta de joc}
+	Pentru a retine informatii specifice pentru un bloc, am definit clasa HexagonalBlock. In interiorul clasei m-am folosit de doua enum-uri: SpawnPointsID si HexagonType.
+	\newline
+	
+	HexagonType defineste tipul blocului hexagonal si interactiunile posibile cu acesta. Tipurile definite in acest enum sunt:
+	
+	\begin{itemize}
+		\item Walkable. Blocul primeste culoarea gri si toate creaturile pot sa se deplaseze pe acesta.
+		\item TurretBuildable. Blocul primeste culoarea albastra si reprezinta zonele de pe harta unde putem sa construim turnurile noastre.
+		\item ResourceExtraction. Blocul primeste culoarea verte si reprezinta zonele de pe harta in care putem construii turnul excavator.
+		\item Occupied. Blocul primeste culoarea rosie si reprezinta zonele in care este construita un turn sau locul in care se afla comandantul.
+		\item SpawnPoint. Blocul primeste culoarea mov si reprezinta locul din care pornesc inamicii.
+		\item Impassable. Blocul primeste culoarea rosu inchis si reprezinta locurile prin care nu pot sa treaca inamicii. Sistemul de navigare va ignora toate aceste blocuri si va gasi rute alternative.
+		\item PlayerBase. Blocul primeste culoarea galbena si reprezinta locul in care va fi creata baza jucatorului. Pentru ca un nivel sa fie considerat valid, trebuie sa existe 3 astfel de blocuri unul langa altul.
+		\item CommanderSpawn. Blocul primeste culoarea mov si reprezinta locul in care va incepe comandantul. Pentru ca un nivel sa fie considerat valid, trebuie sa existe exact o instanta a acestui bloc pe harta.
+	\end{itemize}
+	
+	SpawnPointsID defineste o serie id-uri pentru blocurile de tip SpawnPoint. In fisierul de configurare al valului de inamici, discutat in capitolul \ref{section: enemyWave}, putem specifica id-ul blocului de la care vor incepe inamicii. In caz ca, pentru un val de inamici specificam ca inamicii sa incepa de la o locatie aleatorie, atunci se va alege un bloc aleatoriu dintre toate blocurile de pe harta.
+	\newline
+	
+	Blocul hexagonal defineste si o lista de materiale, care sunt folosite pentru a schimba culoarea blocului in momentul in care tipul acestuia se schimba.
+	\newline
+	
+	Are definite si 2 metode ajutatoare si anume PlaceHexagon(), care aseaza blocul pe harta in functie de pozitia si diametrul specificat in parametrii, si UpdateMaterial() care actualizeaza culoarea blocului, prin schimbarea materialului pe care il foloseste.
+	\newline
+	
+	Pentru a pune in functiune schimbarea de culoare a blocului hexagonal direct din editor, a trebuit sa creez clasa speciala HexagonalBlockEditor. Aceasta clasa mosteneste clasa Editor, pentru a putea schimba interfata grafica a editorului din Unity. Aceasta clasa, in metoda OnInspectorGUI care este apelata de fiecare data cand obiectul este selectat, verifica daca s-a schimbat tipul blocului, si daca da, atunci apeleaza metoda UpdateMaterial() de pe blocul selectat.
+	\newline
+	
+	
+	
+	
+	
+	\textbf{Harta propriu-zisa}
+	
+	Clasa special definita pentru harta de joc este HexagonalGrid. Aceasta clasa are cateva proprietati publice care definesc dimensiunea hartii: diameter (care defineste cat de mare este fiecare hexagon), offset (care este aplicat in asa fel incat hexagoanele vor fi pozitionate la distante egale intre ele) si mapScaleOffset (harta de joc este scalata automat la dimensiunea ecranului; acest offset ne ajuta sa scalam harta mai mult sau mai putin decat ar fi fost scalata automat).
+	\newline
+	
+	Scriptul are definit o lista de tipul HexagonalBlock, care retine toate blocurile hexagonale de pe harta si mai are definit o variabila publica care reprezinta tipul de harta pe care o folosim. Tipul de harta este reprezentat de un model 3D care va fi folosit pentru a pozitiona hexagoanele.
+	\newline
+	
+	Clasa mosteneste LogicProcessBase, iar in metoda init, gaseste fisierul de configurare al nivelului curent, discutat in capitolul \ref{section: stageScriptable}, sterge toate blocurile existente de pe harta, citeste fisierul de configurare al hartii (definit in fisierul de configurare al nivelului si explicat in sectiunea urmatoare). Dupa ce a citit continutul fisierului, apeleaza metoda SpawnAndScaleMap() si metoda LoadPresetGrid().
+	\newline
+	
+	SpawnAndScaleMap() creeaza o instanta a hartii de joc (modelul 3d care este definit drept variabila publica), gaseste limitele acesteia in coordonate 3D, si in functie de dimensiunea ecranului, scaleaza harta in asa fel incat sa incapa harta in intregime pe ecran. Pe urma, in functie de mapScaleOffset, scaleaza din nou harta in functie de dorinta persoanei care a definit nivelul.
+	\newline
+	
+	Inainte sa vorbim despre functia LoadPresetGrid() trebuie sa discutam despre CreateGrid(). Aceasta functie se foloseste de modelul 3D al hartii pentru a genera si pozitiona toate blocurile hexagonale necesare. Aceasta parcurge intreaga dimensiune a modelului 3D, si folosindu-se de fizica definita de unity (Physics.Raycast), verifica daca in pozitia curenta de pe model a reusit sa loveasca suprafata. In caz ca a reusit sa loveasca, atunci genereaza un bloc hexagonal, il adauga in lista si cauta in continuare pana cand a reusit sa parcurga intreg modelul 3D. La final o sa avem generate pe harta blocuri hexagonale care sunt pozitionate in toate zonele de pe modelul 3D al hartii, fiecare bloc fiind de tipul Walkable.
+	\newline
+	
+	LoadPresetGrid() preia continutul fisierului configurabil, apeleaza metoda CreateGrid(), dupa care incepe sa itereze peste fiecare element din blocurile generate. La fiecare iteratie, initializeaza blocul curent in functie de datele din fisierul configurabil al hartii de joc, si in caz ca intalneste blocuri de tipul PlayerBase sau CommanderSpawn, genereaza si pozitioneaza pe harta comandantul si baza jucatorului. In caz ca fisierul este corupt, nu a gasit blocurile pentru comandant si penrtu baza jucatorului sau a gasit prea multe din acestea, afiseaza mesaje de eroare pentru fiecare caz in parte.
+	\newline
+	
+	
+	
+	
 	
 	\textbf{Fisierul de configurare pentru harta de joc}
 	
+	Pentru a putea crea cu usurinta nivele cat mai variate, trebuie sa retinem anumite date in fisiere configurabile. Aceste fisiere configurabile trebuie sa fie facute in asa fel incat prin incarcarea unui simplu fisier, putem genera un nivel de joc complet functional.
+	\newline
+	
+	In acest scop am definit clasa GridSaveData, care retine proprietaile cele mai importante ale hartii de joc. Aceasta clasa retine diametrul blocurilor, offset-ul si mapScaleOffset, pentru a putea incarca harta la aceeasi scala la care era configurata initial. Pe langa asta, retine o lista cu tipurile blocurilor hexagonale de pe harta si id-urile setate pentru blocurile de pe care incep inamicii.
+	\newline
+	
+	Aceasta clasa este definita urmand o structura json, pentru a usura serializarea si deserializarea datelor in momentul scrierii si citirii pe disk.
+	\newline
+	
+	Pe langa aceasta clasa, am avut nevoie si de o clasa ajutatoare care sa se ocupe de salvarea si incarcarea propriu-zisa a datelor. Clasa se numeste GridDataSaver si este definita cu 2 metode statice simple: SaveData() si LoadData().
+	\newline
+	
+	
+	
+	
+	
 	\textbf{Editorul special pentru crearea rapida a nivelelor}
+	
+	Pentru a usura generarea de nivele, am creat un editor cu functii speciale. Clasa se numeste HexagonalGridEditor si mostenteste clasa Editor din Unity. Folosind aceasta clasa, am suprascris editorul implicit pentru clasa HexagonalGrid, iar in loc i-am adaugat cateva proprietati ajutatoare. Am definit campuri publice pentru modelul 3D al hartii pentru care dorim sa cream un nivel, diametru, offset, mapScaleOffset si locatia fisierului de configurare in care sa salveze configurarea hartii si din care poate sa incarce harta pentru a o modifica.
+	\newline
+	
+	Pe langa aceste campuri, am definit si cateva butoane care au ca rol sa apeleze functionalitati din scriptul HexagonalGrid. Fara aceste butoane, nivele ar fi putut fi create numai in timpul rularii aplicatiei, fapt ce nu era de dorit, deoarece este cu mult mai usor sa cream harti de joc direct din editor. Butoanele definite sunt: Scale Map, Reset Scale, Generate Grid, Clear Grid, Load Preset, Save Preset. Fiecare buton apeleaza functionalitatea cu acelasi nume din HexagonalGrid, exceptant Load Preset si Save Preset, care incarca si salveaza configurarea actuala a hartii in locatia specificata prin campul public, folosindu-se de GridDataSaver.
+	\newline
+	
+	Datorita acestui editor special, procesul de creare a hartilor jocului a devenit foarte rapid. Pentru a crea o harta noua, trebuie sa incarcam un model 3D simplist definit intr-un program de modelare 3D, tragem acel model 3D in campul public de pe editor. Modificam campurile de scalare a mapei si apasam pe butonul de Generate Grid repepat pana cand suntem multumiti de configurarea actuala. Dupa acest lucru, selectam blocurile hexagonale la care dorim sa le schimbam tipul. Datorita editorului HexagonalBlockEditor, culoarea acestora se schimba automat, fapt care ne usureaza munca enorm. Dupa ce am definit toate tipurile blocurilor, specificam locatia la care dorim sa salvam fisierul de configurare al hartii si apasam pe butonul Save Preset.
+	\newline
+	
+	In caz ca dorim sa modificam configurarea unei harti, specificam locatia fisierului de configurare a hartii respective. Setam campul modelului 3D cu modelul 3D pe care a fost generata initial harta si apasam pe butonul Load Preset. Dupa ce harta s-a incarcat cu succes, putem modifica blocurile hexagonale in modul dorit, iar cand am terminat apasam din nou pe butonul Save Preset prentru a suprascrie configurarea hartii.
+	\newline
 	
 	
 	
@@ -855,6 +955,7 @@
 	
 	
 	\subsubsection{Valul de inamici}
+	\label{section: enemyWave}
 	
 	Pe parcursul nivelului, inamicii vin in mai multe valuri. Un val de inamicii constituie o serie de inamicii diferiti sau identici care apar intr-o ordine prestabilita sau la intamplare. Metoda de implementare care mi s-a parut cea mai usoara a fost sa definesc fisiere de configurare care contin structura valurilor de inamici. Aceste fisiere configurabile le-am definit folosind un concept specific Unity, si anume ScriptableObject. Aceste obiecte sunt instante ale unei clase a carei structuri o putem defini. Obiectele sunt obiecte globale care pot fi modificate direct din editor si care permit valorilor din interiorul obiectului cu usurinta, de catre scripturile care au nevoie de aceasta informatie. Utilizand acest concept, am creat un Scriptable Object numit WaveScriptable, care contine urmatoarele:
 	
@@ -871,6 +972,7 @@
 	
 	
 	\subsubsection{Stagiile jocului}
+	\label{section: stageScriptable}
 	
 	Valurile de inamici nu reprezinta suficienta informatie pentru a acoperii un nivel, deoarece majoritatea nivelelor nu vor contine un singur val. In acest scop am creat o structura similara cu cea a valului de inamici, dar la un nivel mai inalt.
 	\newline
@@ -1135,11 +1237,79 @@
 	\subsection{Sistemul co-op}
 	\label{section: coop}
 	
+	Pentru a putea diferentia jocul acesta fata de alte jocuri pe acest stil din domeniu, am decis sa implementez un mod co-op, in care joci un nivel dificil impreuna cu un alt jucator. Momentan este implementat un singur nivel de acest tip, dar care are mai multe dificultati care pot fi explorate. Pe langa aceasta, majoritatea functionalitatilor sunt deja scrise, motiv pentru care pot fi create cu relativa usurinta si alte nivele de joc.
+	\newline
+	
+	Sincronizarea a fost realizata cu ajutorul un framework numit Photon Engine, despre care vom vorbi in continuare.
+	
 	
 	
 	
 	
 	\subsubsection{Modul de lucru cu Photon Engine}
+	
+	Photon Engine este un framework dezvolat de Exit Games. Acest framework are pachete care pot fi achizitionate. O parte dintre acestea sunt gratis, iar altele sunt platite, dar ofera functionalitati extra fata de cele gratis. Pentru acest proiect am folosit pachetul PUN 2 care este gratis. Acest pachet ofera un serviciu de gazduire a server-ului care suporta pana la un maxim de 20 de utilizatori conectati la aplicatie in acelasi timp.
+	\newline
+	
+	Pe langa acest serviciu, pachetul ofera cateva clase si functionalitati utile in unity care ajuta la procesul de conectare la server, comunicare intre dispozitive si sincronizare de date. In continuare vom discuta despre fiecare din aceste categorii in parte.
+	\newline
+	
+	
+	
+	
+	
+	\textbf{Conectarea la server}
+	\newline
+	
+	Pentru a putea crea un server de gazduire pentru aplicatia noastra, trebuie sa intram pe site-ul oficial de la Photon Cloud si sa cream o aplicatie de tipul Photon PUN. In urma crearii acestei aplicatii in cloud, ne genereaza un id unic pentru aplicatie, care este recomandat sa fie pastrat confidential. Pasul urmator este sa importam pachetul PUN 2 - FREE intr-un proiect de unity. In urma importarii fisierelor, apare o casuta de dialog in care trebuie sa introducem id-ul generat anterior pentru aplicatia noastra din cloud.
+	\newline
+	
+	Setarile serverului pot fi accesate din Unity din locatia Window->Photon Unity Network->Highlight Server Settings. Aici putem vedea o serie de optiuni:
+	
+	\begin{itemize}
+		\item ID-ul aplicatiei care a fost setat anterior si care poate fi modificat de aici.
+		\item Versiunea aplicatiei. Aplicatii cu versiuni diferite nu se vor putea conecta.
+		\item Tipul de protocol care va fi folosit in transmiterea datelor.
+		\item O multitudine de optiuni folositoare pentru a depana aplicatia.
+	\end{itemize}
+
+	In urma setarii acestor optiuni, pentru a ne conecta la server in joc, tot ce trebuie sa facem este sa apelam metoda PhotonNetwork.ConnectUsingSettings(). Clasa PhotonNetwork este o clasa cu foarte multe metode si proprietati statice care sunt utile in a verifica starea in care se afla conexiunea cu serverul, dar si starea curent a utilizatorului (daca se afla intr-o camera de asteptare, camera de joc sau este conectat direct la server, etc.).
+	\newline
+	
+
+	
+	
+	\textbf{Comunicarea intre dispozitive}
+	\newline
+	
+	Comunicarea intre dispozitive poate fi realizata cu usurinta datorita unei clase speciale, numita Photon View. Aceasta clasa este reponsabila de a identifica instantele obiectelor intre clientii aplicatiei (acelasi obiect intre clienti are acelasi id care este folosit pentru a transmite si sincroniza datele). Photon defineste si o serie de clase generale pentru a sincroniza proprietati specifice Unity, dar acestea vor fi discutate amanuntit in capitolul \ref{section: dataSync}.
+	\newline
+	
+	Clasa Photon View stie sa identifice automat care scripturi/proprietati trebuie sincronizate in retea, de pe obiectul pe care a fost adaugat scriptul, dar si in copii acestuia. In cazul in care vrem sa marcam un script scris de noi ca vrem sa fie sincronizat in retea, clasa respectiva trebuie sa implementeze interfata IPunObservable. Aceasta interfata pune la dispozitie metoda OnPhotonSerializeView() care se ocupa de sincronizarea intre clienti.
+	\newline
+	
+	Metoda OnPhotonSerializeView() primeste un parametru de tipul PhotonStream care are 2 proprietati utile: IsWriting si IsReading. Scriptul Photon View identifica si cine este detinatorul obiectului, iar in cazul in care utilizatorul curent este detinatorul, IsWriting va fi adevarat, iar IsReading va fi fals. In cazul in care nu detinem obiectul respectiv, IsWriting va fi fals, iar IsReading va fi adevarat.
+	\newline
+	
+	Astfel putem separa cu usurinta logica care trebuie sa fie executata de detinatorul obiectului de logica executata de ceilalti utilizatori. Pe ramura IsWriting putem sa transmitem mesajele dorite de indata ce acestea se intampla, lucru realizat prin metoda stream.SendNext(objectToSend). Pe ramura IsReading, putem primi datele folosind metoda stream.ReceiveNext(), urmand sa procesam si sa actualizam starile obiectului in functie de mesajul pornit de la detinator. Singurul aspect la care trebuie sa avem grija este ca trebuie sa primim exact atatea mesaje cate au fost transmise de la detinator. In caz ca avem mai putine, citirea va produce o eroare, iar in caz ca avem mai multe, mesajele se vor pierde si starile de joc nu vor mai fi sincronizate.
+	\newline
+	
+	
+	Pe langa aceasta functionalitate, Photon pune la dispozitie si doua clase care extind MonoBehaviour, si anume MonoBehaviourPun si MonoBehaviourPunCallbacks. MonoBehaviourPun pune la dispozitie proprietatea photonView pentru a usura accesul acesteia, iar MonoBehaviourPunCallbacks este putin mai complexa:
+	
+	\begin{itemize}
+		\item OnConnected() este apelat cand conexiunea a fost stabilita pentru prima data, inainte de a fi pregatit de a realiza comunicari cu serverul.
+		\item OnConnectedToMaster() este apelat cand clientul se conecteaza la serverul principal si este pregatit sa intre intr-o camera de asteptare sau direct intr-o camera de joc.
+		\item OnLeftRoom() este apelata cand jucatorul curent paraseste camera de joc. Este utila in a transmite un ultim mesaj celorlalti jucatori sau de a reseta anumite configuratii ale camerei inainte de a parasi jocul.
+		\item OnJoinRoomFailed() este apelata cand jucatorul nu a putut intra intr-o camera de joc din diverse motive.
+		\item OnJoinedLobby() este apelata cand jucatorul s-a conectat cu succes la o camera de asteptare. Logica din camera de asteptare este diferita in functie de aplicatie, dar in general, este un loc unde se aduna jucatorii inainte sa inceapa jocul propriuzis. Cand toti jucatorii sunt gata, jucatorul care a creat camera incarca camera de joc pentru toti jucatorii din camera de asteptare.
+		\item OnCreatedRoom() este apelata cand jucatorul a reusit sa creeze o camera de joc cu succes.
+		\item OnDisconnected() este apelata cand jucatorul a fost deconectat de la server. Acest lucru se intampla cand are conexiunea foarte proasta, a oprit fortat sau a pus pe pauza executia aplicatiei (acest lucru se intampla si cand se incearca depanarea aplicatiei cu puncte de intrerupere definite in Visual Studio), si o serie de alte situatii posibile.
+		\item OnPlayerEnteredRoom() este apelata cand un jucator a reusit sa se conecteze cu succes la camera de joc. Aceasta metoda este utila pentru a crea si initializa reprezentarea grafica a jucatorilor pe masura ce acestia intra in camera de joc.
+		\item OnPlayerLeftRoom() este apelata cand un jucator a parasit camera de joc. Aceasta metoda este utila pentrua sterge interfata grafica a jucatorului si obiectele detinute de acesta in momentul in care paraseste jocul. Poate fi folosita si prentru a reactualiza starile jocului in urma parasirii unui jucator (un joc care avea neaparata nevoie de un alt jucator poate sa instantieze un bot controlat de calculator care sa ajute jucatorul inca aflat in joc).
+	\end{itemize}
+
+	Photon pune la dispozitie multe alte functionalitati utile, dar acestea prezentate sunt cele mai des folosite in aplicatia mea.
 	
 	
 	
@@ -1152,6 +1322,7 @@
 	
 	
 	\subsubsection{Sincronizarea datelor}
+	\label{section: dataSync}
 	
 	
 	
@@ -1203,6 +1374,9 @@
 		\bibitem{grafuriAnul2}
 		Eleonor Ciurea, Laura Ciupala.  \newline
 		\textit{Algoritmi: Introducere in algoritmica fluxurilor in retele}. 2006
+		
+		%Unity API
+		%Photon Engine API
 		
 	\end{thebibliography}
 	
