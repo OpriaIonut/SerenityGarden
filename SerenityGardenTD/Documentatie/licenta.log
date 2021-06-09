@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.1)  9 JUN 2021 18:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.1)  9 JUN 2021 22:22
 entering extended mode
 **./licenta.tex
 (licenta.tex
@@ -811,51 +811,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--210
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 250--252
+Underfull \hbox (badness 10000) in paragraph at lines 251--253
 
  []
 
 
 LaTeX Warning: Reference `fig: machineGun' on page 7 undefined on input line 26
-3.
+4.
 
 
 LaTeX Warning: Reference `fig: electricFence' on page 7 undefined on input line
- 264.
+ 265.
 
 [7]
 
-LaTeX Warning: Reference `fig: vulkan' on page 8 undefined on input line 265.
+LaTeX Warning: Reference `fig: vulkan' on page 8 undefined on input line 266.
 
 
 LaTeX Warning: Reference `fig: machineCannon' on page 8 undefined on input line
- 266.
+ 267.
 
 
-LaTeX Warning: Reference `fig: railgun' on page 8 undefined on input line 267.
+LaTeX Warning: Reference `fig: railgun' on page 8 undefined on input line 268.
 
 
-LaTeX Warning: Reference `fig: excavator' on page 8 undefined on input line 268
+LaTeX Warning: Reference `fig: excavator' on page 8 undefined on input line 269
 .
-
-
-LaTeX Warning: Reference `fig: gridSystem' on page 8 undefined on input line 32
-8.
 
 
 LaTeX Warning: Reference `fig: gridSystem' on page 8 undefined on input line 32
@@ -873,633 +869,625 @@ LaTeX Warning: Reference `fig: gridSystem' on page 8 undefined on input line 33
 LaTeX Warning: Reference `fig: gridSystem' on page 8 undefined on input line 33
 2.
 
+
+LaTeX Warning: Reference `fig: gridSystem' on page 8 undefined on input line 33
+3.
+
 [8]
-Overfull \hbox (2.4024pt too wide) in paragraph at lines 351--352
+Overfull \hbox (2.4024pt too wide) in paragraph at lines 352--353
 []\OT1/cmr/m/n/12 Turnurile pot fi plasate doar pe hexagoanele de con-struc-tie
 . Odata plasate,
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 384--386
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 422--424
+Underfull \hbox (badness 10000) in paragraph at lines 423--425
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 425--427
+Underfull \hbox (badness 10000) in paragraph at lines 426--428
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 459--461
+Underfull \hbox (badness 10000) in paragraph at lines 460--462
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--501
+Underfull \hbox (badness 10000) in paragraph at lines 500--502
 
  []
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 502--504
+Underfull \hbox (badness 10000) in paragraph at lines 503--505
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--507
+Underfull \hbox (badness 10000) in paragraph at lines 506--508
 
  []
 
 
-Overfull \hbox (2.20241pt too wide) in paragraph at lines 508--510
+Overfull \hbox (2.20241pt too wide) in paragraph at lines 509--511
 \OT1/cmr/m/n/12 parte din log-ica jocurilor. Apelarea update-ului in-cepe dupa 
 ce toate metodele
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--510
+Underfull \hbox (badness 10000) in paragraph at lines 509--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--513
+Underfull \hbox (badness 10000) in paragraph at lines 512--514
 
  []
 
 [13]
-Underfull \hbox (badness 10000) in paragraph at lines 532--534
+Underfull \hbox (badness 10000) in paragraph at lines 533--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 535--537
+Underfull \hbox (badness 10000) in paragraph at lines 536--538
 
  []
 
 
-Overfull \hbox (1.20436pt too wide) in paragraph at lines 546--548
+Overfull \hbox (1.20436pt too wide) in paragraph at lines 547--549
 []\OT1/cmr/m/n/12 O alta prob-lema des in-tamp-inata in proiectele mari este pr
 oce-sarea comen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 546--548
+Underfull \hbox (badness 10000) in paragraph at lines 547--549
 
  []
 
 
-Overfull \hbox (0.48761pt too wide) in paragraph at lines 549--551
+Overfull \hbox (0.48761pt too wide) in paragraph at lines 550--552
 \OT1/cmr/m/n/12 aceste eveni-mente, iar cand uti-liza-torul apasa tasta re-spec
 -tiva, toate metodele
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 549--551
+Underfull \hbox (badness 10000) in paragraph at lines 550--552
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 572--574
+Underfull \hbox (badness 10000) in paragraph at lines 573--575
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 581--583
+Underfull \hbox (badness 10000) in paragraph at lines 582--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 597--599
+Underfull \hbox (badness 10000) in paragraph at lines 598--600
 
  []
 
 [16]
-Underfull \hbox (badness 10000) in paragraph at lines 600--602
+Underfull \hbox (badness 10000) in paragraph at lines 601--603
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 603--605
+Underfull \hbox (badness 10000) in paragraph at lines 604--606
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 606--608
+Underfull \hbox (badness 10000) in paragraph at lines 607--609
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--617
+Underfull \hbox (badness 10000) in paragraph at lines 616--618
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--620
+Underfull \hbox (badness 10000) in paragraph at lines 619--621
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 621--623
+Underfull \hbox (badness 10000) in paragraph at lines 622--624
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 624--626
+Underfull \hbox (badness 10000) in paragraph at lines 625--627
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+Underfull \hbox (badness 10000) in paragraph at lines 628--630
 
  []
 
 
-Overfull \hbox (0.49875pt too wide) in paragraph at lines 630--632
+Overfull \hbox (0.49875pt too wide) in paragraph at lines 631--633
 []\OT1/cmr/m/n/12 LoadPresetGrid() preia con-tin-u-tul fisieru-lui con-fig-ura-
 bil, ape-leaza metoda
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--632
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 639--641
+Underfull \hbox (badness 10000) in paragraph at lines 640--642
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 642--644
+Underfull \hbox (badness 10000) in paragraph at lines 643--645
 
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 645--647
+Underfull \hbox (badness 10000) in paragraph at lines 646--648
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--650
+Underfull \hbox (badness 10000) in paragraph at lines 649--651
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--659
+Underfull \hbox (badness 10000) in paragraph at lines 658--660
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 660--662
+Underfull \hbox (badness 10000) in paragraph at lines 661--663
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--665
+Underfull \hbox (badness 10000) in paragraph at lines 664--666
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--668
+Underfull \hbox (badness 10000) in paragraph at lines 667--669
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 675--677
+Underfull \hbox (badness 10000) in paragraph at lines 676--678
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 678--680
+Underfull \hbox (badness 10000) in paragraph at lines 679--681
 
  []
 
 
-Overfull \hbox (4.74883pt too wide) in paragraph at lines 691--692
+Overfull \hbox (4.74883pt too wide) in paragraph at lines 692--693
 []\OT1/cmr/m/n/12 Algoritmul Floyd-Warshall de-ter-mina ma-tricea dis-tan-telor
  $\OML/cmm/m/it/12 D \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 )\O
 ML/cmm/m/it/12 ; i; j \OMS/cmsy/m/n/12 2
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 738--740
+Underfull \hbox (badness 10000) in paragraph at lines 739--741
 
  []
 
 [21] [22]
 
 LaTeX Warning: Reference `fig: enemyHierarchy' on page 23 undefined on input li
-ne 811.
+ne 812.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--813
+Underfull \hbox (badness 10000) in paragraph at lines 812--814
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 814.
+LaTeX Warning: Command \textless invalid in math mode on input line 815.
 
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 8
-14.
+15.
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 814.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 815.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 814.
+LaTeX Warning: Command \textless invalid in math mode on input line 815.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 814.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 815.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 814.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 815.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 814--816
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 817--819
+Underfull \hbox (badness 10000) in paragraph at lines 815--817
 
  []
 
 
-Overfull \hbox (7.63338pt too wide) in paragraph at lines 820--822
+Underfull \hbox (badness 10000) in paragraph at lines 818--820
+
+ []
+
+
+Overfull \hbox (7.63338pt too wide) in paragraph at lines 821--823
 []\OT1/cmr/m/n/12 Functiile im-ple-men-tate de aceasta clasa sunt in mare parte
  func-ti-ile mosten-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 820--822
+Underfull \hbox (badness 10000) in paragraph at lines 821--823
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--825
+Underfull \hbox (badness 10000) in paragraph at lines 824--826
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 826--828
+Underfull \hbox (badness 10000) in paragraph at lines 827--829
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 829--831
+Underfull \hbox (badness 10000) in paragraph at lines 830--832
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 846.
+LaTeX Warning: Command \textless invalid in math mode on input line 847.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 846.
+LaTeX Warning: Command \textless invalid in math mode on input line 847.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 846.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 847.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 846.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 847.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 846--848
+Underfull \hbox (badness 10000) in paragraph at lines 847--849
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 849--851
+Underfull \hbox (badness 10000) in paragraph at lines 850--852
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 857--859
+Underfull \hbox (badness 10000) in paragraph at lines 858--860
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 865--867
+Underfull \hbox (badness 10000) in paragraph at lines 866--868
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 868--870
+Underfull \hbox (badness 10000) in paragraph at lines 869--871
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 871--873
+Underfull \hbox (badness 10000) in paragraph at lines 872--874
 
  []
 
 [25] [26]
-Underfull \hbox (badness 10000) in paragraph at lines 897--899
+Underfull \hbox (badness 10000) in paragraph at lines 898--900
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 900.
+LaTeX Warning: Command \textless invalid in math mode on input line 901.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 900.
+LaTeX Warning: Command \textless invalid in math mode on input line 901.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 900.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 901.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 900.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 901.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 900--902
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 903--905
+Underfull \hbox (badness 10000) in paragraph at lines 901--903
 
  []
 
 
-Overfull \hbox (20.97214pt too wide) in paragraph at lines 906--908
+Underfull \hbox (badness 10000) in paragraph at lines 904--906
+
+ []
+
+
+Overfull \hbox (20.97214pt too wide) in paragraph at lines 907--909
 []\OT1/cmr/m/n/12 Majoritatea func-ti-ilor sunt sim-i-lare cu cele ale tur-nuri
 lor (At-tack, DrawRange,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--908
+Underfull \hbox (badness 10000) in paragraph at lines 907--909
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 917--919
+Underfull \hbox (badness 10000) in paragraph at lines 918--920
 
  []
 
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 920--922
+Underfull \hbox (badness 10000) in paragraph at lines 921--923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 923--925
+Underfull \hbox (badness 10000) in paragraph at lines 924--926
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 926.
+LaTeX Warning: Command \textless invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 926.
+LaTeX Warning: Command \textless invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 926.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 926.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 926.
+LaTeX Warning: Command \textless invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 926.
+LaTeX Warning: Command \textless invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 926.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 926.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 926.
+LaTeX Warning: Command \textless invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 926.
+LaTeX Warning: Command \textless invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 926.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 927.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 926.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 927.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 926--928
+Underfull \hbox (badness 10000) in paragraph at lines 927--929
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 929--931
+Underfull \hbox (badness 10000) in paragraph at lines 930--932
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 932--934
+Underfull \hbox (badness 10000) in paragraph at lines 933--935
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 935.
+LaTeX Warning: Command \textless invalid in math mode on input line 936.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 935.
+LaTeX Warning: Command \textless invalid in math mode on input line 936.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 935.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 936.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 935.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 936.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 935--937
+Underfull \hbox (badness 10000) in paragraph at lines 936--938
 
  []
 
 
-Overfull \hbox (12.99306pt too wide) in paragraph at lines 938--940
+Overfull \hbox (12.99306pt too wide) in paragraph at lines 939--941
 []\OT1/cmr/m/n/12 In caz ca nu ex-tista o in-stanta a cla-sei in scena, GamePau
 se-M-an-ager.instance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 938--940
+Underfull \hbox (badness 10000) in paragraph at lines 939--941
 
  []
 
 [29] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 977--979
+Underfull \hbox (badness 10000) in paragraph at lines 978--980
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 997--999
+Underfull \hbox (badness 10000) in paragraph at lines 998--1000
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1002
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1003--1005
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1006
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1008
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1009
 
  []
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 1009--1011
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1012
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1012--1014
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1015
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1028--1030
+Underfull \hbox (badness 10000) in paragraph at lines 1029--1031
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1031--1033
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1034
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1044
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1045
 
  []
 
 [34]
-Underfull \hbox (badness 10000) in paragraph at lines 1047--1049
+Underfull \hbox (badness 10000) in paragraph at lines 1048--1050
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1050--1052
+Underfull \hbox (badness 10000) in paragraph at lines 1051--1053
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1055
+Underfull \hbox (badness 10000) in paragraph at lines 1054--1056
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
+Underfull \hbox (badness 10000) in paragraph at lines 1066--1068
 
  []
 
 [35]
-Underfull \hbox (badness 10000) in paragraph at lines 1068--1070
+Underfull \hbox (badness 10000) in paragraph at lines 1069--1071
 
  []
 
 
-Overfull \hbox (7.3945pt too wide) in paragraph at lines 1075--1076
+Overfull \hbox (7.3945pt too wide) in paragraph at lines 1076--1077
 []\OT1/cmr/m/n/12 PermanentUpgrades este o vari-abila de tipul Tur-ret-Per-ma-n
 en-tUp-grades[]
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1079--1081
+Underfull \hbox (badness 10000) in paragraph at lines 1080--1082
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1094--1096
 
  []
 
 [37] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1149
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1150--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1151--1153
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 1161--1163
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1172--1174
+Underfull \hbox (badness 10000) in paragraph at lines 1173--1175
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1175--1177
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1186--1188
+Underfull \hbox (badness 10000) in paragraph at lines 1187--1189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1189--1191
+Underfull \hbox (badness 10000) in paragraph at lines 1190--1192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1192--1194
+Underfull \hbox (badness 10000) in paragraph at lines 1193--1195
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1195--1197
+Underfull \hbox (badness 10000) in paragraph at lines 1196--1198
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1198--1200
+Underfull \hbox (badness 10000) in paragraph at lines 1199--1201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1203
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1204
 
  []
 
 [42]
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1224.
+LaTeX Warning: Command \textless invalid in math mode on input line 1225.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1224.
+LaTeX Warning: Command \textless invalid in math mode on input line 1225.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1224.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1225.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1224.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1224.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1224.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1224.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1224.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1225.
 
 
 LaTeX Warning: Command \textless invalid in math mode on input line 1225.
@@ -1514,98 +1502,210 @@ LaTeX Warning: Command \textgreater invalid in math mode on input line 1225.
 LaTeX Warning: Command \textgreater invalid in math mode on input line 1225.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1228--1230
+LaTeX Warning: Command \textless invalid in math mode on input line 1226.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1226.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1226.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1226.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1229--1231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1231--1233
+Underfull \hbox (badness 10000) in paragraph at lines 1232--1234
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1240--1242
+Underfull \hbox (badness 10000) in paragraph at lines 1241--1243
 
  []
 
 [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1251--1253
+Underfull \hbox (badness 10000) in paragraph at lines 1252--1254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1254--1256
+Underfull \hbox (badness 10000) in paragraph at lines 1255--1257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1261--1263
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1264
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1264--1266
+Underfull \hbox (badness 10000) in paragraph at lines 1265--1267
 
  []
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1268.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1268.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1268.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1268.
 
 [44]
-Overfull \hbox (18.46104pt too wide) in paragraph at lines 1276--1278
+Overfull \hbox (9.32225pt too wide) in paragraph at lines 1277--1279
 \OT1/cmr/m/n/12 tre-buie sa facem este sa apelam metoda Pho-ton-Net-work.Connec
-tUsingSettings().
+tUsingSettings.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1276--1278
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1282--1284
+Underfull \hbox (badness 10000) in paragraph at lines 1277--1279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1285--1287
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1288--1290
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1288
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1291--1293
+Underfull \hbox (badness 10000) in paragraph at lines 1289--1291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1294--1296
+Underfull \hbox (badness 10000) in paragraph at lines 1292--1294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1295--1297
 
  []
 
 [45]
-Overfull \hbox (2.68623pt too wide) in paragraph at lines 1298--1299
+Overfull \hbox (2.68623pt too wide) in paragraph at lines 1299--1300
 \OT1/cmr/m/n/12 care ex-tind MonoBe-haviour, si anume MonoBe-haviour-Pun si Mon
 oBe-haviour-
  []
 
 
-Overfull \hbox (14.97496pt too wide) in paragraph at lines 1302--1303
+Overfull \hbox (14.97496pt too wide) in paragraph at lines 1303--1304
 []\OT1/cmr/m/n/12 OnConnectedToMaster() este apelat cand clien-tul se conecteaz
 a la serverul
  []
 
-[46] [47] [48] (licenta.aux)
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 1321--1323
+
+ []
+
+
+Overfull \hbox (0.30937pt too wide) in paragraph at lines 1327--1328
+\OT1/cmr/m/n/12 room-Name, roomOp-tions ). Op-tiu-nile spec-ifi-cate in al doil
+ea parametru
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 1332--1334
+
+ []
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1335.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1335.
+
+
+Overfull \hbox (18.26106pt too wide) in paragraph at lines 1335--1336
+[]\OT1/cmr/m/n/12 Incarcarea nivelu-lui se re-al-izeaza folosind metoda Pho-ton
+-Net-work.LoadLevel(
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1344--1346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1347--1349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1352
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 1353--1355
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1356--1358
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1359--1361
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1365--1367
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1368--1370
+
+ []
+
+[49] [50]
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1393
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1394--1396
+
+ []
+
+[51] [52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1459
+
+ []
+
+[54] [55] (licenta.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 18259 strings out of 479334
- 344322 string characters out of 2857085
- 620331 words of memory out of 3000000
- 35355 multiletter control sequences out of 15000+200000
+ 18261 strings out of 479334
+ 344356 string characters out of 2857085
+ 621354 words of memory out of 3000000
+ 35357 multiletter control sequences out of 15000+200000
  415044 words of font info for 71 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,7n,88p,1407b,638s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1624,9 +1724,9 @@ opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
 cm/cmsy10.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmti12.pfb>
-Output written on licenta.pdf (48 pages, 271709 bytes).
+Output written on licenta.pdf (55 pages, 289557 bytes).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
+ 239 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

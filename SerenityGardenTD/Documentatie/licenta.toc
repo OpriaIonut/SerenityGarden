@@ -65,10 +65,12 @@
 \contentsline {subsection}{\numberline {4.5}Sistemul co-op}{44}{}%
 \contentsline {subsubsection}{\numberline {4.5.1}Modul de lucru cu Photon Engine}{44}{}%
 \contentsline {subsubsection}{\numberline {4.5.2}Inregistrare si camera de asteptare}{47}{}%
-\contentsline {subsubsection}{\numberline {4.5.3}Sincronizarea datelor}{47}{}%
-\contentsline {subsubsection}{\numberline {4.5.4}Monstrul de foc}{47}{}%
-\contentsline {subsection}{\numberline {4.6}Metode de imbunatatire a proiectului}{47}{}%
-\contentsline {subsubsection}{\numberline {4.6.1}Arta imbunatatita}{47}{}%
-\contentsline {subsubsection}{\numberline {4.6.2}O poveste pentru joc}{47}{}%
-\contentsline {subsubsection}{\numberline {4.6.3}Monstrii multipli pentru modul co-op}{47}{}%
-\contentsline {section}{\numberline {5}Concluzii}{47}{}%
+\contentsline {subsubsection}{\numberline {4.5.3}Sincronizarea datelor}{48}{}%
+\contentsline {subsubsection}{\numberline {4.5.4}Monstrul de foc}{50}{}%
+\contentsline {subsection}{\numberline {4.6}Metode de imbunatatire a proiectului}{52}{}%
+\contentsline {subsubsection}{\numberline {4.6.1}Arta imbunatatita}{52}{}%
+\contentsline {subsubsection}{\numberline {4.6.2}O poveste pentru joc}{53}{}%
+\contentsline {subsubsection}{\numberline {4.6.3}Sunetele pentru joc}{53}{}%
+\contentsline {subsubsection}{\numberline {4.6.4}Monstrii multipli pentru modul co-op}{53}{}%
+\contentsline {subsubsection}{\numberline {4.6.5}Balansarea dificultatii}{54}{}%
+\contentsline {section}{\numberline {5}Concluzii}{54}{}%

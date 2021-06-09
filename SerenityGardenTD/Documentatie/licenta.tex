@@ -215,6 +215,7 @@
 	
 	
 	\subsection{Tematica Jocului}
+	\label{section: gamePlot}
 	
 	Jocul are loc in viitorul departat. Planeta ta este supra-populata, iar nivelul de poluare a ajuns la un nivel critic. Umanitatea a trecut de mult de punctul in care mai pot salva aceasta planeta. Intreaga planeta va deceda in cateva decenii, iar oamenii daca nu isi gasesc o alta locuinta intre timp, vor muri si ei impreuna cu ea. In acest scop, o armata speciala a fost formata, care are ca scop explorarea altor planete si gasirea uneia care poate suporta rasa umana.
 	\newline
@@ -1264,7 +1265,7 @@
 	Pentru a putea crea un server de gazduire pentru aplicatia noastra, trebuie sa intram pe site-ul oficial de la Photon Cloud si sa cream o aplicatie de tipul Photon PUN. In urma crearii acestei aplicatii in cloud, ne genereaza un id unic pentru aplicatie, care este recomandat sa fie pastrat confidential. Pasul urmator este sa importam pachetul PUN 2 - FREE intr-un proiect de unity. In urma importarii fisierelor, apare o casuta de dialog in care trebuie sa introducem id-ul generat anterior pentru aplicatia noastra din cloud.
 	\newline
 	
-	Setarile serverului pot fi accesate din Unity din locatia Window->Photon Unity Network->Highlight Server Settings. Aici putem vedea o serie de optiuni:
+	Setarile serverului pot fi accesate din Unity din locatia Window-$\textgreater$Photon Unity Network-$\textgreater$Highlight Server Settings. Aici putem vedea o serie de optiuni:
 	
 	\begin{itemize}
 		\item ID-ul aplicatiei care a fost setat anterior si care poate fi modificat de aici.
@@ -1273,7 +1274,7 @@
 		\item O multitudine de optiuni folositoare pentru a depana aplicatia.
 	\end{itemize}
 
-	In urma setarii acestor optiuni, pentru a ne conecta la server in joc, tot ce trebuie sa facem este sa apelam metoda PhotonNetwork.ConnectUsingSettings(). Clasa PhotonNetwork este o clasa cu foarte multe metode si proprietati statice care sunt utile in a verifica starea in care se afla conexiunea cu serverul, dar si starea curent a utilizatorului (daca se afla intr-o camera de asteptare, camera de joc sau este conectat direct la server, etc.).
+	In urma setarii acestor optiuni, pentru a ne conecta la server in joc, tot ce trebuie sa facem este sa apelam metoda PhotonNetwork.ConnectUsingSettings. Clasa PhotonNetwork este o clasa cu foarte multe metode si proprietati statice care sunt utile in a verifica starea in care se afla conexiunea cu serverul, dar si starea curent a utilizatorului (daca se afla intr-o camera de asteptare, camera de joc sau este conectat direct la server, etc.).
 	\newline
 	
 
@@ -1317,6 +1318,22 @@
 	
 	\subsubsection{Inregistrare si camera de asteptare}
 	
+	Pentru a incepe experienta co-op, trebuie mai intai sa ne inregistram. Procesul de inregistrare este simplu, trebuie doar sa ne introducem numele de joc pe care il dorim. Initial este generat automat un nume pe care putem sa il pastram sau sa il modificam in functie de preferinta. In momentul apasarii butonului de login, salvam in memorie numele ales de jucator. Nu este necesara salvarea numelui intr-o baza de date sau in cloud deoarece datele cu progresul jucatorului sunt deja salvate pe disk. Acest nume este util doar sa faca diferenta intre jucatori cat timp joaca un nivel anume.
+	\newline
+	
+	Dupa inregistrare apar 3 optiuni:
+	
+	\begin{itemize}
+		\item Create Room. Aceasta optiune ne duce la o noua pagina unde putem specifica numele camerei pe care o dorim. Crearea camerei de asteptare se realizeaza cu ajutorul apelarii metodei PhotonNetwork.CreateRoom( roomName, roomOptions ). Optiunile specificate in al doilea parametru sunt prestabilite si nu pot fi modificate de jucator. Cea mai importanta astfel de optiune este limitarea numarului maxim de jucatori. Deoarece este o experienta co-op, maxim doi jucatori pot fi conectati la aceeasi camera si pot juca un nivel impreuna. In functie de aplicatie acest numar poate fi modificat.
+		\item Join Random Room. Aceasta optiune apeleaza metoda PhotonNetwork.JoinRandomRoom(), care in spate functioneaza in modul urmator: cauta sa vada daca exista camere deja create si daca exista vreo camera care sa aiba un loc liber. In caz ca exista o astfel de camera, se conecteaza la aceasta, iar in caz contrar, creeaza o camera noua cu aceleasi setari specificate mai sus. Aceasta metoda este utila cand nu dorim sa pierdem timpul creand camere sau cautand o camera specifica.
+		\item Show Room List. Aceasta metoda afiseaza toate camerele de asteptare care exista pe server, numele si numarul de locuri ocupate si disponibile la acestea. Cautarea camerelor de pe server se face cu ajutorul unei functii definite in MonoBehaviourPunCallbacks, si anume OnRoomListUpdate(), care ne da ca parametru o lista cu toate camerele existente pe server.
+	\end{itemize}
+
+	Dupa ce jucatorul a intrat in camera, de jos poate sa selecteze dificultatea nivelului, iar in dreapta numelui lui are un buton "Ready?". In momentul in care un alt jucator se conecteaza la aceeasi camera, va aparea in aceasta lista, iar in clipa cand amandoi jucatorii au apasat butonul "Ready?", in dreapta jos apare un buton care porneste jocul, buton care este vizibil doar pentru jucatorul care a creat camera.
+	\newline
+	
+	Incarcarea nivelului se realizeaza folosind metoda PhotonNetwork.LoadLevel( levelName ), care incarca numele specificat ca parametru pentru toti jucatorii din camera de asteptare (in cazul de fata cei doi jucatori). Pentru a putea fi incarcat nivelul, acesta trebuie sa fie adaugat in setarile de distribuire a aplicatiei File-$\textgreater$Build settings.
+	
 	
 	
 	
@@ -1324,11 +1341,60 @@
 	\subsubsection{Sincronizarea datelor}
 	\label{section: dataSync}
 	
+	Pentru a sincroniza corect datele de joc a trebuit sa adaug o clasa numita NetworkPlayer si sa modific o mare parte a scripturilor pentru a isi sincroniza reciproc datele.
+	\newline
+	
+	Network player este o clasa care este generata la conectarea fiecarui jucator in scena. Aceasta contine o metoda SendNetworkEvent( eventname, eventParam ) care va trimite un eveniment catre celalalt jucator, iar jucatorul care receptioneaza mesajul va actualiza anumite sisteme la receptionarea acestui eveniment. Aceasta functionalitate este necesara pentru obiectele scenice.
+	\newline
+	
+	Descrierea de acum doua capitole legata de sincronizarea datelor folosind Photon View functioneaza doar pentru obiectele care sunt generate pe parcursul rularii aplicatiei. Obiectele care nu sunt generate ci sunt asezate in scena inainte de inceperea aplicatiei se numesc obiecte scenice. Acestea nu isi pot sincroniza datele atat de usor deoarece nu exista un detinator ale acestor obiecte, motiv pentru care valorile metodelor din PhotonStream.IsWriting si PhotonStream.IsReading raman intotdeauna false. O alternativa pentru a sincroniza aceste obiecte este sa se foloseasca RPC-uri, dar acestea ar fi complicat destul de mult situatia.
+	\newline
+	
+	Din acest motiv, am ales sa creez clasa Network Player, care poate primi evenimente de la orice obiect scenic, evenimente pe care le trimite in retea, iar in momentul receptionarii acestor mesaje, actualizeaza obiectele scenice din scena clientului conform evenimentelor primite. Metodele principale care au fost transmise pana in clipa actuala sunt urmatoarele: evenimentul de castigare a jocului, evenimentul de punere pe pauza a jocului si cel de a determina comandantul sa paraseasca turnul pe care il controleaza.
+	\newline
+	
+	Pe langa aceasta clasa, majoritatea claselor deja existente au trebuit sa fie extinse pentru a suporta sincronizarea datelor. Majoritatea claselor au trebuit sa implementeze IPunObservable si sa defineasca in metoda OnPhotonSerializeView() modul exact de sincronizare a datelor.
+	\newline
+	
+	O parte dintre clase au trebuit sa mosteneasca clasa IPunInstantiateMagicCallback, care adauga functionalitatea de a trimite date de initializare in momentul generarii obiectelor. Un exemplu de o astfel de folosinta este pentru turnurile de joc. In clipa in care construim un turn, trebuie sa ii transmitem turnului blocul hexagonal pe care a fost construit. La detinatorul camerei de joc nu avem probleme cu acest proces, dar pe client, tunrul va fi creat in urma apelarii PhotonNetwork.Instantiate(), care genereaza doar o copie a obiectului pe server. Aceasta copie, cum nu este creata de aceeasi logica de construire cu care a fost construit pe partea detinatorului, nu va avea acces la blocul hexagonal pe care a fost construit. Din acest motiv, IPunInstantiateMagicCallbacks ne pune la dispozitie optiunea de a tranmite anumite date de initializare copiei care va fi creata pe partea clientului. Pe partea clientului va fi apelata metoda OnPhotonInstantiate() care primeste datele transmise si care poate initializa corespunzator obiectul.
+	\newline
+	
+	Photon pune la dispozitie si cateva clase care pot sincroniza tipurile de date specifice Unity, cum ar fi Transform si Rigidbody. 
+	\newline
+	
+	In cazul singronizarii proprietatilor Transform, Photon a creat clasa PhotonTransformView, in care putem specifica direct din editor care dintre componente dorim sa le sincronizam (pozitia, rotatia sau scala obiectului). 
+	\newline
+	
+	In cazul sincronizarii proprietatilor Rigidbody, Photon a creat clasa PhotonRigidbodyView, in care putem specifica daca dorim sa sincronizam velocitatea obiectului, velocitatea unghiulara, si daca permitem teleportarea obiectelor in cazul in care conexiunea intre jucatori este proasta.
+	\newline
+	
+	Aceste clase pot fi detectate automat de Photon View, si sunt doar o mica parte din ce pune la dispozitie Photon. Noble Whale Studios a creat un pachet foarte util pentru Photon, care permite sincronizarea cu mult mai buna a obiectelor. Acest pachet permite calcularea pozitiei obiectelor pe parcursul mai multor cagre de joc, astfel scapand de efectul in care obiectele se teleporteaza in cazul conexiunii proaste. Din nefericire, acest pachet nu este gratis si nu am avut ocazia sa il folosesc la acest proiect.
+	
 	
 	
 	
 	
 	\subsubsection{Monstrul de foc}
+	\label{section: boss}
+	
+	La incarcarea scenei de lupta, in mijlocul hartii apare un monstru imens de foc. Scopul nivelului este sa invingem monstrul impreuna cu coechipierul nostru, inainte ca acesta sa ne distruga baza.
+	
+	Acest monstru, o data la un anumit interval de timp alege sa execute o actiune din actiunile lui deja staibile. Actiunile posibile ale acestui monstru sunt urmatoarele:
+	
+	\begin{enumerate}
+		\item Monstrul incepe sa se intinda. Este o actiune care usureaza putin nivelul deoarece nu ataca jucatorul. Acesta doar arata o animatie cum se intinde putin pe harta si ii permite jucatorului sa se refaca dupa atacurile anterioare sau sa atace monstrul cu tot ce are mai puternic.
+		\item Distrugatorul de turnuri. Pentru aceasta actiune, monstrul de foc ridicamana dreapta sus si incepe sa creeze meteoriti de foc. Acest meteoriti cresc in marime pana in punctul in care ajung la o dimensiune cat un turn obisnuit. In acest moment, monstrul de foc alege la intamplare un turn de pe harta, trimite meteoritul catre acest turn, dupa care incepe sa incarce urmatorul meteorit. In caz ca nu gaseste nici un turn pe harta, atunci va ataca direct una din bazele jucatorilor, altfel, atat timp cat exista cel putin un turn pe harta, nu poate sa atace bazele jucatorilor. Numarul de meteoriti folositi difera in functie de dificultatea aleasa: 3 meteoriti in modul usor, 5 meteoriti pe mediu si 7 meteoriti pe cea mai mare dificultate.
+		\item Invartirea mortala. Monstrul de foc isi scoate ghiarele si incepe sa se invarta 360 grade si sa loveasca toate turnurile de pe harta, incluzand bazele jucatorilor. Pentru a diminua daunele primite, jucatorul poate sa construiasca garduri electrice pentru a proteja toate turnurile din spatele acestora. In caz ca monstrul de foc intalneste garduri electrice, va scadea jumate din viata care ar fi fost scazuta in mod normal. Aceasta diminuare se aplica doar turnurilor care se afla fix in spatele gardurilor electrice, cele care se afla in lateralul acestora nu primesc acest beneficiu.
+		\item Meteoritul suprem. Acest atac nu poate fi ales in mod voit de catre monstrul de foc. Este activat automat cand monstrul de foc ajunge la 2/3 si 1/3 din viata lui maxima. Pnetru acest atac, alege la intamplare una din bazele jucatorilor, se invarte catre aceasta si incepe sa incarce un meteorit urias deasupra capului. Pe ecran apare un cronometru, iar jucatorii au timp 30 de secunde ca sa ii provoace suficiente daune monstrului. In caz ca nu reusesc acest lucru, monstrul va lansa meteoritul urias (care este cat un sfert din harta in punctul asta) catre baza jucatorului, lovind toate turnurile de pe partea acestuia. In cazul in care jucatorii reusesc sa il atace suficient de mult in acest timp, monstrul devine ametit timp de 10 secunde, timp in care jucatorii pot sa il atace sau sa isi refaca turnurile dupa bunul plac.
+	\end{enumerate}
+
+	Pe langa aceste atacuri, monstrul are si o abilitate automata: cu cat ii scade mai mult viata, cu atat devine mai puternic. Cand este aproape de punctul de a muri, va fi de 1.5 ori mai puternic decat era la inceputul nivelului.
+	\newline
+	
+	Acest monstru are anumite proprietati definite intr-un fisier configurabil, care a permis crearea cu usurinta a dificultatilor multiple. Acest fisier configurabil reprezinta o clasa de tipul BossScriptableObject, care mosteneste clasa ScriptableObject. Aceasta clasa defineste urmatoarele proprietati: viata maxima, timpul dintre decizii, banii primiti de jucator pentru fiecare punct de viata luat, puterea de atac pentru fiecare dintre cele trei atacuri ( distrugatorul de turnuri, invartirea mortala, meteoritul suprem ), numarul de meteoriti pentru atacul "distrugatorul de turnuri" si procentajul de viata necesar pentru a deveni ametit in momentul cand executa atacul "meteoritul suprem".
+	\newline
+	
+	Datorita acestei structuri, am definit 3 fisiere configurabile, cate unul pentru fiecare dificultate si am adaugat optiunea de a permite jucatorului sa aleaga pe care dintre ele le doreste la inceperea jocului. Dificultatea poate fi modificata doar de jucatorul care detine camera, dar si celalalt jucator poate sa vada care dificultate este aleasa.
 	
 	
 	
@@ -1336,11 +1402,24 @@
 	
 	\subsection{Metode de imbunatatire a proiectului}
 	
+	Jocul a ajuns intr-un punct destul de bun, in care poate sa fie jucat cap coada de jucatori, iar modul co-op este complet functional, dar care este mai mult un exemplu de ce poate devenii. Jocul poate fi imbunatatit intr-o serie de moduri pe care, din nefericire, nu mai am timp sa implementez, dar doresc totusi sa pe enumerez in acest capitol.
+	
 	
 	
 	
 	
 	\subsubsection{Arta imbunatatita}
+	
+	In primul rand, arta este un factor major pentru care oamenii aleg sa joace un joc. Arta actuala a jocului este mai mult conceptuala, nu este finisata deloc. Am incercat sa definesc cateva turnuri finisate in blender, dar pentru a creste calitatea jocului trebuie realizate o serie de lucruri la spectul grafic al jocului:
+	
+	\begin{enumerate}
+		\item Toate turnurile sa fie schimbate cu modele si materiale realiste pe ele. Pe langa asta, ar fi util sa aiba si animatii de construire a turnurilor, distrugere a acestora, si dupa caz, al atacului.
+		\item Hartile de joc trebuie sa fie facute modele 3D adevarate, ci nu doar niste planse care definesc zonele pe unde pot sa circule inamicii. Aceste nivele ar trebuii ideal sa fie environmenturi cu o tona de alte modele de umplutura. Cateva exemple de harti realiste ar fi: o harta pe pe dealuri, inconjurati de copaci, tufe si alte obiecte/creaturi gasite in natura. In centrul hartii ar fi o zona defrosata unde poti construii turnurile. O alta idee ar fi un oras abandonat, cu o tematica a culorilor foarte sumbra. Cladirile dinoras pot sa construiasca un fel de labirint artificial, iar turnurile sa poata fi construite pe cladiri, sau intre aceste cladiri.
+		\item Fiecare nivel sau fiecare mapa sa aiba o tematica a culorilor folosite. La inceput sa fie culori deschise si usoare pentru ochi, iar pe final culorile sa devina foarte intense
+		\item Hexagonale pot fi ascunse, si sa apara doar in momentul in care dorim sa construim un turn. Modul inc are apar ar fi folosind un shader transparent, poate chiar cel construit deja.
+		\item Efectele speciale pot fi imbunatatite, si pot fi adaugate efecte speciale pentru actiunile care nu au fost acoperite inca (imbunatatirea turnurilor, distrugerea acestora)
+		\item Animatii la toate UI-urile si tranzitiile intre scene.
+	\end{enumerate}
 	
 	
 	
@@ -1348,17 +1427,44 @@
 	
 	\subsubsection{O poveste pentru joc}
 	
+	Am definit deja o poveste de baza pentru joc in capitolul \ref{section: gamePlot}, dar aceasta a ramas drept un concept neimplementat. Ar imbunatatii enorm calitatea jocului daca ar avea o poveste care sa descrie evenimentele care au loc. Pe langa asta, ar fi de dorit un sistem de dialog in care comandantul discuta cu solatii lui, cu centrul de operatii de pe planeta mama sau cu inamicii. Pentru toate aceste interactiunni de dialog, ar putea fi desenate imagini cu caracterele jocului sau s-ar putea folosi direct modelele lor 3D, la care ar trebuii realizate animatii faciale, sincronizarea buzelor, si animatii specifice in functie de evenimentele intamplate (cand sunt fericiti, au pierdut o misiune, sunt surprinsi, etc.)
+	
+	
+	
+	
+	\subsubsection{Sunetele pentru joc}
+	
+	Desigur, nu exista joc fara sunete, oricat de retro ar putea sa fie jocul. Jocul ar trebuii sa aiba cateva melodii de fundal care sa acapareze jucatorul. Ideal fiecare harta diferita ar avea o melodie diferita, dar acest lucru ar fi greu de realizat fara o persoana dedicata pe aceasta parte. Sunete de atac si pentru efectele speciale ar fi si ele foarte de dorit, iar la finalul unui nivel ar putea fi adaugate sunete comice in cazul pierderii nivelului.
+	
 	
 	
 	
 	
 	\subsubsection{Monstrii multipli pentru modul co-op}
 	
+	Initial am venit cu mai multe concepte pentru monstrii care pot fi adaugati in modul co-op, dar am avut timp sa implementez doar unul din acestia, motiv pentru care o sa ii insirui pe restul aici:
+	
+	\begin{enumerate}
+		\item Necromancer. Este un monstru mai mic decat monstrul de foc si se poate teleporta la diverse locatii pe harta de joc. Are 3 atacuri: un atac in care alege o directie si lanseaza o bara oblica care loveste tot ce ii sta in cale, un atac in care cheama alti inamici pe harta, inamici care vor ataca toate turnurile pe care le gasesc in cale. Atacul lui special este sa se teleporteze in spatele unei baze si sa provoace foarte multe daune.
+		\item Monstrul corosiv. In fiecare secunda de joc, toate turnurile vor primii daune mici, dar care se aduna cu timpul. De asemenea are 3 atacuri: un atac in care scuipa acid intr-o zona larga peste turnuri si creste viteza cu care le scade viata. Atacul lui special ar fi ca isi poate separa corpul in mai multe bile mai mici, care se misca incet una spre alta. Daca acestea se aduna toate, mostrul revine la normal si isi reface multa viata. Scopul jucatorilor este sa distruga cat mai multe astfel de bile in timpul alocat.
+		\item Armadillo. Asemanator vietatii cu acelasi nume, este un monstru imens care are foarte multa viata. Din cand in cand alege sa se faca in forma de bila si sa se rostogoleasca peste toate turnurile de pe harta. Scopul, la fel ca si la monstrul de foc, este sa ii provoace suficiente daune intr-un timp cat mai scurt pentru a il intrerupe din a ataca. Celelalte atacuri nu au fost definite inca.
+	\end{enumerate}
+	
+	
+	
+	\subsubsection{Balansarea dificultatii}
+	
+	Desigur, pentru un joc reusit, proprietatile trebuie sa fie balansate intr-un mod cat mai ideal. Jocul nu trebuie sa fie nici foate dificil dar nici extrem de usor. Jucatorul ar trebuii sa se simta nevoit sa conceapa strategii de plasare a turnurilor pentru a reusii sa castige nivelele, iar din cand in cand sa fie nevoit sa joace nivelele anterioare si sa obtina 3 stele la fiecare, pentru a isi imbunatatii turnurile.
+	\newline
+	
+	Balansarea dificultatii este o problema serioasa in industria jocurilor, motiv pentru care exista persoane specializate care se ocupa de acest lucru si sunt multi testeri care parcurg jocul si isi dau cu parerea despre modul in care poate fi imbunatatit.
+	
 	
 	
 	
 	
 	\section{Concluzii}
+	
 	
 	
 	\pagebreak
