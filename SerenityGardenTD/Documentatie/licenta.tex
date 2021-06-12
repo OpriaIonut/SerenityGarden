@@ -18,8 +18,9 @@
 \usepackage{wrapfig}
 \usepackage{tikz}
 \usepackage{subfig}
-\usepackage[hyphens]{url}
+%\usepackage[hyphens]{url}
 \usepackage{setspace}
+%\usepackage{hyperref}
 
 
 \usetikzlibrary{positioning}
@@ -78,13 +79,13 @@
 	"Games are great to work on because they are as much about art as they are science." \cite{gameProgrammingComplete}
 	\newline
 	
-	Din aceste motive, am ales drept proiect pentru licență să fac un joc video. Jocul se numește "Serenity Garden" și este un tower defense 3D. Experiență jocului are loc în câteva nivele special definite, în care utilizatorul trebuie să își protejeze baza de operații. Există multe tipuri diferite de inamici care vor să distrugă baza jucătorului, iar acesta, pentru a o proteja, trebuie să construiască un sistem defensiv. Jucătorul poate să construiască turnuri defensive care au diferite efecte asupra inamicilor. Inamicii atacă sistemul defensiv, sau în cazul în care lipsește, atacă direct baza jucătorului. Dacă reușesc să distrugă baza, jucătorului, acesta pierde nivelul curent.
+	Din aceste motive, am ales drept proiect pentru licență să fac un joc video. Jocul se numește "Serenity Garden TD" și este un tower defense 3D. Experiența jocului are loc în câteva nivele special definite, în care utilizatorul trebuie să își protejeze baza de operații. Există multe tipuri diferite de inamici care vor să distrugă baza jucătorului, iar acesta, pentru a o proteja, trebuie să construiască un sistem defensiv. Jucătorul poate să construiască turnuri defensive care au diferite efecte asupra inamicilor. Inamicii atacă sistemul defensiv, sau în cazul în care lipsește, atacă direct baza jucătorului. Dacă reușesc să distrugă baza, jucătorului, acesta pierde nivelul curent.
 	\newline
 	
-	Jucătorul nu poate să construiască turnuri oriunde, ci are locuri predefinite unde poate să le construiască, locuri specificate de hexagoane colorate pe harta de joc. Odată plasat un turn, această nu poate fi mutat, dar jucătorul are și un caracter invulnerabil pe care îl poate mută oriunde dorește pe harta. Acest caracter va atacă inamicii automat când nu se află în mișcare, și poate intră în turnuri pentru a le crește puterea/eficientă.
+	Jucătorul nu poate să construiască turnuri în orice loc de pe hartă, ci are locuri predefinite unde poate să le construiască, locuri specificate de hexagoane colorate. Odată plasat un turn, aceasta nu poate fi mutat, dar jucătorul are și un caracter invulnerabil pe care îl poate muta oriunde dorește pe hartă. Acest caracter va ataca inamicii automat când nu se află în mișcare, și poate intra în turnuri pentru a le crește puterea/eficiența.
 	\newline
 	
-	Modul care va diferenția acest joc de celelalte jocuri pe acest stil este modul de co-op. Doi jucători se vor putea conecta prin rețea și vor juca un nivel dificil care necesită cooperare și o planificare bună între ei.
+	Modul care va diferenția acest joc de celelalte jocuri pe acest stil este modul co-op. Doi jucători se vor putea conecta prin rețea și vor juca un nivel dificil care necesită cooperare și o planificare bună între aceștia.
 	
 	
 	
@@ -92,43 +93,44 @@
 	
 	\subsection{Introducere în dezvoltarea jocurilor video}
 	
-	Dezvoltarea jocurilor video cuprinde o serie mare de domenii, care lucrează împreună pentru a crea un produs cât mai bun. O parte din aceste domenii sunt: programare, artă, sunete, management, etc. Datorită ariei largi de domenii care lucrează împreună pentru a produce un joc reușit, cominicarea și organizarea reprezintă un aspect foarte important pentru jocurile majore. Dacă această comunicare nu este stabilită încă de la începutul proiectului, jocul poate fi prelungit, amânat complet sau nu va ieși pe măsură așteptărilor.
+	Dezvoltarea jocurilor video cuprinde o serie mare de domenii, care lucrează împreună pentru a crea un produs cât mai bun. O parte din aceste domenii sunt: programare, artă, sunete, management, etc. Datorită ariei largi de domenii care lucrează împreună pentru a produce un joc reușit, cominicarea și organizarea reprezintă un aspect foarte important pentru jocurile majore. Dacă această comunicare nu este stabilită încă de la începutul proiectului, jocul poate fi prelungit, anulat complet sau nu va ieși pe măsură așteptărilor.
 	\newline
 	
 	Specific pentru această industrie au fost create și o serie de aplicații/tehnologii ajutătoare pentru a ușura și grăbi procesul de dezvoltare. În continuare vom acoperi doar tehnologiile utile programatorilor care doresc să între în industrie.
 	\newline
 	
-	OpenGL și DirectX sunt librării de randare 3D care ne permit să creăm scene complexe pentru jocurile noastre. O mare parte din industrie are la baza aceste tehnologii sau tehnologii similare cu acestea. OpenGL este o librărie care poate să ruleze pe majoritatea sistemelor de operare și majoritatea dispozitivelor, pe când DirectX a fost dezvoltat numai pentru sistemele de operare Windows. OpenGL este "open-source", motiv pnetru care eșe mai bine documentat și mai ușor de învățat de către programatorii noi.
+	OpenGL și DirectX sunt librării de randare 3D care ne permit să creăm scene complexe pentru jocurile noastre. O mare parte din industrie are la baza aceste tehnologii sau tehnologii similare cu acestea. OpenGL este o librărie care poate să ruleze pe majoritatea sistemelor de operare și majoritatea dispozitivelor, pe când DirectX a fost dezvoltat numai pentru sistemele de operare Windows. OpenGL este "open-source", motiv pentru care este mai bine documentat și mai ușor de învățat de către programatorii noi.
 	\newline
 	
-	Dezvoltarea în aceste librării este destul destul de complexă și opcupa mult timp, motiv pentru care a apărut conceputul de motoare pentru dezvotare (game engines). Acestea sunt aplicații specifice care la baza se folosesc de OpenGL și/sau DirectX, dar asupra cărora definesc multe funcționalități utile care grăbesc procesul de dezvoltare. Cele mai populare motoare de dezvoltare în clipă curentă sunt: Unreal Engine, Unity, Godot, Game Maker Studio.
+	Dezvoltarea în aceste librării este destul de complexă și ocupă mult timp, motiv pentru care a apărut conceputul de motoare pentru dezvotare (game engines). Acestea sunt aplicații specifice care la baza se folosesc de OpenGL și/sau DirectX, dar asupra cărora definesc multe funcționalități utile care grăbesc procesul de dezvoltare. Cele mai populare motoare de dezvoltare în clipa curentă sunt: Unreal Engine, Unity, Godot, Game Maker Studio.
 	\newline
 	
-	Pentru un programator începător, care dorește să între în industrie, este recomandat să învețe un motor de dezvolare, pentru a putea construii o serie de jocuri și să prindă experiență în urmă acestor jocuri. Pe urmă, dacă dorește să se dezvolte și să ajungă la un cu totul alt nivel, este recomandat să învețe OpenGL/DirectX, pentru că acestea îl va învață foarte multe concepte utile și îi va deschide porțile către aplicații/interacțiuni cu mult mai complexe.
+	Pentru un programator începător, care dorește să între în industrie, este recomandat să învețe un motor de dezvolare, pentru a putea construii o serie de jocuri și să prindă experiență în urmă acestora. Pe urmă, dacă dorește să se dezvolte și să ajungă la un cu totul alt nivel, este recomandat să învețe OpenGL/DirectX, pentru că acestea îl vor învața foarte multe concepte utile și îi vor deschide porțile către aplicații/interacțiuni cu mult mai complexe.
 	
 	
 	
 	
 	\subsubsection{Scurtă istorie}
 	
-	Primul joc video dezvoltat pentru un monitor digital a fost "X și Zero", creat în anul 1952. În urmă acestuia au mai apărut câteva tentative de jocuri, dar dezvoltarea comercială a jocurilor video a început în anul 1970 când primele jocuri de tip arcadă au apărut. În anul 1972, Atari a publicat prima versiune a jocului Pong, care a fost un succes imens, care a pus bazele acestei industrii.
+	Primul joc video dezvoltat pentru un monitor digital a fost "0X0", creat în anul 1952. În urmă acestuia au mai apărut câteva tentative de jocuri, dar dezvoltarea comercială a jocurilor video a început în anul 1970 când primele jocuri de tip arcadă au apărut. În anul 1972, Atari a publicat prima versiune a jocului Pong, care a fost un succes imens și care a pus bazele acestei industrii.
 	\newline
 	
-	A două generație de jocuri reprezintă apariția primelor console. După succesul jocurilor de tipul arcadă, au început să apară jocuri care puteau să ruleze pe un micro-procesor, fapt care a dus la apariția unor console care puteau rula jocuri multiple pe același dispozitiv, Limitarea jocurilor de tipul arcadă era că dispozitivul conținea un singur joc prestabilit și nu putea fi modificat cu ușurință. Pentru consolele din această perioada, jocurile erau salvate pe casete speciale, care când erau introduse în consola începeau jocul specific.
+	A doua generație de jocuri reprezintă apariția primelor console. După succesul jocurilor de tipul arcadă, au început să apară jocuri care puteau să ruleze pe un micro-procesor, fapt care a dus la apariția unor console care puteau rula jocuri multiple pe același dispozitiv, Limitarea jocurilor de tipul arcadă era că dispozitivul conținea un singur joc prestabilit și nu putea fi modificat cu ușurință. Pentru consolele din această perioada, jocurile erau salvate pe casete speciale, care când erau introduse în consola începeau jocul specific.
 	\newline
 	
 	În 1978 a apărut prima versiune a jocului Space Invaders, care de asemena a fost un succes masiv. În același an au apărut și calculatoarele pe piață, fapt care a permis programatorilor individuali să își creze propiile lor jocuri. Acest lucru a pornit o perioada în care programatorii dezvoltau jocurile de unii singuri și le publicau pe piață prin intermediul unor editori specifici.
 	\newline
 	
-	Odată cu trecerea timpului și cu îmbunătățirea mediilor de dezvoltare, au început să se fomeze echipe pentru crearea acestor jocuri. Aceste echipe au crescut calitatea jocurilor, deoarece persoane specializate puteau să lucreze la anumite aspecte ale jocurilor, fapt care a îmbunătățit exponențial calitatea acestora. Aceste echipe în cele din urmă a dus la crearea unor companii dedicate dezvoltării jocurilor, fapt care a pus bazele industriei curente.
+	Odată cu trecerea timpului și cu îmbunătățirea mediilor de dezvoltare, au început să se fomeze echipe pentru crearea acestor jocuri. Aceste echipe au crescut calitatea jocurilor, deoarece persoane specializate puteau să lucreze la anumite aspecte ale jocurilor, fapt care a îmbunătățit exponențial calitatea acestora. Aceste echipe în cele din urmă au dus la crearea unor companii dedicate dezvoltării jocurilor, fapt care a pus bazele industriei curente.
+	\newline
 	
-	Câteva alte titluri importante au fost:
+	Câteva titluri importante au fost:
 	
 	\begin{itemize}
-		\item Pacman a fost o mașînă de tipul arcadă, apărut în anul 1980 și a devenit o serie foarte populară, care până și în zilele noastre adaugă conținut nou prin desene animate/jocuri specifice seriei.
-		\item Final Fantasy este jocul care a salvat compania Square Enix, una din cele mai mari companii din zilele noastre. Compania a dezvoltat o serie de jocuri care nu au avut succes și erau pe punctul să dea faliment. În această perioada, dezvoltatorii au decis să încerce o ultima dată să facă un joc de succes, și au numit acest joc Final Fantasy. Jocul a apărut în anul 1987 și a creat conceptul de jocuri RPG (Role-Playing Game).
-		\item Wolfenstein3D a fost primul joc care a atins conceptul de jocuri 3D. Mașinile de dezvoltare din această perioada nu puteau permite obiecte 3D, motiv pentru care, toate jocurile erau 2D, inclusiv Wolfenstein3D. Hărțile acestui joc erau 2D, dar folosindu-se de Raytracing și alte concepte ingenioase, au reușit să păcălească ecranele să deseneze scene 3D.
-		\item Tomb Rider a apărut în anul 2001 și este primul joc care a avut drept caracter principal o față. În acea perioada și în zilele noastre, industria este foarte părtinitoare, în sensul în care majoritatea cred că jocurile video sunt concepute doar pentru băieții. Acest joc este primul care combate aceste ideologii, iar datorită popularității a reușit să aducă pe piață o serie de jocuri foarte populare: Life is Strânge, The Last of Us, Remember Me, etc.
+		\item \textbf{Pacman} a fost o mașină de tipul arcadă, apărut în anul 1980 și a devenit o serie foarte populară, care până și în zilele noastre adaugă conținut nou prin desene animate/jocuri specifice seriei.
+		\item \textbf{Final Fantasy} este jocul care a salvat compania Square Enix, una din cele mai mari companii din zilele noastre. Compania a dezvoltat o serie de jocuri care nu au avut succes și erau pe punctul să dea faliment. În această perioada, dezvoltatorii au decis să încerce o ultima dată să facă un joc de succes, și au numit acest joc Final Fantasy. Jocul a apărut în anul 1987 și a creat conceptul de jocuri RPG (Role-Playing Game).
+		\item \textbf{Wolfenstein3D} a fost primul joc care a atins conceptul de jocuri 3D. Mașinile de dezvoltare din această perioada nu puteau permite obiecte 3D, motiv pentru care, toate jocurile erau 2D, inclusiv Wolfenstein3D. Hărțile acestui joc erau 2D, dar folosindu-se de Raytracing și alte concepte ingenioase, au reușit să păcălească ecranele să deseneze scene 3D.
+		\item \textbf{Tomb Rider} a apărut în anul 2001 și este primul joc care a avut drept caracter principal o față. În acea perioada și în zilele noastre, industria era foarte părtinitoare, în sensul în care majoritatea credeau că jocurile video sunt concepute doar pentru băieți. Acest joc este primul care combate aceste ideologii, iar datorită popularității a reușit să aducă pe piață o serie de jocuri foarte populare: Life is Strânge, The Last of Us, Remember Me, etc.
 	\end{itemize}	
 
 	
@@ -137,14 +139,14 @@
 	
 	\subsubsection{Industria curentă}
 	
-	În zilele noastre, industria jocurilor video a devenit o industrie imensă, care acaparează o mare parte din viețile noastre. În anul 2020, industria valora 152 miliarde de dolari, și era în continuă creștere.
+	În zilele noastre, industria jocurilor video a devenit o industrie imensă, care acaparează o mare parte din viețile noastre. În anul 2020, industria valora 152 miliarde de dolari, și este în continuă creștere.
 	\newline
 	
 	Industria are 2 arii largi în care se încadrează majoritatea dezvoltatorilor:
 	
 	\begin{itemize}
-		\item Aria Indie este o industrie pentru dezvoltatorii mai mici de jocuri. Numărul de dezvoltatori este de obicei mic și numărul de resurse este limitat, motiv pentru care caută soluții ingeniase care produc jocuri de calitate în ciuda forței de muncă reduse. Această arie acaparează cele mai multe jocuri de pe piață, deoarece oricine cu talenetele necesare poate întră în această arie dacă își dorește acest lucru. O serie de companii foarte populare din această arie sunt: Moon Studios, Team Cherry, Blitworks, etc.
-		\item Aria AAA este industria în care se încadrează firmele majore de dezvolatre de jocuri. Acestea au un număr imens de angajați și au la dispoziție foarte multe resurse pentru dezvoltare. De obicei, își organizează angajații în echipe pe diverse proiecte, o parte din proiecte fiind jocurile AAA. Un joc AAA este un joc la care lucrează cel puțîn 100 de persoane, a cărui durata de dezvolatre se întinde pe o peroada de câțiva ani, și care când iese pe piață poate devenii unul din cele mai bune jocuri din acea perioada, datorită devotamentului și resurselor folosite. Exemple de astfel de jocuri sunt: God of War, Red Dead Redemption, Dark Souls, The Last of Us, Persona 5, Final Fantasy, etc. Firmele cele mai majore din această arie sunt: Santa Monica Studios, Square Enix, Bathesda, Blizzard, Riot, ID Software, Platinum Games, Bandai Namco, etc.
+		\item Aria Indie este o industrie pentru dezvoltatorii mai mici de jocuri. Numărul de dezvoltatori este de obicei mic și numărul de resurse este limitat, motiv pentru care caută soluții ingeniase care produc jocuri de calitate în ciuda forței de muncă redusă. Această arie acaparează cele mai multe jocuri de pe piață, deoarece oricine cu talenetele necesare poate întra în această arie dacă își dorește acest lucru. O serie de companii foarte populare din această arie sunt: Moon Studios, Team Cherry, Blitworks, etc.
+		\item Aria AAA este industria în care se încadrează firmele majore de dezvolatre de jocuri. Acestea au un număr imens de angajați și au la dispoziție foarte multe resurse pentru dezvoltare. De obicei, își organizează angajații în echipe pe diverse proiecte, o parte din proiecte fiind jocurile AAA. Un joc AAA este un joc la care lucrează cel puțin 100 de persoane, a cărui durata de dezvolatre se întinde pe o perioadă de câțiva ani, și care în momentul publicării pe piață poate devenii unul din cele mai bune jocuri din acea perioada, datorită devotamentului și resurselor folosite. Exemple de astfel de jocuri sunt: God of War, Red Dead Redemption, Dark Souls, The Last of Us, Persona 5, Final Fantasy, etc. Firmele cele mai majore din această arie sunt: Santa Monica Studios, Square Enix, Bathesda, Blizzard, Riot, ID Software, Platinum Games, Bandai Namco, etc.
 	\end{itemize}
 	
 	Industria curentă încă este în continuă dezvoltare, apar de la an la an tehnologii complet noi precum: realitate virtuală, realitate augumentata, senzori de simțuri pentru realitatea virtuală, inteligență artificială în jocuri, RTX, concepte de optimizari imense pentru jocuri, etc.
@@ -158,8 +160,8 @@
 	
 	\begin{enumerate}
 		\item Scopul meu pentru acest proiect a fost să realizez un joc complet cu foarte multe interacțiuni și scenarii definite. În acest scop, am avut nevoie de o viteză de dezvoltare cât mai mare, ceea ce este valabil în cazul Unity-ului.
-		\item Un alt motiv este datorită experienței mele personale în Unity. Lucrez în acest motor de dezvoltare sub formă de hobby de 6 ani, tinp în care am învățat o mare parte din funcționalitățile pe care le pune acesta la dispoziție.
-		\item Pe lângă asta, am avut nevoie de câteva elemente specifice, care îmbunătățesc calitatea jocului exponențial. Aceste elemente vor fi discutate în capitolul: \ref{section: specificElements}.
+		\item Un alt motiv este datorită experienței mele personale în Unity. Lucrez în acest motor de dezvoltare sub formă de hobby de 6 ani, timp în care am învățat o mare parte din funcționalitățile pe care le pune la dispoziție.
+		\item Pe lângă asta, am avut nevoie de câteva elemente specifice, care îmbunătățesc calitatea jocului exponențial. Aceste elemente vor fi discutate în capitolul \ref{section: specificElements}.
 	\end{enumerate}
 	
 	
@@ -171,7 +173,7 @@
 	Unity este un motor de dezvoltare care a apărut în anul 2005 și care este în continuă dezvoltare până și în zilele noastre. Momentan a ajuns la ediția 2020.3 LTS și a reușit să schimbe complet industria jocurilor datorită modului ușor de lucru. În decursul timpului a adăugat atât de multe funcționalități încât dezvoltarea de jocuri a devenit mai simplă că niciodată (s-a ajuns până în punctul în care pot fi create jocuri simple fără să fie nevoie de programare).
 	\newline
 	
-	Unity conține o multitudine de moduri de lucru, diverse librării grafice, suport pentru o serie largă de dispozitive pe care putem să ne exportăm jocurile și o comunitate foarte ajutătoare. Acesta față de Unreal Engine, este considerat motorul de dezvoltare al insurtiei indie, deoarece grafică rezultată nu este la fel de realistă că în Unreal Engine, dar libertatea de dezvoltare este cu mult mai mare.
+	Unity conține o multitudine de moduri de lucru, diverse librării grafice, suport pentru o serie largă de dispozitive pe care putem să ne exportăm jocurile și o comunitate foarte ajutătoare. Acesta față de Unreal Engine, este considerat motorul de dezvoltare al industriei indie, deoarece grafica rezultată nu este la fel de realistă ca în Unreal Engine, dar libertatea de dezvoltare este cu mult mai mare.
 	\newline
 	
 	Câteva jocuri populare dezvoltate până acum în Unity sunt: Osiris: New Dawn, Hollow Knight, Cuphead, Pokemon GO, Wastelands 3, League of Legends: Wild Rift, Ori and the Will of the Wisps, etc.
@@ -189,18 +191,18 @@
 	\begin{itemize}
 		\item Transform reprezintă clasa spațială a tuturor obiectelor din scenă. Acesta definește poziția, rotația și scala la care se află un obiect în scenă.
 		\item Tag este o propietate pe care o putem defini pentru anumite obiecte. Este utilă pentru a face diferențierea între obiecte în anumite situații. 
-		\item Layer este o proprietate similară cu tag-ul, singură diferența făcând abilitatea de a ignoră anumite interacțiuni între layere. De exemplu putem să ignorăm coliziunile între 2 layere sau să nu afișăm pe ecran deloc obiectele aflate pe un anumit layer
-		\item Name obiectului care este vizibil în scenă. Este important să numim obiectele corespunzător pentru a le găși mai ușor în scenă.
+		\item Layer este o proprietate similară cu tag-ul, singura diferență făcând abilitatea de a ignora anumite interacțiuni între layere. De exemplu putem să ignorăm coliziunile între 2 layere sau să nu afișăm pe ecran deloc obiectele aflate pe un anumit layer
+		\item Numele obiectului care este vizibil în scenă. Este important să numim obiectele corespunzător pentru a le găsi mai ușor în scenă.
 	\end{itemize}
 	
-	Un GameObject nu trebuie neapărat să aibă o reprezentare grafică. Poate să fie doar un obiect gol care deține mai multe scripturi și/sau a cărui informații sunt folosite de alte scripturi. În cazul în care dorim să adăugăm un obiect 3D în scenă, intervine componentă Mesh.
+	Un GameObject nu trebuie neapărat să aibă o reprezentare grafică. Poate să fie doar un obiect gol care deține mai multe scripturi și/sau a cărui informații sunt folosite de alte scripturi. În cazul în care dorim să adăugăm un obiect 3D în scenă, intervine componenta Mesh.
 	\newline
 	
-	Mesh reprezintă un obiect 3D, cu toate informațiile necare pentru randarea acestuia pe ecran: vertexurile, triunghiurile formate de acestea, coordonatele texturilor, etc. Pentru a randa un obiect pe ecran, este nevoie de 2 componente:
+	Mesh reprezintă un obiect 3D, cu toate informațiile necesare pentru randarea acestuia pe ecran: vertexurile, triunghiurile formate de acestea, coordonatele texturilor, etc. Pentru a randa un obiect pe ecran, este nevoie de 2 componente:
 	
 	\begin{enumerate}
 		\item MeshFilter poate să citească datele din Mesh și să le organizeze în așa fel încât să poată fi folosite de MeshRenderer.
-		\item MeshRenderer este componentă care se ocupă propriu-zis de randarea obiectului pe ecran. Acesta definește materialele pe care să le folosească și interacțiunea obiectului cu mediul (dacă primește sau generează umbre, modul de randare, etc.)
+		\item MeshRenderer este componenta care se ocupă propriu-zis de randarea obiectului pe ecran. Acesta definește materialele pe care să le folosească și interacțiunea obiectului cu mediul (dacă primește sau generează umbre, modul de randare, etc.).
 	\end{enumerate}
 	
 	
@@ -209,26 +211,26 @@
 	
 	\subsubsection{Collider}
 	
-	Este componentă care definește modul de interacțiune între obiectele scenei. Există mai multe tipuri de collidere: Box Collider, Sphere Collider, Capsule COllider, Mesh Collider, etc. Aceste collidere pot să fie collidere normale sau declanșatoare. În caz că folosim sistemul de fizică definit de Unity (discutat în capitolul următor) și 2 obiecte cu collidere normale s-au ciocnit unul de celălat, se vor bloca că în lumea reală. În caz că sunt definite drept declanșatoare, acestea vor trece unul prin altul, dar vor apela metodă OnTriggerEnter din scriptruile de pe aceste obiecte.
+	Este componenta care definește modul de interacțiune între obiectele scenei. Există mai multe tipuri de collidere: Box Collider, Sphere Collider, Capsule Collider, Mesh Collider, etc. Aceste collidere pot să fie collidere normale sau declanșatoare. În caz că folosim sistemul de fizică definit de Unity (discutat în capitolul următor) și 2 obiecte cu collidere normale s-au ciocnit unul de celălat, se vor bloca exact ca în lumea reală. În caz că sunt definite drept declanșatoare, acestea vor trece unul prin altul, dar vor apela metoda OnTriggerEnter() din scriptruile de pe aceste obiecte.
 	\newline
 	
-	Colliderele normale sunt folositare pentru a nu permite obiectelor/caracterelor să treacă prin alte obiecte (inclusiv prin podea), iar cele declanșatoare sunt utile pnetru a activă anume evenimente (de exemplu un caracter se așează pe o platforma, moment în care platforma începe să se miște în sus și să acționeze drept un lift).
+	Colliderele normale sunt folositoare pentru a nu permite obiectelor/caracterelor să treacă prin alte obiecte (inclusiv prin podea), iar cele declanșatoare sunt utile pentru a activa anumite evenimente (de exemplu un caracter se așează pe o platforma, moment în care platforma începe să se miște în sus și să acționeze drept un lift).
 	\newline
 	
-	În principiu, este de dorit să existe un singur collider pe obiect. În cazul inc are dorim mai multe collidere, putem crea copii ai obiectului curent și să așezăm colliderele pe acești copii. Colliderele nu funcționează dacă unul din obiectele care fac coliziune nu deține componentă RigidBody.
+	În principiu, este de dorit să existe un singur collider pe obiect. În cazul în care dorim mai multe collidere, putem crea copii ai obiectului curent și să așezăm colliderele pe acești copii. Colliderele nu funcționează dacă niciunul din obiectele care fac coliziune nu deține componenta RigidBody.
 	
 	
 	
 	
 	\subsubsection{Transform și Rigidbody}
 	
-	Precum a fost discutat și la începutul capitolului, componentă Transform reține locația, rotația și scala la care obiectul se află în lume. Această componentă ocnsite și o serie de metode utile pentru a modifică aceste proprietăți (să mutăm obiectul într-o anumită direcție, să îl rotim pe o anumită axa, sau în jurul altui punct din scenă, etc.). Componentă deține 2 tipuri de coordonate spațiale: cele raportate la lume și cele raportate la obiect. Coordonatele spațiale raportate la obiect reprezintă unde se află obiectul respectiv, indiferent dacă este copilul altui obiect sau nu. Coordonatele spațiale raportate la obiect sunt coordonatele pe care le ocupă obiectul în comparație cu părintele acestuia.
+	Precum a fost discutat și la începutul capitolului, componenta Transform reține locația, rotația și scala la care se află obiectul în lume. Această componentă deține și o serie de metode utile pentru a modifica aceste proprietăți (să mutăm obiectul într-o anumită direcție, să îl rotim pe o anumită axă, sau în jurul altui punct din scenă, etc.). Componenta deține 2 tipuri de coordonate spațiale: cele raportate la lume și cele raportate la obiect. Coordonatele spațiale raportate la obiect reprezintă unde se află obiectul respectiv, indiferent dacă este copilul altui obiect sau nu. Coordonatele spațiale raportate la obiect sunt coordonatele pe care le ocupă obiectul în comparație cu părintele acestuia.
 	\newline
 	
 	Pentru a ușura înțelegerea acestui concept o să urmărim un exemplu al modului de lucru. Să zicem că avem un obiect A, care este poziționat la coordonatele (10, 0, 0) în lume. Acest obiect are un obiect copil B care are coordonatele (-5, 2, 0) raportate la părintele lui. Obiectul B are coordonatele (5, 2, 0) când este raportat la lume.
 	\newline
 	
-	Rigidbody este compoenta care definește sistemul de fizică din Unity. Acesta definește concepte precum: velocitate, gravitație, velocitate unghiulară, masă obiectelor, forță de frecare, etc. Aceste proprietăți pot fi modificate cu ușurință sau chiar dezactivate în funcție de necesitate.
+	Rigidbody este compoenta care definește sistemul de fizică din Unity. Acesta definește concepte precum: velocitate, gravitație, velocitate unghiulară, masa obiectelor, forță de frecare, etc. Aceste proprietăți pot fi modificate cu ușurință sau chiar dezactivate în funcție de necesitate.
 	
 	
 	
@@ -236,7 +238,7 @@
 	
 	\subsubsection{Prefab}
 	
-	Prefab ușurează modul de lucru cu obiecte în mai muulte scene sau chiar și într-o singură scenă. Prefab este un fel de șablon pe care îl putem definii pentru obiectele din scenă. După ce am definit acest șablon, este foarte ușor de a crea mai multe obiecte de acest tip în mai multe scene de joc. Avantajul este în situația în care dorim să modificăm toate obiectele de acest tip din scenă nu trebuie să le modificăm individual, ci putem modifică direct șablonul, astfel actualizandu-se toate obiectele de acest tip din toate scenele.
+	Prefab ușurează modul de lucru cu obiecte în mai multe scene sau chiar și într-o singură scenă. Prefab este un fel de șablon pe care îl putem definii pentru obiectele din scenă. După ce am definit acest șablon, este foarte ușor de a crea mai multe obiecte de acest tip în mai multe scene de joc. Avantajul este în situația în care dorim să modificăm toate obiectele de acest tip din scenele jocului, nu trebuie să le modificăm individual, ci putem modifica direct șablonul, astfel actualizându-se toate obiectele de acest tip din toate scenele.
 	
 	
 	
@@ -244,7 +246,7 @@
 	
 	\subsubsection{Raycast}
 	
-	Raycast reprezint aun mod foarte ușor de a detecta anumite lucruri în cod. Un raycast are o origine, o direcție în care se îndreaptă și o distanță maximă. Folosindu-ne de sistemul de fizică din Unity și de Raycast, putem detecta dacă pe o anumită direcție lovim un anumit obiect din scenă. Acesta este util în caz că vrem să creem un sistem în care oprim coliziunile anumitor obiecte înainte că acestea să se întâmple, sau să găsim obiectele dintr-o anumită direcție (ex: când dăm click pe ecran, să găsim obiectul pe care l-am selectat). Pentru a funcționa, este necesar că obiectele din scenă să aibă definite collideri. Rigidbody nu este necesar pentru aceste interacțiuni.
+	Raycast reprezinta un mod foarte ușor de a detecta anumite lucruri în cod. Un raycast conține o origine, o direcție în care se îndreaptă și o distanță maximă. Folosindu-ne de sistemul de fizică din Unity și de Raycast, putem detecta dacă pe o anumită direcție lovim un anumit obiect din scenă. Acesta este util în caz că vrem să creăm un sistem în care oprim coliziunile anumitor obiecte înainte ca acestea să se ciocnească, sau să găsim obiectele dintr-o anumită direcție (ex: când dăm click pe ecran, să găsim obiectul pe care l-am selectat). Pentru a funcționa, este necesar ca obiectele din scenă să aibă definite collideri. Rigidbody nu este necesar pentru aceste interacțiuni.
 	
 	
 	
@@ -257,7 +259,7 @@
 	Pentru a ușura modul de lucru pentru anumite sisteme, a trebuit să creez editoare personalizate pentru o serie de scripturi. Prin intermediul acestor editoare personalizate, poți să organizezi informația afișată în editor într-un mod diferit față de cel de baza care este definit de Unity. Pe lângă acest lucru, poți să și rulezi anumite funcționalități ale scripturilor direct din editor, fapt ce normal ar fi posibil doar la rularea aplicației.
 	\newline
 	
-	Pentru crearea unui astfel de editor personalizat, trebuie creat un nou script care se așează într-un folder numit Editor. În caz contrar, aplicația nu se va putea construii un executabil pentru joc. Acest script trebuie să moștenească clasa Editor și să definească deasupra clasei, tipul de clasa pentru care creăm un edtor personalizat. Pe urmă, în metodă OnInspectorGUI adăugăm funcționalitățile dorite.
+	Pentru crearea unui astfel de editor personalizat, trebuie creat un nou script care se așează într-un folder numit Editor. În caz contrar, aplicația nu va putea construii un executabil pentru joc. Acest script trebuie să moștenească clasa Editor și să definească deasupra clasei, tipul de clasa pentru care creăm un edtor personalizat. Pe urmă, în metodă OnInspectorGUI() adăugăm funcționalitățile dorite.
 	
 	
 	
@@ -265,7 +267,7 @@
 	
 	\subsubsection{Shader Graph}
 	
-	Shader Graph este o componentă din Unity care ne permite să creăm shadere specializate dintr-o interfață grafică. Acesta funcționează pe un sistem de noduri similar cu multe alte aplicații care se ocupă cu definirea materialelor 3D (Blender, Substance Alchemist, etc.). Interfață grafică este ușor de utilizat, grăbește foarte mult timpul de dezvoltare ale acestor shadere specializate, și poate defini proprietăți care să varieze aspectul final al shaderului. În urmă definirii acestor shadere, putem crea cu ușurință materiale care să folosească aceste shadere.
+	Shader Graph este o componentă din Unity care ne permite să creăm shadere specializate dintr-o interfață grafică. Acesta funcționează pe un sistem de noduri similar cu multe alte aplicații care se ocupă cu definirea materialelor 3D (Blender, Substance Alchemist, etc.). Interfața grafică este ușor de utilizat, grăbește foarte mult timpul de dezvoltare ale acestor shadere specializate, și poate defini proprietăți care să varieze aspectul final al shaderului. În urma definirii acestor shadere, putem crea cu ușurință materiale care să folosească aceste shadere.
 	
 	
 	
@@ -273,7 +275,7 @@
 	
 	\subsubsection{VFX Graph}
 	
-	Este o componentă nouă în Unity care care îmbunătățește sistemul de particule. VFX graph poate să genereze foarte multe tipuri de efecte speciale, pune la dispoziție multe proprietăți care pot fi modificate pentru a atinge aspectul dorit, și este foarte bine optimizat, până la punctul în care poate suportă milioane de particule în același timp.
+	Este o componentă nouă în Unity care îmbunătățește sistemul de particule. VFX graph poate să genereze foarte multe tipuri de efecte speciale, pune la dispoziție multe proprietăți care pot fi modificate pentru a atinge aspectul dorit, și este foarte bine optimizat, până la punctul în care poate suporta milioane de particule în același timp.
 	
 	
 	
@@ -281,7 +283,7 @@
 	
 	\subsubsection{Photon Engine}
 	
-	La acest proiect am decis să adaug și o componentă co-op, care va fi discutată indetaliat în capitolele ce urmează. În acest scop, am avut nevoie de un server la care să îmi conectez aplicația. Photon Engine este un sistem dezvoltat de cei de la Exit Games și pune la dispoziție un server gratuit care permite până la 20 de utilizatori conectați în același timp la aplicație.
+	La acest proiect am decis să adaug și o componentă co-op, care va fi discutată indetaliat în capitolele ce urmează. În acest scop, am avut nevoie de un server la care să pot conecta aplicația. Photon Engine este un sistem dezvoltat de cei de la Exit Games și pune la dispoziție un server gratuit care permite până la 20 de utilizatori conectați în același timp la aplicație.
 	\newline
 	
 	Acesta pune la dispoziție diverse funcționalități care ajută stabilirea conexiunii cu serverul și între clienți, comunicarea între clienți și sincronizarea datelor. Mai multe detallii vor fi discutate în capitolul \ref{section: coop}.
@@ -294,16 +296,16 @@
 
 	\subsection{Faza de Proiectare}
 	
-	"Almost anything that you can be good at can become a usefulskill for a game designer." \cite{bookOfLenses}
+	"Almost anything that you can be good at can become a useful skill for a game designer." \cite{bookOfLenses}
 	\newline
 	
-	Din proiecte precedente am realizat că o planificare bună a unui proiect încă de la început poate îmbunătățîi calitatea proiectului explonential, asigura ușurință de adăugare a unor elemente noi (fără să fie necesară rescrierea/reorganizarea proiectului) și reduce frustrarea programatorilor care lucrează la proiect.
+	Din proiecte precedente am realizat că o planificare bună a unui proiect încă de la început poate îmbunătății calitatea proiectului explonential, asigura ușurința de adăugare a unor elemente noi (fără să fie necesară rescrierea/reorganizarea proiectului) și reduce frustrarea programatorilor care lucrează la proiect.
 	\newline
 	
-	Din acest motiv, încă de la începutul proiectului am încercat să îmi planific cât mai indetaliat conținutul acestuia și modul în care îl voi implementa.
+	Din acest motiv, încă de la începutul proiectului am încercat să planific cât mai indetaliat conținutul acestuia și modul de implementare.
 	\newline
 	
-	În prima faza, mi-am scris un document de proiectare care conținea descrierea și elementele jocului, privite din multe perspective.
+	În prima faza, am scris un document de proiectare care conținea descrierea și elementele jocului, privite din multe perspective.
 	\newline
 	
 	Introducerea proiectului a fost realizată la începutul acestui document și nu va fi reluată aici.
@@ -312,19 +314,19 @@
 	
 	
 	
-	\subsection{Tematică Jocului}
+	\subsection{Tematica Jocului}
 	\label{section: gamePlot}
 	
-	Jocul are loc în viitorul depărtat. Planetă ta este supra-populată, iar nivelul de poluare a ajuns la un nivel critic. Umanitatea a trecut de mult de punctul în care mai pot salva această planetă. Întreagă planetă va decedă în câteva decenii, iar oamenii dacă nu își găsesc o altă locuința între timp, vor muri și ei împreună cu ea. În acest scop, o armata specială a fost formată, care are că scop explorarea altor planete și găsirea uneia care poate suportă rasă umană.
+	Jocul are loc în viitorul depărtat. Planeta ta este supra-populată, iar nivelul de poluare a ajuns la un nivel critic. Umanitatea a trecut de mult de punctul în care mai poate salva această planetă. Întreagă planetă va deceda în câteva decenii, iar dacă oamenii nu își găsesc o altă locuința între timp, vor muri și ei împreună cu ea. În acest scop, o armata specială a fost formată, care are că scop explorarea altor planete și găsirea uneia care poate suporta rasă umană.
 	\newline
 	
-	Universul este totuși foarte periculos. Unele planete au viață extraterestră foarte agresivă, iar altele au fost distruse de experimente cibernetice eșuate. Jucătorul este comandantul suprem al acestei armate care are că scop protejarea oamenilor de știință care vor analiză aceste planete.
+	Universul este totuși foarte periculos. Unele planete au viață extraterestră foarte agresivă, iar altele au fost distruse de experimente cibernetice eșuate. Jucătorul este comandantul suprem al acestei armate care are ca scop protejarea oamenilor de știința care vor analiza aceste planete.
 	\newline
 	
-	Prima faza a proiectului va conține o singură planetă care poate fi populată dar care conține mulți inamici periculoși.
+	Prima fază a proiectului va conține o singură planetă care poate fi populată dar care conține mulți inamici periculoși.
 	\newline
 	
-	Planetă mama trimite resurse din când în când, dar numai un număr limitat de resurse pot fi trimise deodată, iar acestea durează mult timp să ajungă, așa că nu putem depinde de ele în timpul unei lupte.
+	Planeta mama trimite resurse din când în când, dar numai un număr limitat de resurse pot fi trimise deodată, iar acestea durează mult timp să ajungă, așa că nu putem depinde de ele în timpul unei lupte.
 	
 	
 	
@@ -332,7 +334,7 @@
 	
 	\subsection{Caracterele Jocului}
 	
-	\textbf{Comandantul} este protagonistul jocului. El este caracterul a cărei perspective o vom traii pe tot parcursul jocului. În trecut a fost cobai pentru un experiment menit să creeze super-soldați, iar în urmă acestui experiment a primit o putere specială. Poate să își ascundă complet prezența față de alți oameni sau alte creaturi. Din acest motiv, el este caracterul invulnerabil pe care îl putem mișcă pe harta în timpul luptei.
+	\textbf{Comandantul} este protagonistul jocului. El este caracterul a cărei perspective o vom trăii pe tot parcursul jocului. În trecut a fost cobai pentru un experiment menit să creeze super-soldați, iar în urmă acestui experiment a primit o putere specială. Poate să își ascundă complet prezența față de alți oameni sau alte creaturi. Din acest motiv, el este caracterul invulnerabil pe care îl putem mișca pe hartă în timpul luptei.
 	
 	
 	
@@ -340,75 +342,101 @@
 	
 	\subsubsection{Inamicii}
 	\begin{itemize}
-		\item \textbf{Inamicul de lupta apropiată} este un tip de inamic care poate atacă turnurile doar când stă fix în față lor. Are viață mai multă decât inamicii de lupta de la distanță.
-		\item \textbf{Inamicul de lupta de la distanță} este un tip de inamic care poate atacă turnurile de la distanță. Are viață puțînă, dar pot atacă repede.
-		\item \textbf{Inamicul zburător} este un inamic care poate fi lovit doar de un număr limitat de turnuri.
-		\item \textbf{Inamicul bombardier} este un tip de inamic care ignoră turnurile întâlnite în cale. Acesta se mișcă pe cel mai scurt drum către baza jucătorului, iar dacă ajunge deasupra acesteia, va lansa bombe care îi vor scădea drastic viață, după care vor pleca de pe mapa. Este un tip de inamic zburător care poate fi lovit doar de un număr limitat de turnuri.
+		\item \textbf{Inamicul de lupta apropiată} (fig: \ref{fig: enemyMelee}) este un tip de inamic care poate ataca turnurile doar când stă fix în față lor. Are viață mai multă decât inamicii de lupta de la distanță.
+		\item \textbf{Inamicul de lupta de la distanță} (fig: \ref{fig: enemyRanged}) este un tip de inamic care poate atacă turnurile de la distanță. Are viață puțină, dar pot ataca repede.
+		\item \textbf{Inamicul zburător} (fig: \ref{fig: enemyFlying}) este un inamic care poate fi lovit doar de un număr limitat de turnuri.
+		\item \textbf{Inamicul bombardier} (fig: \ref{fig: enemyAmbusher}) este un tip de inamic care ignoră turnurile întâlnite în cale. Acesta se mișcă pe cel mai scurt drum către baza jucătorului, iar dacă ajunge deasupra acesteia, va lansa bombe care îi vor scădea drastic viață, după care va pleca de pe hartă. Este un tip de inamic zburător care poate fi lovit doar de un număr limitat de turnuri.
 	\end{itemize}
 	
-	Acești inamici (cu excepția bombardierului) se vor mișcă pe harta calculând cel mai scurt drum către baza jucătorului. Dacă aceștia întâlnesc în cale un turn, se vor opri și vor atacă acel turn. Când turnul este distrus, aceștia își vor relua drumul.
+	Acești inamici (cu excepția bombardierului) se vor mișca pe hartă calculând cel mai scurt drum către baza jucătorului. Dacă aceștia întâlnesc în cale un turn, se vor opri și vor ataca acel turn. Când turnul este distrus, aceștia își vor relua drumul.
 	\newline
 	
 	Pentru fiecare inamic vor fi 3 tipuri de variații, fiecare mai puternic decât cel precedent.
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Melee.png}
+		\caption{Inamicul de lupta apropiată}
+		\label{fig: enemyMelee}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Ranged.png}
+		\caption{Inamicul de lupta de la distanță}
+		\label{fig: enemyRanged}
+	\end{figure}
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Flying.png}
+		\caption{Inamicul zburător}
+		\label{fig: enemyFlying}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Ambusher.png}
+		\caption{Inamicul bombardier}
+		\label{fig: enemyAmbusher}
+	\end{figure}
 	
 	
 	
 	\subsubsection{Turnuri defensive}
 	În continuare voi scrie o descriere scurtă pentru fiecare turn din joc. Toate proprietățile despre care urmează să vorbesc sunt în comparație cu celelalte turnuri defensive.
 	\begin{itemize}
-		\item \textbf{Serenity} este baza jucătorului. Are viață foarte multă dacă este distrusă jucătorul pierde nivelul curent. Această poate atacă inamicii care se apropie de ea. Are rază de atac medie, putere de atac mediu, poate atacă orice tip de inamic, iar rată de reîncărcare între atacuri este mică (durează mult timp între atacuri)
-		\item \textbf{Mitralieră automată} (fig: \ref{fig: machineGun}) Are viață mică, poate atacă orice tip de inamic, are rază medie, putere de atac mică și rată de atac este mare (atacă foarte des)
-		\item \textbf{Gardul electric} (fig: \ref{fig: electricFence}) este turnul de protecție. Are viață foarte mare, poate atacă doar inamicii de lupta apropiată, puterea de atac este medie, iar rată de reîncărcare este mică. Scopul acestui turn este să stea în calea inamicilor pentru a fi atacat de aceștia, permițând celorlalte turnuri să atace inamicii blocați.
-		\item \textbf{Vulkan} (fig: \ref{fig: vulkan}) Este turnul special construit pentru a lupta împotriva inamicilor zburători. Are viață puțînă, rază de atac mare și putere de atac mare dar poate atacă doar inamicii zburători.
-		\item \textbf{Aruncătorul de flăcări} (fig: \ref{fig: machineCannon}). Când inamicii intră în rază acestui turn, el va împrăștia flăcări către inamici. Toți inamicii care intră în aceste flăcări primesc damage în fiecare clipă în care stau în flăcări. Are viață medie, atacă instant și puterea de atac este mică dar distribuită în fiecare clipă în care inamicii stau în flăcările acestui turn.
-		\item \textbf{Laser} (fig: \ref{fig: railgun}). Este un turn similar cu aruncătorul de flăcări în sensul în care atacă în fiecare clipă în care un inamic este în rază acestuia. Atacă cu un laser puternic care scade treptat viață inamicilor. Are viață medie, atacă instant și puterea de atac este mică.
-		\item \textbf{Excavator} (fig: \ref{fig: excavator}) este un tip special de turn deoarece nu poate atacă inamicii. Acesta adună resurse în timpul luptei, resurse care pot fi convertite în bani de joc. Are viață multă, și pentru că nu poate atacă, trebuie să fie aparat de inamici.
+		\item \textbf{Serenity} este baza jucătorului. Are viață foarte multă, iar dacă este distrusă jucătorul pierde nivelul curent. Aceasta poate ataca inamicii care se apropie de ea. Are rază de atac medie, putere de atac mediu, poate ataca orice tip de inamic, iar rata de reîncărcare între atacuri este mică (durează mult timp între atacuri)
+		\item \textbf{Mitralieră automată} (fig: \ref{fig: machineGun}) Are viața mică, poate ataca orice tip de inamic, are raza medie, putere de atac mică și rata de atac este mare (atacă foarte des)
+		\item \textbf{Gardul electric} (fig: \ref{fig: electricFence}) este turnul de protecție. Are viață foarte mare, poate ataca doar inamicii de luptă apropiată, puterea de atac este medie, iar rata de reîncărcare este mică. Scopul acestui turn este să stea în calea inamicilor pentru a fi atacat de aceștia, permițând celorlalte turnuri să atace inamicii blocați.
+		\item \textbf{Vulkan} (fig: \ref{fig: vulkan}) Este turnul special construit pentru a lupta împotriva inamicilor zburători. Are viață puțină, rază de atac mare și putere de atac mare dar poate ataca doar inamicii zburători.
+		\item \textbf{Aruncătorul de flăcări} (fig: \ref{fig: machineCannon}). Când inamicii intră în rază acestui turn, el va împrăștia flăcări către inamici. Toți inamicii care intră în aceste flăcări primesc damage în fiecare clipă în care stau în flăcări. Are viață medie, atacă instant și puterea de atac este mică dar distribuită în fiecare clipă în care inamicii stau în flăcările acestuia.
+		\item \textbf{Laser} (fig: \ref{fig: railgun}). Este un turn similar cu aruncătorul de flăcări în sensul în care atacă în fiecare clipă în care un inamic este în raza acestuia. Atacă cu un laser puternic care scade treptat viața inamicilor. Are viață medie, atacă instant și puterea de atac este mică.
+		\item \textbf{Excavator} (fig: \ref{fig: excavator}) este un tip special de turn deoarece nu poate ataca inamicii. Acesta adună resurse în timpul luptei, resurse care pot fi convertite în bani de joc. Are viață multă, și pentru că nu poate ataca, trebuie să fie aparat de inamici.
 	\end{itemize}
 	
 	
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{machineGun.png}
-	%	\caption{Mitraliera automata}
-	%	\label{fig: machineGun}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{machineGun.png}
+		\caption{Mitraliera automata}
+		\label{fig: machineGun}
+	\end{figure}
 
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{electricFence.png}
-	%	\caption{Gardul electric}
-	%	\label{fig: electricFence}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{electricFence.png}
+		\caption{Gardul electric}
+		\label{fig: electricFence}
+	\end{figure}
 
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{vulkan.png}
-	%	\caption{Vulkan}
-	%	\label{fig: vulkan}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{vulkan.png}
+		\caption{Vulkan}
+		\label{fig: vulkan}
+	\end{figure}
 
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{machineCannon.png}
-	%	\caption{Aruncatorul de flacari}
-	%	\label{fig: machineCannon}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Flamethrower.png}
+		\caption{Aruncatorul de flacari}
+		\label{fig: machineCannon}
+	\end{figure}
 	
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{railgun.png}
-	%	\caption{Laser}
-	%	\label{fig: railgun}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{railgun.png}
+		\caption{Laser}
+		\label{fig: railgun}
+	\end{figure}
 
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{excavator.png}
-	%	\caption{Excavator}
-	%	\label{fig: excavator}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Excavator.png}
+		\caption{Excavator}
+		\label{fig: excavator}
+	\end{figure}
 	
 	
 	
@@ -425,21 +453,21 @@
 	Pe hara jocului vor fi generate automat obiecte hexagonale. Aceste obiecte pot fi de mai multe tipuri:
 	\begin{itemize}
 		\item Hexagoane goale (cele gri din (fig: \ref{fig: gridSystem})).
-		\item Hexagoane pe care putem construii turnuri de atac. (cele albastre din (fig: \ref{fig: gridSystem}))
-		\item Hexagoane pe care putem construii turnul de extragere de resurse. (cele verzi din (fig: \ref{fig: gridSystem}))
-		\item Hexagonul pe care va începe și se va află comandantul. (cel roz din (fig: \ref{fig: gridSystem}))
-		\item Hexagoanele bazei. Baza va ocupă 3 hexagoane de acest tip. (cele galbene din (fig: \ref{fig: gridSystem}))
+		\item Hexagoane pe care putem construii turnuri de atac. (cele albastre din fig: \ref{fig: gridSystem})
+		\item Hexagoane pe care putem construii turnul de extragere de resurse. (cele verzi din fig: \ref{fig: gridSystem})
+		\item Hexagonul pe care va începe și se va afla comandantul. (cel roz din fig: \ref{fig: gridSystem})
+		\item Hexagoanele bazei jucătorului. Baza va ocupa 3 hexagoane de acest tip. (cele galbene din fig: \ref{fig: gridSystem})
 		\item Hexagonul ocupat. Fiecare hexagon care este ocupat de o anumită structura devine un astfel de hexagon. (are culoarea roșie)
 	\end{itemize}
 	
 	Inamicii vor calcula drumul pe care merg în funcție de toate aceste tipuri de hexagoane. Din acest motiv este nevoie și de cel gol.
 	
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{grid.png}
-	%	\caption{Harta de joc}
-	%	\label{fig: gridSystem}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{Map.png}
+		\caption{Harta de joc}
+		\label{fig: gridSystem}
+	\end{figure}
 
 
 	
@@ -447,7 +475,7 @@
 	
 	\subsubsection{Sistemul Turnurilor}
 	
-	Turnurile pot fi plasate doar pe hexagoanele de construcție. Odată plasate, acestea nu pot fi mutate. Singurele metode de a goli acel hexagon sunt să fie distrus de un inamic sau să vindem tureta respectivă. Dacă vindem o tureta, vom primii înapoi o parte din banii investiți, bani cu care putem să îmbunătățim turnurile. Toate turnurile au următoarele proprietăți:
+	Turnurile pot fi plasate doar pe hexagoanele de construcție. Odată plasate, acestea nu pot fi mutate. Singurele metode de a goli acel hexagon sunt să fie distrus de un inamic sau să vindem turnul respectivă. Dacă vindem un turn, vom primii înapoi o parte din banii investiți, bani cu care putem să îmbunătățim celelalte turnuri. Toate turnurile au următoarele proprietăți:
 	\begin{itemize}
 		\item Viteză de atac
 		\item Putere de atac
@@ -456,7 +484,7 @@
 		\item Inamicii pe care pot să îi atace
 	\end{itemize}
 	
-	Dacă viață turetei ajunge la 0, va fi distrusă automat. Atâta timp cât o tureta nu este distrusă, o putem repara, dar reparațiile vor fi executate într-un anumit timp, iar în acest timp, tureta nu va putea să atace dar poate să fie atacată în continuare.
+	Dacă viață turnului ajunge la 0, va fi distrus automat. Atâta timp cât un turn nu este distrus, îl putem repara, dar reparațiile vor fi executate într-un anumit interval de timp, timp în care turnul nu va putea ataca dar va putea în continuare să fie atacat de inamici.
 	
 	
 	
@@ -464,7 +492,7 @@
 	
 	\subsubsection{Comandantul}
 	
-	Comandantul poate fi mutat pe orice hexagon care nu este deja ocupat. După ce ai ales un hexagon, acesta va începe să se miște către acesta. Cât timp este în mișcare, nu poate atacă inamicii. Destinația poate fi schimbată doar după ce a ajuns la destinație. Are rază medie, rată de atac medie, putere de atac mediu și poate atacă orice tip de inamic. Acesta poate întră și în turete, îmbunătățindu-le exponențial.
+	Comandantul poate fi mutat pe orice hexagon care nu este deja ocupat. După ce ai ales un hexagon, acesta va începe să se miște către acea locatie. Cât timp este în mișcare, nu poate să atace inamicii. Destinația poate fi schimbată doar după ce a ajuns la destinația selectată. Are rază medie, rată de atac medie, putere de atac mediu și poate ataca orice tip de inamic. Acesta poate întra în turnuri, îmbunătățindu-le exponențial proprietățile.
 	
 	
 	
@@ -472,7 +500,7 @@
 	
 	\subsubsection{Valul de inamici}
 	
-	Jocul va avea mai multe nivele, care pot fi selectate dintr-un meniu, acestea fiind cât mai diversificate posibil. Inamicii au mai multe puncte din care pot să vină în funcție de nivelul ales. Aceștia vin în grupuri de inamici. Între fiecare grup există o perioada de repaus în care jucătorul își poate repara turnurile. În caz că nu are nevoie de reparații, poate selecta să sară peste perioada de repaus, astfel primind bani extra.
+	Jocul va avea mai multe nivele, care pot fi selectate dintr-un meniu, acestea fiind cât mai diversificate posibil. Inamicii au mai multe puncte din care pot să vină în funcție de nivelul ales. Aceștia vin în grupuri de inamici, între fiecare grup existând o perioada de repaus în care jucătorul își poate repara turnurile. În caz că nu are nevoie de reparații, poate selecta să sară peste perioada de repaus, astfel primind bani extra.
 	
 	
 	
@@ -483,7 +511,7 @@
 	Nivelul este terminat când toți inamicii au fost omorâți. Fiecare nivel va avea un scor de maxim 3 stele, care specifică cât de bine s-a descurcat la acest nivel. Scorul este calculat în funcție de viață rămasă a bazei la finalul nivelului. Fiecare stea câștigată va da bani extra, bani care pot fi folosiți în magazinul de îmbunătățiri permanente, despre care vom discuta în scurt timp.
 	\newline
 	
-	Jucătorul poate să joace din nou nivelele, dar nu va mai primii atât de mulți bani că prima dată. Acesta va câștigă bani extra de pe stelele câștigate doar dacă a primit mai multe stele decât turele anterioare.
+	Jucătorul poate să joace din nou nivelele, dar nu va mai primii atât de mulți bani ca prima dată. Acesta va câștiga bani extra de pe stelele obținute doar dacă a primit mai multe stele decât turele anterioare.
 	
 	
 	
@@ -491,7 +519,7 @@
 	
 	\subsubsection{Lock-on}
 	
-	Jucătorul poate să apese pe inamici, astfel setand acel inamic drept o prioritate. Fiecare turn care poate atacă acest tip de inamic îl va prioritiza față de alți inamici. De îndată ce este omorât, se pierde această prioritate.
+	Jucătorul poate să apese pe inamici, astfel setand acel inamic drept o prioritate. Fiecare turn care poate ataca acest tip de inamic îl va prioritiza față de alți inamici. De îndată ce este omorât, se pierde această prioritate.
 	
 	
 	
@@ -499,15 +527,15 @@
 	
 	\subsubsection{Magazinul de îmbunătățiri permanente}
 	
-	Între nivele putem să cumpărat piese de schimb pentru turnurile noastre pentru a le face mai puternice. Aceste piese se pot cumpără doar cu banii câștigați de pe urmă nivelelor. Îmbunătățirile pt fiecare tureta în parte sunt următoarele:
+	Între nivele putem să cumpărat piese de schimb pentru turnurile noastre pentru a le face mai puternice. Aceste piese se pot cumpăra doar cu banii câștigați de pe urmă nivelelor. Îmbunătățirile pt fiecare tureta în parte sunt următoarele:
 	
 	\begin{itemize}
-		\item Mitralieră automată: atac mai puternic, rază de atac mai mare, costuri mai mici.
-		\item Gardul electric: mai multă viață, atac mai puternic, costuri mai mici.
-		\item Vulkan: atac mai puternic, range mai mare, atac mai rapid
-		\item Aruncătorul de flăcări: atac mai puternic, range mai mare
-		\item Laser: atac mai puternic, range mai mare
-		\item Excavator: da bani mai mulți, timpul între livrările de bani mai scurt
+		\item Mitralieră automată: atac mai puternic, rază de atac mai mare, rată de atac mai mare.
+		\item Gardul electric: mai multă viață, atac mai puternic, rată de atac mai mare.
+		\item Vulkan: atac mai puternic, rază de atac mai mare, atac mai rapid
+		\item Aruncătorul de flăcări: atac mai puternic, rază de atac mai mare, viață mai multă.
+		\item Laser: atac mai puternic, rază de atac mai mare, viață mai multă.
+		\item Excavator: mai mulți bani, timpul între livrările de bani mai scurt, viață mai multă.
 	\end{itemize}
 	
 	Fiecare îmbunătățire va avea mai multe nivele, fiecare costând din ce în ce mai mulți bani, dar vor avea un nivel maxim la care putem duce aceste îmbunătățiri.
@@ -518,13 +546,16 @@
 	
 	\subsubsection{Raid system}
 	
-	Când un jucător alege acest mod, este dus la o pagină de login în care trebuie să își specifice numele sau să îl lase pe cel generat automat. După ce întră în cont, trebuie să între într-un lobby. Că să între într-unlobby poate să creeze el un lobby, să aleagă un lobby dintr-o lista cu toate lobby-urile existente sau să între automat într-un lobby existent. În cazul ultimei opțiuni, în caz că nu există nici un lobby, acesta se creează automat. La această pagină poate să selecteze dificultatea nivelului și dacă coechipierul este pregătit. De îndată ce amândoi jucătorii sunt gata, pot să inceapta nivelul.
+	Când un jucător alege acest mod, este dus la o pagină de login în care trebuie să își specifice numele sau să îl păstreze pe cel generat automat. După ce intră în cont, trebuie să intre într-o cameră de așteptare. Ca să intre într-o cameră de așteptare, poate să creeze el una, să aleagă dintr-o listă cu toate camerele existente sau să între automat într-una existentă, care este aleasă aleator. În cazul ultimei opțiuni, dacă nu există nici o cameră libera, acesta se creează automat. 
 	\newline
 	
-	În centrul mapei se află un monstru imens de foc. Scopul nivelului este să învingi monstrul împreună cu coechipierul tău, înainte că monstrul să distrugă baza vreunuia dintre jucători.
+	În urma intrării în cameră, poate să selecteze dificultatea nivelului, iar de îndată ce toți jucătorii din cameră sunt gata, pot să inceapă nivelul.
 	\newline
 	
-	Fiecare jucător poate plasa turnuri oriunde, putând să îmbunătățească, repare sau vinde doar turnurile construite de ei. Amândoi playerii au caracterele lor comandant, dar aceștia nu pot întră în aceeași tureta în același timp. Pentru sistemul de lock-on, doar turnurile jucătorului care a setat lock-on-ul va atacă inamicul prioritizat.
+	În centrul hărții se află un monstru imens de foc. Scopul nivelului este să învingi monstrul împreună cu coechipierul tău, înainte ca monstrul să distrugă baza vreunuia dintre jucători.
+	\newline
+	
+	Fiecare jucător poate plasa turnuri oriunde, putând să îmbunătățească, repare sau vinde doar turnurile construite de el. Amândoi jucătorii au caracterele lor comandant, dar aceștia nu pot întra în acelasi turn în același timp. Pentru sistemul de lock-on, doar turnurile jucătorului care a setat lock-on-ul va ataca inamicul prioritizat.
 	
 	
 	
@@ -535,30 +566,26 @@
 	Monstrul de foc are o serie de atacuri predefinite care devin mai puternice în dificultățile avansate.
 	
 	\begin{itemize}
-		\item Abilitate automată: crește puterea de atac pe măsură ce pierde din viață
+		\item Abilitatea automată: crește puterea de atac pe măsură ce pierde din viață.
 		\item Ploaia de meteoriți: ridică o mâna sus și generează meteoriți unul după altul. Fiecare meteorit când este construit complet alege un turn și pornește către direcția acestuia. Când se izbește de turn explodează și scade din viață turnului în funcție de dificultatea selectată.
-		\item Gheară invartitoare: se învârte 360 grade și lovește toate turnurile de pe harta cu mâna lui dreapta.
-		\item Meteoritul suprem: când ajunge la un anumit procentaj de viață începe acest atac. Alege una dintre bazele jucătorilor (în caz că sunt mai mulți), se rotește spre ea și începe să încarce un meteorit imens. Încărcarea acestuia durează 30 de secunde. Dacă în acest timp jucătorul reușește să îi scadă suficient de mult viață monstrului, atacul este întrerupt și el devine confuz timp de 10 secunde, timp în care poate fi atacat neîntrerupt. Dacă jucătorii nu reușesc să îi scadă suficient de mult viață, va lovii puternic cu meteoritul baza selectată și turetele de prin jur.
+		\item Gheară invartitoare: se învârte 360 grade și lovește toate turnurile de pe hartă cu mâna lui dreapta.
+		\item Meteoritul suprem: când ajunge la un anumit procentaj de viață începe acest atac. Alege una dintre bazele jucătorilor (în caz că sunt mai mulți), se rotește spre baza selectată și începe să încarce un meteorit imens. Încărcarea acestuia durează 30 de secunde, iar dacă în acest timp jucătorul reușește să îi scadă suficient de mult viața monstrului, atacul este întrerupt și devine confuz timp de 10 secunde, timp în care poate fi atacat neîntrerupt. Dacă jucătorii nu reușesc să îi scadă suficient de mult viață, va lovii puternic cu meteoritul baza selectată și turnurile din jur.
 	\end{itemize}
 	
-	Toate interacțiunile acestui nivel sunt sincronizate în rețea prin utilizarea Photon Engine-ului.
+	Toate interacțiunile acestui nivel sunt sincronizate în rețea prin utilizarea modulului Photon Engine.
 	
 	
 	
 	
 	
-	\subsection{Analiză proiectului din punctul de vedere al consumatorilor}
-	
-	
-	
-	
+	\subsection{Analiza proiectului din punctul de vedere al consumatorilor}
 	
 	\subsubsection{Dificultatea jocului}
 	
-	Jocul va fi relativ dificil. Jucătorul trebuie să se gandesca unde să construiesca anumite turnuri pentru a folosi resursele cât mai bine. La început jocul va fi ușor, dar pe măsură ce progresează, nivelele vor devenii din ce în ce mai dificile. Trebuie să se gandesca și dacă poate rezistă să sară peste perioada de repaus între grupurile de inamici.
+	Jocul va fi relativ dificil. Jucătorul trebuie să se gandesca unde să construiesca anumite turnuri pentru a folosi resursele cât mai bine. La început jocul va fi ușor, dar pe măsură ce progresează, nivelele vor devenii din ce în ce mai dificile. Trebuie să se gandesca și dacă poate rezista să sară peste perioada de repaus între grupurile de inamici.
 	\newline
 	
-	Raid system-ul are un nivel de dificultate cu mult mai ridicat, pentru că trebuie să se gândească cum să se coordoneze cât mai bine cu coechipierul.
+	Sistemul co-op are un nivel de dificultate cu mult mai ridicat, pentru că trebuie să se gândească cum să se coordoneze cât mai bine cu coechipierul.
 	
 	
 	
@@ -566,7 +593,7 @@
 	
 	\subsubsection{Elemente de dependență}
 	
-	În caz că nu putem depasii un anumit nivel, putem juca nivelele anterioare și să ne asigurăm că luăm 3 stele la fiecare nivel. Această metodă de a obține 3 stele la fiecare nivel poate fi unul din motivele care îi determina pe jucători să continue să joace jocul. Un alt factor ar putea fi sistemul de îmbunătățiri permanente.
+	În caz că nu putem depasii un anumit nivel, putem juca nivelele anterioare și să ne asigurăm că obținem 3 stele la fiecare nivel. Această metodă de a obține 3 stele la fiecare nivel poate fi unul din motivele care îi determina pe jucători să continue să joace jocul. Un alt factor ar putea fi sistemul de îmbunătățiri permanente.
 	
 	
 	
@@ -574,16 +601,16 @@
 	
 	\subsubsection{Grupele de vârstă vizate}
 	
-	Acest joc nu are limitări de vârstă, poate fi jucat de oricine, dar va fi apreciat cel mai mult de copii și de adolescenții care caută provocări în jocurile de strategie. Jocul este în principiu făcut pentru "casual gamers".
+	Acest joc nu are limitări de vârstă, poate fi jucat de oricine, dar va fi apreciat cel mai mult de copii și de adolescenții care caută provocări în jocurile de strategie. Jocul este în principiu făcut pentru jucătorii ocazionali de jocuri video.
 	
 	
 	
 	
 	
-	\section{Implementare proiect}
+	\section{Implementarea proiectului}
 	\label{section: projectImplementation}
 	
-	\subsection{Scenă de lupta}
+	\subsection{Scena de luptă}
 	
 	\subsubsection{Inițializarea scripturilor}
 	\label{section: initialization}
@@ -591,28 +618,28 @@
 	În Unity scripturile au câteva metode care ajută la inițializare.
 	\newline
 	
-	\textbf{Awake} este metodă care este apelata la începutul programului și înainte de restul metodelor.
+	\textbf{Awake} este metoda care este apelată la începutul programului și înainte de restul metodelor.
 	\newline
 	
-	\textbf{Start} este metodă care este apelata după ce au fost apelate metodele "Awake" de la toate scripturile.
+	\textbf{Start} este metoda care este apelată după ce au fost apelate metodele "Awake" de la toate scripturile.
 	\newline
 	
 	\textbf{Update} este apelat la fiecare cadru al jocului, aici intervenind o mare parte din logică jocurilor. Apelarea update-ului începe după ce toate metodele "Start" au fost apelate.
 	\newline
 	
-	Pentru "Start" și "Awake", unity decide automat în ce ordine să le apeleze, fără că noi să putem controla acest lucru. În multe proiecte mai complexe se ajunge în momentul în care, pentru initializatea anumitor sisteme este necesar că alte sisteme să fie deja inițializate. Cum nu putem controla ordinea de inițializare, se ajunge în punctul în care putem primi erori aleatorii din cauza inițializării haotice.
+	Pentru "Start" și "Awake", unity decide automat în ce ordine să le apeleze, fără că noi să putem controla acest lucru. În multe proiecte mai complexe se ajunge în momentul în care, pentru initializatea anumitor sisteme este necesar ca alte sisteme să fie deja inițializate. Cum nu putem controla ordinea de inițializare, se ajunge în punctul în care putem primi erori aleatorii din cauza inițializării haotice.
 	\newline
 	
 	Pentru a combate acest lucru, m-am gândit la un sistem care va permite controlarea inițializării tuturor acestor procese cu ușurință.
 	
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{logicProcessCoggle.png}
-	%	\caption{Initializarea scripturilor}
-	%	\label{fig: logicProcessCoggle}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{logicProcessCoggle.png}
+		\caption{Inițializarea scripturilor}
+		\label{fig: logicProcessCoggle}
+	\end{figure}
 	
-	Am creat clasa LogicProcessBase care ajută în acest proces. Fiecare script care necesită o inițializare mai organizată trebuie să o moștenească. Această conține:
+	Am creat clasa LogicProcessBase care ajută în acest proces. Fiecare script care necesită o inițializare mai organizată trebuie să o moștenească. Aceasta conține:
 	\begin{itemize}
 		\item \textbf{isInitialized} care specifică dacă scriptul curent a fost initializat sau nu încă
 		\item \textbf{Init()}. În această metodă trebuie să scriem tot codul de inițializare a clasei care moștenește.
@@ -621,13 +648,13 @@
 		\item \textbf{BaseStartCalls()} și \textbf{BaseUpdateCalls()} sunt metode în care trebuie să scriem tot codul care normal ar fi venit în Start/Update. În unity, nu putem defini Start/Update drept virtual și să modificăm funcțiile lor pe urmă, din acest motiv tot codul din clasele dintr-o ierarhie mai complexă trebuie să fie scris în aceste metode, iar în clasa cel mai jos din ierarhie trebuie să le apelăm în Awake/Start/Update.
 	\end{itemize}
 	
-	\textbf{BattleInitializationManager} este a două clasa de care avem nevoie. Ea este responsabilă pentru a execută initializarea propriuzisa a proceselor. 
+	\textbf{BattleInitializationManager} este a două clasa de care avem nevoie. Ea este responsabilă pentru a executa initializarea propriu-zisă a proceselor. 
 	\newline
 	
-	\textbf{PrepareToInitialize()} este apelata de fiecare proces în metodă lor de awake, iar această metodă va adaugă procesul într-o coadă.
+	\textbf{PrepareToInitialize()} este apelată de fiecare proces în metoda lor de Awake, iar această metodă va adăuga procesul într-o coadă.
 	\newline
 	
-	\textbf{ExecuteInitialization()} parcurge toate procesele din coadă și verifică dacă acestea pot fi initializate, apelând "HasAllDependencies()". Dacă procesul curent poate fi initializat, atunci apelează metodă "Init()" și setează "isInitialized = true". Dacă nu îl poate inițializă, îl adaugă la finalul cozii pentru a fi initializat la final. Acest proces se repetă până când coadă este goală sau s-a parcurs o dată coadă cap-coadă și nu s-a initializat nici un proces. În acest caz înseamnă că aveau dependințe circulare și oprim procesul de inițializare, afișând un mesaj de eroare. Această metodă trebuie apelata în Awake, Start și Update, deoarece, pe parcurs pot apărea noi procese care trebuie initializate, iar programul trebuie să poată să detecteze astfel de cazuri.
+	\textbf{ExecuteInitialization()} parcurge toate procesele din coadă și verifică dacă acestea pot fi initializate, apelând "HasAllDependencies()". Dacă procesul curent poate fi initializat, atunci apelează metodă "Init()" și setează "isInitialized = true". Dacă nu îl poate inițializă, îl adaugă la finalul cozii pentru a fi initializat la final. Acest proces se repetă până când coadă este goală sau s-a parcurs o dată coada cap-coadă și nu s-a initializat nici un proces. În acest caz înseamnă că aveau dependințe circulare și oprim procesul de inițializare, afișând un mesaj de eroare. Această metodă trebuie apelata în Awake, Start și Update, deoarece, pe parcurs pot apărea noi procese care trebuie initializate, iar programul trebuie să poată să detecteze astfel de cazuri.
 	
 	
 	
@@ -635,13 +662,13 @@
 	
 	\subsubsection{Procesarea comenzilor venite de la utilizator}
 	
-	O altă problema des întâmpinată în proiectele mari este procesarea comenzilor venite de la utilizator. În cazul în care procesăm comenzile în mai multe script-uri, când vrem să schimbăm modul în care funcționează comenzile sau să schimbăm platforma pe care rulează jocul, va trebuii să schimbăm toate scripturile în care procesăm comenzile utilizatorului. În proiectele mari, acest lucru duce la mult timp pierdut și din acest motiv m-am gândit la o metodă cum să îmi organizez mai bine acest sistem.
+	O altă problema des întâmpinată în proiectele mari este procesarea comenzilor venite de la utilizator. În cazul în care procesăm comenzile în mai multe script-uri, când dorim să schimbăm modul în care funcționează comenzile sau să schimbăm platforma pe care rulează jocul, va trebuii să schimbăm toate scripturile în care procesăm comenzile utilizatorului. În proiectele mari, acest lucru duce la mult timp pierdut și din acest motiv m-am gândit la o metodă de a organiza mai bine acest sistem.
 	\newline
 	
 	Ideea propusă de mine este să păstrăm toată procesarea de comenzi ale utilizatorului într-un singur script. Acest script are definite evenimente/delegate pentru toate tipurile de input specifice. Alte scripturi se pot abona la aceste evenimente, iar când utilizatorul apasă tasta respectivă, toate metodele abonate la evenimentul respectiv vor fi apelate.
 	\newline
 	
-	Pe lângă asta, este necesar să știm și anumite informații legate de comandă primită la utilizator. Informațiile adiționale de care am avut nevoie sunt:
+	Pe lângă asta, este necesar să știm și anumite informații legate de comanda primită la utilizator. Informațiile adiționale de care am avut nevoie sunt:
 	
 	\begin{itemize}
 		\item Poziția pe ecran la care a fost apăsat mouse-ul/ecranul (în cazul rulării pe android)
@@ -649,11 +676,11 @@
 		\item Dacă în clipă curentă este sau nu apăsat mouse-ul/ecranul
 		\item Timpul la care a fost apăsat mouse-ul/ecranul
 		\item Timpul la care a fost ridicată apăsarea mouse-ului/ecranului
-		\item Obiectul pe care utilizatorul a dat click în scenă. În momentul când apăsăm click, se creează un Raycast care are că origine poziția mouse-ului pe ecran și care se îndreaptă către scenă în perspectiva în care se află camera la clipă curentă. Acest Raycast detectează dacă a fost lovit un obiect, și dacă da, reținem care obiect a fost lovit pt că alte scripturi să se poată folosi de această informație.
-		\item Elementul cel mai de sus din ierarhia obiectului lovit. Datorită faptului că anumite modele au o structura complexă, uneori nu ne este deloc util să știm în mod direct ce obiect a fost lovit. De exemplu în caz că apăsăm peste un turn și Raycast-ul lovește pușcă turnului, nu ne va ajută deloc în cazul în care ne interesează să aflăm ce tip de turn am lovit. Din acest motiv, în clipă în care găsim obiectul pe care am dat click, reținem și părintele cel mai de sus din ierarhie.
+		\item Obiectul pe care utilizatorul a dat click în scenă. În momentul când apăsăm click, se creează un Raycast care are ca origine poziția mouse-ului pe ecran și care se îndreaptă către scenă în perspectiva în care se află camera la clipă curentă. Acest Raycast detectează dacă a fost lovit un obiect, și dacă da, reținem care obiect a fost lovit pt ca alte scripturi să se poată folosi de această informație.
+		\item Elementul cel mai de sus din ierarhia obiectului lovit. Datorită faptului că anumite modele au o structura complexă, uneori nu ne este deloc util să știm în mod direct ce obiect a fost lovit. De exemplu în caz că apăsăm peste un turn și Raycast-ul lovește pușcă turnului, nu ne va ajută deloc în cazul în care ne interesează să aflăm ce tip de turn am lovit. Din acest motiv, în clipa în care găsim obiectul pe care am dat click, reținem și părintele cel mai de sus din ierarhie.
 	\end{itemize}
 	
-	Această organizare a procesării comenzilor ne permite să schimab tastele folosite cu ușurință și să adăugăm suport pentru dispozitive noi foarte ușor. În cazul dispozitivelor noi, putem folosi directive de unity pentru a separă codul specific pentru calculator de cel specific pentru android sau orice alt dispozitiv. Procesarea comenzilor în cele 2 cazuri vor fi diferite, dar datorită faptului că se invocă evenimentele deja devinite, alte script-uri nu trebuie modificate absolut deloc.
+	Această organizare a procesării comenzilor ne permite să schimab tastele folosite cu ușurință și să adăugăm suport pentru dispozitive noi foarte ușor. În cazul dispozitivelor noi, putem folosi directive de unity pentru a separa codul specific pentru calculator de cel specific pentru android sau orice alt dispozitiv. Procesarea comenzilor în cele 2 cazuri vor fi diferite, dar datorită faptului că se invocă evenimentele deja definite, alte script-uri nu trebuie modificate absolut deloc.
 	
 	
 	
@@ -661,7 +688,7 @@
 	
 	\subsubsection{Harta de joc}
 	
-	Acțiunea jocului se petrece pe o harta care este formată din mai multe blocuri hexagonale. Această harta este generată automat în funcție de ce tip de harta alegem pentru nivelul respectiv. Înainte să începem să investigăm indetaliat sistemul hărții de joc, trebuie mai întâi să definim ce reprezintă un bloc hexagonal pe harta.
+	Acțiunea jocului se petrece pe o hartă care este formată din mai multe blocuri hexagonale. Această hartă este generată automat în funcție de ce tip de hartă alegem pentru nivelul respectiv. Înainte să începem să investigăm indetaliat sistemul hărții de joc, trebuie mai întâi să definim ce reprezintă un bloc hexagonal pe hartă.
 	\newline
 	
 	
@@ -670,32 +697,32 @@
 	
 	\textbf{Blocul hexagonal}
 	
-	Pentru a reține informații specifice pentru un bloc, am definit clasa HexagonalBlock. În interiorul clasei m-am folosit de două enum-uri: SpawnPointsID și HexagonType.
+	Pentru a reține informații specifice pentru un bloc, am definit clasa HexagonalBlock. În interiorul clasei am folosit de două enum-uri: \textbf{SpawnPointsID} și \textbf{HexagonType}.
 	\newline
 	
 	HexagonType definește tipul blocului hexagonal și interacțiunile posibile cu acesta. Tipurile definite în acest enum sunt:
 	
 	\begin{itemize}
-		\item Walkable. Blocul primește culoarea gri și toate creaturile pot să se deplaseze pe acesta.
-		\item TurretBuildable. Blocul primește culoarea albastră și reprezintă zonele de pe harta unde putem să construim turnurile noastre.
-		\item ResourceExtraction. Blocul primește culoarea verte și reprezintă zonele de pe harta în care putem construii turnul excavator.
-		\item Occupied. Blocul primește culoarea roșie și reprezintă zonele în care este construită un turn sau locul în care se află comandantul.
-		\item SpawnPoint. Blocul primește culoarea mov și reprezintă locul din care pornesc inamicii.
-		\item Impassable. Blocul primește culoarea roșu închis și reprezintă locurile prin care nu pot să treacă inamicii. Sistemul de navigare va ignoră toate aceste blocuri și va găși rute alternative.
-		\item PlayerBase. Blocul primește culoarea galbenă și reprezintă locul în care va fi creată baza jucătorului. Pentru că un nivel să fie considerat valid, trebuie să existe 3 astfel de blocuri unul lângă altul.
-		\item CommanderSpawn. Blocul primește culoarea mov și reprezintă locul în care va începe comandantul. Pentru că un nivel să fie considerat valid, trebuie să existe exact o instanța a acestui bloc pe harta.
+		\item \textbf{Walkable}. Blocul primește culoarea gri și toate creaturile pot să se deplaseze pe acesta.
+		\item \textbf{TurretBuildable}. Blocul primește culoarea albastră și reprezintă zonele de pe harta unde putem să construim turnurile noastre.
+		\item \textbf{ResourceExtraction}. Blocul primește culoarea verte și reprezintă zonele de pe harta în care putem construii turnul excavator.
+		\item \textbf{Occupied}. Blocul primește culoarea roșie și reprezintă zonele în care este construit un turn sau locul în care se află comandantul.
+		\item \textbf{SpawnPoint}. Blocul primește culoarea mov și reprezintă locul din care pornesc inamicii.
+		\item \textbf{Impassable}. Blocul primește culoarea roșu închis și reprezintă locurile prin care nu pot să treacă inamicii. Sistemul de navigare va ignora toate aceste blocuri și va găsi rute alternative.
+		\item \textbf{PlayerBase}. Blocul primește culoarea galbenă și reprezintă locul în care va fi creată baza jucătorului. Pentru ca un nivel să fie considerat valid, trebuie să existe 3 astfel de blocuri unul lângă altul.
+		\item \textbf{CommanderSpawn}. Blocul primește culoarea mov și reprezintă locul în care va începe comandantul. Pentru ca un nivel să fie considerat valid, trebuie să existe exact o instanța a acestui bloc pe harta.
 	\end{itemize}
 	
-	SpawnPointsID definește o serie id-uri pentru blocurile de tip SpawnPoint. În fișierul de configurare al valului de inamici, discutat în capitolul \ref{section: enemyWave}, putem specifică id-ul blocului de la care vor începe inamicii. În caz că, pentru un val de inamici specificăm că inamicii să începă de la o locație aleatorie, atunci se va alege un bloc aleatoriu dintre toate blocurile de pe harta.
+	SpawnPointsID definește o serie id-uri pentru blocurile de tip SpawnPoint. În fișierul de configurare al valului de inamici, discutat în capitolul \ref{section: enemyWave}, putem specifica id-ul blocului de la care vor începe inamicii. În caz că, pentru un val de inamici specificăm ca inamicii să începă de la o locație aleatoare, atunci se va alege un bloc aleatoriu dintre toate blocurile de pe hartă.
 	\newline
 	
-	Blocul hexagonal definește și o lista de materiale, care sunt folosite pentru a schimbă culoarea blocului în momentul în care tipul acestuia se schimbă.
+	Blocul hexagonal definește și o listă de materiale, care sunt folosite pentru a schimba culoarea blocului în momentul în care tipul acestuia se schimbă.
 	\newline
 	
 	Are definite și 2 metode ajutătoare și anume PlaceHexagon(), care așează blocul pe harta în funcție de poziția și diametrul specificat în parametrii, și UpdateMaterial() care actualizează culoarea blocului, prin schimbarea materialului pe care îl folosește.
 	\newline
 	
-	Pentru a pune în funcțiune schimbarea de culoare a blocului hexagonal direct din editor, a trebuit să creez clasa specială HexagonalBlockEditor. Această clasa moștenește clasa Editor, pentru a putea schimbă interfață grafică a editorului din Unity. Această clasa, în metodă OnInspectorGUI care este apelata de fiecare dată când obiectul este selectat, verifică dacă s-a schimbat tipul blocului, și dacă da, atunci apelează metodă UpdateMaterial() de pe blocul selectat.
+	Pentru a pune în funcțiune schimbarea de culoare a blocului hexagonal direct din editor, a trebuit să creez clasa specială HexagonalBlockEditor. Această clasă moștenește clasa Editor, pentru a putea schimba interfața grafică a editorului din Unity. Această clasa, în metodă OnInspectorGUI care este apelată de fiecare dată când obiectul este selectat, verifică dacă s-a schimbat tipul blocului, și dacă da, atunci apelează metodă UpdateMaterial() de pe blocul selectat.
 	\newline
 	
 	
@@ -704,22 +731,22 @@
 	
 	\textbf{Harta propriu-zisă}
 	
-	Clasa special definită pentru harta de joc este HexagonalGrid. Această clasa are câteva proprietăți publice care definesc dimensiunea hărții: diameter (care definește cât de mare este fiecare hexagon), offset (care este aplicat în așa fel încât hexagoanele vor fi poziționate la distanțe egale între ele) și mapScaleOffset (harta de joc este scalata automat la dimensiunea ecranului; acest offset ne ajută să scalam harta mai mult sau mai puțîn decât ar fi fost scalata automat).
+	Clasa special definită pentru harta de joc este HexagonalGrid. Această clasa are câteva proprietăți publice care definesc dimensiunea hărții: diameter (care definește cât de mare este fiecare hexagon), offset (care este aplicat în așa fel încât hexagoanele vor fi poziționate la distanțe egale între ele) și mapScaleOffset (harta de joc este scalată automat la dimensiunea ecranului; acest offset ne ajută să scalăm harta mai mult sau mai puțin decât ar fi fost scalată automat).
 	\newline
 	
-	Scriptul are definit o lista de tipul HexagonalBlock, care reține toate blocurile hexagonale de pe harta și mai are definit o variabilă publică care reprezintă tipul de harta pe care o folosim. Tipul de harta este reprezentat de un model 3D care va fi folosit pentru a poziționa hexagoanele.
+	Scriptul are definit o listă de tipul HexagonalBlock, care reține toate blocurile hexagonale de pe hartă și mai are definit o variabilă publică care reprezintă tipul de hartă pe care o folosim. Tipul de harta este reprezentat de un model 3D care va fi folosit pentru a poziționa hexagoanele.
 	\newline
 	
-	Clasa moștenește LogicProcessBase, iar în metodă init, găsește fișierul de configurare al nivelului curent, discutat în capitolul \ref{section: stageScriptable}, șterge toate blocurile existente de pe harta, citește fișierul de configurare al hărții (definit în fișierul de configurare al nivelului și explicat în secțiunea următoare). După ce a citit conținutul fișierului, apelează metodă SpawnAndScaleMap() și metodă LoadPresetGrid().
+	Clasa moștenește LogicProcessBase, iar în metoda Init(), găsește fișierul de configurare al nivelului curent, discutat în capitolul \ref{section: stageScriptable}, șterge toate blocurile existente de pe hartă și citește fișierul de configurare al hărții (definit în fișierul de configurare al nivelului și explicat în secțiunea următoare). După ce a citit conținutul fișierului, apelează metoda SpawnAndScaleMap() și metoda LoadPresetGrid().
 	\newline
 	
-	SpawnAndScaleMap() creează o instanța a hărții de joc (modelul 3d care este definit drept variabilă publică), găsește limitele acesteia în coordonate 3D, și în funcție de dimensiunea ecranului, scaleaza harta în așa fel încât să încapă harta în întregime pe ecran. Pe urmă, în funcție de mapScaleOffset, scaleaza din nou harta în funcție de dorința persoanei care a definit nivelul.
+	SpawnAndScaleMap() creează o instanță a hărții de joc (modelul 3d care este definit drept variabilă publică), găsește limitele acesteia în coordonate 3D, și în funcție de dimensiunea ecranului, scalează harta în așa fel încât să încapă harta în întregime pe ecran. Pe urmă, în funcție de mapScaleOffset, scaleaza din nou harta în funcție de dorința persoanei care a definit nivelul.
 	\newline
 	
-	Înainte să vorbim despre funcția LoadPresetGrid() trebuie să discutăm despre CreateGrid(). Această funcție se folosește de modelul 3D al hărții pentru a genera și poziționa toate blocurile hexagonale necesare. Această parcurge întreagă dimensiune a modelului 3D, și folosindu-se de fizică definită de unity (Physics.Raycast), verifică dacă în poziția curentă de pe model a reușit să lovească suprafață. În caz că a reușit să lovească, atunci generează un bloc hexagonal, îl adaugă în lista și caută în continuare până când a reușit să parcurgă întreg modelul 3D. La final o să avem generate pe harta blocuri hexagonale care sunt poziționate în toate zonele de pe modelul 3D al hărții, fiecare bloc fiind de tipul Walkable.
+	Înainte să vorbim despre funcția LoadPresetGrid() trebuie să discutăm despre CreateGrid(). Aceasta funcție se folosește de modelul 3D al hărții pentru a genera și poziționa toate blocurile hexagonale necesare. Această parcurge întreagă dimensiune a modelului 3D, și folosindu-se de fizică definită de Unity (Physics.Raycast), verifică dacă în poziția curentă de pe model a reușit să lovească suprafața. În caz că a reușit să lovească, atunci generează un bloc hexagonal, îl adaugă în listă și caută în continuare până când a reușit să parcurgă întreg modelul 3D. La final o să avem generate pe hartă blocuri hexagonale care sunt poziționate în toate zonele de pe modelul 3D al hărții, fiecare bloc fiind de tipul Walkable.
 	\newline
 	
-	LoadPresetGrid() preia conținutul fișierului configurabil, apelează metodă CreateGrid(), după care începe să itereze peste fiecare element din blocurile generate. La fiecare iterație, inițializeaza blocul curent în funcție de datele din fișierul configurabil al hărții de joc, și în caz că întâlnește blocuri de tipul PlayerBase sau CommanderSpawn, generează și poziționează pe harta comandantul și baza jucătorului. În caz că fișierul este corupt, nu a găsit blocurile pentru comandant și penrtu baza jucătorului sau a găsit prea multe din acestea, afișează mesaje de eroare pentru fiecare caz în parte.
+	LoadPresetGrid() preia conținutul fișierului configurabil, apelează metodă CreateGrid(), după care începe să itereze peste fiecare element din blocurile generate. La fiecare iterație, inițializează blocul curent în funcție de datele din fișierul configurabil al hărții de joc, și în caz că întâlnește blocuri de tipul PlayerBase sau CommanderSpawn, generează și poziționează pe harta comandantul și baza jucătorului. În caz că fișierul este corupt, nu a găsit blocurile pentru comandant și penrtu baza jucătorului sau a găsit prea multe din acestea, afișează mesaje de eroare pentru fiecare caz în parte.
 	\newline
 	
 	
@@ -731,10 +758,10 @@
 	Pentru a putea crea cu ușurință nivele cât mai variate, trebuie să reținem anumite date în fișiere configurabile. Aceste fișiere configurabile trebuie să fie făcute în așa fel încât prin încărcarea unui simplu fișier, putem genera un nivel de joc complet funcțional.
 	\newline
 	
-	În acest scop am definit clasa GridSaveData, care reține proprietaile cele mai importante ale hărții de joc. Această clasa reține diametrul blocurilor, offset-ul și mapScaleOffset, pentru a putea încarcă harta la aceeași scala la care era configurată inițial. Pe lângă asta, reține o lista cu tipurile blocurilor hexagonale de pe harta și id-urile setate pentru blocurile de pe care încep inamicii.
+	În acest scop am definit clasa GridSaveData, care reține proprietățile cele mai importante ale hărții de joc. Această clasa reține diametrul blocurilor, offset-ul și mapScaleOffset, pentru a putea încarcă harta la aceeași scala la care era configurată inițial. Pe lângă asta, reține o lista cu tipurile blocurilor hexagonale de pe hartă și id-urile setate pentru blocurile de pe care încep inamicii.
 	\newline
 	
-	Această clasa este definită urmând o structura json, pentru a ușura serializarea și deserializarea datelor în momentul scrierii și citirii pe disk.
+	Această clasa este definită urmând o structura JSON, pentru a ușura serializarea și deserializarea datelor în momentul scrierii și citirii pe disk.
 	\newline
 	
 	Pe lângă această clasa, am avut nevoie și de o clasa ajutătoare care să se ocupe de salvarea și încărcarea propriu-zisă a datelor. Clasa se numește GridDataSaver și este definită cu 2 metode statice simple: SaveData() și LoadData().
@@ -752,10 +779,10 @@
 	Pe lângă aceste câmpuri, am definit și câteva butoane care au că rol să apeleze funcționalități din scriptul HexagonalGrid. Fără aceste butoane, nivele ar fi putut fi create numai în timpul rulării aplicației, fapt ce nu era de dorit, deoarece este cu mult mai ușor să creăm hărți de joc direct din editor. Butoanele definite sunt: Scale Map, Reset Scale, Generate Grid, Clear Grid, Load Preset, Save Preset. Fiecare buton apelează funcționalitatea cu același nume din HexagonalGrid, exceptant Load Preset și Save Preset, care încarcă și salvează configurarea actuală a hărții în locația specificată prin câmpul public, folosindu-se de GridDataSaver.
 	\newline
 	
-	Datorită acestui editor special, procesul de creare a hărților jocului a devenit foarte rapid. Pentru a crea o harta nouă, trebuie să încărcăm un model 3D simplist definit într-un program de modelare 3D, tragem acel model 3D în câmpul public de pe editor. Modificăm câmpurile de scalare a mapei și apăsăm pe butonul de Generate Grid repepat până când suntem mulțumiți de configurarea actuală. După acest lucru, selectăm blocurile hexagonale la care dorim să le schimbăm tipul. Datorită editorului HexagonalBlockEditor, culoarea acestora se schimbă automat, fapt care ne ușurează muncă enorm. După ce am definit toate tipurile blocurilor, specificăm locația la care dorim să salvăm fișierul de configurare al hărții și apăsăm pe butonul Save Preset.
+	Datorită acestui editor special, procesul de creare a hărților jocului a devenit foarte rapid. Pentru a crea o hartă nouă, trebuie să încărcăm un model 3D simplist definit într-un program de modelare 3D și să tragem acel model 3D în câmpul public de pe editor. Modificăm câmpurile de scalare a hărții și apăsăm pe butonul de Generate Grid repetat până când suntem mulțumiți de configurarea actuală. După acest lucru, selectăm blocurile hexagonale la care dorim să le schimbăm tipul. Datorită editorului HexagonalBlockEditor, culoarea acestora se schimbă automat, fapt care ne ușurează muncă enorm. După ce am definit toate tipurile blocurilor, specificăm locația la care dorim să salvăm fișierul de configurare al hărții și apăsăm pe butonul Save Preset.
 	\newline
 	
-	În caz că dorim să modificăm configurarea unei hărți, specificăm locația fișierului de configurare a hărții respective. Setam câmpul modelului 3D cu modelul 3D pe care a fost generată inițial harta și apăsăm pe butonul Load Preset. După ce harta s-a încărcat cu succes, putem modifică blocurile hexagonale în modul dorit, iar când am terminat apăsăm din nou pe butonul Save Preset prentru a suprascrie configurarea hărții.
+	În caz că dorim să modificăm configurarea unei hărți, specificăm locația fișierului de configurare a hărții respective. Setam câmpul modelului 3D cu modelul 3D pe care a fost generată inițial harta și apăsăm pe butonul Load Preset. După ce harta s-a încărcat cu succes, putem modifică blocurile hexagonale în modul dorit, iar când am terminat, apăsăm din nou pe butonul Save Preset pentru a suprascrie configurarea hărții.
 	\newline
 	
 	
@@ -764,7 +791,14 @@
 	
 	\subsubsection{Sistemul de navigare}
 
-	Caracterele jocului trebuie să știe pe unde pot să meargă că să ajungă la o anumită destinație. În acest scop a trebuit să aleg un algoritm care să găsească cel mai scurt drum posibil. Am avut de ales între mai mulți algoritmi specifici, precum: Dijkstra, A*, Floyd-Warshall, etc.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{navigationCoggle.png}
+		\caption{Sistemul de navigare}
+		\label{fig: navigationManager}
+	\end{figure}
+
+	Caracterele jocului trebuie să știe pe unde pot să se deplaseze ca să ajungă la o anumită destinație. În acest scop a trebuit să aleg un algoritm care să găsească cel mai scurt drum posibil. Am avut de ales între mai mulți algoritmi specifici, precum: Dijkstra, A*, Floyd-Warshall, etc.
 	\newline
 	
  	În cele din urmă am ales să folosesc Floyd-Wharshall. Acest algoritm are complexitatea $O(n^3)$ și presupune construirea celor mai scurte drumuri posibile pornind de la oricare nod către oricare alt nod din rețea. Deoarece construirea drumului se realizează doar la începutul jocului și reconstruirea acestui drum se realizează aproape instantaneu, am ales să folosesc acest algoritm.
@@ -832,17 +866,17 @@
 	
 	\textbf{IMovable}
 	
-	Deoarece inamicii și comandantul se pot mișcă pe mapa, am definit această interfață pentru a defini aceleași concepte pentru toate caracterele care au nevoie de a se mișcă pe mapa. Interfață se folosește de sistemul de navigare definit anterior și conține următoarele:
+	Deoarece inamicii și comandantul se pot mișca pe hartă, am creat această interfață pentru a defini aceleași concepte pentru toate caracterele care au nevoie să se miște pe hartă. Interfața se folosește de sistemul de navigare definit anterior și conține următoarele:
 	
 	\begin{itemize}
-		\item Nodul curent la care se află
-		\item Nodul destinație
-		\item Nodul următor la care trebuie să se mute că să se apropie de destinație
-		\item Viteză de deplasare
-		\item Distanță față de următorul nod pt care considerăm că am ajuns la acesta. Deoarece lucrăm cu obiecte în spațiu 3D, este nevoide de o asemenea valoare.
-		\item Un boolean care definește dacă am ajuns sau nu la destinație
-		\item O metodă care setează nodul următor la care trebuie să ajungem că să ne apropiem de destinație. Acesta face apel la matricea construită de sistemul de navigare.
-		\item O metodă care mișcă propriuzis obiectul către următorul nod
+		\item Nodul curent la care se află.
+		\item Nodul destinație.
+		\item Nodul următor la care trebuie să se mute ca să se apropie de destinație.
+		\item Vitezăa de deplasare.
+		\item Distanță față de următorul nod pentru care considerăm că am ajuns la acesta. Deoarece lucrăm cu obiecte în spațiu 3D, este nevoide de o asemenea valoare.
+		\item Un boolean care definește dacă am ajuns sau nu la destinație.
+		\item O metodă care setează nodul următor la care trebuie să ajungem ca să ne apropiem de destinație. Acesta face apel la matricea construită de sistemul de navigare.
+		\item O metodă care mișcă propriu-zis obiectul către următorul nod.
 		\item O funcție care verifică dacă am ajuns sau nu la destinație.
 	\end{itemize}
 	\bigskip
@@ -850,41 +884,41 @@
 	
 	\textbf{IAttacker}
 	
-	Este o interfață pe care toate obiectele/caracterele care vor să atace alte obiecte trebuie să o mostendeasca. Această conține următoarele:
+	Este o interfață pe care toate obiectele/caracterele care doresc să atace alte obiecte trebuie să o mostendeasca. Această conține următoarele date:
 	
 	\begin{itemize}
 		\item Obiectul pe care trebuie să îl atace. Tipul este definit la moștenirea clasei datorită șablonului definit pentru interfață.
-		\item Puterea de atac
-		\item Rază de atac
-		\item Durata între atacuri
-		\item Timpul la care s-a executat ultimul atac
-		\item Intervalul de timp între care se caută un nou inamic
-		\item Metodă care afișază/ascunde rază obiectelor din scenă. Rază acestora a fost defnita într-un shader special creat în Shader Graph
-		\item O metodă care caută cel mai apropiat inamic dacă există în rază
-		\item Metodă de atac pe care fiecare obiect o implementează diferit.
+		\item Puterea de atac.
+		\item Raza de atac.
+		\item Durata între atacuri.
+		\item Timpul la care s-a executat ultimul atac.
+		\item Intervalul de timp între care se caută un nou inamic.
+		\item Metodă care afișază/ascunde raza obiectelor din scenă. Raza acestora a fost defnita într-un shader special creat în Shader Graph.
+		\item O metodă care caută cel mai apropiat inamic dacă există în rază.
+		\item Metoda de atac pe care fiecare obiect o implementează diferit.
 	\end{itemize}
 	\bigskip
 	
 	\textbf{IDestroyable}
 	
-	Fiecare obiect care are o viață anume și care poate fi distrus trebuie să moștenească această interfață. Această conține următoarele:
+	Fiecare obiect care are o viață anume și care poate fi distrus trebuie să moștenească această interfață. Această conține următoarele date:
 	
 	\begin{itemize}
-		\item Viață obiectului.
+		\item Viața obiectului.
 		\item Banii primiți când obiectul este distrus
-		\item O metodă care distruge obiectul respectiv când viață lui a ajuns la 0
+		\item O metodă care distruge obiectul respectiv când viața lui a ajuns la 0.
 	\end{itemize}
 	\bigskip
 	
 	\textbf{IRecoverable}
 	
-	Turnurile pot să își refacă viață, iar că un concept pentru viitor, ar putea să existe și anumiți inamici care refac viață altor inamici. Interfață conține următoarele:
+	Turnurile pot să își refacă viața, iar ca un concept pentru viitor, ar putea să existe și anumiți inamici care refac viața altor inamici. Interfața conține următoarele date:
 	
 	\begin{itemize}
 		\item Câtă viață se reface în fiecare secundă când efectul este aplicat.
 		\item Costul refacerii în cazul în care este de dorit un cost.
 		\item Un boolean care verifică dacă se reface sau nu în clipă curentă.
-		\item O metodă care pornește procesul de refacere
+		\item O metodă care pornește procesul de refacere.
 	\end{itemize}
 	
 	
@@ -893,14 +927,14 @@
 	
 	\subsubsection{Ierarhia inamicilor}
 	
-	%\begin{figure}[H]
-	%	\centering
-	%	\includegraphics[width=1\textwidth]{EnemyHierarchy.png}
-	%	\caption{Ierarhia inamicilor}
-	%	\label{fig: enemyHierarchy}
-	%\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{EnemyHierarchy.png}
+		\caption{Ierarhia inamicilor}
+		\label{fig: enemyHierarchy}
+	\end{figure}
 
-	În \ref{fig: enemyHierarchy} am definit într-un mod simplu și colorat modul în care trebuie structurată ierarhia inamicilor din joc.
+	În fig: \ref{fig: enemyHierarchy} am definit într-un mod simplu și colorat modul în care trebuie structurată ierarhia inamicilor din joc.
 	\newline
 	
 	Clasa EnemyBase este clasa părinte care definește modul principal în care inamicii trebuie să funcționeze. Această clasa implementează 3 interfețe utile, și anume IMovable, IDestroyable și IAttacker$\textless$TurretBase$\textgreater$. Precum am explicat și anterior, interfață IAttacker definește un șablon care specifică tipul de obiect pe care poate să îl atace, în cazul nostru, clasa TurretBase care va fi explicată în următoarea secțiune.
