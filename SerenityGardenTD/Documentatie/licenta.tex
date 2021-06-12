@@ -92,37 +92,116 @@
 	
 	\subsection{Introducere in dezvoltarea jocurilor video}
 	
+	Dezvoltarea jocurilor video cuprinde o serie mare de domenii, care lucreaza impreuna pentru a crea un produs cat mai bun. O parte din aceste domenii sunt: programare, arta, sunete, management, etc. Datorita ariei largi de domenii care lucreaza impreuna pentru a produce un joc reusit, cominicarea si organizarea reprezinta un aspect foarte important pentru jocurile majore. Daca aceasta comunicare nu este stabilita inca de la inceputul proiectului, jocul poate fi prelungit, amanat complet sau nu va iesi pe masura asteptarilor.
+	\newline
 	
+	Specific pentru aceasta industrie au fost create si o serie de aplicatii/tehnologii ajutatoare pentru a usura si grabi procesul de dezvoltare. In continuare vom acoperi doar tehnologiile utile programatorilor care doresc sa intre in industrie.
+	\newline
+	
+	OpenGL si DirectX sunt librarii de randare 3D care ne permit sa cream scene complexe pentru jocurile noastre. O mare parte din industrie are la baza aceste tehnologii sau tehnologii similare cu acestea. OpenGL este o librarie care poate sa ruleze pe majoritatea sistemelor de operare si majoritatea dispozitivelor, pe cand DirectX a fost dezvoltat numai pentru sistemele de operare Windows. OpenGL este "open-source", motiv pnetru care ese mai bine documentat si mai usor de invatat de catre programatorii noi.
+	\newline
+	
+	Dezvoltarea in aceste librarii este destul destul de complexa si opcupa mult timp, motiv pentru care a aparut conceputul de motoare pentru dezvotare (game engines). Acestea sunt aplicatii specifice care la baza se folosesc de OpenGL si/sau DirectX, dar asupra carora definesc multe functionalitati utile care grabesc procesul de dezvoltare. Cele mai populare motoare de dezvoltare in clipa curenta sunt: Unreal Engine, Unity, Godot, Game Maker Studio.
+	\newline
+	
+	Pentru un programator incepator, care doreste sa intre in industrie, este recomandat sa invete un motor de dezvolare, pentru a putea construii o serie de jocuri si sa prinda experienta in urma acestor jocuri. Pe urma, daca doreste sa se dezvolte si sa ajunga la un cu totul alt nivel, este recomandat sa invete OpenGL/DirectX, pentru ca acestea il va invata foarte multe concepte utile si ii va deschide portile catre aplicatii/interactiuni cu mult mai complexe.
 	
 	
 	
 	
 	\subsubsection{Scurta istorie}
 	
+	Primul joc video dezvoltat pentru un monitor digital a fost "X si Zero", creat in anul 1952. In urma acestuia au mai aparut cateva tentative de jocuri, dar dezvoltarea comerciala a jocurilor video a inceput in anul 1970 cand primele jocuri de tip arcada au aparut. In anul 1972, Atari a publicat prima versiune a jocului Pong, care a fost un succes imens, care a pus bazele acestei industrii.
+	\newline
 	
+	A doua generatie de jocuri reprezinta aparitia primelor console. Dupa succesul jocurilor de tipul arcada, au inceput sa apara jocuri care puteau sa ruleze pe un micro-procesor, fapt care a dus la aparitia unor console care puteau rula jocuri multiple pe acelasi dispozitiv, Limitarea jocurilor de tipul arcada era ca dispozitivul continea un singur joc prestabilit si nu putea fi modificat cu usurinta. Pentru consolele din aceasta perioada, jocurile erau salvate pe casete speciale, care cand erau introduse in consola incepeau jocul specific.
+	\newline
+	
+	In 1978 a aparut prima versiune a jocului Space Invaders, care de asemena a fost un succes masiv. In acelasi an au aparut si calculatoarele pe piata, fapt care a permis programatorilor individuali sa isi creze propiile lor jocuri. Acest lucru a pornit o perioada in care programatorii dezvoltau jocurile de unii singuri si le publicau pe piata prin intermediul unor editori specifici.
+	\newline
+	
+	Odata cu trecerea timpului si cu imbunatatirea mediilor de dezvoltare, au inceput sa se fomeze echipe pentru crearea acestor jocuri. Aceste echipe au crescut calitatea jocurilor, deoarece persoane specializate puteau sa lucreze la anumite aspecte ale jocurilor, fapt care a imbunatatit exponential calitatea acestora. Aceste echipe in cele din urma a dus la crearea unor companii dedicate dezvoltarii jocurilor, fapt care a pus bazele industriei curente.
+	
+	Cateva alte titluri importante au fost:
+	
+	\begin{itemize}
+		\item Pacman a fost o masina de tipul arcada, aparut in anul 1980 si a devenit o serie foarte populara, care pana si in zilele noastre adauga continut nou prin desene animate/jocuri specifice seriei.
+		\item Final Fantasy este jocul care a salvat compania Square Enix, una din cele mai mari companii din zilele noastre. Compania a dezvoltat o serie de jocuri care nu au avut succes si erau pe punctul sa dea faliment. In aceasta perioada, dezvoltatorii au decis sa incerce o ultima data sa faca un joc de succes, si au numit acest joc Final Fantasy. Jocul a aparut in anul 1987 si a creat conceptul de jocuri RPG (Role-Playing Game).
+		\item Wolfenstein3D a fost primul joc care a atins conceptul de jocuri 3D. Masinile de dezvoltare din aceasta perioada nu puteau permite obiecte 3D, motiv pentru care, toate jocurile erau 2D, inclusiv Wolfenstein3D. Hartile acestui joc erau 2D, dar folosindu-se de Raytracing si alte concepte ingenioase, au reusit sa pacaleasca ecranele sa deseneze scene 3D.
+		\item Tomb Rider a aparut in anul 2001 si este primul joc care a avut drept caracter principal o fata. In acea perioada si in zilele noastre, industria este foarte partinitoare, in sensul in care majoritatea cred ca jocurile video sunt concepute doar pentru baietii. Acest joc este primul care combate aceste ideologii, iar datorita popularitatii a reusit sa aduca pe piata o serie de jocuri foarte populare: Life is Strange, The Last of Us, Remember Me, etc.
+	\end{itemize}	
+
 	
 	
 	
 	
 	\subsubsection{Industria curenta}
 	
+	In zilele noastre, industria jocurilor video a devenit o industrie imensa, care acapareaza o mare parte din vietile noastre. In anul 2020, industria valora 152 miliarde de dolari, si era in continua crestere.
+	\newline
 	
+	Industria are 2 arii largi in care se incadreaza majoritatea dezvoltatorilor:
 	
+	\begin{itemize}
+		\item Aria Indie este o industrie pentru dezvoltatorii mai mici de jocuri. Numarul de dezvoltatori este de obicei mic si numarul de resurse este limitat, motiv pentru care cauta solutii ingeniase care produc jocuri de calitate in ciuda fortei de munca reduse. Aceasta arie acapareaza cele mai multe jocuri de pe piata, deoarece oricine cu talenetele necesare poate intra in aceasta arie daca isi doreste acest lucru. O serie de companii foarte populare din aceasta arie sunt: Moon Studios, Team Cherry, Blitworks, etc.
+		\item Aria AAA este industria in care se incadreaza firmele majore de dezvolatre de jocuri. Acestea au un numar imens de angajati si au la dispozitie foarte multe resurse pentru dezvoltare. De obicei, isi organizeaza angajatii in echipe pe diverse proiecte, o parte din proiecte fiind jocurile AAA. Un joc AAA este un joc la care lucreaza cel putin 100 de persoane, a carui durata de dezvolatre se intinde pe o peroada de cativa ani, si care cand iese pe piata poate devenii unul din cele mai bune jocuri din acea perioada, datorita devotamentului si resurselor folosite. Exemple de astfel de jocuri sunt: God of War, Red Dead Redemption, Dark Souls, The Last of Us, Persona 5, Final Fantasy, etc. Firmele cele mai majore din aceasta arie sunt: Santa Monica Studios, Square Enix, Bathesda, Blizzard, Riot, ID Software, Platinum Games, Bandai Namco, etc.
+	\end{itemize}
+	
+	Industria curenta inca este in continua dezvoltare, apar de la an la an tehnologii complet noi precum: realitate virtuala, realitate augumentata, senzori de simturi pentru realitatea virtuala, inteligenta artificiala in jocuri, RTX, concepte de optimizari imense pentru jocuri, etc.
 	
 	
 	\section{Introducere in Unity}
 	
+	\subsection{Motivul alegerii pentru proiectul de licenta}
 	
+	Pentru acest proiect am ales sa folosesc Unity in ciuda altor motoare de dezvoltare sau librarii speciale (OpenGL, DirectX) dintr-o serie de motive:
 	
-	
+	\begin{enumerate}
+		\item Scopul meu pentru acest proiect a fost sa realizez un joc complet cu foarte multe interactiuni si scenarii definite. In acest scop, am avut nevoie de o viteza de dezvoltare cat mai mare, ceea ce este valabil in cazul Unity-ului.
+		\item Un alt motiv este datorita experientei mele personale in Unity. Lucrez in acest motor de dezvoltare sub forma de hobby de 6 ani, tinp in care am invatat o mare parte din functionalitatile pe care le pune acesta la dispozitie.
+		\item Pe langa asta, am avut nevoie de cateva elemente specifice, care imbunatatesc calitatea jocului exponential. Aceste elemente vor fi discutate in capitolul: \ref{section: specificElements}.
+	\end{enumerate}
+
+
+
+
 	
 	\subsection{Prezentare generala}
 	
+	Unity este un motor de dezvoltare care a aparut in anul 2005 si care este in continua dezvoltare pana si in zilele noastre. Momentan a ajuns la editia 2020.3 LTS si a reusit sa schimbe complet industria jocurilor datorita modului usor de lucru. In decursul timpului a adaugat atat de multe functionalitati incat dezvoltarea de jocuri a devenit mai simpla ca niciodata (s-a ajuns pana in punctul in care pot fi create jocuri simple fara sa fie nevoie de programare).
+	\newline
+	
+	Unity contine o multitudine de moduri de lucru, diverse librarii grafice, suport pentru o serie larga de dispozitive pe care putem sa ne exportam jocurile si o comunitate foarte ajutatoare. Acesta fata de Unreal Engine, este considerat motorul de dezvoltare al insurtiei indie, deoarece grafica rezultata nu este la fel de realista ca in Unreal Engine, dar libertatea de dezvoltare este cu mult mai mare.
+	\newline
+	
+	Cateva jocuri populare dezvoltate pana acum in Unity sunt: Osiris: New Dawn, Hollow Knight, Cuphead, Pokemon GO, Wastelands 3, League of Legends: Wild Rift, Ori and the Will of the Wisps, etc.
+	\newline
+	
+	In continuare vom trece peste cateva concepte importante in dezvoltarea in Unity, pentru a usura intelegerea implementarii, discutata in capitolul \ref{section: projectImplementation}.
 	
 	
 	
 	
 	\subsubsection{GameObject si Mesh}
+	
+	GameObject este clasa de baza a tuturor obiectelor din scena. Acesta actioneaza ca un container, in sensul in care, pe un GameObject putem sa adaugam orice script dorim. Acesta are o serie de proprietati de baza:
+	
+	\begin{itemize}
+		\item Transform reprezinta clasa spatiala a tuturor obiectelor din scena. Acesta defineste pozitia, rotatia si scala la care se afla un obiect in scena.
+		\item Tag este o propietate pe care o putem defini pentru anumite obiecte. Este utila pentru a face diferentierea intre obiecte in anumite situatii. 
+		\item Layer este o proprietate similara cu tag-ul, singura diferenta facand abilitatea de a ignora anumite interactiuni intre layere. De exemplu putem sa ignoram coliziunile intre 2 layere sau sa nu afisam pe ecran deloc obiectele aflate pe un anumit layer
+		\item Name obiectului care este vizibil in scena. Este important sa numim obiectele corespunzator pentru a le gasi mai usor in scena.
+	\end{itemize}
+
+	Un GameObject nu trebuie neaparat sa aiba o reprezentare grafica. Poate sa fie doar un obiect gol care detine mai multe scripturi si/sau a carui informatii sunt folosite de alte scripturi. In cazul in care dorim sa adaugam un obiect 3D in scena, intervine componenta Mesh.
+	\newline
+	
+	Mesh reprezinta un obiect 3D, cu toate informatiile necare pentru randarea acestuia pe ecran: vertexurile, triunghiurile formate de acestea, coordonatele texturilor, etc. Pentru a randa un obiect pe ecran, este nevoie de 2 componente:
+	
+	\begin{enumerate}
+		\item MeshFilter poate sa citeasca datele din Mesh si sa le organizeze in asa fel incat sa poata fi folosite de MeshRenderer.
+		\item MeshRenderer este componenta care se ocupa propriu-zis de randarea obiectului pe ecran. Acesta defineste materialele pe care sa le foloseasca si interactiunea obiectului cu mediul (daca primeste sau genereaza umbre, modul de randare, etc.)
+	\end{enumerate}
 	
 	
 	
@@ -130,40 +209,55 @@
 	
 	\subsubsection{Collider}
 	
+	Este componenta care defineste modul de interactiune intre obiectele scenei. Exista mai multe tipuri de collidere: Box Collider, Sphere Collider, Capsule COllider, Mesh Collider, etc. Aceste collidere pot sa fie collidere normale sau declansatoare. In caz ca folosim sistemul de fizica definit de Unity (discutat in capitolul urmator) si 2 obiecte cu collidere normale s-au ciocnit unul de celalat, se vor bloca ca in lumea reala. In caz ca sunt definite drept declansatoare, acestea vor trece unul prin altul, dar vor apela metoda OnTriggerEnter din scriptruile de pe aceste obiecte.
+	\newline
+	
+	Colliderele normale sunt folositare pentru a nu permite obiectelor/caracterelor sa treaca prin alte obiecte (inclusiv prin podea), iar cele declansatoare sunt utile pnetru a activa anume evenimente (de exemplu un caracter se aseaza pe o platforma, moment in care platforma incepe sa se miste in sus si sa actioneze drept un lift).
+	\newline
+	
+	In principiu, este de dorit sa existe un singur collider pe obiect. In cazul inc are dorim mai multe collidere, putem crea copii ai obiectului curent si sa asezam colliderele pe acesti copii. Colliderele nu functioneaza daca unul din obiectele care fac coliziune nu detine componenta RigidBody.
 	
 	
 	
 	
 	\subsubsection{Transform si Rigidbody}
 	
+	Precum a fost discutat si la inceputul capitolului, componenta Transform retine locatia, rotatia si scala la care obiectul se afla in lume. Aceasta componenta ocnsite si o serie de metode utile pentru a modifica aceste proprietati (sa mutam obiectul intr-o anumita directie, sa il rotim pe o anumita axa, sau in jurul altui punct din scena, etc.). Componenta detine 2 tipuri de coordonate spatiale: cele raportate la lume si cele raportate la obiect. Coordonatele spatiale raportate la obiect reprezinta unde se afla obiectul respectiv, indiferent daca este copilul altui obiect sau nu. Coordonatele spatiale raportate la obiect sunt coordonatele pe care le ocupa obiectul in comparatie cu parintele acestuia.
+	\newline
+	
+	Pentru a usura intelegerea acestui concept o sa urmarim un exemplu al modului de lucru. Sa zicem ca avem un obiect A, care este pozitionat la coordonatele (10, 0, 0) in lume. Acest obiect are un obiect copil B care are coordonatele (-5, 2, 0) raportate la parintele lui. Obiectul B are coordonatele (5, 2, 0) cand este raportat la lume.
+	\newline
+	
+	Rigidbody este compoenta care defineste sistemul de fizica din Unity. Acesta defineste concepte precum: velocitate, gravitatie, velocitate unghiulara, masa obiectelor, forta de frecare, etc. Aceste proprietati pot fi modificate cu usurinta sau chiar dezactivate in functie de necesitate.
+	
+	
 	
 	
 	
 	\subsubsection{Prefab}
 	
-	
-	
-	
-	
-	\subsubsection{Raycast si sistemul de fizica}
+	Prefab usureaza modul de lucru cu obiecte in mai muulte scene sau chiar si intr-o singura scena. Prefab este un fel de sablon pe care il putem definii pentru obiectele din scena. Dupa ce am definit acest sablon, este foarte usor de a crea mai multe obiecte de acest tip in mai multe scene de joc. Avantajul este in situatia in care dorim sa modificam toate obiectele de acest tip din scena nu trebuie sa le modificam individual, ci putem modifica direct sablonul, astfel actualizandu-se toate obiectele de acest tip din toate scenele.
 	
 	
 	
 	
 	
-	\subsection{Motivul alegerii pentru proiectul de licenta}
+	\subsubsection{Raycast}
+	
+	Raycast reprezint aun mod foarte usor de a detecta anumite lucruri in cod. Un raycast are o origine, o directie in care se indreapta si o distanta maxima. Folosindu-ne de sistemul de fizica din Unity si de Raycast, putem detecta daca pe o anumita directie lovim un anumit obiect din scena. Acesta este util in caz ca vrem sa creem un sistem in care oprim coliziunile anumitor obiecte inainte ca acestea sa se intample, sau sa gasim obiectele dintr-o anumita directie (ex: cand dam click pe ecran, sa gasim obiectul pe care l-am selectat). Pentru a functiona, este necesar ca obiectele din scena sa aiba definite collideri. Rigidbody nu este necesar pentru aceste interactiuni.
+	
 
 
 
-
-
-	\subsection{Elemente specifice folosite}	
-	
-	
-	
-	
+	\subsection{Elemente specifice folosite}
+	\label{section: specificElements}	
 	
 	\subsubsection{Editoare personalizate}
+	
+	Pentru a usura modul de lucru pentru anumite sisteme, a trebuit sa creez editoare personalizate pentru o serie de scripturi. Prin intermediul acestor editoare personalizate, poti sa organizezi informatia afisata in editor intr-un mod diferit fata de cel de baza care este definit de Unity. Pe langa acest lucru, poti sa si rulezi anumite functionalitati ale scripturilor direct din editor, fapt ce normal ar fi posibil doar la rularea aplicatiei.
+	\newline
+	
+	Pentru crearea unui astfel de editor personalizat, trebuie creat un nou script care se aseaza intr-un folder numit Editor. In caz contrar, aplicatia nu se va putea construii un executabil pentru joc. Acest script trebuie sa mosteneasca clasa Editor si sa defineasca deasupra clasei, tipul de clasa pentru care cream un edtor personalizat. Pe urma, in metoda OnInspectorGUI adaugam functionalitatile dorite.
 	
 	
 	
@@ -171,11 +265,15 @@
 	
 	\subsubsection{Shader Graph}
 	
+	Shader Graph este o componenta din Unity care ne permite sa cream shadere specializate dintr-o interfata grafica. Acesta functioneaza pe un sistem de noduri similar cu multe alte aplicatii care se ocupa cu definirea materialelor 3D (Blender, Substance Alchemist, etc.). Interfata grafica este usor de utilizat, grabeste foarte mult timpul de dezvoltare ale acestor shadere specializate, si poate defini proprietati care sa varieze aspectul final al shaderului. In urma definirii acestor shadere, putem crea cu usurinta materiale care sa foloseasca aceste shadere.
+	
 	
 	
 	
 	
 	\subsubsection{VFX Graph}
+	
+	Este o componenta noua in Unity care care imbunatateste sistemul de particule. VFX graph poate sa genereze foarte multe tipuri de efecte speciale, pune la dispozitie multe proprietati care pot fi modificate pentru a atinge aspectul dorit, si este foarte bine optimizat, pana la punctul in care poate suporta milioane de particule in acelasi timp.
 	
 	
 	
@@ -183,15 +281,16 @@
 	
 	\subsubsection{Photon Engine}
 	
+	La acest proiect am decis sa adaug si o componenta co-op, care va fi discutata indetaliat in capitolele ce urmeaza. In acest scop, am avut nevoie de un server la care sa imi conectez aplicatia. Photon Engine este un sistem dezvoltat de cei de la Exit Games si pune la dispozitie un server gratuit care permite pana la 20 de utilizatori conectati in acelasi timp la aplicatie.
+	\newline
+	
+	Acesta pune la dispozitie diverse functionalitati care ajuta stabilirea conexiunii cu serverul si intre clienti, comunicarea intre clienti si sincronizarea datelor. Mai multe detallii vor fi discutate in capitolul \ref{section: coop}.
+	
 	
 	
 	
 	
 	\section{Planificare Proiect}
-	
-	
-	
-	
 	
 	\subsection{Faza de Proiectare}
 	
@@ -483,16 +582,9 @@
 	
 	
 	\section{Implementare proiect}
-	
-	
-	
-	
+	\label{section: projectImplementation}
 	
 	\subsection{Scena de lupta}
-	
-	
-	
-	
 	
 	\subsubsection{Initializarea scripturilor}
 	\label{section: initialization}
@@ -1464,6 +1556,8 @@
 	
 	
 	\section{Concluzii}
+	
+	
 	
 	
 	
