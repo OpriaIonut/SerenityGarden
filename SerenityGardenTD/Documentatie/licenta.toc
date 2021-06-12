@@ -1,14 +1,14 @@
 \contentsline {section}{\numberline {1}Introducere}{4}{}%
 \contentsline {subsection}{\numberline {1.1}Descrierea proiectului}{4}{}%
-\contentsline {subsection}{\numberline {1.2}Introducere in dezvoltarea jocurilor video}{4}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Scurta istorie}{5}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Industria curenta}{7}{}%
-\contentsline {section}{\numberline {2}Introducere in Unity}{8}{}%
-\contentsline {subsection}{\numberline {2.1}Motivul alegerii pentru proiectul de licenta}{8}{}%
-\contentsline {subsection}{\numberline {2.2}Prezentare generala}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}GameObject si Mesh}{9}{}%
+\contentsline {subsection}{\numberline {1.2}Introducere \IeC {\^\i }n dezvoltarea jocurilor video}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Scurt\IeC {\u a} istorie}{5}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Industria curent\IeC {\u a}}{7}{}%
+\contentsline {section}{\numberline {2}Introducere \IeC {\^\i }n Unity}{8}{}%
+\contentsline {subsection}{\numberline {2.1}Motivul alegerii pentru proiectul de licen\IeC {{\textcommabelow t}}\IeC {\u a}}{8}{}%
+\contentsline {subsection}{\numberline {2.2}Prezentare general\IeC {\u a}}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}GameObject \IeC {{\textcommabelow s}}i Mesh}{9}{}%
 \contentsline {subsubsection}{\numberline {2.2.2}Collider}{10}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}Transform si Rigidbody}{10}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}Transform \IeC {{\textcommabelow s}}i Rigidbody}{10}{}%
 \contentsline {subsubsection}{\numberline {2.2.4}Prefab}{11}{}%
 \contentsline {subsubsection}{\numberline {2.2.5}Raycast}{11}{}%
 \contentsline {subsection}{\numberline {2.3}Elemente specifice folosite}{11}{}%
@@ -18,7 +18,7 @@
 \contentsline {subsubsection}{\numberline {2.3.4}Photon Engine}{12}{}%
 \contentsline {section}{\numberline {3}Planificare Proiect}{13}{}%
 \contentsline {subsection}{\numberline {3.1}Faza de Proiectare}{13}{}%
-\contentsline {subsection}{\numberline {3.2}Tematica Jocului}{13}{}%
+\contentsline {subsection}{\numberline {3.2}Tematic\IeC {\u a} Jocului}{13}{}%
 \contentsline {subsection}{\numberline {3.3}Caracterele Jocului}{14}{}%
 \contentsline {subsubsection}{\numberline {3.3.1}Inamicii}{14}{}%
 \contentsline {subsubsection}{\numberline {3.3.2}Turnuri defensive}{15}{}%
@@ -29,48 +29,48 @@
 \contentsline {subsubsection}{\numberline {3.4.4}Valul de inamici}{17}{}%
 \contentsline {subsubsection}{\numberline {3.4.5}Nivelele jocului}{17}{}%
 \contentsline {subsubsection}{\numberline {3.4.6}Lock-on}{17}{}%
-\contentsline {subsubsection}{\numberline {3.4.7}Magazinul de imbunatatiri permanente}{17}{}%
+\contentsline {subsubsection}{\numberline {3.4.7}Magazinul de \IeC {\^\i }mbun\IeC {\u a}t\IeC {\u a}\IeC {{\textcommabelow t}}iri permanente}{17}{}%
 \contentsline {subsubsection}{\numberline {3.4.8}Raid system}{18}{}%
 \contentsline {subsubsection}{\numberline {3.4.9}Atacurile monstrului de foc}{19}{}%
-\contentsline {subsection}{\numberline {3.5}Analiza proiectului din punctul de vedere al consumatorilor}{19}{}%
+\contentsline {subsection}{\numberline {3.5}Analiz\IeC {\u a} proiectului din punctul de vedere al consumatorilor}{19}{}%
 \contentsline {subsubsection}{\numberline {3.5.1}Dificultatea jocului}{19}{}%
-\contentsline {subsubsection}{\numberline {3.5.2}Elemente de dependenta}{20}{}%
-\contentsline {subsubsection}{\numberline {3.5.3}Grupele de varsta vizate}{20}{}%
+\contentsline {subsubsection}{\numberline {3.5.2}Elemente de dependen\IeC {{\textcommabelow t}}\IeC {\u a}}{20}{}%
+\contentsline {subsubsection}{\numberline {3.5.3}Grupele de v\IeC {\^a}rst\IeC {\u a} vizate}{20}{}%
 \contentsline {section}{\numberline {4}Implementare proiect}{20}{}%
-\contentsline {subsection}{\numberline {4.1}Scena de lupta}{20}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Initializarea scripturilor}{20}{}%
+\contentsline {subsection}{\numberline {4.1}Scen\IeC {\u a} de lupta}{20}{}%
+\contentsline {subsubsection}{\numberline {4.1.1}Ini\IeC {{\textcommabelow t}}ializarea scripturilor}{20}{}%
 \contentsline {subsubsection}{\numberline {4.1.2}Procesarea comenzilor venite de la utilizator}{22}{}%
 \contentsline {subsubsection}{\numberline {4.1.3}Harta de joc}{23}{}%
 \contentsline {subsubsection}{\numberline {4.1.4}Sistemul de navigare}{27}{}%
-\contentsline {subsubsection}{\numberline {4.1.5}Interfete folosite}{28}{}%
+\contentsline {subsubsection}{\numberline {4.1.5}Interfe\IeC {{\textcommabelow t}}e folosite}{28}{}%
 \contentsline {subsubsection}{\numberline {4.1.6}Ierarhia inamicilor}{30}{}%
 \contentsline {subsubsection}{\numberline {4.1.7}Ierarhia turnurilor defensive}{31}{}%
 \contentsline {subsubsection}{\numberline {4.1.8}Comandantul}{34}{}%
-\contentsline {subsubsection}{\numberline {4.1.9}Punerea pe pauza a jocului}{35}{}%
+\contentsline {subsubsection}{\numberline {4.1.9}Punerea pe pauz\IeC {\u a} a jocului}{35}{}%
 \contentsline {subsubsection}{\numberline {4.1.10}Valul de inamici}{38}{}%
 \contentsline {subsubsection}{\numberline {4.1.11}Stagiile jocului}{38}{}%
 \contentsline {subsubsection}{\numberline {4.1.12}Controlul jocului}{39}{}%
 \contentsline {subsection}{\numberline {4.2}Selectarea nivelelor}{41}{}%
 \contentsline {subsubsection}{\numberline {4.2.1}Structura meniului}{41}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Generarea dinamica a meniului}{42}{}%
-\contentsline {subsubsection}{\numberline {4.2.3}Transmisia datelor intre scene}{43}{}%
-\contentsline {subsection}{\numberline {4.3}Magazinul de imbunatatiri permanente}{44}{}%
+\contentsline {subsubsection}{\numberline {4.2.2}Generarea dinamic\IeC {\u a} a meniului}{42}{}%
+\contentsline {subsubsection}{\numberline {4.2.3}Transmisia datelor \IeC {\^\i }ntre scene}{43}{}%
+\contentsline {subsection}{\numberline {4.3}Magazinul de \IeC {\^\i }mbun\IeC {\u a}t\IeC {\u a}\IeC {{\textcommabelow t}}iri permanente}{44}{}%
 \contentsline {subsubsection}{\numberline {4.3.1}Structura meniului}{44}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Imbunatatire permanenta}{46}{}%
-\contentsline {subsubsection}{\numberline {4.3.3}Generarea dinamica a meniului}{47}{}%
+\contentsline {subsubsection}{\numberline {4.3.2}\IeC {\^I}mbun\IeC {\u a}t\IeC {\u a}\IeC {{\textcommabelow t}}ire permanent\IeC {\u a}}{46}{}%
+\contentsline {subsubsection}{\numberline {4.3.3}Generarea dinamic\IeC {\u a} a meniului}{47}{}%
 \contentsline {subsection}{\numberline {4.4}Salvarea datelor}{47}{}%
 \contentsline {subsubsection}{\numberline {4.4.1}Datele care trebuie salvate}{48}{}%
-\contentsline {subsubsection}{\numberline {4.4.2}Salvarea automata}{48}{}%
-\contentsline {subsubsection}{\numberline {4.4.3}Locatia pentru salvare pentru diferite dispozitive}{50}{}%
+\contentsline {subsubsection}{\numberline {4.4.2}Salvarea automat\IeC {\u a}}{48}{}%
+\contentsline {subsubsection}{\numberline {4.4.3}Loca\IeC {{\textcommabelow t}}ia pentru salvare pentru diferite dispozitive}{50}{}%
 \contentsline {subsection}{\numberline {4.5}Sistemul co-op}{51}{}%
 \contentsline {subsubsection}{\numberline {4.5.1}Modul de lucru cu Photon Engine}{51}{}%
-\contentsline {subsubsection}{\numberline {4.5.2}Inregistrare si camera de asteptare}{54}{}%
+\contentsline {subsubsection}{\numberline {4.5.2}\IeC {\^I}nregistrare \IeC {{\textcommabelow s}}i camera de a\IeC {{\textcommabelow s}}teptare}{54}{}%
 \contentsline {subsubsection}{\numberline {4.5.3}Sincronizarea datelor}{55}{}%
 \contentsline {subsubsection}{\numberline {4.5.4}Monstrul de foc}{57}{}%
-\contentsline {subsection}{\numberline {4.6}Metode de imbunatatire a proiectului}{59}{}%
-\contentsline {subsubsection}{\numberline {4.6.1}Arta imbunatatita}{59}{}%
+\contentsline {subsection}{\numberline {4.6}Metode de \IeC {\^\i }mbun\IeC {\u a}t\IeC {\u a}\IeC {{\textcommabelow t}}ire a proiectului}{59}{}%
+\contentsline {subsubsection}{\numberline {4.6.1}Art\IeC {\u a} \IeC {\^\i }mbun\IeC {\u a}t\IeC {\u a}\IeC {{\textcommabelow t}}it\IeC {\u a}}{59}{}%
 \contentsline {subsubsection}{\numberline {4.6.2}O poveste pentru joc}{60}{}%
 \contentsline {subsubsection}{\numberline {4.6.3}Sunetele pentru joc}{60}{}%
-\contentsline {subsubsection}{\numberline {4.6.4}Monstrii multipli pentru modul co-op}{60}{}%
-\contentsline {subsubsection}{\numberline {4.6.5}Balansarea dificultatii}{61}{}%
+\contentsline {subsubsection}{\numberline {4.6.4}Mon\IeC {{\textcommabelow s}}trii multipli pentru modul co-op}{60}{}%
+\contentsline {subsubsection}{\numberline {4.6.5}Balansarea dificult\IeC {\u a}\IeC {{\textcommabelow t}}ii}{61}{}%
 \contentsline {section}{\numberline {5}Concluzii}{61}{}%
