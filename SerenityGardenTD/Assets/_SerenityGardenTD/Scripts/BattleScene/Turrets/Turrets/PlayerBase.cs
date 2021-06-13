@@ -74,6 +74,14 @@ namespace SerenityGarden
         {
             if (Target != null)
             {
+                //find the vector pointing from our position to the target
+                Vector3 rotDir = (Target.transform.position - partToRotate.transform.position).normalized;
+
+                //create the rotation we need to be in to look at the target
+                Quaternion lookRotation = Quaternion.LookRotation(rotDir);
+                partToRotate.transform.rotation = lookRotation;
+                partToRotate.transform.localEulerAngles = new Vector3(partToRotate.transform.localEulerAngles.x, 90.0f, 0.0f);
+
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
@@ -104,7 +112,7 @@ namespace SerenityGarden
             Bounds hexagonBounds;
             if (HelperMethods.FindBounds(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
             {
-                float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x) * 3;
+                float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x) * 4;
                 float currentDist = HelperMethods.SquaredDistance(bounds.min, bounds.max);
 
                 float targetScale = (diameter * transform.localScale.x) / currentDist;

@@ -3055,7 +3055,7 @@ MonoBehaviour:
   diameter: 0.15
   offset: -0.025
   mapScaleOffset: 1
-  mapPresetFile: Stages/Stage 1-2.json
+  mapPresetFile: Stages/Stage 1-1.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
   scaleFact: 0
@@ -6907,17 +6907,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.3432474
+      value: 4.050583
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.3432474
+      value: 4.050583
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.3432474
+      value: 4.050583
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 8e84478f9823dfd4681a732dd82c981d,
         type: 3}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.1)  12 JUN 2021 19:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.6.1)  13 JUN 2021 16:53
 entering extended mode
 **./licenta.tex
 (licenta.tex
@@ -602,38 +602,146 @@ File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 z/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )))
-(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/subfig\subfig.sty
-Package: subfig 2005/06/28 ver: 1.3 subfig package
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
 
-(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
+.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen267
-\captionmargin@=\dimen268
-\captionwidth=\dimen269
-\caption@tempdima=\dimen270
-\caption@indent=\dimen271
-\caption@parindent=\dimen272
-\caption@hangindent=\dimen273
-Package caption Info: Standard document class detected.
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-\c@caption@flags=\count314
-\c@continuedfloat=\count315
-Package caption Info: float package is loaded.
-Package caption Info: listings package is loaded.
-Package caption Info: subfigure package is loaded.
-Package caption Info: wrapfig package is loaded.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
-\c@KVtest=\count316
-\sf@farskip=\skip69
-\sf@captopadj=\dimen274
-\sf@capskip=\skip70
-\sf@nearskip=\skip71
-\sf@top=\skip72
-\sf@bottom=\skip73
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
+ty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
+keys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
+ty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
+.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen267
+\Hy@linkcounter=\count314
+\Hy@pagecounter=\count315
+ (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
+atches.def
+File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
+nguages
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count316
+ (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count317
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen268
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
+.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count318
+\Field@Width=\dimen269
+\Fld@charsize=\dimen270
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count319
+\c@Item=\count320
+\c@Hfootnote=\count321
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count322
+\c@bookmark@seq@number=\count323
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
+echeck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
+ounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip69
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
+
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -641,25 +749,29 @@ File: tikzlibrarypositioning.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count317
+\l__color_backend_stack_int=\count324
 \l__pdf_internal_box=\box68
 ) (licenta.aux)
 \openout1 = `licenta.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
@@ -667,16 +779,16 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count318
-\scratchdimen=\dimen275
+\scratchcounter=\count325
+\scratchdimen=\dimen271
 \scratchbox=\box69
-\nofMPsegments=\count319
-\nofMParguments=\count320
+\nofMPsegments=\count326
+\nofMParguments=\count327
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count321
-\MPscratchDim=\dimen276
-\MPnumerator=\count322
-\makeMPintoPDFobject=\count323
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen272
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
 \everyMPtoPDFconversion=\toks53
 )
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -685,24 +797,44 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count324
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: End \AtBeginDocument code.
-<./images//UNITBV2.png, id=4, 401.5pt x 146.5475pt>
+\c@lstlisting=\count331
+Package hyperref Info: Link coloring ON on input line 48.
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
+lestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count332
+)
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
+ (licenta.out) (licenta.out)
+\@outlinefile=\write5
+\openout5 = `licenta.out'.
+
+<./images//UNITBV2.png, id=310, 401.5pt x 146.5475pt>
 File: ./images//UNITBV2.png Graphic file (type png)
 <use ./images//UNITBV2.png>
-Package pdftex.def Info: ./images//UNITBV2.png  used on input line 46.
+Package pdftex.def Info: ./images//UNITBV2.png  used on input line 53.
 (pdftex.def)             Requested size: 320.55103pt x 117.00119pt.
- (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-2.def
+
+(C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-2.def
 File: uni-2.def 2013/05/13 UCS: Unicode data U+0200..U+02FF
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+
 
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
 
 
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -711,7 +843,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-1.def
 File: uni-1.def 2013/05/13 UCS: Unicode data U+0100..U+01FF
 )
-Overfull \hbox (8.33858pt too wide) in paragraph at lines 46--46
+Overfull \hbox (8.33858pt too wide) in paragraph at lines 53--53
  [] 
  []
 
@@ -722,23 +854,13 @@ LaTeX Warning: No \author given.
 
 {C:/Users/opria/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images//UNITB
 V2.png>] [2])
-\tf@toc=\write5
-\openout5 = `licenta.toc'.
+\tf@toc=\write6
+\openout6 = `licenta.toc'.
 
  [3]
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-Underfull \hbox (badness 10000) in paragraph at lines 76--78
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--81
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
@@ -749,18 +871,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--87
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--98
+Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
-[4]
-Overfull \hbox (18.96103pt too wide) in paragraph at lines 99--101
-[]\OT1/cmr/m/n/12 Specific pen-tru aceasta in-dus-trie au fost cre-ate []i o s
-e-rie de aplica[]ii/tehnologii
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
 
  []
 
@@ -769,18 +885,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 105--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 108--110
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
@@ -789,115 +905,109 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 124--126
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 142--144
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
 
-Overfull \hbox (0.86131pt too wide) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 148--150
+
+ []
+
+
+Overfull \hbox (0.86131pt too wide) in paragraph at lines 155--156
 []\OT1/cmr/m/n/12 Aria AAA este in-dus-tria ^n care se ^ncadreaza firmele ma
 -jore de dezvola-
  []
 
 
-Overfull \hbox (11.63704pt too wide) in paragraph at lines 149--150
+Overfull \hbox (11.63704pt too wide) in paragraph at lines 155--156
 \OT1/cmr/m/n/12 foarte multe resurse pen-tru dez-voltare. De obi-cei, ^[]i or-
 ga-nizeaza angaja[]ii
  []
 
 [7]
-Overfull \hbox (27.02068pt too wide) in paragraph at lines 164--165
-[]\OT1/cmr/m/n/12 Pe l^anga asta, am avut nevoie de c^ateva el-e-mente speci-f
-ice, care ^mbunata[]esc
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--184
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
+
+ []
+
 [8]
-Overfull \hbox (8.07735pt too wide) in paragraph at lines 192--193
+Overfull \hbox (8.07735pt too wide) in paragraph at lines 198--199
 []\OT1/cmr/m/n/12 Transform reprezinta clasa spa[]iala a tu-turor obiectelor 
 din scena. Acesta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--200
+Underfull \hbox (badness 10000) in paragraph at lines 204--206
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--229
+Underfull \hbox (badness 10000) in paragraph at lines 233--235
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Underfull \hbox (badness 10000) in paragraph at lines 265--267
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 286--288
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 
  []
 
 
-Overfull \hbox (4.20424pt too wide) in paragraph at lines 289--290
+Overfull \hbox (4.20424pt too wide) in paragraph at lines 295--296
 []\OT1/cmr/m/n/12 Acesta pune la dispozi[]ie di-verse func[]ionalita[]i care a
 juta sta-bilirea conex-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 299--301
-
- []
-
-
-Overfull \hbox (1.98898pt too wide) in paragraph at lines 302--304
-\OT1/cmr/m/n/12 ^nca de la ^nceput poate ^mbunata[]ii cal-i-tatea proiec-
-tu-lui ex-plo-nen-tial, asigura
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
-
- []
-
-[12]
 Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
+ []
+
+
+Overfull \hbox (1.98898pt too wide) in paragraph at lines 308--310
+\OT1/cmr/m/n/12 ^nca de la ^nceput poate ^mbunata[]ii cal-i-tatea proiec-
+tu-lui ex-plo-nen-tial, asigura
  []
 
 
@@ -905,13 +1015,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 308--310
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 323--325
+Underfull \hbox (badness 10000) in paragraph at lines 314--316
 
  []
 
@@ -920,818 +1030,803 @@ Underfull \hbox (badness 10000) in paragraph at lines 326--328
 
  []
 
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 351--353
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--331
 
  []
 
-<./images//Melee.png, id=55, 162.8484pt x 65.043pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--334
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 357--359
+
+ []
+
+<./images//Melee.png, id=470, 162.8484pt x 65.043pt>
 File: ./images//Melee.png Graphic file (type png)
 <use ./images//Melee.png>
-Package pdftex.def Info: ./images//Melee.png  used on input line 358.
+Package pdftex.def Info: ./images//Melee.png  used on input line 364.
 (pdftex.def)             Requested size: 390.0pt x 155.77289pt.
-<./images//Ranged.png, id=56, 165.4983pt x 65.043pt>
+[14]
+<./images//Ranged.png, id=479, 165.4983pt x 65.043pt>
 File: ./images//Ranged.png Graphic file (type png)
 <use ./images//Ranged.png>
-Package pdftex.def Info: ./images//Ranged.png  used on input line 365.
+Package pdftex.def Info: ./images//Ranged.png  used on input line 371.
 (pdftex.def)             Requested size: 390.0pt x 153.30162pt.
-[14 <./images//Melee.png>]
-<./images//Flying.png, id=61, 162.3666pt x 69.6201pt>
+<./images//Flying.png, id=480, 162.3666pt x 69.6201pt>
 File: ./images//Flying.png Graphic file (type png)
 <use ./images//Flying.png>
-Package pdftex.def Info: ./images//Flying.png  used on input line 372.
+Package pdftex.def Info: ./images//Flying.png  used on input line 378.
 (pdftex.def)             Requested size: 390.0pt x 167.24779pt.
-<./images//Ambusher.png, id=62, 147.1899pt x 55.6479pt>
+ [15 <./images//Melee.png> <./images//Ranged.png>]
+<./images//Ambusher.png, id=487, 147.1899pt x 55.6479pt>
 File: ./images//Ambusher.png Graphic file (type png)
 <use ./images//Ambusher.png>
-Package pdftex.def Info: ./images//Ambusher.png  used on input line 379.
+Package pdftex.def Info: ./images//Ambusher.png  used on input line 385.
 (pdftex.def)             Requested size: 390.0pt x 147.44836pt.
- [15 <./images//Ranged.png> <./images//Flying.png> <./images//Ambusher.png>]
-<./images//machineGun.png, id=69, 309.0747pt x 154.176pt>
+ [16 <./images//Flying.png> <./images//Ambusher.png>]
+<./images//Serenity.png, id=503, 337.0191pt x 219.4599pt>
+File: ./images//Serenity.png Graphic file (type png)
+<use ./images//Serenity.png>
+Package pdftex.def Info: ./images//Serenity.png  used on input line 406.
+(pdftex.def)             Requested size: 390.0pt x 253.97089pt.
+ [17]
+<./images//machineGun.png, id=513, 309.0747pt x 154.176pt>
 File: ./images//machineGun.png Graphic file (type png)
 <use ./images//machineGun.png>
-Package pdftex.def Info: ./images//machineGun.png  used on input line 401.
+Package pdftex.def Info: ./images//machineGun.png  used on input line 414.
 (pdftex.def)             Requested size: 390.0pt x 194.54976pt.
- [16]
-<./images//electricFence.png, id=73, 290.5254pt x 136.5903pt>
+<./images//electricFence.png, id=514, 290.5254pt x 136.5903pt>
 File: ./images//electricFence.png Graphic file (type png)
 <use ./images//electricFence.png>
-Package pdftex.def Info: ./images//electricFence.png  used on input line 408.
+Package pdftex.def Info: ./images//electricFence.png  used on input line 421.
 (pdftex.def)             Requested size: 390.0pt x 183.37184pt.
-<./images//vulkan.png, id=74, 362.5545pt x 141.4083pt>
+ [18 <./images//Serenity.png> <./images//machineGun.png>]
+<./images//vulkan.png, id=521, 362.5545pt x 141.4083pt>
 File: ./images//vulkan.png Graphic file (type png)
 <use ./images//vulkan.png>
-Package pdftex.def Info: ./images//vulkan.png  used on input line 415.
+Package pdftex.def Info: ./images//vulkan.png  used on input line 428.
 (pdftex.def)             Requested size: 390.0pt x 152.12097pt.
- [17 <./images//machineGun.png> <./images//electricFence.png>]
-<./images//Flamethrower.png, id=80, 159.9576pt x 80.4606pt>
+<./images//Flamethrower.png, id=522, 159.9576pt x 80.4606pt>
 File: ./images//Flamethrower.png Graphic file (type png)
 <use ./images//Flamethrower.png>
-Package pdftex.def Info: ./images//Flamethrower.png  used on input line 422.
+Package pdftex.def Info: ./images//Flamethrower.png  used on input line 435.
 (pdftex.def)             Requested size: 390.0pt x 196.19835pt.
-<./images//railgun.png, id=81, 390.7398pt x 152.7306pt>
+ [19 <./images//electricFence.png> <./images//vulkan.png>]
+<./images//railgun.png, id=530, 390.7398pt x 152.7306pt>
 File: ./images//railgun.png Graphic file (type png)
 <use ./images//railgun.png>
-Package pdftex.def Info: ./images//railgun.png  used on input line 429.
+Package pdftex.def Info: ./images//railgun.png  used on input line 442.
 (pdftex.def)             Requested size: 390.0pt x 152.44823pt.
- [18 <./images//vulkan.png> <./images//Flamethrower.png>]
-<./images//Excavator.png, id=87, 201.8742pt x 84.5559pt>
+<./images//Excavator.png, id=531, 201.8742pt x 84.5559pt>
 File: ./images//Excavator.png Graphic file (type png)
 <use ./images//Excavator.png>
-Package pdftex.def Info: ./images//Excavator.png  used on input line 436.
+Package pdftex.def Info: ./images//Excavator.png  used on input line 449.
 (pdftex.def)             Requested size: 390.0pt x 163.37631pt.
- [19 <./images//railgun.png> <./images//Excavator.png>]
-<./images//Map.png, id=94, 232.4685pt x 207.174pt>
+ [20 <./images//Flamethrower.png> <./images//railgun.png>]
+<./images//Map.png, id=543, 232.4685pt x 207.174pt>
 File: ./images//Map.png Graphic file (type png)
 <use ./images//Map.png>
-Package pdftex.def Info: ./images//Map.png  used on input line 467.
+Package pdftex.def Info: ./images//Map.png  used on input line 476.
 (pdftex.def)             Requested size: 390.0pt x 347.60735pt.
-
-Overfull \hbox (2.4024pt too wide) in paragraph at lines 478--479
+ [21 <./images//Excavator.png>]
+Overfull \hbox (2.4024pt too wide) in paragraph at lines 487--488
 []\OT1/cmr/m/n/12 Turnurile pot fi plasate doar pe hexagoanele de construc[]ie.
  Odata plasate,
  []
 
-[20 <./images//Map.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 511--513
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 549--551
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 552--554
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 555--557
+[22 <./images//Map.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 518--520
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 585--587
+Underfull \hbox (badness 10000) in paragraph at lines 556--558
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 618--620
+Underfull \hbox (badness 10000) in paragraph at lines 559--561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--564
 
  []
 
 [24]
-Underfull \hbox (badness 10000) in paragraph at lines 621--623
+Underfull \hbox (badness 10000) in paragraph at lines 592--594
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 625--627
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--626
+Underfull \hbox (badness 10000) in paragraph at lines 628--630
 
  []
 
 
-Overfull \hbox (2.20241pt too wide) in paragraph at lines 627--629
+Underfull \hbox (badness 10000) in paragraph at lines 631--633
+
+ []
+
+
+Overfull \hbox (2.20241pt too wide) in paragraph at lines 634--636
 \OT1/cmr/m/n/12 parte din logica jocurilor. Apelarea update-ului ^ncepe dupa
  ce toate metodele
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+Underfull \hbox (badness 10000) in paragraph at lines 634--636
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 630--632
+Underfull \hbox (badness 10000) in paragraph at lines 637--639
 
  []
 
-<./images//logicProcessCoggle.png, id=111, 268.6035pt x 109.1277pt>
+[26]
+<./images//logicProcessCoggle.png, id=572, 268.6035pt x 109.1277pt>
 File: ./images//logicProcessCoggle.png Graphic file (type png)
 <use ./images//logicProcessCoggle.png>
 Package pdftex.def Info: ./images//logicProcessCoggle.png  used on input line 6
-37.
+44.
 (pdftex.def)             Requested size: 390.0pt x 158.45255pt.
-[25 <./images//logicProcessCoggle.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 651--653
+ [27 <./images//logicProcessCoggle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 658--660
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--656
+Underfull \hbox (badness 10000) in paragraph at lines 661--663
 
  []
 
 
-Overfull \hbox (1.20436pt too wide) in paragraph at lines 665--667
+Overfull \hbox (1.20436pt too wide) in paragraph at lines 672--674
 []\OT1/cmr/m/n/12 O alta prob-lema des ^nt^ampinata ^n proiectele mari este
  proce-sarea comen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 665--667
+Underfull \hbox (badness 10000) in paragraph at lines 672--674
 
  []
 
-[26]
-Overfull \hbox (1.14038pt too wide) in paragraph at lines 668--670
+
+Overfull \hbox (1.14038pt too wide) in paragraph at lines 675--677
 \OT1/cmr/m/n/12 aceste eveni-mente, iar c^and uti-liza-torul apasa tasta re-sp
 ec-tiva, toate metodele
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--670
+Underfull \hbox (badness 10000) in paragraph at lines 675--677
 
  []
 
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 691--693
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 698--700
 
  []
 
 
-Overfull \hbox (0.33397pt too wide) in paragraph at lines 700--702
+Overfull \hbox (0.33397pt too wide) in paragraph at lines 707--709
 \OT1/cmr/m/n/12 o-nal-Block. []In in-te-ri-orul cla-sei am folosit de doua enu
 m-uri: \OT1/cmr/bx/n/12 Spawn-PointsID
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 700--702
-
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 716--718
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 719--721
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 722--724
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 725--727
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 734--736
+Underfull \hbox (badness 10000) in paragraph at lines 707--709
 
  []
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 737--739
+Underfull \hbox (badness 10000) in paragraph at lines 723--725
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--742
+Underfull \hbox (badness 10000) in paragraph at lines 726--728
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 743--745
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 746--748
-
- []
-
-
-Overfull \hbox (0.82513pt too wide) in paragraph at lines 749--751
-[]\OT1/cmr/m/n/12 LoadPresetGrid() preia con[]inutul fi[]ierului con-fig-ura-bi
-l, ape-leaza metoda
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 749--751
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 758--760
+Underfull \hbox (badness 10000) in paragraph at lines 729--731
 
  []
 
 [30]
-Underfull \hbox (badness 10000) in paragraph at lines 761--763
+Underfull \hbox (badness 10000) in paragraph at lines 732--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 764--766
+Underfull \hbox (badness 10000) in paragraph at lines 741--743
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 767--769
+Underfull \hbox (badness 10000) in paragraph at lines 744--746
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 776--778
+Underfull \hbox (badness 10000) in paragraph at lines 747--749
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 779--781
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 782--784
+Underfull \hbox (badness 10000) in paragraph at lines 750--752
 
  []
 
 [31]
-Underfull \hbox (badness 10000) in paragraph at lines 785--787
+Underfull \hbox (badness 10000) in paragraph at lines 753--755
 
  []
 
-<./images//navigationCoggle.png, id=136, 272.9397pt x 95.6373pt>
+
+Overfull \hbox (0.82513pt too wide) in paragraph at lines 756--758
+[]\OT1/cmr/m/n/12 LoadPresetGrid() preia con[]inutul fi[]ierului con-fig-ura-bi
+l, ape-leaza metoda
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--758
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 765--767
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 768--770
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 771--773
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 774--776
+
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 783--785
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 786--788
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 789--791
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--794
+
+ []
+
+<./images//navigationCoggle.png, id=602, 272.9397pt x 95.6373pt>
 File: ./images//navigationCoggle.png Graphic file (type png)
 <use ./images//navigationCoggle.png>
-Package pdftex.def Info: ./images//navigationCoggle.png  used on input line 796
+Package pdftex.def Info: ./images//navigationCoggle.png  used on input line 803
 .
 (pdftex.def)             Requested size: 390.0pt x 136.65518pt.
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 808--810
 
-Underfull \hbox (badness 10000) in paragraph at lines 801--803
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 811--813
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 804--806
-
- []
-
-[32 <./images//navigationCoggle.png>]
-Overfull \hbox (5.07521pt too wide) in paragraph at lines 817--818
+Overfull \hbox (5.07521pt too wide) in paragraph at lines 824--825
 []\OT1/cmr/m/n/12 Algoritmul Floyd-Warshall de-ter-mina ma-tricea distan[]elor 
 $\OML/cmm/m/it/12 D \OT1/cmr/m/n/12 = (\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 )\OM
 L/cmm/m/it/12 ; i; j \OMS/cmsy/m/n/12 2
  []
 
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 864--866
+[34 <./images//navigationCoggle.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 871--873
 
  []
 
-[34]
-<./images//EnemyHierarchy.png, id=155, 351.4731pt x 199.4652pt>
+[35] [36]
+<./images//EnemyHierarchy.png, id=631, 351.4731pt x 199.4652pt>
 File: ./images//EnemyHierarchy.png Graphic file (type png)
 <use ./images//EnemyHierarchy.png>
-Package pdftex.def Info: ./images//EnemyHierarchy.png  used on input line 932.
+Package pdftex.def Info: ./images//EnemyHierarchy.png  used on input line 939.
 (pdftex.def)             Requested size: 390.0pt x 221.32985pt.
- [35]
-Underfull \hbox (badness 10000) in paragraph at lines 937--939
+
+Underfull \hbox (badness 10000) in paragraph at lines 944--946
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 940.
+LaTeX Warning: Command \textless invalid in math mode on input line 947.
 
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 9
-40.
+47.
 (C:\Users\opria\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 940.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 947.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 940.
+LaTeX Warning: Command \textless invalid in math mode on input line 947.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 940.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 947.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 940.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 947.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 940--942
+Underfull \hbox (badness 10000) in paragraph at lines 947--949
+
+ []
+
+[37 <./images//EnemyHierarchy.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 950--952
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 943--945
+Underfull \hbox (badness 10000) in paragraph at lines 953--955
 
  []
 
 
-Overfull \hbox (16.77217pt too wide) in paragraph at lines 946--948
-[]\OT1/cmr/m/n/12 Func[]iile im-ple-men-tate de aceasta clasa sunt ^n mare pa
-rte func[]iile mo[]tenite
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 946--948
-
- []
-
-[36 <./images//EnemyHierarchy.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 949--951
+Underfull \hbox (badness 10000) in paragraph at lines 956--958
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 952--954
+Underfull \hbox (badness 10000) in paragraph at lines 959--961
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 955--957
-
- []
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 972.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 972.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 972.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 972.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 972--974
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 975--977
-
- []
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 983--985
-
- []
-
-
-Overfull \hbox (41.93442pt too wide) in paragraph at lines 991--993
-[]\OT1/cmr/m/n/12 BuildableTurret este clasa care mo[]tene[]te Tur-ret-Base []i
- define[]te func[]ionalitatea
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 991--993
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 994--996
+Underfull \hbox (badness 10000) in paragraph at lines 962--964
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 997--999
+
+LaTeX Warning: Command \textless invalid in math mode on input line 979.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 979.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 979.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 979.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 979--981
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 982--984
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 990--992
 
  []
 
 [39]
-Underfull \hbox (badness 10000) in paragraph at lines 1023--1025
+Underfull \hbox (badness 10000) in paragraph at lines 998--1000
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1026.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1026.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1026.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1026.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1026--1028
+Underfull \hbox (badness 10000) in paragraph at lines 1001--1003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1029--1031
-
- []
-
-
-Overfull \hbox (20.97214pt too wide) in paragraph at lines 1032--1034
-[]\OT1/cmr/m/n/12 Majoritatea func[]iilor sunt sim-i-lare cu cele ale tur-nuril
-or (At-tack, DrawRange,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1034
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1006
 
  []
 
 [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1043--1045
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1046--1048
+LaTeX Warning: Command \textless invalid in math mode on input line 1033.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1033.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1033.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1033.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1033--1035
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1051
-
- []
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1052.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1052.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1052--1054
+Underfull \hbox (badness 10000) in paragraph at lines 1036--1038
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 1055--1057
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1041
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1058--1060
+Underfull \hbox (badness 10000) in paragraph at lines 1050--1052
 
  []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1061.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1061.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1061.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1061.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1061--1063
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1055
 
  []
 
 
-Overfull \hbox (13.31944pt too wide) in paragraph at lines 1064--1066
-[][]\OT1/cmr/m/n/12 In caz ca nu ex-tista o instan[]a a cla-sei ^n scena, Ga
-mePause-M-an-ager.instance
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1064--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1056--1058
 
  []
 
-[42] [43]
-Overfull \hbox (4.2084pt too wide) in paragraph at lines 1091--1092
+[42]
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1059.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1059.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1059--1061
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1062--1064
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1067
+
+ []
+
+[43]
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1068.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1068.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1068.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1068.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1068--1070
+
+ []
+
+
+Overfull \hbox (13.31944pt too wide) in paragraph at lines 1071--1073
+[][]\OT1/cmr/m/n/12 In caz ca nu ex-tista o instan[]a a cla-sei ^n scena, G
+amePause-M-an-ager.instance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1071--1073
+
+ []
+
+[44]
+Overfull \hbox (4.2084pt too wide) in paragraph at lines 1098--1099
 \OT1/cmr/m/n/12 reprezinta in-am-icul care va aparea pe harta, iar a doua va
 l-oare reprezinta
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1103--1105
-
- []
-
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 1123--1125
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1128
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1129--1131
+Underfull \hbox (badness 10000) in paragraph at lines 1110--1112
 
  []
 
 [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1132--1134
+Underfull \hbox (badness 10000) in paragraph at lines 1130--1132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1137
+Underfull \hbox (badness 10000) in paragraph at lines 1133--1135
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 1136--1138
 
  []
 
 
-Overfull \hbox (12.36804pt too wide) in paragraph at lines 1138--1140
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1142--1144
+
+ []
+
+
+Overfull \hbox (12.36804pt too wide) in paragraph at lines 1145--1147
 \OT1/cmr/m/n/12 mon-e-tara pen-tru jucator, rec-om-pensa care poate fi folos
 ita sa ^[]i ^mbunata[]easca
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1138--1140
-
- []
-
-[46]
-Underfull \hbox (badness 10000) in paragraph at lines 1154--1156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1168--1170
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1147
 
  []
 
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1173--1175
+Underfull \hbox (badness 10000) in paragraph at lines 1161--1163
 
  []
 
 
-Overfull \hbox (1.95427pt too wide) in paragraph at lines 1176--1178
-[]\OT1/cmr/m/n/12 Pentru gener-area di-namica a me-ni-u-lui a fost nece-sara 
-unui pre-fab ajutator:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1176--1178
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1191--1193
+Underfull \hbox (badness 10000) in paragraph at lines 1164--1166
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 1194--1196
+Underfull \hbox (badness 10000) in paragraph at lines 1175--1177
 
  []
 
 
-Overfull \hbox (7.3945pt too wide) in paragraph at lines 1201--1202
-[]\OT1/cmr/m/n/12 PermanentUpgrades este o vari-abila de tipul Tur-ret-Per-ma-
-nen-tUp-grades[]
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1183--1185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1186--1188
+
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1205--1207
+Underfull \hbox (badness 10000) in paragraph at lines 1198--1200
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1219--1221
+Underfull \hbox (badness 10000) in paragraph at lines 1201--1203
 
  []
 
 [50]
-Overfull \hbox (12.90785pt too wide) in paragraph at lines 1228--1229
+Overfull \hbox (7.3945pt too wide) in paragraph at lines 1208--1209
+[]\OT1/cmr/m/n/12 PermanentUpgrades este o vari-abila de tipul Tur-ret-Per-ma-
+nen-tUp-grades[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1214
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1228
+
+ []
+
+
+Overfull \hbox (12.90785pt too wide) in paragraph at lines 1235--1236
 \OT1/cmr/m/n/12 spec-tiva. Acest cost se cal-culeaza in-func-tie de nivelul a
 c-tual al jucatorului.
  []
 
-
-Overfull \hbox (0.54872pt too wide) in paragraph at lines 1251--1252
+[52]
+Overfull \hbox (0.54872pt too wide) in paragraph at lines 1258--1259
 [][]\OT1/cmr/m/n/12 Imbunata[]irea per-ma-nenta este un sim-plu co-e-fi-cien
 t cu care sunt ^nmul[]ite
  []
 
 
-Overfull \hbox (12.23332pt too wide) in paragraph at lines 1255--1256
-[]\OT1/cmr/m/n/12 Valori de minim []i maxim ^ntre care se poate afla co-e-fi-
-cien-tul ^mbunata[]irii
+Overfull \hbox (12.23332pt too wide) in paragraph at lines 1262--1263
+[]\OT1/cmr/m/n/12 Valori de minim []i maxim ^ntre care se poate afla co-e-fi-c
+ien-tul ^mbunata[]irii
  []
 
-[51]
-Overfull \hbox (9.49585pt too wide) in paragraph at lines 1263--1264
+
+Overfull \hbox (9.49585pt too wide) in paragraph at lines 1270--1271
 []\OT1/cmr/m/n/12 Cu aceasta clasa am reu[]it sa definim cum ar tre-buii sa 
 arate o ^mbunata[]ire,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1273--1275
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1276--1278
-
- []
-
-[52]
-Underfull \hbox (badness 10000) in paragraph at lines 1287--1289
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1298--1300
-
- []
-
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 1301--1303
+Underfull \hbox (badness 10000) in paragraph at lines 1280--1282
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1312--1314
+Underfull \hbox (badness 10000) in paragraph at lines 1283--1285
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1315--1317
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1318--1320
+Underfull \hbox (badness 10000) in paragraph at lines 1294--1296
 
  []
 
 [54]
-Underfull \hbox (badness 10000) in paragraph at lines 1321--1323
+Underfull \hbox (badness 10000) in paragraph at lines 1305--1307
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1324--1326
+Underfull \hbox (badness 10000) in paragraph at lines 1308--1310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1327--1329
+Underfull \hbox (badness 10000) in paragraph at lines 1319--1321
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1322--1324
 
  []
 
 [55]
+Underfull \hbox (badness 10000) in paragraph at lines 1325--1327
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1350.
-
-
-LaTeX Warning: Command \textless invalid in math mode on input line 1350.
+ []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1350.
+Underfull \hbox (badness 10000) in paragraph at lines 1328--1330
+
+ []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1350.
+Underfull \hbox (badness 10000) in paragraph at lines 1331--1333
+
+ []
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1350.
+Underfull \hbox (badness 10000) in paragraph at lines 1334--1336
+
+ []
+
+[56]
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1357.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1350.
+LaTeX Warning: Command \textless invalid in math mode on input line 1357.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1350.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1357.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1350.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1357.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1351.
+LaTeX Warning: Command \textless invalid in math mode on input line 1357.
 
 
-LaTeX Warning: Command \textless invalid in math mode on input line 1351.
+LaTeX Warning: Command \textless invalid in math mode on input line 1357.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1351.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1357.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1351.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1357.
 
 
-Overfull \hbox (11.20233pt too wide) in paragraph at lines 1350--1352
+LaTeX Warning: Command \textless invalid in math mode on input line 1358.
+
+
+LaTeX Warning: Command \textless invalid in math mode on input line 1358.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1358.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1358.
+
+
+Overfull \hbox (11.20233pt too wide) in paragraph at lines 1357--1359
 []\OT1/cmr/m/n/12 Application.persistentDataPath. Aceasta pro-pri-etate re-tur
 neaza o loca[]ie
  []
 
 
-Overfull \hbox (232.74866pt too wide) in paragraph at lines 1350--1352
-\OT1/cmr/m/n/12 ruleaza. Pe Win-dows, acest folder poate fi gasit de obi-cei 
-^n AppData/LocalLow/$[]$companyname$[]$/$[]$productname$[]$.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1354--1356
+Underfull \hbox (badness 10000) in paragraph at lines 1361--1363
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1357--1359
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1366
+
+ []
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1375
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1366--1368
-
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 1377--1379
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1380--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1384--1386
 
  []
 
@@ -1741,212 +1836,275 @@ Underfull \hbox (badness 10000) in paragraph at lines 1387--1389
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1390--1392
+Underfull \hbox (badness 10000) in paragraph at lines 1394--1396
 
  []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1393.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1393.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1393.
-
-
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1393.
-
-[57]
-Overfull \hbox (9.32225pt too wide) in paragraph at lines 1402--1404
-\OT1/cmr/m/n/12 tre-buie sa facem este sa apelam metoda Pho-ton-Net-work.Co
-nnectUsingSettings.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1404
+Underfull \hbox (badness 10000) in paragraph at lines 1397--1399
 
  []
 
+[58]
 
-Underfull \hbox (badness 10000) in paragraph at lines 1408--1410
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1400.
 
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1400.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1400.
+
+
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1400.
+
+
+Overfull \hbox (9.32225pt too wide) in paragraph at lines 1409--1411
+\OT1/cmr/m/n/12 tre-buie sa facem este sa apelam metoda Pho-ton-Net-work.Con
+nectUsingSettings.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1413
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1414--1416
+Underfull \hbox (badness 10000) in paragraph at lines 1415--1417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1417--1419
+Underfull \hbox (badness 10000) in paragraph at lines 1418--1420
 
  []
 
 
-Overfull \hbox (12.16388pt too wide) in paragraph at lines 1420--1422
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1423
+
+ []
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 1424--1426
+
+ []
+
+
+Overfull \hbox (12.16388pt too wide) in paragraph at lines 1427--1429
 \OT1/cmr/m/n/12 IsWrit-ing putem sa trans-mitem mesajele dorite de ^ndata ce
  aces-tea se ^nt^ampla,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1420--1422
+Underfull \hbox (badness 10000) in paragraph at lines 1427--1429
 
  []
 
-[58]
-Overfull \hbox (2.68623pt too wide) in paragraph at lines 1424--1425
+
+Overfull \hbox (2.68623pt too wide) in paragraph at lines 1431--1432
 \OT1/cmr/m/n/12 care ex-tind MonoBe-haviour, []i anume MonoBe-haviour-Pun []i M
 onoBe-haviour-
  []
 
 
-Overfull \hbox (14.97496pt too wide) in paragraph at lines 1428--1429
+Overfull \hbox (5.1834pt too wide) in paragraph at lines 1435--1436
 []\OT1/cmr/m/n/12 OnConnectedToMaster() este apelat c^and clien-tul se conectea
-za la serverul
+za la server
  []
 
-
-Overfull \hbox (7.99448pt too wide) in paragraph at lines 1433--1434
+[60]
+Overfull \hbox (7.99448pt too wide) in paragraph at lines 1440--1441
 \OT1/cmr/m/n/12 ^nt^ampla []i c^and se ^ncearca de-panarea aplica[]iei cu p
 uncte de ^ntrerupere
  []
 
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 1446--1448
+
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1455
 
  []
 
 
-Overfull \hbox (0.30937pt too wide) in paragraph at lines 1452--1453
+Overfull \hbox (0.30937pt too wide) in paragraph at lines 1459--1460
 \OT1/cmr/m/n/12 room-Name, roomOp-tions ). Op[]iunile spec-ifi-cate ^n al doil
 ea parametru
  []
 
-
-Overfull \hbox (2.79872pt too wide) in paragraph at lines 1453--1454
+[61]
+Overfull \hbox (2.79872pt too wide) in paragraph at lines 1460--1461
 \OT1/cmr/m/n/12 work.JoinRandomRoom(), care ^n spate func[]ioneaza ^n modul 
 urmator:
  []
 
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 1457--1459
+
+Underfull \hbox (badness 10000) in paragraph at lines 1464--1466
 
  []
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1460.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1467.
 
 
-LaTeX Warning: Command \textgreater invalid in math mode on input line 1460.
+LaTeX Warning: Command \textgreater invalid in math mode on input line 1467.
 
 
-Overfull \hbox (18.26106pt too wide) in paragraph at lines 1460--1461
-[][]\OT1/cmr/m/n/12 Incarcarea nivelu-lui se re-al-izeaza folosind metoda Ph
-o-ton-Net-work.LoadLevel(
+Overfull \hbox (18.26106pt too wide) in paragraph at lines 1467--1468
+[][]\OT1/cmr/m/n/12 Incarcarea nivelu-lui se re-al-izeaza folosind metoda Pho
+-ton-Net-work.LoadLevel(
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1469--1471
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1472--1474
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1475--1477
-
- []
-
-[61]
-Underfull \hbox (badness 10000) in paragraph at lines 1478--1480
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1481--1483
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1484--1486
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1487--1489
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1490--1492
+Underfull \hbox (badness 10000) in paragraph at lines 1476--1478
 
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 1493--1495
+Underfull \hbox (badness 10000) in paragraph at lines 1479--1481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1482--1484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1487
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1488--1490
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1491--1493
 
  []
 
 [63]
-Underfull \hbox (badness 10000) in paragraph at lines 1516--1518
+Underfull \hbox (badness 10000) in paragraph at lines 1494--1496
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1519--1521
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1499
 
  []
 
-[64] [65]
-Overfull \hbox (0.74455pt too wide) in paragraph at lines 1570--1571
+
+Underfull \hbox (badness 10000) in paragraph at lines 1500--1502
+
+ []
+
+<./images//fireDemon.png, id=765, 377.7312pt x 220.4235pt>
+File: ./images//fireDemon.png Graphic file (type png)
+<use ./images//fireDemon.png>
+Package pdftex.def Info: ./images//fireDemon.png  used on input line 1514.
+(pdftex.def)             Requested size: 390.0pt x 227.58694pt.
+[64] [65 <./images//fireDemon.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1530--1532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1533--1535
+
+ []
+
+[66] [67]
+<./images//betterMachineGun.png, id=793, 363.9999pt x 155.3805pt>
+File: ./images//betterMachineGun.png Graphic file (type png)
+<use ./images//betterMachineGun.png>
+Package pdftex.def Info: ./images//betterMachineGun.png  used on input line 156
+5.
+(pdftex.def)             Requested size: 390.0pt x 166.49255pt.
+
+Overfull \hbox (0.74455pt too wide) in paragraph at lines 1589--1590
 []\OT1/cmr/m/n/12 Ini[]ial am venit cu mai multe con-cepte pen-tru mon[]trii ca
 re pot fi adauga[]i
  []
 
-[66]
-Underfull \hbox (badness 10000) in paragraph at lines 1582--1584
+[68 <./images//betterMachineGun.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1601--1603
 
  []
 
-[67] [68] (licenta.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1612--1614
+
+ []
+
+[69]
+Underfull \hbox (badness 10000) in paragraph at lines 1615--1617
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1618--1620
+
+ []
+
+
+Overfull \hbox (15.66246pt too wide) in paragraph at lines 1621--1623
+[]\OT1/cmr/m/n/12 Jocul rezul-tat con[]ine o mul-ti-tu-dine de sis-teme com-ple
+xe care interac[]ioneaza
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1621--1623
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1624--1626
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1629
+
+ []
+
+[70]
+Underfull \hbox (badness 10000) in paragraph at lines 1652--1653
+[]\OT1/cmr/m/n/12 https://doc.photonengine.com/en-us/pun/current/getting-starte
+d/pun-
+ []
+
+[71] (licenta.aux)
+Package rerunfilecheck Info: File `licenta.out' has not changed.
+(rerunfilecheck)             Checksum: C609B54AC6A23D6C3B3363BC67BEC5C4;13519.
+ ) 
 Here is how much of TeX's memory you used:
- 18285 strings out of 479334
- 342113 string characters out of 2857085
- 619642 words of memory out of 3000000
- 35398 multiletter control sequences out of 15000+200000
+ 23627 strings out of 479334
+ 416881 string characters out of 2857085
+ 699368 words of memory out of 3000000
+ 40445 multiletter control sequences out of 15000+200000
  415703 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,10n,88p,1479b,638s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\opria\AppData\Local\MiKTeX\fonts/pk/ljfour/
-jknappen/ec/dpi600\tcrm1200.pk><C:/Users/opria/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/opria/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmbx6.pfb><C:/Users/opria/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/opria/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/opr
-ia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/
-Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12
-.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
-cm/cmmi6.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmmi8.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/opria/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/opria/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/opria/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/opria/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/
-opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on licenta.pdf (68 pages, 5214567 bytes).
+ 87i,8n,88p,1481b,640s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\opria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx6.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx7.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/opria/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/opria/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/opria/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/
+opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
+:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr6.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr8.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb><C:/Users/opria/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/opria/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/opria/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb>
+Output written on licenta.pdf (71 pages, 7749662 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 918 PDF objects out of 1000 (max. 8388607)
+ 193 named destinations out of 1000 (max. 500000)
+ 711 words of extra memory for PDF output out of 10000 (max. 10000000)
 
