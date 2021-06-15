@@ -104,12 +104,12 @@ PrefabInstance:
         type: 3}
       propertyPath: firePoint
       value: 
-      objectReference: {fileID: 3166887601327922479}
+      objectReference: {fileID: 0}
     - target: {fileID: 8719341276555015247, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
         type: 3}
       propertyPath: partToRotate
       value: 
-      objectReference: {fileID: 3452206683847846471}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec7e3d09dc8fcc64394b00aca8214c9e, type: 3}
 --- !u!1 &8695375344672817697 stripped
@@ -130,15 +130,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f01e8ef7a06dd4283bb1725645c119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &3452206683847846471 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7327029369964015415, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
-    type: 3}
-  m_PrefabInstance: {fileID: 5352077170505532784}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3166887601327922479 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7040655272759040095, guid: ec7e3d09dc8fcc64394b00aca8214c9e,
-    type: 3}
-  m_PrefabInstance: {fileID: 5352077170505532784}
-  m_PrefabAsset: {fileID: 0}
