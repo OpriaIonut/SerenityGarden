@@ -6,6 +6,7 @@ using Photon.Pun;
 
 namespace SerenityGarden
 {
+    [System.Serializable]
     public enum TurretType
     {
         PlayerBase,

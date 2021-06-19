@@ -78,6 +78,7 @@
 		<type fullname="SerenityGarden.Commander" preserve="nothing"/>
 		<type fullname="SerenityGarden.CommanderScriptable" preserve="nothing"/>
 		<type fullname="SerenityGarden.CommanderUI" preserve="nothing"/>
+		<type fullname="SerenityGarden.ConnectionStatusChecker" preserve="nothing"/>
 		<type fullname="SerenityGarden.EnemyAmbusher" preserve="nothing"/>
 		<type fullname="SerenityGarden.EnemyFlying" preserve="nothing"/>
 		<type fullname="SerenityGarden.EnemyMelee" preserve="nothing"/>
@@ -102,6 +103,7 @@
 		<type fullname="SerenityGarden.PlayerBase" preserve="nothing"/>
 		<type fullname="SerenityGarden.ProcessInitializationManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.RaidStageSelection" preserve="nothing"/>
+		<type fullname="SerenityGarden.RoomEntry" preserve="nothing"/>
 		<type fullname="SerenityGarden.RoomPlayerListEntry" preserve="nothing"/>
 		<type fullname="SerenityGarden.SceneClickManager" preserve="nothing"/>
 		<type fullname="SerenityGarden.SceneIndependentScriptsSpawner" preserve="nothing"/>
@@ -126,8 +128,6 @@
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.Bullet" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.LobbyTopPanel" preserve="nothing"/>
-		<type fullname="Photon.Pun.Demo.Asteroids.RoomListEntry" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.Asteroids.Spaceship" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.PunBasics.CameraWork" preserve="nothing"/>
 		<type fullname="Photon.Pun.Demo.PunBasics.PlayerAnimatorManager" preserve="nothing"/>
@@ -139,7 +139,6 @@
 	<assembly fullname="PhotonUnityNetworking.Utilities">
 		<type fullname="Photon.Pun.UtilityScripts.EventSystemSpawner" preserve="nothing"/>
 		<type fullname="Photon.Pun.UtilityScripts.PlayerNumbering" preserve="nothing"/>
-		<type fullname="Photon.Pun.UtilityScripts.TextButtonTransition" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking">
 		<type fullname="Photon.Pun.PhotonAnimatorView" preserve="nothing"/>
@@ -204,7 +203,9 @@
 		<type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
+		<type fullname="TMPro.TMP_Dropdown" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
+		<type fullname="TMPro.TMP_InputField" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
@@ -216,14 +217,13 @@
 		<type fullname="UnityEngine.UI.Button" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.Dropdown" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GridLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.HorizontalLayoutGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
-		<type fullname="UnityEngine.UI.InputField" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.LayoutElement" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Mask" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.RectMask2D" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ScrollRect" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Scrollbar" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Shadow" preserve="nothing"/>

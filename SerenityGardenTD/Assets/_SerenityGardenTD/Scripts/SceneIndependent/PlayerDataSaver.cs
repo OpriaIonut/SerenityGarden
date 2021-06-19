@@ -69,14 +69,25 @@ namespace SerenityGarden
 
         public void SaveData()
         {
-            string playerFileData = JsonConvert.SerializeObject(playerData, Formatting.Indented);
-            string permanentUpgradesFileData = JsonConvert.SerializeObject(dataRetainer.GetPermanentUpgrades(), Formatting.Indented);
+            string playerFileData = JsonUtility.ToJson(playerData, true);
 
-            //string playerFileData = "dasdasdasfdafa";
-            //string permanentUpgradesFileData = "ashcf923yrf78ecjo wdlobiu[['dq[w;\'acmc81092e";
+            TurretPermanentUpgrades[] dataRetainerUpgrades = dataRetainer.GetPermanentUpgrades();
+            PermanentUpgradeSaver permanentUpgradeData = new PermanentUpgradeSaver();
+            for(int index = 0; index < dataRetainerUpgrades.Length; index++)
+            {
+                PermanentUpgradeSaveData item = new PermanentUpgradeSaveData();
 
-            playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
-            permanentUpgradesFileData = DataEncryption.EncryptDecrypt(permanentUpgradesFileData);
+                item.turretType = dataRetainerUpgrades[index].turretType;
+                item.upgrades = dataRetainerUpgrades[index].upgrades;
+
+                permanentUpgradeData.saveData.Add(item);
+            }
+
+            string permanentUpgradesFileData = JsonUtility.ToJson(permanentUpgradeData, true);
+            
+
+            //playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
+            //permanentUpgradesFileData = DataEncryption.EncryptDecrypt(permanentUpgradesFileData);
 
             FileManager.SetFileContents(false, playerFileData, "PlayerSaveData.json");
             FileManager.SetFileContents(false, permanentUpgradesFileData, "PermanentUpgradesSaveData.json");
@@ -86,11 +97,10 @@ namespace SerenityGarden
         {
             try
             {
-                ClearSavedData();
                 string playerFileData = FileManager.GetFileContents(false, "PlayerSaveData.json");
-                playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
+                //playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
 
-                playerData = JsonConvert.DeserializeObject<PlayerData>(playerFileData);
+                playerData = JsonUtility.FromJson<PlayerData>(playerFileData);
                 foreach (StageScriptable stage in stages)
                 {
                     stage.starRanking = 0;
@@ -118,15 +128,15 @@ namespace SerenityGarden
             try
             {
                 string permanentUpgradesFileData = FileManager.GetFileContents(false, "PermanentUpgradesSaveData.json");
-                permanentUpgradesFileData = DataEncryption.EncryptDecrypt(permanentUpgradesFileData);
-                TurretPermanentUpgrades[] loadedUpgrades = JsonConvert.DeserializeObject<TurretPermanentUpgrades[]>(permanentUpgradesFileData);
+                //permanentUpgradesFileData = DataEncryption.EncryptDecrypt(permanentUpgradesFileData);
+                PermanentUpgradeSaver loadedUpgrades = JsonUtility.FromJson<PermanentUpgradeSaver>(permanentUpgradesFileData);
 
                 TurretPermanentUpgrades[] dataRetainerUpgrades = dataRetainer.GetPermanentUpgrades();
-                for (int index = 0; index < loadedUpgrades.Length; index++)
+                for (int index = 0; index < loadedUpgrades.saveData.Count; index++)
                 {
-                    dataRetainerUpgrades[index].upgrades[0] = loadedUpgrades[index].upgrades[0];
-                    dataRetainerUpgrades[index].upgrades[1] = loadedUpgrades[index].upgrades[1];
-                    dataRetainerUpgrades[index].upgrades[2] = loadedUpgrades[index].upgrades[2];
+                    dataRetainerUpgrades[index].upgrades[0] = loadedUpgrades.saveData[index].upgrades[0];
+                    dataRetainerUpgrades[index].upgrades[1] = loadedUpgrades.saveData[index].upgrades[1];
+                    dataRetainerUpgrades[index].upgrades[2] = loadedUpgrades.saveData[index].upgrades[2];
                 }
             }
             catch (FileNotFoundException)

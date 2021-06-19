@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using Photon.Pun.Demo.Asteroids;
+using TMPro;
 
 namespace SerenityGarden
 {
@@ -13,7 +14,7 @@ namespace SerenityGarden
         [Header("Login Panel")]
         public GameObject LoginPanel;
 
-        public InputField PlayerNameInput;
+        public TMP_InputField PlayerNameInput;
 
         [Header("Selection Panel")]
         public GameObject SelectionPanel;
@@ -21,7 +22,7 @@ namespace SerenityGarden
         [Header("Create Room Panel")]
         public GameObject CreateRoomPanel;
 
-        public InputField RoomNameInputField;
+        public TMP_InputField RoomNameInputField;
 
         [Header("Join Random Room Panel")]
         public GameObject JoinRandomRoomPanel;
@@ -34,7 +35,8 @@ namespace SerenityGarden
 
         [Header("Inside Room Panel")]
         public GameObject InsideRoomPanel;
-        public Dropdown bossDifficultyDropdown;
+        public GameObject PlayerInfoSpawnParent;
+        public TMP_Dropdown bossDifficultyDropdown;
         public BossScriptableObject[] bossDifficulties;
 
         public Button StartGameButton;
@@ -131,7 +133,7 @@ namespace SerenityGarden
             foreach (Player p in PhotonNetwork.PlayerList)
             {
                 GameObject entry = Instantiate(PlayerListEntryPrefab);
-                entry.transform.SetParent(InsideRoomPanel.transform);
+                entry.transform.SetParent(PlayerInfoSpawnParent.transform);
                 entry.transform.localScale = Vector3.one;
                 entry.GetComponent<RoomPlayerListEntry>().Initialize(p.ActorNumber, p.NickName);
 

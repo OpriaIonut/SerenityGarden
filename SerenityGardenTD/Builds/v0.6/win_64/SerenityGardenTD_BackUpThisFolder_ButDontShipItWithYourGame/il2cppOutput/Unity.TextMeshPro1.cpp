@@ -288,7 +288,7 @@ struct IEqualityComparer_1_tA111E8E29826F4195DBA282CAAD4CFD77A11D250;
 // System.Collections.Generic.IEqualityComparer`1<System.UInt32>
 struct IEqualityComparer_1_t8D13638D3E8C85B2BF37618A54F8C19DD8DF2523;
 // System.Collections.Generic.IList`1<System.Int32>
-struct IList_1_t946CA250FDCDAF3493418F5354C7D62897FA0DE8;
+struct IList_1_t775DFC742169D06DA26DB18E9AB591BEB22B7504;
 // System.Collections.Generic.LinkedList`1<System.Action`1<UnityEngine.Object>>
 struct LinkedList_1_tCB95761F69F2A18A04796353C9539D826966B2F6;
 // System.Collections.Generic.List`1<System.Int32>
@@ -756,7 +756,7 @@ IL2CPP_EXTERN_C RuntimeClass* Graphic_tBA2C3EF11D3DAEBB57F6879AB0BB4F8BD40D00D8_
 IL2CPP_EXTERN_C RuntimeClass* HashSet_1_t2BC1A062E48809D18CE313B19D603CA8BA5A0671_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ICollection_1_t13350944EDE0647A1E75DFF464D6810F710766BB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t7218B22548186B208D65EA5B7870503810A2D15A_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* IList_1_t946CA250FDCDAF3493418F5354C7D62897FA0DE8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IList_1_t775DFC742169D06DA26DB18E9AB591BEB22B7504_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IMaterialModifier_tAC8DDB479CEB6915244BA50AE95BF3BBF9F2E84C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t2B9E4FDDDB9F0A00EC0AC631BA2DA915EB1ECF83_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t585191389E07734F19F3156FF88FB3EF4800D102_il2cpp_TypeInfo_var;
@@ -50653,7 +50653,7 @@ IL_001f:
 		RuntimeObject* L_5 = ___sortingOrder0;
 		int32_t L_6 = V_3;
 		NullCheck(L_5);
-		int32_t L_7 = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(0 /* !0 System.Collections.Generic.IList`1<System.Int32>::get_Item(System.Int32) */, IList_1_t946CA250FDCDAF3493418F5354C7D62897FA0DE8_il2cpp_TypeInfo_var, L_5, L_6);
+		int32_t L_7 = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(0 /* !0 System.Collections.Generic.IList`1<System.Int32>::get_Item(System.Int32) */, IList_1_t775DFC742169D06DA26DB18E9AB591BEB22B7504_il2cpp_TypeInfo_var, L_5, L_6);
 		V_1 = L_7;
 		goto IL_0034;
 	}
@@ -50664,7 +50664,7 @@ IL_002a:
 		RuntimeObject* L_8 = ___sortingOrder0;
 		int32_t L_9 = V_1;
 		NullCheck(L_8);
-		int32_t L_10 = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(0 /* !0 System.Collections.Generic.IList`1<System.Int32>::get_Item(System.Int32) */, IList_1_t946CA250FDCDAF3493418F5354C7D62897FA0DE8_il2cpp_TypeInfo_var, L_8, L_9);
+		int32_t L_10 = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(0 /* !0 System.Collections.Generic.IList`1<System.Int32>::get_Item(System.Int32) */, IList_1_t775DFC742169D06DA26DB18E9AB591BEB22B7504_il2cpp_TypeInfo_var, L_8, L_9);
 		V_1 = L_10;
 	}
 

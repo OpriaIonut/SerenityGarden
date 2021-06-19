@@ -10,44 +10,23 @@ using Photon.Pun;
 namespace SerenityGarden
 {
     /// <summary>
-    /// Class used to display the list in the editor.
-    /// </summary>
-    public class BlockTypes
-    {
-        public List<int> list { get; set; }
-        public BlockTypes(List<int> values)
-        {
-            list = values;
-        }
-    }
-
-    public class BlockSpawnIds
-    {
-        public List<int> list { get; set; }
-        public BlockSpawnIds(List<int> values)
-        {
-            list = values;
-        }
-    }
-
-    /// <summary>
     /// Class used for saving grid preset to a json file.
     /// </summary>
     public class GridSaveData
     {
-        public float diameter { get; set; }
-        public float offset { get; set; }
-        public float mapScaleOffset { get; set; }
-        public BlockTypes blockTypes { get; set; }
-        public BlockSpawnIds blockSpawnIds { get; set; }
+        [SerializeField] public float diameter;
+        [SerializeField] public float offset;
+        [SerializeField] public float mapScaleOffset;
+        [SerializeField] public List<int> blockTypes;
+        [SerializeField] public List<int> blockSpawnIds;
 
         public GridSaveData(float _diameter, float _offset, float _mapScaleOffset, List<int> hexagonTypes, List<int> spawnId)
         {
             diameter = _diameter;
             offset = _offset;
             mapScaleOffset = _mapScaleOffset;
-            blockTypes = new BlockTypes(hexagonTypes);
-            blockSpawnIds = new BlockSpawnIds(spawnId);
+            blockTypes = hexagonTypes;
+            blockSpawnIds = spawnId;
         }
     }
 
@@ -212,8 +191,8 @@ namespace SerenityGarden
                 HexagonalBlock commanderSpawnBlock = null;
                 for (int index = 0; index < gridCells.Count; index++)
                 {
-                    gridCells[index].Type = (HexagonType)saveData.blockTypes.list[index];
-                    gridCells[index].spawnPointsID = (SpawnPointsID)saveData.blockSpawnIds.list[index];
+                    gridCells[index].Type = (HexagonType)saveData.blockTypes[index];
+                    gridCells[index].spawnPointsID = (SpawnPointsID)saveData.blockSpawnIds[index];
                     if (isInitialized)
                     {
                         if (!PhotonNetwork.IsConnected || PhotonNetwork.IsMasterClient)

@@ -16,13 +16,14 @@ using Photon.Realtime;
 using Photon.Pun.UtilityScripts;
 using Photon.Pun;
 using Photon.Pun.Demo.Asteroids;
+using TMPro;
 
 namespace SerenityGarden
 {
     public class RoomPlayerListEntry : MonoBehaviour
     {
         [Header("UI References")]
-        public Text PlayerNameText;
+        public TextMeshProUGUI PlayerNameText;
 
         public Image PlayerColorImage;
         public Button PlayerReadyButton;
@@ -92,7 +93,7 @@ namespace SerenityGarden
 
         public void SetPlayerReady(bool playerReady)
         {
-            PlayerReadyButton.GetComponentInChildren<Text>().text = playerReady ? "Ready!" : "Ready?";
+            PlayerReadyButton.GetComponentInChildren<TextMeshProUGUI>().text = playerReady ? "Ready!" : "Ready?";
             PlayerReadyImage.enabled = playerReady;
         }
     }

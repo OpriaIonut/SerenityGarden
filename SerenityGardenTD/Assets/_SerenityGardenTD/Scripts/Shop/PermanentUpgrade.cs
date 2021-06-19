@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace SerenityGarden
 {
+    [System.Serializable]
     public enum UpgradeType
     {
         FireRate,
@@ -15,14 +16,14 @@ namespace SerenityGarden
     [System.Serializable]
     public class PermanentUpgrade
     {
-        public UpgradeType type;
-        public float minMultiplier = 1;
-        public float maxMultiplier = 3;
+        [SerializeField] public UpgradeType type;
+        [SerializeField] public float minMultiplier = 1;
+        [SerializeField] public float maxMultiplier = 3;
 
-        public int startCost;
-        public float costMultiplierPerLevel = 1.7f;
+        [SerializeField] public int startCost;
+        [SerializeField] public float costMultiplierPerLevel = 1.7f;
 
-        public int currentLevel = 0;
-        public int maxLevel = 10;
+        [SerializeField] public int currentLevel = 0;
+        [SerializeField] public int maxLevel = 10;
     }
 }

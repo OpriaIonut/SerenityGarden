@@ -750,7 +750,6 @@
             "usedInScenes": [
                 "Assets/_SerenityGardenTD/Scenes/MainMenu.unity",
                 "Assets/_SerenityGardenTD/Scenes/StageSelection.unity",
-                "Assets/_SerenityGardenTD/Scenes/Shop.unity",
                 "Assets/_SerenityGardenTD/Scenes/BattleScene.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopLobby.unity",
                 "Assets/_SerenityGardenTD/Scenes/CoopBattleScene.unity"
@@ -981,6 +980,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "SerenityGarden.ConnectionStatusChecker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "SerenityGarden.EnemyAmbusher",
             "moduleName": "",
             "usedInScenes": []
@@ -1149,6 +1155,13 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "SerenityGarden.RoomEntry",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "SerenityGarden.RoomPlayerListEntry",
             "moduleName": "",
             "usedInScenes": []
@@ -1303,20 +1316,6 @@
         {
             "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.LobbyTopPanel",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.RoomListEntry",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.Spaceship",
             "moduleName": "",
             "usedInScenes": []
@@ -1374,13 +1373,6 @@
             "managedAssemblyName": "PhotonUnityNetworking.Utilities.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Photon.Pun.UtilityScripts.PlayerNumbering",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "PhotonUnityNetworking.Utilities.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "Photon.Pun.UtilityScripts.TextButtonTransition",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1765,7 +1757,21 @@
         {
             "managedAssemblyName": "Unity.TextMeshPro.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_Dropdown",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "TMPro.TMP_FontAsset",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TMP_InputField",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1835,13 +1841,6 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.UI.Dropdown",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "UnityEngine.UI.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.GraphicRaycaster",
             "moduleName": "",
             "usedInScenes": []
@@ -1870,13 +1869,6 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.UI.InputField",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "UnityEngine.UI.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.LayoutElement",
             "moduleName": "",
             "usedInScenes": []
@@ -1885,6 +1877,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Mask",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.RectMask2D",
             "moduleName": "",
             "usedInScenes": []
         },

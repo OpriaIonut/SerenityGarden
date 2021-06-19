@@ -2,8 +2,7 @@
   "diameter": 0.15,
   "offset": -0.025,
   "mapScaleOffset": 1.0,
-  "blockTypes": {
-    "list": [
+  "blockTypes": [
       0,
       0,
       0,
@@ -180,10 +179,8 @@
       0,
       0,
       0
-    ]
-  },
-  "blockSpawnIds": {
-    "list": [
+    ],
+  "blockSpawnIds": [
       0,
       0,
       0,
@@ -361,5 +358,4 @@
       0,
       0
     ]
-  }
 }

@@ -7,11 +7,12 @@ namespace SerenityGarden
     /// <summary>
     /// Class that will hold all player-related data so it can be saved to the disk.
     /// </summary>
+    [System.Serializable]
     public class PlayerData
     {
-        public List<StageSaveData> stageData;
+        [SerializeField] public List<StageSaveData> stageData;
 
-        private int money;
+        [SerializeField] private int money;
         public int Money
         {
             get { return money; }

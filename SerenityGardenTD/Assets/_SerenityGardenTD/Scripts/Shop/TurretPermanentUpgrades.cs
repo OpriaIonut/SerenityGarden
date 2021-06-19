@@ -7,8 +7,8 @@ namespace SerenityGarden
     [CreateAssetMenu(fileName = "PermanentUpgrade", menuName = "ScriptableObjects/TurretPermanentUpgrade")]
     public class TurretPermanentUpgrades : ScriptableObject
     {
-        public TurretType turretType;
-        public PermanentUpgrade[] upgrades;
+        [SerializeField] public TurretType turretType;
+        [SerializeField] public PermanentUpgrade[] upgrades;
 
         public float GetMultiplier(UpgradeType type)
         {

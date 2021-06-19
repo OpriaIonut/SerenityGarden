@@ -9,14 +9,14 @@ namespace SerenityGarden
     {
         public static void SaveData(GridSaveData data, string fileLocation)
         {
-            string jsonData = JsonConvert.SerializeObject(data, Formatting.Indented);
+            string jsonData = JsonUtility.ToJson(data, true);
             Debug.Log(jsonData);
             FileManager.SetFileContents(true, jsonData, fileLocation);
         }
 
         public static GridSaveData LoadData(string fileContents)
         {
-            GridSaveData data = JsonConvert.DeserializeObject<GridSaveData>(fileContents);
+            GridSaveData data = JsonUtility.FromJson<GridSaveData>(fileContents);
             return data;
         }
     }

@@ -55,6 +55,9 @@ namespace SerenityGarden
 
         public void UpdateMaterial()
         {
+            if (Application.isPlaying && meshRend == null)
+                return;
+
             if (meshRend == null)
                 meshRend = gameObject.GetComponent<MeshRenderer>();
             meshRend.material = materialList[(int)type];

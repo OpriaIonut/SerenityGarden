@@ -7,10 +7,11 @@ namespace SerenityGarden
     /// <summary>
     /// Class that will hold data related to each stage so it can be saved to the disk.
     /// </summary>
+    [System.Serializable]
     public class StageSaveData
     {
-        public string stageName;
-        public int stageStars;
+        [SerializeField] public string stageName;
+        [SerializeField] public int stageStars;
 
         public StageSaveData(string _name, int _stars)
         {
