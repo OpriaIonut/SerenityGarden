@@ -10,6 +10,7 @@ namespace SerenityGarden
         Spawn1,
         Spawn2,
         Spawn3,
+        Spawn4,
         All
     }
 
