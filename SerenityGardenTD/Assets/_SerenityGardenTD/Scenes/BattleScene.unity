@@ -1380,17 +1380,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.6657586
+      value: 3.9094484
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.6657586
+      value: 3.9094484
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.6657586
+      value: 3.9094484
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
@@ -3331,14 +3331,14 @@ MonoBehaviour:
     type: 3}
   hexagonPrefab: {fileID: 8117511866987038919, guid: 9d92052a17273bd44b424af411f1d20e,
     type: 3}
-  diameter: 0.12
-  offset: -0.02
+  diameter: 0.15
+  offset: -0.025
   mapScaleOffset: 1
-  mapPresetFile: Stages/Stage 6-5.json
+  mapPresetFile: Stages/Stage 2-1.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
-  scaleFact: 3.1077473
-  walkableArea: {fileID: 269218322}
+  scaleFact: 0
+  walkableArea: {fileID: 280687427}
 --- !u!4 &696150181
 Transform:
   m_ObjectHideFlags: 0
@@ -8342,17 +8342,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3f64697dac63c3345b06d6f0102addf6,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.149128
+      value: 3.3655102
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3f64697dac63c3345b06d6f0102addf6,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.149128
+      value: 3.3655102
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3f64697dac63c3345b06d6f0102addf6,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.149128
+      value: 3.3655102
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3f64697dac63c3345b06d6f0102addf6,
         type: 3}

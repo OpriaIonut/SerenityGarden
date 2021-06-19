@@ -15,7 +15,10 @@ MonoBehaviour:
   stageName: Stage 4-4
   stageFilePath: Stages
   mapObj: {fileID: 919132149155446097, guid: 1831ffe3913a8554c92c5f44d5aaa41b, type: 3}
-  waves: []
+  waves:
+  - {fileID: 11400000, guid: 2c341f1e54c3d3b4599593c2850444c8, type: 2}
+  - {fileID: 11400000, guid: 441f2678783dbbf42a8e5740d0cf603e, type: 2}
+  - {fileID: 11400000, guid: 37d90a5450da3a3438e947e0d995a849, type: 2}
   isBossStage: 0
   baseReward: 213
   starRanking: 0

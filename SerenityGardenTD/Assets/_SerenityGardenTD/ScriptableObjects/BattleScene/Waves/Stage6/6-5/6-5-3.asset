@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb7ad9276a070d745b6d3cc273799326, type: 3}
-  m_Name: 6-5-2
+  m_Name: 6-5-3
   m_EditorClassIdentifier: 
   waveEnemies: []
   spawnPointsID: 0
