@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4169,7 +4169,34 @@ MonoBehaviour:
   stages:
   - {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   - {fileID: 11400000, guid: 2642a33f71905f147825d41076f6359b, type: 2}
-  - {fileID: 11400000, guid: 4a2cb216a6730ed4a8cda92e2905c45c, type: 2}
+  - {fileID: 11400000, guid: 488bfe9c86fdabe4c9d49c151040124a, type: 2}
+  - {fileID: 11400000, guid: a6fb6b326f1573c42b5b7af03e6e5696, type: 2}
+  - {fileID: 11400000, guid: 01dce95b8f1e0d94d8b99c7c77f94d64, type: 2}
+  - {fileID: 11400000, guid: f04f983eb0f8c054d8992d6644792159, type: 2}
+  - {fileID: 11400000, guid: b34396b7d60f78d41b7ca0e6f6497741, type: 2}
+  - {fileID: 11400000, guid: f253b864a1dc0b34597ee47971591f41, type: 2}
+  - {fileID: 11400000, guid: 4d11e4cb4574346459b7e1defb6604f8, type: 2}
+  - {fileID: 11400000, guid: ad2f5910e6effc749bc7f166ceac43ef, type: 2}
+  - {fileID: 11400000, guid: a62f29a882bdbb344adfdaf86df3c0c1, type: 2}
+  - {fileID: 11400000, guid: 56f8e1ae8c89512499ef4422d4459078, type: 2}
+  - {fileID: 11400000, guid: f72008df9269cf44d84eb5f3825d792d, type: 2}
+  - {fileID: 11400000, guid: 557bf663c7805aa4ba5a47e581f19f12, type: 2}
+  - {fileID: 11400000, guid: 0a96a13794a5b9846a6d56f167a4160e, type: 2}
+  - {fileID: 11400000, guid: e8b678caf3e456e428def9e98043fb18, type: 2}
+  - {fileID: 11400000, guid: ea61eccc67bbbeb47b66d1e1b3b414fd, type: 2}
+  - {fileID: 11400000, guid: 86029568a23f61e48b4baa79675f18f4, type: 2}
+  - {fileID: 11400000, guid: 607885b668e7c9446bfadd3747c8c320, type: 2}
+  - {fileID: 11400000, guid: 5a90d467ecd1a5d4d851299205fd1471, type: 2}
+  - {fileID: 11400000, guid: 267a2a159c499ea4b9910c167da0dee5, type: 2}
+  - {fileID: 11400000, guid: 581035a3f117ef44f841ce7fa7703863, type: 2}
+  - {fileID: 11400000, guid: 8e9fedd4aa9d7f6458c456de88255441, type: 2}
+  - {fileID: 11400000, guid: add18cdb23286a040afbde5c16f6981a, type: 2}
+  - {fileID: 11400000, guid: f9d924e1281407c44ba05044677774a6, type: 2}
+  - {fileID: 11400000, guid: 07ac9f8754759c94b98f52922c4d32bf, type: 2}
+  - {fileID: 11400000, guid: 61aea613536aed440b344d0c4a7ea863, type: 2}
+  - {fileID: 11400000, guid: 4ab5bc9cc1d36cc48b322cd36ba133de, type: 2}
+  - {fileID: 11400000, guid: 6504f3be6a2d0b9428a9076e18d5fcf5, type: 2}
+  - {fileID: 11400000, guid: 15f640515803d744cba9c7b6cb65466c, type: 2}
   permanentUpgrades:
   - {fileID: 11400000, guid: bb65216c9d4e6644d96932881fa870be, type: 2}
   - {fileID: 11400000, guid: e42b33a460f83454098063c3794f2603, type: 2}

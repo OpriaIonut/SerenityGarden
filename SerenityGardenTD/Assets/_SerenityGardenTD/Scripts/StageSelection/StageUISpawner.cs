@@ -9,8 +9,6 @@ namespace SerenityGarden
         public GameObject stageUIPrefab;
         public Transform spawnParent;
 
-        public List<StageScriptable> allStages;
-
         public void Awake()
         {
             BaseAwakeCalls();
@@ -33,6 +31,7 @@ namespace SerenityGarden
 
         public override void Init()
         {
+            StageScriptable[] allStages = PlayerDataSaver.instance.GetStages();
             foreach (StageScriptable item in allStages)
             {
                 StageUIBlock script = Instantiate(stageUIPrefab, spawnParent).GetComponent<StageUIBlock>();

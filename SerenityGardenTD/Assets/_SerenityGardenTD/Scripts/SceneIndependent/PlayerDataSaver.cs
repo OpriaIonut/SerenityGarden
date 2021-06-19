@@ -34,7 +34,7 @@ namespace SerenityGarden
         private SceneDataRetainer dataRetainer;
         private StageScriptable[] stages;
         public void SetStages(StageScriptable[] _stages) { stages = _stages; }
-
+        public StageScriptable[] GetStages() { return stages; }
 
         private void Start()
         {
