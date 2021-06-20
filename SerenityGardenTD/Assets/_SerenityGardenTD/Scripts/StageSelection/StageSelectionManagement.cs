@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace SerenityGarden
 {
@@ -29,6 +30,7 @@ namespace SerenityGarden
 
         public TextMeshProUGUI descriptionText;
         public TextMeshProUGUI moneyText;
+        public RawImage preview;
 
         private StageScriptable selectedStage;
 
@@ -51,6 +53,7 @@ namespace SerenityGarden
         {
             descriptionText.text = stageBlock.generatedDescription;
             selectedStage = stageBlock.stage;
+            preview.texture = stageBlock.preview;
         }
 
         public void _StartStage()

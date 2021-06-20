@@ -13,6 +13,7 @@ namespace SerenityGarden
 
         [HideInInspector] public string generatedDescription;
         [HideInInspector] public StageScriptable stage;
+        [HideInInspector] public Texture2D preview;
 
 
         private void Awake()
@@ -26,6 +27,7 @@ namespace SerenityGarden
         {
             stage = _stage;
             titleText.text = stage.stageName;
+            preview = _stage.preview;
 
             if (stage.starRanking > 0)
                 stars[0].SetActive(true);
@@ -48,6 +50,8 @@ namespace SerenityGarden
 
 
             generatedDescription = stage.stageName + "\n\n";
+
+            generatedDescription += "Number of waves: " + stage.waves.Length + "\n\n";
 
             generatedDescription += "Enemies encountered: \n";
             foreach (KeyValuePair<string, int> entry in waveEnemies)

@@ -19,6 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 31f8f5718a7f71140902492ee60e2466, type: 2}
   - {fileID: 11400000, guid: d2122edc9db24c34d97c651aa1fbd459, type: 2}
   - {fileID: 11400000, guid: 6d9c18649ae68d04f88c5fe41f7a4218, type: 2}
+  preview: {fileID: 2800000, guid: 23ff6e7c447798b4f972c3450efcc7b1, type: 3}
   isBossStage: 0
   baseReward: 114
   starRanking: 0

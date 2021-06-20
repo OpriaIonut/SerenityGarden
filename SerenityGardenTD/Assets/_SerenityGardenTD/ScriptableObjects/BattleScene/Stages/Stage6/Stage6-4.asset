@@ -17,6 +17,7 @@ MonoBehaviour:
   mapObj: {fileID: 919132149155446097, guid: 7a4ac978bc986694da770eb447225dfc, type: 3}
   waves:
   - {fileID: 11400000, guid: 622c50988f67d15468367f342fd7a290, type: 2}
+  preview: {fileID: 2800000, guid: c3a267e1f341e4d4c9c18ebe877867d4, type: 3}
   isBossStage: 0
   baseReward: 323
   starRanking: 0

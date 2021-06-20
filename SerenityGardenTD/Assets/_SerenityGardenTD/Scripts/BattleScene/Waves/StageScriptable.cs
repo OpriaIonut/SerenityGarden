@@ -12,6 +12,7 @@ namespace SerenityGarden
         public string stageFilePath;
         public GameObject mapObj;
         public WaveScriptable[] waves;
+        public Texture2D preview;
 
         [Header("Raid stage")]
         public bool isBossStage;

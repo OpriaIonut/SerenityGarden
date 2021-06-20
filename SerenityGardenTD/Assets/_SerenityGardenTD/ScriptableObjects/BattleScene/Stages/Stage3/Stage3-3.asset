@@ -18,6 +18,7 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: 2c574be9340988c49b1ea4ea14f93c33, type: 2}
   - {fileID: 11400000, guid: e8b626bf8bd95d245a2118267140a273, type: 2}
+  preview: {fileID: 2800000, guid: fb252885a22ade94c886efce43a6bb0c, type: 3}
   isBossStage: 0
   baseReward: 147
   starRanking: 0

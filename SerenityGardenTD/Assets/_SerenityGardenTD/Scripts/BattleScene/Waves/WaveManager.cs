@@ -26,6 +26,9 @@ namespace SerenityGarden
         }
         #endregion
 
+        public TextMeshProUGUI waveProgressText;
+        public Image waveProgressBar;
+
         public GameObject waveSkipButton;       //Button that will display the remaining time before the next wave
         public GameObject stageStartButton;     //Button that when clicked, will start the game
         public float moneyPerSecondSkip = 3;    //If you choose to skip the wave ddelay, you will receive money based on this
@@ -58,7 +61,10 @@ namespace SerenityGarden
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
-            if(PhotonNetwork.IsConnected)
+            waveProgressBar.fillAmount = 0;
+            waveProgressText.text = "";
+
+            if (PhotonNetwork.IsConnected)
                 stageStartButton.SetActive(false);
 
             //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem
@@ -97,6 +103,8 @@ namespace SerenityGarden
 
         private IEnumerator WaveSpawner(WaveScriptable wave)
         {
+            waveProgressText.text = "Wave " + (currentWaveIndex + 1) + "/" + selectedStage.waves.Length;
+
             //Find a list of spawn points on which we can spawn enemies to. Some enemies will only spawn at certain spawn points, so we should find those specific points based on their SpawnPointsID.
             waveSkipButton.SetActive(false);
             List<HexagonalBlock> targetSpawnPoints = new List<HexagonalBlock>();
@@ -108,6 +116,11 @@ namespace SerenityGarden
             //Even if we take elements randomly, they are still next to eachother, so shuffling it would improve the rng.
             targetSpawnPoints.Shuffle();
 
+            int enemyCount = 0;
+            int currentSpawnIndex = 0;
+            foreach (EnemySpawn item in wave.waveEnemies)
+                enemyCount += item.count;
+
             if (wave.spawnRandomly == false)
             {
                 //If we don't want to spawn them randomly
@@ -118,7 +131,11 @@ namespace SerenityGarden
                         //Then spawn them normally, but randomize the spawn point
                         int randIndex = Random.Range(0, targetSpawnPoints.Count);
                         HexagonalBlock block = targetSpawnPoints[randIndex];
+
                         SpawnEnemy(item.enemy, block);
+
+                        currentSpawnIndex++;
+                        waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
 
                         if (GamePauseManager.instance.GamePaused)
                             yield return null;
@@ -148,6 +165,9 @@ namespace SerenityGarden
                     HexagonalBlock block = targetSpawnPoints[randIndex];
                     SpawnEnemy(enemyToSpawn[0], block);
                     enemyToSpawn.RemoveAt(0);
+
+                    currentSpawnIndex++;
+                    waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
 
                     if (GamePauseManager.instance.GamePaused)
                         yield return null;
