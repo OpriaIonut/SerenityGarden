@@ -12,6 +12,7 @@ namespace SerenityGarden
         public GameObject bulletPrefab;
         public GameObject rangePrefab;  //Range prefab shown when we click on the commander.
         public TMPro.TextMeshProUGUI networkNameText;
+        public Animator anim;
 
         private GameObject rangeObj;
         private HexagonalGrid hexagonalGrid;
@@ -75,6 +76,8 @@ namespace SerenityGarden
 
         #endregion
 
+        protected BossBase boss;
+
         private void Awake()
         {
             hexagonalGrid = FindObjectOfType<HexagonalGrid>();
@@ -91,6 +94,9 @@ namespace SerenityGarden
                 networkNameText.text = photonView.Owner.NickName;
             else
                 networkNameText.transform.parent.parent.gameObject.SetActive(false);
+
+            if (SceneDataRetainer.instance.GetStage().isBossStage)
+                boss = FindObjectOfType<BossBase>();
         }
 
         private void Update()
@@ -99,8 +105,15 @@ namespace SerenityGarden
             {
                 base.BaseUpdateCalls();
 
+                if (Target != null || boss != null)
+                    anim.SetBool("EnemyInRange", true);
+                else
+                    anim.SetBool("EnemyInRange", false);
+
                 if (ReachedDestination == false)
                 {
+                    anim.SetBool("IsMoving", true);
+
                     if (NextBlock == null)
                         FindNextBlock();    //If we don't have a destination, the search for it
                     else
@@ -128,12 +141,14 @@ namespace SerenityGarden
                 }
                 else //Attack only if we reached a destination
                 {
+                    anim.SetBool("IsMoving", false);
+
                     //At certain time intervals check to find if a turret/something that we can attack is in range
                     if (Time.time - LastSearchTargetTime > SearchTargetCooldown)
                         FindTarget();
 
                     //At certain time intervals, attack the target, if it exists
-                    if (Time.time - LastAttackTime > AttackCooldown && Target != null)
+                    if (Time.time - LastAttackTime > AttackCooldown && (Target != null || boss != null))
                         Attack();
                 }
             }
@@ -187,12 +202,24 @@ namespace SerenityGarden
         {
             if (Target != null)
             {
+                anim.SetTrigger("Attack");
                 HelperMethods.RotateObjTowardsTarget(transform, Target.transform.position, true);
 
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
                 bulletScript.SetTarget(Target.gameObject);
+                LastAttackTime = Time.time;
+            }
+            else if(boss != null)
+            {
+                anim.SetTrigger("Attack");
+                HelperMethods.RotateObjTowardsTarget(transform, boss.transform.position, true);
+
+                //Shoot a bullet towards it
+                BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
+                bulletScript.damage = Damage;
+                bulletScript.SetTarget(boss.gameObject);
                 LastAttackTime = Time.time;
             }
         }
@@ -267,13 +294,13 @@ namespace SerenityGarden
             //Scale the object based so that it fits the scale of the map.
             Bounds bounds;
             Bounds hexagonBounds;
-            if (HelperMethods.FindBounds(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
+            if (HelperMethods.FindBoundsSkinnedMesh(gameObject, out bounds) && HelperMethods.FindBounds(HexagonalGrid.instance.gridCells[0].gameObject, out hexagonBounds))
             {
                 float diameter = Mathf.Abs(hexagonBounds.min.x - hexagonBounds.max.x) * 2;
                 float currentDist = HelperMethods.SquaredDistance(bounds.min, bounds.max);
 
                 float targetScale = (diameter * transform.localScale.x) / currentDist;
-                transform.localScale = Vector3.one * targetScale;
+                transform.localScale = Vector3.one * targetScale * 1.25f;
             }
 
             Speed = status.speed;
