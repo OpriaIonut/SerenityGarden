@@ -51,7 +51,7 @@ namespace SerenityGarden
         public override void FindTarget()
         {
             //It can find melee enemies, but who knows, maybe a ranged enemy will be close enough so that it can hit it. It is unlikely, but worth checking for.
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2 * transform.localScale.x);
             EnemyBase _target = null;
             EnemyBase aux;
             float minDist = float.MaxValue;

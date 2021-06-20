@@ -164,7 +164,7 @@ namespace SerenityGarden
                 {
                     //Otherwise, if it has the connections, it means that it's not the instantiation of the turret
                     //So destroy the previous gfx
-                    Destroy(levelGfx);
+                    DestroyImmediate(levelGfx);
 
                     //Instantiate a new one and set up the connections
                     Transform gfxParent = HelperMethods.FindChildWithName(transform, "GFX").transform;
@@ -221,6 +221,15 @@ namespace SerenityGarden
                 DestroyReward = turretUpgradePattern.levelProp[level].sellReward;
             }
 
+            BuildableTurret turretCast = gameObject.GetComponent<BuildableTurret>();
+            if(turretCast != null && turretCast.HasCommander)
+            {
+                Range *= 1.5f;
+                AttackCooldown /= 1.5f;
+                Damage *= 1.5f;
+                CommanderUI.instance.PowerupTarget(gameObject);
+            }
+
             DrawRange(false);
         }
 
@@ -238,10 +247,10 @@ namespace SerenityGarden
             {
                 rangeObj = Instantiate(rangePrefab);
                 rangeObj.transform.position = transform.position;
-                rangeObj.transform.localScale = Vector3.one * range;
+                rangeObj.transform.localScale = transform.localScale * range;
             }
             if (!draw && rangeObj != null)
-                DestroyImmediate(rangeObj);
+                Destroy(rangeObj);
         }
 
         public abstract void FindTarget();
@@ -256,6 +265,11 @@ namespace SerenityGarden
         public abstract void AttackBoss();
         public virtual void Die()
         {
+            if (SceneClickManager.instance.selectedTurret == this)
+            {
+                SceneClickManager.instance.DisablePreviousStates();
+                SceneClickManager.instance.UpdateSelectedReferences();
+            }
             Destroy(this.gameObject);
         }
 

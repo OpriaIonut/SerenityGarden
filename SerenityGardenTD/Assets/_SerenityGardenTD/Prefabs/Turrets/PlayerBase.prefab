@@ -216,8 +216,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.031207087, y: 0.02949752, z: 0.015867194}
-  m_Center: {x: 0.002379544, y: 0.000042763357, z: 0.007472322}
+  m_Size: {x: 0.031207087, y: 0.013949129, z: 0.015867194}
+  m_Center: {x: 0.002379544, y: 0.0006317161, z: 0.007472322}
 --- !u!1 &3668824123785348945
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +305,6 @@ MonoBehaviour:
   networkNameText: {fileID: 7485986335624130442}
   bulletPrefab: {fileID: 6760037018435719773, guid: e0ca4546c60a64244bdabf91f609030a,
     type: 3}
-  debugObj: {fileID: 0}
 --- !u!1 &4790311462234741042
 GameObject:
   m_ObjectHideFlags: 0

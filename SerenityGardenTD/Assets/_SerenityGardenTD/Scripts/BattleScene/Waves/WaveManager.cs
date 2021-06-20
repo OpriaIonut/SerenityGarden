@@ -131,6 +131,9 @@ namespace SerenityGarden
                 {
                     for (int index = 0; index < item.count; index++)
                     {
+                        while (GamePauseManager.instance.GamePaused)
+                            yield return null;
+
                         //Then spawn them normally, but randomize the spawn point
                         int randIndex = Random.Range(0, targetSpawnPoints.Count);
                         HexagonalBlock block = targetSpawnPoints[randIndex];
@@ -143,7 +146,7 @@ namespace SerenityGarden
                             waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
                         }
 
-                        if (GamePauseManager.instance.GamePaused)
+                        while (GamePauseManager.instance.GamePaused)
                             yield return null;
 
                         yield return new WaitForSeconds(enemySpawnDelay);
@@ -166,6 +169,9 @@ namespace SerenityGarden
 
                 while(enemyToSpawn.Count != 0)
                 {
+                    while (GamePauseManager.instance.GamePaused)
+                        yield return null;
+
                     //And spawn the enemies in shuffled order
                     int randIndex = Random.Range(0, targetSpawnPoints.Count);
                     HexagonalBlock block = targetSpawnPoints[randIndex];
@@ -179,7 +185,7 @@ namespace SerenityGarden
                         waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
                     }
 
-                    if (GamePauseManager.instance.GamePaused)
+                    while (GamePauseManager.instance.GamePaused)
                         yield return null;
 
                     yield return new WaitForSeconds(enemySpawnDelay);

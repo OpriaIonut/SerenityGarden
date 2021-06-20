@@ -65,7 +65,7 @@ namespace SerenityGarden
         public HexagonalBlock NextBlock { get; set; }           //The next block that it will move towards
         public float Speed { get; set; } = 1.0f;                //Movement speed
         //Used to set how close enough to the NextBlock until we consider that it reached the destination
-        public float ReachedThreshold { get; set; } = 0.5f;
+        public float ReachedThreshold { get; set; } = 0.1f;
         //Bool to know if it reached the end goal
         public bool ReachedDestination { get; set; } = false;
         #endregion

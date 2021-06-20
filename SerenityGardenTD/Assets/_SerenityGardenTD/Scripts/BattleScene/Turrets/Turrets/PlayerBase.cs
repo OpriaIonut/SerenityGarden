@@ -47,7 +47,7 @@ namespace SerenityGarden
         public override void FindTarget()
         {
             //Search for a target, it can detect any enemy type
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2 * transform.localScale.x);
             EnemyBase _target = null;
             EnemyBase aux;
             float minDist = float.MaxValue;

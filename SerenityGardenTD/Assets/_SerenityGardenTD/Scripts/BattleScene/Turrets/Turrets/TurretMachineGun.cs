@@ -60,7 +60,7 @@ namespace SerenityGarden
         public override void FindTarget()
         {
             //It can hit any enemy type, same as player base
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2 * transform.localScale.x);
             EnemyBase _target = null;
             EnemyBase aux;
             float minDist = float.MaxValue;

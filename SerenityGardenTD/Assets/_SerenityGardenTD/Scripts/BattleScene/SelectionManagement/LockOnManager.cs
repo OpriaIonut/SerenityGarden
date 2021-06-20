@@ -11,6 +11,7 @@ namespace SerenityGarden
         //Reference to the click manager in order to know what we cicked
         private SceneClickManager sceneClickManager;
         private List<Material> previousEnemyMaterials;
+        private List<Material> previousSkinnedEnemyMaterials;
 
         //This variable an property are static in order to access easier the focused enemy
         private static EnemyBase selectedEnemy;
@@ -23,6 +24,7 @@ namespace SerenityGarden
         {
             sceneClickManager = FindObjectOfType<SceneClickManager>();
             previousEnemyMaterials = new List<Material>();
+            previousSkinnedEnemyMaterials = new List<Material>();
         }
 
         /// <summary>
@@ -40,25 +42,47 @@ namespace SerenityGarden
             else
             {
                 EnemyBase previousEnemy = selectedEnemy;
-
                 selectedEnemy = sceneClickManager.selectedEnemy;
 
-                if (previousEnemyMaterials.Count != 0 && previousEnemy != null)
+                if(previousEnemy != null)
                 {
-                    int listIndex = 0;
-                    MeshRenderer[] previousRenderers = previousEnemy.gameObject.GetComponentsInChildren<MeshRenderer>();
-                    foreach (MeshRenderer rend in previousRenderers)
+                    if (previousEnemyMaterials.Count != 0)
                     {
-                        rend.material = previousEnemyMaterials[listIndex];
-                        listIndex++;
+                        int listIndex = 0;
+                        MeshRenderer[] previousRenderers = previousEnemy.gameObject.GetComponentsInChildren<MeshRenderer>();
+                        foreach (MeshRenderer rend in previousRenderers)
+                        {
+                            rend.material = previousEnemyMaterials[listIndex];
+                            listIndex++;
+                        }
+                        
+                    }
+                    if(previousSkinnedEnemyMaterials.Count != 0)
+                    {
+                        int listIndex = 0;
+                        SkinnedMeshRenderer[] previousSkinnedRenderers = previousEnemy.gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+                        foreach (SkinnedMeshRenderer rend in previousSkinnedRenderers)
+                        {
+                            rend.material = previousSkinnedEnemyMaterials[listIndex];
+                            listIndex++;
+                        }
                     }
                 }
 
                 previousEnemyMaterials.Clear();
+                previousSkinnedEnemyMaterials.Clear();
                 MeshRenderer[] renderers = selectedEnemy.gameObject.GetComponentsInChildren<MeshRenderer>();
                 foreach (MeshRenderer rend in renderers)
                 {
                     previousEnemyMaterials.Add(rend.material);
+                    Color col = rend.material.color;
+                    rend.material = selectedEnemyMaterial;
+                    rend.material.SetColor("Color_70340A95", col);
+                }
+                SkinnedMeshRenderer[] skinnedRenderers = selectedEnemy.gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+                foreach (SkinnedMeshRenderer rend in skinnedRenderers)
+                {
+                    previousSkinnedEnemyMaterials.Add(rend.material);
                     Color col = rend.material.color;
                     rend.material = selectedEnemyMaterial;
                     rend.material.SetColor("Color_70340A95", col);

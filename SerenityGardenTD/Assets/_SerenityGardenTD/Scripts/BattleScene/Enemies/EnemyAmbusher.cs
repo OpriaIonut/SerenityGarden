@@ -23,20 +23,22 @@ namespace SerenityGarden
 
         private void Update()
         {
-            if(!GamePauseManager.instance.GamePaused)
+            if (!GamePauseManager.instance.GamePaused)
+            {
                 base.BaseUpdateCalls();
 
-            transform.Translate(moveDirection * Speed * Time.deltaTime, Space.World);
-            RaycastHit hit;
-            if(!hitTarget && Physics.Raycast(transform.position, Vector3.down, out hit))
-            {
-                if(hit.transform.root.gameObject.GetComponent<PlayerBase>())
+                transform.Translate(moveDirection * Speed * Time.deltaTime, Space.World);
+                RaycastHit hit;
+                if (!hitTarget && Physics.Raycast(transform.position, Vector3.down, out hit))
                 {
-                    Target.Health -= Damage;
-                    GameObject explosion = Instantiate(explosionVFX);
-                    explosion.transform.position = Target.transform.position;
-                    Destroy(explosion, 1.0f);
-                    hitTarget = true;
+                    if (hit.transform.root.gameObject.GetComponent<PlayerBase>())
+                    {
+                        Target.Health -= Damage;
+                        GameObject explosion = Instantiate(explosionVFX);
+                        explosion.transform.position = Target.transform.position;
+                        Destroy(explosion, 1.0f);
+                        hitTarget = true;
+                    }
                 }
             }
         }

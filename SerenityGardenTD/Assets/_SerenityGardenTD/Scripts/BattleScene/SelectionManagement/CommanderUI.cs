@@ -7,6 +7,21 @@ namespace SerenityGarden
 {
     public class CommanderUI : LogicProcessBase
     {
+        #region Singleton
+        public static CommanderUI instance;
+        private void Awake()
+        {
+            if (instance != null)
+            {
+                Debug.LogWarning("Warning! There are multiple instances of CommanderUI in the scene. Deleting from: " + gameObject.name);
+                Destroy(this.gameObject);
+            }
+            else
+                instance = this;
+            base.BaseAwakeCalls();
+        }
+        #endregion
+
         public bool selectDestination = false;
         public GameObject commanderUI;
         public Material powerupMaterial;
@@ -18,10 +33,6 @@ namespace SerenityGarden
         private SceneClickManager clickManager;
 
         private List<Material> powerupPreviousMaterials;
-        private void Awake()
-        {
-            base.BaseAwakeCalls();
-        }
 
         private void Start()
         {
@@ -84,13 +95,17 @@ namespace SerenityGarden
 
         public void PowerupTarget(GameObject target)
         {
+            powerupPreviousMaterials.Clear();
             MeshRenderer[] renderers = target.gameObject.GetComponentsInChildren<MeshRenderer>();
             foreach (MeshRenderer rend in renderers)
             {
                 powerupPreviousMaterials.Add(rend.material);
-                Color col = rend.material.color;
-                rend.material = powerupMaterial;
-                rend.material.SetColor("Color_62F993A2", col);
+                if (rend.material != null && rend.material.HasProperty("_Color"))
+                {
+                    Color col = rend.material.color;
+                    rend.material = powerupMaterial;
+                    rend.material.SetColor("Color_62F993A2", col);
+                }
             }
         }
 
@@ -148,6 +163,7 @@ namespace SerenityGarden
                         }
                     }
 
+                    powerupPreviousMaterials.Clear();
                     commanderToUse.gameObject.SetActive(true);
                     commanderToUse.UnpowerupTurret(buildable);
 

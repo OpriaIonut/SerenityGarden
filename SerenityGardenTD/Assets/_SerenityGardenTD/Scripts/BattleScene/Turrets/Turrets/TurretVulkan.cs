@@ -61,7 +61,7 @@ namespace SerenityGarden
         public override void FindTarget()
         {
             //Can attack only flying and ambusher enemies.
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2 * transform.localScale.x);
             EnemyBase _target = null;
             EnemyBase aux;
             float minDist = float.MaxValue;

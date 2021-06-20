@@ -248,7 +248,7 @@ namespace SerenityGarden
             {
                 rangeObj = Instantiate(rangePrefab);
                 rangeObj.transform.position = transform.position;
-                rangeObj.transform.localScale = Vector3.one * Range;
+                rangeObj.transform.localScale = transform.localScale * Range / 1.25f; //Coefficient set in Init() for properly scaling obj
             }
             if (!draw && rangeObj != null)
                 DestroyImmediate(rangeObj);
@@ -263,7 +263,7 @@ namespace SerenityGarden
 
         public void FindTarget()
         {
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2 * transform.localScale.x / 1.25f);
             EnemyBase _target = null;
             EnemyBase aux;
             float minDist = float.MaxValue;
