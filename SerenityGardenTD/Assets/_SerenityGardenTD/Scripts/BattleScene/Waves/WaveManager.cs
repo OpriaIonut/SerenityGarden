@@ -61,15 +61,18 @@ namespace SerenityGarden
             waveSkipButton.SetActive(false);
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
-            waveProgressBar.fillAmount = 0;
-            waveProgressText.text = "";
+            selectedStage = SceneDataRetainer.instance.GetStage();
+            if (!selectedStage.isBossStage)
+            {
+                waveProgressBar.fillAmount = 0;
+                waveProgressText.text = "";
+            }
 
             if (PhotonNetwork.IsConnected)
                 stageStartButton.SetActive(false);
 
             //When the game is paused Time.time will continue to increase, which will mess with the wave spawning, so subscribe an event that is responsible for correcting that problem
             GamePauseManager.instance.AddUnpauseEvent(OnResumeGame);
-            selectedStage = SceneDataRetainer.instance.GetStage();
         }
 
         private void Update()
@@ -134,8 +137,11 @@ namespace SerenityGarden
 
                         SpawnEnemy(item.enemy, block);
 
-                        currentSpawnIndex++;
-                        waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
+                        if (!selectedStage.isBossStage)
+                        {
+                            currentSpawnIndex++;
+                            waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
+                        }
 
                         if (GamePauseManager.instance.GamePaused)
                             yield return null;
@@ -166,8 +172,12 @@ namespace SerenityGarden
                     SpawnEnemy(enemyToSpawn[0], block);
                     enemyToSpawn.RemoveAt(0);
 
-                    currentSpawnIndex++;
-                    waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
+
+                    if (!selectedStage.isBossStage)
+                    {
+                        currentSpawnIndex++;
+                        waveProgressBar.fillAmount = (float)currentSpawnIndex / enemyCount;
+                    }
 
                     if (GamePauseManager.instance.GamePaused)
                         yield return null;

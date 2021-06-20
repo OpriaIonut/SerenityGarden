@@ -172,7 +172,7 @@ namespace SerenityGarden
         {
             //Debug.Log("Player entered room");
             GameObject entry = Instantiate(PlayerListEntryPrefab);
-            entry.transform.SetParent(InsideRoomPanel.transform);
+            entry.transform.SetParent(PlayerInfoSpawnParent.transform);
             entry.transform.localScale = Vector3.one;
             entry.GetComponent<RoomPlayerListEntry>().Initialize(newPlayer.ActorNumber, newPlayer.NickName);
 
@@ -376,7 +376,7 @@ namespace SerenityGarden
                 GameObject entry = Instantiate(RoomListEntryPrefab);
                 entry.transform.SetParent(RoomListContent.transform);
                 entry.transform.localScale = Vector3.one;
-                entry.GetComponent<RoomListEntry>().Initialize(info.Name, (byte)info.PlayerCount, info.MaxPlayers);
+                entry.GetComponent<RoomEntry>().Initialize(info.Name, (byte)info.PlayerCount, info.MaxPlayers);
 
                 roomListEntries.Add(info.Name, entry);
             }
