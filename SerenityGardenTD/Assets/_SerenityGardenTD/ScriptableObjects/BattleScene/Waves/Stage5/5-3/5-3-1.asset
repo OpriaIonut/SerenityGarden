@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb7ad9276a070d745b6d3cc273799326, type: 3}
   m_Name: 5-3-1
   m_EditorClassIdentifier: 
-  waveEnemies: []
-  spawnPointsID: 0
-  spawnRandomly: 0
+  waveEnemies:
+  - enemy: {fileID: 289910913514155220, guid: efd9b788ba9c0ab4e91cf8850aa28b22, type: 3}
+    count: 10
+  - enemy: {fileID: 9203561829557989935, guid: f46a3085ea9a45745ab62eda905091fe, type: 3}
+    count: 5
+  spawnPointsID: 5
+  spawnRandomly: 1
