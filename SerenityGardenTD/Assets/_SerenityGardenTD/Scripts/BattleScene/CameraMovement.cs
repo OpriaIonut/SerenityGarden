@@ -32,6 +32,11 @@ namespace SerenityGarden
         private Vector2 previousTapPos;
         private float previousTouchDist;
 
+        private float minHorizontal;
+        private float maxHorizontal;
+        private float minVertical;
+        private float maxVertical;
+
         private Vector3 origin;
 
         private void Start()
@@ -104,12 +109,12 @@ namespace SerenityGarden
             float zoomAmount = zoomFactor * zoomSpeed * Time.deltaTime;
 
             float horizontalAmount = horizontalFactor * panSpeed * Time.deltaTime;
-            float maxHorizontal = origin.x + horizontalPanLimit.x * normalizedZoom;
-            float minHorizontal = origin.x - horizontalPanLimit.y * normalizedZoom;
+            maxHorizontal = origin.x + horizontalPanLimit.x * normalizedZoom;
+            minHorizontal = origin.x - horizontalPanLimit.y * normalizedZoom;
 
             float verticalAmount = verticalFactor * panSpeed * Time.deltaTime;
-            float maxVertical = origin.z + verticalPanLimit.x * normalizedZoom;
-            float minVertical = origin.z - verticalPanLimit.y * normalizedZoom;
+            maxVertical = origin.z + verticalPanLimit.x * normalizedZoom;
+            minVertical = origin.z - verticalPanLimit.y * normalizedZoom;
 
             if ((zoomAmount > 0 && transform.position.y > dummy.position.y) || (zoomAmount < 0 && transform.localPosition.z > zoomOutLimit))
             {
@@ -120,6 +125,11 @@ namespace SerenityGarden
                     normalizedZoom = 0.0f;
                 transform.localPosition = new Vector3(transform.localPosition.x, transform.localPosition.y, currentZoom);
                 targetPos = transform.position;
+            }
+            if (normalizedZoom == 0)
+            {
+                minVertical = transform.position.z;
+                maxVertical = transform.position.z;
             }
 
             if ((horizontalAmount > 0 && targetPos.x < maxHorizontal) || (horizontalAmount < 0 && targetPos.x > minHorizontal))

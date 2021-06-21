@@ -74,13 +74,11 @@ namespace SerenityGarden
         {
             if (Target != null)
             {
-                //find the vector pointing from our position to the target
-                Vector3 rotDir = (Target.transform.position - partToRotate.transform.position).normalized;
-
-                //create the rotation we need to be in to look at the target
-                Quaternion lookRotation = Quaternion.LookRotation(rotDir);
-                partToRotate.transform.rotation = lookRotation;
-                partToRotate.transform.localEulerAngles = new Vector3(partToRotate.transform.localEulerAngles.x, 90.0f, 0.0f);
+                var lookPos = Target.transform.position - partToRotate.transform.position;
+                lookPos.y = 0;
+                var rotation = Quaternion.LookRotation(lookPos);
+                partToRotate.transform.rotation = rotation;
+                partToRotate.transform.Rotate(Vector3.forward * -90, Space.Self);
 
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();

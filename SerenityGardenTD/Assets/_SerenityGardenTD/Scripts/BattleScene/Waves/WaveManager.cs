@@ -106,7 +106,11 @@ namespace SerenityGarden
 
         private IEnumerator WaveSpawner(WaveScriptable wave)
         {
-            waveProgressText.text = "Wave " + (currentWaveIndex + 1) + "/" + selectedStage.waves.Length;
+            if (!selectedStage.isBossStage)
+            {
+                waveProgressBar.transform.parent.gameObject.SetActive(true);
+                waveProgressText.text = "Wave " + (currentWaveIndex + 1) + "/" + selectedStage.waves.Length;
+            }
 
             //Find a list of spawn points on which we can spawn enemies to. Some enemies will only spawn at certain spawn points, so we should find those specific points based on their SpawnPointsID.
             waveSkipButton.SetActive(false);

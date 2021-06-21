@@ -306,6 +306,11 @@ namespace SerenityGarden
                     while (localScale < turretDestroyerMaxScale)
                     {
                         localScale += scaleIncreaseSpeed;
+
+#if UNITY_ANDROID
+                        localScale += scaleIncreaseSpeed; //On android it's moving slower, so as a workaround, increase it's speed
+#endif
+
                         if (photonView.IsMine)
                             meteorite.localScale = Vector3.one * localScale;
                         yield return new WaitForSeconds(0.01f);
@@ -540,6 +545,7 @@ namespace SerenityGarden
             {
                 string message = "";
                 string message2 = "";
+                string message3 = "" + health;
                 if(netSendEvent)
                 {
                     switch (currentAction)
@@ -566,11 +572,20 @@ namespace SerenityGarden
                 netTargetId = -1;
                 stream.SendNext(message);
                 stream.SendNext(message2);
+                stream.SendNext(message3);
             }
             if (stream.IsReading)
             {
                 string receivedMsg = stream.ReceiveNext() as string;
                 string receivedMsg2 = stream.ReceiveNext() as string;
+                string receivedMsg3 = stream.ReceiveNext() as string;
+                
+                if(receivedMsg3 != null)
+                {
+                    float receivedHealth = float.Parse(receivedMsg3);
+                    TakeDamage(health - receivedHealth);
+                }
+
                 int intResult;
                 if (int.TryParse(receivedMsg2, out intResult))
                 {

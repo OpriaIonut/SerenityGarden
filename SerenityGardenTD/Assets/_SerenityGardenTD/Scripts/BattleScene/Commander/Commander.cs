@@ -202,8 +202,24 @@ namespace SerenityGarden
         {
             if (Target != null)
             {
+                LastAttackTime = Time.time;
+                StartCoroutine("AttackWithAnim");
+            }
+            else if(boss != null)
+            {
+                LastAttackTime = Time.time;
+                StartCoroutine("AttackWithAnim");
+            }
+        }
+
+        private IEnumerator AttackWithAnim()
+        {
+            if (Target != null)
+            {
                 anim.SetTrigger("Attack");
                 HelperMethods.RotateObjTowardsTarget(transform, Target.transform.position, true);
+
+                yield return new WaitForSeconds(0.1f);
 
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
@@ -211,10 +227,12 @@ namespace SerenityGarden
                 bulletScript.SetTarget(Target.gameObject);
                 LastAttackTime = Time.time;
             }
-            else if(boss != null)
+            else if (boss != null)
             {
                 anim.SetTrigger("Attack");
                 HelperMethods.RotateObjTowardsTarget(transform, boss.transform.position, true);
+
+                yield return new WaitForSeconds(0.1f);
 
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();

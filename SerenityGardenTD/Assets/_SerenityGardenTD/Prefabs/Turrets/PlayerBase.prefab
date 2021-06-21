@@ -300,8 +300,8 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   turretUpgradePattern: {fileID: 11400000, guid: e8966edb05786324db6f57201aa949b2,
     type: 2}
-  partToRotate: {fileID: 3588157479554694937}
-  firePoint: {fileID: 7655745830412791419}
+  partToRotate: {fileID: 7635785392491283479}
+  firePoint: {fileID: 5671052783544522745}
   networkNameText: {fileID: 7485986335624130442}
   bulletPrefab: {fileID: 6760037018435719773, guid: e0ca4546c60a64244bdabf91f609030a,
     type: 3}
@@ -464,7 +464,7 @@ PrefabInstance:
     - target: {fileID: 8584684880803028392, guid: 5a8ba58f69302784f865db83bec1cb7b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8584684880803028392, guid: 5a8ba58f69302784f865db83bec1cb7b,
         type: 3}
@@ -474,7 +474,7 @@ PrefabInstance:
     - target: {fileID: 8584684880803028392, guid: 5a8ba58f69302784f865db83bec1cb7b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8584684880803028392, guid: 5a8ba58f69302784f865db83bec1cb7b,
         type: 3}
@@ -489,7 +489,7 @@ PrefabInstance:
     - target: {fileID: 8584684880803028392, guid: 5a8ba58f69302784f865db83bec1cb7b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a8ba58f69302784f865db83bec1cb7b, type: 3}
@@ -505,15 +505,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4414453238424952351}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3588157479554694937 stripped
+--- !u!1 &7635785392491283479 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -8320123356525305594, guid: 5a8ba58f69302784f865db83bec1cb7b,
+  m_CorrespondingSourceObject: {fileID: -3119715193997026808, guid: 5a8ba58f69302784f865db83bec1cb7b,
     type: 3}
   m_PrefabInstance: {fileID: 4414453238424952351}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7655745830412791419 stripped
+--- !u!1 &5671052783544522745 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: -2918924569420304284, guid: 5a8ba58f69302784f865db83bec1cb7b,
+  m_CorrespondingSourceObject: {fileID: -868937849707361818, guid: 5a8ba58f69302784f865db83bec1cb7b,
     type: 3}
   m_PrefabInstance: {fileID: 4414453238424952351}
   m_PrefabAsset: {fileID: 0}

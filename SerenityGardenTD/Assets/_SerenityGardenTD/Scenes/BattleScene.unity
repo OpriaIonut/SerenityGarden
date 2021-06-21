@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1382,17 +1382,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 4.103681
+      value: 3.8955061
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.103681
+      value: 3.8955061
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 4.103681
+      value: 3.8955061
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85593aaacd6116743a178619b4488509,
         type: 3}
@@ -3339,8 +3339,8 @@ MonoBehaviour:
   mapPresetFile: Stages/Stage 6-5.json
   selectedStage: {fileID: 11400000, guid: 88176e765b899204f902b079fe47f20a, type: 2}
   gridCells: []
-  scaleFact: 0
-  walkableArea: {fileID: 269218322}
+  scaleFact: 3.8955061
+  walkableArea: {fileID: 1889668376}
 --- !u!4 &696150181
 Transform:
   m_ObjectHideFlags: 0
@@ -7053,7 +7053,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1450180414
 RectTransform:
   m_ObjectHideFlags: 0
