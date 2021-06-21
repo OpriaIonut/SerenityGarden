@@ -14,6 +14,8 @@ namespace SerenityGarden
 
         private void Start()
         {
+            Application.targetFrameRate = 30;
+
             if (SceneDataRetainer.instance == null && PlayerDataSaver.instance == null)
             {
                 GameObject newObj = new GameObject("SceneIndependentScripts");

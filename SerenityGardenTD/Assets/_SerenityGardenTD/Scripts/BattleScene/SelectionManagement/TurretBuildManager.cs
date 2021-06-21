@@ -163,41 +163,79 @@ namespace SerenityGarden
             sceneClickManager.selectedHexagon.Type = HexagonType.Occupied;
 
             PhotonObj photonObj = PhotonObj.Bullet;
+            TurretType turretType = TurretType.PlayerBase;
 
             #region TurretCheck
 
             TurretBase turretBase = turretPrefabs[index].GetComponent<PlayerBase>();
-            if(turretBase != null)
+            if (turretBase != null)
+            {
+                turretType = TurretType.PlayerBase;
                 photonObj = PhotonObj.PlayerBase;
+            }
 
             turretBase = turretPrefabs[index].GetComponent<TurretMachineGun>();
             if (turretBase != null)
+            {
                 photonObj = PhotonObj.TurretMachineGun;
+                turretType = TurretType.MachineGun;
+            }
 
             turretBase = turretPrefabs[index].GetComponent<TurretElectricFence>();
             if (turretBase != null)
+            { 
+                turretType = TurretType.ElectricFence;
                 photonObj = PhotonObj.TurretElectricFence;
+            }
 
             turretBase = turretPrefabs[index].GetComponent<TurretVulkan>();
             if (turretBase != null)
+            {
+                turretType = TurretType.Vulkan;
                 photonObj = PhotonObj.TurretVulkan;
+            }
 
             turretBase = turretPrefabs[index].GetComponent<TurretFlamethrower>();
             if (turretBase != null)
+            {
+                turretType = TurretType.Flamethrower;
                 photonObj = PhotonObj.TurretFlamethrower;
+            }
 
             turretBase = turretPrefabs[index].GetComponent<TurretLaser>();
             if (turretBase != null)
+            {
+                turretType = TurretType.Laser;
                 photonObj = PhotonObj.TurretLaser;
+            }
 
             turretBase = turretPrefabs[index].GetComponent<TurretExcavator>();
             if (turretBase != null)
+            {
+                turretType = TurretType.Excavator;
                 photonObj = PhotonObj.TurretExcavator;
+            }
 
             #endregion
 
-            object[] turretData = new object[1];
+            TurretPermanentUpgrades[] permanentUpgrades = SceneDataRetainer.instance.GetPermanentUpgrades();
+
+            object[] turretData = new object[5];
             turretData[0] = sceneClickManager.selectedHexagon.name;
+            turretData[1] = 1; //Health Multiplier of the turret;
+            turretData[2] = 1; //Damage Multiplier of the turret;
+            turretData[3] = 1; //Range Multiplier of the turret;
+            turretData[4] = 1; //FireRate Multiplier of the turret;
+            foreach (TurretPermanentUpgrades item in permanentUpgrades)
+            {
+                if (item.turretType == turretType)
+                {
+                    turretData[1] = item.GetMultiplier(UpgradeType.Health);
+                    turretData[2] = item.GetMultiplier(UpgradeType.Damage);
+                    turretData[3] = item.GetMultiplier(UpgradeType.Range);
+                    turretData[4] = item.GetMultiplier(UpgradeType.FireRate);
+                }
+            }
 
             //Build the turret
             Transform clone = InstantiationManager.instance.InstantiateWithCheck(turretPrefabs[index], sceneClickManager.selectedHexagon.transform.position, Quaternion.identity, photonObj, turretData).transform;

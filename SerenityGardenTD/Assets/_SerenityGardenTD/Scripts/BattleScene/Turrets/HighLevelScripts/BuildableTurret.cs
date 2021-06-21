@@ -145,6 +145,7 @@ namespace SerenityGarden
             return false;
         }
 
+        private bool netWaitedForDeath = false;
         public override void Die()
         {
             DrawRange(false);
@@ -154,7 +155,6 @@ namespace SerenityGarden
                 hexagonBlock.Type = HexagonType.TurretBuildable;
             base.Die();
         }
-
         public int GetRecoveryCost()
         {
             return (int)((maxHealth - Health) * RecoveryCostPer1Hp);
@@ -245,6 +245,14 @@ namespace SerenityGarden
                     float targetScale = (diameter * transform.localScale.x) / currentDist;
                     transform.localScale = Vector3.one * targetScale;
                     transform.position = hexagonBlock.transform.position;
+                }
+
+                if (initData.Length == 5)
+                {
+                    netMultiplierHealth = (float)initData[1];
+                    netMultiplierDamage = (float)initData[2];
+                    netMultiplierRange = (float)initData[3];
+                    netMultiplierFireRate = (float)initData[4];
                 }
             }
         }

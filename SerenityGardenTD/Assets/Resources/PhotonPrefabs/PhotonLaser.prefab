@@ -1,21 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &1076212351192031545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3261657826203849573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizePosition: 0
-  m_SynchronizeRotation: 1
-  m_SynchronizeScale: 0
-  m_UseLocal: 1
 --- !u!114 &7619862397250416459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +24,22 @@ MonoBehaviour:
   sceneViewId: 2
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!114 &1076212351192031545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261657826203849573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 0
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1001 &1181488451825484586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117,6 +117,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhotonLaser
       objectReference: {fileID: 0}
+    - target: {fileID: 6411975753143248786, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6411975753143248786, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cfb9c850c47d22489bc36e1210cedbc,
+        type: 2}
+    - target: {fileID: 6411975753143248786, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6411975753143248786, guid: d69d75de14bba814c887365aa8bd3774,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3011322597516697325, guid: 9cfb9c850c47d22489bc36e1210cedbc,
+        type: 2}
     - target: {fileID: 8363764918513435436, guid: d69d75de14bba814c887365aa8bd3774,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

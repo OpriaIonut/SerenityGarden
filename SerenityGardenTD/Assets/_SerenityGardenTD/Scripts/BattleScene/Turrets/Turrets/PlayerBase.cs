@@ -122,11 +122,18 @@ namespace SerenityGarden
         {
             if (stream.IsWriting)
             {
-                stream.SendNext(Health);
+                string msg = "" + Health;
+                stream.SendNext(msg);
             }
             if (stream.IsReading)
             {
-                Health = (float)Health;
+                string receivedMsg = stream.ReceiveNext() as string;
+
+                if (receivedMsg != null)
+                {
+                    float receivedHealth = float.Parse(receivedMsg);
+                    Health = receivedHealth;
+                }
             }
         }
     }

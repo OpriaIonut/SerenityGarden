@@ -90,6 +90,28 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhotonExcavator
       objectReference: {fileID: 0}
+    - target: {fileID: 6164692139560346422, guid: 92932982a05cd9445bc20507498dcde4,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164692139560346422, guid: 92932982a05cd9445bc20507498dcde4,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9cfb9c850c47d22489bc36e1210cedbc,
+        type: 2}
+    - target: {fileID: 6164692139560346422, guid: 92932982a05cd9445bc20507498dcde4,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6164692139560346422, guid: 92932982a05cd9445bc20507498dcde4,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3011322597516697325, guid: 9cfb9c850c47d22489bc36e1210cedbc,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92932982a05cd9445bc20507498dcde4, type: 3}
 --- !u!1 &6627653107119810080 stripped

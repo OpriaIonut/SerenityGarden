@@ -110,7 +110,7 @@ namespace SerenityGarden
                         minDistRanged = distance;
                     }
 
-                    if (LockOnManager.SelectedEnemy != null && rangedTarget == LockOnManager.SelectedEnemy || meleeTarget == LockOnManager.SelectedEnemy)
+                    if (LockOnManager.SelectedEnemy != null && (rangedTarget == LockOnManager.SelectedEnemy || meleeTarget == LockOnManager.SelectedEnemy))
                     {
                         meleeTarget = LockOnManager.SelectedEnemy;
                         break;

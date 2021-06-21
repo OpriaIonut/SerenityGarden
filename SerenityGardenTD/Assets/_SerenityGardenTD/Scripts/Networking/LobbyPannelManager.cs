@@ -122,6 +122,8 @@ namespace SerenityGarden
 
             if (!PhotonNetwork.IsMasterClient)
                 bossDifficultyDropdown.interactable = false;
+            else
+                bossDifficultyDropdown.interactable = true;
 
             SetActivePanel(InsideRoomPanel.name);
 
@@ -196,6 +198,11 @@ namespace SerenityGarden
             {
                 StartGameButton.gameObject.SetActive(CheckPlayersReady());
             }
+
+            if (!PhotonNetwork.IsMasterClient)
+                bossDifficultyDropdown.interactable = false;
+            else
+                bossDifficultyDropdown.interactable = true;
         }
 
         public override void OnPlayerPropertiesUpdate(Player targetPlayer, Hashtable changedProps)

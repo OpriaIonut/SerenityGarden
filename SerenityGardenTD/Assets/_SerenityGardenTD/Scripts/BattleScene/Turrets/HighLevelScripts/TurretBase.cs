@@ -46,6 +46,11 @@ namespace SerenityGarden
         protected float damage;
         protected float range;
 
+        public float netMultiplierHealth = 1;
+        public float netMultiplierDamage = 1;
+        public float netMultiplierRange = 1;
+        public float netMultiplierFireRate = 1;
+
         //Instantiated range object. It will be deleted when deselecting a turret
         protected GameObject rangeObj;
 
@@ -208,7 +213,19 @@ namespace SerenityGarden
                 AttackCooldown = turretUpgradePattern.levelProp[level].attackCooldown;
                 DestroyReward = turretUpgradePattern.levelProp[level].sellReward;
             }
-            else
+            else if(SceneDataRetainer.instance.GetStage().isBossStage && !photonView.IsMine)
+            {
+                //Otherwise, take into account the multipliers bought by the player.
+                float healthDiff = maxHealth - health;
+
+                maxHealth = turretUpgradePattern.levelProp[level].health * netMultiplierHealth;
+                Health = maxHealth - healthDiff;
+                Damage = turretUpgradePattern.levelProp[level].damage * netMultiplierDamage;
+                Range = turretUpgradePattern.levelProp[level].range * netMultiplierRange;
+                AttackCooldown = turretUpgradePattern.levelProp[level].attackCooldown / netMultiplierFireRate;
+                DestroyReward = turretUpgradePattern.levelProp[level].sellReward;
+            }
+            else 
             {
                 //Otherwise, take into account the multipliers bought by the player.
                 float healthDiff = maxHealth - health;
