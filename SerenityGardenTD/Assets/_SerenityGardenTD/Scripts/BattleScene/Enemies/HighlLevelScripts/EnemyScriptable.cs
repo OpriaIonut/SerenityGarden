@@ -10,7 +10,7 @@ namespace SerenityGarden
         public EnemyType enemyType;
         public int health;
         public float speed;
-        public int damage;
+        public float damage;
         public float range;
         public int attackCooldown;
         public int killReward;

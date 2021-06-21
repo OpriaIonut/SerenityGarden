@@ -16,7 +16,7 @@ MonoBehaviour:
   levelProp:
   - health: 300
     damage: 15
-    attackCooldown: 5
+    attackCooldown: 3
     range: 5
     upgradeCost: 0
     sellReward: 0

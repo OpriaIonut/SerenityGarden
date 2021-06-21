@@ -20,6 +20,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f7cff8a28ad1553428f79379fb7f3d57, type: 2}
   preview: {fileID: 2800000, guid: 8a49d181a4b9e9c4a96b8fd26a42726b, type: 3}
   isBossStage: 0
+  startMoney: 800
   baseReward: 103
   starRanking: 0
   rewardPerStar: 34

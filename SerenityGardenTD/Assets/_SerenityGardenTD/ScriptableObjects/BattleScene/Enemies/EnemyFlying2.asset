@@ -15,8 +15,8 @@ MonoBehaviour:
   enemyType: 2
   health: 100
   speed: 0.4
-  damage: 2
+  damage: 1.5
   range: 3.5
   attackCooldown: 1
-  killReward: 10
+  killReward: 30
   initScaleMultiplier: 1.75

@@ -62,6 +62,8 @@ namespace SerenityGarden
             waveSkipText = waveSkipButton.GetComponentInChildren<TextMeshProUGUI>();
 
             selectedStage = SceneDataRetainer.instance.GetStage();
+            buildManager.startMoney = selectedStage.startMoney;
+            buildManager.Money = selectedStage.startMoney;
             if (!selectedStage.isBossStage)
             {
                 waveProgressBar.fillAmount = 0;

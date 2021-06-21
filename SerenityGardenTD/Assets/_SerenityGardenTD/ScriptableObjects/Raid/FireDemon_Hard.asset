@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 25000
   timeBetweenDecisions: 10
-  moneyPerHP: 0.5
+  moneyPerHP: 0.3
   sweepDamage: 35
   turretDestroyerCount: 7
   turretDestroyerDamage: 25

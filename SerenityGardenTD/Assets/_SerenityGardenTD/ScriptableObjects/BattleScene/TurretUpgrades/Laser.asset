@@ -15,23 +15,23 @@ MonoBehaviour:
   turretType: 5
   levelProp:
   - health: 50
-    damage: 2
+    damage: 4
     attackCooldown: 0
-    range: 3
-    upgradeCost: 100
+    range: 5.25
+    upgradeCost: 120
     sellReward: 50
     gfx: {fileID: 919132149155446097, guid: d33e1f1e68e98f74cbd3ab3903e4e024, type: 3}
   - health: 100
-    damage: 4
+    damage: 6
     attackCooldown: 0
-    range: 4
-    upgradeCost: 150
+    range: 6
+    upgradeCost: 165
     sellReward: 100
     gfx: {fileID: 919132149155446097, guid: 563605236eade9a488ec9c9c6c96f046, type: 3}
   - health: 150
     damage: 8
     attackCooldown: 0
-    range: 5
-    upgradeCost: 200
+    range: 7.5
+    upgradeCost: 225
     sellReward: 150
     gfx: {fileID: 919132149155446097, guid: 005e0d6e7ca60fd4085cfaf858ad32cb, type: 3}

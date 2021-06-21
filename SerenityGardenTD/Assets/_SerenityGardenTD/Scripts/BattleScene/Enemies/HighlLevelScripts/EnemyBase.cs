@@ -246,7 +246,7 @@ namespace SerenityGarden
         public virtual void FindTarget()
         {
             //Using physics.OverlapSphere, check to see if a turret is in range and find the closest one
-            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2);
+            Collider[] hits = Physics.OverlapSphere(transform.position, Range / 2 * transform.localScale.x);
             TurretBase _target = null;
             TurretBase aux;
             float minDist = float.MaxValue;
@@ -278,7 +278,7 @@ namespace SerenityGarden
 
         private void OnDrawGizmosSelected()
         {
-            Gizmos.DrawWireSphere(transform.position, Range / 2);
+            Gizmos.DrawWireSphere(transform.position, Range / 2 * transform.localScale.x);
         }
     }
 }

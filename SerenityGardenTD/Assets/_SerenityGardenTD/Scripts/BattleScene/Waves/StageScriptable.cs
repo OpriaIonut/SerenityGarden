@@ -18,6 +18,7 @@ namespace SerenityGarden
         public bool isBossStage;
 
         [Header("Stage end variables")]
+        public int startMoney;
         public int baseReward;
         public int starRanking;
         public int rewardPerStar;

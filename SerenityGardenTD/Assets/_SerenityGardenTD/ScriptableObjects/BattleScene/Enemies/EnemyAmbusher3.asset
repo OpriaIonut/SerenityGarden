@@ -18,5 +18,5 @@ MonoBehaviour:
   damage: 25
   range: 3
   attackCooldown: 25
-  killReward: 25
+  killReward: 50
   initScaleMultiplier: 3
