@@ -19,6 +19,8 @@ namespace SerenityGarden
         private GamePauseManager pauseManager;
         private Vector3 previousVelocity;
 
+        private bool receivedTarget = false;
+
         private void Start()
         {
             rb = GetComponent<Rigidbody>();
@@ -29,6 +31,12 @@ namespace SerenityGarden
 
             if (!photonView.IsMine)
                 FindObjectOfType<FireDemon>().NetMeteorInstance = this;
+        }
+
+        private void Update()
+        {
+            if (receivedTarget == true && target == null)
+                Destroy(gameObject);
         }
 
         private void FixedUpdate()
@@ -60,6 +68,7 @@ namespace SerenityGarden
             target = _target;
             damage = _damage;
             aoe = _aoe;
+            receivedTarget = true;
 
             TrailRenderer trail = GetComponentInChildren<TrailRenderer>();
             if(trail != null)
@@ -77,7 +86,8 @@ namespace SerenityGarden
             {
                 if (target != null && other.transform.root.gameObject == target.gameObject)
                 {
-                    target.Health -= damage;
+                    if(target.photonView == null || target.photonView.IsMine == true)
+                        target.Health -= damage;
                     Destroy(gameObject, 0.5f);
                     GetComponentInChildren<MeshRenderer>().enabled = false;
                     GetComponentInChildren<SphereCollider>().enabled = false;
@@ -88,7 +98,8 @@ namespace SerenityGarden
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if(turret != null)
                 {
-                    turret.Health -= damage;
+                    if (target.photonView == null || target.photonView.IsMine == true)
+                        turret.Health -= damage;
                     if(!calledDestroy)
                     {
                         Destroy(gameObject, 0.5f);

@@ -101,6 +101,10 @@ namespace SerenityGarden
                 //playerFileData = DataEncryption.EncryptDecrypt(playerFileData);
 
                 playerData = JsonUtility.FromJson<PlayerData>(playerFileData);
+
+                if (playerData.stageData.Count != stages.Length)
+                    throw new Exception("Not enough level data");
+
                 foreach (StageScriptable stage in stages)
                 {
                     stage.starRanking = 0;

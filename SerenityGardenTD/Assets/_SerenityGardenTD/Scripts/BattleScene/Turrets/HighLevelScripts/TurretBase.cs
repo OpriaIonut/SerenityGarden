@@ -42,7 +42,7 @@ namespace SerenityGarden
         protected float lastAttackTime;
 
         protected float maxHealth;
-        protected float health;
+        public float health;
         protected float damage;
         protected float range;
 
@@ -50,6 +50,8 @@ namespace SerenityGarden
         public float netMultiplierDamage = 1;
         public float netMultiplierRange = 1;
         public float netMultiplierFireRate = 1;
+
+        protected bool netReceivedHealth = false;
 
         //Instantiated range object. It will be deleted when deselecting a turret
         protected GameObject rangeObj;

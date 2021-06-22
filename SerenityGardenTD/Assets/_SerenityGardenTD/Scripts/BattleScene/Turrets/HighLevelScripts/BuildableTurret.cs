@@ -68,6 +68,8 @@ namespace SerenityGarden
         private bool netSendTurretRepair = false;
 
         private bool netReceivedEventData = false;
+        private bool netSendDieEvent = false;
+        private bool netReceivedDieEvent = false;
 
 
         public override void BaseStartCalls()
@@ -145,7 +147,6 @@ namespace SerenityGarden
             return false;
         }
 
-        private bool netWaitedForDeath = false;
         public override void Die()
         {
             DrawRange(false);
@@ -153,7 +154,26 @@ namespace SerenityGarden
                 hexagonBlock.Type = HexagonType.ResourceExtraction;
             else
                 hexagonBlock.Type = HexagonType.TurretBuildable;
-            base.Die();
+
+            if (SceneClickManager.instance.selectedTurret == this)
+            {
+                SceneClickManager.instance.DisablePreviousStates();
+                SceneClickManager.instance.UpdateSelectedReferences();
+            }
+            if (photonView != null)
+            {
+                if (netReceivedDieEvent)
+                {
+                    netReceivedDieEvent = false;
+                    Destroy(gameObject);
+                }
+                else
+                    netSendDieEvent = true;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
         public int GetRecoveryCost()
         {
@@ -286,13 +306,21 @@ namespace SerenityGarden
                     netSendTurretSell = false;
                     Destroy(gameObject);
                 }
+                if(netSendDieEvent)
+                {
+                    eventType = "Die";
+                    netSendDieEvent = false;
+                    Destroy(gameObject);
+                }
                 stream.SendNext(eventType);
                 stream.SendNext(Health);
             }
             if (stream.IsReading)
             {
                 string eventType = stream.ReceiveNext().ToString();
-                Health = (float)stream.ReceiveNext();
+                float receivedHealth = (float)stream.ReceiveNext();
+                Health = receivedHealth;
+                netReceivedHealth = true;
 
                 if (eventType == "Upgrade")
                 {
@@ -309,6 +337,11 @@ namespace SerenityGarden
                     netReceivedEventData = true;
                     SceneClickManager.instance.selectedTurret = this;
                     TurretBuildManager.instance._SellTurret();
+                }
+                if(eventType == "Die")
+                {
+                    netReceivedDieEvent = true;
+                    Die();
                 }
             }
         }

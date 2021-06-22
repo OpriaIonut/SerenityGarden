@@ -9,6 +9,9 @@ namespace SerenityGarden
     {
         public GameObject bulletPrefab;
 
+        private bool netSendDieEvent = false;
+        private bool netReceivedDieEvent = false;
+
         private void Awake()
         {
             BaseAwakeCalls();
@@ -100,7 +103,20 @@ namespace SerenityGarden
         public override void Die()
         {
             BattleStageStateManager.instance.GameOver();
-            Destroy(this.gameObject);
+            if (photonView != null)
+            {
+                if (netReceivedDieEvent)
+                {
+                    netReceivedDieEvent = false;
+                    Destroy(gameObject);
+                }
+                else
+                    netSendDieEvent = true;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
 
         public override void Init()
@@ -122,17 +138,31 @@ namespace SerenityGarden
         {
             if (stream.IsWriting)
             {
-                string msg = "" + Health;
-                stream.SendNext(msg);
+                string eventType = "";
+                string healthMsg = "" + Health;
+                if (netSendDieEvent)
+                {
+                    eventType = "Die";
+                    netSendDieEvent = false;
+                    Destroy(gameObject);
+                }
+                stream.SendNext(eventType);
+                stream.SendNext(healthMsg);
             }
             if (stream.IsReading)
             {
+                string eventType = stream.ReceiveNext() as string;
                 string receivedMsg = stream.ReceiveNext() as string;
-
                 if (receivedMsg != null)
                 {
+                    netReceivedHealth = true;
                     float receivedHealth = float.Parse(receivedMsg);
                     Health = receivedHealth;
+                }
+                if (eventType == "Die")
+                {
+                    netReceivedDieEvent = true;
+                    Die();
                 }
             }
         }

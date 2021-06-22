@@ -15,21 +15,21 @@ MonoBehaviour:
   turretType: 6
   levelProp:
   - health: 100
-    damage: 5
+    damage: 10
     attackCooldown: 10
     range: 0
     upgradeCost: 250
     sellReward: 125
     gfx: {fileID: 919132149155446097, guid: 22c790f943388664c9617fc510169f0e, type: 3}
   - health: 150
-    damage: 10
+    damage: 17
     attackCooldown: 7.5
     range: 0
     upgradeCost: 325
     sellReward: 150
     gfx: {fileID: 919132149155446097, guid: c150442dc00cf1143a690c22dc9b0121, type: 3}
   - health: 250
-    damage: 15
+    damage: 25
     attackCooldown: 5
     range: 0
     upgradeCost: 400

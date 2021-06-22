@@ -221,6 +221,9 @@ namespace SerenityGarden
 
                 yield return new WaitForSeconds(0.1f);
 
+                if (Target == null && boss == null)
+                    yield break;
+
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();
                 bulletScript.damage = Damage;
@@ -233,6 +236,9 @@ namespace SerenityGarden
                 HelperMethods.RotateObjTowardsTarget(transform, boss.transform.position, true);
 
                 yield return new WaitForSeconds(0.1f);
+
+                if (Target == null && boss == null)
+                    yield break;
 
                 //Shoot a bullet towards it
                 BulletMovement bulletScript = InstantiationManager.instance.InstantiateWithCheck(bulletPrefab, firePoint.position, firePoint.rotation, PhotonObj.Bullet).GetComponent<BulletMovement>();

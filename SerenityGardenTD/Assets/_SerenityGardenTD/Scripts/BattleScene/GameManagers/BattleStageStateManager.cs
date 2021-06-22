@@ -71,6 +71,7 @@ namespace SerenityGarden
         public void GameOver()
         {
             gameOver = true;
+            GamePauseManager.instance.netReceivedEvent = true;
             GamePauseManager.instance._PauseGame();
             GamePauseManager.instance.pauseMenu.SetActive(false);
 
@@ -88,6 +89,7 @@ namespace SerenityGarden
         {
             gameWon = true;
 
+            GamePauseManager.instance.netReceivedEvent = true;
             GamePauseManager.instance._PauseGame();
             GamePauseManager.instance.pauseMenu.SetActive(false);
 

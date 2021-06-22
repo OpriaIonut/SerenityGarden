@@ -85,6 +85,7 @@ namespace SerenityGarden
         private float previousAnimSpeed = 0;
 
         private bool netSendMeteorTarget = false;
+        private bool netReceivedHealth = false;
 
 
         private void Start()
@@ -112,30 +113,24 @@ namespace SerenityGarden
             if (isDead || pauseManager.GamePaused)
                 return;
 
-            if (photonView.IsMine && Time.time > nextDecisionTime)
+            if (photonView.IsMine && (Time.time > nextDecisionTime || (currentAction == FireDemonActions.None && forceNextDecision != FireDemonActions.None)))
                 MakeDecision();
 
             if(currentAction == FireDemonActions.TimeBasedAttack && rotateTowardsTarget)
             {
                 if (photonView.IsMine && timeBasedAttackTarget != null)
                 {
-                    float diff = transform.position.x - timeBasedAttackTarget.transform.position.x;
-                    if ((diff > 0 && rotationAmount > 0) || (diff < 0 && rotationAmount < 0))
-                    {
-                        float angle = rotationAmount * rotationSpeed * Time.deltaTime;
-                        rotationAmount -= angle;
-                        transform.RotateAround(transform.position, Vector3.up, angle);
-                    }
+                    var lookPos = timeBasedAttackTarget.transform.position - transform.position;
+                    lookPos.y = 0;
+                    var rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(lookPos), Time.deltaTime * rotationSpeed); 
+                    transform.rotation = rotation;
                 }
                 if(!photonView.IsMine && NetMeteorTarget != null)
                 {
-                    float diff = transform.position.x - NetMeteorTarget.transform.position.x;
-                    if ((diff > 0 && rotationAmount > 0) || (diff < 0 && rotationAmount < 0))
-                    {
-                        float angle = rotationAmount * rotationSpeed * Time.deltaTime;
-                        rotationAmount -= angle;
-                        transform.RotateAround(transform.position, Vector3.up, angle);
-                    }
+                    var lookPos = NetMeteorTarget.transform.position - transform.position;
+                    lookPos.y = 0;
+                    var rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(lookPos), Time.deltaTime * rotationSpeed);
+                    transform.rotation = rotation;
                 }
             }
             if(resetRotation)
@@ -160,6 +155,10 @@ namespace SerenityGarden
 
         public override void TakeDamage(float ammount)
         {
+            if (photonView.IsMine == false && netReceivedHealth == false)
+                return;
+            netReceivedHealth = false;
+
             base.TakeDamage(ammount);
 
             currentDamageMultiplier = 1.0f + (maxDamageMultiplier - 1.0f) * (bossStatus.maxHealth - health) / bossStatus.maxHealth;
@@ -170,11 +169,6 @@ namespace SerenityGarden
                 buildManager.Money += aux;
                 lastHpDiffCheck = hpDiff;
             }
-
-            //var mainModule = passiveEffect.main;
-            //mainModule.startLifetime = 1.0f * (maxHealth - health) / maxHealth;
-            //var emissionModule = passiveEffect.emission;
-            //emissionModule.rateOverTime = 300.0f * (maxHealth - health) / maxHealth;
 
             if (forcedAttackIndex == 0 && health < bossStatus.maxHealth * 2 / 3)
             {
@@ -196,6 +190,7 @@ namespace SerenityGarden
             nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
             if (forceNextDecision != FireDemonActions.None)
             {
+                resetRotation = false;
                 currentAction = forceNextDecision;
                 forceNextDecision = FireDemonActions.None;
             }
@@ -273,14 +268,6 @@ namespace SerenityGarden
 
         private IEnumerator Action_TurretDestroyer()
         {
-            TurretBase[] turrets = FindObjectsOfType<TurretBase>();
-
-            List<TurretBase> turretList = new List<TurretBase>();
-            for (int index = 0; index < turrets.Length; index++)
-            {
-                turretList.Add(turrets[index]);
-            }
-
             anim.SetTrigger("TurretDestroyerBegin");
             nextDecisionTime += 50.0f;
             float yieldStartTime = Time.time;
@@ -322,6 +309,12 @@ namespace SerenityGarden
                             yield return null;
                     }
 
+                    TurretBase[] turrets = FindObjectsOfType<TurretBase>();
+                    List<TurretBase> turretList = new List<TurretBase>();
+                    for (int turretIndex = 0; turretIndex < turrets.Length; turretIndex++)
+                    {
+                        turretList.Add(turrets[turretIndex]);
+                    }
                     while (target == null)
                     {
                         int turretIndex = Random.Range(0, turretList.Count);
@@ -354,6 +347,7 @@ namespace SerenityGarden
                 }
             }
 
+            currentAction = FireDemonActions.None;
             anim.SetTrigger("TurretDestroyerEnd");
             nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
         }
@@ -448,7 +442,6 @@ namespace SerenityGarden
 
                     if (photonView.IsMine)
                         PhotonNetwork.Destroy(meteor.gameObject);
-                    currentAction = FireDemonActions.None;
 
                     nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions + stunTime;
                     yieldStartTime = Time.time;
@@ -469,7 +462,6 @@ namespace SerenityGarden
             if (!cond)
             {
                 nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions * 2;
-                currentAction = FireDemonActions.None;
                 anim.SetTrigger("TimeBasedAttackEnd");
                 stunBar.gameObject.SetActive(false);
                 timerParent.SetActive(false);
@@ -505,6 +497,7 @@ namespace SerenityGarden
                 if(pauseManager.PauseStartTime - yieldStartTime > 0)
                     yield return new WaitForSeconds(animTime * 2 / 3 - (pauseManager.PauseStartTime - yieldStartTime));
             }
+            currentAction = FireDemonActions.None;
             resetRotation = true;
             rotateTowardsTarget = false;
         }
@@ -537,7 +530,8 @@ namespace SerenityGarden
                         }
                     }
 
-                    turret.Health -= damage;
+                    if (turret.photonView == null || turret.photonView.IsMine == true)
+                        turret.Health -= damage;
                 }
             }
         }
@@ -585,6 +579,7 @@ namespace SerenityGarden
                 
                 if(receivedMsg3 != null)
                 {
+                    netReceivedHealth = true;
                     float receivedHealth = float.Parse(receivedMsg3);
                     TakeDamage(health - receivedHealth);
                 }
