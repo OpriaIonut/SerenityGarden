@@ -116,7 +116,7 @@ namespace SerenityGarden
             if (photonView.IsMine && (Time.time > nextDecisionTime || (currentAction == FireDemonActions.None && forceNextDecision != FireDemonActions.None)))
                 MakeDecision();
 
-            if(currentAction == FireDemonActions.TimeBasedAttack && rotateTowardsTarget)
+            if(currentAction == FireDemonActions.TimeBasedAttack)
             {
                 if (photonView.IsMine && timeBasedAttackTarget != null)
                 {
@@ -215,15 +215,19 @@ namespace SerenityGarden
                 case FireDemonActions.None:
                     break;
                 case FireDemonActions.IdleStretch:
+                    StopAllCoroutines();
                     StartCoroutine("Action_IdleStretch");
                     break;
                 case FireDemonActions.TurretDestroyer:
+                    StopAllCoroutines();
                     StartCoroutine(Action_TurretDestroyer());
                     break;
                 case FireDemonActions.Sweep:
+                    StopAllCoroutines();
                     StartCoroutine("Action_SweepAttack");
                     break;
                 case FireDemonActions.TimeBasedAttack:
+                    StopAllCoroutines();
                     StartCoroutine("Action_TimeBasedAttack");
                     break;
             }
@@ -342,6 +346,7 @@ namespace SerenityGarden
                 }
                 else
                 {
+                    //Debug.Log("Meteor: " + netMeteorInstance.name + " " + netMeteorInstance.photonView.ViewID + "; NetMeteorTarget: " + netMeteorTarget.name + " " + netMeteorTarget.photonView);
                     NetMeteorInstance.SetTarget(netMeteorTarget, bossStatus.turretDestroyerDamage * currentDamageMultiplier, false);
                     netMeteorTarget = null;
                 }

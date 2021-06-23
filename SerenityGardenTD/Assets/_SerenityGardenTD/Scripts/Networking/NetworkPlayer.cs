@@ -46,7 +46,7 @@ namespace SerenityGarden
                 if (receivedEvents == "GameWon")
                 {
                     BattleStageStateManager.instance.netReceivedEvent = true;
-                    BattleStageStateManager.instance.GameWon();
+                    //BattleStageStateManager.instance.GameWon();
                 }
                 else if (receivedEvents == "PauseGame")
                 {

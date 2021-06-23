@@ -140,12 +140,12 @@ namespace SerenityGarden
             {
                 string eventType = "";
                 string healthMsg = "" + Health;
-                if (netSendDieEvent)
-                {
-                    eventType = "Die";
-                    netSendDieEvent = false;
-                    Destroy(gameObject);
-                }
+                //if (netSendDieEvent)
+                //{
+                //    eventType = "Die";
+                //    netSendDieEvent = false;
+                //    Destroy(gameObject);
+                //}
                 stream.SendNext(eventType);
                 stream.SendNext(healthMsg);
             }
@@ -159,11 +159,11 @@ namespace SerenityGarden
                     float receivedHealth = float.Parse(receivedMsg);
                     Health = receivedHealth;
                 }
-                if (eventType == "Die")
-                {
-                    netReceivedDieEvent = true;
-                    Die();
-                }
+                //if (eventType == "Die")
+                //{
+                //    netReceivedDieEvent = true;
+                //    Die();
+                //}
             }
         }
     }

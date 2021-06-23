@@ -171,7 +171,7 @@ MonoBehaviour:
   - 0.3
   - 0.7
   turretDestroyerMaxScale: 0.25
-  timeBasedAttackMaxScale: 1.9
+  timeBasedAttackMaxScale: 3
   timeBasedAttackDuration: 30
   stunTime: 10
   meteoriteSpawn: {fileID: 3379119341425660573}

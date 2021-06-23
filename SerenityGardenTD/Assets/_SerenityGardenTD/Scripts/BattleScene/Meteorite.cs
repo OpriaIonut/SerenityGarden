@@ -98,8 +98,10 @@ namespace SerenityGarden
                 TurretBase turret = other.transform.root.gameObject.GetComponent<TurretBase>();
                 if(turret != null)
                 {
-                    if (target.photonView == null || target.photonView.IsMine == true)
+                    if (turret.photonView == null || turret.photonView.IsMine == true)
+                    {
                         turret.Health -= damage;
+                    }
                     if(!calledDestroy)
                     {
                         Destroy(gameObject, 0.5f);

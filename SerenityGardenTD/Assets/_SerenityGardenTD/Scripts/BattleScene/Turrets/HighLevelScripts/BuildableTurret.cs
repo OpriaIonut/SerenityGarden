@@ -82,9 +82,16 @@ namespace SerenityGarden
                 boss = FindObjectOfType<BossBase>();
         }
 
+        private bool healthSwitch = false;
         public override void BaseUpdateCalls()
         {
             base.BaseUpdateCalls();
+
+            //if (healthSwitch)
+            //    Health -= 0.001f;
+            //else
+            //    Health += 0.001f;
+            //healthSwitch = !healthSwitch;
 
             if (IsRecovering)
             {
@@ -154,6 +161,14 @@ namespace SerenityGarden
                 hexagonBlock.Type = HexagonType.ResourceExtraction;
             else
                 hexagonBlock.Type = HexagonType.TurretBuildable;
+
+            if (hasCommander)
+            {
+                SceneClickManager.instance.selectedTurret = this;
+                CommanderUI.instance.resetUnpowerupMaterials = false;
+                CommanderUI.instance._UnpowerupTurret();
+                CommanderUI.instance.resetUnpowerupMaterials = true;
+            }
 
             if (SceneClickManager.instance.selectedTurret == this)
             {
@@ -319,8 +334,8 @@ namespace SerenityGarden
             {
                 string eventType = stream.ReceiveNext().ToString();
                 float receivedHealth = (float)stream.ReceiveNext();
-                Health = receivedHealth;
                 netReceivedHealth = true;
+                //Debug.Log("ReceivedHealth: " + receivedHealth);
 
                 if (eventType == "Upgrade")
                 {
@@ -341,8 +356,9 @@ namespace SerenityGarden
                 if(eventType == "Die")
                 {
                     netReceivedDieEvent = true;
-                    Die();
+                    //Die();
                 }
+                Health = receivedHealth;
             }
         }
     }

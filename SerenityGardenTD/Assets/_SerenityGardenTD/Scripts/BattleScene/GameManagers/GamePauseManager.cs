@@ -31,7 +31,7 @@ namespace SerenityGarden
         public GameObject confirmationMenu;
         public TextMeshProUGUI confirmationText;
 
-        private bool gamePaused = false;
+        public bool gamePaused = false;
         public bool GamePaused { get { return gamePaused; } }
 
         private float pausedTime;

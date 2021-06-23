@@ -37,7 +37,34 @@ namespace SerenityGarden
             {
                 //An enemy may have been focused on a previous click. We want to deselect it only if everything is null, as to not interrupt the enemy lock-on while building/repairing/upgrading
                 if (sceneClickManager.selectedTurret == null && sceneClickManager.selectedHexagon == null)
+                {
+                    if (selectedEnemy != null)
+                    {
+                        if (previousEnemyMaterials.Count != 0)
+                        {
+                            int listIndex = 0;
+                            MeshRenderer[] previousRenderers = selectedEnemy.gameObject.GetComponentsInChildren<MeshRenderer>();
+                            foreach (MeshRenderer rend in previousRenderers)
+                            {
+                                rend.material = previousEnemyMaterials[listIndex];
+                                listIndex++;
+                            }
+
+                        }
+                        if (previousSkinnedEnemyMaterials.Count != 0)
+                        {
+                            int listIndex = 0;
+                            SkinnedMeshRenderer[] previousSkinnedRenderers = selectedEnemy.gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+                            foreach (SkinnedMeshRenderer rend in previousSkinnedRenderers)
+                            {
+                                rend.material = previousSkinnedEnemyMaterials[listIndex];
+                                listIndex++;
+                            }
+                        }
+                    }
+
                     selectedEnemy = sceneClickManager.selectedEnemy;
+                }
             }
             else
             {

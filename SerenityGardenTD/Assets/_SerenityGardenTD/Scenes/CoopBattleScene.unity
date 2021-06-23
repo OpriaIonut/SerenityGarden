@@ -9116,6 +9116,7 @@ GameObject:
   - component: {fileID: 721677595}
   - component: {fileID: 721677597}
   - component: {fileID: 721677596}
+  - component: {fileID: 721677598}
   m_Layer: 5
   m_Name: DisconnectPanel
   m_TagString: Untagged
@@ -9180,6 +9181,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721677594}
   m_CullTransparentMesh: 0
+--- !u!114 &721677598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721677594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.78431374}
+  m_EffectDistance: {x: -3, y: -3}
+  m_UseGraphicAlpha: 1
 --- !u!1 &788098983
 GameObject:
   m_ObjectHideFlags: 0
@@ -11074,6 +11090,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 2104268075}
   confirmationMenu: {fileID: 963507727}
   confirmationText: {fileID: 1064028904}
+  gamePaused: 0
   netReceivedEvent: 0
 --- !u!114 &1102853120
 MonoBehaviour:

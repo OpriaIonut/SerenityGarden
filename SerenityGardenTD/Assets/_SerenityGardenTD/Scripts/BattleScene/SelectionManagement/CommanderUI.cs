@@ -34,6 +34,8 @@ namespace SerenityGarden
 
         private List<Material> powerupPreviousMaterials;
 
+        public bool resetUnpowerupMaterials = true;
+
         private void Start()
         {
             powerupPreviousMaterials = new List<Material>();
@@ -134,12 +136,18 @@ namespace SerenityGarden
                 {
                     buildable.HasCommander = false;
 
-                    int listIndex = 0;
-                    MeshRenderer[] renderers = buildable.gameObject.gameObject.GetComponentsInChildren<MeshRenderer>();
-                    foreach (MeshRenderer rend in renderers)
+                    if (resetUnpowerupMaterials)
                     {
-                        rend.material = powerupPreviousMaterials[listIndex];
-                        listIndex++;
+                        int listIndex = 0;
+                        MeshRenderer[] renderers = buildable.gameObject.gameObject.GetComponentsInChildren<MeshRenderer>();
+                        if (renderers.Length == powerupPreviousMaterials.Count)
+                        {
+                            foreach (MeshRenderer rend in renderers)
+                            {
+                                rend.material = powerupPreviousMaterials[listIndex];
+                                listIndex++;
+                            }
+                        }
                     }
 
                     Commander commanderToUse = commander;
