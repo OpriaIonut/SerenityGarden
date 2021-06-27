@@ -10,6 +10,7 @@ SerenityGardenTD/[Mm]emoryCaptures/
 SerenityGardenTD/Logs/
 SerenityGardenTD/Packages/
 SerenityGardenTD/Builds/
+SerenityGardenTD/Release/
 
 # Game data that should not be shared
 SerenityGardenTD/Assets/StreamingAssets/saveData.txt
