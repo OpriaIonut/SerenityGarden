@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnemyRanged2
   m_EditorClassIdentifier: 
   enemyType: 1
-  health: 10000
+  health: 75
   speed: 0.4
   damage: 1.5
   range: 2.625

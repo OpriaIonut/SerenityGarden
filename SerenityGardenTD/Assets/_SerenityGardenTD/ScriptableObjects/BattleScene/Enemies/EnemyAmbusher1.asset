@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EnemyAmbusher1
   m_EditorClassIdentifier: 
   enemyType: 3
-  health: 10000
+  health: 100
   speed: 0.1
   damage: 10
   range: 3

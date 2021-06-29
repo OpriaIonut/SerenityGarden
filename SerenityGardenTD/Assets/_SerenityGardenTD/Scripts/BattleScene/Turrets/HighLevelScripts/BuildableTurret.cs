@@ -21,7 +21,7 @@ namespace SerenityGarden
 
         public bool IsRecovering { get; set; }
         public float RecoveryCostPer1Hp { get; set; } = 1;
-        public float RecoveryPerSecond { get; set; } = 20;
+        public float RecoveryPerSecond { get; set; } = 0.1f;
 
         //private int maxHealth;
         //public int MaxHealth
@@ -95,15 +95,16 @@ namespace SerenityGarden
 
             if (IsRecovering)
             {
-                currentRecovery += 1 / RecoveryPerSecond;
-                if (currentRecovery > 1)
+                currentRecovery += maxHealth * RecoveryPerSecond * Time.deltaTime;
+                if (currentRecovery > 0)
                 {
-                    Health += (int)currentRecovery;
-                    recoveryAmmount -= (int)currentRecovery;
-                    currentRecovery -= (int)currentRecovery;
+                    if(photonView == null || photonView.IsMine)
+                        Health += currentRecovery;
+                    recoveryAmmount -= currentRecovery;
+                    currentRecovery -= currentRecovery;
                     if (recoveryAmmount <= 0)
                     {
-                        if (Health > maxHealth)
+                        if (Health > maxHealth && (photonView == null || photonView.IsMine))
                             health = maxHealth;
 
                         MeshRenderer[] renderers = gameObject.GetComponentsInChildren<MeshRenderer>();
@@ -175,7 +176,7 @@ namespace SerenityGarden
                 SceneClickManager.instance.DisablePreviousStates();
                 SceneClickManager.instance.UpdateSelectedReferences();
             }
-            if (photonView != null)
+            if (photonView != null && PhotonNetwork.CurrentRoom.PlayerCount > 1)
             {
                 if (netReceivedDieEvent)
                 {

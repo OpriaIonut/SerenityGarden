@@ -55,6 +55,7 @@ namespace SerenityGarden
         private float decisionBarrierSweep;
 
         //If this is set it the next decision will be this one, otherwise, it will pick it randomly
+        private FireDemonActions previousAction = FireDemonActions.None;
         private FireDemonActions forceNextDecision;
         private FireDemonActions currentAction;
         public FireDemonActions CurrentAction { get { return currentAction; } }
@@ -196,13 +197,19 @@ namespace SerenityGarden
             }
             else
             {
-                float randFact = Random.Range(0.0f, 1.0f);
-                if (randFact <= decisionBarrierTuretDestroyer)
-                    currentAction = FireDemonActions.IdleStretch;
-                else if(randFact <= decisionBarrierSweep)
-                    currentAction = FireDemonActions.TurretDestroyer;
-                else
-                    currentAction = FireDemonActions.Sweep;
+                do
+                {
+                    float randFact = Random.Range(0.0f, 1.0f);
+                    if (randFact <= decisionBarrierTuretDestroyer)
+                        currentAction = FireDemonActions.IdleStretch;
+                    else if (randFact <= decisionBarrierSweep)
+                        currentAction = FireDemonActions.TurretDestroyer;
+                    else
+                        currentAction = FireDemonActions.Sweep;
+
+                } while (currentAction == previousAction);
+
+                previousAction = currentAction;
             }
             StartAction();
             netSendEvent = true;
@@ -352,9 +359,12 @@ namespace SerenityGarden
                 }
             }
 
-            currentAction = FireDemonActions.None;
             anim.SetTrigger("TurretDestroyerEnd");
+
+            yield return new WaitForSeconds(1.0f);
+
             nextDecisionTime = Time.time + bossStatus.timeBetweenDecisions;
+            currentAction = FireDemonActions.None;
         }
 
 
